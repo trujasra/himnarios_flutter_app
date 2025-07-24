@@ -1,0 +1,123 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+class AppTheme {
+  static const Color primaryColor = Color(0xFF4F46E5); // Indigo-600
+  static const Color secondaryColor = Color(0xFF7C3AED); // Purple-600
+  static const Color backgroundColor = Color(0xFFF8FAFC); // Slate-50
+  static const Color cardColor = Colors.white;
+  static const Color textColor = Color(0xFF1E293B); // Slate-800
+
+  // Colores de himnarios
+  static const Color emeraldColor = Color(0xFF10B981); // Emerald-500
+  static const Color emeraldDarkColor = Color(0xFF059669); // Emerald-600
+  static const Color violetColor = Color(0xFF8B5CF6); // Violet-500
+  static const Color violetDarkColor = Color(0xFF7C3AED); // Violet-600
+  static const Color amberColor = Color(0xFFF59E0B); // Amber-500
+  static const Color amberDarkColor = Color(0xFFD97706); // Amber-600
+
+  static ThemeData get lightTheme {
+    return ThemeData(
+      useMaterial3: true,
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: primaryColor,
+        brightness: Brightness.light,
+      ),
+      scaffoldBackgroundColor: backgroundColor,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
+        titleTextStyle: TextStyle(
+          color: Colors.white,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+        iconTheme: IconThemeData(color: Colors.white),
+      ),
+      cardTheme: CardThemeData(
+        color: cardColor,
+        elevation: 2,
+        shadowColor: Colors.black.withOpacity(0.1),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
+      textTheme: const TextTheme(
+        headlineLarge: TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        ),
+        headlineMedium: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        ),
+        titleLarge: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
+          color: textColor,
+        ),
+        titleMedium: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+          color: textColor,
+        ),
+        bodyLarge: TextStyle(
+          fontSize: 16,
+          color: textColor,
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          color: textColor,
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ),
+      ),
+    );
+  }
+
+  // Gradientes para himnarios
+  static LinearGradient getGradientForHimnario(String color) {
+    switch (color) {
+      case 'emerald':
+        return const LinearGradient(
+          colors: [emeraldColor, emeraldDarkColor],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
+      case 'violet':
+        return const LinearGradient(
+          colors: [violetColor, violetDarkColor],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
+      case 'amber':
+        return const LinearGradient(
+          colors: [amberColor, amberDarkColor],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
+      default:
+        return const LinearGradient(
+          colors: [primaryColor, secondaryColor],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
+    }
+  }
+
+  // Gradiente principal de la app
+  static const LinearGradient mainGradient = LinearGradient(
+    colors: [primaryColor, secondaryColor],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+} 

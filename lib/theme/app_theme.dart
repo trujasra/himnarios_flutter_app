@@ -114,6 +114,20 @@ class AppTheme {
     }
   }
 
+  // Colores para himnarios
+  static Color getColorForHimnario(String color) {
+    switch (color) {
+      case 'emerald':
+        return emeraldColor;
+      case 'violet':
+        return violetColor;
+      case 'amber':
+        return amberColor;
+      default:
+        return primaryColor;
+    }
+  }
+
   // Gradiente principal de la app
   static const LinearGradient mainGradient = LinearGradient(
     colors: [primaryColor, secondaryColor],

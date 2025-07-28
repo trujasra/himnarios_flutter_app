@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../data/himnarios_data.dart';
-import '../data/canciones_data.dart';
+import '../data/canciones_service.dart';
 import '../models/cancion.dart';
+import '../models/himnario.dart';
 import '../theme/app_theme.dart';
 import '../widgets/himnario_card.dart';
 import '../widgets/cancion_card.dart';
@@ -20,10 +20,45 @@ class _HomeScreenState extends State<HomeScreen> {
   String busqueda = '';
   List<String> chipsSeleccionados = [];
   List<int> favoritos = [];
+  List<Cancion> canciones = [];
+  List<Himnario> himnarios = [];
+  List<String> idiomas = [];
+  bool isLoading = true;
+
+  final CancionesService _cancionesService = CancionesService();
+
+  @override
+  void initState() {
+    super.initState();
+    _cargarDatos();
+  }
+
+  Future<void> _cargarDatos() async {
+    setState(() {
+      isLoading = true;
+    });
+
+    try {
+      final cancionesData = await _cancionesService.getCanciones();
+      final himnariosData = await _cancionesService.getHimnariosCompletos();
+      final idiomasData = await _cancionesService.getIdiomas();
+      
+      setState(() {
+        canciones = cancionesData;
+        himnarios = himnariosData;
+        idiomas = idiomasData;
+        isLoading = false;
+      });
+    } catch (e) {
+      print('Error cargando datos: $e');
+      setState(() {
+        isLoading = false;
+      });
+    }
+  }
 
   List<String> get chips {
     final himnariosList = himnarios.map((h) => h.nombre).toList();
-    final idiomas = canciones.map((c) => c.idioma).toSet().toList();
     return [...himnariosList, ...idiomas];
   }
 
@@ -160,11 +195,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               // Contenido
               Expanded(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                child: isLoading
+                    ? const Center(
+                        child: CircularProgressIndicator(
+                          color: AppTheme.primaryColor,
+                        ),
+                      )
+                    : SingleChildScrollView(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
                       // Resultados de búsqueda primero
                       if (busqueda.isNotEmpty) ...[
                         Text(

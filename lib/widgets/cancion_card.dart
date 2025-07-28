@@ -111,8 +111,39 @@ class CancionCard extends StatelessWidget {
                           
                           const SizedBox(width: 8),
                           
-                          // Badge de idioma (solo si no es español)
-                          if (cancion.idioma != "Español")
+                          // Badge de idioma
+                          if (cancion.tieneMultiplesVersiones)
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
+                              decoration: BoxDecoration(
+                                color: Colors.green.withOpacity(0.1),
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(color: Colors.green.withOpacity(0.3)),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Icon(
+                                    Icons.language,
+                                    size: 10,
+                                    color: Colors.green,
+                                  ),
+                                  const SizedBox(width: 2),
+                                  Text(
+                                    'Multiidioma',
+                                    style: const TextStyle(
+                                      fontSize: 10,
+                                      color: Colors.green,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                          else if (cancion.idioma != "Español")
                             Container(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 8,

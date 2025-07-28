@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../data/canciones_data.dart';
 import '../models/cancion.dart';
 import '../models/himnario.dart';
 import '../theme/app_theme.dart';
+import '../data/canciones_service.dart';
 
 class CancionScreen extends StatefulWidget {
   final Cancion cancion;
@@ -22,23 +22,89 @@ class CancionScreen extends StatefulWidget {
   State<CancionScreen> createState() => _CancionScreenState();
 }
 
-class _CancionScreenState extends State<CancionScreen> {
-  late String idiomaSeleccionado;
+class _CancionScreenState extends State<CancionScreen> with SingleTickerProviderStateMixin {
+  late TabController _tabController;
+  int _currentTabIndex = 0;
+  List<Cancion>? _versionesCancion;
 
   @override
   void initState() {
     super.initState();
-    idiomaSeleccionado = widget.cancion.idioma;
+    _cargarVersionesCancion();
   }
 
-  List<Cancion> get versionesCancion {
-    return canciones.where((c) => 
-      c.numero == widget.cancion.numero && 
-      c.himnario == widget.cancion.himnario
-    ).toList();
+  @override
+  void dispose() {
+    if (_versionesCancion != null && _versionesCancion!.length > 1) {
+      _tabController.dispose();
+    }
+    super.dispose();
   }
 
-  bool get tieneMultiplesIdiomas => versionesCancion.length > 1;
+  // Cargar todas las versiones de la canción actual
+  Future<void> _cargarVersionesCancion() async {
+    final cancionesService = CancionesService();
+    final todasLasCanciones = await cancionesService.getCancionesPorHimnario(widget.cancion.himnario);
+    
+    print('DEBUG: Todas las canciones del himnario: ${todasLasCanciones.length}');
+    for (var c in todasLasCanciones) {
+      print('  - Canción ${c.numero}: ${c.titulo} (${c.idioma})');
+    }
+    
+    // Buscar todas las versiones de la canción actual (mismo número)
+    final versiones = todasLasCanciones.where((c) => c.numero == widget.cancion.numero).toList();
+    
+    print('DEBUG: Buscando canción número ${widget.cancion.numero}');
+    print('DEBUG: Versiones encontradas: ${versiones.length}');
+    for (var v in versiones) {
+      print('  - Versión: ${v.titulo} (${v.idioma}) - Letra: ${v.letra.isNotEmpty ? "SÍ" : "NO"}');
+    }
+    
+    setState(() {
+      _versionesCancion = versiones;
+    });
+
+    // Inicializar TabController si hay múltiples versiones
+    if (versiones.length > 1) {
+      _tabController = TabController(
+        length: versiones.length,
+        vsync: this,
+      );
+      
+      // Encontrar el índice de la versión actual
+      final indexActual = versiones.indexWhere((c) => c.idioma == widget.cancion.idioma);
+      if (indexActual != -1) {
+        _tabController.index = indexActual;
+        _currentTabIndex = indexActual;
+      }
+      
+      _tabController.addListener(() {
+        setState(() {
+          _currentTabIndex = _tabController.index;
+        });
+      });
+    }
+  }
+
+  // Obtener la canción actual (versión seleccionada o la original)
+  Cancion get cancionActual {
+    print('DEBUG: cancionActual - _versionesCancion: ${_versionesCancion?.length ?? "null"}');
+    
+    if (_versionesCancion != null) {
+      if (_versionesCancion!.length > 1) {
+        print('DEBUG: Usando versión múltiple: ${_versionesCancion![_currentTabIndex].titulo}');
+        return _versionesCancion![_currentTabIndex];
+      } else if (_versionesCancion!.length == 1) {
+        print('DEBUG: Usando versión única: ${_versionesCancion![0].titulo} - Letra: ${_versionesCancion![0].letra.isNotEmpty ? "SÍ" : "NO"}');
+        return _versionesCancion![0];
+      }
+    }
+    print('DEBUG: Usando widget.cancion: ${widget.cancion.titulo} - Letra: ${widget.cancion.letra.isNotEmpty ? "SÍ" : "NO"}');
+    return widget.cancion;
+  }
+
+  // Verificar si hay múltiples versiones
+  bool get tieneMultiplesVersiones => _versionesCancion != null && _versionesCancion!.length > 1;
 
   @override
   Widget build(BuildContext context) {
@@ -49,125 +115,115 @@ class _CancionScreenState extends State<CancionScreen> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFFF8FAFC), // Slate-50
-              Colors.white,
-              Color(0xFFF1F5F9), // Slate-100
+              Color(0xFFEFF6FF),
+              Color(0xFFF5F3FF),
+              Color(0xFFFAF5FF),
             ],
           ),
         ),
         child: SafeArea(
           child: Column(
             children: [
-              // Header de canción
+              // Header con botón de regreso y favorito
               Container(
-                decoration: BoxDecoration(
-                  gradient: AppTheme.getGradientForHimnario(widget.himnario.color),
+                decoration: const BoxDecoration(
+                  gradient: AppTheme.mainGradient,
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Column(
+                  child: Row(
                     children: [
-                      // Barra superior
-                      Row(
-                        children: [
-                          IconButton(
-                            onPressed: () => Navigator.pop(context),
-                            icon: const Icon(Icons.arrow_back, color: Colors.white),
-                          ),
-                          Expanded(
-                            child: Column(
-                              children: [
-                                Text(
-                                  widget.cancion.titulo,
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                                if (widget.cancion.tituloSecundario != null)
-                                  Text(
-                                    widget.cancion.tituloSecundario!,
-                                    style: const TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.white70,
-                                      fontStyle: FontStyle.italic,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                const SizedBox(height: 4),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      '#${widget.cancion.numero} - ${widget.cancion.himnario}',
-                                      style: const TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.white70,
-                                      ),
-                                    ),
-                                    if (tieneMultiplesIdiomas) ...[
-                                      const SizedBox(width: 8),
-                                      Container(
-                                        padding: const EdgeInsets.symmetric(
-                                          horizontal: 8,
-                                          vertical: 2,
-                                        ),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white.withOpacity(0.2),
-                                          borderRadius: BorderRadius.circular(12),
-                                          border: Border.all(color: Colors.white.withOpacity(0.3)),
-                                        ),
-                                        child: const Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Icon(
-                                              Icons.language,
-                                              size: 10,
-                                              color: Colors.white,
-                                            ),
-                                            SizedBox(width: 4),
-                                            Text(
-                                              'Multiidioma',
-                                              style: TextStyle(
-                                                fontSize: 10,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.w500,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: () => widget.onToggleFavorito(widget.cancion.id),
-                            icon: Icon(
-                              widget.favoritos.contains(widget.cancion.id)
-                                  ? Icons.favorite
-                                  : Icons.favorite_border,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
+                      IconButton(
+                        onPressed: () => Navigator.pop(context),
+                        icon: const Icon(Icons.arrow_back, color: Colors.white),
+                      ),
+                                             Expanded(
+                         child: Column(
+                           crossAxisAlignment: CrossAxisAlignment.start,
+                           children: [
+                             Text(
+                               '#${cancionActual.numero} - ${cancionActual.titulo}',
+                               style: const TextStyle(
+                                 color: Colors.white,
+                                 fontSize: 16,
+                                 fontWeight: FontWeight.w500,
+                               ),
+                               overflow: TextOverflow.ellipsis,
+                             ),
+                             Text(
+                               widget.himnario.nombre,
+                               style: const TextStyle(
+                                 color: Colors.white70,
+                                 fontSize: 14,
+                               ),
+                               overflow: TextOverflow.ellipsis,
+                             ),
+                           ],
+                         ),
+                       ),
+                      IconButton(
+                        onPressed: () => widget.onToggleFavorito(cancionActual.id),
+                        icon: Icon(
+                          widget.favoritos.contains(cancionActual.id)
+                              ? Icons.favorite
+                              : Icons.favorite_border,
+                          color: Colors.white,
+                        ),
                       ),
                     ],
                   ),
                 ),
               ),
-              
+
+              // Pestañas de idiomas (solo si hay múltiples versiones)
+              if (tieneMultiplesVersiones) ...[
+                Container(
+                  color: Colors.white,
+                  child: TabBar(
+                    controller: _tabController,
+                    labelColor: AppTheme.primaryColor,
+                    unselectedLabelColor: Colors.grey,
+                    indicatorColor: AppTheme.primaryColor,
+                    tabs: _versionesCancion!.map((version) {
+                      return Tab(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.language, size: 16),
+                            const SizedBox(width: 4),
+                            Text(version.idioma),
+                          ],
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ),
+              ],
+
               // Contenido de la canción
               Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
-                  child: tieneMultiplesIdiomas
-                      ? _buildMultiIdiomaView()
-                      : _buildSingleIdiomaView(),
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(3.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                                         children: [
+                                               // Letra de la canción
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Text(
+                              cancionActual.letra,
+                              style: const TextStyle(
+                                fontSize: 22,
+                                height: 1.6,
+                                color: AppTheme.textColor,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                     ],
+                  ),
                 ),
               ),
             ],
@@ -175,207 +231,5 @@ class _CancionScreenState extends State<CancionScreen> {
         ),
       ),
     );
-  }
-
-  Widget _buildMultiIdiomaView() {
-    return Card(
-      elevation: 4,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      child: Column(
-        children: [
-          // Tabs de idiomas
-          Container(
-            decoration: const BoxDecoration(
-              color: Color(0xFFF9FAFB),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(16),
-                topRight: Radius.circular(16),
-              ),
-            ),
-            child: Row(
-              children: versionesCancion.map((version) {
-                final isSelected = version.idioma == idiomaSeleccionado;
-                return Expanded(
-                  child: GestureDetector(
-                    onTap: () => setState(() => idiomaSeleccionado = version.idioma),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      decoration: BoxDecoration(
-                        color: isSelected ? Colors.white : Colors.transparent,
-                        borderRadius: BorderRadius.circular(8),
-                        boxShadow: isSelected
-                            ? [BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2)]
-                            : null,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Icon(Icons.language, size: 16),
-                          const SizedBox(width: 4),
-                          Text(
-                            version.idioma,
-                            style: TextStyle(
-                              fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
-                              color: isSelected ? AppTheme.textColor : Colors.grey,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                );
-              }).toList(),
-            ),
-          ),
-          
-          // Contenido de la letra
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: _buildLetraContent(versionesCancion.firstWhere((v) => v.idioma == idiomaSeleccionado)),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildSingleIdiomaView() {
-    return Card(
-      elevation: 4,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: _buildLetraContent(widget.cancion),
-      ),
-    );
-  }
-
-  Widget _buildLetraContent(Cancion cancion) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // Badges de información
-        Row(
-          children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-              decoration: BoxDecoration(
-                color: _getColorForHimnario(widget.himnario.color).withOpacity(0.1),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(
-                  color: _getColorForHimnario(widget.himnario.color).withOpacity(0.3),
-                ),
-              ),
-              child: Text(
-                cancion.categoria,
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w600,
-                  color: _getColorForHimnario(widget.himnario.color),
-                ),
-              ),
-            ),
-            const SizedBox(width: 6),
-            if (cancion.idioma != "Español")
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                decoration: BoxDecoration(
-                  color: Colors.blue.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: Colors.blue.withOpacity(0.3)),
-                ),
-                child: const Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.language, size: 10, color: Colors.blue),
-                    SizedBox(width: 3),
-                    Text(
-                      'Idioma',
-                      style: TextStyle(
-                        fontSize: 11,
-                        color: Colors.blue,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-          ],
-        ),
-        
-        const SizedBox(height: 16),
-        
-        // Letra de la canción
-        Expanded(
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [Color(0xFFF9FAFB), Colors.white],
-              ),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: Colors.grey.withOpacity(0.2)),
-            ),
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
-              child: SelectableText(
-                cancion.letra,
-                style: TextStyle(
-                  fontSize: 20,
-                  height: 2.0,
-                  color: AppTheme.textColor,
-                  fontFamily: cancion.idioma == "Aymara" ? 'serif' : null,
-                ),
-              ),
-            ),
-          ),
-        ),
-        
-        // Información adicional para Aymara
-        if (cancion.idioma == "Aymara") ...[
-          const SizedBox(height: 12),
-          Container(
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: Colors.blue.withOpacity(0.05),
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.blue.withOpacity(0.2)),
-            ),
-            child: const Row(
-              children: [
-                Icon(Icons.language, color: Colors.blue, size: 14),
-                SizedBox(width: 6),
-                Expanded(
-                  child: Text(
-                    'Idioma Aymara: Esta es la versión en lengua originaria aymara de la misma canción.',
-                    style: TextStyle(
-                      fontSize: 11,
-                      color: Colors.blue,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ],
-    );
-  }
-
-  Color _getColorForHimnario(String color) {
-    switch (color) {
-      case 'emerald':
-        return AppTheme.emeraldColor;
-      case 'violet':
-        return AppTheme.violetColor;
-      case 'amber':
-        return AppTheme.amberColor;
-      default:
-        return AppTheme.primaryColor;
-    }
   }
 } 

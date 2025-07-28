@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../data/canciones_data.dart';
+import '../data/canciones_service.dart';
 import '../models/himnario.dart';
 import '../models/cancion.dart';
 import '../theme/app_theme.dart';
@@ -27,41 +27,64 @@ class HimnarioScreen extends StatefulWidget {
 class _HimnarioScreenState extends State<HimnarioScreen> {
   String busqueda = '';
   List<String> chipsSeleccionados = [];
+  List<Cancion> canciones = [];
+  bool isLoading = true;
+
+  final CancionesService _cancionesService = CancionesService();
+
+  @override
+  void initState() {
+    super.initState();
+    _cargarCanciones();
+  }
+
+  Future<void> _cargarCanciones() async {
+    setState(() {
+      isLoading = true;
+    });
+
+    try {
+      final cancionesData = await _cancionesService.getCancionesPorHimnario(widget.himnario.nombre);
+      setState(() {
+        canciones = cancionesData;
+        isLoading = false;
+      });
+    } catch (e) {
+      print('Error cargando canciones del himnario: $e');
+      setState(() {
+        isLoading = false;
+      });
+    }
+  }
 
   List<String> get chips {
-    final idiomas = canciones
-      .where((c) => c.himnario == widget.himnario.nombre)
-      .map((c) => c.idioma)
-      .toSet();
+    final idiomas = canciones.map((c) => c.idioma).toSet();
     return idiomas
       .map((idioma) {
-        final count = canciones.where((c) => c.himnario == widget.himnario.nombre && c.idioma == idioma).length;
+        final count = canciones.where((c) => c.idioma == idioma).length;
         return '$idioma ($count)';
       })
       .toList();
   }
 
   List<Cancion> get cancionesDelHimnario {
-    return canciones
-        .where((c) => c.himnario == widget.himnario.nombre)
-        .where((cancion) {
-          if (chipsSeleccionados.isNotEmpty) {
-            // El chip es 'Idioma (cantidad)', así que solo compara el idioma
-            final idiomasSeleccionados = chipsSeleccionados.map((chip) => chip.split(' (').first).toList();
-            if (!idiomasSeleccionados.contains(cancion.idioma)) return false;
-          }
-          if (busqueda.isNotEmpty) {
-            final busq = busqueda.toLowerCase();
-            final coincideNumero = cancion.numero.toString().contains(busq);
-            final coincideTexto = cancion.titulo.toLowerCase().contains(busq) ||
-                (cancion.tituloSecundario?.toLowerCase().contains(busq) ?? false);
-            if (!coincideNumero && !coincideTexto) {
-              return false;
-            }
-          }
-          return true;
-        })
-        .toList();
+    return canciones.where((cancion) {
+      if (chipsSeleccionados.isNotEmpty) {
+        // El chip es 'Idioma (cantidad)', así que solo compara el idioma
+        final idiomasSeleccionados = chipsSeleccionados.map((chip) => chip.split(' (').first).toList();
+        if (!idiomasSeleccionados.contains(cancion.idioma)) return false;
+      }
+      if (busqueda.isNotEmpty) {
+        final busq = busqueda.toLowerCase();
+        final coincideNumero = cancion.numero.toString().contains(busq);
+        final coincideTexto = cancion.titulo.toLowerCase().contains(busq) ||
+            (cancion.tituloSecundario?.toLowerCase().contains(busq) ?? false);
+        if (!coincideNumero && !coincideTexto) {
+          return false;
+        }
+      }
+      return true;
+    }).toList();
   }
 
   @override
@@ -151,46 +174,52 @@ class _HimnarioScreenState extends State<HimnarioScreen> {
               ),
               // Lista de canciones
               Expanded(
-                child: cancionesDelHimnario.isEmpty
+                child: isLoading
                     ? const Center(
-                        child: Card(
-                          child: Padding(
-                            padding: EdgeInsets.all(32.0),
-                            child: Text(
-                              'No se encontraron canciones',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 16,
-                              ),
-                            ),
-                          ),
+                        child: CircularProgressIndicator(
+                          color: AppTheme.primaryColor,
                         ),
                       )
-                    : ListView.builder(
-                        padding: const EdgeInsets.all(16.0),
-                        itemCount: cancionesDelHimnario.length,
-                        itemBuilder: (context, index) {
-                          final cancion = cancionesDelHimnario[index];
-                          return CancionCard(
-                            cancion: cancion,
-                            himnario: widget.himnario,
-                            isFavorite: widget.favoritos.contains(cancion.id),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => CancionScreen(
-                                    cancion: cancion,
-                                    himnario: widget.himnario,
-                                    favoritos: widget.favoritos,
-                                    onToggleFavorito: widget.onToggleFavorito,
+                    : cancionesDelHimnario.isEmpty
+                        ? const Center(
+                            child: Card(
+                              child: Padding(
+                                padding: EdgeInsets.all(32.0),
+                                child: Text(
+                                  'No se encontraron canciones',
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 16,
                                   ),
                                 ),
+                              ),
+                            ),
+                          )
+                        : ListView.builder(
+                            padding: const EdgeInsets.all(16.0),
+                            itemCount: cancionesDelHimnario.length,
+                            itemBuilder: (context, index) {
+                              final cancion = cancionesDelHimnario[index];
+                              return CancionCard(
+                                cancion: cancion,
+                                himnario: widget.himnario,
+                                isFavorite: widget.favoritos.contains(cancion.id),
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => CancionScreen(
+                                        cancion: cancion,
+                                        himnario: widget.himnario,
+                                        favoritos: widget.favoritos,
+                                        onToggleFavorito: widget.onToggleFavorito,
+                                      ),
+                                    ),
+                                  );
+                                },
                               );
                             },
-                          );
-                        },
-                      ),
+                          ),
               ),
             ],
           ),

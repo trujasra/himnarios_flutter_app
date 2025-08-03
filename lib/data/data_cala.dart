@@ -24,10 +24,9 @@ class DataCala {
       'id_tipo_himnario': 3, // Cala
       'numero': '2',
       'titulo': 'NUEVA CANCION',
-      'orden': 1,
+      'orden': 3,
       'estado_registro': 1,
     },
-    // Puedes agregar más canciones aquí siguiendo el mismo formato
   ];
 
   static const List<Map<String, dynamic>> letras = [
@@ -121,6 +120,5 @@ Por su gracia y por su amor,
 Por su salvación y perdón.''',
       'estado_registro': 1,
     },
-    // Puedes agregar más letras aquí siguiendo el mismo formato
   ];
 } 

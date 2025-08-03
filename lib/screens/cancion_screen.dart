@@ -203,22 +203,26 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
               // Contenido de la canción
               Expanded(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(3.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                                          children: [
-                                               // Letra de la canción
+                                               // Letra de la canción con zoom
                         Card(
-                          child: Padding(
-                            padding: const EdgeInsets.all(12.0),
-                            child: Text(
-                              cancionActual.letra,
-                              style: const TextStyle(
-                                fontSize: 22,
-                                height: 1.6,
-                                color: AppTheme.textColor,
+                          child: InteractiveViewer(
+                            minScale: 0.5,
+                            maxScale: 4.0,
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Text(
+                                cancionActual.letra,
+                                style: const TextStyle(
+                                  fontSize: 22,
+                                  height: 1.6,
+                                  color: AppTheme.textColor,
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                              textAlign: TextAlign.center,
                             ),
                           ),
                         ),

@@ -42,11 +42,13 @@ class _HomeScreenState extends State<HomeScreen> {
       final cancionesData = await _cancionesService.getCanciones();
       final himnariosData = await _cancionesService.getHimnariosCompletos();
       final idiomasData = await _cancionesService.getIdiomas();
+      final favoritosData = await _cancionesService.getFavoritos();
       
       setState(() {
         canciones = cancionesData;
         himnarios = himnariosData;
         idiomas = idiomasData;
+        favoritos = favoritosData;
         isLoading = false;
       });
     } catch (e) {
@@ -82,14 +84,22 @@ class _HomeScreenState extends State<HomeScreen> {
     }).toList();
   }
 
-  void toggleFavorito(int cancionId) {
-    setState(() {
+  Future<void> toggleFavorito(int cancionId) async {
+    try {
       if (favoritos.contains(cancionId)) {
-        favoritos.remove(cancionId);
+        await _cancionesService.quitarFavorito(cancionId);
+        setState(() {
+          favoritos.remove(cancionId);
+        });
       } else {
-        favoritos.add(cancionId);
+        await _cancionesService.agregarFavorito(cancionId);
+        setState(() {
+          favoritos.add(cancionId);
+        });
       }
-    });
+    } catch (e) {
+      print('Error cambiando favorito: $e');
+    }
   }
 
   @override
@@ -235,24 +245,26 @@ class _HomeScreenState extends State<HomeScreen> {
                         else
                           ...cancionesFiltradas.map((cancion) {
                             final himnarioCancion = himnarios.firstWhere((h) => h.nombre == cancion.himnario);
-                            return CancionCard(
-                              cancion: cancion,
-                              himnario: himnarioCancion,
-                              isFavorite: favoritos.contains(cancion.id),
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => CancionScreen(
-                                      cancion: cancion,
-                                      himnario: himnarioCancion,
-                                      favoritos: favoritos,
-                                      onToggleFavorito: toggleFavorito,
-                                    ),
-                                  ),
-                                );
-                              },
-                            );
+                                                       return CancionCard(
+                             cancion: cancion,
+                             himnario: himnarioCancion,
+                             isFavorite: favoritos.contains(cancion.id),
+                             mostrarHimnario: true, // Mostrar himnario en resultados de búsqueda
+                             onTap: () {
+                               Navigator.push(
+                                 context,
+                                 MaterialPageRoute(
+                                   builder: (context) => CancionScreen(
+                                     cancion: cancion,
+                                     himnario: himnarioCancion,
+                                     favoritos: favoritos,
+                                     onToggleFavorito: toggleFavorito,
+                                   ),
+                                 ),
+                               );
+                             },
+                             onToggleFavorito: () => toggleFavorito(cancion.id),
+                           );
                           }),
                         const SizedBox(height: 32),
                       ],
@@ -314,29 +326,30 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                         const SizedBox(height: 12),
-                        ...canciones
-                            .where((c) => favoritos.contains(c.id))
-                            .map((cancion) {
-                          final himnarioCancion = himnarios.firstWhere((h) => h.nombre == cancion.himnario);
-                          return CancionCard(
-                            cancion: cancion,
-                            himnario: himnarioCancion,
-                            isFavorite: true,
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => CancionScreen(
-                                    cancion: cancion,
-                                    himnario: himnarioCancion,
-                                    favoritos: favoritos,
-                                    onToggleFavorito: toggleFavorito,
-                                  ),
-                                ),
-                              );
-                            },
-                          );
-                        }),
+                                                 ...canciones
+                             .where((c) => favoritos.contains(c.id))
+                             .map((cancion) {
+                           final himnarioCancion = himnarios.firstWhere((h) => h.nombre == cancion.himnario);
+                           return CancionCard(
+                             cancion: cancion,
+                             himnario: himnarioCancion,
+                             isFavorite: true,
+                             onTap: () {
+                               Navigator.push(
+                                 context,
+                                 MaterialPageRoute(
+                                   builder: (context) => CancionScreen(
+                                     cancion: cancion,
+                                     himnario: himnarioCancion,
+                                     favoritos: favoritos,
+                                     onToggleFavorito: toggleFavorito,
+                                   ),
+                                 ),
+                               );
+                             },
+                             onToggleFavorito: () => toggleFavorito(cancion.id),
+                           );
+                         }),
                         const SizedBox(height: 24),
                       ],
                     ],

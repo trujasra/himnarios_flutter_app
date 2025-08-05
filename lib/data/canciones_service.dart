@@ -92,6 +92,41 @@ class CancionesService {
     }
   }
 
+  // Funciones para manejar favoritos
+  Future<List<int>> getFavoritos() async {
+    try {
+      return await _dbHelper.getFavoritos();
+    } catch (e) {
+      print('Error obteniendo favoritos: $e');
+      return [];
+    }
+  }
+
+  Future<void> agregarFavorito(int idCancion) async {
+    try {
+      await _dbHelper.agregarFavorito(idCancion);
+    } catch (e) {
+      print('Error agregando favorito: $e');
+    }
+  }
+
+  Future<void> quitarFavorito(int idCancion) async {
+    try {
+      await _dbHelper.quitarFavorito(idCancion);
+    } catch (e) {
+      print('Error quitando favorito: $e');
+    }
+  }
+
+  Future<bool> esFavorito(int idCancion) async {
+    try {
+      return await _dbHelper.esFavorito(idCancion);
+    } catch (e) {
+      print('Error verificando favorito: $e');
+      return false;
+    }
+  }
+
   // Obtener himnarios únicos
   Future<List<String>> getHimnarios() async {
     try {

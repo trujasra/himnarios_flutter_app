@@ -168,6 +168,83 @@ class DatabaseHelper {
     });
   }
 
+  // Funciones para manejar favoritos
+  Future<List<int>> getFavoritos() async {
+    final db = await instance.database;
+    final result = await db.query(
+      'Favoritos',
+      columns: ['id_cancion'],
+      where: 'estado_registro = ?',
+      whereArgs: [1],
+    );
+    return result.map((row) => row['id_cancion'] as int).toList();
+  }
+
+  Future<void> agregarFavorito(int idCancion) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    
+    // Verificar si ya existe
+    final existente = await db.query(
+      'Favoritos',
+      where: 'id_cancion = ?',
+      whereArgs: [idCancion],
+    );
+    
+    if (existente.isEmpty) {
+      // Insertar nuevo favorito
+      await db.insert('Favoritos', {
+        'id_cancion': idCancion,
+        'estado_registro': 1,
+        'fecha_registro': now,
+        'usuario_registro': 'ramiro.trujillo',
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+      print('✅ Favorito agregado: Canción $idCancion');
+    } else {
+      // Actualizar estado si ya existe
+      await db.update(
+        'Favoritos',
+        {
+          'estado_registro': 1,
+          'fecha_modificacion': now,
+          'usuario_modificacion': 'ramiro.trujillo',
+        },
+        where: 'id_cancion = ?',
+        whereArgs: [idCancion],
+      );
+      print('✅ Favorito actualizado: Canción $idCancion');
+    }
+  }
+
+  Future<void> quitarFavorito(int idCancion) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    
+    await db.update(
+      'Favoritos',
+      {
+        'estado_registro': 0,
+        'fecha_modificacion': now,
+        'usuario_modificacion': 'ramiro.trujillo',
+      },
+      where: 'id_cancion = ?',
+      whereArgs: [idCancion],
+    );
+    print('🗑️ Favorito removido: Canción $idCancion');
+  }
+
+  Future<bool> esFavorito(int idCancion) async {
+    final db = await instance.database;
+    final result = await db.query(
+      'Favoritos',
+      where: 'id_cancion = ? AND estado_registro = ?',
+      whereArgs: [idCancion, 1],
+    );
+    return result.isNotEmpty;
+  }
+
   /// Inserta los himnarios iniciales en la tabla Par_Tipo_Himnario
   Future<void> poblarHimnariosIniciales() async {
     final db = await instance.database;
@@ -256,7 +333,7 @@ class DatabaseHelper {
   }
 
   /// Inserta canciones de ejemplo para el himnario Cala (Aymara y Español) en las tablas Cancion y Letra
-  Future<void> poblarCancionesCalaEjemplo() async {
+  Future<void> poblarCancionesCala() async {
     final db = await instance.database;
     
     // Verificar si ya existen canciones para Cala
@@ -290,7 +367,7 @@ class DatabaseHelper {
         'fecha_modificacion': null,
         'usuario_modificacion': null,
       });
-      print('DEBUG: Letra insertada para canción ${letra['id_cancion']}: ID = $result');
+      print('DEBUG: Letra insertada para canción Cala ${letra['id_cancion']}: ID = $result');
     }
   }
 
@@ -368,7 +445,7 @@ class DatabaseHelper {
     try {
       await poblarIdiomasIniciales();
       await poblarHimnariosIniciales();
-      await poblarCancionesCalaEjemplo();
+      await poblarCancionesCala();
       print('Base de datos poblada exitosamente');
     } catch (e) {
       print('Error poblando base de datos: $e');
@@ -398,7 +475,7 @@ class DatabaseHelper {
       await db.delete('Cancion', where: 'id_tipo_himnario = ?', whereArgs: [3]);
       
       // Poblar nuevamente
-      await poblarCancionesCalaEjemplo();
+      await poblarCancionesCala();
       print('Canciones de Cala repobladas exitosamente');
     } catch (e) {
       print('Error repoblando canciones de Cala: $e');

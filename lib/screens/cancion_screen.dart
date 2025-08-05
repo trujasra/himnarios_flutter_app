@@ -106,6 +106,106 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
   // Verificar si hay múltiples versiones
   bool get tieneMultiplesVersiones => _versionesCancion != null && _versionesCancion!.length > 1;
 
+  // Formatear la letra con estilos especiales
+  Widget _formatearLetra(String letra) {
+    final lineas = letra.split('\n');
+    final widgets = <Widget>[];
+    
+    for (int i = 0; i < lineas.length; i++) {
+      final linea = lineas[i].trim();
+      if (linea.isEmpty) {
+        widgets.add(const SizedBox(height: 8));
+        continue;
+      }
+      
+      // Detectar si es una nota musical (entre paréntesis)
+      if (linea.startsWith('(') && linea.endsWith(')')) {
+        widgets.add(
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4),
+            child: Text(
+              linea,
+              style: TextStyle(
+                fontSize: 16,
+                color: const Color.fromARGB(255, 189, 4, 35),
+                fontStyle: FontStyle.italic,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        );
+      }
+      // Detectar si es CORO
+      else if (linea.toUpperCase() == 'CORO') {
+        widgets.add(
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            child: Text(
+              linea,
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: AppTheme.textColor,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        );
+      }
+      // Detectar si es autor (líneas que contienen nombres comunes de autores)
+      // else if (_esAutor(linea)) {
+      //   widgets.add(
+      //     Padding(
+      //       padding: const EdgeInsets.only(top: 20, bottom: 8),
+      //       child: Text(
+      //         linea,
+      //         style: TextStyle(
+      //           fontSize: 14,
+      //           color: Colors.orange[700],
+      //           fontStyle: FontStyle.italic,
+      //         ),
+      //         textAlign: TextAlign.center,
+      //       ),
+      //     ),
+      //   );
+      // }
+      // Texto normal de la letra
+      else {
+        widgets.add(
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 2),
+            child: Text(
+              linea,
+              style: const TextStyle(
+                fontSize: 22,
+                height: 1.6,
+                color: AppTheme.textColor,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        );
+      }
+    }
+    
+    return Column(
+      children: widgets,
+    );
+  }
+
+  // Detectar si una línea es autor
+  bool _esAutor(String linea) {
+    final autores = [
+      'Mario Zeballos',
+      'Guillermo Zeballos',
+      'Zeballos',
+      'Ch.',
+      'Ch',
+    ];
+    
+    return autores.any((autor) => linea.contains(autor));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -138,28 +238,30 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
                         icon: const Icon(Icons.arrow_back, color: Colors.white),
                       ),
                                              Expanded(
-                         child: Column(
-                           crossAxisAlignment: CrossAxisAlignment.start,
-                           children: [
-                             Text(
-                               '#${cancionActual.numero} - ${cancionActual.titulo}',
-                               style: const TextStyle(
-                                 color: Colors.white,
-                                 fontSize: 16,
-                                 fontWeight: FontWeight.w500,
-                               ),
-                               overflow: TextOverflow.ellipsis,
-                             ),
-                             Text(
-                               widget.himnario.nombre,
-                               style: const TextStyle(
-                                 color: Colors.white70,
-                                 fontSize: 14,
-                               ),
-                               overflow: TextOverflow.ellipsis,
-                             ),
-                           ],
-                         ),
+                                                   child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                '#${cancionActual.numero} - ${cancionActual.titulo}',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                textAlign: TextAlign.center,
+                                maxLines: 2,
+                              ),
+                              Text(
+                                widget.himnario.nombre,
+                                style: TextStyle(
+                                  color: Colors.yellow[100],
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
+                          ),
                        ),
                       IconButton(
                         onPressed: () => widget.onToggleFavorito(cancionActual.id),
@@ -203,30 +305,27 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
               // Contenido de la canción
               Expanded(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 0.0, vertical: 16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                                         children: [
-                                               // Letra de la canción con zoom
-                        Card(
-                          child: InteractiveViewer(
-                            minScale: 0.5,
-                            maxScale: 4.0,
-                            child: Padding(
-                              padding: const EdgeInsets.all(12.0),
-                              child: Text(
-                                cancionActual.letra,
-                                style: const TextStyle(
-                                  fontSize: 22,
-                                  height: 1.6,
-                                  color: AppTheme.textColor,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
+                    children: [
+                      // Letra de la canción con zoom - Fondo blanco que ocupa todo el ancho
+                      Card(
+                        margin: EdgeInsets.zero,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.zero,
+                        ),
+                        child: InteractiveViewer(
+                          minScale: 0.5,
+                          maxScale: 4.0,
+                          child: Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+                            child: _formatearLetra(cancionActual.letra),
                           ),
                         ),
-                     ],
+                      ),
+                    ],
                   ),
                 ),
               ),

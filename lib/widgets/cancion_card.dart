@@ -8,6 +8,8 @@ class CancionCard extends StatelessWidget {
   final Himnario himnario;
   final bool isFavorite;
   final VoidCallback onTap;
+  final VoidCallback? onToggleFavorito;
+  final bool mostrarHimnario;
 
   const CancionCard({
     super.key,
@@ -15,6 +17,8 @@ class CancionCard extends StatelessWidget {
     required this.himnario,
     required this.isFavorite,
     required this.onTap,
+    this.onToggleFavorito,
+    this.mostrarHimnario = false,
   });
 
   @override
@@ -66,14 +70,26 @@ class CancionCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        cancion.titulo,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                          color: AppTheme.textColor,
-                        ),
-                      ),
+                                             Text(
+                         cancion.titulo,
+                         style: const TextStyle(
+                           fontSize: 16,
+                           fontWeight: FontWeight.w600,
+                           color: Color.fromARGB(255, 30, 45, 59),
+                         ),
+                       ),
+                       if (mostrarHimnario) ...[
+                         const SizedBox(height: 2),
+                         Text(
+                           himnario.nombre,
+                           style: TextStyle(
+                             fontSize: 12,
+                             color: Colors.grey,
+                             fontWeight: FontWeight.w500,
+                             fontStyle: FontStyle.italic,
+                           ),
+                         ),
+                       ],
                       if (cancion.tituloSecundario != null) ...[
                         const SizedBox(height: 2),
                         Text(
@@ -88,29 +104,6 @@ class CancionCard extends StatelessWidget {
                       const SizedBox(height: 4),
                       Row(
                         children: [
-                          // Badge de categoría
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.grey.withOpacity(0.1),
-                              borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: Colors.grey.withOpacity(0.3)),
-                            ),
-                            child: Text(
-                              cancion.categoria,
-                              style: const TextStyle(
-                                fontSize: 10,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                          
-                          const SizedBox(width: 8),
-                          
                           // Badge de idioma
                           if (cancion.tieneMultiplesVersiones)
                             Container(
@@ -143,31 +136,31 @@ class CancionCard extends StatelessWidget {
                                 ],
                               ),
                             )
-                          else if (cancion.idioma != "Español")
+                          else
                             Container(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
                                 vertical: 4,
                               ),
                               decoration: BoxDecoration(
-                                color: Colors.blue.withOpacity(0.1),
+                                color: _getColorForIdioma(cancion.idioma).withOpacity(0.1),
                                 borderRadius: BorderRadius.circular(8),
-                                border: Border.all(color: Colors.blue.withOpacity(0.3)),
+                                border: Border.all(color: _getColorForIdioma(cancion.idioma).withOpacity(0.3)),
                               ),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  const Icon(
+                                  Icon(
                                     Icons.language,
                                     size: 10,
-                                    color: Colors.blue,
+                                    color: _getColorForIdioma(cancion.idioma),
                                   ),
                                   const SizedBox(width: 2),
                                   Text(
                                     cancion.idioma,
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontSize: 10,
-                                      color: Colors.blue,
+                                      color: _getColorForIdioma(cancion.idioma),
                                       fontWeight: FontWeight.w500,
                                     ),
                                   ),
@@ -180,29 +173,46 @@ class CancionCard extends StatelessWidget {
                   ),
                 ),
                 
-                // Iconos de acción
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (isFavorite)
-                      const Icon(
-                        Icons.favorite,
-                        color: Colors.red,
-                        size: 20,
-                      ),
-                    const SizedBox(width: 8),
-                    const Icon(
-                      Icons.chevron_right,
-                      color: Colors.grey,
-                      size: 20,
-                    ),
-                  ],
-                ),
+                                 // Iconos de acción
+                 Row(
+                   mainAxisSize: MainAxisSize.min,
+                   children: [
+                     GestureDetector(
+                       onTap: onToggleFavorito,
+                       child: Icon(
+                         isFavorite ? Icons.favorite : Icons.favorite_border,
+                         color: isFavorite ? Colors.red : Colors.grey,
+                         size: 20,
+                       ),
+                     ),
+                     const SizedBox(width: 8),
+                     const Icon(
+                       Icons.chevron_right,
+                       color: Colors.grey,
+                       size: 20,
+                     ),
+                   ],
+                 ),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  // Método para obtener el color según el idioma
+  Color _getColorForIdioma(String idioma) {
+    switch (idioma.toLowerCase()) {
+      case 'aymara':
+       return const Color(0xFF27AE60);      
+      case 'español':
+        return const Color.fromARGB(255, 177, 60, 231); // Rojo elegante para Español
+      case 'quechua':
+
+        return const Color(0xFF4A90E2); // Azul elegante para Aymara
+      default:
+        return Colors.grey; // Color por defecto
+    }
   }
 } 

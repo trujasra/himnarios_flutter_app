@@ -1,3613 +1,3612 @@
 ﻿class DataCala {
-static const List<Map<String, dynamic>> canciones = [
-  {
-    'id_cancion': 1,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '1',
-    'titulo': 'TATITUN JUTAÑAPAJJA',
-    'orden': 1,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 2,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '1',
-    'titulo': 'PRONTO VUELVE JESUCRISTO',
-    'orden': 2,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 3,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '2',
-    'titulo': 'JESUSAN ARUPAT YATIYAÑÄNI',
-    'orden': 3,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 4,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '2',
-    'titulo': 'PREDICAD POR DOQUIER',
-    'orden': 4,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 5,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '3',
-    'titulo': 'MUNAT KHESPIYIRI JUMARUW CATOKSMA',
-    'orden': 5,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 6,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '3',
-    'titulo': 'SALVADOR, EN TI CONFÍO',
-    'orden': 6,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 7,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '4',
-    'titulo': 'IST\'ITAY DIOS AWQUI',
-    'orden': 7,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 8,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '4',
-    'titulo': 'GUÍAME A LA GLORIA',
-    'orden': 8,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 9,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '5',
-    'titulo': 'CRISTON THAQUIPAN SARÄ',
-    'orden': 9,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 10,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '5',
-    'titulo': 'POR SU SENDA MARCHARÉ',
-    'orden': 10,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 11,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '6',
-    'titulo': 'DIOS AWQUI UÑTANITAY',
-    'orden': 11,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 12,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '6',
-    'titulo': 'HEME AQUÍ, OH PADRE DIOS',
-    'orden': 12,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 13,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '7',
-    'titulo': 'TATIT JESUCRISTORUW THAKTA',
-    'orden': 13,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 14,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '7',
-    'titulo': 'A JESÚS BUSQUÉ',
-    'orden': 14,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 15,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '8',
-    'titulo': 'DIOSAW IMÄTAM',
-    'orden': 15,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 16,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '8',
-    'titulo': 'TU PADRE DIOS TE CUIDARÁ',
-    'orden': 16,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 17,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '9',
-    'titulo': 'LURATANACAM UÑTASAJJ',
-    'orden': 17,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 18,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '9',
-    'titulo': 'MIRANDO TÚ OBRA, ¡OH CREADOR!',
-    'orden': 18,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 19,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '10',
-    'titulo': 'KOLLAN AWATIR AWQUI',
-    'orden': 19,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 20,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '10',
-    'titulo': '¡OH DIOS, PADRE CELESTIAL!',
-    'orden': 20,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 21,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '11',
-    'titulo': 'MUNASIÑAMPI K\'OCHUÑÄNI',
-    'orden': 21,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 22,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '11',
-    'titulo': 'CANTEMOS DE JESÚS',
-    'orden': 22,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 23,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '12',
-    'titulo': 'YUSPAGARSMAW AWQUEJJA',
-    'orden': 23,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 24,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '12',
-    'titulo': 'TE DOY GRACIAS, SEÑOR',
-    'orden': 24,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 25,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '13',
-    'titulo': 'NAVIDADATA CUSISIÑÄNI',
-    'orden': 25,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 26,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '13',
-    'titulo': 'LA NAVIDAD',
-    'orden': 26,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 27,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '14',
-    'titulo': 'JUCHARAR JUTAMAY',
-    'orden': 27,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 28,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '14',
-    'titulo': 'OH VEN HOY, PECADOR',
-    'orden': 28,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 29,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '15',
-    'titulo': 'ALAJJPACH MARCARUW SARASCTA',
-    'orden': 29,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 30,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '15',
-    'titulo': 'A LA GLORIA VOY',
-    'orden': 30,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 31,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '16',
-    'titulo': 'MÄ JAN SIRVIR ALI',
-    'orden': 31,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 32,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '16',
-    'titulo': 'LA ZARZA',
-    'orden': 32,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 33,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '17',
-    'titulo': 'TATITUN CH\'AMAPA',
-    'orden': 33,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 34,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '17',
-    'titulo': 'EL PODER DE CRISTO',
-    'orden': 34,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 35,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '18',
-    'titulo': 'TATITUW IRPASQUITU',
-    'orden': 35,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 36,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '18',
-    'titulo': 'EL SEÑOR ME ENCONTRÓ',
-    'orden': 36,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 37,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '19',
-    'titulo': 'DIOSAJJ BENDIZPAN MATRIMONIORU',
-    'orden': 37,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 38,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '19',
-    'titulo': 'DIOS BENDIGA EL MATRIMONIO',
-    'orden': 38,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 39,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '20',
-    'titulo': 'JAN KHEPAR UÑTASA',
-    'orden': 39,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 40,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '20',
-    'titulo': 'NO MIREMOS ATRÁS',
-    'orden': 40,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 41,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '21',
-    'titulo': 'SUMA DIOS AWQUI IRPAQUITAY',
-    'orden': 41,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 42,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '21',
-    'titulo': 'GUÍAME, DIOS MÍO',
-    'orden': 42,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 43,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '22',
-    'titulo': 'JESUSAJJ JIWAS LAYCU JUTI',
-    'orden': 43,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 44,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '22',
-    'titulo': 'CRISTO EL SEÑOR DESCENDIÓ',
-    'orden': 44,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 45,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '23',
-    'titulo': 'ALAJJPACHAW MARCAJJAJJA',
-    'orden': 45,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 46,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '23',
-    'titulo': 'AL CIELO VOY',
-    'orden': 46,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 47,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '24',
-    'titulo': 'JIWAJJ PUNCUMARU LEKT\'ANÏTAMJJA',
-    'orden': 47,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 48,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '24',
-    'titulo': 'SI LA MUERTE LLAMA HOY',
-    'orden': 48,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 49,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '25',
-    'titulo': 'REY JESUSAW JUTANI',
-    'orden': 49,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 50,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '25',
-    'titulo': '¡GLORIOSO DÍA SERÁ!',
-    'orden': 50,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 51,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '26',
-    'titulo': 'QHUYAPAYASIRI KOLLAN SUMA AWQUI',
-    'orden': 51,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 52,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '26',
-    'titulo': 'PADRE DIOS ETERNO',
-    'orden': 52,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 53,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '27',
-    'titulo': 'CRISTON JUTAÑAP SUYASCTA',
-    'orden': 53,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 54,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '27',
-    'titulo': 'ESPERO QUE CRISTO VENGA',
-    'orden': 54,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 55,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '28',
-    'titulo': 'BELÉN MARCANWA YURIWAYI',
-    'orden': 55,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 56,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '28',
-    'titulo': 'EN BELÉN NACIÓ JESÚS',
-    'orden': 56,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 57,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '29',
-    'titulo': 'TATIT JESUSAJJ NIYAW JUTANI',
-    'orden': 57,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 58,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '29',
-    'titulo': 'MUY PRONTO CRISTO VENDRÁ',
-    'orden': 58,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 59,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '30',
-    'titulo': 'DIOS, YUSPAGARSMAWA',
-    'orden': 59,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 60,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '30',
-    'titulo': 'GRACIAS TE DOY, SEÑOR',
-    'orden': 60,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 61,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '31',
-    'titulo': 'CRISTO KOLLAN APOJJA',
-    'orden': 61,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 62,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '31',
-    'titulo': 'JESUCRISTO, MI BUEN DIOS',
-    'orden': 62,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 63,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '32',
-    'titulo': 'YATICHITAY KOLLAN CRISTO',
-    'orden': 63,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 64,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '32',
-    'titulo': 'QUIERO CRISTO, QUE ME ENSEÑES',
-    'orden': 64,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 65,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '33',
-    'titulo': 'KOLLAN SUMA DIOS AWQUI',
-    'orden': 65,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 66,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '33',
-    'titulo': 'CRISTO, AMANTE SALVADOR',
-    'orden': 66,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 67,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '34',
-    'titulo': 'CRISTOMPIW WIÑAY JACÄ',
-    'orden': 67,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 68,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '34',
-    'titulo': 'YO VIVIRÉ CON JESÚS',
-    'orden': 68,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 69,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '35',
-    'titulo': 'DIOSAQUIWA NAYAROJJ IMASQUITANI',
-    'orden': 69,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 70,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '35',
-    'titulo': 'DIOS ME GUARDARÁ',
-    'orden': 70,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 71,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '36',
-    'titulo': 'MUNASIÑAMPI SARAPJJAÑÄNI',
-    'orden': 71,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 72,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '36',
-    'titulo': 'SIGAMOS CON AMOR',
-    'orden': 72,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 73,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '37',
-    'titulo': 'WIÑAVATAQUIW TATITUNCTA',
-    'orden': 73,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 74,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '37',
-    'titulo': 'VIVO YO CON CRISTO, MI SEÑOR',
-    'orden': 74,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 75,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '38',
-    'titulo': 'CRISTO SAPAQUIWA KHESPIYI',
-    'orden': 75,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 76,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '38',
-    'titulo': 'SÓLO CRISTO SALVA',
-    'orden': 76,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 77,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '39',
-    'titulo': '¿QHITIS SARANI?',
-    'orden': 77,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 78,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '39',
-    'titulo': '¿QUIÉN IRÁ?',
-    'orden': 78,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 79,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '40',
-    'titulo': 'QHUYAPT\' AYASITAY CRISTO',
-    'orden': 79,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 80,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '40',
-    'titulo': 'TEN MISERICORDIA, CRISTO',
-    'orden': 80,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 81,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '41',
-    'titulo': 'YUSPAGARAÑÄNI ALAJJPACH AWQUISARU',
-    'orden': 81,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 82,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '41',
-    'titulo': 'DEMOS GRACIAS AL SEÑOR',
-    'orden': 82,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 83,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '42',
-    'titulo': 'JUC\'AMPI MUNÄMA',
-    'orden': 83,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 84,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '42',
-    'titulo': 'TE AMARÉ MÁS',
-    'orden': 84,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 85,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '43',
-    'titulo': 'CUSISISAW NAYAJJ K\'OCHÜ',
-    'orden': 85,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 86,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '43',
-    'titulo': 'TE ALABO CON GOZO',
-    'orden': 86,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 87,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '44',
-    'titulo': 'SUMA DIOS AWQUI',
-    'orden': 87,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 88,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '44',
-    'titulo': 'PADRE CELESTIAL',
-    'orden': 88,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 89,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '45',
-    'titulo': 'TATITUSANA MARCAPA',
-    'orden': 89,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 90,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '45',
-    'titulo': 'GLORIOSA MORADA DE DIOS',
-    'orden': 90,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 91,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '46',
-    'titulo': 'KHESPIYIRI YANAPT\'ITAYA',
-    'orden': 91,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 92,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '46',
-    'titulo': 'SALVADOR, AYÚDAME',
-    'orden': 92,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 93,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '47',
-    'titulo': 'YANAPT\'ITAY DIOS AWQUEJJA',
-    'orden': 93,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 94,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '47',
-    'titulo': 'DAME TU FUERZA, BENDITO DIOS',
-    'orden': 94,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 95,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '48',
-    'titulo': 'TATAY, CAYUMARUW JUTTA',
-    'orden': 95,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 96,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '48',
-    'titulo': 'SEÑOR, ANTE TUS PIES',
-    'orden': 96,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 97,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '49',
-    'titulo': 'JAKE MASIMAT AMTASIMAY',
-    'orden': 97,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 98,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '49',
-    'titulo': 'RECUERDA DE TU PRÓJIMO',
-    'orden': 98,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 99,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '50',
-    'titulo': 'JUC\'ANIQUIWA AJJSARTIREJJA',
-    'orden': 99,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 100,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '50',
-    'titulo': 'POCOS SON LOS QUE TEMEN A DIOS',
-    'orden': 100,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 101,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '51',
-    'titulo': 'YUSPAGARSMAW SUMA AWQUI',
-    'orden': 101,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 102,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '51',
-    'titulo': 'TE DOY GRACIAS, OH DIOS PADRE',
-    'orden': 102,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 103,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '52',
-    'titulo': 'CHUYMAJJAJJ CUSISITAW JICJJATASI',
-    'orden': 103,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 104,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '52',
-    'titulo': 'MI CORAZÓN ESTÁ CONTENTO',
-    'orden': 104,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 105,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '53',
-    'titulo': 'CUTTANJJAMAYA',
-    'orden': 105,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 106,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '53',
-    'titulo': 'VUELVE A DIOS, HIJO',
-    'orden': 106,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 107,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '54',
-    'titulo': 'SAPA MAYNIW DIOSAR UÑSTAÑÄNI',
-    'orden': 107,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 108,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '54',
-    'titulo': 'DAREMOS CUENTA A DIOS',
-    'orden': 108,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 109,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '55',
-    'titulo': 'ALAJJPACHANQUIR SUMAAWQUI',
-    'orden': 109,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 110,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '55',
-    'titulo': 'OH PADRE MÍO, DIOS Y SEÑOR',
-    'orden': 110,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 111,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '56',
-    'titulo': 'DIOSAN JAWSATAPJJA',
-    'orden': 111,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 112,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '56',
-    'titulo': 'EL LLAMAMIENTO DE DIOS',
-    'orden': 112,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 113,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '57',
-    'titulo': 'CRISTO SAPARUQUIWA',
-    'orden': 113,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 114,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '57',
-    'titulo': 'SOLO A CRISTO SEGUIRÉ',
-    'orden': 114,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 115,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '58',
-    'titulo': 'TAKE CUNAS DIOSANQUIWA',
-    'orden': 115,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 116,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '58',
-    'titulo': 'TODAS LAS COSAS SON DE DIOS',
-    'orden': 116,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 117,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '59',
-    'titulo': 'ALAJJPACHANQUIR SUMA CRISTOJJ',
-    'orden': 117,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 118,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '59',
-    'titulo': 'SUFRISTE TÚ POR MÍ',
-    'orden': 118,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 119,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '60',
-    'titulo': '¿CUNANQUIS CUSISIÑAJJA?',
-    'orden': 119,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 120,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '60',
-    'titulo': '¿EN QUÉ HAY FELICIDAD?',
-    'orden': 120,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 121,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '61',
-    'titulo': 'MUNASIRI KOLLAN CRISTO',
-    'orden': 121,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 122,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '61',
-    'titulo': 'GUÍAME, AMANTE CRISTO',
-    'orden': 122,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 123,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '62',
-    'titulo': 'LAJJA CH\'AMACANQUÏR JAKER PARLAM',
-    'orden': 123,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 124,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '62',
-    'titulo': 'TESTIFIQUE AL HOMBRE DE TINIEBLAS',
-    'orden': 124,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 125,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '63',
-    'titulo': 'CRISTOJJ CRUZAN JIWAWAYI',
-    'orden': 125,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 126,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '63',
-    'titulo': 'CRISTO MURIÓ EN LA CRUZ',
-    'orden': 126,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 127,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '64',
-    'titulo': 'MAYNIT MAYNICAM MUNASIPJJAM',
-    'orden': 127,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 128,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '64',
-    'titulo': 'ÁMENSE DE TODO CORAZÓN',
-    'orden': 128,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 129,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '65',
-    'titulo': 'DIOSAJJ MUNAT YOKAPWA QHITANI',
-    'orden': 129,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 130,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '65',
-    'titulo': 'AMÓ DIOS AL MUNDO',
-    'orden': 130,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 131,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '66',
-    'titulo': 'WAQUISCHASTATI, NIYAW SARJJAÑÄNI',
-    'orden': 131,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 132,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '66',
-    'titulo': 'YA NOS IREMOS A LOS CIELOS',
-    'orden': 132,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 133,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '67',
-    'titulo': 'CH\'AMANCHITAY CRISTO',
-    'orden': 133,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 134,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '67',
-    'titulo': '¡OH SEÑOR! ESFUÉRZAME',
-    'orden': 134,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 135,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '68',
-    'titulo': 'MUNATA CRISTO',
-    'orden': 135,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 136,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '68',
-    'titulo': 'AMADO CRISTO',
-    'orden': 136,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 137,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '69',
-    'titulo': 'MOJJSA ARUNACA',
-    'orden': 137,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 138,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '69',
-    'titulo': 'AL ESCUCHAR TUS PALABRAS',
-    'orden': 138,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 139,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '70',
-    'titulo': 'KHESPIYASIRI CRISTO',
-    'orden': 139,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 140,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '70',
-    'titulo': 'AYÚDAME CRISTO, MI SEÑOR',
-    'orden': 140,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 141,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '71',
-    'titulo': 'TATIT CRISTO YANAPT\'ITAY',
-    'orden': 141,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 142,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '71',
-    'titulo': 'DAME FUERZAS, CRISTO MÍO',
-    'orden': 142,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 143,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '72',
-    'titulo': 'CUSISITÄTWA NAYAJJ',
-    'orden': 143,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 144,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '72',
-    'titulo': 'ME SIENTO FELIZ',
-    'orden': 144,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 145,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '73',
-    'titulo': 'JUMAW KHESPIYASISTA',
-    'orden': 145,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 146,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '73',
-    'titulo': 'ERES TÚ MI SALVADOR',
-    'orden': 146,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 147,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '74',
-    'titulo': 'TUCUYCAM SAYT\'AÑÄNI',
-    'orden': 147,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 148,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '74',
-    'titulo': 'SIGUE SIN DESMAYAR',
-    'orden': 148,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 149,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '75',
-    'titulo': 'ARUNACAMAJJ KORIT JUC\'AMP SUMAW',
-    'orden': 149,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 150,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '75',
-    'titulo': 'PRECIOSA ES TU PALABRA',
-    'orden': 150,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 151,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '76',
-    'titulo': 'JESUCRISTOW YANAPASQUITU',
-    'orden': 151,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 152,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '76',
-    'titulo': 'EL SEÑOR JESÚS ME AYUDARÁ',
-    'orden': 152,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 153,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '77',
-    'titulo': 'CRISTO TATITU K\'OMACHISTAW',
-    'orden': 153,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 154,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '77',
-    'titulo': 'CRISTO JESÚS, CON TU GRAN AMOR',
-    'orden': 154,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 155,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '78',
-    'titulo': 'MUNAT TATITOJJA',
-    'orden': 155,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 156,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '78',
-    'titulo': 'EL SEÑOR ME SALVO',
-    'orden': 156,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 157,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '79',
-    'titulo': 'CH\'AMAC THAQUIN JACASCÄYÄT',
-    'orden': 157,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 158,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '79',
-    'titulo': 'MI TESTIMONIO',
-    'orden': 158,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 159,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '80',
-    'titulo': 'JANC\' AQUIW JUTANI TATIT KHESPIYIREJJ',
-    'orden': 159,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 160,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '80',
-    'titulo': 'JESUCRISTO EL SEÑOR, VIENE OTRA VEZ',
-    'orden': 160,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 161,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '81',
-    'titulo': 'KORI MARCARUW SARASCTA',
-    'orden': 161,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 162,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '81',
-    'titulo': 'VOY A LA MANSIÓN GLORIOSA',
-    'orden': 162,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 163,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '82',
-    'titulo': '¿CUNJAMÄSQUIS CHUYMAMAJJA?',
-    'orden': 163,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 164,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '82',
-    'titulo': '¿CÓMO ESTÁ TU CORAZÓN?',
-    'orden': 164,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 165,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '83',
-    'titulo': 'CRISTOR CUTT\'ANJJAM',
-    'orden': 165,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 166,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '83',
-    'titulo': 'VUELVE A CRISTO',
-    'orden': 166,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 167,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '84',
-    'titulo': 'LAODICEA IGLESIA',
-    'orden': 167,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 168,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '84',
-    'titulo': 'LA IGLESIA DE LAODICEA',
-    'orden': 168,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 169,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '85',
-    'titulo': 'NAYAR YATICHITA, MUNASIÑAMATA',
-    'orden': 169,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 170,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '85',
-    'titulo': 'ENSÉÑAME DE TU AMOR',
-    'orden': 170,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 171,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '86',
-    'titulo': 'DIOSAN CH\'AMAPA',
-    'orden': 171,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 172,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '86',
-    'titulo': 'EL PODER DE DIOS',
-    'orden': 172,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 173,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '87',
-    'titulo': 'JUMA SAPAQUïTAW',
-    'orden': 173,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 174,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '87',
-    'titulo': 'SÓLO TÚ ERES MI SEÑOR',
-    'orden': 174,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 175,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '88',
-    'titulo': 'KOLLANA CRISTO YANAPT\' ASIQUITAY',
-    'orden': 175,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 176,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '88',
-    'titulo': 'OH SEÑOR, AYÚDAME',
-    'orden': 176,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 177,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '89',
-    'titulo': 'ALAJJPACHAJJ K\'OMA MARCAWA',
-    'orden': 177,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 178,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '89',
-    'titulo': 'EL HOGAR CELESTIAL ES LIMPIO',
-    'orden': 178,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 179,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '90',
-    'titulo': 'TATITUSAJJ PÄ THAQUI USCU',
-    'orden': 179,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 180,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '90',
-    'titulo': 'HAY DOS CAMINOS',
-    'orden': 180,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 181,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '91',
-    'titulo': 'ALAJJPACH MARCA',
-    'orden': 181,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 182,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '91',
-    'titulo': 'LA MANSIÓN GLORIOSA',
-    'orden': 182,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 183,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '92',
-    'titulo': 'DIOSAROJJ SIRVISCÄWA',
-    'orden': 183,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 184,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '92',
-    'titulo': 'SERVIRÉ A MI DIOS',
-    'orden': 184,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 185,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '93',
-    'titulo': 'JIWAÑARU ATIPIR CRISTO',
-    'orden': 185,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 186,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '93',
-    'titulo': 'JESÚS VENCIÓ LA MUERTE',
-    'orden': 186,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 187,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '94',
-    'titulo': 'TATITUN ORACIÓN LURATAPA',
-    'orden': 187,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 188,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '94',
-    'titulo': 'LA ORACIÓN DE JESÚS',
-    'orden': 188,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 189,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '95',
-    'titulo': 'DIOSAN MUNASIÑAPA',
-    'orden': 189,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 190,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '95',
-    'titulo': 'EL AMOR DE DIOS',
-    'orden': 190,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 191,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '96',
-    'titulo': 'THAKASAW JICJJATTA KHESPIYIREJJARU',
-    'orden': 191,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 192,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '96',
-    'titulo': 'BUSCANDO ENCONTRÉ AL SALVADOR',
-    'orden': 192,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 193,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '97',
-    'titulo': 'JACH\'ACHAÑÄN CUSISITA DIOSASARU',
-    'orden': 193,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 194,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '97',
-    'titulo': 'A NUESTRO DIOS CANTEMOS HOY',
-    'orden': 194,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 195,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '98',
-    'titulo': 'TATIT CRISTO QHUYAPT\' AYITAY',
-    'orden': 195,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 196,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '98',
-    'titulo': 'SEÑOR, TEN PIEDAD DE MÍ',
-    'orden': 196,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 197,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '99',
-    'titulo': '\"NAYAR JUTAM\", SISTAWA',
-    'orden': 197,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 198,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '99',
-    'titulo': '\"VEN A MÍ\"',
-    'orden': 198,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 199,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '100',
-    'titulo': 'DIOSARU YUPAYCHAÑAWA',
-    'orden': 199,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 200,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '100',
-    'titulo': 'HOY ES DÍA DE REPOSO',
-    'orden': 200,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 201,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '101',
-    'titulo': 'TATIT CRISTOW CHEKA THAQUEJJA',
-    'orden': 201,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 202,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '101',
-    'titulo': 'CRISTO ES EL CAMINO FIEL',
-    'orden': 202,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 203,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '102',
-    'titulo': 'JACAÑAJJ NAYATAQUEJJ CRISTOWA',
-    'orden': 203,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 204,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '102',
-    'titulo': 'PARA MÍ EL VIVIR ES JESÚS',
-    'orden': 204,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 205,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '103',
-    'titulo': 'KHESPIYIR CRISTOR MAQHATAM',
-    'orden': 205,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 206,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '103',
-    'titulo': 'ACUDE A CRISTO',
-    'orden': 206,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 207,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '104',
-    'titulo': 'TATIT CRISTOW JUCHAT K\'OMACHJJETU',
-    'orden': 207,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 208,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '104',
-    'titulo': 'CRISTO ME HA PERDONADO',
-    'orden': 208,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 209,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '105',
-    'titulo': 'TATITUW KHESPIYITU',
-    'orden': 209,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 210,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '105',
-    'titulo': 'CRISTO ME SALVÓ',
-    'orden': 210,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 211,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '106',
-    'titulo': 'ALAJJPACHANQUIR AWQUEJJA',
-    'orden': 211,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 212,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '106',
-    'titulo': 'OH PADRE AMADO',
-    'orden': 212,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 213,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '107',
-    'titulo': 'CRISTOJJ NIYAW JUTANI',
-    'orden': 213,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 214,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '107',
-    'titulo': 'CRISTO EL SEÑOR VENDRÁ',
-    'orden': 214,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 215,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '108',
-    'titulo': 'SUMA DIOS AWQUI ARJJATT\'ASITA',
-    'orden': 215,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 216,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '108',
-    'titulo': 'BENDITO PADRE, PIDO TU AYUDA',
-    'orden': 216,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 217,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '109',
-    'titulo': 'JAN KHEP UÑTAMTI',
-    'orden': 217,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 218,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '109',
-    'titulo': 'NO MIRES HACIA ATRÁS',
-    'orden': 218,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 219,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '110',
-    'titulo': 'CUSISITA K\'OCHUPJJAÑÄNI',
-    'orden': 219,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 220,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '110',
-    'titulo': 'CANTEMOS CON GOZO',
-    'orden': 220,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 221,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '111',
-    'titulo': 'KHESPIYIRI TATITUN YURITAPA',
-    'orden': 221,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 222,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '111',
-    'titulo': 'EL NACIMIENTO DEL SALVADOR',
-    'orden': 222,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 223,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '112',
-    'titulo': 'JICHHÜROJJ K\'OCHUÑÄN JESUSARU',
-    'orden': 223,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 224,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '112',
-    'titulo': 'CANTEMOS A JESÚS',
-    'orden': 224,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 225,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '113',
-    'titulo': 'JACATATAYAPJJETAY TATA',
-    'orden': 225,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 226,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '113',
-    'titulo': 'RENUÉVANOS SEÑOR',
-    'orden': 226,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 227,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '114',
-    'titulo': 'CRISTOT JAYAN JACÄYÄTA',
-    'orden': 227,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 228,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '114',
-    'titulo': 'VIVÍA LEJOS DEL SEÑOR',
-    'orden': 228,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 229,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '115',
-    'titulo': 'QUIMSA AMAWT\'A JAKENACA',
-    'orden': 229,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 230,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '115',
-    'titulo': 'LOS MAGOS DEL ORIENTE',
-    'orden': 230,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 231,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '116',
-    'titulo': 'MUNAT JILATA CUTT\' ANJJAMAY',
-    'orden': 231,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 232,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '116',
-    'titulo': 'AMIGO MÍO, VUELVE AL SEÑOR',
-    'orden': 232,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 233,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '117',
-    'titulo': 'SUYAÑÄN TATITURU',
-    'orden': 233,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 234,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '117',
-    'titulo': 'ESPEREMOS A JESÚS, EL SEÑOR',
-    'orden': 234,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 235,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '118',
-    'titulo': 'ORACIÓN LURAMAY',
-    'orden': 235,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 236,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '118',
-    'titulo': 'ORA AL SEÑOR',
-    'orden': 236,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 237,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '119',
-    'titulo': 'JUMAWA KHESPIYASISTA',
-    'orden': 237,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 238,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '119',
-    'titulo': 'TÚ ME SALVASTE',
-    'orden': 238,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 239,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '120',
-    'titulo': 'KOLLAN AJAY CATOKAÑÄNI',
-    'orden': 239,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 240,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '120',
-    'titulo': 'RECIBAMOS EL ESPÍRITU SANTO',
-    'orden': 240,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 241,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '121',
-    'titulo': 'CRISTOR ARCAÑÄNI',
-    'orden': 241,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 242,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '121',
-    'titulo': 'VAMOS, PUES, CON CRISTO',
-    'orden': 242,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 243,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '122',
-    'titulo': 'SUMA MATRIMONIO',
-    'orden': 243,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 244,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '122',
-    'titulo': 'EL MATRIMONIO',
-    'orden': 244,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 245,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '123',
-    'titulo': 'NIYAW SARJJAÑÄNI',
-    'orden': 245,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 246,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '123',
-    'titulo': 'NOS VAMOS A SIÓN',
-    'orden': 246,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 247,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '124',
-    'titulo': 'DIOS AWQUISAR YUSPAGARAÑÄNI',
-    'orden': 247,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 248,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '124',
-    'titulo': 'AGRADECIDO SEA NUESTRO DIOS',
-    'orden': 248,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 249,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '125',
-    'titulo': 'TATIT CRISTON LURATANACAPA',
-    'orden': 249,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 250,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '125',
-    'titulo': 'LAS OBRAS DE CRISTO',
-    'orden': 250,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 251,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '126',
-    'titulo': 'ADANAMPI, EVAMPI',
-    'orden': 251,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 252,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '126',
-    'titulo': 'ADÁN Y EVA',
-    'orden': 252,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 253,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '127',
-    'titulo': 'IRPAQUITAY JESUCRISTO',
-    'orden': 253,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 254,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '127',
-    'titulo': 'GUÍAME, OH JESUCRISTO',
-    'orden': 254,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 255,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '128',
-    'titulo': 'JUMARUW JACAÑAJJ CATUYASTA',
-    'orden': 255,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 256,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '128',
-    'titulo': 'ME ENTREGO A TI',
-    'orden': 256,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 257,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '129',
-    'titulo': 'DIOSAMPI IDOLONACAMPI',
-    'orden': 257,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 258,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '129',
-    'titulo': 'DIOS Y LOS ÍDOLOS',
-    'orden': 258,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 259,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '130',
-    'titulo': 'CUSISIÑAW CHUYMAJJAN UTJI',
-    'orden': 259,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 260,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '130',
-    'titulo': '¡QUÉ CONTENTO ESTOY EN MI CORAZÓN!',
-    'orden': 260,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 261,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '131',
-    'titulo': 'KOLLAN AJAYU',
-    'orden': 261,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 262,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '131',
-    'titulo': 'EL ESPÍRITU SANTO',
-    'orden': 262,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 263,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '132',
-    'titulo': 'DIOSAW NAYAN KHANAJJAJJA',
-    'orden': 263,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 264,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '132',
-    'titulo': 'DIOS ES MI LUZ',
-    'orden': 264,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 265,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '133',
-    'titulo': 'JESUCRISTOW KHESPIYITU',
-    'orden': 265,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 266,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '133',
-    'titulo': 'CRISTO EL SEÑOR ME HA SALVADO',
-    'orden': 266,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 267,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '134',
-    'titulo': 'CRISTOMPËJJASINJJA',
-    'orden': 267,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 268,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '134',
-    'titulo': 'AL ESTAR CON CRISTO',
-    'orden': 268,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 269,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '135',
-    'titulo': 'DIOSAN TUNCA CAMACHINACAPA',
-    'orden': 269,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 270,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '135',
-    'titulo': 'LOS DIEZ MANDAMIENTOS DE DIOS',
-    'orden': 270,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 271,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '136',
-    'titulo': 'NIVAW JUTANI KHESPIVIR CRISTOJJA',
-    'orden': 271,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 272,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '136',
-    'titulo': 'PRONTO CRISTO VOLVERÁ',
-    'orden': 272,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 273,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '137',
-    'titulo': 'JAN QHITI TUMPIRINI',
-    'orden': 273,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 274,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '137',
-    'titulo': 'OH AMIGO QUE VAGAS',
-    'orden': 274,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 275,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '138',
-    'titulo': 'JAN LLAQUISIPJJAMTI',
-    'orden': 275,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 276,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '138',
-    'titulo': 'NO SE PREOCUPEN',
-    'orden': 276,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 277,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '139',
-    'titulo': 'JACHT\'ASISAW SARNAKASCÄYÄTA',
-    'orden': 277,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 278,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '139',
-    'titulo': 'LEJOS DE MI SALVADOR',
-    'orden': 278,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 279,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '140',
-    'titulo': 'KOLLAN AWQUEJJA AMTASITAY',
-    'orden': 279,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 280,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '140',
-    'titulo': 'ACUÉRDATE DE MÍ, OH SEÑOR',
-    'orden': 280,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 281,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '141',
-    'titulo': 'CRISTOT PARLANIÑÄNI',
-    'orden': 281,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 282,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '141',
-    'titulo': 'PROCLAMEMOS LA SALVACIÓN',
-    'orden': 282,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 283,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '142',
-    'titulo': 'EVANGELIOT KHANANCHAÑÄNI',
-    'orden': 283,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 284,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '142',
-    'titulo': 'ANUNCIEMOS EL EVANGELIO',
-    'orden': 284,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 285,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '143',
-    'titulo': 'K\'OMA CHUYMAN TUCT\'AYASITA',
-    'orden': 285,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 286,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '143',
-    'titulo': 'LIMPIAME DE LA INIQUIDAD',
-    'orden': 286,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 287,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '144',
-    'titulo': 'TATAY, NAYAJJ SIRVIRIMÄTWA',
-    'orden': 287,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 288,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '144',
-    'titulo': 'SEÑOR, TU SIERVO SOY',
-    'orden': 288,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 289,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '145',
-    'titulo': 'ACAPACHAJJ TUCUSIRIQUIW',
-    'orden': 289,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 290,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '145',
-    'titulo': 'ESTA VIDA ES PERECEDERA',
-    'orden': 290,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 291,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '146',
-    'titulo': 'URUMAW JICHHÜROJJA',
-    'orden': 291,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 292,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '146',
-    'titulo': 'FELIZ CUMPLEAÑOS',
-    'orden': 292,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 293,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '147',
-    'titulo': 'DIOSAN ALAJJPACH MARCAPA',
-    'orden': 293,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 294,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '147',
-    'titulo': 'EL REINO DE DIOS',
-    'orden': 294,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 295,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '148',
-    'titulo': 'DIOSAN MUNAÑAP LURAPJJAÑÄNI',
-    'orden': 295,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 296,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '148',
-    'titulo': 'HAGAMOS LA VOLUNTAD DE DIOS',
-    'orden': 296,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 297,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '149',
-    'titulo': 'YUPAYCHSMAWA DIOS AWQUI',
-    'orden': 297,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 298,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '149',
-    'titulo': 'TE ALABO PADRE',
-    'orden': 298,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 299,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '150',
-    'titulo': 'JESUSAN YURÏWIPA',
-    'orden': 299,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 300,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '150',
-    'titulo': 'NACIMIENTO DE JESÚS',
-    'orden': 300,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 301,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '151',
-    'titulo': 'QHUYAPT\'AYASITAY DIOS AWQUI',
-    'orden': 301,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 302,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '151',
-    'titulo': 'TEN PIEDAD DE MÍ, OH SEÑOR',
-    'orden': 302,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 303,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '152',
-    'titulo': 'ALAJJPACHAN YATISIÑÄNI',
-    'orden': 303,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 304,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '152',
-    'titulo': 'O ENTENDEREMOS EN EL CIELO',
-    'orden': 304,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 305,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '153',
-    'titulo': '¿CUNJAMAS TATITUR SIRVIÑAJJ JUMATAQUEJJA?',
-    'orden': 305,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 306,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '153',
-    'titulo': '¿CÓMO TE PARECE SERVIR A CRISTO?',
-    'orden': 306,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 307,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '154',
-    'titulo': 'TATAY, ACA CHUYMAJJ K\'OMACHITA',
-    'orden': 307,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 308,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '154',
-    'titulo': 'LIMPIA, SEÑOR, MI MALDAD',
-    'orden': 308,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 309,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '155',
-    'titulo': 'YUSPAGARSMAW KOLLAN CRISTO',
-    'orden': 309,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 310,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '155',
-    'titulo': 'TE DOY GRACIAS, BENDITO CRISTO',
-    'orden': 310,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 311,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '156',
-    'titulo': 'TROMPETAW TOCT\'ASINI',
-    'orden': 311,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 312,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '156',
-    'titulo': 'EL TOCARÁ LA TROMPETA',
-    'orden': 312,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 313,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '157',
-    'titulo': 'K\'OMA CHUYMA TUCT\'AYITA',
-    'orden': 313,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 314,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '157',
-    'titulo': 'LÍMPIAME DE TODA MI MALDAD',
-    'orden': 314,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 315,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '158',
-    'titulo': 'BIBLIAJJ DIOSAN ARUPAWA',
-    'orden': 315,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 316,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '158',
-    'titulo': 'LOS DICHOS DEL SEÑOR',
-    'orden': 316,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 317,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '159',
-    'titulo': 'KOLLAN SUMA DIOS AWQUEJJA',
-    'orden': 317,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 318,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '159',
-    'titulo': 'MI BENDITO SALVADOR',
-    'orden': 318,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 319,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '160',
-    'titulo': 'CUSISITAW YUPAYCHÄMA',
-    'orden': 319,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 320,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '160',
-    'titulo': 'TE ALABO, MI BUEN CRISTO',
-    'orden': 320,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 321,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '161',
-    'titulo': 'ARUNACAM PARLAÑJJA YANAPT\'ITAYA',
-    'orden': 321,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 322,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '161',
-    'titulo': 'AYUDAME A TESTIFICAR',
-    'orden': 322,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 323,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '162',
-    'titulo': 'JACQUIR DIOSAN ARUNACAPA',
-    'orden': 323,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 324,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '162',
-    'titulo': 'A PALABRA DIVINA',
-    'orden': 324,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 325,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '163',
-    'titulo': 'CRISTOJJ JANC\'AQUIW JUTANI',
-    'orden': 325,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 326,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '163',
-    'titulo': 'CRISTO, EL SEÑOR PRONTO VOLVERÁ',
-    'orden': 326,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 327,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '164',
-    'titulo': 'WIÑAYAW ARCÄMA',
-    'orden': 327,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 328,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '164',
-    'titulo': 'SIEMPRE TE SEGUIRÉ',
-    'orden': 328,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 329,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '165',
-    'titulo': 'MÄ SAPA DIOSAQUIW UTJI',
-    'orden': 329,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 330,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '165',
-    'titulo': 'HAY UN SOLO DIOS',
-    'orden': 330,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 331,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '166',
-    'titulo': 'DIOSAN MUNASIÑAPA',
-    'orden': 331,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 332,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '166',
-    'titulo': 'EL AMOR DE DIOS',
-    'orden': 332,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 333,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '167',
-    'titulo': 'CUSISITAW YUPAYCHÄMA',
-    'orden': 333,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 334,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '167',
-    'titulo': 'ALABARÉ CON GOZO',
-    'orden': 334,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 335,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '168',
-    'titulo': 'CRISTOJJ NIYAW JUTASQUI',
-    'orden': 335,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 336,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '168',
-    'titulo': '¡CRISTO YA VIENE!',
-    'orden': 336,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 337,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '169',
-    'titulo': 'DIOSARUW YUSPAGARTA',
-    'orden': 337,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 338,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '169',
-    'titulo': 'GRATITUD EN MI CRISTO',
-    'orden': 338,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 339,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '170',
-    'titulo': 'CUSISIÑANÏPJJEW K\'OMA CHUYMANINACAJJ',
-    'orden': 339,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 340,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '170',
-    'titulo': 'FELICES LOS DE LIMPIO CORAZÓN',
-    'orden': 340,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 341,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '171',
-    'titulo': 'QHITIRAC NAYAR APAKETASPA',
-    'orden': 341,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 342,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '171',
-    'titulo': 'NADIE ME PODRÁ SEPARAR DE DIOS',
-    'orden': 342,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 343,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '172',
-    'titulo': 'KOLLAN DIOS AWQUEJJA',
-    'orden': 343,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 344,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '172',
-    'titulo': 'OH, PADRE AMADO',
-    'orden': 344,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 345,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '173',
-    'titulo': 'CH\'AMANCHASIM CRISTOMPI',
-    'orden': 345,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 346,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '173',
-    'titulo': 'FUÉRZATE Y SÉ VALIENTE',
-    'orden': 346,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 347,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '174',
-    'titulo': 'YUSPAGARSMAW CRISTO',
-    'orden': 347,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 348,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '174',
-    'titulo': 'GRACIAS, GRACIAS CRISTO',
-    'orden': 348,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 349,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '175',
-    'titulo': 'YUSPAGARSMAW TATA',
-    'orden': 349,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 350,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '175',
-    'titulo': 'GRACIAS POR TU SALVACIÓN',
-    'orden': 350,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 351,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '176',
-    'titulo': 'MACHAK JACAÑA',
-    'orden': 351,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 352,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '176',
-    'titulo': 'VIDA NUEVA',
-    'orden': 352,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 353,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '177',
-    'titulo': 'TATITUN KHESPIYAT WAYNANACA',
-    'orden': 353,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 354,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '177',
-    'titulo': 'JUVENTUD REDIMIDA POR CRISTO',
-    'orden': 354,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 355,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '178',
-    'titulo': 'MUNAT TAYCAJJA',
-    'orden': 355,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 356,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '178',
-    'titulo': 'A MI MADRE',
-    'orden': 356,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 357,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '179',
-    'titulo': 'TATITURUW YUPAYCHASCTA',
-    'orden': 357,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 358,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '179',
-    'titulo': 'ALABO A MI CRISTO',
-    'orden': 358,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 359,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '180',
-    'titulo': 'KELLKATA ARUNACA',
-    'orden': 359,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 360,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '180',
-    'titulo': 'EN LAS LETRAS DE UN PAPEL',
-    'orden': 360,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 361,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '181',
-    'titulo': 'TATIT CRISTON JUTÄWIPA',
-    'orden': 361,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 362,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '181',
-    'titulo': 'LA VENIDA DE CRISTO',
-    'orden': 362,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 363,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '182',
-    'titulo': 'YUSPAGARSMAW TATAY',
-    'orden': 363,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 364,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '182',
-    'titulo': 'GRACIAS MI JESÚS',
-    'orden': 364,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 365,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '183',
-    'titulo': 'CHUYMAJJAJJ CUSISITAWA',
-    'orden': 365,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 366,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '183',
-    'titulo': 'GRANDE GOZO HAY EN MI ALMA',
-    'orden': 366,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 367,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '184',
-    'titulo': 'TATIT JESUSAJJ NIYAW JUTANI',
-    'orden': 367,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 368,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '184',
-    'titulo': 'EL SEÑOR JESÚS VIENE PRONTO',
-    'orden': 368,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 369,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '185',
-    'titulo': 'KOLLAN SUMA CRISTO',
-    'orden': 369,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 370,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '185',
-    'titulo': 'MI AMADO SALVADOR',
-    'orden': 370,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 371,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '186',
-    'titulo': 'DIOSAR MAYISIÑÄNI',
-    'orden': 371,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 372,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '186',
-    'titulo': 'IMPLOREMOS EN ORACIÓN',
-    'orden': 372,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 373,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '187',
-    'titulo': 'CRISTOQUIW KHESPIYIREJJ',
-    'orden': 373,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 374,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '187',
-    'titulo': 'SÓLO CRISTO SALVARÁ',
-    'orden': 374,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 375,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '188',
-    'titulo': 'TATITUR ARCAPJJAÑÄN',
-    'orden': 375,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 376,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '188',
-    'titulo': 'SEGUIREMOS A JESÚS',
-    'orden': 376,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 377,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '189',
-    'titulo': 'WIÑAYAW NAYAJJ ARCA',
-    'orden': 377,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 378,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '189',
-    'titulo': 'HASTA EL FIN LE SEGUIRÉ',
-    'orden': 378,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 379,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '190',
-    'titulo': 'ARUNACAMAJJ TATAY',
-    'orden': 379,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 380,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '190',
-    'titulo': 'TUS DICHOS, ¡OH, MI PADRE!',
-    'orden': 380,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 381,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '191',
-    'titulo': 'CH\'AMANCHITAYA',
-    'orden': 381,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 382,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '191',
-    'titulo': 'DAME FUERZAS',
-    'orden': 382,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 383,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '192',
-    'titulo': 'DIOSAR ARCAÑÄNI',
-    'orden': 383,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 384,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '192',
-    'titulo': 'SIGAMOS AL SEÑOR',
-    'orden': 384,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 385,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '193',
-    'titulo': 'QUIMSAT MAYAR TUCT\'AT DIOS',
-    'orden': 385,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 386,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '193',
-    'titulo': 'AL TRINO DIOS',
-    'orden': 386,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 387,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '194',
-    'titulo': 'CRISTON ARUP PARLIRÏTWA',
-    'orden': 387,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 388,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '194',
-    'titulo': 'EL MISIONERO',
-    'orden': 388,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 389,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '195',
-    'titulo': 'TATITUW AWATIREJJAJJA',
-    'orden': 389,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 390,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '195',
-    'titulo': 'JESÚS ES MI PASTOR',
-    'orden': 390,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 391,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '196',
-    'titulo': 'JACH\'A DIOS AWQUEJJA',
-    'orden': 391,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 392,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '196',
-    'titulo': 'MI BENDITO PADRE',
-    'orden': 392,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 393,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '197',
-    'titulo': 'KOLLAN AJAYU',
-    'orden': 393,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 394,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '197',
-    'titulo': 'SANTO ESPÍRITU',
-    'orden': 394,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 395,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '198',
-    'titulo': 'TATIT JESUSAMPI',
-    'orden': 395,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 396,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '198',
-    'titulo': 'EL ANDAR CON JESÚS',
-    'orden': 396,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 397,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '199',
-    'titulo': 'DIOSAN KOLLAN LIBROPA',
-    'orden': 397,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 398,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '199',
-    'titulo': 'TUS PALABRAS, OH SEÑOR',
-    'orden': 398,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 399,
-    'id_idioma': 2, // Aymara
-    'id_tipo_himnario': 3, // Cala
-    'numero': '200',
-    'titulo': 'K\'OMA CHUYMASAMPI',
-    'orden': 399,
-    'estado_registro': 1,
-  },
-  {
-    'id_cancion': 400,
-    'id_idioma': 1, // Español
-    'id_tipo_himnario': 3, // Cala
-    'numero': '200',
-    'titulo': 'LIMPIOS DE CORAZÓN',
-    'orden': 400,
-    'estado_registro': 1,
-  },
-];
+  static const List<Map<String, dynamic>> canciones = [
+    {
+      'id_cancion': 1,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '1',
+      'titulo': 'TATITUN JUTAÑAPAJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 2,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '1',
+      'titulo': 'PRONTO VUELVE JESUCRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 3,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '2',
+      'titulo': 'JESUSAN ARUPAT YATIYAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 4,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '2',
+      'titulo': 'PREDICAD POR DOQUIER',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 5,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '3',
+      'titulo': 'MUNAT KHESPIYIRI JUMARUW CATOKSMA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 6,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '3',
+      'titulo': 'SALVADOR, EN TI CONFÍO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 7,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '4',
+      'titulo': 'IST\'ITAY DIOS AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 8,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '4',
+      'titulo': 'GUÍAME A LA GLORIA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 9,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '5',
+      'titulo': 'CRISTON THAQUIPAN SARÄ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 10,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '5',
+      'titulo': 'POR SU SENDA MARCHARÉ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 11,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '6',
+      'titulo': 'DIOS AWQUI UÑTANITAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 12,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '6',
+      'titulo': 'HEME AQUÍ, OH PADRE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 13,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '7',
+      'titulo': 'TATIT JESUCRISTORUW THAKTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 14,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '7',
+      'titulo': 'A JESÚS BUSQUÉ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 15,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '8',
+      'titulo': 'DIOSAW IMÄTAM',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 16,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '8',
+      'titulo': 'TU PADRE DIOS TE CUIDARÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 17,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '9',
+      'titulo': 'LURATANACAM UÑTASAJJ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 18,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '9',
+      'titulo': 'MIRANDO TÚ OBRA, ¡OH CREADOR!',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 19,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '10',
+      'titulo': 'KOLLAN AWATIR AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 20,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '10',
+      'titulo': '¡OH DIOS, PADRE CELESTIAL!',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 21,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '11',
+      'titulo': 'MUNASIÑAMPI K\'OCHUÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 22,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '11',
+      'titulo': 'CANTEMOS DE JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 23,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '12',
+      'titulo': 'YUSPAGARSMAW AWQUEJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 24,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '12',
+      'titulo': 'TE DOY GRACIAS, SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 25,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '13',
+      'titulo': 'NAVIDADATA CUSISIÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 26,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '13',
+      'titulo': 'LA NAVIDAD',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 27,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '14',
+      'titulo': 'JUCHARAR JUTAMAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 28,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '14',
+      'titulo': 'OH VEN HOY, PECADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 29,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '15',
+      'titulo': 'ALAJJPACH MARCARUW SARASCTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 30,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '15',
+      'titulo': 'A LA GLORIA VOY',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 31,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '16',
+      'titulo': 'MÄ JAN SIRVIR ALI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 32,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '16',
+      'titulo': 'LA ZARZA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 33,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '17',
+      'titulo': 'TATITUN CH\'AMAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 34,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '17',
+      'titulo': 'EL PODER DE CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 35,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '18',
+      'titulo': 'TATITUW IRPASQUITU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 36,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '18',
+      'titulo': 'EL SEÑOR ME ENCONTRÓ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 37,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '19',
+      'titulo': 'DIOSAJJ BENDIZPAN MATRIMONIORU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 38,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '19',
+      'titulo': 'DIOS BENDIGA EL MATRIMONIO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 39,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '20',
+      'titulo': 'JAN KHEPAR UÑTASA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 40,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '20',
+      'titulo': 'NO MIREMOS ATRÁS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 41,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '21',
+      'titulo': 'SUMA DIOS AWQUI IRPAQUITAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 42,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '21',
+      'titulo': 'GUÍAME, DIOS MÍO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 43,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '22',
+      'titulo': 'JESUSAJJ JIWAS LAYCU JUTI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 44,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '22',
+      'titulo': 'CRISTO EL SEÑOR DESCENDIÓ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 45,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '23',
+      'titulo': 'ALAJJPACHAW MARCAJJAJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 46,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '23',
+      'titulo': 'AL CIELO VOY',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 47,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '24',
+      'titulo': 'JIWAJJ PUNCUMARU LEKT\'ANÏTAMJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 48,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '24',
+      'titulo': 'SI LA MUERTE LLAMA HOY',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 49,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '25',
+      'titulo': 'REY JESUSAW JUTANI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 50,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '25',
+      'titulo': '¡GLORIOSO DÍA SERÁ!',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 51,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '26',
+      'titulo': 'QHUYAPAYASIRI KOLLAN SUMA AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 52,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '26',
+      'titulo': 'PADRE DIOS ETERNO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 53,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '27',
+      'titulo': 'CRISTON JUTAÑAP SUYASCTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 54,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '27',
+      'titulo': 'ESPERO QUE CRISTO VENGA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 55,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '28',
+      'titulo': 'BELÉN MARCANWA YURIWAYI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 56,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '28',
+      'titulo': 'EN BELÉN NACIÓ JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 57,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '29',
+      'titulo': 'TATIT JESUSAJJ NIYAW JUTANI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 58,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '29',
+      'titulo': 'MUY PRONTO CRISTO VENDRÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 59,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '30',
+      'titulo': 'DIOS, YUSPAGARSMAWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 60,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '30',
+      'titulo': 'GRACIAS TE DOY, SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 61,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '31',
+      'titulo': 'CRISTO KOLLAN APOJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 62,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '31',
+      'titulo': 'JESUCRISTO, MI BUEN DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 63,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '32',
+      'titulo': 'YATICHITAY KOLLAN CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 64,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '32',
+      'titulo': 'QUIERO CRISTO, QUE ME ENSEÑES',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 65,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '33',
+      'titulo': 'KOLLAN SUMA DIOS AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 66,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '33',
+      'titulo': 'CRISTO, AMANTE SALVADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 67,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '34',
+      'titulo': 'CRISTOMPIW WIÑAY JACÄ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 68,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '34',
+      'titulo': 'YO VIVIRÉ CON JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 69,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '35',
+      'titulo': 'DIOSAQUIWA NAYAROJJ IMASQUITANI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 70,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '35',
+      'titulo': 'DIOS ME GUARDARÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 71,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '36',
+      'titulo': 'MUNASIÑAMPI SARAPJJAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 72,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '36',
+      'titulo': 'SIGAMOS CON AMOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 73,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '37',
+      'titulo': 'WIÑAVATAQUIW TATITUNCTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 74,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '37',
+      'titulo': 'VIVO YO CON CRISTO, MI SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 75,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '38',
+      'titulo': 'CRISTO SAPAQUIWA KHESPIYI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 76,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '38',
+      'titulo': 'SÓLO CRISTO SALVA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 77,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '39',
+      'titulo': '¿QHITIS SARANI?',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 78,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '39',
+      'titulo': '¿QUIÉN IRÁ?',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 79,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '40',
+      'titulo': 'QHUYAPT\' AYASITAY CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 80,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '40',
+      'titulo': 'TEN MISERICORDIA, CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 81,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '41',
+      'titulo': 'YUSPAGARAÑÄNI ALAJJPACH AWQUISARU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 82,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '41',
+      'titulo': 'DEMOS GRACIAS AL SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 83,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '42',
+      'titulo': 'JUC\'AMPI MUNÄMA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 84,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '42',
+      'titulo': 'TE AMARÉ MÁS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 85,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '43',
+      'titulo': 'CUSISISAW NAYAJJ K\'OCHÜ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 86,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '43',
+      'titulo': 'TE ALABO CON GOZO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 87,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '44',
+      'titulo': 'SUMA DIOS AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 88,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '44',
+      'titulo': 'PADRE CELESTIAL',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 89,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '45',
+      'titulo': 'TATITUSANA MARCAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 90,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '45',
+      'titulo': 'GLORIOSA MORADA DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 91,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '46',
+      'titulo': 'KHESPIYIRI YANAPT\'ITAYA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 92,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '46',
+      'titulo': 'SALVADOR, AYÚDAME',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 93,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '47',
+      'titulo': 'YANAPT\'ITAY DIOS AWQUEJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 94,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '47',
+      'titulo': 'DAME TU FUERZA, BENDITO DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 95,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '48',
+      'titulo': 'TATAY, CAYUMARUW JUTTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 96,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '48',
+      'titulo': 'SEÑOR, ANTE TUS PIES',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 97,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '49',
+      'titulo': 'JAKE MASIMAT AMTASIMAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 98,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '49',
+      'titulo': 'RECUERDA DE TU PRÓJIMO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 99,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '50',
+      'titulo': 'JUC\'ANIQUIWA AJJSARTIREJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 100,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '50',
+      'titulo': 'POCOS SON LOS QUE TEMEN A DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 101,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '51',
+      'titulo': 'YUSPAGARSMAW SUMA AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 102,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '51',
+      'titulo': 'TE DOY GRACIAS, OH DIOS PADRE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 103,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '52',
+      'titulo': 'CHUYMAJJAJJ CUSISITAW JICJJATASI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 104,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '52',
+      'titulo': 'MI CORAZÓN ESTÁ CONTENTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 105,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '53',
+      'titulo': 'CUTTANJJAMAYA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 106,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '53',
+      'titulo': 'VUELVE A DIOS, HIJO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 107,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '54',
+      'titulo': 'SAPA MAYNIW DIOSAR UÑSTAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 108,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '54',
+      'titulo': 'DAREMOS CUENTA A DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 109,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '55',
+      'titulo': 'ALAJJPACHANQUIR SUMAAWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 110,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '55',
+      'titulo': 'OH PADRE MÍO, DIOS Y SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 111,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '56',
+      'titulo': 'DIOSAN JAWSATAPJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 112,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '56',
+      'titulo': 'EL LLAMAMIENTO DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 113,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '57',
+      'titulo': 'CRISTO SAPARUQUIWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 114,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '57',
+      'titulo': 'SOLO A CRISTO SEGUIRÉ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 115,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '58',
+      'titulo': 'TAKE CUNAS DIOSANQUIWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 116,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '58',
+      'titulo': 'TODAS LAS COSAS SON DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 117,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '59',
+      'titulo': 'ALAJJPACHANQUIR SUMA CRISTOJJ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 118,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '59',
+      'titulo': 'SUFRISTE TÚ POR MÍ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 119,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '60',
+      'titulo': '¿CUNANQUIS CUSISIÑAJJA?',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 120,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '60',
+      'titulo': '¿EN QUÉ HAY FELICIDAD?',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 121,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '61',
+      'titulo': 'MUNASIRI KOLLAN CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 122,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '61',
+      'titulo': 'GUÍAME, AMANTE CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 123,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '62',
+      'titulo': 'LAJJA CH\'AMACANQUÏR JAKER PARLAM',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 124,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '62',
+      'titulo': 'TESTIFIQUE AL HOMBRE DE TINIEBLAS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 125,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '63',
+      'titulo': 'CRISTOJJ CRUZAN JIWAWAYI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 126,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '63',
+      'titulo': 'CRISTO MURIÓ EN LA CRUZ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 127,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '64',
+      'titulo': 'MAYNIT MAYNICAM MUNASIPJJAM',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 128,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '64',
+      'titulo': 'ÁMENSE DE TODO CORAZÓN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 129,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '65',
+      'titulo': 'DIOSAJJ MUNAT YOKAPWA QHITANI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 130,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '65',
+      'titulo': 'AMÓ DIOS AL MUNDO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 131,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '66',
+      'titulo': 'WAQUISCHASTATI, NIYAW SARJJAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 132,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '66',
+      'titulo': 'YA NOS IREMOS A LOS CIELOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 133,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '67',
+      'titulo': 'CH\'AMANCHITAY CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 134,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '67',
+      'titulo': '¡OH SEÑOR! ESFUÉRZAME',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 135,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '68',
+      'titulo': 'MUNATA CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 136,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '68',
+      'titulo': 'AMADO CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 137,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '69',
+      'titulo': 'MOJJSA ARUNACA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 138,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '69',
+      'titulo': 'AL ESCUCHAR TUS PALABRAS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 139,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '70',
+      'titulo': 'KHESPIYASIRI CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 140,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '70',
+      'titulo': 'AYÚDAME CRISTO, MI SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 141,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '71',
+      'titulo': 'TATIT CRISTO YANAPT\'ITAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 142,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '71',
+      'titulo': 'DAME FUERZAS, CRISTO MÍO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 143,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '72',
+      'titulo': 'CUSISITÄTWA NAYAJJ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 144,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '72',
+      'titulo': 'ME SIENTO FELIZ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 145,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '73',
+      'titulo': 'JUMAW KHESPIYASISTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 146,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '73',
+      'titulo': 'ERES TÚ MI SALVADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 147,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '74',
+      'titulo': 'TUCUYCAM SAYT\'AÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 148,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '74',
+      'titulo': 'SIGUE SIN DESMAYAR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 149,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '75',
+      'titulo': 'ARUNACAMAJJ KORIT JUC\'AMP SUMAW',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 150,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '75',
+      'titulo': 'PRECIOSA ES TU PALABRA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 151,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '76',
+      'titulo': 'JESUCRISTOW YANAPASQUITU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 152,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '76',
+      'titulo': 'EL SEÑOR JESÚS ME AYUDARÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 153,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '77',
+      'titulo': 'CRISTO TATITU K\'OMACHISTAW',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 154,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '77',
+      'titulo': 'CRISTO JESÚS, CON TU GRAN AMOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 155,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '78',
+      'titulo': 'MUNAT TATITOJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 156,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '78',
+      'titulo': 'EL SEÑOR ME SALVO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 157,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '79',
+      'titulo': 'CH\'AMAC THAQUIN JACASCÄYÄT',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 158,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '79',
+      'titulo': 'MI TESTIMONIO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 159,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '80',
+      'titulo': 'JANC\' AQUIW JUTANI TATIT KHESPIYIREJJ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 160,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '80',
+      'titulo': 'JESUCRISTO EL SEÑOR, VIENE OTRA VEZ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 161,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '81',
+      'titulo': 'KORI MARCARUW SARASCTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 162,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '81',
+      'titulo': 'VOY A LA MANSIÓN GLORIOSA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 163,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '82',
+      'titulo': '¿CUNJAMÄSQUIS CHUYMAMAJJA?',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 164,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '82',
+      'titulo': '¿CÓMO ESTÁ TU CORAZÓN?',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 165,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '83',
+      'titulo': 'CRISTOR CUTT\'ANJJAM',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 166,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '83',
+      'titulo': 'VUELVE A CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 167,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '84',
+      'titulo': 'LAODICEA IGLESIA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 168,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '84',
+      'titulo': 'LA IGLESIA DE LAODICEA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 169,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '85',
+      'titulo': 'NAYAR YATICHITA, MUNASIÑAMATA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 170,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '85',
+      'titulo': 'ENSÉÑAME DE TU AMOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 171,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '86',
+      'titulo': 'DIOSAN CH\'AMAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 172,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '86',
+      'titulo': 'EL PODER DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 173,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '87',
+      'titulo': 'JUMA SAPAQUïTAW',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 174,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '87',
+      'titulo': 'SÓLO TÚ ERES MI SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 175,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '88',
+      'titulo': 'KOLLANA CRISTO YANAPT\' ASIQUITAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 176,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '88',
+      'titulo': 'OH SEÑOR, AYÚDAME',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 177,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '89',
+      'titulo': 'ALAJJPACHAJJ K\'OMA MARCAWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 178,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '89',
+      'titulo': 'EL HOGAR CELESTIAL ES LIMPIO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 179,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '90',
+      'titulo': 'TATITUSAJJ PÄ THAQUI USCU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 180,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '90',
+      'titulo': 'HAY DOS CAMINOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 181,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '91',
+      'titulo': 'ALAJJPACH MARCA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 182,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '91',
+      'titulo': 'LA MANSIÓN GLORIOSA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 183,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '92',
+      'titulo': 'DIOSAROJJ SIRVISCÄWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 184,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '92',
+      'titulo': 'SERVIRÉ A MI DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 185,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '93',
+      'titulo': 'JIWAÑARU ATIPIR CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 186,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '93',
+      'titulo': 'JESÚS VENCIÓ LA MUERTE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 187,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '94',
+      'titulo': 'TATITUN ORACIÓN LURATAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 188,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '94',
+      'titulo': 'LA ORACIÓN DE JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 189,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '95',
+      'titulo': 'DIOSAN MUNASIÑAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 190,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '95',
+      'titulo': 'EL AMOR DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 191,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '96',
+      'titulo': 'THAKASAW JICJJATTA KHESPIYIREJJARU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 192,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '96',
+      'titulo': 'BUSCANDO ENCONTRÉ AL SALVADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 193,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '97',
+      'titulo': 'JACH\'ACHAÑÄN CUSISITA DIOSASARU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 194,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '97',
+      'titulo': 'A NUESTRO DIOS CANTEMOS HOY',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 195,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '98',
+      'titulo': 'TATIT CRISTO QHUYAPT\' AYITAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 196,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '98',
+      'titulo': 'SEÑOR, TEN PIEDAD DE MÍ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 197,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '99',
+      'titulo': '\"NAYAR JUTAM\", SISTAWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 198,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '99',
+      'titulo': '\"VEN A MÍ\"',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 199,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '100',
+      'titulo': 'DIOSARU YUPAYCHAÑAWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 200,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '100',
+      'titulo': 'HOY ES DÍA DE REPOSO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 201,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '101',
+      'titulo': 'TATIT CRISTOW CHEKA THAQUEJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 202,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '101',
+      'titulo': 'CRISTO ES EL CAMINO FIEL',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 203,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '102',
+      'titulo': 'JACAÑAJJ NAYATAQUEJJ CRISTOWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 204,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '102',
+      'titulo': 'PARA MÍ EL VIVIR ES JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 205,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '103',
+      'titulo': 'KHESPIYIR CRISTOR MAQHATAM',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 206,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '103',
+      'titulo': 'ACUDE A CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 207,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '104',
+      'titulo': 'TATIT CRISTOW JUCHAT K\'OMACHJJETU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 208,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '104',
+      'titulo': 'CRISTO ME HA PERDONADO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 209,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '105',
+      'titulo': 'TATITUW KHESPIYITU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 210,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '105',
+      'titulo': 'CRISTO ME SALVÓ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 211,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '106',
+      'titulo': 'ALAJJPACHANQUIR AWQUEJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 212,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '106',
+      'titulo': 'OH PADRE AMADO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 213,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '107',
+      'titulo': 'CRISTOJJ NIYAW JUTANI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 214,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '107',
+      'titulo': 'CRISTO EL SEÑOR VENDRÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 215,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '108',
+      'titulo': 'SUMA DIOS AWQUI ARJJATT\'ASITA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 216,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '108',
+      'titulo': 'BENDITO PADRE, PIDO TU AYUDA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 217,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '109',
+      'titulo': 'JAN KHEP UÑTAMTI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 218,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '109',
+      'titulo': 'NO MIRES HACIA ATRÁS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 219,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '110',
+      'titulo': 'CUSISITA K\'OCHUPJJAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 220,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '110',
+      'titulo': 'CANTEMOS CON GOZO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 221,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '111',
+      'titulo': 'KHESPIYIRI TATITUN YURITAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 222,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '111',
+      'titulo': 'EL NACIMIENTO DEL SALVADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 223,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '112',
+      'titulo': 'JICHHÜROJJ K\'OCHUÑÄN JESUSARU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 224,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '112',
+      'titulo': 'CANTEMOS A JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 225,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '113',
+      'titulo': 'JACATATAYAPJJETAY TATA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 226,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '113',
+      'titulo': 'RENUÉVANOS SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 227,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '114',
+      'titulo': 'CRISTOT JAYAN JACÄYÄTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 228,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '114',
+      'titulo': 'VIVÍA LEJOS DEL SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 229,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '115',
+      'titulo': 'QUIMSA AMAWT\'A JAKENACA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 230,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '115',
+      'titulo': 'LOS MAGOS DEL ORIENTE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 231,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '116',
+      'titulo': 'MUNAT JILATA CUTT\' ANJJAMAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 232,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '116',
+      'titulo': 'AMIGO MÍO, VUELVE AL SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 233,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '117',
+      'titulo': 'SUYAÑÄN TATITURU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 234,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '117',
+      'titulo': 'ESPEREMOS A JESÚS, EL SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 235,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '118',
+      'titulo': 'ORACIÓN LURAMAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 236,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '118',
+      'titulo': 'ORA AL SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 237,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '119',
+      'titulo': 'JUMAWA KHESPIYASISTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 238,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '119',
+      'titulo': 'TÚ ME SALVASTE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 239,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '120',
+      'titulo': 'KOLLAN AJAY CATOKAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 240,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '120',
+      'titulo': 'RECIBAMOS EL ESPÍRITU SANTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 241,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '121',
+      'titulo': 'CRISTOR ARCAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 242,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '121',
+      'titulo': 'VAMOS, PUES, CON CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 243,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '122',
+      'titulo': 'SUMA MATRIMONIO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 244,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '122',
+      'titulo': 'EL MATRIMONIO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 245,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '123',
+      'titulo': 'NIYAW SARJJAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 246,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '123',
+      'titulo': 'NOS VAMOS A SIÓN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 247,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '124',
+      'titulo': 'DIOS AWQUISAR YUSPAGARAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 248,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '124',
+      'titulo': 'AGRADECIDO SEA NUESTRO DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 249,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '125',
+      'titulo': 'TATIT CRISTON LURATANACAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 250,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '125',
+      'titulo': 'LAS OBRAS DE CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 251,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '126',
+      'titulo': 'ADANAMPI, EVAMPI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 252,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '126',
+      'titulo': 'ADÁN Y EVA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 253,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '127',
+      'titulo': 'IRPAQUITAY JESUCRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 254,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '127',
+      'titulo': 'GUÍAME, OH JESUCRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 255,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '128',
+      'titulo': 'JUMARUW JACAÑAJJ CATUYASTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 256,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '128',
+      'titulo': 'ME ENTREGO A TI',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 257,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '129',
+      'titulo': 'DIOSAMPI IDOLONACAMPI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 258,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '129',
+      'titulo': 'DIOS Y LOS ÍDOLOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 259,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '130',
+      'titulo': 'CUSISIÑAW CHUYMAJJAN UTJI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 260,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '130',
+      'titulo': '¡QUÉ CONTENTO ESTOY EN MI CORAZÓN!',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 261,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '131',
+      'titulo': 'KOLLAN AJAYU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 262,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '131',
+      'titulo': 'EL ESPÍRITU SANTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 263,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '132',
+      'titulo': 'DIOSAW NAYAN KHANAJJAJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 264,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '132',
+      'titulo': 'DIOS ES MI LUZ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 265,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '133',
+      'titulo': 'JESUCRISTOW KHESPIYITU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 266,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '133',
+      'titulo': 'CRISTO EL SEÑOR ME HA SALVADO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 267,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '134',
+      'titulo': 'CRISTOMPËJJASINJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 268,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '134',
+      'titulo': 'AL ESTAR CON CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 269,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '135',
+      'titulo': 'DIOSAN TUNCA CAMACHINACAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 270,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '135',
+      'titulo': 'LOS DIEZ MANDAMIENTOS DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 271,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '136',
+      'titulo': 'NIVAW JUTANI KHESPIVIR CRISTOJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 272,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '136',
+      'titulo': 'PRONTO CRISTO VOLVERÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 273,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '137',
+      'titulo': 'JAN QHITI TUMPIRINI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 274,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '137',
+      'titulo': 'OH AMIGO QUE VAGAS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 275,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '138',
+      'titulo': 'JAN LLAQUISIPJJAMTI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 276,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '138',
+      'titulo': 'NO SE PREOCUPEN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 277,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '139',
+      'titulo': 'JACHT\'ASISAW SARNAKASCÄYÄTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 278,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '139',
+      'titulo': 'LEJOS DE MI SALVADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 279,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '140',
+      'titulo': 'KOLLAN AWQUEJJA AMTASITAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 280,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '140',
+      'titulo': 'ACUÉRDATE DE MÍ, OH SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 281,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '141',
+      'titulo': 'CRISTOT PARLANIÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 282,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '141',
+      'titulo': 'PROCLAMEMOS LA SALVACIÓN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 283,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '142',
+      'titulo': 'EVANGELIOT KHANANCHAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 284,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '142',
+      'titulo': 'ANUNCIEMOS EL EVANGELIO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 285,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '143',
+      'titulo': 'K\'OMA CHUYMAN TUCT\'AYASITA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 286,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '143',
+      'titulo': 'LIMPIAME DE LA INIQUIDAD',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 287,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '144',
+      'titulo': 'TATAY, NAYAJJ SIRVIRIMÄTWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 288,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '144',
+      'titulo': 'SEÑOR, TU SIERVO SOY',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 289,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '145',
+      'titulo': 'ACAPACHAJJ TUCUSIRIQUIW',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 290,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '145',
+      'titulo': 'ESTA VIDA ES PERECEDERA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 291,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '146',
+      'titulo': 'URUMAW JICHHÜROJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 292,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '146',
+      'titulo': 'FELIZ CUMPLEAÑOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 293,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '147',
+      'titulo': 'DIOSAN ALAJJPACH MARCAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 294,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '147',
+      'titulo': 'EL REINO DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 295,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '148',
+      'titulo': 'DIOSAN MUNAÑAP LURAPJJAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 296,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '148',
+      'titulo': 'HAGAMOS LA VOLUNTAD DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 297,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '149',
+      'titulo': 'YUPAYCHSMAWA DIOS AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 298,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '149',
+      'titulo': 'TE ALABO PADRE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 299,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '150',
+      'titulo': 'JESUSAN YURÏWIPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 300,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '150',
+      'titulo': 'NACIMIENTO DE JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 301,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '151',
+      'titulo': 'QHUYAPT\'AYASITAY DIOS AWQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 302,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '151',
+      'titulo': 'TEN PIEDAD DE MÍ, OH SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 303,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '152',
+      'titulo': 'ALAJJPACHAN YATISIÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 304,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '152',
+      'titulo': 'O ENTENDEREMOS EN EL CIELO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 305,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '153',
+      'titulo': '¿CUNJAMAS TATITUR SIRVIÑAJJ JUMATAQUEJJA?',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 306,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '153',
+      'titulo': '¿CÓMO TE PARECE SERVIR A CRISTO?',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 307,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '154',
+      'titulo': 'TATAY, ACA CHUYMAJJ K\'OMACHITA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 308,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '154',
+      'titulo': 'LIMPIA, SEÑOR, MI MALDAD',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 309,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '155',
+      'titulo': 'YUSPAGARSMAW KOLLAN CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 310,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '155',
+      'titulo': 'TE DOY GRACIAS, BENDITO CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 311,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '156',
+      'titulo': 'TROMPETAW TOCT\'ASINI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 312,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '156',
+      'titulo': 'EL TOCARÁ LA TROMPETA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 313,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '157',
+      'titulo': 'K\'OMA CHUYMA TUCT\'AYITA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 314,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '157',
+      'titulo': 'LÍMPIAME DE TODA MI MALDAD',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 315,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '158',
+      'titulo': 'BIBLIAJJ DIOSAN ARUPAWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 316,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '158',
+      'titulo': 'LOS DICHOS DEL SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 317,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '159',
+      'titulo': 'KOLLAN SUMA DIOS AWQUEJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 318,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '159',
+      'titulo': 'MI BENDITO SALVADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 319,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '160',
+      'titulo': 'CUSISITAW YUPAYCHÄMA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 320,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '160',
+      'titulo': 'TE ALABO, MI BUEN CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 321,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '161',
+      'titulo': 'ARUNACAM PARLAÑJJA YANAPT\'ITAYA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 322,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '161',
+      'titulo': 'AYUDAME A TESTIFICAR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 323,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '162',
+      'titulo': 'JACQUIR DIOSAN ARUNACAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 324,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '162',
+      'titulo': 'A PALABRA DIVINA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 325,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '163',
+      'titulo': 'CRISTOJJ JANC\'AQUIW JUTANI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 326,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '163',
+      'titulo': 'CRISTO, EL SEÑOR PRONTO VOLVERÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 327,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '164',
+      'titulo': 'WIÑAYAW ARCÄMA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 328,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '164',
+      'titulo': 'SIEMPRE TE SEGUIRÉ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 329,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '165',
+      'titulo': 'MÄ SAPA DIOSAQUIW UTJI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 330,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '165',
+      'titulo': 'HAY UN SOLO DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 331,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '166',
+      'titulo': 'DIOSAN MUNASIÑAPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 332,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '166',
+      'titulo': 'EL AMOR DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 333,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '167',
+      'titulo': 'CUSISITAW YUPAYCHÄMA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 334,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '167',
+      'titulo': 'ALABARÉ CON GOZO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 335,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '168',
+      'titulo': 'CRISTOJJ NIYAW JUTASQUI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 336,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '168',
+      'titulo': '¡CRISTO YA VIENE!',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 337,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '169',
+      'titulo': 'DIOSARUW YUSPAGARTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 338,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '169',
+      'titulo': 'GRATITUD EN MI CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 339,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '170',
+      'titulo': 'CUSISIÑANÏPJJEW K\'OMA CHUYMANINACAJJ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 340,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '170',
+      'titulo': 'FELICES LOS DE LIMPIO CORAZÓN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 341,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '171',
+      'titulo': 'QHITIRAC NAYAR APAKETASPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 342,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '171',
+      'titulo': 'NADIE ME PODRÁ SEPARAR DE DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 343,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '172',
+      'titulo': 'KOLLAN DIOS AWQUEJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 344,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '172',
+      'titulo': 'OH, PADRE AMADO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 345,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '173',
+      'titulo': 'CH\'AMANCHASIM CRISTOMPI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 346,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '173',
+      'titulo': 'FUÉRZATE Y SÉ VALIENTE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 347,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '174',
+      'titulo': 'YUSPAGARSMAW CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 348,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '174',
+      'titulo': 'GRACIAS, GRACIAS CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 349,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '175',
+      'titulo': 'YUSPAGARSMAW TATA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 350,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '175',
+      'titulo': 'GRACIAS POR TU SALVACIÓN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 351,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '176',
+      'titulo': 'MACHAK JACAÑA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 352,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '176',
+      'titulo': 'VIDA NUEVA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 353,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '177',
+      'titulo': 'TATITUN KHESPIYAT WAYNANACA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 354,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '177',
+      'titulo': 'JUVENTUD REDIMIDA POR CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 355,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '178',
+      'titulo': 'MUNAT TAYCAJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 356,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '178',
+      'titulo': 'A MI MADRE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 357,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '179',
+      'titulo': 'TATITURUW YUPAYCHASCTA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 358,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '179',
+      'titulo': 'ALABO A MI CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 359,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '180',
+      'titulo': 'KELLKATA ARUNACA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 360,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '180',
+      'titulo': 'EN LAS LETRAS DE UN PAPEL',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 361,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '181',
+      'titulo': 'TATIT CRISTON JUTÄWIPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 362,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '181',
+      'titulo': 'LA VENIDA DE CRISTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 363,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '182',
+      'titulo': 'YUSPAGARSMAW TATAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 364,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '182',
+      'titulo': 'GRACIAS MI JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 365,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '183',
+      'titulo': 'CHUYMAJJAJJ CUSISITAWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 366,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '183',
+      'titulo': 'GRANDE GOZO HAY EN MI ALMA',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 367,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '184',
+      'titulo': 'TATIT JESUSAJJ NIYAW JUTANI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 368,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '184',
+      'titulo': 'EL SEÑOR JESÚS VIENE PRONTO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 369,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '185',
+      'titulo': 'KOLLAN SUMA CRISTO',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 370,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '185',
+      'titulo': 'MI AMADO SALVADOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 371,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '186',
+      'titulo': 'DIOSAR MAYISIÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 372,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '186',
+      'titulo': 'IMPLOREMOS EN ORACIÓN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 373,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '187',
+      'titulo': 'CRISTOQUIW KHESPIYIREJJ',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 374,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '187',
+      'titulo': 'SÓLO CRISTO SALVARÁ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 375,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '188',
+      'titulo': 'TATITUR ARCAPJJAÑÄN',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 376,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '188',
+      'titulo': 'SEGUIREMOS A JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 377,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '189',
+      'titulo': 'WIÑAYAW NAYAJJ ARCA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 378,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '189',
+      'titulo': 'HASTA EL FIN LE SEGUIRÉ',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 379,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '190',
+      'titulo': 'ARUNACAMAJJ TATAY',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 380,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '190',
+      'titulo': 'TUS DICHOS, ¡OH, MI PADRE!',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 381,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '191',
+      'titulo': 'CH\'AMANCHITAYA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 382,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '191',
+      'titulo': 'DAME FUERZAS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 383,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '192',
+      'titulo': 'DIOSAR ARCAÑÄNI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 384,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '192',
+      'titulo': 'SIGAMOS AL SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 385,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '193',
+      'titulo': 'QUIMSAT MAYAR TUCT\'AT DIOS',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 386,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '193',
+      'titulo': 'AL TRINO DIOS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 387,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '194',
+      'titulo': 'CRISTON ARUP PARLIRÏTWA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 388,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '194',
+      'titulo': 'EL MISIONERO',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 389,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '195',
+      'titulo': 'TATITUW AWATIREJJAJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 390,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '195',
+      'titulo': 'JESÚS ES MI PASTOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 391,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '196',
+      'titulo': 'JACH\'A DIOS AWQUEJJA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 392,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '196',
+      'titulo': 'MI BENDITO PADRE',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 393,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '197',
+      'titulo': 'KOLLAN AJAYU',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 394,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '197',
+      'titulo': 'SANTO ESPÍRITU',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 395,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '198',
+      'titulo': 'TATIT JESUSAMPI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 396,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '198',
+      'titulo': 'EL ANDAR CON JESÚS',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 397,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '199',
+      'titulo': 'DIOSAN KOLLAN LIBROPA',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 398,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '199',
+      'titulo': 'TUS PALABRAS, OH SEÑOR',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 399,
+      'id_idioma': 2, // Aymara
+      'id_tipo_himnario': 3, // Cala
+      'numero': '200',
+      'titulo': 'K\'OMA CHUYMASAMPI',
+      'orden': 1,
+      'estado_registro': 1,
+    },
+    {
+      'id_cancion': 400,
+      'id_idioma': 1, // Español
+      'id_tipo_himnario': 3, // Cala
+      'numero': '200',
+      'titulo': 'LIMPIOS DE CORAZÓN',
+      'orden': 2,
+      'estado_registro': 1,
+    },
+  ];
 
-
-static const List<Map<String, dynamic>> letras = [
-  {
-    'id_letra': 1,
-    'id_cancion': 1,
-    'descripcion': '''(Sol)
+  static const List<Map<String, dynamic>> letras = [
+    {
+      'id_letra': 1,
+      'id_cancion': 1,
+      'descripcion': '''(Sol)
 
 Tatitun jutañapajja sinti
 Jac'ancapuniwa. Suyañäni Juparu;
@@ -3638,12 +3637,12 @@ Cusisiñäni tatitun jac'apana.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 2,
-    'id_cancion': 2,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 2,
+      'id_cancion': 2,
+      'descripcion': '''
 Pronto vuelve Jesucristo,
 A juzgar a este mundo
 Con divina potestad;
@@ -3673,12 +3672,12 @@ Esperando su venida
 De Jesús el Salvador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 3,
-    'id_cancion': 3,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 3,
+      'id_cancion': 3,
+      'descripcion': '''(Re)
 
 Jesusan arupat yatiyañäni
 Take jucharara jakenacaru;
@@ -3703,12 +3702,12 @@ Khespiyir Jesusaw arjjatistani.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 4,
-    'id_cancion': 4,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 4,
+      'id_cancion': 4,
+      'descripcion': '''
 Predicad por doquier la verdad de Dios
 Proclamando el mensaje de su amor;
 Anunciad su perdón con alegre voz,
@@ -3731,12 +3730,12 @@ En la lucha más cruel, Defensor es Él,
 Nos dará la victoria en la tentación.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 5,
-    'id_cancion': 5,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 5,
+      'id_cancion': 5,
+      'descripcion': '''(Do Menor)
 
 Munat khespiyiri, jumaruw catoksma
 Chuymajjar utt'asim, wiñayataqui;
@@ -3766,12 +3765,12 @@ Jumaw imitata munasiñampi.
 
 Roberto Arismendi A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 6,
-    'id_cancion': 6,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 6,
+      'id_cancion': 6,
+      'descripcion': '''
 Salvador bendito, quiero suplicarte
 Que tú siempre mores en mi corazón;
 Guíame, oh Cristo, por tu santa senda
@@ -3799,12 +3798,12 @@ Aunque vengan pruebas, penas o dolores
 Con tu amor y gracia me protegerás.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 7,
-    'id_cancion': 7,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 7,
+      'id_cancion': 7,
+      'descripcion': '''(Do Menor)
 
 Istïtay Dios Awqui mayisitajjaru,
 Uruy arumawa Jumat mayissma;
@@ -3829,12 +3828,12 @@ Suma wilapampi alatätanwa.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 8,
-    'id_cancion': 8,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 8,
+      'id_cancion': 8,
+      'descripcion': '''
 Vivo cada día, a tus pies orando
 Pensando en tus dichos, Cristo Salvador;
 Del vivir en vano, líbrame te ruego
@@ -3857,12 +3856,12 @@ Si a Cristo acudes, las dudad se alejan
 Acepta y confía en tu Salvador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 9,
-    'id_cancion': 9,
-    'descripcion': '''(Fa Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 9,
+      'id_cancion': 9,
+      'descripcion': '''(Fa Menor)
 
 Criston thaquipan sarä
 Jiwañcamaw nay arcä,
@@ -3896,12 +3895,12 @@ Khespiyasimay. (Bis)
 
 Justíno Quíspe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 10,
-    'id_cancion': 10,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 10,
+      'id_cancion': 10,
+      'descripcion': '''
 Por su senda marcharé
 De Cristo mi Salvador
 Con profundo amor;
@@ -3933,12 +3932,12 @@ Y grande realidad,
 No descuides más. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 11,
-    'id_cancion': 11,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 11,
+      'id_cancion': 11,
+      'descripcion': '''(Re Menor)
 
 Dios Awqui uñtanitay,
 Qhuyapt'ayasitaya;
@@ -3963,12 +3962,12 @@ Jumat parlañataqui.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 12,
-    'id_cancion': 12,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 12,
+      'id_cancion': 12,
+      'descripcion': '''
 Heme aquí, oh Padre Dios
 Ten piedad de mí, Señor;
 Lléname de tu poder,
@@ -3991,12 +3990,12 @@ Dame ayuda y poder
 Para hablar de Ti, Señor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 13,
-    'id_cancion': 13,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 13,
+      'id_cancion': 13,
+      'descripcion': '''(Re)
 
 Tatit Jesucristoru
 Jaya marawa thakta,
@@ -4023,12 +4022,12 @@ Yakhac uñtayapjjetu.
 
 Ángel Jiménez M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 14,
-    'id_cancion': 14,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 14,
+      'id_cancion': 14,
+      'descripcion': '''
 Muchos años yo busqué
 Al Señor y Salvador,
 Y por más que lo busqué
@@ -4053,12 +4052,12 @@ Mucha gente me mostró
 Otros dioses que adorar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 15,
-    'id_cancion': 15,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 15,
+      'id_cancion': 15,
+      'descripcion': '''(Fa)
 
 Diosaw imätam take ñankhata
 Cawquirutejja sarcät ucana;
@@ -4083,12 +4082,12 @@ Oracionampiw amtasiñäni.
 
 Mario Zeballos
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 16,
-    'id_cancion': 16,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 16,
+      'id_cancion': 16,
+      'descripcion': '''
 Tu Padre Dios, a ti te cuidará
 Por dondequiera que camines tú,
 Su Espíritu te fortalecerá
@@ -4111,12 +4110,12 @@ Te alumbrará, confianza te dará
 Hasta que venga Cristo el Señor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 17,
-    'id_cancion': 17,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 17,
+      'id_cancion': 17,
+      'descripcion': '''(Mi Menor)
 
 Luratanacam uñtasajj
 Arojjajj janiw utjquit1
@@ -4159,12 +4158,12 @@ Yatichasitay Awquejja
 
 Justino Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 18,
-    'id_cancion': 18,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 18,
+      'id_cancion': 18,
+      'descripcion': '''
 Mirando tú obra, ¡Oh Creador!
 No tengo más palabras ya,
 Oh, Padre Celestial.
@@ -4205,12 +4204,12 @@ Enséñame, Oh Padre Dios
 De tu palabra más .
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 19,
-    'id_cancion': 19,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 19,
+      'id_cancion': 19,
+      'descripcion': '''(Do Menor)
 
 Kollan Awatir Awqui
 Yupaychiriw jutapjjsma,
@@ -4241,12 +4240,12 @@ Marcamar puriñcama. (Bis)
 
 Vicente Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 20,
-    'id_cancion': 20,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 20,
+      'id_cancion': 20,
+      'descripcion': '''
 ¡Oh, Dios Padre Celestial!
 Venimos con gratitud
 Te alabamos con fervor
@@ -4275,12 +4274,12 @@ Danos paz, consolación;
 Guíanos con tu poder. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 21,
-    'id_cancion': 21,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 21,
+      'id_cancion': 21,
+      'descripcion': '''(Mi Menor)
 
 Munasiñampi k'ochuñäni
 Jesusan t'akhesitapata;
@@ -4305,12 +4304,12 @@ Jupampi cusisiñataqui.
 
 Manuel Huañapaco C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 22,
-    'id_cancion': 22,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 22,
+      'id_cancion': 22,
+      'descripcion': '''
 Cantemos todos de corazón
 Por Jesucristo y su pasión;
 Quien por la culpa nuestra sufrió
@@ -4333,12 +4332,12 @@ Para llevarnos con Él a estar
 Donde paz, gozo siempre habrá.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 23,
-    'id_cancion': 23,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 23,
+      'id_cancion': 23,
+      'descripcion': '''(Re Menor)
 
 Nayar munatam laycuw
 Calvar cruzan jiwtajja;
@@ -4363,12 +4362,12 @@ Arcascaquïmaw Tatay.
 
 Sebastián Choquetarqui L
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 24,
-    'id_cancion': 24,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 24,
+      'id_cancion': 24,
+      'descripcion': '''
 Donde voy, oh Padre Dios,
 Siempre tú conmigo estás;
 Por mostrarme tu amor
@@ -4391,12 +4390,12 @@ En cualquier necesidad
 Confiaré en Ti, Señor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 25,
-    'id_cancion': 25,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 25,
+      'id_cancion': 25,
+      'descripcion': '''(Fa)
 
 Navidadata cusisiñäni,
 Jisc'a Belena marcan Jesusajj
@@ -4420,12 +4419,12 @@ Take chuymampiy catokañäni.
 
 Ángel Jiménez M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 26,
-    'id_cancion': 26,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 26,
+      'id_cancion': 26,
+      'descripcion': '''
 En la Navidad alegrémonos
 En Belén nació el niño Jesús,
 Hijo del gran Dios,
@@ -4448,12 +4447,12 @@ En la cruz pagó nuestras deudas ya,
 Aceptemos hoy al gran Salvador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 27,
-    'id_cancion': 27,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 27,
+      'id_cancion': 27,
+      'descripcion': '''(Do)
 
 Jucharar jutamay Jesusar thakamay
 Munasir Jesusaw khespiyasiñ muntam;
@@ -4478,12 +4477,12 @@ Jupawa irpitan alajjpach marcaru.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 28,
-    'id_cancion': 28,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 28,
+      'id_cancion': 28,
+      'descripcion': '''
 Oh ven hoy, pecador, a Jesús que en su amor,
 Del pecado y la ira te quiere salvar;
 Seguiremos con fe a Jesús el Señor
@@ -4506,12 +4505,12 @@ Del pecado y tinieblas Él me libertó
 Y mi guía será al celeste hogar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 29,
-    'id_cancion': 29,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 29,
+      'id_cancion': 29,
+      'descripcion': '''(Sol)
 
 Alajjpachar sarañajj sinti sumapuniwa
 ¿Qhitirac apakestan Criston munasiñapat?
@@ -4539,12 +4538,12 @@ Aca orakenacwa uñisitas sarnaktan
 
 Ángel Jiménez M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 30,
-    'id_cancion': 30,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 30,
+      'id_cancion': 30,
+      'descripcion': '''
 Qué glorioso es andar hacia el cielo con Jesús
 ¿Quién me puede apartar de su eterno y fiel amor?
 Desde que le conocí en mi corazón hay luz,
@@ -4570,12 +4569,12 @@ Aunque en este mundo vil encontremos pruebas mil,
 ¿Quién nos puede daño hacer? Cristo es el Señor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 31,
-    'id_cancion': 31,
-    'descripcion': '''(Si Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 31,
+      'id_cancion': 31,
+      'descripcion': '''(Si Bemol)
 
 Mä jan sirvir ali
 Diosajj waquiehasi, khanstañataqui
@@ -4614,12 +4613,12 @@ Cristow ajllisistu, irnakañatac.
 
 Trad. Tomás Gonzales M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 32,
-    'id_cancion': 32,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 32,
+      'id_cancion': 32,
+      'descripcion': '''
 
 Una simple zarza, sin valor alguno
 Dios pudo usar
@@ -4654,12 +4653,12 @@ Más si nos rendimos, Él nos usará.
 David Morales A.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 33,
-    'id_cancion': 33,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 33,
+      'id_cancion': 33,
+      'descripcion': '''(Re Menor)
 
 Tatitun ch'amapa
 Uñjamay jilata,
@@ -4685,12 +4684,12 @@ Jan khepar cuttas. (Bis)
 
 Manuel Huañapaco C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 34,
-    'id_cancion': 34,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 34,
+      'id_cancion': 34,
+      'descripcion': '''
 El poder de Cristo
 Fue manifestado
 Por las grandes obras
@@ -4714,12 +4713,12 @@ Para andar la vida
 Sin mirar atrás. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 35,
-    'id_cancion': 35,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 35,
+      'id_cancion': 35,
+      'descripcion': '''(Mi Bemol)
 
 :Mä uruw Tatitojj
 Chhaktat uñjasina
@@ -4753,12 +4752,12 @@ Wiñayataquï. (Bis)
 
 Vicente Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 36,
-    'id_cancion': 36,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 36,
+      'id_cancion': 36,
+      'descripcion': '''
 :El Señor me encontró,
 Vil perdido me vió
 Él me redimió. (Bis)
@@ -4790,12 +4789,12 @@ En el cielo tendrás
 Gozo eternal\". (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 37,
-    'id_cancion': 37,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 37,
+      'id_cancion': 37,
+      'descripcion': '''(Re Menor)
 
 Diosajj matrimonior bendizpan
 Cusisitay k'ochuñän
@@ -4825,12 +4824,12 @@ Diosar ist'añan utji.
 
 Santiago Quispe F.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 38,
-    'id_cancion': 38,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 38,
+      'id_cancion': 38,
+      'descripcion': '''
 Estas dos personas se unen hoy
 En presencia del Señor,
 Que Dios las bendiga con su amor
@@ -4858,12 +4857,12 @@ Así vivirán con gozo y paz
 Conducidos por Jesús.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 39,
-    'id_cancion': 39,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 39,
+      'id_cancion': 39,
+      'descripcion': '''(Re Menor)
 
 Alajjpach marcajja
 Diosan marcapawa
@@ -4899,12 +4898,12 @@ Yuspagarañäni Munasiñapata.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 40,
-    'id_cancion': 40,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 40,
+      'id_cancion': 40,
+      'descripcion': '''
 La mansión celestial
 De mi Dios y Señor
 Nunca terminará
@@ -4939,12 +4938,12 @@ Alabando a Jesús
 Por su gran salvación.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 41,
-    'id_cancion': 41,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 41,
+      'id_cancion': 41,
+      'descripcion': '''(Re Menor)
 
 Suma Dios Awqui irpaquitaya
 Munasiñampi, thaquimana;
@@ -4974,12 +4973,12 @@ Arcascaquïmaw jiwañcama.
 
 Leocadio Limachi Y.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 42,
-    'id_cancion': 42,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 42,
+      'id_cancion': 42,
+      'descripcion': '''
 Bendito Padre, guíame siempre
 En tu camino de luz y amor;
 Nunca me dejes sin tu amparo,
@@ -5002,12 +5001,12 @@ Límpiame, Cristo, de mis pecados
 Para que cumpla tu voluntad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 43,
-    'id_cancion': 43,
-    'descripcion': '''(La Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 43,
+      'id_cancion': 43,
+      'descripcion': '''(La Bemol)
 
 Suma Khespiyir Jesusajj
 Gloriap jaytanisaw
@@ -5040,12 +5039,12 @@ Wiñayataquiw jumampejj jacan.
 
 Roberto Arismendi A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 44,
-    'id_cancion': 44,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 44,
+      'id_cancion': 44,
+      'descripcion': '''
 La gloria celestial dejó Jesús el Salvador
 Al mundo por nosotros descendió;
 Y en un pesebre de Belén, el Redentor nació
@@ -5070,12 +5069,12 @@ Recíbele de corazón y limpio ya serás,
 Así con Cristo siempre vivirás.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 45,
-    'id_cancion': 45,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 45,
+      'id_cancion': 45,
+      'descripcion': '''(Re Menor)
 
 Ñankha thaquin sarnakquiriruw
 Cristo Tatitojj jawsasitu;
@@ -5107,12 +5106,12 @@ Wiñay jacaña catokäta.
 
 Eulogio Soto Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 46,
-    'id_cancion': 46,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 46,
+      'id_cancion': 46,
+      'descripcion': '''
 Vivía yo en la oscuridad,
 Sin conocer a mi Salvador;
 Jesús me vio y me redimió
@@ -5142,12 +5141,12 @@ Si tú recibes hoy al Señor
 Con alma limpia al cielo entrarás.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 47,
-    'id_cancion': 47,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 47,
+      'id_cancion': 47,
+      'descripcion': '''(Re Menor)
 
 Alajjpach marcanjja janipuniwa
 Cuna juchanirus catokcaniti;
@@ -5172,12 +5171,12 @@ Juchanacanpacha jiwät ucasti:
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 48,
-    'id_cancion': 48,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 48,
+      'id_cancion': 48,
+      'descripcion': '''
 Allá en el reino de nuestro buen Dios,
 Ningún pecador jamás podrá entrar;
 Y si tú anhelas con Jesús estar,
@@ -5200,12 +5199,12 @@ Pero sí, en pecado tú vas a morir:
 \"Yo no te conozco\", Cristo te dirá.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 49,
-    'id_cancion': 49,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 49,
+      'id_cancion': 49,
+      'descripcion': '''(Sol)
 
 Rey Jesusaw jutani
 Alajjpach c'ajquir marcata,
@@ -5232,12 +5231,12 @@ Wiñay Cristompiñäni.
 
 Félix Guanca
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 50,
-    'id_cancion': 50,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 50,
+      'id_cancion': 50,
+      'descripcion': '''
 Al mundo Cristo Jesús
 De los cielos pronto vendrá;
 Con gran poder volverá
@@ -5262,12 +5261,12 @@ Felices todos serán
 Al estar con Cristo el Señor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 51,
-    'id_cancion': 51,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 51,
+      'id_cancion': 51,
+      'descripcion': '''(Re Menor)
 
 Qhuyapayasiri kollan suma Awqui
 Munasiñamajja sinti jach'awa;
@@ -5292,12 +5291,12 @@ Waljaniraquiwa nayar c'umipjjetu
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 52,
-    'id_cancion': 52,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 52,
+      'id_cancion': 52,
+      'descripcion': '''
 Padre Dios eterno, Tú eres compasivo,
 Misericordioso, lleno de amor;
 Cuando fui perdido, Tú me redimiste
@@ -5320,12 +5319,12 @@ Tú me has salvado, me has perdonado
 Sólo a ti te sigo sin ningún temor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 53,
-    'id_cancion': 53,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 53,
+      'id_cancion': 53,
+      'descripcion': '''(Re Menor)
 
 Criston jutañap suyascta
 Cunapachac jutcani;
@@ -5350,12 +5349,12 @@ Cristor suyapjjañäni.
 
 Santiago Rivas L.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 54,
-    'id_cancion': 54,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 54,
+      'id_cancion': 54,
+      'descripcion': '''
 Espero que Cristo venga
 No tardará en venir;
 Y cuando llegue ese día,
@@ -5378,12 +5377,12 @@ y aunque vengan las pruebas
 El siempre nos guardará.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 55,
-    'id_cancion': 55,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 55,
+      'id_cancion': 55,
+      'descripcion': '''(Re Menor)
 
 Warawaran c'ajatapaw amtayitu
 Tatitojjan acapachar jutatapa;
@@ -5413,12 +5412,12 @@ Khespiyirin yuritapa yatisina.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 56,
-    'id_cancion': 56,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 56,
+      'id_cancion': 56,
+      'descripcion': '''
 Al ver las estrellas brillar recuerdo yo
 Que Jesús el Hijo de Dios vino a nacer;
 Y su luz me hace pensar en el amor
@@ -5446,12 +5445,12 @@ Sus regalos ofrecieron con mucho amor
 Alabando de corazón al Salvador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 57,
-    'id_cancion': 57,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 57,
+      'id_cancion': 57,
+      'descripcion': '''(Re Menor)
 
 Tatit Jesusajj niyaw jutani;
 Khespiyatanacaw catokañäni,
@@ -5482,12 +5481,12 @@ Cusisiniwa, cusisiniwa.
 
 Adrián Calle
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 58,
-    'id_cancion': 58,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 58,
+      'id_cancion': 58,
+      'descripcion': '''
 Muy pronto Cristo vendrá al mundo
 Seamos dignos de recibir a Él
 Día glorioso e inesperado
@@ -5515,12 +5514,12 @@ Mas el Señor al ver la blancura,
 Se alegrará, se alegrará.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 59,
-    'id_cancion': 59,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 59,
+      'id_cancion': 59,
+      'descripcion': '''(Re Menor)
 
 Dios yuspagarsmawa
 Nayar munatamat
@@ -5551,12 +5550,12 @@ Alajjpach marcaru? (Bis)
 
 Dionisio Aspi C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 60,
-    'id_cancion': 60,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 60,
+      'id_cancion': 60,
+      'descripcion': '''
 Gracias te doy, Señor
 Por tu inefable amor;
 De todo corazón
@@ -5585,12 +5584,12 @@ Por no querer dejar
 Tus culpas en la cruz. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 61,
-    'id_cancion': 61,
-    'descripcion': '''(Si Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 61,
+      'id_cancion': 61,
+      'descripcion': '''(Si Bemol)
 
 Cristo kollan Apojja
 Ohuyapayasiñamajj
@@ -5620,12 +5619,12 @@ Khespiyista ucata.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 62,
-    'id_cancion': 62,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 62,
+      'id_cancion': 62,
+      'descripcion': '''
 Jesucristo mi buen Dios
 Compasivo eres Tú;
 Tan brillante como el sol,
@@ -5653,12 +5652,12 @@ Sólo sé que por tu amor
 Me salvaste del pecar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 63,
-    'id_cancion': 63,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 63,
+      'id_cancion': 63,
+      'descripcion': '''(Mi Bemol)
 
 Yuspagarsmaw Kollan Cristo
 Nayar khespiyatamat;
@@ -5688,12 +5687,12 @@ Wiñay jacañ churtajja.
 
 Fernando Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 64,
-    'id_cancion': 64,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 64,
+      'id_cancion': 64,
+      'descripcion': '''
 Te doy gracias, Jesucristo
 Por tu grande salvación,
 Con tu sangre me has limpiado
@@ -5721,12 +5720,12 @@ Todos los que fiel te sigan
 Gozarán contigo allí.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 65,
-    'id_cancion': 65,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 65,
+      'id_cancion': 65,
+      'descripcion': '''(Re Menor)
 
 Kollan suma Dios Awqui
 Qhuyapt'ayasitaya;
@@ -5751,12 +5750,12 @@ Machak k'ochunacampi.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 66,
-    'id_cancion': 66,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 66,
+      'id_cancion': 66,
+      'descripcion': '''
 Cristo, amante Salvador
 Ten clemencia hoy de mí,
 Con tu amor ayúdame
@@ -5779,12 +5778,12 @@ Siempre yo te serviré
 Sin cesar te alabaré.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 67,
-    'id_cancion': 67,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 67,
+      'id_cancion': 67,
+      'descripcion': '''(Re Menor)
 
 Cristompiw wiñay jacä
 Alajjpach marcana;
@@ -5804,12 +5803,12 @@ Jupa laye t'akhesïwa.
 
 Pascual Catari A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 68,
-    'id_cancion': 68,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 68,
+      'id_cancion': 68,
+      'descripcion': '''
 Yo viviré con Jesús
 En la mansión de luz;
 Todo el pecado dejé
@@ -5827,12 +5826,12 @@ Con mi bendito Señor
 Gozoso caminaré.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 69,
-    'id_cancion': 69,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 69,
+      'id_cancion': 69,
+      'descripcion': '''(Sol)
 
 Diosaquiwa nayarojj imasquitani
 Llaquisiñanacana sarnakquipansa,
@@ -5860,12 +5859,12 @@ Alajjpachan wiñaya jacjjapjjañäni.
 
 Ángel Jiménez M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 70,
-    'id_cancion': 70,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 70,
+      'id_cancion': 70,
+      'descripcion': '''
 En momentos de dolor, Dios me guardará
 En tristeza y afán, me consolará;
 Él nunca me dejará, a mi lado está,
@@ -5891,12 +5890,12 @@ En el cielo viviré siempre con Jesús.
 :En el cielo no habrá pruebas ni dolor. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 71,
-    'id_cancion': 71,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 71,
+      'id_cancion': 71,
+      'descripcion': '''(Re Menor)
 
 Munasiñampi sarapjjañäni
 Khespiyirisan marcaparu;
@@ -5921,12 +5920,12 @@ Alajjpacharu puriñcama.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 72,
-    'id_cancion': 72,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 72,
+      'id_cancion': 72,
+      'descripcion': '''
 Iremos todos con alegría
 A la presencia del Salvador;
 En tiempos tristes, tiempos gozosos,
@@ -5949,12 +5948,12 @@ Y protegidos juntos iremos
 Hasta que estemos con el Señor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 73,
-    'id_cancion': 73,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 73,
+      'id_cancion': 73,
+      'descripcion': '''(Re Menor)
 
 Cristo Tatituw nayar munitu,
 Munasiñampiw nayar jacayitu;
@@ -5979,12 +5978,12 @@ Wiñayataquiw nayajj Tatituncta.
 
 Nemesio Laura N.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 74,
-    'id_cancion': 74,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 74,
+      'id_cancion': 74,
+      'descripcion': '''
 Cristo, el Salvador, con su gran amor,
 En la cruz murió y salvación me dio;
 Del peligro y mal, Él me guarda ya,
@@ -6007,12 +6006,12 @@ Cristo ya quitó todo mi dolor,
 Estaré con Él aun por la eternidad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 75,
-    'id_cancion': 75,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 75,
+      'id_cancion': 75,
+      'descripcion': '''(Do)
 
 Cristo sapaquiwa juchararar khespiyi
 Cruzan jiwasina wilapa wartawayi;
@@ -6026,12 +6025,12 @@ Cristo sapanacwa khespiyasiñajj utji.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 76,
-    'id_cancion': 76,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 76,
+      'id_cancion': 76,
+      'descripcion': '''
 Sólo Cristo salva del pecado y dolor,
 Derramó su sangre para darnos libertad;
 No hay otro nombre que ofrece salvación,
@@ -6043,12 +6042,12 @@ No hay otro nombre que ofrece salvación,
 Sólo Cristo salva, dando gozo y perdón.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 77,
-    'id_cancion': 77,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 77,
+      'id_cancion': 77,
+      'descripcion': '''(Re Menor)
 
 ¿Qhitis saran? ¿Qhitis saran?
 ¿Qhitis saran? ¿Qhitis saran
@@ -6061,12 +6060,12 @@ Diosan arup yapuchiri.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 78,
-    'id_cancion': 78,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 78,
+      'id_cancion': 78,
+      'descripcion': '''
 ¿Quién quiere ir a predicar
 El buen mensaje del amor?
 ¿Quién quiere ir a proclamar
@@ -6078,12 +6077,12 @@ Yo quiero ir a proclamar
 Que en Cristo hay la salvación.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 79,
-    'id_cancion': 79,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 79,
+      'id_cancion': 79,
+      'descripcion': '''(Re Menor)
 
 Qhuyapt'ayasitay Cristo
 Asqui munasiñamampi;
@@ -6113,12 +6112,12 @@ Nayar antutt'asistati.
 
 Mario Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 80,
-    'id_cancion': 80,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 80,
+      'id_cancion': 80,
+      'descripcion': '''
 Ten misericordia, Cristo
 Por tu amor tan infinito;
 Límpiame de mi pecado
@@ -6146,12 +6145,12 @@ Y guiado por tu mano,
 Andaré por este mundo.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 81,
-    'id_cancion': 81,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 81,
+      'id_cancion': 81,
+      'descripcion': '''(Re Menor)
 
 Yuspagarañäniya, alajjpach Awquisaru
 Jupajj bendicionanac sapürus churasquistu;
@@ -6174,12 +6173,12 @@ Ucampiw yatichistu sum jacañasataqui.
 
 Antonio Huanca C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 82,
-    'id_cancion': 82,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 82,
+      'id_cancion': 82,
+      'descripcion': '''
 Demos gradas al Señor, Padre Dios y Creador
 Quien nos llena cada día de paz y bendición;
 Demos gradas por su amor con el rual Él nos salvó
@@ -6200,12 +6199,12 @@ Demos gradas al Señor, por las pruebas que Él nos da
 Ya que nos enseñan cómo rumplir su voluntad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 83,
-    'id_cancion': 83,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 83,
+      'id_cancion': 83,
+      'descripcion': '''(Re Menor)
 
 Tatitu, nayaw munsma, nayanctawa jumajj,
 Take juchanacajjsa pampacharaquistaw;
@@ -6229,12 +6228,12 @@ Juc'ac munchiyasmajja, juc'ampi munäma. (Bis)
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 84,
-    'id_cancion': 84,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 84,
+      'id_cancion': 84,
+      'descripcion': '''
 Señor Jesús, yo te amo, tú eres mi Señor,
 Y tú me has perdonado de toda mi maldad;
 :Mi amado Jesucristo, soy salvo por tu amor,
@@ -6256,12 +6255,12 @@ Y todo amor humano también terminará;
 Si poco te he amado, hoy quiero amarte más. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 85,
-    'id_cancion': 85,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 85,
+      'id_cancion': 85,
+      'descripcion': '''(Re Menor)
 
 Juma jac'an Dios Awquejja
 Nayajj jacañ munta;
@@ -6286,12 +6285,12 @@ Jumarojj k'ochöjja.
 
 Calixto Cabrera F.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 86,
-    'id_cancion': 86,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 86,
+      'id_cancion': 86,
+      'descripcion': '''
 Oh, Cristo en tu presencia
 Yo quiero siempre estar;
 Mi vida a ti yo entrego,
@@ -6314,12 +6313,12 @@ Te alabaré eternamente
 De todo corazón.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 87,
-    'id_cancion': 87,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 87,
+      'id_cancion': 87,
+      'descripcion': '''(Do Menor)
 
 Suma Dios Awqui nayat amtt'asitay
 Juma sapaquiw nayatjja yatista;
@@ -6338,12 +6337,12 @@ Munasiñamasti takempïpanay.
 
 Julio Quispe H. Rufino Chura G.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 88,
-    'id_cancion': 88,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 88,
+      'id_cancion': 88,
+      'descripcion': '''
 Padre celestial, acuérdate de mí
 Solamente tú conoces mi existir;
 Tú eres mi Señor, ¿a quién acudiré?
@@ -6360,12 +6359,12 @@ Sólamente tú conoces su vivir
 Con tu amor bendito puedes redimir.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 89,
-    'id_cancion': 89,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 89,
+      'id_cancion': 89,
+      'descripcion': '''(Do Menor)
 
 :Tatitusana marcapajja
 Wiñayataquiw c'ajasinqui. (Bis)
@@ -6388,12 +6387,12 @@ Alajjpachanwa cusisjjañän. (Bis)
 
 Pascual Catari A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 90,
-    'id_cancion': 90,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 90,
+      'id_cancion': 90,
+      'descripcion': '''
 :Glorioso pueblo de mi Señor
 Eternamente allí brillará. (Bis)
 : Es la morada del Padre Dios
@@ -6414,12 +6413,12 @@ Sólo encontramos pena y dolor. (Bis)
 Paz hallaremos, gozo sin fin. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 91,
-    'id_cancion': 91,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 91,
+      'id_cancion': 91,
+      'descripcion': '''(Do Menor)
 
 Kawkha cutiw Kollan Cristo
 Jawsatama nayajj ist'ta;
@@ -6449,12 +6448,12 @@ Cristosata sayt'añäni.
 
 Enrique Canaviri M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 92,
-    'id_cancion': 92,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 92,
+      'id_cancion': 92,
+      'descripcion': '''
 Oh Señor, tú me has llamado
 Muchas veces a servirte;
 Desde ahora ya estoy listo
@@ -6482,12 +6481,12 @@ Predicando tu mensaje
 Venceremos el pecado.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 93,
-    'id_cancion': 93,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 93,
+      'id_cancion': 93,
+      'descripcion': '''(Re Menor)
 
 Yanapt'itaya Dios Awquejja
 Yant'anacawa muyuntitu;
@@ -6512,12 +6511,12 @@ Yant'ar atipjañataquejja.
 
 Pascual Catarí A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 94,
-    'id_cancion': 94,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 94,
+      'id_cancion': 94,
+      'descripcion': '''
 Dame tu fuerza, bendito Dios
 Porque en las pruebas débil estoy;
 Sólo tú, Cristo, me ayudarás
@@ -6539,12 +6538,12 @@ Sólo tú, Cristo me das poder,
 Y la victoria sobre el pecar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 95,
-    'id_cancion': 95,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 95,
+      'id_cancion': 95,
+      'descripcion': '''(Do Menor)
 
 Tatay, cayumaruw jutta
 Jacht'asisaw maqhatansma
@@ -6584,12 +6583,12 @@ Ucqharuy irpjjeta! (Bis)
 
 Tomás Gonzales M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 96,
-    'id_cancion': 96,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 96,
+      'id_cancion': 96,
+      'descripcion': '''
 Señor, aquí a tus plantas
 Lloro de gozo profundo,
 Porque ya todas mis faltas
@@ -6627,12 +6626,12 @@ Un hogar celestial.
 Por la eternidad. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 97,
-    'id_cancion': 97,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 97,
+      'id_cancion': 97,
+      'descripcion': '''(Do Menor)
 
 Jake masimat amtasimay
 Juchan chhaktataw sarnakasqui;
@@ -6652,12 +6651,12 @@ Diosaw jumarojj bendicïtam.
 
 Pascual Catari A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 98,
-    'id_cancion': 98,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 98,
+      'id_cancion': 98,
+      'descripcion': '''
 Muchas personas viven sin Dios
 Sin esperanza ni salvación;
 Anda, hermano, a proclamar
@@ -6675,12 +6674,12 @@ Si tú le sirves de corazón
 Con bendiciones te colmará.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 99,
-    'id_cancion': 99,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 99,
+      'id_cancion': 99,
+      'descripcion': '''(Do)
 
 Take acapachawa
 Diosatjja yatipjje, (yatipjje)
@@ -6720,12 +6719,12 @@ Khespiyascaraqui.
 
 Guillermo Zeballos
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 100,
-    'id_cancion': 100,
-    'descripcion': '''(compasión)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 100,
+      'id_cancion': 100,
+      'descripcion': '''(compasión)
 
 En todo el mundo entero
 Saben que hay un Dios, (hay un Dios)
@@ -6761,12 +6760,12 @@ Hoy Cristo invita para que todos
 Vayan con gozo a Él.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 101,
-    'id_cancion': 101,
-    'descripcion': '''(Fa Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 101,
+      'id_cancion': 101,
+      'descripcion': '''(Fa Menor)
 
 Yuspagarsmaw suma Awqui
 Nayar munatamata,
@@ -6785,12 +6784,12 @@ Khananchañajjataqui. (Bis)
 
 Santiago Rivas l.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 102,
-    'id_cancion': 102,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 102,
+      'id_cancion': 102,
+      'descripcion': '''
 Te doy gracias, oh Dios Padre
 Por tu gran amor por mí;
 :Al Señor Jesús has enviado tú,
@@ -6807,12 +6806,12 @@ Por tu gran amor por mí;
 Con tu ayuda y dirección. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 103,
-    'id_cancion': 103,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 103,
+      'id_cancion': 103,
+      'descripcion': '''(Mi Bemol)
 
 Chuymajjajj cusisitaw jicjjatasi
 Cristor arcatäjjat
@@ -6828,12 +6827,12 @@ Wiñayaw jupampi jacä. (Bis)
 
 Justino Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 104,
-    'id_cancion': 104,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 104,
+      'id_cancion': 104,
+      'descripcion': '''
 Mi corazón está feliz con Cristo
 Confío siempre en Él;
 :¿Quién daño alguno
@@ -6846,12 +6845,12 @@ Jesús es mi Señor;
 Confiadamente seguiré. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 105,
-    'id_cancion': 105,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 105,
+      'id_cancion': 105,
+      'descripcion': '''(Do Menor)
 
 Utat jayancañajj llaquisiñawa,
 Jan qhitin tumpata Awquit jayana;
@@ -6881,12 +6880,12 @@ Cruzan jiwatapar jaysañän ucajj.
 
 Justino Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 106,
-    'id_cancion': 106,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 106,
+      'id_cancion': 106,
+      'descripcion': '''
 Si alejado vives triste y sin Dios,
 Solo y sin nadie, sin su comunión;
 Si así tú vives no prosperarás,
@@ -6907,12 +6906,12 @@ Quiere ayudarte, ven a Él por fe,
 Abrele la puerta de tu corazón.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 107,
-    'id_cancion': 107,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 107,
+      'id_cancion': 107,
+      'descripcion': '''(Re Menor)
 
 Khespiyasiñajj waquichatawa
 Criston cruzan jiwatap laycu;
@@ -6941,12 +6940,12 @@ Ucan suma khana yatisini.
 
 Justino Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 108,
-    'id_cancion': 108,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 108,
+      'id_cancion': 108,
+      'descripcion': '''
 Salvación hay para el mundo entero
 Por la muerte del Señor Jesús;
 En la cruz sufrió para salvamos
@@ -6973,12 +6972,12 @@ Todos nuestros hechos y palabras
 Ante Dios serán ya revelados.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 109,
-    'id_cancion': 109,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 109,
+      'id_cancion': 109,
+      'descripcion': '''(Re Menor)
 
 Alajjpachanquir suma Awquiy
 Mayisitajjar ist'aquitay;
@@ -7000,12 +6999,12 @@ Wiñayataqui.
 
 Rutina Chura G
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 110,
-    'id_cancion': 110,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 110,
+      'id_cancion': 110,
+      'descripcion': '''
 Oh, Padre mío, Dios y Señor
 Pido que escuches mi oración;
 En este mundo hay tentación,
@@ -7025,12 +7024,12 @@ Para seguirte hasta el fin
 Sin mirar atrás.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 111,
-    'id_cancion': 111,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 111,
+      'id_cancion': 111,
+      'descripcion': '''(Fa)
 
 Diosan jawsatapjja jayaw isch'ucta
 Kollan yapupana irnakañatac;
@@ -7056,12 +7055,12 @@ Amparaparuwa luratajj jaytä.
 
 Justino Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 112,
-    'id_cancion': 112,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 112,
+      'id_cancion': 112,
+      'descripcion': '''
 Esperando estaba del Señor su voz
 Para que me envíe hoy a trabajar;
 Mientras ocupado, sin pensar en Dios,
@@ -7085,12 +7084,12 @@ Quiero hacerlos siempre con sinceridad
 Cristo el resultado lo bendecirá.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 113,
-    'id_cancion': 113,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 113,
+      'id_cancion': 113,
+      'descripcion': '''(Mi Bemol)
 
 Cristo saparuquiwa
 Arcaña munta;
@@ -7120,12 +7119,12 @@ Imasquitani. (Bis)
 
 Justino Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 114,
-    'id_cancion': 114,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 114,
+      'id_cancion': 114,
+      'descripcion': '''
 Sólo a Cristo, mi Señor
 Siempre seguiré;
 Las palabras de su amor
@@ -7153,12 +7152,12 @@ En peligro y en dolor
 Dios me guardará . (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 115,
-    'id_cancion': 115,
-    'descripcion': '''(Si Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 115,
+      'id_cancion': 115,
+      'descripcion': '''(Si Menor)
 
 Acapachana sarnakasajj
 Janiwa cunanïctsa. {Bis)
@@ -7177,12 +7176,12 @@ Wiñay wiñayatac. (Bis)
 
 Rutino Chura G.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 116,
-    'id_cancion': 116,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 116,
+      'id_cancion': 116,
+      'descripcion': '''
 En este mundo de vanidad
 Riquezas no tengo yo. (Bis)
 Mas lo que tengo prestado es
@@ -7199,12 +7198,12 @@ Con el Señor Jesús gozaré
 Por la eternidad. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 117,
-    'id_cancion': 117,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 117,
+      'id_cancion': 117,
+      'descripcion': '''(Re Menor)
 
 Alajjpachanquir suma Cristojj
 T'akhesiwaytawa;
@@ -7229,12 +7228,12 @@ Cutt'aniñapatac. (Bis)
 
 Rufino Chura G.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 118,
-    'id_cancion': 118,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 118,
+      'id_cancion': 118,
+      'descripcion': '''
 Cristo tú eres mi Salvador
 Sufriste tú por mí;
 Por mis pecados fuiste a la cruz
@@ -7257,12 +7256,12 @@ No quiere aceptar.
 Que se te acerquen hoy. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 119,
-    'id_cancion': 119,
-    'descripcion': '''(La Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 119,
+      'id_cancion': 119,
+      'descripcion': '''(La Bemol)
 
 ¿Cunanquis cusisiñajj?
 Sasaw jisct'asipjjetu;
@@ -7295,12 +7294,12 @@ Juma sapanac cusisiñajj utji.
 
 Justino Quispe Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 120,
-    'id_cancion': 120,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 120,
+      'id_cancion': 120,
+      'descripcion': '''
 En el mundo hay dolor, sufrimiento y afán
 Muchos andan hoy buscando gozo y paz;
 Viendo la gran confusión, yo me puse a pensar:
@@ -7323,12 +7322,12 @@ Padre, que mi corazón esté lleno de tu amor,
 Solamente en ti hay gran felicidad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 121,
-    'id_cancion': 121,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 121,
+      'id_cancion': 121,
+      'descripcion': '''(Do Menor)
 
 Munasiri Kollan Cristo
 Irpaquitay ch'amamampi;
@@ -7358,12 +7357,12 @@ Wiñay cusisiñataqui.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 122,
-    'id_cancion': 122,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 122,
+      'id_cancion': 122,
+      'descripcion': '''
 Cristo Guíame amante Cristo
 Con tu mano poderosa;
 No me desampares Cristo,
@@ -7391,12 +7390,12 @@ Y en el cielo eternamente
 Gozaré de tu presencia.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 123,
-    'id_cancion': 123,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 123,
+      'id_cancion': 123,
+      'descripcion': '''(Re)
 
 Lajja ch'amacan llaquin phokt'ataw
 Jaken almapajj t'akhesisqui. (Bis)
@@ -7428,12 +7427,12 @@ Jiwas khespiyir Cristosaru.
 
 Carmelo Yanapa Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 124,
-    'id_cancion': 124,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 124,
+      'id_cancion': 124,
+      'descripcion': '''
 En las tinieblas con aflicciones
 Sufre el alma del pecador. (Bis)
 Sediento está de la salvación
@@ -7463,12 +7462,12 @@ Alabaremos al Salvador
 Somos sus hijos salvos por Él.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 125,
-    'id_cancion': 125,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 125,
+      'id_cancion': 125,
+      'descripcion': '''(Re Menor)
 
 Cruzan ch'accatata jiwawaytajja,
 Amuyt'asiwaytwa luräwimata.
@@ -7488,12 +7487,12 @@ Puriñajjcamaya yanapt'asita.
 
 Félix Carriles P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 126,
-    'id_cancion': 126,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 126,
+      'id_cancion': 126,
+      'descripcion': '''
 Clavado en la cruz moriste, ¡oh Cristo!
 Sé lo que has hecho por amarme a mí.
 
@@ -7514,12 +7513,12 @@ Oye tú mis cuitas, ¡oh mi Padre Dios!
 Siendo pecador te pido tu perdón .
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 127,
-    'id_cancion': 127,
-    'descripcion': '''(Mí Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 127,
+      'id_cancion': 127,
+      'descripcion': '''(Mí Bemol)
 
 Diosan take ajllitanaca
 Ist'añäni Diosan arupa;
@@ -7543,12 +7542,12 @@ Jake masisar munasasti
 
 Santiago Rivas L.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 128,
-    'id_cancion': 128,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 128,
+      'id_cancion': 128,
+      'descripcion': '''
 Todos los que siguen al Señor,
 Hoy escuchen lo que dice Dios:
 \"Ámense de todo corazón\"
@@ -7570,12 +7569,12 @@ Sus palabras hay que obedecer
 :Para hallar gozo y felicidad. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 129,
-    'id_cancion': 129,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 129,
+      'id_cancion': 129,
+      'descripcion': '''(Do Menor)
 
 Diosajj jaker munasinjja
 Munata Yokap qhitani,
@@ -7603,12 +7602,12 @@ Jan ucast lurawimpiwa.
 
 Pío Laura C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 130,
-    'id_cancion': 130,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 130,
+      'id_cancion': 130,
+      'descripcion': '''
 Amó Dios tanto al mundo
 Que envió su único Hijo,
 El cual murió en Calvario
@@ -7634,12 +7633,12 @@ De Cristo para salvamos
 De todo nuestro pecado.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 131,
-    'id_cancion': 131,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 131,
+      'id_cancion': 131,
+      'descripcion': '''(Re)
 
 ¿Waquichastat munat jilata?
 Niyaw sarjjañän alajjpachar.
@@ -7664,12 +7663,12 @@ Alajjpacharu puriñascama. (Bis)
 
 Ángel Condori S.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 132,
-    'id_cancion': 132,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 132,
+      'id_cancion': 132,
+      'descripcion': '''
 ¿Listo, hermano, estás tú para entrar
 En los cielos a morar con Dios?
 ¿y hermana, preparada estás
@@ -7692,12 +7691,12 @@ Siempre gozaremos con Jesús.
 A vivir con Dios por la eternidad. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 133,
-    'id_cancion': 133,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 133,
+      'id_cancion': 133,
+      'descripcion': '''(Re Menor)
 
 Suma Tatit Cristo yanapt'asitaya
 Suma thaquimana sarañajjatac;
@@ -7722,12 +7721,12 @@ Yanapt'itay Cristo jumar arcaña.
 
 Germán Mamani M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 134,
-    'id_cancion': 134,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 134,
+      'id_cancion': 134,
+      'descripcion': '''
 Señor Jesucristo, dame tu ayuda
 Para andar contigo y seguirte fiel;
 Yo te necesito, sin valor me siento
@@ -7750,12 +7749,12 @@ Cuando hay sufrimientos, grandes aflicciones
 Tú eres mi esperanza, en ti confiaré.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 135,
-    'id_cancion': 135,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 135,
+      'id_cancion': 135,
+      'descripcion': '''(Re Menor)
 
 Munata Cristo, nayajj jaltanta
 Jumar arcañ munsma chekpachana. (Bis)
@@ -7774,12 +7773,12 @@ Almanac khespiyañataqui. (Bis)
 
 Autor desconocido
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 136,
-    'id_cancion': 136,
-    'descripcion': '''Amado Cristo, vengo de prisa
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 136,
+      'id_cancion': 136,
+      'descripcion': '''Amado Cristo, vengo de prisa
 Para seguirte fiel de corazón. (Bis)
 :Guíame, Cristo en tu camino,
 Y en las tristezas yo venceré. (Bis)
@@ -7795,12 +7794,12 @@ Con gloria y gran poder Cristo vendrá. (Bis)
 Le serviré con fe y con valor. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 137,
-    'id_cancion': 137,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 137,
+      'id_cancion': 137,
+      'descripcion': '''(Re Menor)
 
 Mojjsa arunacamar ist'asaw
 Nayajja jumaru maqhatansma,
@@ -7825,12 +7824,12 @@ Amparamampiy irpasipjjeta. {Bis)
 
 Ángel Condori S.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 138,
-    'id_cancion': 138,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 138,
+      'id_cancion': 138,
+      'descripcion': '''
 Al escuchar tus palabras,
 Señor Vengo a rendirme delante de ti;
 Padre bendito y lleno de amor,
@@ -7853,12 +7852,12 @@ Me ayudará a servirte, Señor.
 Guíame siempre con tu gran amor. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 139,
-    'id_cancion': 139,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 139,
+      'id_cancion': 139,
+      'descripcion': '''(Re Menor)
 
 Khespiyasiri Cristo Jesús
 Yanapt'itaya thaquimana
@@ -7888,12 +7887,12 @@ Acapachan.
 
 Félix Acarapi F.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 140,
-    'id_cancion': 140,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 140,
+      'id_cancion': 140,
+      'descripcion': '''
 Ayúdame Cristo mi Señor
 Para seguirte hasta el fin
 De corazón;
@@ -7921,12 +7920,12 @@ Este enemigo es Satanás
 Y hacer pecar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 141,
-    'id_cancion': 141,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 141,
+      'id_cancion': 141,
+      'descripcion': '''(Do Menor)
 
 Tatit Cristo yanapt'itay
 Llaquinacajj atipt'aña;
@@ -7951,12 +7950,12 @@ Wiñay cusisiñataqui.
 
 Germán Mamani M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 142,
-    'id_cancion': 142,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 142,
+      'id_cancion': 142,
+      'descripcion': '''
 Dame fuerzas, Cristo mío
 A vencer en las tristezas;
 Piensa en mí, cual hijo humilde
@@ -7979,12 +7978,12 @@ Dándome la vida eterna;
 A tu lado eternamente!
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 143,
-    'id_cancion': 143,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 143,
+      'id_cancion': 143,
+      'descripcion': '''(Re Menor)
 
 Cusisität nayajj,
 Cusisität nayajj
@@ -8006,12 +8005,12 @@ Jupajj perdonätam. (Bis)
 
 Gladis Ali
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 144,
-    'id_cancion': 144,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 144,
+      'id_cancion': 144,
+      'descripcion': '''
 Me siento muy feliz,
 Me siento muy feliz
 Porque el Señor Jesús
@@ -8030,12 +8029,12 @@ Y Él con tanto amor
 Tu mal perdonará. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 145,
-    'id_cancion': 145,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 145,
+      'id_cancion': 145,
+      'descripcion': '''(Re Menor)
 
 Alajjpachar sarañajj
 Sinti sumapuniwa;
@@ -8060,12 +8059,12 @@ Nayajj saraquïmawa:
 
 Trad. Germán Mamani M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 146,
-    'id_cancion': 146,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 146,
+      'id_cancion': 146,
+      'descripcion': '''
 Qué glorioso es andar
 Hacia el cielo con Jesús;
 Roca de la eternidad,
@@ -8090,12 +8089,12 @@ Mis labios repetirán:
 Florentino Chambi I
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 147,
-    'id_cancion': 147,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 147,
+      'id_cancion': 147,
+      'descripcion': '''(Fa)
 
 Qhititejj tucuycam sayt'añäni
 Ucaquiw khespiyat uñjasiñän;
@@ -8120,12 +8119,12 @@ Ch'amanchasimay tucuycama.
 
 Pedro Mayta O.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 148,
-    'id_cancion': 148,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 148,
+      'id_cancion': 148,
+      'descripcion': '''
 El que a Jesús sigue sin desmayar
 Gozo tendrá por la eternidad;
 Si hasta la muerte le sigue con fe
@@ -8148,12 +8147,12 @@ Debes seguirle con fe y valor;
 Camina firme sin vacilar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 149,
-    'id_cancion': 149,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 149,
+      'id_cancion': 149,
+      'descripcion': '''(Re Menor)
 
 Dios Awquejja
 Uñtanitaya,
@@ -8178,12 +8177,12 @@ Wañsuquiniwa. (Bis)
 
 Ángel Jiménez M
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 150,
-    'id_cancion': 150,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 150,
+      'id_cancion': 150,
+      'descripcion': '''
 Oh Señor, escucha
 Mi oración;
 Dame tu gran poder
@@ -8206,12 +8205,12 @@ Nunca ha de durar
 Se marchitará . (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 151,
-    'id_cancion': 151,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 151,
+      'id_cancion': 151,
+      'descripcion': '''(Mi Bemol)
 
 Jesucristow yanapasquitu
 Take sarnakäwinacajjana;
@@ -8241,12 +8240,12 @@ Jupampiw sarjjañäni.
 
 Demetrio Nina M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 152,
-    'id_cancion': 152,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 152,
+      'id_cancion': 152,
+      'descripcion': '''
 El Señor Jesús me ayudará
 Cada día me dará su poder;
 En sus sendas limpias me guiará
@@ -8274,12 +8273,12 @@ En los cielos siempre gozarán
 Junto con el Salvador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 153,
-    'id_cancion': 153,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 153,
+      'id_cancion': 153,
+      'descripcion': '''(Do Menor)
 
 Cristo Tatitu k'omachistaw
 Nayan chuymajja jumataqui;
@@ -8303,12 +8302,12 @@ Juchanacapsa perdontawa.
 
 Félix Acarapi F.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 154,
-    'id_cancion': 154,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 154,
+      'id_cancion': 154,
+      'descripcion': '''
 Cristo Jesús, con tu gran amor
 Me perdonaste de todo mal;
 Tú me salvaste con tu poder
@@ -8330,12 +8329,12 @@ Siempre perdonas con compasión
 Al que contrito te busca a ti.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 155,
-    'id_cancion': 155,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 155,
+      'id_cancion': 155,
+      'descripcion': '''(Re)
 
 Munat Tatitojja
 Ch'amamay churita
@@ -8365,12 +8364,12 @@ Cusisiyañatac.
 
 Franklin B. Apaza C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 156,
-    'id_cancion': 156,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 156,
+      'id_cancion': 156,
+      'descripcion': '''
 Amante Salvador,
 Dame tu gran poder
 Para testificar
@@ -8398,12 +8397,12 @@ Manda a mi corazón;
 Y me dará su paz.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 157,
-    'id_cancion': 157,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 157,
+      'id_cancion': 157,
+      'descripcion': '''(Re Menor)
 
 Ch'amac thaquinwa jacascäyät
 Tatitut jayana;
@@ -8423,12 +8422,12 @@ Cusisiñ jicjjatta.
 
 Trad. Lorenzo Choquetarqui L.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 158,
-    'id_cancion': 158,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 158,
+      'id_cancion': 158,
+      'descripcion': '''
 En las tinieblas de la maldad
 Anduve sin mi Dios;
 Pero un día Cristo me dijo:
@@ -8448,12 +8447,12 @@ Cristo me transformó.
 Simón Choquetarqui
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 159,
-    'id_cancion': 159,
-    'descripcion': '''(Mi Mebol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 159,
+      'id_cancion': 159,
+      'descripcion': '''(Mi Mebol)
 
 Cuna horasatejj Cristojj jutcan ucjja
 Janiwa qhitisa yatquiti;
@@ -8478,12 +8477,12 @@ Tatitojj jicjjatan ucajja.
 
 Epifanio y Ramón Fabián C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 160,
-    'id_cancion': 160,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 160,
+      'id_cancion': 160,
+      'descripcion': '''
 Nadie sabe la hora en que Cristo vendrá
 Nadie sabe qué día será,
 Ni los ángeles saben qué día vendrá,
@@ -8506,12 +8505,12 @@ Vida eterna gozosa, Jesús nos dará
 Si con fe le esperamos a Él.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 161,
-    'id_cancion': 161,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 161,
+      'id_cancion': 161,
+      'descripcion': '''(Do)
 
 Qhitirac nayar apaketaspa
 Diosan amparapat;
@@ -8540,12 +8539,12 @@ Jupaw irpasquitu.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 162,
-    'id_cancion': 162,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 162,
+      'id_cancion': 162,
+      'descripcion': '''
 Nadie podrá, jamás, apartarme
 Del gran amor de Dios;
 Junto a los vencedores en Cristo
@@ -8572,12 +8571,12 @@ Feliz estoy con Dios.
 Y siempre me guiará.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 163,
-    'id_cancion': 163,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 163,
+      'id_cancion': 163,
+      'descripcion': '''(Sol)
 
 ¿Cunjamäsquis chuymamajja?
 ¿Llaqui mic'ayanti jacascta?
@@ -8604,12 +8603,12 @@ Cristor arcapjjañäni.
 
 Julio Flores A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 164,
-    'id_cancion': 164,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 164,
+      'id_cancion': 164,
+      'descripcion': '''
 ¿Llena de gozo es tu vida
 O está tan triste tu corazón?
 ¿Sabes que Cristo te ama,
@@ -8634,12 +8633,12 @@ Aun en tristeza y pruebas
 Le seguiremos con fe.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 165,
-    'id_cancion': 165,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 165,
+      'id_cancion': 165,
+      'descripcion': '''(Re Menor)
 
 Albatanacajj jamachïnacajj
 Diosaruw k'ochupjje;
@@ -8668,12 +8667,12 @@ Munata jilata.
 
 Trad. Lorenzo Choquetarqui L.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 166,
-    'id_cancion': 166,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 166,
+      'id_cancion': 166,
+      'descripcion': '''
 En primavera vuelven las aves
 Para cantar a Dios;
 El sol radiante, un caminante
@@ -8703,12 +8702,12 @@ Vuelve a tu dulce hogar.
 Música: Simón Choquetarqui L. Letra: Luis Mamani Q.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 167,
-    'id_cancion': 167,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 167,
+      'id_cancion': 167,
+      'descripcion': '''(Fa)
 
 Urunacamajj tucusisquiwa
 Laodicea Iglesia;
@@ -8752,12 +8751,12 @@ Chekpacha,chekpachana.
 
 Pío Laura C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 168,
-    'id_cancion': 168,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 168,
+      'id_cancion': 168,
+      'descripcion': '''
 ¡Oh, gran iglesia de Laodicea
 Pronto el tiempo pasará!
 Tu vida no es agradable a Dios,
@@ -8799,12 +8798,12 @@ Sólo así puedes agradecerle
 En espíritu y verdad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 169,
-    'id_cancion': 169,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 169,
+      'id_cancion': 169,
+      'descripcion': '''(Do Menor)
 
 Kollunac patansa, vallenac mankhensa
 Sarnakawaytajja, suma Jesucristo;
@@ -8832,12 +8831,12 @@ Wali muspharcañaw munasiñamajja.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 170,
-    'id_cancion': 170,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 170,
+      'id_cancion': 170,
+      'descripcion': '''
 Sobre los collados, y también por valles
 Tú atravesaste, mi buen Jesucristo;
 De pueblo en pueblo siempre enseñaste
@@ -8863,12 +8862,12 @@ Y tú me conduces hasta el santo cielo;
 ¡Cuán incomparables son, Señor, tus obras!
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 171,
-    'id_cancion': 171,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 171,
+      'id_cancion': 171,
+      'descripcion': '''(Re Menor)
 
 Take llaquiñasa pasaquiriwa,
 Diosaw ch'amapampi yanaptïtani;
@@ -8891,12 +8890,12 @@ Diosan ch'amapampiw asqui luräjja.
 
 Víctor Calle C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 172,
-    'id_cancion': 172,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 172,
+      'id_cancion': 172,
+      'descripcion': '''
 Todas mis tristezas se terminarán
 El poder de Cristo me ayudará;
 ¿ Por qué tengo penas en mi vida aquí?
@@ -8917,12 +8916,12 @@ En las tentaciones en Dios confiaré
 Él me ayuda siempre, no me dejará.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 173,
-    'id_cancion': 173,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 173,
+      'id_cancion': 173,
+      'descripcion': '''(Mi Menor)
 
 Juma sapaquiw Tatay
 Nayar wawamat uñt'asista;
@@ -8947,12 +8946,12 @@ Alajjpachar puriñajjcama.
 
 Santiago Rivas L.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 174,
-    'id_cancion': 174,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 174,
+      'id_cancion': 174,
+      'descripcion': '''
 Sólo tú eres mi Señor
 Y reconozco que tuyo soy;
 Yendo en la oscuridad,
@@ -8975,12 +8974,12 @@ Sólo a ti te seguiré
 Hasta llegar al celeste hogar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 175,
-    'id_cancion': 175,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 175,
+      'id_cancion': 175,
+      'descripcion': '''(Re Menor)
 
 Kollana Cristo yanapt'asiquitay
 Jumaquïtawa nayataquejja
@@ -9013,12 +9012,12 @@ Wiñay Dios Awquejja.
 
 Ángel Condori S
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 176,
-    'id_cancion': 176,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 176,
+      'id_cancion': 176,
+      'descripcion': '''
 ¡Oh Señor! Dame tu ayuda en mi aflicción
 Sólo tú eres mi esperanza,
 Sólo tú me fortaleces;
@@ -9049,12 +9048,12 @@ Emblanquéceme como la nieve
 ¡Oh Dios, Padre eterno!
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 177,
-    'id_cancion': 177,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 177,
+      'id_cancion': 177,
+      'descripcion': '''(Do)
 
 Janipuniwa alajjpacharojj
 Cuna k'añusa mantcanitejja;
@@ -9081,12 +9080,12 @@ Jupan marcapar mantañataqui.
 
 Severino Yupanqui T.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 178,
-    'id_cancion': 178,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 178,
+      'id_cancion': 178,
+      'descripcion': '''
 En el santo hogar donde vive Dios
 No hay pecado allí, ni iniquidad;
 No podrá entrar ningún pecador
@@ -9111,12 +9110,12 @@ Cristo con su amor tu mal limpiará
 Y podrás entrar al celeste hogar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 179,
-    'id_cancion': 179,
-    'descripcion': '''(Si Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 179,
+      'id_cancion': 179,
+      'descripcion': '''(Si Bemol)
 
 Acapachana thaquinacajj
 Cawcsa tokerus saraquiwa,
@@ -9153,12 +9152,12 @@ Munasiñampi.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 180,
-    'id_cancion': 180,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 180,
+      'id_cancion': 180,
+      'descripcion': '''
 En este mundo de confusión
 El hombre vaga sin un ideal,
 Busca valor en sendas humanas
@@ -9193,12 +9192,12 @@ Cristo así con dulces palabras
 Consuela con su amor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 181,
-    'id_cancion': 181,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 181,
+      'id_cancion': 181,
+      'descripcion': '''(Re Menor)
 
 Alajjpach marcajja
 Waquichatäsquiwa,
@@ -9223,12 +9222,12 @@ Alajjpach marcaru.
 
 Félix Acarapi F.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 182,
-    'id_cancion': 182,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 182,
+      'id_cancion': 182,
+      'descripcion': '''
 Dios ha preparado
 La mansión gloriosa
 Para que los salvos
@@ -9251,12 +9250,12 @@ Sin desanimarte
 Ni volver al mundo.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 183,
-    'id_cancion': 183,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 183,
+      'id_cancion': 183,
+      'descripcion': '''(Mi Menor)
 
 Mayninacas jan munascpan
 Alajjpach Diosar sirviña;
@@ -9281,12 +9280,12 @@ Jesucriston wilapampi.
 
 Pío Laura C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 184,
-    'id_cancion': 184,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 184,
+      'id_cancion': 184,
+      'descripcion': '''
 Aunque otros no quisieran
 A Jesús servir fielmente;
 Serviré aunque esté solo
@@ -9309,12 +9308,12 @@ Porque tú me has redimido
 Con tu sangre tan preciosa.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 185,
-    'id_cancion': 185,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 185,
+      'id_cancion': 185,
+      'descripcion': '''(Sol)
 
 Tatit Cristojj ch'amaniwa
 Atipiri Diosawa;
@@ -9338,12 +9337,12 @@ Atipirinacaru.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 186,
-    'id_cancion': 186,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 186,
+      'id_cancion': 186,
+      'descripcion': '''
 Jesucristo es poderoso
 Él es el gran vencedor;
 Siendo muerto ya tres días
@@ -9366,12 +9365,12 @@ A sus brazos llegaremos
 Junto al Padre Dios de amor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 187,
-    'id_cancion': 187,
-    'descripcion': '''(Si Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 187,
+      'id_cancion': 187,
+      'descripcion': '''(Si Bemol)
 
 Tatit Cristojj yatekerinacapamp
 Getsemaní huertoruw sarapjje;
@@ -9401,12 +9400,12 @@ Supayar atipt'añasataqui.
 
 Romualdo Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 188,
-    'id_cancion': 188,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 188,
+      'id_cancion': 188,
+      'descripcion': '''
 Jesús y sus discípulos amados
 Fueron al huerto de Getsemaní;
 Allí pidió de Dios la fortaleza;
@@ -9434,12 +9433,12 @@ A Dios con fe pidamos fortaleza
 Para vencer las trampas de Satán.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 189,
-    'id_cancion': 189,
-    'descripcion': '''(Si Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 189,
+      'id_cancion': 189,
+      'descripcion': '''(Si Bemol)
 
 Dios Awquisana munasiñapa
 Sinti jach'aw, qhuyapt'ayasistu;
@@ -9464,12 +9463,12 @@ Munasiñamp jupar arcapjjañäni.
 
 Severino Yupanqui T.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 190,
-    'id_cancion': 190,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 190,
+      'id_cancion': 190,
+      'descripcion': '''
 Oh amor divino de nuestro Padre
 Es sin igual que nos compadeció;
 Siendo perdido y descarriado,
@@ -9492,12 +9491,12 @@ Pues, seguiremos con entusiasmo
 Al poderoso Cristo, el Salvador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 191,
-    'id_cancion': 191,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 191,
+      'id_cancion': 191,
+      'descripcion': '''(Do Menor)
 
 Acapacha marcajj
 T'akhesiñaquiwa;
@@ -9528,12 +9527,12 @@ Jan mayampitaqui. (Bis)
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 192,
-    'id_cancion': 192,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 192,
+      'id_cancion': 192,
+      'descripcion': '''
 En este mundo cruel
 Hay penas y dolor;
 :No hay descanso para mi alma,
@@ -9562,12 +9561,12 @@ Por tu infinito amor;
 De todo corazón. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 193,
-    'id_cancion': 193,
-    'descripcion': '''(Si Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 193,
+      'id_cancion': 193,
+      'descripcion': '''(Si Bemol)
 
 Jach'achañän cusisita Diosasaru
 Jupaquiwa yanapistu takëwjana;
@@ -9586,12 +9585,12 @@ Suma Dios Awquisar. (Bis)
 
 Conjunto \"La voz del Evangelio\"
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 194,
-    'id_cancion': 194,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 194,
+      'id_cancion': 194,
+      'descripcion': '''
 A nuestro Dios cantemos hoy, de corazón
 Consuelo y paz, gozo sin par siempre nos da;
 Cuán admirable es su bondad
@@ -9608,12 +9607,12 @@ Pero al estar con el Señor, gran gozo habrá;
 A nuestro Padre Dios. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 195,
-    'id_cancion': 195,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 195,
+      'id_cancion': 195,
+      'descripcion': '''(Re Menor)
 
 Tatit Jesucristo qhuyapt'ayitay
 Juman wawamätwa amtt'asiquitay;
@@ -9638,12 +9637,12 @@ Alajjpach marcamar puriniñcama.
 
 Gregorio Mamani B.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 196,
-    'id_cancion': 196,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 196,
+      'id_cancion': 196,
+      'descripcion': '''
 Señor Jesucristo, ten piedad de mí
 No me dejes nunca, porque tu hijo soy;
 Tú por mí moriste en la cruenta cruz,
@@ -9666,12 +9665,12 @@ Y tu gran poder me guía en pos de ti
 Hasta mi llegada al celeste hogar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 197,
-    'id_cancion': 197,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 197,
+      'id_cancion': 197,
+      'descripcion': '''(Re Menor)
 
 Amtasitay Awquejja
 Jumaruw art'asinsma;
@@ -9696,12 +9695,12 @@ Cusisit jacañajjataqui.
 
 Zoilo Yanapa Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 198,
-    'id_cancion': 198,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 198,
+      'id_cancion': 198,
+      'descripcion': '''
 Ten piedad ¡oh Padre Dios!
 Te suplico con fervor;
 Líbrame de todo mal
@@ -9724,12 +9723,12 @@ Me has dado salvación
 Y por siempre yo feliz seré.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 199,
-    'id_cancion': 199,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 199,
+      'id_cancion': 199,
+      'descripcion': '''(Re Menor)
 
 Diosaru yupaychañawa
 Jichhürojja jupanquiwa;
@@ -9759,12 +9758,12 @@ Yanapt'asipjjaquitaya.
 
 Domingo Copa P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 200,
-    'id_cancion': 200,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 200,
+      'id_cancion': 200,
+      'descripcion': '''
 Hoy es día de reposo
 Alabemos, pues, a Cristo;
 Los seis días fenecieron
@@ -9792,12 +9791,12 @@ Nos da paz y amor profundo
 Y nos guía su presencia.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 201,
-    'id_cancion': 201,
-    'descripcion': '''(Fa Mayor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 201,
+      'id_cancion': 201,
+      'descripcion': '''(Fa Mayor)
 
 Acapach thaquinacajj
 Cawcsarus saraquiwa;
@@ -9822,12 +9821,12 @@ Alajjpacharuw irpi.
 
 Gregorio Mamani B.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 202,
-    'id_cancion': 202,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 202,
+      'id_cancion': 202,
+      'descripcion': '''
 Hay muchas sendas del mal
 En este mundo sin paz;
 Del hombre sus obras son
@@ -9852,12 +9851,12 @@ La senda estrecha del bien
 Conduce al gozo eternal.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 203,
-    'id_cancion': 203,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 203,
+      'id_cancion': 203,
+      'descripcion': '''(Re Menor)
 
 Jacañajj nayajja Cristoruw catuyjjta
 Jupawa nayaru take ch'am churitu;
@@ -9882,12 +9881,12 @@ Cristomp jacañanac cusisiñajj utji.
 
 Lorenzo Huanquírí
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 204,
-    'id_cancion': 204,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 204,
+      'id_cancion': 204,
+      'descripcion': '''
 Yo entrego mi vida a Cristo el Señor
 Él me da fortaleza y consolación;
 El Señor cada día me cuida en paz
@@ -9910,12 +9909,12 @@ Si en pecado estás tú, debes reflexionar,
 Sólo en Cristo Jesús hay gran felicidad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 205,
-    'id_cancion': 205,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 205,
+      'id_cancion': 205,
+      'descripcion': '''(Do)
 
 Khespiyir Cristoru
 Jutjjamay jilata,
@@ -9945,12 +9944,12 @@ Maqhatam juparu.
 
 Domingo Copa
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 206,
-    'id_cancion': 206,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 206,
+      'id_cancion': 206,
+      'descripcion': '''
 Cristo el Salvador
 Que buscándote está;
 Pronto acude a Él
@@ -9978,12 +9977,12 @@ El te quiere adoptar
 Y su hijo serás.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 207,
-    'id_cancion': 207,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 207,
+      'id_cancion': 207,
+      'descripcion': '''(Do)
 
 Tatit Cristoruw take chuymampi
 Nayajj mä uru jac'achasta:
@@ -10008,12 +10007,12 @@ Take juchamat jarekjjatam.
 
 Lorenzo Huanquiri C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 208,
-    'id_cancion': 208,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 208,
+      'id_cancion': 208,
+      'descripcion': '''
 Un día hermoso busqué a Cristo,
 Con toda fe y sinceridad;
 Clamé a Cristo: \"Yo soy culpable,
@@ -10036,12 +10035,12 @@ Y el Señor con su amor divino
 Perdonará toda tu maldad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 209,
-    'id_cancion': 209,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 209,
+      'id_cancion': 209,
+      'descripcion': '''(Re Menor)
 
 Mä urojj Tatitut jayanwa
 Nayajja sarnakascäyäta;
@@ -10071,12 +10070,12 @@ Jupajja puriyistanejja.
 
 Teófilo Choque
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 210,
-    'id_cancion': 210,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 210,
+      'id_cancion': 210,
+      'descripcion': '''
 Yo vagaba muy lejos de Dios
 Sin consuelo ni seguridad;
 Pero Cristo por su gran amor
@@ -10104,12 +10103,12 @@ Y al fin el Señor nos guiará
 A su eterna mansión celestial.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 211,
-    'id_cancion': 211,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 211,
+      'id_cancion': 211,
+      'descripcion': '''(Re Menor)
 
 Alajjpachanquir suma Awquejja
 Janiw cuns sañs puedcti;
@@ -10134,12 +10133,12 @@ Yanapt'irejjäjja.
 
 Santiago Rivas L.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 212,
-    'id_cancion': 212,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 212,
+      'id_cancion': 212,
+      'descripcion': '''
 Oh Padre amado, Dios de los cielos
 Lleno de compasión;
 Tu amor es grande y tan profundo,
@@ -10162,12 +10161,12 @@ Yo sé que Cristo, el poderoso
 Siempre me ayudará.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 213,
-    'id_cancion': 213,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 213,
+      'id_cancion': 213,
+      'descripcion': '''(Mi Bemol)
 
 Cristojj niyaw jutani
 Cunpachac jutcani;
@@ -10192,12 +10191,12 @@ Jupajj jutcan ucqhacama.
 
 Domingo Copa P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 214,
-    'id_cancion': 214,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 214,
+      'id_cancion': 214,
+      'descripcion': '''
 Cristo pronto volverá
 Al cielo nos llevará;
 Su palabra dice así
@@ -10220,12 +10219,12 @@ Trabajando con fervor
 Sin descuido y sin fatiga.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 215,
-    'id_cancion': 215,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 215,
+      'id_cancion': 215,
+      'descripcion': '''(Do Menor)
 
 Suma Dios Tata, nayaw jaltanta
 Qhuyapt'ayasitay;
@@ -10254,12 +10253,12 @@ Chuymachasiquitay.
 
 Pío Laura C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 216,
-    'id_cancion': 216,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 216,
+      'id_cancion': 216,
+      'descripcion': '''
 Bendito Padre, pido tu ayuda
 Ten compasión de mí;
 Muchos tormentos ya me han cercado
@@ -10286,12 +10285,12 @@ En mis angustias y aflicciones
 Sé mi consolador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 217,
-    'id_cancion': 217,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 217,
+      'id_cancion': 217,
+      'descripcion': '''(Mi Bemol)
 
 Munata jilata Cristor arcañäni
 Jupaw khespiyistu take juchasata;
@@ -10311,12 +10310,12 @@ Ucanjja utjquiti, jacañawa. (Bis)
 
 Gregorio Mamani B.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 218,
-    'id_cancion': 218,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 218,
+      'id_cancion': 218,
+      'descripcion': '''
 Hermano en la fe,
 Sigamos al Señor
 Porque Él nos redimió
@@ -10344,12 +10343,12 @@ Es un lugar de gozo
 Con Jesús. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 219,
-    'id_cancion': 219,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 219,
+      'id_cancion': 219,
+      'descripcion': '''(Re Menor)
 
 Tatitojja alajjpachat
 Acapacharuw sarakani;
@@ -10384,12 +10383,12 @@ Wali cusisiñapuniw utjaraqui.
 
 Guillermo Zeballos Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 220,
-    'id_cancion': 220,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 220,
+      'id_cancion': 220,
+      'descripcion': '''
 Jesucristo vino al mundo
 Él dejó su trono celestial;
 Siendo Dios fue hecho hombre
@@ -10422,12 +10421,12 @@ Cantando están.
 ¡Aleluya! ¡Aleluya! (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 221,
-    'id_cancion': 221,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 221,
+      'id_cancion': 221,
+      'descripcion': '''(Re Menor)
 
 Khespiyiri Tatit Jesusajja
 Qhaya Belén Judea marcanwa,
@@ -10457,12 +10456,12 @@ Khespiyirina yuritap laycu.
 
 Nemesio Laura N.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 222,
-    'id_cancion': 222,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 222,
+      'id_cancion': 222,
+      'descripcion': '''
 Jesús, el gran Salvador del mundo
 Nació en pesebre humilde y pobre;
 Fue una noche maravillosa
@@ -10490,12 +10489,12 @@ A Dios con gozo le agradecieron
 Por su preciosa paz y salvación.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 223,
-    'id_cancion': 223,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 223,
+      'id_cancion': 223,
+      'descripcion': '''(Re)
 
 Cristianonacajj amtapjjañäni
 Qhä jach'a musparcaña uruta;
@@ -10520,12 +10519,12 @@ Cusisiñaw takenitaqui.
 
 Santiago Rivas L.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 224,
-    'id_cancion': 224,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 224,
+      'id_cancion': 224,
+      'descripcion': '''
 Oh, cristianos con fe recordemos
 El gran día en que Cristo ha nacido;
 Alabemos a Cristo encarnado,
@@ -10548,12 +10547,12 @@ Fueron buenas noticias de gozo
 Para toda la humanidad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 225,
-    'id_cancion': 225,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 225,
+      'id_cancion': 225,
+      'descripcion': '''(Mi Menor)
 
 Jacatatayapjjetay Tata,
 Mayjt'at chuymanacajjar,
@@ -10578,12 +10577,12 @@ Juchar atipjañatac.
 
 Gregorio Mamani B.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 226,
-    'id_cancion': 226,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 226,
+      'id_cancion': 226,
+      'descripcion': '''
 Oh Señor, renueva nuestro ser,
 Que turbado y triste está;
 Fortalécenos con tu poder
@@ -10606,12 +10605,12 @@ Danos fe , valor, y tu verdad
 Para así vencer al mal.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 227,
-    'id_cancion': 227,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 227,
+      'id_cancion': 227,
+      'descripcion': '''(Re Menor)
 
 Critot jayan jacäyäta,
 Juchanacans phokt'ata;
@@ -10636,12 +10635,12 @@ Take juchanacata.
 
 Lorenzo Huanquiri C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 228,
-    'id_cancion': 228,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 228,
+      'id_cancion': 228,
+      'descripcion': '''
 Vivía lejos del Señor
 Cargado de mi maldad;
 Muy triste yo con fe clamé
@@ -10664,12 +10663,12 @@ Encontrarás la salvación
 En Cristo, tu Redentor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 229,
-    'id_cancion': 229,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 229,
+      'id_cancion': 229,
+      'descripcion': '''(Mi Menor)
 
 Jalsu toketwa jutapjjäna
 Quimsa amawt'a jakenacajj;
@@ -10699,12 +10698,12 @@ Amawt'anacajj churapjjäna.
 
 Nemesio Laura N.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 230,
-    'id_cancion': 230,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 230,
+      'id_cancion': 230,
+      'descripcion': '''
 Unos magos con amor y fe
 A adorar vinieron a Jesús;
 Una estrella les iluminó
@@ -10732,12 +10731,12 @@ Estos magos con adoración
 Le ofrecieron dones de valor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 231,
-    'id_cancion': 231,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 231,
+      'id_cancion': 231,
+      'descripcion': '''(Re Menor)
 
 Munat jilata cutt'anjjamay
 Jucha lurañata;
@@ -10768,12 +10767,12 @@ Jupamp sarjjañatac.
 
 Rogelio Condori
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 232,
-    'id_cancion': 232,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 232,
+      'id_cancion': 232,
+      'descripcion': '''
 Amigo mío, vuelve al Señor
 Deja el pecado atrás;
 Mientras postergas tu decisión
@@ -10802,12 +10801,12 @@ Ven sin demora al Señor Jesús
 Para vivir con Él.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 233,
-    'id_cancion': 233,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 233,
+      'id_cancion': 233,
+      'descripcion': '''(Mi Bemol)
 
 Tatit Jesucristojj
 Niyaw cutinini
@@ -10844,12 +10843,12 @@ Suyapjjañäni.
 
 Domingo Copa P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 234,
-    'id_cancion': 234,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 234,
+      'id_cancion': 234,
+      'descripcion': '''
 Jesucristo, el Señor
 Pronto retornará
 Y a los salvos por Él
@@ -10884,12 +10883,12 @@ Procuremos el bien
 Cristo ya vendrá.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 235,
-    'id_cancion': 235,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 235,
+      'id_cancion': 235,
+      'descripcion': '''(Re)
 
 ¿Llaquitat uñjasta
 Jan chuymachirini?
@@ -10919,12 +10918,12 @@ Diosajj janc'aquiwa.
 
 Pío Laura C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 236,
-    'id_cancion': 236,
-    'descripcion': '''¿Muy triste vives tú
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 236,
+      'id_cancion': 236,
+      'descripcion': '''¿Muy triste vives tú
 Sin gozo y sin paz?
 ¿O enfermo y con dolor
 Deseando sanidad?
@@ -10951,12 +10950,12 @@ Jesús hoy presto está
 Su ayuda a conceder.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 237,
-    'id_cancion': 237,
-    'descripcion': '''(Mí Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 237,
+      'id_cancion': 237,
+      'descripcion': '''(Mí Menor)
 
 Jumawa khespiyasista
 Take chuymampiw arcäma;
@@ -10980,12 +10979,12 @@ Jiwañarus puriñ munta. (Bis)
 
 Teófilo Choque
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 238,
-    'id_cancion': 238,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 238,
+      'id_cancion': 238,
+      'descripcion': '''
 Tú me salvaste, oh Señor
 Te seguiré hasta el fin;
 :Aunque yo tenga pruebas mil
@@ -11007,12 +11006,12 @@ Y llevaré mi propia cruz;
 De corazón te serviré. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 239,
-    'id_cancion': 239,
-    'descripcion': '''(Fa Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 239,
+      'id_cancion': 239,
+      'descripcion': '''(Fa Menor)
 
 Khespiyir Cristo Awquisajja
 Kollan Ajayu qhitanistu
@@ -11044,12 +11043,12 @@ Kollan Ajays catokañäni. (Bis)
 
 Nemesio Laura N.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 240,
-    'id_cancion': 240,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 240,
+      'id_cancion': 240,
+      'descripcion': '''
 Nuestro Señor y amado Jesús
 Su Santo Espíritu nos mandó
 Para que le sigamos con fe;
@@ -11079,12 +11078,12 @@ Con fe andemos en comunión
 Llenos de gozo y de su poder. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 241,
-    'id_cancion': 241,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 241,
+      'id_cancion': 241,
+      'descripcion': '''(Mi Bemol)
 
 Jan wali thaquinwa
 Sarnakascäyäta,
@@ -11121,12 +11120,12 @@ Jan khepar uñtasina.
 
 Germán Mamani M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 242,
-    'id_cancion': 242,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 242,
+      'id_cancion': 242,
+      'descripcion': '''
 Anduve en tinieblas
 En la senda ancha
 Perdido en pecado
@@ -11161,12 +11160,12 @@ Llenos estaremos de su paz
 Y santo amor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 243,
-    'id_cancion': 243,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 243,
+      'id_cancion': 243,
+      'descripcion': '''(Sol)
 
 Matrimoniojj Diosan uchataw
 Jaketaqui, cusisiñaw, cusisiñaw;
@@ -11196,12 +11195,12 @@ Cusisiñän, cusisiñän.
 
 Ángel Jiménez M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 244,
-    'id_cancion': 244,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 244,
+      'id_cancion': 244,
+      'descripcion': '''
 Instituido el matrimonio fue por nuestro Dios
 ¡Qué gozo es! ¡Qué gozo es!
 Puso a Adán y Eva en el Huerto de Edén
@@ -11229,12 +11228,12 @@ Que el Señor bendiga hoy a este nuevo hogar
 Con gozo y paz, con gozo y paz.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 245,
-    'id_cancion': 245,
-    'descripcion': '''(Si Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 245,
+      'id_cancion': 245,
+      'descripcion': '''(Si Bemol)
 
 Niyaw sarjjañäni
 Alajjpach maracaru
@@ -11267,12 +11266,12 @@ Alajjpach marcan utj-jjaniti.
 
 Rogelio Condori G
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 246,
-    'id_cancion': 246,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 246,
+      'id_cancion': 246,
+      'descripcion': '''
 Ya nos vamos a Sión
 Para estar con Jesús
 Y alabar con los ángeles mil;
@@ -11303,12 +11302,12 @@ Ni angustia ni afán
 Viviremos gozosos con Dios.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 247,
-    'id_cancion': 247,
-    'descripcion': '''(Fa Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 247,
+      'id_cancion': 247,
+      'descripcion': '''(Fa Menor)
 
 Dios Awquisar yuspagarañäni
 Take cuntejj churquistu ucata;
@@ -11338,12 +11337,12 @@ Jichhajj juparuy sirvipjjañäni.
 
 Nemesio Laura N.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 248,
-    'id_cancion': 248,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 248,
+      'id_cancion': 248,
+      'descripcion': '''
 Agradecido sea nuestro Dios
 Por todo lo que Él nos concedió;
 En cada día gozo Él nos da
@@ -11371,12 +11370,12 @@ Pues, Él murió en una cruenta cruz
 Sirvámosle con más sinceridad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 249,
-    'id_cancion': 249,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 249,
+      'id_cancion': 249,
+      'descripcion': '''(Mi Bemol)
 
 Suma Tatit Cristo Judea marcanwa
 Luratanacamjja jumajj uñacht'ayta;
@@ -11401,12 +11400,12 @@ Chuymanacaparu cusisiñ churasa.
 
 Domingo Copa P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 250,
-    'id_cancion': 250,
-    'descripcion': '''Mi buen Jesucristo allá en Judea
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 250,
+      'id_cancion': 250,
+      'descripcion': '''Mi buen Jesucristo allá en Judea
 Tus grandiosas obras, las manifestaste;
 Grandes maravillas con poder hiciste
 Con amor profundo, compasión mostraste.
@@ -11428,12 +11427,12 @@ A los pecadores, tú los perdonaste
 Dando paz y gozo a sus corazones.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 251,
-    'id_cancion': 251,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 251,
+      'id_cancion': 251,
+      'descripcion': '''(Re Menor)
 
 Adanampi, Evampi
 Diosaw uchawayi
@@ -11464,12 +11463,12 @@ Iyawsapjjañäni. {Bis)
 
 Carmelo Aspi A
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 252,
-    'id_cancion': 252,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 252,
+      'id_cancion': 252,
+      'descripcion': '''
 Dios puso en el Huerto
 A Adán y Eva
 Fueron muy dichosos
@@ -11498,12 +11497,12 @@ Ahora es el momento
 De aceptar a Cristo. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 253,
-    'id_cancion': 253,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 253,
+      'id_cancion': 253,
+      'descripcion': '''(Do Menor)
 
 Irpaquitay Tatit Cristo
 Jumaruquiw arcañ munsma;
@@ -11523,12 +11522,12 @@ Jumaruquiw arcañ munsma.
 
 Germán Mamani M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 254,
-    'id_cancion': 254,
-    'descripcion': '''Oh, guíame, Jesucristo
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 254,
+      'id_cancion': 254,
+      'descripcion': '''Oh, guíame, Jesucristo
 Por senda de tu justicia;
 Te seguiré por doquiera
 En tu palabra confiando.
@@ -11545,12 +11544,12 @@ Ayúdame cada día
 Yo quiero siempre seguirte.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 255,
-    'id_cancion': 255,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 255,
+      'id_cancion': 255,
+      'descripcion': '''(Re Menor)
 
 Tatay jumaruquiwa
 Jacañajj catuyasta;
@@ -11575,12 +11574,12 @@ Alajjpach marcataqui.
 
 Trad. Domingo Copa P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 256,
-    'id_cancion': 256,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 256,
+      'id_cancion': 256,
+      'descripcion': '''
 Mi bendito Salvador
 Con amor me entrego a ti;
 Oh, conforta mi alma hoy
@@ -11603,12 +11602,12 @@ Perdonaste mi maldad
 En la gloria reinaré.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 257,
-    'id_cancion': 257,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 257,
+      'id_cancion': 257,
+      'descripcion': '''(Do Menor)
 
 Janiw jakenacarojj
 Idolonacarus
@@ -11634,12 +11633,12 @@ Chuymacharaquistani.
 
 (Mensajeros de Jerusalén)
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 258,
-    'id_cancion': 258,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 258,
+      'id_cancion': 258,
+      'descripcion': '''
 No a los hombres, Jehová
 Ni a los ídolos,
 Sino a tu nombre doy loor
@@ -11664,12 +11663,12 @@ Porque Él es tu ayuda fiel
 También tu Consolador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 259,
-    'id_cancion': 259,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 259,
+      'id_cancion': 259,
+      'descripcion': '''(Do Menor)
 
 Jumaw Tatit Cristo t'akhesiwayta
 Take juchajjäta khespiyañ laycu;
@@ -11694,12 +11693,12 @@ Arunacamarus phokharaquïwa.
 
 Pablo Quispe C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 260,
-    'id_cancion': 260,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 260,
+      'id_cancion': 260,
+      'descripcion': '''
 Oh Señor Jesús, sufriste en la cruz
 Por salvarme a mí de toda mi maldad;
 Me diste perdón y nuevo corazón
@@ -11722,12 +11721,12 @@ Te prometo hoy servirte con valor
 Y tu voz divina obedeceré.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 261,
-    'id_cancion': 261,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 261,
+      'id_cancion': 261,
+      'descripcion': '''(Re Menor)
 
 Jiwasajj amtasiñasawa
 Tatit Criston arsüwipata;
@@ -11752,12 +11751,12 @@ Tentacionatsa jaltayituw
 
 Jorge Yanapa Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 262,
-    'id_cancion': 262,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 262,
+      'id_cancion': 262,
+      'descripcion': '''
 Recordemos siempre con fe
 La gran promesa del Salvador;
 Él prometió que nos enviará
@@ -11780,12 +11779,12 @@ Si soy tentado me ayudará,
 Vivo guiado por su poder.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 263,
-    'id_cancion': 263,
-    'descripcion': '''(Sal. 27:1; Isa. 41:10; Sal.34:1,4)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 263,
+      'id_cancion': 263,
+      'descripcion': '''(Sal. 27:1; Isa. 41:10; Sal.34:1,4)
 (Re Menor)
 
 Diosaw nayan khanajjajja,
@@ -11817,12 +11816,12 @@ Nayarojj khespiyitu.
 
 Romualdo Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 264,
-    'id_cancion': 264,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 264,
+      'id_cancion': 264,
+      'descripcion': '''
 El Señor es quien me alumbra
 Y también mi salvación;
 No tendré temor ninguno
@@ -11851,12 +11850,12 @@ Me libró de mis temores,
 Poderoso es mi Señor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 265,
-    'id_cancion': 265,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 265,
+      'id_cancion': 265,
+      'descripcion': '''(Do Menor)
 
 Jesucristow khespiyitu
 Cruzana jiwäwipampi;
@@ -11881,12 +11880,12 @@ Alajjpacha marcana.
 
 Pío Laura C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 266,
-    'id_cancion': 266,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 266,
+      'id_cancion': 266,
+      'descripcion': '''
 Cristo el Señor me ha salvado
 Murió por mí en la cruenta cruz
 Vertió su preciosa sangre
@@ -11909,12 +11908,12 @@ Y gozaré en la gloria
 Por toda la eternidad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 267,
-    'id_cancion': 267,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 267,
+      'id_cancion': 267,
+      'descripcion': '''(Re Menor)
 
 Alajjpach marcatwa
 Tatit Jesusajja
@@ -11944,12 +11943,12 @@ Cristor uñjañäni.
 
 Domingo Copa P
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 268,
-    'id_cancion': 268,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 268,
+      'id_cancion': 268,
+      'descripcion': '''
 Cuando Cristo venga
 Otra vez al mundo
 Le daremos cuenta
@@ -11977,12 +11976,12 @@ Siendo perdonados
 Veremos a Cristo.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 269,
-    'id_cancion': 269,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 269,
+      'id_cancion': 269,
+      'descripcion': '''(Re Menor)
 
 Naya sapaquïtwa Diosamajja
 Janiw yakha diosjja lurasïtati;
@@ -12013,12 +12012,12 @@ Take chuymamampi, luräwimampi.
 Benito Poma
 Justa Rondo
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 270,
-    'id_cancion': 270,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 270,
+      'id_cancion': 270,
+      'descripcion': '''
 Yo soy el Señor tu Dios de poder
 Nunca tengas dioses aparte de mí;
 No tomes en vano el nombre de Dios
@@ -12045,12 +12044,12 @@ Solamente a Cristo siempre amarás
 Con sinceridad y limpio de corazón.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 271,
-    'id_cancion': 271,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 271,
+      'id_cancion': 271,
+      'descripcion': '''(Do Menor)
 
 Niyaw jutani khespiyir Cristojja
 Alajjpach lliphipquir wiñay marcapata;
@@ -12080,12 +12079,12 @@ Cunayman yant'ata sarnakjjañäni.
 
 Juan M. Pacheco
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 272,
-    'id_cancion': 272,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 272,
+      'id_cancion': 272,
+      'descripcion': '''
 Pronto volverá Cristo, el Rey de gloria
 Del hogar eterno en las nubes vendrá;
 Esperemos pues, todos los salvados
@@ -12113,12 +12112,12 @@ Cristo ya vendrá, pronto nos iremos
 Al hogar eterno junto a nuestro Dios.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 273,
-    'id_cancion': 273,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 273,
+      'id_cancion': 273,
+      'descripcion': '''(Do)
 
 Jan qhiti tumpirinich
 Sarnakascta;
@@ -12143,12 +12142,12 @@ Cusisjjata. (Bis)
 
 Ángel Serna Y.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 274,
-    'id_cancion': 274,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 274,
+      'id_cancion': 274,
+      'descripcion': '''
 Oh amigo,
 Qué muy triste vagas tú;
 :No hay otro como Cristo
@@ -12169,12 +12168,12 @@ Donde no habrá llanto,
 Ni dolor. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 275,
-    'id_cancion': 275,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 275,
+      'id_cancion': 275,
+      'descripcion': '''(Do Menor)
 
 Diosan arupajj saraquistuwa
 Janiy llaquisipjjamtejja
@@ -12204,12 +12203,12 @@ Irnakäwisaru.
 
 Pío Laura C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 276,
-    'id_cancion': 276,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 276,
+      'id_cancion': 276,
+      'descripcion': '''
 No se preocupen, dice la Biblia
 Por esta vida y su afán;
 Por la comida, por la bebida
@@ -12237,12 +12236,12 @@ Y nuestro Dios con sus bendiciones
 Siempre nos cuidará.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 277,
-    'id_cancion': 277,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 277,
+      'id_cancion': 277,
+      'descripcion': '''(Re Menor)
 
 Jacht'asisaw sarnakascäyät
 Llaquinacansa muyuntata;
@@ -12272,12 +12271,12 @@ Jiwañatsa khespiyasistaw.
 
 Juan M. Pacheco
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 278,
-    'id_cancion': 278,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 278,
+      'id_cancion': 278,
+      'descripcion': '''
 Salvador Jesús, lejos de ti Angustiado,
 triste andaba yo;
 Caminando en mucha corrupción
@@ -12305,12 +12304,12 @@ Pero Cristo por tu gran amor
 Me libraste de la perdición.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 279,
-    'id_cancion': 279,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 279,
+      'id_cancion': 279,
+      'descripcion': '''(Re Menor)
 
 Kollan Awquejja amtasitay
 Sinti sapacjamw uñjasta;
@@ -12335,12 +12334,12 @@ Amtasiyat Kollan Awquejja. (Bis)
 
 Jorge Yanapa Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 280,
-    'id_cancion': 280,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 280,
+      'id_cancion': 280,
+      'descripcion': '''
 Acuérdate de mí, oh Señor
 Me siento solo sin tu poder
 :Padre, te pido con toda fe,
@@ -12363,12 +12362,12 @@ En mis angustias y en el dolor;
 Acuérdate de mí, oh Señor. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 281,
-    'id_cancion': 281,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 281,
+      'id_cancion': 281,
+      'descripcion': '''(Re)
 
 Diosan ajllitanacajja
 Cristot parlaniñäni,
@@ -12393,12 +12392,12 @@ Llaquin phokt'atanacarusa.
 
 Juan M. Pacheco
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 282,
-    'id_cancion': 282,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 282,
+      'id_cancion': 282,
+      'descripcion': '''
 Si vivimos cerca de Cristo
 Compartamos de su amor;
 Proclarpemos su Palabra
@@ -12421,12 +12420,12 @@ Consolando al que sufre
 Y ayudando a todos por igual.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 283,
-    'id_cancion': 283,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 283,
+      'id_cancion': 283,
+      'descripcion': '''(Do Menor)
 
 Cristojj janïr sarcasinjja
 Mä ewjj jaytistojja,
@@ -12451,12 +12450,12 @@ Jupar iyawsasin.
 
 Gregorio Mamani
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 284,
-    'id_cancion': 284,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 284,
+      'id_cancion': 284,
+      'descripcion': '''
 Cristo Jesús nuestro Salvador
 Nos dio una gran misión;
 De su evangelio a proclamar
@@ -12479,12 +12478,12 @@ Que o confiese a Cristo el Rey
 Confiando en su amor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 285,
-    'id_cancion': 285,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 285,
+      'id_cancion': 285,
+      'descripcion': '''(Mi Menor)
 
 Jumar sirviña nayajj amtasta
 Catokt'asitay Cristojja;
@@ -12514,12 +12513,12 @@ Jumar sirviñajjataqui.
 
 Juan M. Pacheco
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 286,
-    'id_cancion': 286,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 286,
+      'id_cancion': 286,
+      'descripcion': '''
 He decidido servirte oh Cristo
 Recíbeme tal como soy;
 Toma mi vida te la ofrezco
@@ -12547,12 +12546,12 @@ Pido tu guía y tu ayuda
 A seguirte hasta el fin.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 287,
-    'id_cancion': 287,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 287,
+      'id_cancion': 287,
+      'descripcion': '''(Mi Menor)
 
 Tatay nayajj sirvirimätwa
 Jumaw khespiyasista;
@@ -12577,12 +12576,12 @@ Marcamar puriñcama.
 
 Franklin Apaza
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 288,
-    'id_cancion': 288,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 288,
+      'id_cancion': 288,
+      'descripcion': '''
 Señor amado yo soy tu siervo
 Me salvaste del pecar;
 Con tu poder tan incomparable
@@ -12605,12 +12604,12 @@ En tus promesas siempre confiando
 A tu reino llegaré.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 289,
-    'id_cancion': 289,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 289,
+      'id_cancion': 289,
+      'descripcion': '''(Do Menor)
 
 Acapachana jacañajja
 Tucusiraquiwa;
@@ -12635,12 +12634,12 @@ Jan tucusquiriwa.
 
 Félix Riveras
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 290,
-    'id_cancion': 290,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 290,
+      'id_cancion': 290,
+      'descripcion': '''
 La vida en este mundo infiel
 Pronto se acabará;
 Un corto tiempo nos da el Señor
@@ -12663,12 +12662,12 @@ Sólo el gozar con Cristo Jesús
 No tendrá fin jamás.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 291,
-    'id_cancion': 291,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 291,
+      'id_cancion': 291,
+      'descripcion': '''(Do)
 
 Urumaw jichhürojj
 Urumaw jichhürojj
@@ -12698,12 +12697,12 @@ Imascaractam.
 
 Gregorio Mamani
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 292,
-    'id_cancion': 292,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 292,
+      'id_cancion': 292,
+      'descripcion': '''
 Feliz cumpleaños
 Oh, hermano mío,
 Te deseamos hoy;
@@ -12731,12 +12730,12 @@ De día y noche
 Con poder y amor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 293,
-    'id_cancion': 293,
-    'descripcion': '''(Mi bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 293,
+      'id_cancion': 293,
+      'descripcion': '''(Mi bemol)
 
 Dios Awquisajja waquichasquiw
 Mä suma uta alajjpachan;
@@ -12766,12 +12765,12 @@ Tatitusar jach'achañäni.
 
 Teófilo Choque Y.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 294,
-    'id_cancion': 294,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 294,
+      'id_cancion': 294,
+      'descripcion': '''
 Bellas mansiones de paz y amor
 Dios nos prepara para morar;
 Los redimidos en el Señor
@@ -12799,12 +12798,12 @@ Con el gran coro angelical,
 Alabaremos al Salvador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 295,
-    'id_cancion': 295,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 295,
+      'id_cancion': 295,
+      'descripcion': '''(Do Menor)
 
 Tatit Cristojja kollu patanjja
 Kollan Arunacap,
@@ -12829,12 +12828,12 @@ Ucampis Cristojj saraquiniwa:
 
 Víctor Calle
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 296,
-    'id_cancion': 296,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 296,
+      'id_cancion': 296,
+      'descripcion': '''
 Cristo el Señor enseñó en el monte
 Palabras de verdad
 A mucha gente que prefería
@@ -12857,12 +12856,12 @@ Pero el Señor les dirá a ellos:
 \"Malditos, apartaos\".
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 297,
-    'id_cancion': 297,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 297,
+      'id_cancion': 297,
+      'descripcion': '''(Mi Menor)
 
 Yupaychsmawa Dios Awquejja
 Jan tucusquir ch'amamata;
@@ -12887,12 +12886,12 @@ Suma Kollan Dios Awquejja.
 
 Franklin Apaza C.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 298,
-    'id_cancion': 298,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 298,
+      'id_cancion': 298,
+      'descripcion': '''
 Yo te alabo ¡oh Padre Dios!
 Por tu poder y tu bondad;
 Esta tierra y los cielos
@@ -12915,12 +12914,12 @@ Los hiciste con tu poder
 Bendito Padre celestial .
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 299,
-    'id_cancion': 299,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 299,
+      'id_cancion': 299,
+      'descripcion': '''(Do Menor)
 
 Dios Awquin acapacharu
 Wali munatap laycuwa
@@ -12949,12 +12948,12 @@ Cusisit chuymamp churapjjäna.
 
 Félix Riveras
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 300,
-    'id_cancion': 300,
-    'descripcion': '''Por amor a este mundo
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 300,
+      'id_cancion': 300,
+      'descripcion': '''Por amor a este mundo
 Envió Dios a su Hijo amado;
 A la humanidad perdida
 A liberar del pecado vil.
@@ -12980,12 +12979,12 @@ Ofreciéronle regalos
 Como una real adoración.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 301,
-    'id_cancion': 301,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 301,
+      'id_cancion': 301,
+      'descripcion': '''(Re Menor)
 
 Qhuyapt'ayasitay Dios Awqui
 Take chuymaw mayissma;
@@ -13010,12 +13009,12 @@ Tucuycam sayt'ascaquïw.
 
 Gregorio Mamani
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 302,
-    'id_cancion': 302,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 302,
+      'id_cancion': 302,
+      'descripcion': '''
 ¡Oh Padre Dios! Ten piedad de mí
 Escucha mi petición;
 Cercado estoy de pruebas sin fin,
@@ -13038,12 +13037,12 @@ Señor Jesús, con tu guía y luz
 Te seguiré hasta el fin.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 303,
-    'id_cancion': 303,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 303,
+      'id_cancion': 303,
+      'descripcion': '''(Re Menor)
 
 Walja cutiwa nayajj uñjasta
 Yant'anacan muyuntata;
@@ -13066,12 +13065,12 @@ Alajjpacharuw irpjjestan;
 Ucapachawa yatisiñäni
 Llaquinacan utjatapa.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 304,
-    'id_cancion': 304,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 304,
+      'id_cancion': 304,
+      'descripcion': '''
 En este mundo, ¿por qué algunos
 Viven sin pruebas y dolor?
 Mientras yo vivo lleno de pruebas
@@ -13094,12 +13093,12 @@ En aquel día comprenderemos
 Nuestras flaquezas y temor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 305,
-    'id_cancion': 305,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 305,
+      'id_cancion': 305,
+      'descripcion': '''(Re Menor)
 
 ¿Kawkha maras Tatitur arcta,
 Cunjamas jumataquejj?
@@ -13129,12 +13128,12 @@ Wiñayaw sirvipjjama.
 
 E. Quispe N.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 306,
-    'id_cancion': 306,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 306,
+      'id_cancion': 306,
+      'descripcion': '''
 ¿cuánto tiempo sigues a Jesús?
 ¿cómo te parece a ti?
 ¿Te dio paz y gozo?
@@ -13162,12 +13161,12 @@ Con la fuerza tuya
 Seguiremos fiel a ti.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 307,
-    'id_cancion': 307,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 307,
+      'id_cancion': 307,
+      'descripcion': '''(Fa)
 
 Jach'a cancañamajj muspharcañaw Tatay
 K'oma cancañamas wiñayaraquiwa;
@@ -13192,12 +13191,12 @@ K'oma chuymanrac tuct'ayita. (Bis)
 
 Pío Laura
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 308,
-    'id_cancion': 308,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 308,
+      'id_cancion': 308,
+      'descripcion': '''
 Maravilloso Dios, omnipotente Rey
 Tu amor y santidad por siempre durarán;
 Mi amante Redentor, da a tu siervo hoy, Pureza y verdad, según tu voluntad;
@@ -13221,12 +13220,12 @@ Que limpies mi maldad
 Y así contigo moraré. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 309,
-    'id_cancion': 309,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 309,
+      'id_cancion': 309,
+      'descripcion': '''(Re Menor)
 
 Yuspagarsmaw Kollan Cristo
 Nayar khespiyatamata;
@@ -13251,12 +13250,12 @@ Nayar tuct'ayasjjestajja.
 
 Gregorio Mamani B.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 310,
-    'id_cancion': 310,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 310,
+      'id_cancion': 310,
+      'descripcion': '''
 Te doy gracias mi buen Cristo
 Por redimir mis pecados;
 Con tu sangre derramada
@@ -13279,12 +13278,12 @@ Por tu hijo me aceptaste
 Con tu amor profundo y santo.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 311,
-    'id_cancion': 311,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 311,
+      'id_cancion': 311,
+      'descripcion': '''(Re)
 
 Acatjamatwa ist'apjjañäni
 Trompet toct'asiri;
@@ -13310,12 +13309,12 @@ Jiquisjjañäni;
 Wiñayataquiw jacapjjañäni
 Diosar jach'achasa.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 312,
-    'id_cancion': 312,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 312,
+      'id_cancion': 312,
+      'descripcion': '''
 Muy pronto sonará la trompeta
 Y el mando del Señor;
 Desde los cielos, el mismo Cristo
@@ -13341,12 +13340,12 @@ Pues para siempre nos gozaremos
 Glorificando a Dios.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 313,
-    'id_cancion': 313,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 313,
+      'id_cancion': 313,
+      'descripcion': '''(Re Menor)
 
 Khespiyir Kollan Cristojja
 K'oma chuyman tuct'ayita;
@@ -13376,12 +13375,12 @@ Tact'atamar arcañ munta.
 
 Teófilo Choque
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 314,
-    'id_cancion': 314,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 314,
+      'id_cancion': 314,
+      'descripcion': '''
 Mi amante Cristo Salvador
 Limpiame de toda maldad;
 Con fuego purificador
@@ -13409,12 +13408,12 @@ Quiero seguir tus pasos hoy
 En tu camino de verdad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 315,
-    'id_cancion': 315,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 315,
+      'id_cancion': 315,
+      'descripcion': '''(Re Menor)
 
 Tatit Jesusajj mä wasarana
 Yant'at uñjasïna;
@@ -13439,12 +13438,12 @@ Atipjañataqui. (Bis)
 
 Víctor Calle
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 316,
-    'id_cancion': 316,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 316,
+      'id_cancion': 316,
+      'descripcion': '''
 Cristo Jesús llevado al desierto
 Sufrió la tentación;
 :Con mucha fe en la Santa Palabra
@@ -13467,12 +13466,12 @@ Siempre nos da valor;
 Y a la perversidad. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 317,
-    'id_cancion': 317,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 317,
+      'id_cancion': 317,
+      'descripcion': '''(Re Menor)
 
 Kollan suma Dios Awquejja
 Jumaruquiw art'asinsma
@@ -13503,12 +13502,12 @@ Jucharus atipjañatac.
 Valentín Condori
 Eucipia de Condori
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 318,
-    'id_cancion': 318,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 318,
+      'id_cancion': 318,
+      'descripcion': '''
 Mi bendito y buen Salvador
 Sólo a ti clamando estoy;
 No hay otro Dios como tú
@@ -13536,12 +13535,12 @@ Para que yo pueda vencer
 A pruebas mil, y a la maldad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 319,
-    'id_cancion': 319,
-    'descripcion': '''Almajjasa, cuerpojjasa
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 319,
+      'id_cancion': 319,
+      'descripcion': '''Almajjasa, cuerpojjasa
 Diosar churataw;
 Jesusawa wilapampi
 K'omachasjjetu.
@@ -13569,12 +13568,12 @@ Jacañataqui.
 
 Roberto Arismendi A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 320,
-    'id_cancion': 320,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 320,
+      'id_cancion': 320,
+      'descripcion': '''
 Mi alma y cuerpo los consagro
 A mi Salvador;
 Con su sangre derramada
@@ -13602,12 +13601,12 @@ A morar eternamente
 Con mi buen Jesús.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 321,
-    'id_cancion': 321,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 321,
+      'id_cancion': 321,
+      'descripcion': '''
 Arunacam parlaña
 Yanapt'itay Cristojja
 Take chuymajjampiwa nayajj khananchä;
@@ -13637,12 +13636,12 @@ Cusisiñ jicjjataña, wiñay jacañsa.
 
 Antonio Quispe B.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 322,
-    'id_cancion': 322,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 322,
+      'id_cancion': 322,
+      'descripcion': '''
 Ayúdame, ¡oh Señor!
 A testificar de ti
 Con sincera convicción te proclamaré;
@@ -13671,12 +13670,12 @@ Tiene sed de tu perdón
 De obtener vida eterna y felicidad.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 323,
-    'id_cancion': 323,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 323,
+      'id_cancion': 323,
+      'descripcion': '''(Sol)
 
 Jacquir Diosan arunacapajja
 Santa Biblianawa kellkata,
@@ -13708,12 +13707,12 @@ Kellkata, kellkata. (Bis)
 
 Ángel Jiménez M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 324,
-    'id_cancion': 324,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 324,
+      'id_cancion': 324,
+      'descripcion': '''
 La palabra divina y viva
 En la Santa Biblia escrita está,
 Sí, está, escrita está;
@@ -13747,12 +13746,12 @@ Nos da vida eterna, gozo y paz
 En Jesús, en Jesús. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 325,
-    'id_cancion': 325,
-    'descripcion': '''(Mí Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 325,
+      'id_cancion': 325,
+      'descripcion': '''(Mí Bemol)
 
 Aca jacañ orakejj
 Jan walt'añanacansa,
@@ -13782,12 +13781,12 @@ Sayt'añataqui.
 
 Gregorío Mamaní B.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 326,
-    'id_cancion': 326,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 326,
+      'id_cancion': 326,
+      'descripcion': '''
 Esta vida terrenal
 Está llena de dolor,
 De angustias y pruebas mil,
@@ -13815,12 +13814,12 @@ Es que le sigamos fiel
 Hasta el final.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 327,
-    'id_cancion': 327,
-    'descripcion': '''(Mi Bemol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 327,
+      'id_cancion': 327,
+      'descripcion': '''(Mi Bemol)
 
 Kollan Tatit Cristo
 Jumar sirviñajja
@@ -13850,12 +13849,12 @@ Janiw cunas apakquitaspat.
 
 Teófilo Choque Y.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 328,
-    'id_cancion': 328,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 328,
+      'id_cancion': 328,
+      'descripcion': '''
 Oh bendito Jesús,
 El servirte a ti
 Paz perfecta es a mi corazón;
@@ -13884,12 +13883,12 @@ Ni la hostilidad
 Separarme de ti, me podrán.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 329,
-    'id_cancion': 329,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 329,
+      'id_cancion': 329,
+      'descripcion': '''(Mi Menor)
 
 Mä sap ch'aman Diosaquiw utjtajja
 Quimsa Personaraquïtaw;
@@ -13919,12 +13918,12 @@ Llaquisiñans chuymachasa.
 
 Justo Ajata T.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 330,
-    'id_cancion': 330,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 330,
+      'id_cancion': 330,
+      'descripcion': '''
 Un solo Dios y Santo eres tú
 Son Tres Personas a la vez;
 El Padre, más el Hijo redentor
@@ -13952,12 +13951,12 @@ Nos guías en tu santa voluntad
 Y nos consuelas con amor.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 331,
-    'id_cancion': 331,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 331,
+      'id_cancion': 331,
+      'descripcion': '''(Do Menor)
 
 Diosan munasiñapajj
 Taketaquiw utjasqui;
@@ -13982,12 +13981,12 @@ Jucha lurañarusa,
 
 Lorenzo Condori Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 332,
-    'id_cancion': 332,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 332,
+      'id_cancion': 332,
+      'descripcion': '''
 El tierno amor del Señor
 Pues, para todos los hay;
 Es menester que hoy,
@@ -14010,12 +14009,12 @@ A las tentaciones mil,
 Y al fiero Tentador.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 333,
-    'id_cancion': 333,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 333,
+      'id_cancion': 333,
+      'descripcion': '''(Re Menor)
 
 Tatay jumaruquiw jach'achapjjsma
 Jaker qhuyapt'ayatamata;
@@ -14041,12 +14040,12 @@ Jiwañcam arcam ucapachajj.
 Juan M. Pacheco
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 334,
-    'id_cancion': 334,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 334,
+      'id_cancion': 334,
+      'descripcion': '''
 Tan sólo a ti te loamos, ¡oh Señor!
 Por condolerse de la gente;
 Tu amor es tan maravilloso y fiel
@@ -14069,12 +14068,12 @@ Me llevarás a tu mansión de luz,
 Si te sigo con fe hasta el fin.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 335,
-    'id_cancion': 335,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 335,
+      'id_cancion': 335,
+      'descripcion': '''(Re Menor)
 
 Tatit Jesusajja
 Acatjamataw jutani;
@@ -14096,12 +14095,12 @@ Wiñay wiñayataqui. (Bis)
 
 Lorenzo Condori Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 336,
-    'id_cancion': 336,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 336,
+      'id_cancion': 336,
+      'descripcion': '''
 Cristo el Señor vendrá
 Inesperadamente;
 :Espera listo,
@@ -14121,12 +14120,12 @@ El gozo eterno
 Junto a Cristo, el Vencedor. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 337,
-    'id_cancion': 337,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 337,
+      'id_cancion': 337,
+      'descripcion': '''(Re Menor)
 
 Diosaruw nayajja cusisit yuspagarta
 Jupawa jacañsa, ch'amapsa churitu;
@@ -14149,12 +14148,12 @@ Jupaquiw nayaru thaquipan irpitu;
 Kollan Ajayupaw nayar ch'amanchasquitu,
 Mayjt'asiñajjansa, t'uqhasiñajjansa.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 338,
-    'id_cancion': 338,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 338,
+      'id_cancion': 338,
+      'descripcion': '''
 Con gratitud viva, doy gracias a mi Cristo
 Porque concedió me la vida y su poder;
 Todo lo que tengo, lo debo a mi Cristo
@@ -14177,12 +14176,12 @@ En las pruebas duras y en mis debilidades
 Me da fortaleza. ¡Su Espíritu es poder!
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 339,
-    'id_cancion': 339,
-    'descripcion': '''(Do)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 339,
+      'id_cancion': 339,
+      'descripcion': '''(Do)
 
 Diosan chekpach wawanacapajj
 Munasiñampi phokt'atawa;
@@ -14207,12 +14206,12 @@ Sapürus jacapjjaraquejja.
 
 Justo Ajata T.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 340,
-    'id_cancion': 340,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 340,
+      'id_cancion': 340,
+      'descripcion': '''
 Los verdaderos hijos de Dios
 Son llenos de su profundo amor;
 Limpiados son de toda maldad
@@ -14235,12 +14234,12 @@ Hacen el bien siempre a los demás
 En todo tiempo, en cualquier lugar.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 341,
-    'id_cancion': 341,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 341,
+      'id_cancion': 341,
+      'descripcion': '''(Re Menor)
 
 Qhitirac nayar apaketaspa
 Diosan amparapat;
@@ -14269,12 +14268,12 @@ Jupaw irpasquitu.
 
 Franklin Apaza
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 342,
-    'id_cancion': 342,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 342,
+      'id_cancion': 342,
+      'descripcion': '''
 Nadie me podrá separar de Dios
 Ni de su presencia;
 Con los vencedores quisiera estar,
@@ -14301,12 +14300,12 @@ Ni a la muerte oscura.
 Su guía es segura.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 343,
-    'id_cancion': 343,
-    'descripcion': '''(Fa Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 343,
+      'id_cancion': 343,
+      'descripcion': '''(Fa Menor)
 
 Kollan Dios Awquejja
 Nayat amtasita, take chuymajjampiw
@@ -14324,12 +14323,12 @@ Tincuyañ munitu. (Bis)
 
 Teófilo Rafael A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 344,
-    'id_cancion': 344,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 344,
+      'id_cancion': 344,
+      'descripcion': '''
 Oh, Padre amado, no me dejes nunca,
 Con mi ser entero, quiero yo seguirte
 En tu senda nueva. (Bis)
@@ -14346,12 +14345,12 @@ Para que caigamos. (Bis)
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 345,
-    'id_cancion': 345,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 345,
+      'id_cancion': 345,
+      'descripcion': '''(Sol)
 
 Jach'a thayjamas jutascpan
 Orak qhatatis sartascpan
@@ -14370,12 +14369,12 @@ Janiw t'akhesjjañäniti. (Bis)
 
 Trad. Teófilo Rafael A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 346,
-    'id_cancion': 346,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 346,
+      'id_cancion': 346,
+      'descripcion': '''
 Aunque vengan tempestades,
 Aunque vengan terremotos;
 // No tengas temor, mi hermano
@@ -14396,12 +14395,12 @@ Eloy Retuerto R.
 Meivil Román Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 347,
-    'id_cancion': 347,
-    'descripcion': '''(Fa Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 347,
+      'id_cancion': 347,
+      'descripcion': '''(Fa Menor)
 
 Yuspagarsmaw Cristo, khespiyatamata,
 Yuspagarsmaw Cristo, khespiyatamata;
@@ -14421,12 +14420,12 @@ Cristoruquiy uñtam, take horasana.
 
 Trad. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 348,
-    'id_cancion': 348,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 348,
+      'id_cancion': 348,
+      'descripcion': '''
 // Gracias, gracias, Cristo
 Ya sé que soy salvo. (Bis)
 // En la dura prueba
@@ -14445,12 +14444,12 @@ El está contigo. (Bis)
 Teófilo Rafael A.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 349,
-    'id_cancion': 349,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 349,
+      'id_cancion': 349,
+      'descripcion': '''(Re Menor)
 
 Jumawa nayrakata
 Nayarojja munista;
@@ -14474,12 +14473,12 @@ Juman amparamanctwa.
 
 Roberto Quispe
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 350,
-    'id_cancion': 350,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 350,
+      'id_cancion': 350,
+      'descripcion': '''
 Oh Señor me amaste tú,
 Antes que te conocí;
 Gracias te doy mi Señor,
@@ -14503,12 +14502,12 @@ En tus brazos quiero estar.
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 351,
-    'id_cancion': 351,
-    'descripcion': '''(Mi)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 351,
+      'id_cancion': 351,
+      'descripcion': '''(Mi)
 
 Kherwanquir pankarjamawa
 Suma k'apquir liriowa;
@@ -14528,12 +14527,12 @@ Arunacap parlasa. (Bis)
 
 D.R.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 352,
-    'id_cancion': 352,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 352,
+      'id_cancion': 352,
+      'descripcion': '''
 Es el lirio de los valles,
 Y la rosa de sarón;
 Es la luz del mundo entero
@@ -14553,12 +14552,12 @@ Proclamando de su amor. (Bis)
 Alfredo Callisaya
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 353,
-    'id_cancion': 353,
-    'descripcion': '''(Re)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 353,
+      'id_cancion': 353,
+      'descripcion': '''(Re)
 
 Tatitun khespiyat waynanaca
 Tatitun khespiyat tawakonac;
@@ -14584,12 +14583,12 @@ Criston wilapamp a'.ataw
 Germán Mamani
 Florintino Chambi
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 354,
-    'id_cancion': 354,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 354,
+      'id_cancion': 354,
+      'descripcion': '''
 Juventud redimida por Cristo
 Juventud que resiste a Satanás,
 Sigan firmes con poder de Cristo,
@@ -14614,12 +14613,12 @@ Sólo la sangre de Jesús.
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 355,
-    'id_cancion': 355,
-    'descripcion': '''(Do# Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 355,
+      'id_cancion': 355,
+      'descripcion': '''(Do# Menor)
 
 Munat taycajja, munasiñamajj
 Wali jach'aw wawanacamatac
@@ -14644,12 +14643,12 @@ Jumaw khanajjatajj.
 
 Trad. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 356,
-    'id_cancion': 356,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 356,
+      'id_cancion': 356,
+      'descripcion': '''
 Madre querida, madre adorada
 Grande es tu amor para tus hijos
 Amor de Dios en ti;
@@ -14674,12 +14673,12 @@ Eres luz para mí.
 Bartolomé Zenteno P.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 357,
-    'id_cancion': 357,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 357,
+      'id_cancion': 357,
+      'descripcion': '''(Mi Menor)
 
 Junt'u chekanacatpachaw
 Thaya patanacatpachaw,
@@ -14697,12 +14696,12 @@ Taripañataqui. (Bis)
 
 Trad. Juan Mayta M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 358,
-    'id_cancion': 358,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 358,
+      'id_cancion': 358,
+      'descripcion': '''
 Desde las bajas regiones,
 Desde las cumbres más altas
 Yo canto a mi Cristo. (Bis)
@@ -14720,12 +14719,12 @@ A dar la sentencia. (Bis)
 D.R.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 359,
-    'id_cancion': 359,
-    'descripcion': '''(Sol)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 359,
+      'id_cancion': 359,
+      'descripcion': '''(Sol)
 
 Kellkatanacarjamajj
 Paya casta thaquiw utji;
@@ -14746,12 +14745,12 @@ Vuspagarsmaw Awquejja.
 Trad. Hermanos Pérez
 Arreg. Juan Mayta M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 360,
-    'id_cancion': 360,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 360,
+      'id_cancion': 360,
+      'descripcion': '''
 En las letras de un papel
 Yo hallé dos caminos,
 Mientras otro tiene paz,
@@ -14771,12 +14770,12 @@ Gracias por su redención.
 René y Nicasio Pérez A.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 361,
-    'id_cancion': 361,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 361,
+      'id_cancion': 361,
+      'descripcion': '''(Re Menor)
 
 Dios Awquisan Yokapajja,
 Acatjamataw jutani;
@@ -14797,12 +14796,12 @@ Diosan munasiñapajj. (Bis)
 
 René y Nicasio Pérez A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 362,
-    'id_cancion': 362,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 362,
+      'id_cancion': 362,
+      'descripcion': '''
 El Hijo del Dios viviente
 Vendrá en forma repentina,
 La hora nadie lo sabe
@@ -14824,12 +14823,12 @@ Su inmenso amor. (Bis)
 Trad. Juan Mayta M.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 363,
-    'id_cancion': 363,
-    'descripcion': '''(La)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 363,
+      'id_cancion': 363,
+      'descripcion': '''(La)
 
 Khespiyir Cristo, yuspagaransmawa
 Jach'a munasiñamat nayar khespiyista
@@ -14843,12 +14842,12 @@ Yuspagaransmaw. (Bis)
 
 René Pérez A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 364,
-    'id_cancion': 364,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 364,
+      'id_cancion': 364,
+      'descripcion': '''
 Gracias mi Jesús, gracias, Salvador
 Gracias te doy mi Señor,
 Por tu gran salvación;
@@ -14863,12 +14862,12 @@ Por eso yo te alabo, con toda mi alma
 Gracias, mi Jesús. (Bis)
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 365,
-    'id_cancion': 365,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 365,
+      'id_cancion': 365,
+      'descripcion': '''(Fa)
 
 Chuymajjajj cusisitawa
 Cristow khespiyasjjetu;
@@ -14889,12 +14888,12 @@ Cristojj niyaw jutani.
 René, Nicasio,
 Elíseo Pérez A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 366,
-    'id_cancion': 366,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 366,
+      'id_cancion': 366,
+      'descripcion': '''
 Grande gozo hay en mi alma
 Porque Cristo me salvó;
 Paz divina hay en mi alma
@@ -14915,12 +14914,12 @@ Trad. Hnos. Pérez
 Arreg. Juan Mayta M.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 367,
-    'id_cancion': 367,
-    'descripcion': '''(Mí Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 367,
+      'id_cancion': 367,
+      'descripcion': '''(Mí Menor)
 
 Tatit Jesusajj niyaw jutani
 Take chuymati jumajj suyascta;
@@ -14942,12 +14941,12 @@ Alajjpacharu puriñascama. (Bis)
 René, Nicasio,
 Elíseo Pérez A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 368,
-    'id_cancion': 368,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 368,
+      'id_cancion': 368,
+      'descripcion': '''
 El Rey de gloria muy pronto vendrá
 Debemos de esperar diligentes;
 Él volverá repentinamente
@@ -14967,12 +14966,12 @@ Hasta llegar al reino más allá. (Bis)
 Trad. Juan Mayta M.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 369,
-    'id_cancion': 369,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 369,
+      'id_cancion': 369,
+      'descripcion': '''(Re Menor)
 
 Kollan suma Cristo
 Yupaychaña munsma
@@ -14996,12 +14995,12 @@ Munañamarjama jacañatac.
 
 René Pérez A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 370,
-    'id_cancion': 370,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 370,
+      'id_cancion': 370,
+      'descripcion': '''
 Mi amado Salvador, quiero alabarte a ti
 Por rescatarme de mi maldad;
 Mi amado Salvador, quiero adorarte a ti
@@ -15021,12 +15020,12 @@ Para agradarte hasta el fin.
 Trad. Juan Mayta M.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 371,
-    'id_cancion': 371,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 371,
+      'id_cancion': 371,
+      'descripcion': '''(Re Menor)
 
 Jumatejj karjat uñjassta
 Cristoruquiy art'asimjja
@@ -15047,12 +15046,12 @@ Cristoquiw yanapistani. (Bis)
 René, Nicasio,
 Eliseo Pérez A
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 372,
-    'id_cancion': 372,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 372,
+      'id_cancion': 372,
+      'descripcion': '''
 Si te sientes agobiado
 Dilo a Cristo, ahora mismo
 Dios, doquier está contigo,
@@ -15072,12 +15071,12 @@ Mira al Dios omnipotente.
 Trad. Juan Mayta M.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 373,
-    'id_cancion': 373,
-    'descripcion': '''(Fa)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 373,
+      'id_cancion': 373,
+      'descripcion': '''(Fa)
 
 Waljaniw jisct'asipjje
 ¿Qhitis khespiyistaspa?
@@ -15097,12 +15096,12 @@ Take jan walt'añasan. (Bis)
 
 Trad. Juan Mayta M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 374,
-    'id_cancion': 374,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 374,
+      'id_cancion': 374,
+      'descripcion': '''
 Muchos se preguntan ya,
 ¿Quién es nuestro Salvador?
 Cristo es nuestro Redentor
@@ -15122,12 +15121,12 @@ Todo lo suficiente. (Bis)
 René Pérez A.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 375,
-    'id_cancion': 375,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 375,
+      'id_cancion': 375,
+      'descripcion': '''(Mi Menor)
 
 Tatitur arcapjjañän,
 Jupamp chict'at sarañän. (Bis)
@@ -15149,12 +15148,12 @@ Alajjpachana. (Bis)
 
 Trad. Juan Mayta M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 376,
-    'id_cancion': 376,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 376,
+      'id_cancion': 376,
+      'descripcion': '''
 Seguiremos a Jesús
 Pues, marchemos junto a Él. (Bis)
 // Aunque vengan las pruebas
@@ -15175,12 +15174,12 @@ Cristo nos dará. (Bis)
 Elíseo, Octavio Pérez A.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 377,
-    'id_cancion': 377,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 377,
+      'id_cancion': 377,
+      'descripcion': '''(Mi Menor)
 
 Take chuymajjampiwa
 Criston thaquipan sarä;
@@ -15202,12 +15201,12 @@ Marcar puriñcama. (Bis)
 
 Teófilo Rafael A.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 378,
-    'id_cancion': 378,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 378,
+      'id_cancion': 378,
+      'descripcion': '''
 Hasta el fin yo seguiré
 En la senda de mi Dios;
 Anunciando la verdad
@@ -15231,12 +15230,12 @@ Trad. Teófilo Rafael A.
 Arreg. Juan Mayta M.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 379,
-    'id_cancion': 379,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 379,
+      'id_cancion': 379,
+      'descripcion': '''(Mi Menor)
 
 Yuspagarsmaw Awquejja
 Takpach chuymäjjampi;
@@ -15256,12 +15255,12 @@ Janiw tucuscaniti. (Bis)
 
 Bartolomé Zenteno P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 380,
-    'id_cancion': 380,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 380,
+      'id_cancion': 380,
+      'descripcion': '''
 Gracias te doy mi Padre
 Por tus promesas fieles;
 Tus dichos tan perfectos
@@ -15281,12 +15280,12 @@ Permanece por siempre. (Bis)
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 381,
-    'id_cancion': 381,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 381,
+      'id_cancion': 381,
+      'descripcion': '''(Re Menor)
 
 Walja jilanacaw jaytjjetu
 Diosan thaqutpat sarjjapjje;
@@ -15307,12 +15306,12 @@ Diosat saraktasm ucapachajj. (Bis)
 Bartolomé Zenteno
 M. Alberto Mamani
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 382,
-    'id_cancion': 382,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 382,
+      'id_cancion': 382,
+      'descripcion': '''
 Muchos me han dejado solo a mí,
 Dejaron la senda de Dios;
 Se olvidaron de su gran amor
@@ -15332,12 +15331,12 @@ Acarreas más condenación. (Bis)
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 383,
-    'id_cancion': 383,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 383,
+      'id_cancion': 383,
+      'descripcion': '''(Re Menor)
 
 Walja cutiwa nayajj uñjasta
 Yant'anac taypina,
@@ -15365,12 +15364,12 @@ Ucsa churistaniw.
 Bartolomé Zenteno
 Arreg. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 384,
-    'id_cancion': 384,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 384,
+      'id_cancion': 384,
+      'descripcion': '''
 En duras pruebas vivo rodeado
 Sin saber qué hacer,
 Más angustiado y en dolores,
@@ -15398,12 +15397,12 @@ Por su fidelidad.
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 385,
-    'id_cancion': 385,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 385,
+      'id_cancion': 385,
+      'descripcion': '''(Re Menor)
 
 Yuspagarsmaw Tatay
 Nayar khespiyatamat;
@@ -15428,12 +15427,12 @@ Jilarquir jacañsa. (Bis)
 
 Trad. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 386,
-    'id_cancion': 386,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 386,
+      'id_cancion': 386,
+      'descripcion': '''
 Gracias Cristo amado,
 Me salvaste del pecar
 Por tu muerte en la cruz;
@@ -15458,12 +15457,12 @@ Manantial de vida. (Bis)
 Bonifacio Cocarico
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 387,
-    'id_cancion': 387,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 387,
+      'id_cancion': 387,
+      'descripcion': '''(Mi Menor)
 
 Vallenacans, kollunacans,
 Nayajja sarnakascta;
@@ -15495,12 +15494,12 @@ Nayajj parlascaquïwa.
 
 Trad. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 388,
-    'id_cancion': 388,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 388,
+      'id_cancion': 388,
+      'descripcion': '''
 Por los valles y montañas
 Sigo yo caminando
 Anunciando el Evangelio
@@ -15533,12 +15532,12 @@ L.Bartome Zenteno
 M. Alberto Mamani
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 389,
-    'id_cancion': 389,
-    'descripcion': '''(Mi Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 389,
+      'id_cancion': 389,
+      'descripcion': '''(Mi Menor)
 
 Tatituw awatisquitu
 Janiw cunats t'akhescäti;
@@ -15568,12 +15567,12 @@ Sapürus ch'amanchasquitu.
 Ismael Corani
 Arreg. Juan Mayta M.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 390,
-    'id_cancion': 390,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 390,
+      'id_cancion': 390,
+      'descripcion': '''
 Mi pastor es Jesucristo
 Tengo cuanto necesito;
 Pastos verdes siente mi alma,
@@ -15602,12 +15601,12 @@ Nuevas fuerzas hay en mi alma.
 Trad. Juan Mayta M.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 391,
-    'id_cancion': 391,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 391,
+      'id_cancion': 391,
+      'descripcion': '''(Re Menor)
 
 Kollan Dios Awquejja munasiñamajja,
 Muspharcañapuniw naya wawamatac;
@@ -15639,12 +15638,12 @@ Ucat take chuyma jumar yuspagarsma.
 Domingo Copa P.
 Arreg. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 392,
-    'id_cancion': 392,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 392,
+      'id_cancion': 392,
+      'descripcion': '''
 Mi bendito Padre, tu amor es inmenso
 Y maravilloso para los amados;
 Con amor eterno amas a tus hijos
@@ -15674,12 +15673,12 @@ Por eso te alabo, mi bendito Cristo.
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 393,
-    'id_cancion': 393,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 393,
+      'id_cancion': 393,
+      'descripcion': '''(Re Menor)
 
 Kollan Ajayu chuymajjaru
 Ch'amamampi phokt'itaya;
@@ -15710,12 +15709,12 @@ Thaquimanjja sirviscama.
 Domingo Copa P.
 Arreg. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 394,
-    'id_cancion': 394,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 394,
+      'id_cancion': 394,
+      'descripcion': '''
 Santo Espíritu, mi ser llena
 Con poder y tu presencia;
 Limpia hoy, mi ser, de impurezas
@@ -15745,12 +15744,12 @@ Hasta el fin podré seguirte.
 Trad. R. Atahuachl Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 395,
-    'id_cancion': 395,
-    'descripcion': '''(Do Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 395,
+      'id_cancion': 395,
+      'descripcion': '''(Do Menor)
 
 Tatit Jesusampi, sarañataquejja
 Juc'amp suma thaquiw
@@ -15774,12 +15773,12 @@ Jutam Tatituru, khespiyasïtawa. (Bis)
 Domingo Copa P.
 Arreg. R. Atahuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 396,
-    'id_cancion': 396,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 396,
+      'id_cancion': 396,
+      'descripcion': '''
 El andar con Jesús, y sus pasos seguir
 Es la senda mejor, que puedo encontrar. (Bis)
 
@@ -15800,12 +15799,12 @@ Cristo, el Salvador, te ofrece salvación. (Bis)
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 397,
-    'id_cancion': 397,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 397,
+      'id_cancion': 397,
+      'descripcion': '''(Re Menor)
 
 Diosan Kollan Libropa,
 Jumätaw kollkes, koris nayatac;
@@ -15834,12 +15833,12 @@ Jumaquiw sapür irpitäta. (Bis)
 
 Domingo Copa P.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 398,
-    'id_cancion': 398,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 398,
+      'id_cancion': 398,
+      'descripcion': '''
 Tus palabras, oh, Señor
 Son como el oro puro y dulce miel;
 // Son palabras de vida y paz,
@@ -15868,12 +15867,12 @@ A la eterna mansión celestial. (Bis)
 Trad. R. Atahuachi Ch.
 
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 399,
-    'id_cancion': 399,
-    'descripcion': '''(Re Menor)
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 399,
+      'id_cancion': 399,
+      'descripcion': '''(Re Menor)
 
 K'oma chuymasampi, yupaychañasawa
 Dios Awquisarojja, take uruna. (Bis)
@@ -15894,12 +15893,12 @@ Catuyasiñasajj, munañaparjam. (Bis)
 Domingo Copa P.
 Arreg. R. Athuachi Ch.
 ''',
-    'estado_registro': 1,
-  },
-  {
-    'id_letra': 400,
-    'id_cancion': 400,
-    'descripcion': '''
+      'estado_registro': 1,
+    },
+    {
+      'id_letra': 400,
+      'id_cancion': 400,
+      'descripcion': '''
 Limpios de corazón, alabemos a Dios
 De todo corazón, cada día más. (Bis)
 
@@ -15917,8 +15916,7 @@ Consagrémonos hoy, a Jesús, el Señor,
 Para alabar en sí, de buen corazón. (Bis)
 
 Trad. R. Atahuachi Ch.''',
-    'estado_registro': 1,
-  },
-];
-
+      'estado_registro': 1,
+    },
+  ];
 }

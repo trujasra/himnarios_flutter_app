@@ -22,7 +22,8 @@ class CancionScreen extends StatefulWidget {
   State<CancionScreen> createState() => _CancionScreenState();
 }
 
-class _CancionScreenState extends State<CancionScreen> with SingleTickerProviderStateMixin {
+class _CancionScreenState extends State<CancionScreen>
+    with SingleTickerProviderStateMixin {
   late TabController _tabController;
   int _currentTabIndex = 0;
   List<Cancion>? _versionesCancion;
@@ -44,40 +45,47 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
   // Cargar todas las versiones de la canción actual
   Future<void> _cargarVersionesCancion() async {
     final cancionesService = CancionesService();
-    final todasLasCanciones = await cancionesService.getCancionesPorHimnario(widget.cancion.himnario);
-    
-    print('DEBUG: Todas las canciones del himnario: ${todasLasCanciones.length}');
+    final todasLasCanciones = await cancionesService.getCancionesPorHimnario(
+      widget.cancion.himnario,
+    );
+
+    print(
+      'DEBUG: Todas las canciones del himnario: ${todasLasCanciones.length}',
+    );
     for (var c in todasLasCanciones) {
       print('  - Canción ${c.numero}: ${c.titulo} (${c.idioma})');
     }
-    
+
     // Buscar todas las versiones de la canción actual (mismo número)
-    final versiones = todasLasCanciones.where((c) => c.numero == widget.cancion.numero).toList();
-    
+    final versiones = todasLasCanciones
+        .where((c) => c.numero == widget.cancion.numero)
+        .toList();
+
     print('DEBUG: Buscando canción número ${widget.cancion.numero}');
     print('DEBUG: Versiones encontradas: ${versiones.length}');
     for (var v in versiones) {
-      print('  - Versión: ${v.titulo} (${v.idioma}) - Letra: ${v.letra.isNotEmpty ? "SÍ" : "NO"}');
+      print(
+        '  - Versión: ${v.titulo} (${v.idioma}) - Letra: ${v.letra.isNotEmpty ? "SÍ" : "NO"}',
+      );
     }
-    
+
     setState(() {
       _versionesCancion = versiones;
     });
 
     // Inicializar TabController si hay múltiples versiones
     if (versiones.length > 1) {
-      _tabController = TabController(
-        length: versiones.length,
-        vsync: this,
-      );
-      
+      _tabController = TabController(length: versiones.length, vsync: this);
+
       // Encontrar el índice de la versión actual
-      final indexActual = versiones.indexWhere((c) => c.idioma == widget.cancion.idioma);
+      final indexActual = versiones.indexWhere(
+        (c) => c.idioma == widget.cancion.idioma,
+      );
       if (indexActual != -1) {
         _tabController.index = indexActual;
         _currentTabIndex = indexActual;
       }
-      
+
       _tabController.addListener(() {
         setState(() {
           _currentTabIndex = _tabController.index;
@@ -88,36 +96,47 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
 
   // Obtener la canción actual (versión seleccionada o la original)
   Cancion get cancionActual {
-    print('DEBUG: cancionActual - _versionesCancion: ${_versionesCancion?.length ?? "null"}');
-    
+    print(
+      'DEBUG: cancionActual - _versionesCancion: ${_versionesCancion?.length ?? "null"}',
+    );
+
     if (_versionesCancion != null) {
       if (_versionesCancion!.length > 1) {
-        print('DEBUG: Usando versión múltiple: ${_versionesCancion![_currentTabIndex].titulo}');
+        print(
+          'DEBUG: Usando versión múltiple: ${_versionesCancion![_currentTabIndex].titulo}',
+        );
         return _versionesCancion![_currentTabIndex];
       } else if (_versionesCancion!.length == 1) {
-        print('DEBUG: Usando versión única: ${_versionesCancion![0].titulo} - Letra: ${_versionesCancion![0].letra.isNotEmpty ? "SÍ" : "NO"}');
+        print(
+          'DEBUG: Usando versión única: ${_versionesCancion![0].titulo} - Letra: ${_versionesCancion![0].letra.isNotEmpty ? "SÍ" : "NO"}',
+        );
         return _versionesCancion![0];
       }
     }
-    print('DEBUG: Usando widget.cancion: ${widget.cancion.titulo} - Letra: ${widget.cancion.letra.isNotEmpty ? "SÍ" : "NO"}');
+    print(
+      'DEBUG: Usando widget.cancion: ${widget.cancion.titulo} - Letra: ${widget.cancion.letra.isNotEmpty ? "SÍ" : "NO"}',
+    );
     return widget.cancion;
   }
 
   // Verificar si hay múltiples versiones
-  bool get tieneMultiplesVersiones => _versionesCancion != null && _versionesCancion!.length > 1;
+  bool get tieneMultiplesVersiones =>
+      _versionesCancion != null && _versionesCancion!.length > 1;
 
   // Formatear la letra con estilos especiales
   Widget _formatearLetra(String letra) {
     final lineas = letra.split('\n');
     final widgets = <Widget>[];
-    
+
     for (int i = 0; i < lineas.length; i++) {
       final linea = lineas[i].trim();
+
+      // Espacio extra si es línea vacía (separación de estrofas)
       if (linea.isEmpty) {
-        widgets.add(const SizedBox(height: 8));
+        widgets.add(const SizedBox(height: 30));
         continue;
       }
-      
+
       // Detectar si es una nota musical (entre paréntesis)
       if (linea.startsWith('(') && linea.endsWith(')')) {
         widgets.add(
@@ -146,6 +165,7 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: AppTheme.textColor,
+                fontStyle: FontStyle.italic,
               ),
               textAlign: TextAlign.center,
             ),
@@ -187,10 +207,8 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
         );
       }
     }
-    
-    return Column(
-      children: widgets,
-    );
+
+    return Column(children: widgets);
   }
 
   // Detectar si una línea es autor
@@ -202,7 +220,7 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
       'Ch.',
       'Ch',
     ];
-    
+
     return autores.any((autor) => linea.contains(autor));
   }
 
@@ -214,11 +232,7 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [
-              Color(0xFFEFF6FF),
-              Color(0xFFF5F3FF),
-              Color(0xFFFAF5FF),
-            ],
+            colors: [Color(0xFFEFF6FF), Color(0xFFF5F3FF), Color(0xFFFAF5FF)],
           ),
         ),
         child: SafeArea(
@@ -237,34 +251,35 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
                         onPressed: () => Navigator.pop(context),
                         icon: const Icon(Icons.arrow_back, color: Colors.white),
                       ),
-                                             Expanded(
-                                                   child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Text(
-                                '#${cancionActual.numero} - ${cancionActual.titulo}',
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                                textAlign: TextAlign.center,
-                                maxLines: 2,
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              '#${cancionActual.numero} - ${cancionActual.titulo}',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w700,
                               ),
-                              Text(
-                                widget.himnario.nombre,
-                                style: TextStyle(
-                                  color: Colors.yellow[100],
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                                textAlign: TextAlign.center,
+                              textAlign: TextAlign.center,
+                              maxLines: 2,
+                            ),
+                            Text(
+                              widget.himnario.nombre,
+                              style: TextStyle(
+                                color: Colors.yellow[100],
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500,
                               ),
-                            ],
-                          ),
-                       ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ),
                       IconButton(
-                        onPressed: () => widget.onToggleFavorito(cancionActual.id),
+                        onPressed: () =>
+                            widget.onToggleFavorito(cancionActual.id),
                         icon: Icon(
                           widget.favoritos.contains(cancionActual.id)
                               ? Icons.favorite
@@ -305,7 +320,10 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
               // Contenido de la canción
               Expanded(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(horizontal: 0.0, vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 0.0,
+                    vertical: 16.0,
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -320,7 +338,10 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
                           maxScale: 4.0,
                           child: Container(
                             width: double.infinity,
-                            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16.0,
+                              vertical: 20.0,
+                            ),
                             child: _formatearLetra(cancionActual.letra),
                           ),
                         ),
@@ -335,4 +356,4 @@ class _CancionScreenState extends State<CancionScreen> with SingleTickerProvider
       ),
     );
   }
-} 
+}

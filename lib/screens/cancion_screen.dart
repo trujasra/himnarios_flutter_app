@@ -30,13 +30,27 @@ class _CancionScreenState extends State<CancionScreen>
   late TabController _tabController;
   int _currentTabIndex = 0;
   List<Cancion>? _versionesCancion;
+  // Estado local de favoritos que se sincroniza con el callback
+  late List<int> _favoritos;
 
   @override
   void initState() {
     super.initState();
+    _favoritos = List.from(widget.favoritos); // Copia local del estado
     _cargarVersionesCancion();
     // Configurar la barra de estado con el color del himnario
     StatusBarManager.setStatusBarColor(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void didUpdateWidget(CancionScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Actualizar el estado local cuando cambian los favoritos externos
+    if (oldWidget.favoritos != widget.favoritos) {
+      setState(() {
+        _favoritos = List.from(widget.favoritos);
+      });
+    }
   }
 
   @override
@@ -49,6 +63,20 @@ class _CancionScreenState extends State<CancionScreen>
   void onReturnToScreen() {
     // Configurar la barra de estado cuando regresamos a esta pantalla
     StatusBarManager.setStatusBarColorWithDelay(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  // Método para manejar el toggle de favoritos con actualización inmediata
+  void _toggleFavorito(int cancionId) async {
+    setState(() {
+      if (_favoritos.contains(cancionId)) {
+        _favoritos.remove(cancionId);
+      } else {
+        _favoritos.add(cancionId);
+      }
+    });
+    
+    // Llamar al callback para actualizar el estado global
+    widget.onToggleFavorito(cancionId);
   }
 
   @override
@@ -319,9 +347,9 @@ class _CancionScreenState extends State<CancionScreen>
                       ),
                       IconButton(
                         onPressed: () =>
-                            widget.onToggleFavorito(cancionActual.id),
+                            _toggleFavorito(cancionActual.id),
                         icon: Icon(
-                          widget.favoritos.contains(cancionActual.id)
+                          _favoritos.contains(cancionActual.id)
                               ? Icons.favorite
                               : Icons.favorite_border,
                           color: Colors.white,

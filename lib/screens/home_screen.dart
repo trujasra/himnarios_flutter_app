@@ -27,6 +27,8 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   List<Himnario> himnarios = [];
   List<String> idiomas = [];
   bool isLoading = true;
+  // Estado local de favoritos que se sincroniza con el callback
+  List<int> _favoritos = []; // Inicializar como lista vacía en lugar de late
 
   final CancionesService _cancionesService = CancionesService();
 
@@ -36,6 +38,15 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
     _cargarDatos();
     // Configurar la barra de estado con el color principal
     StatusBarManager.setStatusBarColor(AppTheme.primaryColor);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Inicializar el estado local de favoritos cuando se cargan los datos
+    if (favoritos.isNotEmpty && _favoritos.isEmpty) {
+      _favoritos = List.from(favoritos);
+    }
   }
 
   @override
@@ -120,6 +131,20 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
     }
   }
 
+  // Método para manejar el toggle de favoritos con actualización inmediata
+  void _toggleFavorito(int cancionId) async {
+    setState(() {
+      if (_favoritos.contains(cancionId)) {
+        _favoritos.remove(cancionId);
+      } else {
+        _favoritos.add(cancionId);
+      }
+    });
+    
+    // Llamar al método original para actualizar la base de datos
+    await toggleFavorito(cancionId);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -171,16 +196,16 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                                                 Text(
-                                   'Himnarios',
-                                   style: const TextStyle(
-                                     fontFamily: 'Berkshire Swash',
-                                     fontSize: 25,
-                                     fontWeight: FontWeight.bold,
-                                     color: Colors.white,
-                                   ),
-                                   overflow: TextOverflow.ellipsis,
-                                 ),
+                                Text(
+                                  'Himnarios',
+                                  style: const TextStyle(
+                                    fontFamily: 'Berkshire Swash',
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
                                 const Text(
                                   'Colección de cantos sagrados',
                                   style: TextStyle(
@@ -276,28 +301,28 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                   final himnarioCancion = himnarios.firstWhere(
                                     (h) => h.nombre == cancion.himnario,
                                   );
-                                  return CancionCard(
-                                    cancion: cancion,
-                                    himnario: himnarioCancion,
-                                    isFavorite: favoritos.contains(cancion.id),
-                                    mostrarHimnario:
-                                        true, // Mostrar himnario en resultados de búsqueda
-                                    onTap: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => CancionScreen(
-                                            cancion: cancion,
-                                            himnario: himnarioCancion,
-                                            favoritos: favoritos,
-                                            onToggleFavorito: toggleFavorito,
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                    onToggleFavorito: () =>
-                                        toggleFavorito(cancion.id),
-                                  );
+                                                                     return CancionCard(
+                                     cancion: cancion,
+                                     himnario: himnarioCancion,
+                                     isFavorite: _favoritos.contains(cancion.id),
+                                     mostrarHimnario:
+                                         true, // Mostrar himnario en resultados de búsqueda
+                                     onTap: () {
+                                       Navigator.push(
+                                         context,
+                                         MaterialPageRoute(
+                                           builder: (context) => CancionScreen(
+                                             cancion: cancion,
+                                             himnario: himnarioCancion,
+                                             favoritos: _favoritos,
+                                             onToggleFavorito: _toggleFavorito,
+                                           ),
+                                         ),
+                                       );
+                                     },
+                                     onToggleFavorito: () =>
+                                         _toggleFavorito(cancion.id),
+                                   );
                                 }),
                               const SizedBox(height: 32),
                             ],
@@ -325,23 +350,23 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                             ...himnarios.map(
                               (himnario) => HimnarioCard(
                                 himnario: himnario,
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => HimnarioScreen(
-                                        himnario: himnario,
-                                        favoritos: favoritos,
-                                        onToggleFavorito: toggleFavorito,
-                                      ),
-                                    ),
-                                  );
-                                },
+                                                                 onTap: () {
+                                   Navigator.push(
+                                     context,
+                                     MaterialPageRoute(
+                                       builder: (context) => HimnarioScreen(
+                                         himnario: himnario,
+                                         favoritos: _favoritos,
+                                         onToggleFavorito: _toggleFavorito,
+                                       ),
+                                     ),
+                                   );
+                                 },
                               ),
                             ),
                             const SizedBox(height: 24),
-                            // Canciones favoritas
-                            if (favoritos.isNotEmpty) ...[
+                                                         // Canciones favoritas
+                             if (_favoritos.isNotEmpty) ...[
                               Row(
                                 children: [
                                   const Icon(
@@ -361,9 +386,9 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                 ],
                               ),
                               const SizedBox(height: 12),
-                              ...canciones
-                                  .where((c) => favoritos.contains(c.id))
-                                  .map((cancion) {
+                                                             ...canciones
+                                   .where((c) => _favoritos.contains(c.id))
+                                   .map((cancion) {
                                     final himnarioCancion = himnarios
                                         .firstWhere(
                                           (h) => h.nombre == cancion.himnario,
@@ -372,21 +397,21 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                       cancion: cancion,
                                       himnario: himnarioCancion,
                                       isFavorite: true,
-                                      onTap: () {
-                                        Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) => CancionScreen(
-                                              cancion: cancion,
-                                              himnario: himnarioCancion,
-                                              favoritos: favoritos,
-                                              onToggleFavorito: toggleFavorito,
-                                            ),
-                                          ),
-                                        );
-                                      },
-                                      onToggleFavorito: () =>
-                                          toggleFavorito(cancion.id),
+                                                                             onTap: () {
+                                         Navigator.push(
+                                           context,
+                                           MaterialPageRoute(
+                                             builder: (context) => CancionScreen(
+                                               cancion: cancion,
+                                               himnario: himnarioCancion,
+                                               favoritos: _favoritos,
+                                               onToggleFavorito: _toggleFavorito,
+                                             ),
+                                           ),
+                                         );
+                                       },
+                                       onToggleFavorito: () =>
+                                           _toggleFavorito(cancion.id),
                                     );
                                   }),
                               const SizedBox(height: 24),

@@ -26,13 +26,41 @@ class IndiceScreen extends StatefulWidget {
 
 class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderStateMixin, RouteAwareMixin {
   late TabController _tabController;
+  // Estado local de favoritos que se sincroniza con el callback
+  late List<int> _favoritos;
 
   @override
   void initState() {
     super.initState();
+    _favoritos = List.from(widget.favoritos); // Copia local del estado
     _tabController = TabController(length: 2, vsync: this);
     // Configurar la barra de estado con el color del himnario
     StatusBarManager.setStatusBarColor(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void didUpdateWidget(IndiceScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Actualizar el estado local cuando cambian los favoritos externos
+    if (oldWidget.favoritos != widget.favoritos) {
+      setState(() {
+        _favoritos = List.from(widget.favoritos);
+      });
+    }
+  }
+
+  // Método para manejar el toggle de favoritos con actualización inmediata
+  void _toggleFavorito(int cancionId) async {
+    setState(() {
+      if (_favoritos.contains(cancionId)) {
+        _favoritos.remove(cancionId);
+      } else {
+        _favoritos.add(cancionId);
+      }
+    });
+    
+    // Llamar al callback para actualizar el estado global
+    widget.onToggleFavorito(cancionId);
   }
 
   @override
@@ -180,7 +208,7 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
         return CancionCard(
           cancion: cancion,
           himnario: widget.himnario,
-          isFavorite: widget.favoritos.contains(cancion.id),
+          isFavorite: _favoritos.contains(cancion.id),
           onTap: () {
             Navigator.push(
               context,
@@ -188,12 +216,13 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
                 builder: (context) => CancionScreen(
                   cancion: cancion,
                   himnario: widget.himnario,
-                  favoritos: widget.favoritos,
-                  onToggleFavorito: widget.onToggleFavorito,
+                  favoritos: _favoritos,
+                  onToggleFavorito: _toggleFavorito,
                 ),
               ),
             );
           },
+          onToggleFavorito: () => _toggleFavorito(cancion.id),
         );
       },
     );
@@ -228,7 +257,7 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
               child: CancionCard(
                 cancion: cancion,
                 himnario: widget.himnario,
-                isFavorite: widget.favoritos.contains(cancion.id),
+                isFavorite: _favoritos.contains(cancion.id),
                 onTap: () {
                   Navigator.push(
                     context,
@@ -236,12 +265,13 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
                       builder: (context) => CancionScreen(
                         cancion: cancion,
                         himnario: widget.himnario,
-                        favoritos: widget.favoritos,
-                        onToggleFavorito: widget.onToggleFavorito,
+                        favoritos: _favoritos,
+                        onToggleFavorito: _toggleFavorito,
                       ),
                     ),
                   );
                 },
+                onToggleFavorito: () => _toggleFavorito(cancion.id),
               ),
             )),
           ],

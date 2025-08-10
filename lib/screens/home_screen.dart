@@ -6,6 +6,8 @@ import '../theme/app_theme.dart';
 import '../widgets/himnario_card.dart';
 import '../widgets/cancion_card.dart';
 import '../widgets/search_bar_widget.dart';
+import '../widgets/status_bar_manager.dart';
+import '../widgets/route_aware_mixin.dart';
 import 'himnario_screen.dart';
 import 'cancion_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,7 +19,7 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   String busqueda = '';
   List<String> chipsSeleccionados = [];
   List<int> favoritos = [];
@@ -32,6 +34,20 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     _cargarDatos();
+    // Configurar la barra de estado con el color principal
+    StatusBarManager.setStatusBarColor(AppTheme.primaryColor);
+  }
+
+  @override
+  void onEnterScreen() {
+    // Configurar la barra de estado cuando entramos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
+  }
+
+  @override
+  void onReturnToScreen() {
+    // Configurar la barra de estado cuando regresamos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
   }
 
   Future<void> _cargarDatos() async {
@@ -155,15 +171,16 @@ class _HomeScreenState extends State<HomeScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Text(
-                                  'Himnarios',
-                                  style: GoogleFonts.berkshireSwash(
-                                    fontSize: 25,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                  overflow: TextOverflow.ellipsis,
-                                ),
+                                                                 Text(
+                                   'Himnarios',
+                                   style: const TextStyle(
+                                     fontFamily: 'Berkshire Swash',
+                                     fontSize: 25,
+                                     fontWeight: FontWeight.bold,
+                                     color: Colors.white,
+                                   ),
+                                   overflow: TextOverflow.ellipsis,
+                                 ),
                                 const Text(
                                   'Colección de cantos sagrados',
                                   style: TextStyle(

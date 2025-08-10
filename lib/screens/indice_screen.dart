@@ -4,6 +4,8 @@ import '../models/himnario.dart';
 import '../models/cancion.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cancion_card.dart';
+import '../widgets/status_bar_manager.dart';
+import '../widgets/route_aware_mixin.dart';
 import 'cancion_screen.dart';
 
 class IndiceScreen extends StatefulWidget {
@@ -22,13 +24,27 @@ class IndiceScreen extends StatefulWidget {
   State<IndiceScreen> createState() => _IndiceScreenState();
 }
 
-class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderStateMixin {
+class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderStateMixin, RouteAwareMixin {
   late TabController _tabController;
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
+    // Configurar la barra de estado con el color del himnario
+    StatusBarManager.setStatusBarColor(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void onEnterScreen() {
+    // Configurar la barra de estado cuando entramos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void onReturnToScreen() {
+    // Configurar la barra de estado cuando regresamos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.getColorForHimnario(widget.himnario.color));
   }
 
   @override

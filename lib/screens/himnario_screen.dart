@@ -5,6 +5,8 @@ import '../models/cancion.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cancion_card.dart';
 import '../widgets/search_bar_widget.dart';
+import '../widgets/status_bar_manager.dart';
+import '../widgets/route_aware_mixin.dart';
 import 'cancion_screen.dart';
 import 'indice_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,7 +27,7 @@ class HimnarioScreen extends StatefulWidget {
   State<HimnarioScreen> createState() => _HimnarioScreenState();
 }
 
-class _HimnarioScreenState extends State<HimnarioScreen> {
+class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
   String busqueda = '';
   List<String> chipsSeleccionados = [];
   List<Cancion> canciones = [];
@@ -37,6 +39,20 @@ class _HimnarioScreenState extends State<HimnarioScreen> {
   void initState() {
     super.initState();
     _cargarCanciones();
+    // Configurar la barra de estado con el color del himnario
+    StatusBarManager.setStatusBarColor(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void onEnterScreen() {
+    // Configurar la barra de estado cuando entramos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void onReturnToScreen() {
+    // Configurar la barra de estado cuando regresamos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.getColorForHimnario(widget.himnario.color));
   }
 
   Future<void> _cargarCanciones() async {
@@ -125,14 +141,15 @@ class _HimnarioScreenState extends State<HimnarioScreen> {
                           Expanded(
                             child: Column(
                               children: [
-                                Text(
-                                  widget.himnario.nombre,
-                                  style: GoogleFonts.berkshireSwash(
-                                    fontSize: 22,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  ),
-                                ),
+                                                                 Text(
+                                   widget.himnario.nombre,
+                                   style: const TextStyle(
+                                     fontFamily: 'Berkshire Swash',
+                                     fontSize: 22,
+                                     fontWeight: FontWeight.bold,
+                                     color: Colors.white,
+                                   ),
+                                 ),
                                 Text(
                                   widget.himnario.descripcion,
                                   style: const TextStyle(

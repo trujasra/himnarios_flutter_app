@@ -4,6 +4,9 @@ import 'screens/home_screen.dart';
 import 'theme/app_theme.dart';
 import 'data/canciones_service.dart';
 
+// RouteObserver para detectar cambios de navegación
+final RouteObserver<Route<dynamic>> routeObserver = RouteObserver<Route<dynamic>>();
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
  
@@ -18,12 +21,11 @@ void main() async {
 
   runApp(const HimnariosApp());
 
-  // Cambiar color barra de estado al color primario definido en tu tema
+  // Configurar barra de estado con el color principal por defecto
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle(
-      statusBarColor:
-          AppTheme.lightTheme.primaryColor, // Color directo del tema
-      statusBarIconBrightness: Brightness.light, // Iconos blancos
+      statusBarColor: AppTheme.primaryColor, // Usar el color principal
+      statusBarIconBrightness: Brightness.light, // Iconos claros para fondo oscuro
       statusBarBrightness: Brightness.dark, // Para iOS
     ),
   );
@@ -38,6 +40,7 @@ class HimnariosApp extends StatelessWidget {
       title: 'Himnarios',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
+      navigatorObservers: [routeObserver], // Agregar el RouteObserver
       home: const HomeScreen(),
     );
   }

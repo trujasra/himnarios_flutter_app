@@ -3,6 +3,8 @@ import '../models/cancion.dart';
 import '../models/himnario.dart';
 import '../theme/app_theme.dart';
 import '../data/canciones_service.dart';
+import '../widgets/status_bar_manager.dart';
+import '../widgets/route_aware_mixin.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CancionScreen extends StatefulWidget {
@@ -24,7 +26,7 @@ class CancionScreen extends StatefulWidget {
 }
 
 class _CancionScreenState extends State<CancionScreen>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, RouteAwareMixin {
   late TabController _tabController;
   int _currentTabIndex = 0;
   List<Cancion>? _versionesCancion;
@@ -33,6 +35,20 @@ class _CancionScreenState extends State<CancionScreen>
   void initState() {
     super.initState();
     _cargarVersionesCancion();
+    // Configurar la barra de estado con el color del himnario
+    StatusBarManager.setStatusBarColor(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void onEnterScreen() {
+    // Configurar la barra de estado cuando entramos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.getColorForHimnario(widget.himnario.color));
+  }
+
+  @override
+  void onReturnToScreen() {
+    // Configurar la barra de estado cuando regresamos a esta pantalla
+    StatusBarManager.setStatusBarColorWithDelay(AppTheme.getColorForHimnario(widget.himnario.color));
   }
 
   @override
@@ -262,11 +278,11 @@ class _CancionScreenState extends State<CancionScreen>
         child: SafeArea(
           child: Column(
             children: [
-              // Header con botón de regreso y favorito
-              Container(
-                decoration: const BoxDecoration(
-                  gradient: AppTheme.mainGradient,
-                ),
+                             // Header con botón de regreso y favorito
+               Container(
+                 decoration: BoxDecoration(
+                   gradient: AppTheme.getGradientForHimnario(widget.himnario.color),
+                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Row(

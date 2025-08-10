@@ -1,3 +1,4 @@
+import 'package:himnarios_flutter_app/data/data_bendicion_del_cielo.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:intl/intl.dart';
@@ -18,11 +19,8 @@ class DatabaseHelper {
   Future<Database> _initDB(String filePath) async {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, filePath);
-    return await openDatabase(
-      path,
-      version: 1,
-      onCreate: _createDB,
-    );
+    print('📁 Ruta base de datos: $path'); // 🔍 Agrega este print
+    return await openDatabase(path, version: 1, onCreate: _createDB);
   }
 
   Future _createDB(Database db, int version) async {
@@ -139,14 +137,18 @@ class DatabaseHelper {
   /// Inserta los idiomas Español y Aymara en la tabla Par_Idioma
   Future<void> poblarIdiomasIniciales() async {
     final db = await instance.database;
-    
+
     // Verificar si ya existen los idiomas
-    final idiomasExistentes = await db.query('Par_Idioma', where: 'id_idioma IN (?, ?)', whereArgs: [1, 2]);
+    final idiomasExistentes = await db.query(
+      'Par_Idioma',
+      where: 'id_idioma IN (?, ?)',
+      whereArgs: [1, 2],
+    );
     if (idiomasExistentes.isNotEmpty) {
       print('Los idiomas ya existen en la base de datos');
       return;
     }
-    
+
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
     await db.insert('Par_Idioma', {
       'id_idioma': 1,
@@ -183,14 +185,14 @@ class DatabaseHelper {
   Future<void> agregarFavorito(int idCancion) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
-    
+
     // Verificar si ya existe
     final existente = await db.query(
       'Favoritos',
       where: 'id_cancion = ?',
       whereArgs: [idCancion],
     );
-    
+
     if (existente.isEmpty) {
       // Insertar nuevo favorito
       await db.insert('Favoritos', {
@@ -221,7 +223,7 @@ class DatabaseHelper {
   Future<void> quitarFavorito(int idCancion) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
-    
+
     await db.update(
       'Favoritos',
       {
@@ -248,20 +250,31 @@ class DatabaseHelper {
   /// Inserta los himnarios iniciales en la tabla Par_Tipo_Himnario
   Future<void> poblarHimnariosIniciales() async {
     final db = await instance.database;
-    
+
     // Verificar si ya existen los himnarios
-    final himnariosExistentes = await db.query('Par_Tipo_Himnario', where: 'id_tipo_himnario IN (?, ?, ?, ?, ?)', whereArgs: [1, 2, 3, 4, 5]);
+    final himnariosExistentes = await db.query(
+      'Par_Tipo_Himnario',
+      where: 'id_tipo_himnario IN (?, ?, ?, ?, ?)',
+      whereArgs: [1, 2, 3, 4, 5],
+    );
     if (himnariosExistentes.isNotEmpty) {
       print('Los himnarios ya existen en la base de datos');
       return;
     }
-    
+
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
     final usuario = 'ramiro.trujillo';
     final himnarios = [
-      'Bendicion del Cielo',
+      'Bendición del Cielo',
       'Coros Cristianos',
       'Cala',
+      'LLuvias de Bendición',
+      'Poder del Evangelio',
+    ];
+    final descHimnarios = [
+      'Alaba, Oh alma mia a Jehová... Sal 146:1',
+      'Cantad al Señor canción nueva... Sal. 96.1',
+      'Cantad alegres a Dios... Sal. 100:1',
       'LLuvias de Bendición',
       'Poder del Evangelio',
     ];
@@ -269,7 +282,7 @@ class DatabaseHelper {
       await db.insert('Par_Tipo_Himnario', {
         'id_tipo_himnario': i + 1,
         'nombre': himnarios[i],
-        'descripcion': himnarios[i],
+        'descripcion': descHimnarios[i],
         'estado_registro': 1,
         'fecha_registro': now,
         'usuario_registro': usuario,
@@ -288,14 +301,14 @@ class DatabaseHelper {
   // Obtener himnarios con conteo de canciones por idioma
   Future<List<Map<String, dynamic>>> getHimnariosConDetalles() async {
     final db = await instance.database;
-    
+
     // Primero verificar qué himnarios existen
     final himnariosBasicos = await db.query('Par_Tipo_Himnario');
     print('Himnarios encontrados en BD: ${himnariosBasicos.length}');
     for (var h in himnariosBasicos) {
       print('  - ${h['nombre']} (ID: ${h['id_tipo_himnario']})');
     }
-    
+
     // Consulta simplificada sin GROUP_CONCAT
     final resultado = await db.rawQuery('''
       SELECT 
@@ -309,40 +322,96 @@ class DatabaseHelper {
       GROUP BY th.id_tipo_himnario, th.nombre, th.descripcion
       ORDER BY th.id_tipo_himnario
     ''');
-    
-    print('Resultado de getHimnariosConDetalles: ${resultado.length} himnarios');
+
+    print(
+      'Resultado de getHimnariosConDetalles: ${resultado.length} himnarios',
+    );
     for (var h in resultado) {
       print('  - ${h['nombre']}: ${h['total_canciones']} canciones');
     }
-    
+
     return resultado;
   }
 
   // Obtener idiomas disponibles para un himnario específico
   Future<List<String>> getIdiomasPorHimnario(int idHimnario) async {
     final db = await instance.database;
-    final resultado = await db.rawQuery('''
+    final resultado = await db.rawQuery(
+      '''
       SELECT DISTINCT i.descripcion
       FROM Cancion c
       INNER JOIN Par_Idioma i ON c.id_idioma = i.id_idioma
       WHERE c.id_tipo_himnario = ? AND c.estado_registro = 1
       ORDER BY i.descripcion
-    ''', [idHimnario]);
-    
+    ''',
+      [idHimnario],
+    );
+
     return resultado.map((row) => row['descripcion'] as String).toList();
   }
 
-  /// Inserta canciones de ejemplo para el himnario Cala (Aymara y Español) en las tablas Cancion y Letra
+  /// Inserta canciones para el himnario Bendicion del Cielo (Aymara y Español) en las tablas Cancion y Letra
+  Future<void> poblarCancionesBendicionDelCielo() async {
+    final db = await instance.database;
+
+    // Verificar si ya existen canciones para Bendicion del Cielo
+    final cancionesExistentes = await db.query(
+      'Cancion',
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [1],
+    ); // Bendicion del Cielo tiene id_tipo_himnario = 1
+    if (cancionesExistentes.isNotEmpty) {
+      print(
+        'Las canciones de Bendicon del cielo ya existen en la base de datos',
+      );
+      return;
+    }
+
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    final usuario = 'ramiro.trujillo';
+
+    // Insertar canciones desde data_bendicion_del_cielo.dart
+    for (var cancion in DataBendicionDelCielo.canciones) {
+      await db.insert("Cancion", {
+        ...cancion,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+    }
+
+    // Insertar letras desde data_bendicion_del_cielo.dart
+    print('DEBUG: Insertando ${DataBendicionDelCielo.letras.length} letras');
+    for (var letra in DataBendicionDelCielo.letras) {
+      final result = await db.insert('Letra', {
+        ...letra,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+      print(
+        'DEBUG: Letra insertada para canción Bendicion del Cielo ${letra['id_cancion']}: ID = $result',
+      );
+    }
+  }
+
+  /// Inserta canciones para el himnario Cala (Aymara y Español) en las tablas Cancion y Letra
   Future<void> poblarCancionesCala() async {
     final db = await instance.database;
-    
+
     // Verificar si ya existen canciones para Cala
-    final cancionesExistentes = await db.query('Cancion', where: 'id_tipo_himnario = ?', whereArgs: [3]); // Cala tiene id_tipo_himnario = 3
+    final cancionesExistentes = await db.query(
+      'Cancion',
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [3],
+    ); // Cala tiene id_tipo_himnario = 3
     if (cancionesExistentes.isNotEmpty) {
       print('Las canciones de Cala ya existen en la base de datos');
       return;
     }
-    
+
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
     final usuario = 'ramiro.trujillo';
 
@@ -367,7 +436,9 @@ class DatabaseHelper {
         'fecha_modificacion': null,
         'usuario_modificacion': null,
       });
-      print('DEBUG: Letra insertada para canción Cala ${letra['id_cancion']}: ID = $result');
+      print(
+        'DEBUG: Letra insertada para canción Cala ${letra['id_cancion']}: ID = $result',
+      );
     }
   }
 
@@ -392,9 +463,12 @@ class DatabaseHelper {
     ''');
   }
 
-  Future<List<Map<String, dynamic>>> getCancionesPorHimnario(int idHimnario) async {
+  Future<List<Map<String, dynamic>>> getCancionesPorHimnario(
+    int idHimnario,
+  ) async {
     final db = await instance.database;
-    final result = await db.rawQuery('''
+    final result = await db.rawQuery(
+      '''
       SELECT 
         c.id_cancion,
         c.numero,
@@ -409,19 +483,26 @@ class DatabaseHelper {
       LEFT JOIN Letra l ON c.id_cancion = l.id_cancion
       WHERE c.estado_registro = 1 AND c.id_tipo_himnario = ?
       ORDER BY c.numero, c.orden
-    ''', [idHimnario]);
-    
-    print('DEBUG: getCancionesPorHimnario($idHimnario) - ${result.length} canciones encontradas');
+    ''',
+      [idHimnario],
+    );
+
+    print(
+      'DEBUG: getCancionesPorHimnario($idHimnario) - ${result.length} canciones encontradas',
+    );
     for (var row in result) {
-      print('  - Canción ${row['numero']}: ${row['titulo']} (${row['idioma']}) - Letra: ${row['letra'] != null ? "SÍ" : "NO"}');
+      print(
+        '  - Canción ${row['numero']}: ${row['titulo']} (${row['idioma']}) - Letra: ${row['letra'] != null ? "SÍ" : "NO"}',
+      );
     }
-    
+
     return result;
   }
 
   Future<Map<String, dynamic>?> getCancionPorId(int idCancion) async {
     final db = await instance.database;
-    final results = await db.rawQuery('''
+    final results = await db.rawQuery(
+      '''
       SELECT 
         c.id_cancion,
         c.numero,
@@ -435,8 +516,10 @@ class DatabaseHelper {
       INNER JOIN Par_Idioma i ON c.id_idioma = i.id_idioma
       LEFT JOIN Letra l ON c.id_cancion = l.id_cancion
       WHERE c.estado_registro = 1 AND c.id_cancion = ?
-    ''', [idCancion]);
-    
+    ''',
+      [idCancion],
+    );
+
     return results.isNotEmpty ? results.first : null;
   }
 
@@ -445,6 +528,7 @@ class DatabaseHelper {
     try {
       await poblarIdiomasIniciales();
       await poblarHimnariosIniciales();
+      await poblarCancionesBendicionDelCielo();
       await poblarCancionesCala();
       print('Base de datos poblada exitosamente');
     } catch (e) {
@@ -452,28 +536,78 @@ class DatabaseHelper {
     }
   }
 
+  // Método para repoblar las canciones de Bendicion del Cielo (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesBendicionDelCielo() async {
+    try {
+      final db = await instance.database;
+
+      int numeroHimnario = 1; // Bendicion del Cielo
+
+      // Primero obtener los IDs de las canciones de Bendicion del Cielo para eliminar sus letras
+      final cancionesBendicionDelCielo = await db.query(
+        'Cancion',
+        columns: ['id_cancion'],
+        where: 'id_tipo_himnario = ?',
+        whereArgs: [numeroHimnario],
+      );
+
+      final idsCanciones = cancionesBendicionDelCielo
+          .map((c) => c['id_cancion'])
+          .toList();
+
+      // Eliminar letras de las canciones de Bendicion del Cielo
+      if (idsCanciones.isNotEmpty) {
+        await db.delete(
+          'Letra',
+          where:
+              'id_cancion IN (${List.filled(idsCanciones.length, '?').join(',')})',
+          whereArgs: idsCanciones,
+        );
+      }
+
+      // Eliminar canciones existentes de Bendicion del Cielo
+      await db.delete(
+        'Cancion',
+        where: 'id_tipo_himnario = ?',
+        whereArgs: [numeroHimnario],
+      );
+
+      // Poblar nuevamente
+      await poblarCancionesBendicionDelCielo();
+      print('Canciones de Bendicion del Cielo repobladas exitosamente');
+    } catch (e) {
+      print('Error repoblando canciones de Bendicion del Cielo: $e');
+    }
+  }
+
   // Método para repoblar las canciones de Cala (útil cuando se agregan nuevas canciones)
   Future<void> repoblarCancionesCala() async {
     try {
       final db = await instance.database;
-      
+
       // Primero obtener los IDs de las canciones de Cala para eliminar sus letras
-      final cancionesCala = await db.query('Cancion', 
-        columns: ['id_cancion'], 
-        where: 'id_tipo_himnario = ?', 
-        whereArgs: [3]
+      final cancionesCala = await db.query(
+        'Cancion',
+        columns: ['id_cancion'],
+        where: 'id_tipo_himnario = ?',
+        whereArgs: [3],
       );
-      
+
       final idsCanciones = cancionesCala.map((c) => c['id_cancion']).toList();
-      
+
       // Eliminar letras de las canciones de Cala
       if (idsCanciones.isNotEmpty) {
-        await db.delete('Letra', where: 'id_cancion IN (${List.filled(idsCanciones.length, '?').join(',')})', whereArgs: idsCanciones);
+        await db.delete(
+          'Letra',
+          where:
+              'id_cancion IN (${List.filled(idsCanciones.length, '?').join(',')})',
+          whereArgs: idsCanciones,
+        );
       }
-      
+
       // Eliminar canciones existentes de Cala
       await db.delete('Cancion', where: 'id_tipo_himnario = ?', whereArgs: [3]);
-      
+
       // Poblar nuevamente
       await poblarCancionesCala();
       print('Canciones de Cala repobladas exitosamente');
@@ -488,7 +622,7 @@ class DatabaseHelper {
     final himnarios = await db.query('Par_Tipo_Himnario');
     final idiomas = await db.query('Par_Idioma');
     final canciones = await db.query('Cancion');
-    
+
     return himnarios.isNotEmpty && idiomas.isNotEmpty && canciones.isNotEmpty;
   }
 }

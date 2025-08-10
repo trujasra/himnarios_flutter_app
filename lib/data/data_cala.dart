@@ -1,7 +1,7 @@
 ﻿class DataCala {
   static const List<Map<String, dynamic>> canciones = [
     {
-      'id_cancion': 1,
+      'id_cancion': 30001,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '1',
@@ -10,7 +10,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 2,
+      'id_cancion': 30002,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '1',
@@ -19,7 +19,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 3,
+      'id_cancion': 30003,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '2',
@@ -28,7 +28,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 4,
+      'id_cancion': 30004,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '2',
@@ -37,7 +37,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 5,
+      'id_cancion': 30005,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '3',
@@ -46,7 +46,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 6,
+      'id_cancion': 30006,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '3',
@@ -55,7 +55,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 7,
+      'id_cancion': 30007,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '4',
@@ -64,7 +64,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 8,
+      'id_cancion': 30008,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '4',
@@ -73,7 +73,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 9,
+      'id_cancion': 30009,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '5',
@@ -82,7 +82,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 10,
+      'id_cancion': 30010,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '5',
@@ -91,7 +91,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 11,
+      'id_cancion': 30011,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '6',
@@ -100,7 +100,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 12,
+      'id_cancion': 30012,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '6',
@@ -109,7 +109,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 13,
+      'id_cancion': 30013,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '7',
@@ -118,7 +118,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 14,
+      'id_cancion': 30014,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '7',
@@ -127,7 +127,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 15,
+      'id_cancion': 30015,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '8',
@@ -136,7 +136,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 16,
+      'id_cancion': 30016,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '8',
@@ -145,7 +145,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 17,
+      'id_cancion': 30017,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '9',
@@ -154,7 +154,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 18,
+      'id_cancion': 30018,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '9',
@@ -163,7 +163,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 19,
+      'id_cancion': 30019,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '10',
@@ -172,7 +172,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 20,
+      'id_cancion': 30020,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '10',
@@ -181,7 +181,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 21,
+      'id_cancion': 30021,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '11',
@@ -190,7 +190,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 22,
+      'id_cancion': 30022,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '11',
@@ -199,7 +199,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 23,
+      'id_cancion': 30023,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '12',
@@ -208,7 +208,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 24,
+      'id_cancion': 30024,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '12',
@@ -217,7 +217,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 25,
+      'id_cancion': 30025,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '13',
@@ -226,7 +226,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 26,
+      'id_cancion': 30026,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '13',
@@ -235,7 +235,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 27,
+      'id_cancion': 30027,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '14',
@@ -244,7 +244,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 28,
+      'id_cancion': 30028,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '14',
@@ -253,7 +253,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 29,
+      'id_cancion': 30029,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '15',
@@ -262,7 +262,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 30,
+      'id_cancion': 30030,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '15',
@@ -271,7 +271,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 31,
+      'id_cancion': 30031,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '16',
@@ -280,7 +280,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 32,
+      'id_cancion': 30032,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '16',
@@ -289,7 +289,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 33,
+      'id_cancion': 30033,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '17',
@@ -298,7 +298,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 34,
+      'id_cancion': 30034,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '17',
@@ -307,7 +307,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 35,
+      'id_cancion': 30035,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '18',
@@ -316,7 +316,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 36,
+      'id_cancion': 30036,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '18',
@@ -325,7 +325,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 37,
+      'id_cancion': 30037,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '19',
@@ -334,7 +334,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 38,
+      'id_cancion': 30038,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '19',
@@ -343,7 +343,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 39,
+      'id_cancion': 30039,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '20',
@@ -352,7 +352,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 40,
+      'id_cancion': 30040,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '20',
@@ -361,7 +361,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 41,
+      'id_cancion': 30041,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '21',
@@ -370,7 +370,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 42,
+      'id_cancion': 30042,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '21',
@@ -379,7 +379,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 43,
+      'id_cancion': 30043,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '22',
@@ -388,7 +388,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 44,
+      'id_cancion': 30044,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '22',
@@ -397,7 +397,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 45,
+      'id_cancion': 30045,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '23',
@@ -406,7 +406,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 46,
+      'id_cancion': 30046,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '23',
@@ -415,7 +415,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 47,
+      'id_cancion': 30047,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '24',
@@ -424,7 +424,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 48,
+      'id_cancion': 30048,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '24',
@@ -433,7 +433,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 49,
+      'id_cancion': 30049,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '25',
@@ -442,7 +442,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 50,
+      'id_cancion': 30050,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '25',
@@ -451,7 +451,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 51,
+      'id_cancion': 30051,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '26',
@@ -460,7 +460,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 52,
+      'id_cancion': 30052,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '26',
@@ -469,7 +469,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 53,
+      'id_cancion': 30053,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '27',
@@ -478,7 +478,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 54,
+      'id_cancion': 30054,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '27',
@@ -487,7 +487,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 55,
+      'id_cancion': 30055,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '28',
@@ -496,7 +496,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 56,
+      'id_cancion': 30056,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '28',
@@ -505,7 +505,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 57,
+      'id_cancion': 30057,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '29',
@@ -514,7 +514,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 58,
+      'id_cancion': 30058,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '29',
@@ -523,7 +523,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 59,
+      'id_cancion': 30059,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '30',
@@ -532,7 +532,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 60,
+      'id_cancion': 30060,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '30',
@@ -541,7 +541,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 61,
+      'id_cancion': 30061,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '31',
@@ -550,7 +550,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 62,
+      'id_cancion': 30062,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '31',
@@ -559,7 +559,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 63,
+      'id_cancion': 30063,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '32',
@@ -568,7 +568,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 64,
+      'id_cancion': 30064,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '32',
@@ -577,7 +577,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 65,
+      'id_cancion': 30065,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '33',
@@ -586,7 +586,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 66,
+      'id_cancion': 30066,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '33',
@@ -595,7 +595,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 67,
+      'id_cancion': 30067,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '34',
@@ -604,7 +604,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 68,
+      'id_cancion': 30068,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '34',
@@ -613,7 +613,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 69,
+      'id_cancion': 30069,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '35',
@@ -622,7 +622,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 70,
+      'id_cancion': 30070,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '35',
@@ -631,7 +631,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 71,
+      'id_cancion': 30071,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '36',
@@ -640,7 +640,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 72,
+      'id_cancion': 30072,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '36',
@@ -649,7 +649,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 73,
+      'id_cancion': 30073,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '37',
@@ -658,7 +658,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 74,
+      'id_cancion': 30074,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '37',
@@ -667,7 +667,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 75,
+      'id_cancion': 30075,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '38',
@@ -676,7 +676,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 76,
+      'id_cancion': 30076,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '38',
@@ -685,7 +685,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 77,
+      'id_cancion': 30077,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '39',
@@ -694,7 +694,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 78,
+      'id_cancion': 30078,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '39',
@@ -703,7 +703,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 79,
+      'id_cancion': 30079,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '40',
@@ -712,7 +712,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 80,
+      'id_cancion': 30080,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '40',
@@ -721,7 +721,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 81,
+      'id_cancion': 30081,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '41',
@@ -730,7 +730,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 82,
+      'id_cancion': 30082,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '41',
@@ -739,7 +739,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 83,
+      'id_cancion': 30083,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '42',
@@ -748,7 +748,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 84,
+      'id_cancion': 30084,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '42',
@@ -757,7 +757,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 85,
+      'id_cancion': 30085,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '43',
@@ -766,7 +766,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 86,
+      'id_cancion': 30086,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '43',
@@ -775,7 +775,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 87,
+      'id_cancion': 30087,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '44',
@@ -784,7 +784,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 88,
+      'id_cancion': 30088,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '44',
@@ -793,7 +793,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 89,
+      'id_cancion': 30089,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '45',
@@ -802,7 +802,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 90,
+      'id_cancion': 30090,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '45',
@@ -811,7 +811,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 91,
+      'id_cancion': 30091,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '46',
@@ -820,7 +820,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 92,
+      'id_cancion': 30092,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '46',
@@ -829,7 +829,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 93,
+      'id_cancion': 30093,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '47',
@@ -838,7 +838,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 94,
+      'id_cancion': 30094,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '47',
@@ -847,7 +847,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 95,
+      'id_cancion': 30095,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '48',
@@ -856,7 +856,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 96,
+      'id_cancion': 30096,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '48',
@@ -865,7 +865,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 97,
+      'id_cancion': 30097,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '49',
@@ -874,7 +874,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 98,
+      'id_cancion': 30098,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '49',
@@ -883,7 +883,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 99,
+      'id_cancion': 30099,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '50',
@@ -892,7 +892,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 100,
+      'id_cancion': 30100,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '50',
@@ -901,7 +901,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 101,
+      'id_cancion': 30101,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '51',
@@ -910,7 +910,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 102,
+      'id_cancion': 30102,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '51',
@@ -919,7 +919,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 103,
+      'id_cancion': 30103,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '52',
@@ -928,7 +928,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 104,
+      'id_cancion': 30104,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '52',
@@ -937,7 +937,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 105,
+      'id_cancion': 30105,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '53',
@@ -946,7 +946,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 106,
+      'id_cancion': 30106,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '53',
@@ -955,7 +955,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 107,
+      'id_cancion': 30107,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '54',
@@ -964,7 +964,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 108,
+      'id_cancion': 30108,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '54',
@@ -973,7 +973,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 109,
+      'id_cancion': 30109,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '55',
@@ -982,7 +982,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 110,
+      'id_cancion': 30110,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '55',
@@ -991,7 +991,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 111,
+      'id_cancion': 30111,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '56',
@@ -1000,7 +1000,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 112,
+      'id_cancion': 30112,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '56',
@@ -1009,7 +1009,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 113,
+      'id_cancion': 30113,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '57',
@@ -1018,7 +1018,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 114,
+      'id_cancion': 30114,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '57',
@@ -1027,7 +1027,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 115,
+      'id_cancion': 30115,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '58',
@@ -1036,7 +1036,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 116,
+      'id_cancion': 30116,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '58',
@@ -1045,7 +1045,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 117,
+      'id_cancion': 30117,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '59',
@@ -1054,7 +1054,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 118,
+      'id_cancion': 30118,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '59',
@@ -1063,7 +1063,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 119,
+      'id_cancion': 30119,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '60',
@@ -1072,7 +1072,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 120,
+      'id_cancion': 30120,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '60',
@@ -1081,7 +1081,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 121,
+      'id_cancion': 30121,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '61',
@@ -1090,7 +1090,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 122,
+      'id_cancion': 30122,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '61',
@@ -1099,7 +1099,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 123,
+      'id_cancion': 30123,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '62',
@@ -1108,7 +1108,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 124,
+      'id_cancion': 30124,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '62',
@@ -1117,7 +1117,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 125,
+      'id_cancion': 30125,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '63',
@@ -1126,7 +1126,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 126,
+      'id_cancion': 30126,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '63',
@@ -1135,7 +1135,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 127,
+      'id_cancion': 30127,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '64',
@@ -1144,7 +1144,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 128,
+      'id_cancion': 30128,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '64',
@@ -1153,7 +1153,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 129,
+      'id_cancion': 30129,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '65',
@@ -1162,7 +1162,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 130,
+      'id_cancion': 30130,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '65',
@@ -1171,7 +1171,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 131,
+      'id_cancion': 30131,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '66',
@@ -1180,7 +1180,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 132,
+      'id_cancion': 30132,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '66',
@@ -1189,7 +1189,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 133,
+      'id_cancion': 30133,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '67',
@@ -1198,7 +1198,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 134,
+      'id_cancion': 30134,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '67',
@@ -1207,7 +1207,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 135,
+      'id_cancion': 30135,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '68',
@@ -1216,7 +1216,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 136,
+      'id_cancion': 30136,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '68',
@@ -1225,7 +1225,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 137,
+      'id_cancion': 30137,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '69',
@@ -1234,7 +1234,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 138,
+      'id_cancion': 30138,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '69',
@@ -1243,7 +1243,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 139,
+      'id_cancion': 30139,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '70',
@@ -1252,7 +1252,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 140,
+      'id_cancion': 30140,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '70',
@@ -1261,7 +1261,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 141,
+      'id_cancion': 30141,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '71',
@@ -1270,7 +1270,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 142,
+      'id_cancion': 30142,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '71',
@@ -1279,7 +1279,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 143,
+      'id_cancion': 30143,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '72',
@@ -1288,7 +1288,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 144,
+      'id_cancion': 30144,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '72',
@@ -1297,7 +1297,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 145,
+      'id_cancion': 30145,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '73',
@@ -1306,7 +1306,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 146,
+      'id_cancion': 30146,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '73',
@@ -1315,7 +1315,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 147,
+      'id_cancion': 30147,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '74',
@@ -1324,7 +1324,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 148,
+      'id_cancion': 30148,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '74',
@@ -1333,7 +1333,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 149,
+      'id_cancion': 30149,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '75',
@@ -1342,7 +1342,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 150,
+      'id_cancion': 30150,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '75',
@@ -1351,7 +1351,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 151,
+      'id_cancion': 30151,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '76',
@@ -1360,7 +1360,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 152,
+      'id_cancion': 30152,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '76',
@@ -1369,7 +1369,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 153,
+      'id_cancion': 30153,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '77',
@@ -1378,7 +1378,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 154,
+      'id_cancion': 30154,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '77',
@@ -1387,7 +1387,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 155,
+      'id_cancion': 30155,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '78',
@@ -1396,7 +1396,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 156,
+      'id_cancion': 30156,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '78',
@@ -1405,7 +1405,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 157,
+      'id_cancion': 30157,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '79',
@@ -1414,7 +1414,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 158,
+      'id_cancion': 30158,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '79',
@@ -1423,7 +1423,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 159,
+      'id_cancion': 30159,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '80',
@@ -1432,7 +1432,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 160,
+      'id_cancion': 30160,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '80',
@@ -1441,7 +1441,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 161,
+      'id_cancion': 30161,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '81',
@@ -1450,7 +1450,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 162,
+      'id_cancion': 30162,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '81',
@@ -1459,7 +1459,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 163,
+      'id_cancion': 30163,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '82',
@@ -1468,7 +1468,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 164,
+      'id_cancion': 30164,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '82',
@@ -1477,7 +1477,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 165,
+      'id_cancion': 30165,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '83',
@@ -1486,7 +1486,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 166,
+      'id_cancion': 30166,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '83',
@@ -1495,7 +1495,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 167,
+      'id_cancion': 30167,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '84',
@@ -1504,7 +1504,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 168,
+      'id_cancion': 30168,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '84',
@@ -1513,7 +1513,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 169,
+      'id_cancion': 30169,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '85',
@@ -1522,7 +1522,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 170,
+      'id_cancion': 30170,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '85',
@@ -1531,7 +1531,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 171,
+      'id_cancion': 30171,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '86',
@@ -1540,7 +1540,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 172,
+      'id_cancion': 30172,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '86',
@@ -1549,7 +1549,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 173,
+      'id_cancion': 30173,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '87',
@@ -1558,7 +1558,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 174,
+      'id_cancion': 30174,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '87',
@@ -1567,7 +1567,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 175,
+      'id_cancion': 30175,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '88',
@@ -1576,7 +1576,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 176,
+      'id_cancion': 30176,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '88',
@@ -1585,7 +1585,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 177,
+      'id_cancion': 30177,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '89',
@@ -1594,7 +1594,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 178,
+      'id_cancion': 30178,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '89',
@@ -1603,7 +1603,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 179,
+      'id_cancion': 30179,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '90',
@@ -1612,7 +1612,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 180,
+      'id_cancion': 30180,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '90',
@@ -1621,7 +1621,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 181,
+      'id_cancion': 30181,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '91',
@@ -1630,7 +1630,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 182,
+      'id_cancion': 30182,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '91',
@@ -1639,7 +1639,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 183,
+      'id_cancion': 30183,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '92',
@@ -1648,7 +1648,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 184,
+      'id_cancion': 30184,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '92',
@@ -1657,7 +1657,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 185,
+      'id_cancion': 30185,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '93',
@@ -1666,7 +1666,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 186,
+      'id_cancion': 30186,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '93',
@@ -1675,7 +1675,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 187,
+      'id_cancion': 30187,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '94',
@@ -1684,7 +1684,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 188,
+      'id_cancion': 30188,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '94',
@@ -1693,7 +1693,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 189,
+      'id_cancion': 30189,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '95',
@@ -1702,7 +1702,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 190,
+      'id_cancion': 30190,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '95',
@@ -1711,7 +1711,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 191,
+      'id_cancion': 30191,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '96',
@@ -1720,7 +1720,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 192,
+      'id_cancion': 30192,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '96',
@@ -1729,7 +1729,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 193,
+      'id_cancion': 30193,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '97',
@@ -1738,7 +1738,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 194,
+      'id_cancion': 30194,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '97',
@@ -1747,7 +1747,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 195,
+      'id_cancion': 30195,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '98',
@@ -1756,7 +1756,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 196,
+      'id_cancion': 30196,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '98',
@@ -1765,7 +1765,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 197,
+      'id_cancion': 30197,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '99',
@@ -1774,7 +1774,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 198,
+      'id_cancion': 30198,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '99',
@@ -1783,7 +1783,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 199,
+      'id_cancion': 30199,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '100',
@@ -1792,7 +1792,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 200,
+      'id_cancion': 30200,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '100',
@@ -1801,7 +1801,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 201,
+      'id_cancion': 30201,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '101',
@@ -1810,7 +1810,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 202,
+      'id_cancion': 30202,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '101',
@@ -1819,7 +1819,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 203,
+      'id_cancion': 30203,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '102',
@@ -1828,7 +1828,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 204,
+      'id_cancion': 30204,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '102',
@@ -1837,7 +1837,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 205,
+      'id_cancion': 30205,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '103',
@@ -1846,7 +1846,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 206,
+      'id_cancion': 30206,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '103',
@@ -1855,7 +1855,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 207,
+      'id_cancion': 30207,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '104',
@@ -1864,7 +1864,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 208,
+      'id_cancion': 30208,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '104',
@@ -1873,7 +1873,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 209,
+      'id_cancion': 30209,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '105',
@@ -1882,7 +1882,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 210,
+      'id_cancion': 30210,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '105',
@@ -1891,7 +1891,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 211,
+      'id_cancion': 30211,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '106',
@@ -1900,7 +1900,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 212,
+      'id_cancion': 30212,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '106',
@@ -1909,7 +1909,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 213,
+      'id_cancion': 30213,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '107',
@@ -1918,7 +1918,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 214,
+      'id_cancion': 30214,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '107',
@@ -1927,7 +1927,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 215,
+      'id_cancion': 30215,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '108',
@@ -1936,7 +1936,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 216,
+      'id_cancion': 30216,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '108',
@@ -1945,7 +1945,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 217,
+      'id_cancion': 30217,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '109',
@@ -1954,7 +1954,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 218,
+      'id_cancion': 30218,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '109',
@@ -1963,7 +1963,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 219,
+      'id_cancion': 30219,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '110',
@@ -1972,7 +1972,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 220,
+      'id_cancion': 30220,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '110',
@@ -1981,7 +1981,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 221,
+      'id_cancion': 30221,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '111',
@@ -1990,7 +1990,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 222,
+      'id_cancion': 30222,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '111',
@@ -1999,7 +1999,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 223,
+      'id_cancion': 30223,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '112',
@@ -2008,7 +2008,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 224,
+      'id_cancion': 30224,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '112',
@@ -2017,7 +2017,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 225,
+      'id_cancion': 30225,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '113',
@@ -2026,7 +2026,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 226,
+      'id_cancion': 30226,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '113',
@@ -2035,7 +2035,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 227,
+      'id_cancion': 30227,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '114',
@@ -2044,7 +2044,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 228,
+      'id_cancion': 30228,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '114',
@@ -2053,7 +2053,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 229,
+      'id_cancion': 30229,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '115',
@@ -2062,7 +2062,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 230,
+      'id_cancion': 30230,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '115',
@@ -2071,7 +2071,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 231,
+      'id_cancion': 30231,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '116',
@@ -2080,7 +2080,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 232,
+      'id_cancion': 30232,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '116',
@@ -2089,7 +2089,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 233,
+      'id_cancion': 30233,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '117',
@@ -2098,7 +2098,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 234,
+      'id_cancion': 30234,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '117',
@@ -2107,7 +2107,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 235,
+      'id_cancion': 30235,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '118',
@@ -2116,7 +2116,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 236,
+      'id_cancion': 30236,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '118',
@@ -2125,7 +2125,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 237,
+      'id_cancion': 30237,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '119',
@@ -2134,7 +2134,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 238,
+      'id_cancion': 30238,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '119',
@@ -2143,7 +2143,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 239,
+      'id_cancion': 30239,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '120',
@@ -2152,7 +2152,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 240,
+      'id_cancion': 30240,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '120',
@@ -2161,7 +2161,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 241,
+      'id_cancion': 30241,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '121',
@@ -2170,7 +2170,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 242,
+      'id_cancion': 30242,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '121',
@@ -2179,7 +2179,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 243,
+      'id_cancion': 30243,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '122',
@@ -2188,7 +2188,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 244,
+      'id_cancion': 30244,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '122',
@@ -2197,7 +2197,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 245,
+      'id_cancion': 30245,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '123',
@@ -2206,7 +2206,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 246,
+      'id_cancion': 30246,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '123',
@@ -2215,7 +2215,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 247,
+      'id_cancion': 30247,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '124',
@@ -2224,7 +2224,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 248,
+      'id_cancion': 30248,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '124',
@@ -2233,7 +2233,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 249,
+      'id_cancion': 30249,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '125',
@@ -2242,7 +2242,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 250,
+      'id_cancion': 30250,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '125',
@@ -2251,7 +2251,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 251,
+      'id_cancion': 30251,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '126',
@@ -2260,7 +2260,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 252,
+      'id_cancion': 30252,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '126',
@@ -2269,7 +2269,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 253,
+      'id_cancion': 30253,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '127',
@@ -2278,7 +2278,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 254,
+      'id_cancion': 30254,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '127',
@@ -2287,7 +2287,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 255,
+      'id_cancion': 30255,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '128',
@@ -2296,7 +2296,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 256,
+      'id_cancion': 30256,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '128',
@@ -2305,7 +2305,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 257,
+      'id_cancion': 30257,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '129',
@@ -2314,7 +2314,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 258,
+      'id_cancion': 30258,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '129',
@@ -2323,7 +2323,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 259,
+      'id_cancion': 30259,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '130',
@@ -2332,7 +2332,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 260,
+      'id_cancion': 30260,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '130',
@@ -2341,7 +2341,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 261,
+      'id_cancion': 30261,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '131',
@@ -2350,7 +2350,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 262,
+      'id_cancion': 30262,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '131',
@@ -2359,7 +2359,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 263,
+      'id_cancion': 30263,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '132',
@@ -2368,7 +2368,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 264,
+      'id_cancion': 30264,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '132',
@@ -2377,7 +2377,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 265,
+      'id_cancion': 30265,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '133',
@@ -2386,7 +2386,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 266,
+      'id_cancion': 30266,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '133',
@@ -2395,7 +2395,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 267,
+      'id_cancion': 30267,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '134',
@@ -2404,7 +2404,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 268,
+      'id_cancion': 30268,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '134',
@@ -2413,7 +2413,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 269,
+      'id_cancion': 30269,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '135',
@@ -2422,7 +2422,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 270,
+      'id_cancion': 30270,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '135',
@@ -2431,7 +2431,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 271,
+      'id_cancion': 30271,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '136',
@@ -2440,7 +2440,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 272,
+      'id_cancion': 30272,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '136',
@@ -2449,7 +2449,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 273,
+      'id_cancion': 30273,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '137',
@@ -2458,7 +2458,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 274,
+      'id_cancion': 30274,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '137',
@@ -2467,7 +2467,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 275,
+      'id_cancion': 30275,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '138',
@@ -2476,7 +2476,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 276,
+      'id_cancion': 30276,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '138',
@@ -2485,7 +2485,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 277,
+      'id_cancion': 30277,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '139',
@@ -2494,7 +2494,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 278,
+      'id_cancion': 30278,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '139',
@@ -2503,7 +2503,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 279,
+      'id_cancion': 30279,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '140',
@@ -2512,7 +2512,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 280,
+      'id_cancion': 30280,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '140',
@@ -2521,7 +2521,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 281,
+      'id_cancion': 30281,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '141',
@@ -2530,7 +2530,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 282,
+      'id_cancion': 30282,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '141',
@@ -2539,7 +2539,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 283,
+      'id_cancion': 30283,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '142',
@@ -2548,7 +2548,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 284,
+      'id_cancion': 30284,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '142',
@@ -2557,7 +2557,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 285,
+      'id_cancion': 30285,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '143',
@@ -2566,7 +2566,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 286,
+      'id_cancion': 30286,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '143',
@@ -2575,7 +2575,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 287,
+      'id_cancion': 30287,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '144',
@@ -2584,7 +2584,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 288,
+      'id_cancion': 30288,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '144',
@@ -2593,7 +2593,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 289,
+      'id_cancion': 30289,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '145',
@@ -2602,7 +2602,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 290,
+      'id_cancion': 30290,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '145',
@@ -2611,7 +2611,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 291,
+      'id_cancion': 30291,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '146',
@@ -2620,7 +2620,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 292,
+      'id_cancion': 30292,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '146',
@@ -2629,7 +2629,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 293,
+      'id_cancion': 30293,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '147',
@@ -2638,7 +2638,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 294,
+      'id_cancion': 30294,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '147',
@@ -2647,7 +2647,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 295,
+      'id_cancion': 30295,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '148',
@@ -2656,7 +2656,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 296,
+      'id_cancion': 30296,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '148',
@@ -2665,7 +2665,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 297,
+      'id_cancion': 30297,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '149',
@@ -2674,7 +2674,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 298,
+      'id_cancion': 30298,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '149',
@@ -2683,7 +2683,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 299,
+      'id_cancion': 30299,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '150',
@@ -2692,7 +2692,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 300,
+      'id_cancion': 30300,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '150',
@@ -2701,7 +2701,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 301,
+      'id_cancion': 30301,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '151',
@@ -2710,7 +2710,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 302,
+      'id_cancion': 30302,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '151',
@@ -2719,7 +2719,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 303,
+      'id_cancion': 30303,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '152',
@@ -2728,7 +2728,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 304,
+      'id_cancion': 30304,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '152',
@@ -2737,7 +2737,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 305,
+      'id_cancion': 30305,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '153',
@@ -2746,7 +2746,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 306,
+      'id_cancion': 30306,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '153',
@@ -2755,7 +2755,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 307,
+      'id_cancion': 30307,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '154',
@@ -2764,7 +2764,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 308,
+      'id_cancion': 30308,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '154',
@@ -2773,7 +2773,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 309,
+      'id_cancion': 30309,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '155',
@@ -2782,7 +2782,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 310,
+      'id_cancion': 30310,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '155',
@@ -2791,7 +2791,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 311,
+      'id_cancion': 30311,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '156',
@@ -2800,7 +2800,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 312,
+      'id_cancion': 30312,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '156',
@@ -2809,7 +2809,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 313,
+      'id_cancion': 30313,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '157',
@@ -2818,7 +2818,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 314,
+      'id_cancion': 30314,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '157',
@@ -2827,7 +2827,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 315,
+      'id_cancion': 30315,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '158',
@@ -2836,7 +2836,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 316,
+      'id_cancion': 30316,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '158',
@@ -2845,7 +2845,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 317,
+      'id_cancion': 30317,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '159',
@@ -2854,7 +2854,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 318,
+      'id_cancion': 30318,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '159',
@@ -2863,7 +2863,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 319,
+      'id_cancion': 30319,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '160',
@@ -2872,7 +2872,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 320,
+      'id_cancion': 30320,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '160',
@@ -2881,7 +2881,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 321,
+      'id_cancion': 30321,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '161',
@@ -2890,7 +2890,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 322,
+      'id_cancion': 30322,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '161',
@@ -2899,7 +2899,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 323,
+      'id_cancion': 30323,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '162',
@@ -2908,7 +2908,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 324,
+      'id_cancion': 30324,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '162',
@@ -2917,7 +2917,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 325,
+      'id_cancion': 30325,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '163',
@@ -2926,7 +2926,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 326,
+      'id_cancion': 30326,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '163',
@@ -2935,7 +2935,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 327,
+      'id_cancion': 30327,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '164',
@@ -2944,7 +2944,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 328,
+      'id_cancion': 30328,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '164',
@@ -2953,7 +2953,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 329,
+      'id_cancion': 30329,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '165',
@@ -2962,7 +2962,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 330,
+      'id_cancion': 30330,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '165',
@@ -2971,7 +2971,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 331,
+      'id_cancion': 30331,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '166',
@@ -2980,7 +2980,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 332,
+      'id_cancion': 30332,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '166',
@@ -2989,7 +2989,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 333,
+      'id_cancion': 30333,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '167',
@@ -2998,7 +2998,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 334,
+      'id_cancion': 30334,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '167',
@@ -3007,7 +3007,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 335,
+      'id_cancion': 30335,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '168',
@@ -3016,7 +3016,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 336,
+      'id_cancion': 30336,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '168',
@@ -3025,7 +3025,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 337,
+      'id_cancion': 30337,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '169',
@@ -3034,7 +3034,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 338,
+      'id_cancion': 30338,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '169',
@@ -3043,7 +3043,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 339,
+      'id_cancion': 30339,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '170',
@@ -3052,7 +3052,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 340,
+      'id_cancion': 30340,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '170',
@@ -3061,7 +3061,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 341,
+      'id_cancion': 30341,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '171',
@@ -3070,7 +3070,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 342,
+      'id_cancion': 30342,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '171',
@@ -3079,7 +3079,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 343,
+      'id_cancion': 30343,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '172',
@@ -3088,7 +3088,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 344,
+      'id_cancion': 30344,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '172',
@@ -3097,7 +3097,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 345,
+      'id_cancion': 30345,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '173',
@@ -3106,7 +3106,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 346,
+      'id_cancion': 30346,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '173',
@@ -3115,7 +3115,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 347,
+      'id_cancion': 30347,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '174',
@@ -3124,7 +3124,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 348,
+      'id_cancion': 30348,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '174',
@@ -3133,7 +3133,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 349,
+      'id_cancion': 30349,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '175',
@@ -3142,7 +3142,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 350,
+      'id_cancion': 30350,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '175',
@@ -3151,7 +3151,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 351,
+      'id_cancion': 30351,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '176',
@@ -3160,7 +3160,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 352,
+      'id_cancion': 30352,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '176',
@@ -3169,7 +3169,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 353,
+      'id_cancion': 30353,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '177',
@@ -3178,7 +3178,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 354,
+      'id_cancion': 30354,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '177',
@@ -3187,7 +3187,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 355,
+      'id_cancion': 30355,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '178',
@@ -3196,7 +3196,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 356,
+      'id_cancion': 30356,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '178',
@@ -3205,7 +3205,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 357,
+      'id_cancion': 30357,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '179',
@@ -3214,7 +3214,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 358,
+      'id_cancion': 30358,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '179',
@@ -3223,7 +3223,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 359,
+      'id_cancion': 30359,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '180',
@@ -3232,7 +3232,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 360,
+      'id_cancion': 30360,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '180',
@@ -3241,7 +3241,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 361,
+      'id_cancion': 30361,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '181',
@@ -3250,7 +3250,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 362,
+      'id_cancion': 30362,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '181',
@@ -3259,7 +3259,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 363,
+      'id_cancion': 30363,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '182',
@@ -3268,7 +3268,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 364,
+      'id_cancion': 30364,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '182',
@@ -3277,7 +3277,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 365,
+      'id_cancion': 30365,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '183',
@@ -3286,7 +3286,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 366,
+      'id_cancion': 30366,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '183',
@@ -3295,7 +3295,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 367,
+      'id_cancion': 30367,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '184',
@@ -3304,7 +3304,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 368,
+      'id_cancion': 30368,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '184',
@@ -3313,7 +3313,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 369,
+      'id_cancion': 30369,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '185',
@@ -3322,7 +3322,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 370,
+      'id_cancion': 30370,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '185',
@@ -3331,7 +3331,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 371,
+      'id_cancion': 30371,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '186',
@@ -3340,7 +3340,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 372,
+      'id_cancion': 30372,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '186',
@@ -3349,7 +3349,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 373,
+      'id_cancion': 30373,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '187',
@@ -3358,7 +3358,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 374,
+      'id_cancion': 30374,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '187',
@@ -3367,7 +3367,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 375,
+      'id_cancion': 30375,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '188',
@@ -3376,7 +3376,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 376,
+      'id_cancion': 30376,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '188',
@@ -3385,7 +3385,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 377,
+      'id_cancion': 30377,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '189',
@@ -3394,7 +3394,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 378,
+      'id_cancion': 30378,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '189',
@@ -3403,7 +3403,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 379,
+      'id_cancion': 30379,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '190',
@@ -3412,7 +3412,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 380,
+      'id_cancion': 30380,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '190',
@@ -3421,7 +3421,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 381,
+      'id_cancion': 30381,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '191',
@@ -3430,7 +3430,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 382,
+      'id_cancion': 30382,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '191',
@@ -3439,7 +3439,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 383,
+      'id_cancion': 30383,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '192',
@@ -3448,7 +3448,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 384,
+      'id_cancion': 30384,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '192',
@@ -3457,7 +3457,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 385,
+      'id_cancion': 30385,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '193',
@@ -3466,7 +3466,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 386,
+      'id_cancion': 30386,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '193',
@@ -3475,7 +3475,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 387,
+      'id_cancion': 30387,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '194',
@@ -3484,7 +3484,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 388,
+      'id_cancion': 30388,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '194',
@@ -3493,7 +3493,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 389,
+      'id_cancion': 30389,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '195',
@@ -3502,7 +3502,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 390,
+      'id_cancion': 30390,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '195',
@@ -3511,7 +3511,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 391,
+      'id_cancion': 30391,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '196',
@@ -3520,7 +3520,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 392,
+      'id_cancion': 30392,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '196',
@@ -3529,7 +3529,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 393,
+      'id_cancion': 30393,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '197',
@@ -3538,7 +3538,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 394,
+      'id_cancion': 30394,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '197',
@@ -3547,7 +3547,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 395,
+      'id_cancion': 30395,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '198',
@@ -3556,7 +3556,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 396,
+      'id_cancion': 30396,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '198',
@@ -3565,7 +3565,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 397,
+      'id_cancion': 30397,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '199',
@@ -3574,7 +3574,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 398,
+      'id_cancion': 30398,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '199',
@@ -3583,7 +3583,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 399,
+      'id_cancion': 30399,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
       'numero': '200',
@@ -3592,7 +3592,7 @@
       'estado_registro': 1,
     },
     {
-      'id_cancion': 400,
+      'id_cancion': 30400,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
       'numero': '200',
@@ -3604,8 +3604,8 @@
 
   static const List<Map<String, dynamic>> letras = [
     {
-      'id_letra': 1,
-      'id_cancion': 1,
+      'id_letra': 30001,
+      'id_cancion': 30001,
       'descripcion': '''(Sol)
 
 Tatitun jutañapajja sinti
@@ -3640,8 +3640,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 2,
-      'id_cancion': 2,
+      'id_letra': 30002,
+      'id_cancion': 30002,
       'descripcion': '''
 Pronto vuelve Jesucristo,
 A juzgar a este mundo
@@ -3675,8 +3675,8 @@ De Jesús el Salvador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 3,
-      'id_cancion': 3,
+      'id_letra': 30003,
+      'id_cancion': 30003,
       'descripcion': '''(Re)
 
 Jesusan arupat yatiyañäni
@@ -3705,8 +3705,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 4,
-      'id_cancion': 4,
+      'id_letra': 30004,
+      'id_cancion': 30004,
       'descripcion': '''
 Predicad por doquier la verdad de Dios
 Proclamando el mensaje de su amor;
@@ -3733,8 +3733,8 @@ Nos dará la victoria en la tentación.
       'estado_registro': 1,
     },
     {
-      'id_letra': 5,
-      'id_cancion': 5,
+      'id_letra': 30005,
+      'id_cancion': 30005,
       'descripcion': '''(Do Menor)
 
 Munat khespiyiri, jumaruw catoksma
@@ -3768,8 +3768,8 @@ Roberto Arismendi A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 6,
-      'id_cancion': 6,
+      'id_letra': 30006,
+      'id_cancion': 30006,
       'descripcion': '''
 Salvador bendito, quiero suplicarte
 Que tú siempre mores en mi corazón;
@@ -3801,8 +3801,8 @@ Con tu amor y gracia me protegerás.
       'estado_registro': 1,
     },
     {
-      'id_letra': 7,
-      'id_cancion': 7,
+      'id_letra': 30007,
+      'id_cancion': 30007,
       'descripcion': '''(Do Menor)
 
 Istïtay Dios Awqui mayisitajjaru,
@@ -3831,8 +3831,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 8,
-      'id_cancion': 8,
+      'id_letra': 30008,
+      'id_cancion': 30008,
       'descripcion': '''
 Vivo cada día, a tus pies orando
 Pensando en tus dichos, Cristo Salvador;
@@ -3859,8 +3859,8 @@ Acepta y confía en tu Salvador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 9,
-      'id_cancion': 9,
+      'id_letra': 30009,
+      'id_cancion': 30009,
       'descripcion': '''(Fa Menor)
 
 Criston thaquipan sarä
@@ -3898,8 +3898,8 @@ Justíno Quíspe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 10,
-      'id_cancion': 10,
+      'id_letra': 30010,
+      'id_cancion': 30010,
       'descripcion': '''
 Por su senda marcharé
 De Cristo mi Salvador
@@ -3935,8 +3935,8 @@ No descuides más. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 11,
-      'id_cancion': 11,
+      'id_letra': 30011,
+      'id_cancion': 30011,
       'descripcion': '''(Re Menor)
 
 Dios Awqui uñtanitay,
@@ -3965,8 +3965,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 12,
-      'id_cancion': 12,
+      'id_letra': 30012,
+      'id_cancion': 30012,
       'descripcion': '''
 Heme aquí, oh Padre Dios
 Ten piedad de mí, Señor;
@@ -3993,8 +3993,8 @@ Para hablar de Ti, Señor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 13,
-      'id_cancion': 13,
+      'id_letra': 30013,
+      'id_cancion': 30013,
       'descripcion': '''(Re)
 
 Tatit Jesucristoru
@@ -4025,8 +4025,8 @@ Yakhac uñtayapjjetu.
       'estado_registro': 1,
     },
     {
-      'id_letra': 14,
-      'id_cancion': 14,
+      'id_letra': 30014,
+      'id_cancion': 30014,
       'descripcion': '''
 Muchos años yo busqué
 Al Señor y Salvador,
@@ -4055,8 +4055,8 @@ Otros dioses que adorar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 15,
-      'id_cancion': 15,
+      'id_letra': 30015,
+      'id_cancion': 30015,
       'descripcion': '''(Fa)
 
 Diosaw imätam take ñankhata
@@ -4085,8 +4085,8 @@ Mario Zeballos
       'estado_registro': 1,
     },
     {
-      'id_letra': 16,
-      'id_cancion': 16,
+      'id_letra': 30016,
+      'id_cancion': 30016,
       'descripcion': '''
 Tu Padre Dios, a ti te cuidará
 Por dondequiera que camines tú,
@@ -4113,8 +4113,8 @@ Hasta que venga Cristo el Señor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 17,
-      'id_cancion': 17,
+      'id_letra': 30017,
+      'id_cancion': 30017,
       'descripcion': '''(Mi Menor)
 
 Luratanacam uñtasajj
@@ -4161,8 +4161,8 @@ Justino Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 18,
-      'id_cancion': 18,
+      'id_letra': 30018,
+      'id_cancion': 30018,
       'descripcion': '''
 Mirando tú obra, ¡Oh Creador!
 No tengo más palabras ya,
@@ -4207,8 +4207,8 @@ De tu palabra más .
       'estado_registro': 1,
     },
     {
-      'id_letra': 19,
-      'id_cancion': 19,
+      'id_letra': 30019,
+      'id_cancion': 30019,
       'descripcion': '''(Do Menor)
 
 Kollan Awatir Awqui
@@ -4243,8 +4243,8 @@ Vicente Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 20,
-      'id_cancion': 20,
+      'id_letra': 30020,
+      'id_cancion': 30020,
       'descripcion': '''
 ¡Oh, Dios Padre Celestial!
 Venimos con gratitud
@@ -4277,8 +4277,8 @@ Guíanos con tu poder. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 21,
-      'id_cancion': 21,
+      'id_letra': 30021,
+      'id_cancion': 30021,
       'descripcion': '''(Mi Menor)
 
 Munasiñampi k'ochuñäni
@@ -4307,8 +4307,8 @@ Manuel Huañapaco C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 22,
-      'id_cancion': 22,
+      'id_letra': 30022,
+      'id_cancion': 30022,
       'descripcion': '''
 Cantemos todos de corazón
 Por Jesucristo y su pasión;
@@ -4335,8 +4335,8 @@ Donde paz, gozo siempre habrá.
       'estado_registro': 1,
     },
     {
-      'id_letra': 23,
-      'id_cancion': 23,
+      'id_letra': 30023,
+      'id_cancion': 30023,
       'descripcion': '''(Re Menor)
 
 Nayar munatam laycuw
@@ -4365,8 +4365,8 @@ Sebastián Choquetarqui L
       'estado_registro': 1,
     },
     {
-      'id_letra': 24,
-      'id_cancion': 24,
+      'id_letra': 30024,
+      'id_cancion': 30024,
       'descripcion': '''
 Donde voy, oh Padre Dios,
 Siempre tú conmigo estás;
@@ -4393,8 +4393,8 @@ Confiaré en Ti, Señor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 25,
-      'id_cancion': 25,
+      'id_letra': 30025,
+      'id_cancion': 30025,
       'descripcion': '''(Fa)
 
 Navidadata cusisiñäni,
@@ -4422,8 +4422,8 @@ Take chuymampiy catokañäni.
       'estado_registro': 1,
     },
     {
-      'id_letra': 26,
-      'id_cancion': 26,
+      'id_letra': 30026,
+      'id_cancion': 30026,
       'descripcion': '''
 En la Navidad alegrémonos
 En Belén nació el niño Jesús,
@@ -4450,8 +4450,8 @@ Aceptemos hoy al gran Salvador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 27,
-      'id_cancion': 27,
+      'id_letra': 30027,
+      'id_cancion': 30027,
       'descripcion': '''(Do)
 
 Jucharar jutamay Jesusar thakamay
@@ -4480,8 +4480,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 28,
-      'id_cancion': 28,
+      'id_letra': 30028,
+      'id_cancion': 30028,
       'descripcion': '''
 Oh ven hoy, pecador, a Jesús que en su amor,
 Del pecado y la ira te quiere salvar;
@@ -4508,8 +4508,8 @@ Y mi guía será al celeste hogar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 29,
-      'id_cancion': 29,
+      'id_letra': 30029,
+      'id_cancion': 30029,
       'descripcion': '''(Sol)
 
 Alajjpachar sarañajj sinti sumapuniwa
@@ -4541,8 +4541,8 @@ Aca orakenacwa uñisitas sarnaktan
       'estado_registro': 1,
     },
     {
-      'id_letra': 30,
-      'id_cancion': 30,
+      'id_letra': 30030,
+      'id_cancion': 30030,
       'descripcion': '''
 Qué glorioso es andar hacia el cielo con Jesús
 ¿Quién me puede apartar de su eterno y fiel amor?
@@ -4572,8 +4572,8 @@ Aunque en este mundo vil encontremos pruebas mil,
       'estado_registro': 1,
     },
     {
-      'id_letra': 31,
-      'id_cancion': 31,
+      'id_letra': 30031,
+      'id_cancion': 30031,
       'descripcion': '''(Si Bemol)
 
 Mä jan sirvir ali
@@ -4616,8 +4616,8 @@ Trad. Tomás Gonzales M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 32,
-      'id_cancion': 32,
+      'id_letra': 30032,
+      'id_cancion': 30032,
       'descripcion': '''
 
 Una simple zarza, sin valor alguno
@@ -4656,8 +4656,8 @@ David Morales A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 33,
-      'id_cancion': 33,
+      'id_letra': 30033,
+      'id_cancion': 30033,
       'descripcion': '''(Re Menor)
 
 Tatitun ch'amapa
@@ -4687,8 +4687,8 @@ Manuel Huañapaco C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 34,
-      'id_cancion': 34,
+      'id_letra': 30034,
+      'id_cancion': 30034,
       'descripcion': '''
 El poder de Cristo
 Fue manifestado
@@ -4716,8 +4716,8 @@ Sin mirar atrás. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 35,
-      'id_cancion': 35,
+      'id_letra': 30035,
+      'id_cancion': 30035,
       'descripcion': '''(Mi Bemol)
 
 :Mä uruw Tatitojj
@@ -4755,8 +4755,8 @@ Vicente Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 36,
-      'id_cancion': 36,
+      'id_letra': 30036,
+      'id_cancion': 30036,
       'descripcion': '''
 :El Señor me encontró,
 Vil perdido me vió
@@ -4792,8 +4792,8 @@ Gozo eternal\". (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 37,
-      'id_cancion': 37,
+      'id_letra': 30037,
+      'id_cancion': 30037,
       'descripcion': '''(Re Menor)
 
 Diosajj matrimonior bendizpan
@@ -4827,8 +4827,8 @@ Santiago Quispe F.
       'estado_registro': 1,
     },
     {
-      'id_letra': 38,
-      'id_cancion': 38,
+      'id_letra': 30038,
+      'id_cancion': 30038,
       'descripcion': '''
 Estas dos personas se unen hoy
 En presencia del Señor,
@@ -4860,8 +4860,8 @@ Conducidos por Jesús.
       'estado_registro': 1,
     },
     {
-      'id_letra': 39,
-      'id_cancion': 39,
+      'id_letra': 30039,
+      'id_cancion': 30039,
       'descripcion': '''(Re Menor)
 
 Alajjpach marcajja
@@ -4901,8 +4901,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 40,
-      'id_cancion': 40,
+      'id_letra': 30040,
+      'id_cancion': 30040,
       'descripcion': '''
 La mansión celestial
 De mi Dios y Señor
@@ -4941,8 +4941,8 @@ Por su gran salvación.
       'estado_registro': 1,
     },
     {
-      'id_letra': 41,
-      'id_cancion': 41,
+      'id_letra': 30041,
+      'id_cancion': 30041,
       'descripcion': '''(Re Menor)
 
 Suma Dios Awqui irpaquitaya
@@ -4976,8 +4976,8 @@ Leocadio Limachi Y.
       'estado_registro': 1,
     },
     {
-      'id_letra': 42,
-      'id_cancion': 42,
+      'id_letra': 30042,
+      'id_cancion': 30042,
       'descripcion': '''
 Bendito Padre, guíame siempre
 En tu camino de luz y amor;
@@ -5004,8 +5004,8 @@ Para que cumpla tu voluntad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 43,
-      'id_cancion': 43,
+      'id_letra': 30043,
+      'id_cancion': 30043,
       'descripcion': '''(La Bemol)
 
 Suma Khespiyir Jesusajj
@@ -5042,8 +5042,8 @@ Roberto Arismendi A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 44,
-      'id_cancion': 44,
+      'id_letra': 30044,
+      'id_cancion': 30044,
       'descripcion': '''
 La gloria celestial dejó Jesús el Salvador
 Al mundo por nosotros descendió;
@@ -5072,8 +5072,8 @@ Así con Cristo siempre vivirás.
       'estado_registro': 1,
     },
     {
-      'id_letra': 45,
-      'id_cancion': 45,
+      'id_letra': 30045,
+      'id_cancion': 30045,
       'descripcion': '''(Re Menor)
 
 Ñankha thaquin sarnakquiriruw
@@ -5109,8 +5109,8 @@ Eulogio Soto Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 46,
-      'id_cancion': 46,
+      'id_letra': 30046,
+      'id_cancion': 30046,
       'descripcion': '''
 Vivía yo en la oscuridad,
 Sin conocer a mi Salvador;
@@ -5144,8 +5144,8 @@ Con alma limpia al cielo entrarás.
       'estado_registro': 1,
     },
     {
-      'id_letra': 47,
-      'id_cancion': 47,
+      'id_letra': 30047,
+      'id_cancion': 30047,
       'descripcion': '''(Re Menor)
 
 Alajjpach marcanjja janipuniwa
@@ -5174,8 +5174,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 48,
-      'id_cancion': 48,
+      'id_letra': 30048,
+      'id_cancion': 30048,
       'descripcion': '''
 Allá en el reino de nuestro buen Dios,
 Ningún pecador jamás podrá entrar;
@@ -5202,8 +5202,8 @@ Pero sí, en pecado tú vas a morir:
       'estado_registro': 1,
     },
     {
-      'id_letra': 49,
-      'id_cancion': 49,
+      'id_letra': 30049,
+      'id_cancion': 30049,
       'descripcion': '''(Sol)
 
 Rey Jesusaw jutani
@@ -5234,8 +5234,8 @@ Félix Guanca
       'estado_registro': 1,
     },
     {
-      'id_letra': 50,
-      'id_cancion': 50,
+      'id_letra': 30050,
+      'id_cancion': 30050,
       'descripcion': '''
 Al mundo Cristo Jesús
 De los cielos pronto vendrá;
@@ -5264,8 +5264,8 @@ Al estar con Cristo el Señor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 51,
-      'id_cancion': 51,
+      'id_letra': 30051,
+      'id_cancion': 30051,
       'descripcion': '''(Re Menor)
 
 Qhuyapayasiri kollan suma Awqui
@@ -5294,8 +5294,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 52,
-      'id_cancion': 52,
+      'id_letra': 30052,
+      'id_cancion': 30052,
       'descripcion': '''
 Padre Dios eterno, Tú eres compasivo,
 Misericordioso, lleno de amor;
@@ -5322,8 +5322,8 @@ Sólo a ti te sigo sin ningún temor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 53,
-      'id_cancion': 53,
+      'id_letra': 30053,
+      'id_cancion': 30053,
       'descripcion': '''(Re Menor)
 
 Criston jutañap suyascta
@@ -5352,8 +5352,8 @@ Santiago Rivas L.
       'estado_registro': 1,
     },
     {
-      'id_letra': 54,
-      'id_cancion': 54,
+      'id_letra': 30054,
+      'id_cancion': 30054,
       'descripcion': '''
 Espero que Cristo venga
 No tardará en venir;
@@ -5380,8 +5380,8 @@ El siempre nos guardará.
       'estado_registro': 1,
     },
     {
-      'id_letra': 55,
-      'id_cancion': 55,
+      'id_letra': 30055,
+      'id_cancion': 30055,
       'descripcion': '''(Re Menor)
 
 Warawaran c'ajatapaw amtayitu
@@ -5415,8 +5415,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 56,
-      'id_cancion': 56,
+      'id_letra': 30056,
+      'id_cancion': 30056,
       'descripcion': '''
 Al ver las estrellas brillar recuerdo yo
 Que Jesús el Hijo de Dios vino a nacer;
@@ -5448,8 +5448,8 @@ Alabando de corazón al Salvador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 57,
-      'id_cancion': 57,
+      'id_letra': 30057,
+      'id_cancion': 30057,
       'descripcion': '''(Re Menor)
 
 Tatit Jesusajj niyaw jutani;
@@ -5484,8 +5484,8 @@ Adrián Calle
       'estado_registro': 1,
     },
     {
-      'id_letra': 58,
-      'id_cancion': 58,
+      'id_letra': 30058,
+      'id_cancion': 30058,
       'descripcion': '''
 Muy pronto Cristo vendrá al mundo
 Seamos dignos de recibir a Él
@@ -5517,8 +5517,8 @@ Se alegrará, se alegrará.
       'estado_registro': 1,
     },
     {
-      'id_letra': 59,
-      'id_cancion': 59,
+      'id_letra': 30059,
+      'id_cancion': 30059,
       'descripcion': '''(Re Menor)
 
 Dios yuspagarsmawa
@@ -5553,8 +5553,8 @@ Dionisio Aspi C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 60,
-      'id_cancion': 60,
+      'id_letra': 30060,
+      'id_cancion': 30060,
       'descripcion': '''
 Gracias te doy, Señor
 Por tu inefable amor;
@@ -5587,8 +5587,8 @@ Tus culpas en la cruz. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 61,
-      'id_cancion': 61,
+      'id_letra': 30061,
+      'id_cancion': 30061,
       'descripcion': '''(Si Bemol)
 
 Cristo kollan Apojja
@@ -5622,8 +5622,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 62,
-      'id_cancion': 62,
+      'id_letra': 30062,
+      'id_cancion': 30062,
       'descripcion': '''
 Jesucristo mi buen Dios
 Compasivo eres Tú;
@@ -5655,8 +5655,8 @@ Me salvaste del pecar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 63,
-      'id_cancion': 63,
+      'id_letra': 30063,
+      'id_cancion': 30063,
       'descripcion': '''(Mi Bemol)
 
 Yuspagarsmaw Kollan Cristo
@@ -5690,8 +5690,8 @@ Fernando Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 64,
-      'id_cancion': 64,
+      'id_letra': 30064,
+      'id_cancion': 30064,
       'descripcion': '''
 Te doy gracias, Jesucristo
 Por tu grande salvación,
@@ -5723,8 +5723,8 @@ Gozarán contigo allí.
       'estado_registro': 1,
     },
     {
-      'id_letra': 65,
-      'id_cancion': 65,
+      'id_letra': 30065,
+      'id_cancion': 30065,
       'descripcion': '''(Re Menor)
 
 Kollan suma Dios Awqui
@@ -5753,8 +5753,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 66,
-      'id_cancion': 66,
+      'id_letra': 30066,
+      'id_cancion': 30066,
       'descripcion': '''
 Cristo, amante Salvador
 Ten clemencia hoy de mí,
@@ -5781,8 +5781,8 @@ Sin cesar te alabaré.
       'estado_registro': 1,
     },
     {
-      'id_letra': 67,
-      'id_cancion': 67,
+      'id_letra': 30067,
+      'id_cancion': 30067,
       'descripcion': '''(Re Menor)
 
 Cristompiw wiñay jacä
@@ -5806,8 +5806,8 @@ Pascual Catari A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 68,
-      'id_cancion': 68,
+      'id_letra': 30068,
+      'id_cancion': 30068,
       'descripcion': '''
 Yo viviré con Jesús
 En la mansión de luz;
@@ -5829,8 +5829,8 @@ Gozoso caminaré.
       'estado_registro': 1,
     },
     {
-      'id_letra': 69,
-      'id_cancion': 69,
+      'id_letra': 30069,
+      'id_cancion': 30069,
       'descripcion': '''(Sol)
 
 Diosaquiwa nayarojj imasquitani
@@ -5862,8 +5862,8 @@ Alajjpachan wiñaya jacjjapjjañäni.
       'estado_registro': 1,
     },
     {
-      'id_letra': 70,
-      'id_cancion': 70,
+      'id_letra': 30070,
+      'id_cancion': 30070,
       'descripcion': '''
 En momentos de dolor, Dios me guardará
 En tristeza y afán, me consolará;
@@ -5893,8 +5893,8 @@ En el cielo viviré siempre con Jesús.
       'estado_registro': 1,
     },
     {
-      'id_letra': 71,
-      'id_cancion': 71,
+      'id_letra': 30071,
+      'id_cancion': 30071,
       'descripcion': '''(Re Menor)
 
 Munasiñampi sarapjjañäni
@@ -5923,8 +5923,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 72,
-      'id_cancion': 72,
+      'id_letra': 30072,
+      'id_cancion': 30072,
       'descripcion': '''
 Iremos todos con alegría
 A la presencia del Salvador;
@@ -5951,8 +5951,8 @@ Hasta que estemos con el Señor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 73,
-      'id_cancion': 73,
+      'id_letra': 30073,
+      'id_cancion': 30073,
       'descripcion': '''(Re Menor)
 
 Cristo Tatituw nayar munitu,
@@ -5981,8 +5981,8 @@ Nemesio Laura N.
       'estado_registro': 1,
     },
     {
-      'id_letra': 74,
-      'id_cancion': 74,
+      'id_letra': 30074,
+      'id_cancion': 30074,
       'descripcion': '''
 Cristo, el Salvador, con su gran amor,
 En la cruz murió y salvación me dio;
@@ -6009,8 +6009,8 @@ Estaré con Él aun por la eternidad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 75,
-      'id_cancion': 75,
+      'id_letra': 30075,
+      'id_cancion': 30075,
       'descripcion': '''(Do)
 
 Cristo sapaquiwa juchararar khespiyi
@@ -6028,8 +6028,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 76,
-      'id_cancion': 76,
+      'id_letra': 30076,
+      'id_cancion': 30076,
       'descripcion': '''
 Sólo Cristo salva del pecado y dolor,
 Derramó su sangre para darnos libertad;
@@ -6045,8 +6045,8 @@ Sólo Cristo salva, dando gozo y perdón.
       'estado_registro': 1,
     },
     {
-      'id_letra': 77,
-      'id_cancion': 77,
+      'id_letra': 30077,
+      'id_cancion': 30077,
       'descripcion': '''(Re Menor)
 
 ¿Qhitis saran? ¿Qhitis saran?
@@ -6063,8 +6063,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 78,
-      'id_cancion': 78,
+      'id_letra': 30078,
+      'id_cancion': 30078,
       'descripcion': '''
 ¿Quién quiere ir a predicar
 El buen mensaje del amor?
@@ -6080,8 +6080,8 @@ Que en Cristo hay la salvación.
       'estado_registro': 1,
     },
     {
-      'id_letra': 79,
-      'id_cancion': 79,
+      'id_letra': 30079,
+      'id_cancion': 30079,
       'descripcion': '''(Re Menor)
 
 Qhuyapt'ayasitay Cristo
@@ -6115,8 +6115,8 @@ Mario Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 80,
-      'id_cancion': 80,
+      'id_letra': 30080,
+      'id_cancion': 30080,
       'descripcion': '''
 Ten misericordia, Cristo
 Por tu amor tan infinito;
@@ -6148,8 +6148,8 @@ Andaré por este mundo.
       'estado_registro': 1,
     },
     {
-      'id_letra': 81,
-      'id_cancion': 81,
+      'id_letra': 30081,
+      'id_cancion': 30081,
       'descripcion': '''(Re Menor)
 
 Yuspagarañäniya, alajjpach Awquisaru
@@ -6176,8 +6176,8 @@ Antonio Huanca C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 82,
-      'id_cancion': 82,
+      'id_letra': 30082,
+      'id_cancion': 30082,
       'descripcion': '''
 Demos gradas al Señor, Padre Dios y Creador
 Quien nos llena cada día de paz y bendición;
@@ -6202,8 +6202,8 @@ Ya que nos enseñan cómo rumplir su voluntad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 83,
-      'id_cancion': 83,
+      'id_letra': 30083,
+      'id_cancion': 30083,
       'descripcion': '''(Re Menor)
 
 Tatitu, nayaw munsma, nayanctawa jumajj,
@@ -6231,8 +6231,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 84,
-      'id_cancion': 84,
+      'id_letra': 30084,
+      'id_cancion': 30084,
       'descripcion': '''
 Señor Jesús, yo te amo, tú eres mi Señor,
 Y tú me has perdonado de toda mi maldad;
@@ -6258,8 +6258,8 @@ Si poco te he amado, hoy quiero amarte más. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 85,
-      'id_cancion': 85,
+      'id_letra': 30085,
+      'id_cancion': 30085,
       'descripcion': '''(Re Menor)
 
 Juma jac'an Dios Awquejja
@@ -6288,8 +6288,8 @@ Calixto Cabrera F.
       'estado_registro': 1,
     },
     {
-      'id_letra': 86,
-      'id_cancion': 86,
+      'id_letra': 30086,
+      'id_cancion': 30086,
       'descripcion': '''
 Oh, Cristo en tu presencia
 Yo quiero siempre estar;
@@ -6316,8 +6316,8 @@ De todo corazón.
       'estado_registro': 1,
     },
     {
-      'id_letra': 87,
-      'id_cancion': 87,
+      'id_letra': 30087,
+      'id_cancion': 30087,
       'descripcion': '''(Do Menor)
 
 Suma Dios Awqui nayat amtt'asitay
@@ -6340,8 +6340,8 @@ Julio Quispe H. Rufino Chura G.
       'estado_registro': 1,
     },
     {
-      'id_letra': 88,
-      'id_cancion': 88,
+      'id_letra': 30088,
+      'id_cancion': 30088,
       'descripcion': '''
 Padre celestial, acuérdate de mí
 Solamente tú conoces mi existir;
@@ -6362,8 +6362,8 @@ Con tu amor bendito puedes redimir.
       'estado_registro': 1,
     },
     {
-      'id_letra': 89,
-      'id_cancion': 89,
+      'id_letra': 30089,
+      'id_cancion': 30089,
       'descripcion': '''(Do Menor)
 
 :Tatitusana marcapajja
@@ -6390,8 +6390,8 @@ Pascual Catari A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 90,
-      'id_cancion': 90,
+      'id_letra': 30090,
+      'id_cancion': 30090,
       'descripcion': '''
 :Glorioso pueblo de mi Señor
 Eternamente allí brillará. (Bis)
@@ -6416,8 +6416,8 @@ Paz hallaremos, gozo sin fin. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 91,
-      'id_cancion': 91,
+      'id_letra': 30091,
+      'id_cancion': 30091,
       'descripcion': '''(Do Menor)
 
 Kawkha cutiw Kollan Cristo
@@ -6451,8 +6451,8 @@ Enrique Canaviri M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 92,
-      'id_cancion': 92,
+      'id_letra': 30092,
+      'id_cancion': 30092,
       'descripcion': '''
 Oh Señor, tú me has llamado
 Muchas veces a servirte;
@@ -6484,8 +6484,8 @@ Venceremos el pecado.
       'estado_registro': 1,
     },
     {
-      'id_letra': 93,
-      'id_cancion': 93,
+      'id_letra': 30093,
+      'id_cancion': 30093,
       'descripcion': '''(Re Menor)
 
 Yanapt'itaya Dios Awquejja
@@ -6514,8 +6514,8 @@ Pascual Catarí A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 94,
-      'id_cancion': 94,
+      'id_letra': 30094,
+      'id_cancion': 30094,
       'descripcion': '''
 Dame tu fuerza, bendito Dios
 Porque en las pruebas débil estoy;
@@ -6541,8 +6541,8 @@ Y la victoria sobre el pecar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 95,
-      'id_cancion': 95,
+      'id_letra': 30095,
+      'id_cancion': 30095,
       'descripcion': '''(Do Menor)
 
 Tatay, cayumaruw jutta
@@ -6586,8 +6586,8 @@ Tomás Gonzales M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 96,
-      'id_cancion': 96,
+      'id_letra': 30096,
+      'id_cancion': 30096,
       'descripcion': '''
 Señor, aquí a tus plantas
 Lloro de gozo profundo,
@@ -6629,8 +6629,8 @@ Por la eternidad. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 97,
-      'id_cancion': 97,
+      'id_letra': 30097,
+      'id_cancion': 30097,
       'descripcion': '''(Do Menor)
 
 Jake masimat amtasimay
@@ -6654,8 +6654,8 @@ Pascual Catari A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 98,
-      'id_cancion': 98,
+      'id_letra': 30098,
+      'id_cancion': 30098,
       'descripcion': '''
 Muchas personas viven sin Dios
 Sin esperanza ni salvación;
@@ -6677,8 +6677,8 @@ Con bendiciones te colmará.
       'estado_registro': 1,
     },
     {
-      'id_letra': 99,
-      'id_cancion': 99,
+      'id_letra': 30099,
+      'id_cancion': 30099,
       'descripcion': '''(Do)
 
 Take acapachawa
@@ -6722,8 +6722,8 @@ Guillermo Zeballos
       'estado_registro': 1,
     },
     {
-      'id_letra': 100,
-      'id_cancion': 100,
+      'id_letra': 30100,
+      'id_cancion': 30100,
       'descripcion': '''(compasión)
 
 En todo el mundo entero
@@ -6763,8 +6763,8 @@ Vayan con gozo a Él.
       'estado_registro': 1,
     },
     {
-      'id_letra': 101,
-      'id_cancion': 101,
+      'id_letra': 30101,
+      'id_cancion': 30101,
       'descripcion': '''(Fa Menor)
 
 Yuspagarsmaw suma Awqui
@@ -6787,8 +6787,8 @@ Santiago Rivas l.
       'estado_registro': 1,
     },
     {
-      'id_letra': 102,
-      'id_cancion': 102,
+      'id_letra': 30102,
+      'id_cancion': 30102,
       'descripcion': '''
 Te doy gracias, oh Dios Padre
 Por tu gran amor por mí;
@@ -6809,8 +6809,8 @@ Con tu ayuda y dirección. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 103,
-      'id_cancion': 103,
+      'id_letra': 30103,
+      'id_cancion': 30103,
       'descripcion': '''(Mi Bemol)
 
 Chuymajjajj cusisitaw jicjjatasi
@@ -6830,8 +6830,8 @@ Justino Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 104,
-      'id_cancion': 104,
+      'id_letra': 30104,
+      'id_cancion': 30104,
       'descripcion': '''
 Mi corazón está feliz con Cristo
 Confío siempre en Él;
@@ -6848,8 +6848,8 @@ Confiadamente seguiré. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 105,
-      'id_cancion': 105,
+      'id_letra': 30105,
+      'id_cancion': 30105,
       'descripcion': '''(Do Menor)
 
 Utat jayancañajj llaquisiñawa,
@@ -6883,8 +6883,8 @@ Justino Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 106,
-      'id_cancion': 106,
+      'id_letra': 30106,
+      'id_cancion': 30106,
       'descripcion': '''
 Si alejado vives triste y sin Dios,
 Solo y sin nadie, sin su comunión;
@@ -6909,8 +6909,8 @@ Abrele la puerta de tu corazón.
       'estado_registro': 1,
     },
     {
-      'id_letra': 107,
-      'id_cancion': 107,
+      'id_letra': 30107,
+      'id_cancion': 30107,
       'descripcion': '''(Re Menor)
 
 Khespiyasiñajj waquichatawa
@@ -6943,8 +6943,8 @@ Justino Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 108,
-      'id_cancion': 108,
+      'id_letra': 30108,
+      'id_cancion': 30108,
       'descripcion': '''
 Salvación hay para el mundo entero
 Por la muerte del Señor Jesús;
@@ -6975,8 +6975,8 @@ Ante Dios serán ya revelados.
       'estado_registro': 1,
     },
     {
-      'id_letra': 109,
-      'id_cancion': 109,
+      'id_letra': 30109,
+      'id_cancion': 30109,
       'descripcion': '''(Re Menor)
 
 Alajjpachanquir suma Awquiy
@@ -7002,8 +7002,8 @@ Rutina Chura G
       'estado_registro': 1,
     },
     {
-      'id_letra': 110,
-      'id_cancion': 110,
+      'id_letra': 30110,
+      'id_cancion': 30110,
       'descripcion': '''
 Oh, Padre mío, Dios y Señor
 Pido que escuches mi oración;
@@ -7027,8 +7027,8 @@ Sin mirar atrás.
       'estado_registro': 1,
     },
     {
-      'id_letra': 111,
-      'id_cancion': 111,
+      'id_letra': 30111,
+      'id_cancion': 30111,
       'descripcion': '''(Fa)
 
 Diosan jawsatapjja jayaw isch'ucta
@@ -7058,8 +7058,8 @@ Justino Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 112,
-      'id_cancion': 112,
+      'id_letra': 30112,
+      'id_cancion': 30112,
       'descripcion': '''
 Esperando estaba del Señor su voz
 Para que me envíe hoy a trabajar;
@@ -7087,8 +7087,8 @@ Cristo el resultado lo bendecirá.
       'estado_registro': 1,
     },
     {
-      'id_letra': 113,
-      'id_cancion': 113,
+      'id_letra': 30113,
+      'id_cancion': 30113,
       'descripcion': '''(Mi Bemol)
 
 Cristo saparuquiwa
@@ -7122,8 +7122,8 @@ Justino Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 114,
-      'id_cancion': 114,
+      'id_letra': 30114,
+      'id_cancion': 30114,
       'descripcion': '''
 Sólo a Cristo, mi Señor
 Siempre seguiré;
@@ -7155,8 +7155,8 @@ Dios me guardará . (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 115,
-      'id_cancion': 115,
+      'id_letra': 30115,
+      'id_cancion': 30115,
       'descripcion': '''(Si Menor)
 
 Acapachana sarnakasajj
@@ -7179,8 +7179,8 @@ Rutino Chura G.
       'estado_registro': 1,
     },
     {
-      'id_letra': 116,
-      'id_cancion': 116,
+      'id_letra': 30116,
+      'id_cancion': 30116,
       'descripcion': '''
 En este mundo de vanidad
 Riquezas no tengo yo. (Bis)
@@ -7201,8 +7201,8 @@ Por la eternidad. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 117,
-      'id_cancion': 117,
+      'id_letra': 30117,
+      'id_cancion': 30117,
       'descripcion': '''(Re Menor)
 
 Alajjpachanquir suma Cristojj
@@ -7231,8 +7231,8 @@ Rufino Chura G.
       'estado_registro': 1,
     },
     {
-      'id_letra': 118,
-      'id_cancion': 118,
+      'id_letra': 30118,
+      'id_cancion': 30118,
       'descripcion': '''
 Cristo tú eres mi Salvador
 Sufriste tú por mí;
@@ -7259,8 +7259,8 @@ Que se te acerquen hoy. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 119,
-      'id_cancion': 119,
+      'id_letra': 30119,
+      'id_cancion': 30119,
       'descripcion': '''(La Bemol)
 
 ¿Cunanquis cusisiñajj?
@@ -7297,8 +7297,8 @@ Justino Quispe Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 120,
-      'id_cancion': 120,
+      'id_letra': 30120,
+      'id_cancion': 30120,
       'descripcion': '''
 En el mundo hay dolor, sufrimiento y afán
 Muchos andan hoy buscando gozo y paz;
@@ -7325,8 +7325,8 @@ Solamente en ti hay gran felicidad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 121,
-      'id_cancion': 121,
+      'id_letra': 30121,
+      'id_cancion': 30121,
       'descripcion': '''(Do Menor)
 
 Munasiri Kollan Cristo
@@ -7360,8 +7360,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 122,
-      'id_cancion': 122,
+      'id_letra': 30122,
+      'id_cancion': 30122,
       'descripcion': '''
 Cristo Guíame amante Cristo
 Con tu mano poderosa;
@@ -7393,8 +7393,8 @@ Gozaré de tu presencia.
       'estado_registro': 1,
     },
     {
-      'id_letra': 123,
-      'id_cancion': 123,
+      'id_letra': 30123,
+      'id_cancion': 30123,
       'descripcion': '''(Re)
 
 Lajja ch'amacan llaquin phokt'ataw
@@ -7430,8 +7430,8 @@ Carmelo Yanapa Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 124,
-      'id_cancion': 124,
+      'id_letra': 30124,
+      'id_cancion': 30124,
       'descripcion': '''
 En las tinieblas con aflicciones
 Sufre el alma del pecador. (Bis)
@@ -7465,8 +7465,8 @@ Somos sus hijos salvos por Él.
       'estado_registro': 1,
     },
     {
-      'id_letra': 125,
-      'id_cancion': 125,
+      'id_letra': 30125,
+      'id_cancion': 30125,
       'descripcion': '''(Re Menor)
 
 Cruzan ch'accatata jiwawaytajja,
@@ -7490,8 +7490,8 @@ Félix Carriles P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 126,
-      'id_cancion': 126,
+      'id_letra': 30126,
+      'id_cancion': 30126,
       'descripcion': '''
 Clavado en la cruz moriste, ¡oh Cristo!
 Sé lo que has hecho por amarme a mí.
@@ -7516,8 +7516,8 @@ Siendo pecador te pido tu perdón .
       'estado_registro': 1,
     },
     {
-      'id_letra': 127,
-      'id_cancion': 127,
+      'id_letra': 30127,
+      'id_cancion': 30127,
       'descripcion': '''(Mí Bemol)
 
 Diosan take ajllitanaca
@@ -7545,8 +7545,8 @@ Santiago Rivas L.
       'estado_registro': 1,
     },
     {
-      'id_letra': 128,
-      'id_cancion': 128,
+      'id_letra': 30128,
+      'id_cancion': 30128,
       'descripcion': '''
 Todos los que siguen al Señor,
 Hoy escuchen lo que dice Dios:
@@ -7572,8 +7572,8 @@ Sus palabras hay que obedecer
       'estado_registro': 1,
     },
     {
-      'id_letra': 129,
-      'id_cancion': 129,
+      'id_letra': 30129,
+      'id_cancion': 30129,
       'descripcion': '''(Do Menor)
 
 Diosajj jaker munasinjja
@@ -7605,8 +7605,8 @@ Pío Laura C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 130,
-      'id_cancion': 130,
+      'id_letra': 30130,
+      'id_cancion': 30130,
       'descripcion': '''
 Amó Dios tanto al mundo
 Que envió su único Hijo,
@@ -7636,8 +7636,8 @@ De todo nuestro pecado.
       'estado_registro': 1,
     },
     {
-      'id_letra': 131,
-      'id_cancion': 131,
+      'id_letra': 30131,
+      'id_cancion': 30131,
       'descripcion': '''(Re)
 
 ¿Waquichastat munat jilata?
@@ -7666,8 +7666,8 @@ Alajjpacharu puriñascama. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 132,
-      'id_cancion': 132,
+      'id_letra': 30132,
+      'id_cancion': 30132,
       'descripcion': '''
 ¿Listo, hermano, estás tú para entrar
 En los cielos a morar con Dios?
@@ -7694,8 +7694,8 @@ A vivir con Dios por la eternidad. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 133,
-      'id_cancion': 133,
+      'id_letra': 30133,
+      'id_cancion': 30133,
       'descripcion': '''(Re Menor)
 
 Suma Tatit Cristo yanapt'asitaya
@@ -7724,8 +7724,8 @@ Germán Mamani M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 134,
-      'id_cancion': 134,
+      'id_letra': 30134,
+      'id_cancion': 30134,
       'descripcion': '''
 Señor Jesucristo, dame tu ayuda
 Para andar contigo y seguirte fiel;
@@ -7752,8 +7752,8 @@ Tú eres mi esperanza, en ti confiaré.
       'estado_registro': 1,
     },
     {
-      'id_letra': 135,
-      'id_cancion': 135,
+      'id_letra': 30135,
+      'id_cancion': 30135,
       'descripcion': '''(Re Menor)
 
 Munata Cristo, nayajj jaltanta
@@ -7776,8 +7776,8 @@ Autor desconocido
       'estado_registro': 1,
     },
     {
-      'id_letra': 136,
-      'id_cancion': 136,
+      'id_letra': 30136,
+      'id_cancion': 30136,
       'descripcion': '''Amado Cristo, vengo de prisa
 Para seguirte fiel de corazón. (Bis)
 :Guíame, Cristo en tu camino,
@@ -7797,8 +7797,8 @@ Le serviré con fe y con valor. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 137,
-      'id_cancion': 137,
+      'id_letra': 30137,
+      'id_cancion': 30137,
       'descripcion': '''(Re Menor)
 
 Mojjsa arunacamar ist'asaw
@@ -7827,8 +7827,8 @@ Amparamampiy irpasipjjeta. {Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 138,
-      'id_cancion': 138,
+      'id_letra': 30138,
+      'id_cancion': 30138,
       'descripcion': '''
 Al escuchar tus palabras,
 Señor Vengo a rendirme delante de ti;
@@ -7855,8 +7855,8 @@ Guíame siempre con tu gran amor. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 139,
-      'id_cancion': 139,
+      'id_letra': 30139,
+      'id_cancion': 30139,
       'descripcion': '''(Re Menor)
 
 Khespiyasiri Cristo Jesús
@@ -7890,8 +7890,8 @@ Félix Acarapi F.
       'estado_registro': 1,
     },
     {
-      'id_letra': 140,
-      'id_cancion': 140,
+      'id_letra': 30140,
+      'id_cancion': 30140,
       'descripcion': '''
 Ayúdame Cristo mi Señor
 Para seguirte hasta el fin
@@ -7923,8 +7923,8 @@ Y hacer pecar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 141,
-      'id_cancion': 141,
+      'id_letra': 30141,
+      'id_cancion': 30141,
       'descripcion': '''(Do Menor)
 
 Tatit Cristo yanapt'itay
@@ -7953,8 +7953,8 @@ Germán Mamani M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 142,
-      'id_cancion': 142,
+      'id_letra': 30142,
+      'id_cancion': 30142,
       'descripcion': '''
 Dame fuerzas, Cristo mío
 A vencer en las tristezas;
@@ -7981,8 +7981,8 @@ A tu lado eternamente!
       'estado_registro': 1,
     },
     {
-      'id_letra': 143,
-      'id_cancion': 143,
+      'id_letra': 30143,
+      'id_cancion': 30143,
       'descripcion': '''(Re Menor)
 
 Cusisität nayajj,
@@ -8008,8 +8008,8 @@ Gladis Ali
       'estado_registro': 1,
     },
     {
-      'id_letra': 144,
-      'id_cancion': 144,
+      'id_letra': 30144,
+      'id_cancion': 30144,
       'descripcion': '''
 Me siento muy feliz,
 Me siento muy feliz
@@ -8032,8 +8032,8 @@ Tu mal perdonará. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 145,
-      'id_cancion': 145,
+      'id_letra': 30145,
+      'id_cancion': 30145,
       'descripcion': '''(Re Menor)
 
 Alajjpachar sarañajj
@@ -8062,8 +8062,8 @@ Trad. Germán Mamani M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 146,
-      'id_cancion': 146,
+      'id_letra': 30146,
+      'id_cancion': 30146,
       'descripcion': '''
 Qué glorioso es andar
 Hacia el cielo con Jesús;
@@ -8092,8 +8092,8 @@ Florentino Chambi I
       'estado_registro': 1,
     },
     {
-      'id_letra': 147,
-      'id_cancion': 147,
+      'id_letra': 30147,
+      'id_cancion': 30147,
       'descripcion': '''(Fa)
 
 Qhititejj tucuycam sayt'añäni
@@ -8122,8 +8122,8 @@ Pedro Mayta O.
       'estado_registro': 1,
     },
     {
-      'id_letra': 148,
-      'id_cancion': 148,
+      'id_letra': 30148,
+      'id_cancion': 30148,
       'descripcion': '''
 El que a Jesús sigue sin desmayar
 Gozo tendrá por la eternidad;
@@ -8150,8 +8150,8 @@ Camina firme sin vacilar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 149,
-      'id_cancion': 149,
+      'id_letra': 30149,
+      'id_cancion': 30149,
       'descripcion': '''(Re Menor)
 
 Dios Awquejja
@@ -8180,8 +8180,8 @@ Wañsuquiniwa. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 150,
-      'id_cancion': 150,
+      'id_letra': 30150,
+      'id_cancion': 30150,
       'descripcion': '''
 Oh Señor, escucha
 Mi oración;
@@ -8208,8 +8208,8 @@ Se marchitará . (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 151,
-      'id_cancion': 151,
+      'id_letra': 30151,
+      'id_cancion': 30151,
       'descripcion': '''(Mi Bemol)
 
 Jesucristow yanapasquitu
@@ -8243,8 +8243,8 @@ Demetrio Nina M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 152,
-      'id_cancion': 152,
+      'id_letra': 30152,
+      'id_cancion': 30152,
       'descripcion': '''
 El Señor Jesús me ayudará
 Cada día me dará su poder;
@@ -8276,8 +8276,8 @@ Junto con el Salvador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 153,
-      'id_cancion': 153,
+      'id_letra': 30153,
+      'id_cancion': 30153,
       'descripcion': '''(Do Menor)
 
 Cristo Tatitu k'omachistaw
@@ -8305,8 +8305,8 @@ Félix Acarapi F.
       'estado_registro': 1,
     },
     {
-      'id_letra': 154,
-      'id_cancion': 154,
+      'id_letra': 30154,
+      'id_cancion': 30154,
       'descripcion': '''
 Cristo Jesús, con tu gran amor
 Me perdonaste de todo mal;
@@ -8332,8 +8332,8 @@ Al que contrito te busca a ti.
       'estado_registro': 1,
     },
     {
-      'id_letra': 155,
-      'id_cancion': 155,
+      'id_letra': 30155,
+      'id_cancion': 30155,
       'descripcion': '''(Re)
 
 Munat Tatitojja
@@ -8367,8 +8367,8 @@ Franklin B. Apaza C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 156,
-      'id_cancion': 156,
+      'id_letra': 30156,
+      'id_cancion': 30156,
       'descripcion': '''
 Amante Salvador,
 Dame tu gran poder
@@ -8400,8 +8400,8 @@ Y me dará su paz.
       'estado_registro': 1,
     },
     {
-      'id_letra': 157,
-      'id_cancion': 157,
+      'id_letra': 30157,
+      'id_cancion': 30157,
       'descripcion': '''(Re Menor)
 
 Ch'amac thaquinwa jacascäyät
@@ -8425,8 +8425,8 @@ Trad. Lorenzo Choquetarqui L.
       'estado_registro': 1,
     },
     {
-      'id_letra': 158,
-      'id_cancion': 158,
+      'id_letra': 30158,
+      'id_cancion': 30158,
       'descripcion': '''
 En las tinieblas de la maldad
 Anduve sin mi Dios;
@@ -8450,8 +8450,8 @@ Simón Choquetarqui
       'estado_registro': 1,
     },
     {
-      'id_letra': 159,
-      'id_cancion': 159,
+      'id_letra': 30159,
+      'id_cancion': 30159,
       'descripcion': '''(Mi Mebol)
 
 Cuna horasatejj Cristojj jutcan ucjja
@@ -8480,8 +8480,8 @@ Epifanio y Ramón Fabián C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 160,
-      'id_cancion': 160,
+      'id_letra': 30160,
+      'id_cancion': 30160,
       'descripcion': '''
 Nadie sabe la hora en que Cristo vendrá
 Nadie sabe qué día será,
@@ -8508,8 +8508,8 @@ Si con fe le esperamos a Él.
       'estado_registro': 1,
     },
     {
-      'id_letra': 161,
-      'id_cancion': 161,
+      'id_letra': 30161,
+      'id_cancion': 30161,
       'descripcion': '''(Do)
 
 Qhitirac nayar apaketaspa
@@ -8542,8 +8542,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 162,
-      'id_cancion': 162,
+      'id_letra': 30162,
+      'id_cancion': 30162,
       'descripcion': '''
 Nadie podrá, jamás, apartarme
 Del gran amor de Dios;
@@ -8574,8 +8574,8 @@ Y siempre me guiará.
       'estado_registro': 1,
     },
     {
-      'id_letra': 163,
-      'id_cancion': 163,
+      'id_letra': 30163,
+      'id_cancion': 30163,
       'descripcion': '''(Sol)
 
 ¿Cunjamäsquis chuymamajja?
@@ -8606,8 +8606,8 @@ Julio Flores A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 164,
-      'id_cancion': 164,
+      'id_letra': 30164,
+      'id_cancion': 30164,
       'descripcion': '''
 ¿Llena de gozo es tu vida
 O está tan triste tu corazón?
@@ -8636,8 +8636,8 @@ Le seguiremos con fe.
       'estado_registro': 1,
     },
     {
-      'id_letra': 165,
-      'id_cancion': 165,
+      'id_letra': 30165,
+      'id_cancion': 30165,
       'descripcion': '''(Re Menor)
 
 Albatanacajj jamachïnacajj
@@ -8670,8 +8670,8 @@ Trad. Lorenzo Choquetarqui L.
       'estado_registro': 1,
     },
     {
-      'id_letra': 166,
-      'id_cancion': 166,
+      'id_letra': 30166,
+      'id_cancion': 30166,
       'descripcion': '''
 En primavera vuelven las aves
 Para cantar a Dios;
@@ -8705,8 +8705,8 @@ Música: Simón Choquetarqui L. Letra: Luis Mamani Q.
       'estado_registro': 1,
     },
     {
-      'id_letra': 167,
-      'id_cancion': 167,
+      'id_letra': 30167,
+      'id_cancion': 30167,
       'descripcion': '''(Fa)
 
 Urunacamajj tucusisquiwa
@@ -8754,8 +8754,8 @@ Pío Laura C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 168,
-      'id_cancion': 168,
+      'id_letra': 30168,
+      'id_cancion': 30168,
       'descripcion': '''
 ¡Oh, gran iglesia de Laodicea
 Pronto el tiempo pasará!
@@ -8801,8 +8801,8 @@ En espíritu y verdad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 169,
-      'id_cancion': 169,
+      'id_letra': 30169,
+      'id_cancion': 30169,
       'descripcion': '''(Do Menor)
 
 Kollunac patansa, vallenac mankhensa
@@ -8834,8 +8834,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 170,
-      'id_cancion': 170,
+      'id_letra': 30170,
+      'id_cancion': 30170,
       'descripcion': '''
 Sobre los collados, y también por valles
 Tú atravesaste, mi buen Jesucristo;
@@ -8865,8 +8865,8 @@ Y tú me conduces hasta el santo cielo;
       'estado_registro': 1,
     },
     {
-      'id_letra': 171,
-      'id_cancion': 171,
+      'id_letra': 30171,
+      'id_cancion': 30171,
       'descripcion': '''(Re Menor)
 
 Take llaquiñasa pasaquiriwa,
@@ -8893,8 +8893,8 @@ Víctor Calle C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 172,
-      'id_cancion': 172,
+      'id_letra': 30172,
+      'id_cancion': 30172,
       'descripcion': '''
 Todas mis tristezas se terminarán
 El poder de Cristo me ayudará;
@@ -8919,8 +8919,8 @@ En las tentaciones en Dios confiaré
       'estado_registro': 1,
     },
     {
-      'id_letra': 173,
-      'id_cancion': 173,
+      'id_letra': 30173,
+      'id_cancion': 30173,
       'descripcion': '''(Mi Menor)
 
 Juma sapaquiw Tatay
@@ -8949,8 +8949,8 @@ Santiago Rivas L.
       'estado_registro': 1,
     },
     {
-      'id_letra': 174,
-      'id_cancion': 174,
+      'id_letra': 30174,
+      'id_cancion': 30174,
       'descripcion': '''
 Sólo tú eres mi Señor
 Y reconozco que tuyo soy;
@@ -8977,8 +8977,8 @@ Hasta llegar al celeste hogar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 175,
-      'id_cancion': 175,
+      'id_letra': 30175,
+      'id_cancion': 30175,
       'descripcion': '''(Re Menor)
 
 Kollana Cristo yanapt'asiquitay
@@ -9015,8 +9015,8 @@ Wiñay Dios Awquejja.
       'estado_registro': 1,
     },
     {
-      'id_letra': 176,
-      'id_cancion': 176,
+      'id_letra': 30176,
+      'id_cancion': 30176,
       'descripcion': '''
 ¡Oh Señor! Dame tu ayuda en mi aflicción
 Sólo tú eres mi esperanza,
@@ -9051,8 +9051,8 @@ Emblanquéceme como la nieve
       'estado_registro': 1,
     },
     {
-      'id_letra': 177,
-      'id_cancion': 177,
+      'id_letra': 30177,
+      'id_cancion': 30177,
       'descripcion': '''(Do)
 
 Janipuniwa alajjpacharojj
@@ -9083,8 +9083,8 @@ Severino Yupanqui T.
       'estado_registro': 1,
     },
     {
-      'id_letra': 178,
-      'id_cancion': 178,
+      'id_letra': 30178,
+      'id_cancion': 30178,
       'descripcion': '''
 En el santo hogar donde vive Dios
 No hay pecado allí, ni iniquidad;
@@ -9113,8 +9113,8 @@ Y podrás entrar al celeste hogar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 179,
-      'id_cancion': 179,
+      'id_letra': 30179,
+      'id_cancion': 30179,
       'descripcion': '''(Si Bemol)
 
 Acapachana thaquinacajj
@@ -9155,8 +9155,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 180,
-      'id_cancion': 180,
+      'id_letra': 30180,
+      'id_cancion': 30180,
       'descripcion': '''
 En este mundo de confusión
 El hombre vaga sin un ideal,
@@ -9195,8 +9195,8 @@ Consuela con su amor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 181,
-      'id_cancion': 181,
+      'id_letra': 30181,
+      'id_cancion': 30181,
       'descripcion': '''(Re Menor)
 
 Alajjpach marcajja
@@ -9225,8 +9225,8 @@ Félix Acarapi F.
       'estado_registro': 1,
     },
     {
-      'id_letra': 182,
-      'id_cancion': 182,
+      'id_letra': 30182,
+      'id_cancion': 30182,
       'descripcion': '''
 Dios ha preparado
 La mansión gloriosa
@@ -9253,8 +9253,8 @@ Ni volver al mundo.
       'estado_registro': 1,
     },
     {
-      'id_letra': 183,
-      'id_cancion': 183,
+      'id_letra': 30183,
+      'id_cancion': 30183,
       'descripcion': '''(Mi Menor)
 
 Mayninacas jan munascpan
@@ -9283,8 +9283,8 @@ Pío Laura C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 184,
-      'id_cancion': 184,
+      'id_letra': 30184,
+      'id_cancion': 30184,
       'descripcion': '''
 Aunque otros no quisieran
 A Jesús servir fielmente;
@@ -9311,8 +9311,8 @@ Con tu sangre tan preciosa.
       'estado_registro': 1,
     },
     {
-      'id_letra': 185,
-      'id_cancion': 185,
+      'id_letra': 30185,
+      'id_cancion': 30185,
       'descripcion': '''(Sol)
 
 Tatit Cristojj ch'amaniwa
@@ -9340,8 +9340,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 186,
-      'id_cancion': 186,
+      'id_letra': 30186,
+      'id_cancion': 30186,
       'descripcion': '''
 Jesucristo es poderoso
 Él es el gran vencedor;
@@ -9368,8 +9368,8 @@ Junto al Padre Dios de amor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 187,
-      'id_cancion': 187,
+      'id_letra': 30187,
+      'id_cancion': 30187,
       'descripcion': '''(Si Bemol)
 
 Tatit Cristojj yatekerinacapamp
@@ -9403,8 +9403,8 @@ Romualdo Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 188,
-      'id_cancion': 188,
+      'id_letra': 30188,
+      'id_cancion': 30188,
       'descripcion': '''
 Jesús y sus discípulos amados
 Fueron al huerto de Getsemaní;
@@ -9436,8 +9436,8 @@ Para vencer las trampas de Satán.
       'estado_registro': 1,
     },
     {
-      'id_letra': 189,
-      'id_cancion': 189,
+      'id_letra': 30189,
+      'id_cancion': 30189,
       'descripcion': '''(Si Bemol)
 
 Dios Awquisana munasiñapa
@@ -9466,8 +9466,8 @@ Severino Yupanqui T.
       'estado_registro': 1,
     },
     {
-      'id_letra': 190,
-      'id_cancion': 190,
+      'id_letra': 30190,
+      'id_cancion': 30190,
       'descripcion': '''
 Oh amor divino de nuestro Padre
 Es sin igual que nos compadeció;
@@ -9494,8 +9494,8 @@ Al poderoso Cristo, el Salvador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 191,
-      'id_cancion': 191,
+      'id_letra': 30191,
+      'id_cancion': 30191,
       'descripcion': '''(Do Menor)
 
 Acapacha marcajj
@@ -9530,8 +9530,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 192,
-      'id_cancion': 192,
+      'id_letra': 30192,
+      'id_cancion': 30192,
       'descripcion': '''
 En este mundo cruel
 Hay penas y dolor;
@@ -9564,8 +9564,8 @@ De todo corazón. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 193,
-      'id_cancion': 193,
+      'id_letra': 30193,
+      'id_cancion': 30193,
       'descripcion': '''(Si Bemol)
 
 Jach'achañän cusisita Diosasaru
@@ -9588,8 +9588,8 @@ Conjunto \"La voz del Evangelio\"
       'estado_registro': 1,
     },
     {
-      'id_letra': 194,
-      'id_cancion': 194,
+      'id_letra': 30194,
+      'id_cancion': 30194,
       'descripcion': '''
 A nuestro Dios cantemos hoy, de corazón
 Consuelo y paz, gozo sin par siempre nos da;
@@ -9610,8 +9610,8 @@ A nuestro Padre Dios. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 195,
-      'id_cancion': 195,
+      'id_letra': 30195,
+      'id_cancion': 30195,
       'descripcion': '''(Re Menor)
 
 Tatit Jesucristo qhuyapt'ayitay
@@ -9640,8 +9640,8 @@ Gregorio Mamani B.
       'estado_registro': 1,
     },
     {
-      'id_letra': 196,
-      'id_cancion': 196,
+      'id_letra': 30196,
+      'id_cancion': 30196,
       'descripcion': '''
 Señor Jesucristo, ten piedad de mí
 No me dejes nunca, porque tu hijo soy;
@@ -9668,8 +9668,8 @@ Hasta mi llegada al celeste hogar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 197,
-      'id_cancion': 197,
+      'id_letra': 30197,
+      'id_cancion': 30197,
       'descripcion': '''(Re Menor)
 
 Amtasitay Awquejja
@@ -9698,8 +9698,8 @@ Zoilo Yanapa Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 198,
-      'id_cancion': 198,
+      'id_letra': 30198,
+      'id_cancion': 30198,
       'descripcion': '''
 Ten piedad ¡oh Padre Dios!
 Te suplico con fervor;
@@ -9726,8 +9726,8 @@ Y por siempre yo feliz seré.
       'estado_registro': 1,
     },
     {
-      'id_letra': 199,
-      'id_cancion': 199,
+      'id_letra': 30199,
+      'id_cancion': 30199,
       'descripcion': '''(Re Menor)
 
 Diosaru yupaychañawa
@@ -9761,8 +9761,8 @@ Domingo Copa P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 200,
-      'id_cancion': 200,
+      'id_letra': 30200,
+      'id_cancion': 30200,
       'descripcion': '''
 Hoy es día de reposo
 Alabemos, pues, a Cristo;
@@ -9794,8 +9794,8 @@ Y nos guía su presencia.
       'estado_registro': 1,
     },
     {
-      'id_letra': 201,
-      'id_cancion': 201,
+      'id_letra': 30201,
+      'id_cancion': 30201,
       'descripcion': '''(Fa Mayor)
 
 Acapach thaquinacajj
@@ -9824,8 +9824,8 @@ Gregorio Mamani B.
       'estado_registro': 1,
     },
     {
-      'id_letra': 202,
-      'id_cancion': 202,
+      'id_letra': 30202,
+      'id_cancion': 30202,
       'descripcion': '''
 Hay muchas sendas del mal
 En este mundo sin paz;
@@ -9854,8 +9854,8 @@ Conduce al gozo eternal.
       'estado_registro': 1,
     },
     {
-      'id_letra': 203,
-      'id_cancion': 203,
+      'id_letra': 30203,
+      'id_cancion': 30203,
       'descripcion': '''(Re Menor)
 
 Jacañajj nayajja Cristoruw catuyjjta
@@ -9884,8 +9884,8 @@ Lorenzo Huanquírí
       'estado_registro': 1,
     },
     {
-      'id_letra': 204,
-      'id_cancion': 204,
+      'id_letra': 30204,
+      'id_cancion': 30204,
       'descripcion': '''
 Yo entrego mi vida a Cristo el Señor
 Él me da fortaleza y consolación;
@@ -9912,8 +9912,8 @@ Sólo en Cristo Jesús hay gran felicidad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 205,
-      'id_cancion': 205,
+      'id_letra': 30205,
+      'id_cancion': 30205,
       'descripcion': '''(Do)
 
 Khespiyir Cristoru
@@ -9947,8 +9947,8 @@ Domingo Copa
       'estado_registro': 1,
     },
     {
-      'id_letra': 206,
-      'id_cancion': 206,
+      'id_letra': 30206,
+      'id_cancion': 30206,
       'descripcion': '''
 Cristo el Salvador
 Que buscándote está;
@@ -9980,8 +9980,8 @@ Y su hijo serás.
       'estado_registro': 1,
     },
     {
-      'id_letra': 207,
-      'id_cancion': 207,
+      'id_letra': 30207,
+      'id_cancion': 30207,
       'descripcion': '''(Do)
 
 Tatit Cristoruw take chuymampi
@@ -10010,8 +10010,8 @@ Lorenzo Huanquiri C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 208,
-      'id_cancion': 208,
+      'id_letra': 30208,
+      'id_cancion': 30208,
       'descripcion': '''
 Un día hermoso busqué a Cristo,
 Con toda fe y sinceridad;
@@ -10038,8 +10038,8 @@ Perdonará toda tu maldad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 209,
-      'id_cancion': 209,
+      'id_letra': 30209,
+      'id_cancion': 30209,
       'descripcion': '''(Re Menor)
 
 Mä urojj Tatitut jayanwa
@@ -10073,8 +10073,8 @@ Teófilo Choque
       'estado_registro': 1,
     },
     {
-      'id_letra': 210,
-      'id_cancion': 210,
+      'id_letra': 30210,
+      'id_cancion': 30210,
       'descripcion': '''
 Yo vagaba muy lejos de Dios
 Sin consuelo ni seguridad;
@@ -10106,8 +10106,8 @@ A su eterna mansión celestial.
       'estado_registro': 1,
     },
     {
-      'id_letra': 211,
-      'id_cancion': 211,
+      'id_letra': 30211,
+      'id_cancion': 30211,
       'descripcion': '''(Re Menor)
 
 Alajjpachanquir suma Awquejja
@@ -10136,8 +10136,8 @@ Santiago Rivas L.
       'estado_registro': 1,
     },
     {
-      'id_letra': 212,
-      'id_cancion': 212,
+      'id_letra': 30212,
+      'id_cancion': 30212,
       'descripcion': '''
 Oh Padre amado, Dios de los cielos
 Lleno de compasión;
@@ -10164,8 +10164,8 @@ Siempre me ayudará.
       'estado_registro': 1,
     },
     {
-      'id_letra': 213,
-      'id_cancion': 213,
+      'id_letra': 30213,
+      'id_cancion': 30213,
       'descripcion': '''(Mi Bemol)
 
 Cristojj niyaw jutani
@@ -10194,8 +10194,8 @@ Domingo Copa P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 214,
-      'id_cancion': 214,
+      'id_letra': 30214,
+      'id_cancion': 30214,
       'descripcion': '''
 Cristo pronto volverá
 Al cielo nos llevará;
@@ -10222,8 +10222,8 @@ Sin descuido y sin fatiga.
       'estado_registro': 1,
     },
     {
-      'id_letra': 215,
-      'id_cancion': 215,
+      'id_letra': 30215,
+      'id_cancion': 30215,
       'descripcion': '''(Do Menor)
 
 Suma Dios Tata, nayaw jaltanta
@@ -10256,8 +10256,8 @@ Pío Laura C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 216,
-      'id_cancion': 216,
+      'id_letra': 30216,
+      'id_cancion': 30216,
       'descripcion': '''
 Bendito Padre, pido tu ayuda
 Ten compasión de mí;
@@ -10288,8 +10288,8 @@ Sé mi consolador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 217,
-      'id_cancion': 217,
+      'id_letra': 30217,
+      'id_cancion': 30217,
       'descripcion': '''(Mi Bemol)
 
 Munata jilata Cristor arcañäni
@@ -10313,8 +10313,8 @@ Gregorio Mamani B.
       'estado_registro': 1,
     },
     {
-      'id_letra': 218,
-      'id_cancion': 218,
+      'id_letra': 30218,
+      'id_cancion': 30218,
       'descripcion': '''
 Hermano en la fe,
 Sigamos al Señor
@@ -10346,8 +10346,8 @@ Con Jesús. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 219,
-      'id_cancion': 219,
+      'id_letra': 30219,
+      'id_cancion': 30219,
       'descripcion': '''(Re Menor)
 
 Tatitojja alajjpachat
@@ -10386,8 +10386,8 @@ Guillermo Zeballos Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 220,
-      'id_cancion': 220,
+      'id_letra': 30220,
+      'id_cancion': 30220,
       'descripcion': '''
 Jesucristo vino al mundo
 Él dejó su trono celestial;
@@ -10424,8 +10424,8 @@ Cantando están.
       'estado_registro': 1,
     },
     {
-      'id_letra': 221,
-      'id_cancion': 221,
+      'id_letra': 30221,
+      'id_cancion': 30221,
       'descripcion': '''(Re Menor)
 
 Khespiyiri Tatit Jesusajja
@@ -10459,8 +10459,8 @@ Nemesio Laura N.
       'estado_registro': 1,
     },
     {
-      'id_letra': 222,
-      'id_cancion': 222,
+      'id_letra': 30222,
+      'id_cancion': 30222,
       'descripcion': '''
 Jesús, el gran Salvador del mundo
 Nació en pesebre humilde y pobre;
@@ -10492,8 +10492,8 @@ Por su preciosa paz y salvación.
       'estado_registro': 1,
     },
     {
-      'id_letra': 223,
-      'id_cancion': 223,
+      'id_letra': 30223,
+      'id_cancion': 30223,
       'descripcion': '''(Re)
 
 Cristianonacajj amtapjjañäni
@@ -10522,8 +10522,8 @@ Santiago Rivas L.
       'estado_registro': 1,
     },
     {
-      'id_letra': 224,
-      'id_cancion': 224,
+      'id_letra': 30224,
+      'id_cancion': 30224,
       'descripcion': '''
 Oh, cristianos con fe recordemos
 El gran día en que Cristo ha nacido;
@@ -10550,8 +10550,8 @@ Para toda la humanidad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 225,
-      'id_cancion': 225,
+      'id_letra': 30225,
+      'id_cancion': 30225,
       'descripcion': '''(Mi Menor)
 
 Jacatatayapjjetay Tata,
@@ -10580,8 +10580,8 @@ Gregorio Mamani B.
       'estado_registro': 1,
     },
     {
-      'id_letra': 226,
-      'id_cancion': 226,
+      'id_letra': 30226,
+      'id_cancion': 30226,
       'descripcion': '''
 Oh Señor, renueva nuestro ser,
 Que turbado y triste está;
@@ -10608,8 +10608,8 @@ Para así vencer al mal.
       'estado_registro': 1,
     },
     {
-      'id_letra': 227,
-      'id_cancion': 227,
+      'id_letra': 30227,
+      'id_cancion': 30227,
       'descripcion': '''(Re Menor)
 
 Critot jayan jacäyäta,
@@ -10638,8 +10638,8 @@ Lorenzo Huanquiri C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 228,
-      'id_cancion': 228,
+      'id_letra': 30228,
+      'id_cancion': 30228,
       'descripcion': '''
 Vivía lejos del Señor
 Cargado de mi maldad;
@@ -10666,8 +10666,8 @@ En Cristo, tu Redentor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 229,
-      'id_cancion': 229,
+      'id_letra': 30229,
+      'id_cancion': 30229,
       'descripcion': '''(Mi Menor)
 
 Jalsu toketwa jutapjjäna
@@ -10701,8 +10701,8 @@ Nemesio Laura N.
       'estado_registro': 1,
     },
     {
-      'id_letra': 230,
-      'id_cancion': 230,
+      'id_letra': 30230,
+      'id_cancion': 30230,
       'descripcion': '''
 Unos magos con amor y fe
 A adorar vinieron a Jesús;
@@ -10734,8 +10734,8 @@ Le ofrecieron dones de valor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 231,
-      'id_cancion': 231,
+      'id_letra': 30231,
+      'id_cancion': 30231,
       'descripcion': '''(Re Menor)
 
 Munat jilata cutt'anjjamay
@@ -10770,8 +10770,8 @@ Rogelio Condori
       'estado_registro': 1,
     },
     {
-      'id_letra': 232,
-      'id_cancion': 232,
+      'id_letra': 30232,
+      'id_cancion': 30232,
       'descripcion': '''
 Amigo mío, vuelve al Señor
 Deja el pecado atrás;
@@ -10804,8 +10804,8 @@ Para vivir con Él.
       'estado_registro': 1,
     },
     {
-      'id_letra': 233,
-      'id_cancion': 233,
+      'id_letra': 30233,
+      'id_cancion': 30233,
       'descripcion': '''(Mi Bemol)
 
 Tatit Jesucristojj
@@ -10846,8 +10846,8 @@ Domingo Copa P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 234,
-      'id_cancion': 234,
+      'id_letra': 30234,
+      'id_cancion': 30234,
       'descripcion': '''
 Jesucristo, el Señor
 Pronto retornará
@@ -10886,8 +10886,8 @@ Cristo ya vendrá.
       'estado_registro': 1,
     },
     {
-      'id_letra': 235,
-      'id_cancion': 235,
+      'id_letra': 30235,
+      'id_cancion': 30235,
       'descripcion': '''(Re)
 
 ¿Llaquitat uñjasta
@@ -10921,8 +10921,8 @@ Pío Laura C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 236,
-      'id_cancion': 236,
+      'id_letra': 30236,
+      'id_cancion': 30236,
       'descripcion': '''¿Muy triste vives tú
 Sin gozo y sin paz?
 ¿O enfermo y con dolor
@@ -10953,8 +10953,8 @@ Su ayuda a conceder.
       'estado_registro': 1,
     },
     {
-      'id_letra': 237,
-      'id_cancion': 237,
+      'id_letra': 30237,
+      'id_cancion': 30237,
       'descripcion': '''(Mí Menor)
 
 Jumawa khespiyasista
@@ -10982,8 +10982,8 @@ Teófilo Choque
       'estado_registro': 1,
     },
     {
-      'id_letra': 238,
-      'id_cancion': 238,
+      'id_letra': 30238,
+      'id_cancion': 30238,
       'descripcion': '''
 Tú me salvaste, oh Señor
 Te seguiré hasta el fin;
@@ -11009,8 +11009,8 @@ De corazón te serviré. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 239,
-      'id_cancion': 239,
+      'id_letra': 30239,
+      'id_cancion': 30239,
       'descripcion': '''(Fa Menor)
 
 Khespiyir Cristo Awquisajja
@@ -11046,8 +11046,8 @@ Nemesio Laura N.
       'estado_registro': 1,
     },
     {
-      'id_letra': 240,
-      'id_cancion': 240,
+      'id_letra': 30240,
+      'id_cancion': 30240,
       'descripcion': '''
 Nuestro Señor y amado Jesús
 Su Santo Espíritu nos mandó
@@ -11081,8 +11081,8 @@ Llenos de gozo y de su poder. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 241,
-      'id_cancion': 241,
+      'id_letra': 30241,
+      'id_cancion': 30241,
       'descripcion': '''(Mi Bemol)
 
 Jan wali thaquinwa
@@ -11123,8 +11123,8 @@ Germán Mamani M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 242,
-      'id_cancion': 242,
+      'id_letra': 30242,
+      'id_cancion': 30242,
       'descripcion': '''
 Anduve en tinieblas
 En la senda ancha
@@ -11163,8 +11163,8 @@ Y santo amor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 243,
-      'id_cancion': 243,
+      'id_letra': 30243,
+      'id_cancion': 30243,
       'descripcion': '''(Sol)
 
 Matrimoniojj Diosan uchataw
@@ -11198,8 +11198,8 @@ Cusisiñän, cusisiñän.
       'estado_registro': 1,
     },
     {
-      'id_letra': 244,
-      'id_cancion': 244,
+      'id_letra': 30244,
+      'id_cancion': 30244,
       'descripcion': '''
 Instituido el matrimonio fue por nuestro Dios
 ¡Qué gozo es! ¡Qué gozo es!
@@ -11231,8 +11231,8 @@ Con gozo y paz, con gozo y paz.
       'estado_registro': 1,
     },
     {
-      'id_letra': 245,
-      'id_cancion': 245,
+      'id_letra': 30245,
+      'id_cancion': 30245,
       'descripcion': '''(Si Bemol)
 
 Niyaw sarjjañäni
@@ -11269,8 +11269,8 @@ Rogelio Condori G
       'estado_registro': 1,
     },
     {
-      'id_letra': 246,
-      'id_cancion': 246,
+      'id_letra': 30246,
+      'id_cancion': 30246,
       'descripcion': '''
 Ya nos vamos a Sión
 Para estar con Jesús
@@ -11305,8 +11305,8 @@ Viviremos gozosos con Dios.
       'estado_registro': 1,
     },
     {
-      'id_letra': 247,
-      'id_cancion': 247,
+      'id_letra': 30247,
+      'id_cancion': 30247,
       'descripcion': '''(Fa Menor)
 
 Dios Awquisar yuspagarañäni
@@ -11340,8 +11340,8 @@ Nemesio Laura N.
       'estado_registro': 1,
     },
     {
-      'id_letra': 248,
-      'id_cancion': 248,
+      'id_letra': 30248,
+      'id_cancion': 30248,
       'descripcion': '''
 Agradecido sea nuestro Dios
 Por todo lo que Él nos concedió;
@@ -11373,8 +11373,8 @@ Sirvámosle con más sinceridad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 249,
-      'id_cancion': 249,
+      'id_letra': 30249,
+      'id_cancion': 30249,
       'descripcion': '''(Mi Bemol)
 
 Suma Tatit Cristo Judea marcanwa
@@ -11403,8 +11403,8 @@ Domingo Copa P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 250,
-      'id_cancion': 250,
+      'id_letra': 30250,
+      'id_cancion': 30250,
       'descripcion': '''Mi buen Jesucristo allá en Judea
 Tus grandiosas obras, las manifestaste;
 Grandes maravillas con poder hiciste
@@ -11430,8 +11430,8 @@ Dando paz y gozo a sus corazones.
       'estado_registro': 1,
     },
     {
-      'id_letra': 251,
-      'id_cancion': 251,
+      'id_letra': 30251,
+      'id_cancion': 30251,
       'descripcion': '''(Re Menor)
 
 Adanampi, Evampi
@@ -11466,8 +11466,8 @@ Carmelo Aspi A
       'estado_registro': 1,
     },
     {
-      'id_letra': 252,
-      'id_cancion': 252,
+      'id_letra': 30252,
+      'id_cancion': 30252,
       'descripcion': '''
 Dios puso en el Huerto
 A Adán y Eva
@@ -11500,8 +11500,8 @@ De aceptar a Cristo. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 253,
-      'id_cancion': 253,
+      'id_letra': 30253,
+      'id_cancion': 30253,
       'descripcion': '''(Do Menor)
 
 Irpaquitay Tatit Cristo
@@ -11525,8 +11525,8 @@ Germán Mamani M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 254,
-      'id_cancion': 254,
+      'id_letra': 30254,
+      'id_cancion': 30254,
       'descripcion': '''Oh, guíame, Jesucristo
 Por senda de tu justicia;
 Te seguiré por doquiera
@@ -11547,8 +11547,8 @@ Yo quiero siempre seguirte.
       'estado_registro': 1,
     },
     {
-      'id_letra': 255,
-      'id_cancion': 255,
+      'id_letra': 30255,
+      'id_cancion': 30255,
       'descripcion': '''(Re Menor)
 
 Tatay jumaruquiwa
@@ -11577,8 +11577,8 @@ Trad. Domingo Copa P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 256,
-      'id_cancion': 256,
+      'id_letra': 30256,
+      'id_cancion': 30256,
       'descripcion': '''
 Mi bendito Salvador
 Con amor me entrego a ti;
@@ -11605,8 +11605,8 @@ En la gloria reinaré.
       'estado_registro': 1,
     },
     {
-      'id_letra': 257,
-      'id_cancion': 257,
+      'id_letra': 30257,
+      'id_cancion': 30257,
       'descripcion': '''(Do Menor)
 
 Janiw jakenacarojj
@@ -11636,8 +11636,8 @@ Chuymacharaquistani.
       'estado_registro': 1,
     },
     {
-      'id_letra': 258,
-      'id_cancion': 258,
+      'id_letra': 30258,
+      'id_cancion': 30258,
       'descripcion': '''
 No a los hombres, Jehová
 Ni a los ídolos,
@@ -11666,8 +11666,8 @@ También tu Consolador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 259,
-      'id_cancion': 259,
+      'id_letra': 30259,
+      'id_cancion': 30259,
       'descripcion': '''(Do Menor)
 
 Jumaw Tatit Cristo t'akhesiwayta
@@ -11696,8 +11696,8 @@ Pablo Quispe C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 260,
-      'id_cancion': 260,
+      'id_letra': 30260,
+      'id_cancion': 30260,
       'descripcion': '''
 Oh Señor Jesús, sufriste en la cruz
 Por salvarme a mí de toda mi maldad;
@@ -11724,8 +11724,8 @@ Y tu voz divina obedeceré.
       'estado_registro': 1,
     },
     {
-      'id_letra': 261,
-      'id_cancion': 261,
+      'id_letra': 30261,
+      'id_cancion': 30261,
       'descripcion': '''(Re Menor)
 
 Jiwasajj amtasiñasawa
@@ -11754,8 +11754,8 @@ Jorge Yanapa Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 262,
-      'id_cancion': 262,
+      'id_letra': 30262,
+      'id_cancion': 30262,
       'descripcion': '''
 Recordemos siempre con fe
 La gran promesa del Salvador;
@@ -11782,8 +11782,8 @@ Vivo guiado por su poder.
       'estado_registro': 1,
     },
     {
-      'id_letra': 263,
-      'id_cancion': 263,
+      'id_letra': 30263,
+      'id_cancion': 30263,
       'descripcion': '''(Sal. 27:1; Isa. 41:10; Sal.34:1,4)
 (Re Menor)
 
@@ -11819,8 +11819,8 @@ Romualdo Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 264,
-      'id_cancion': 264,
+      'id_letra': 30264,
+      'id_cancion': 30264,
       'descripcion': '''
 El Señor es quien me alumbra
 Y también mi salvación;
@@ -11853,8 +11853,8 @@ Poderoso es mi Señor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 265,
-      'id_cancion': 265,
+      'id_letra': 30265,
+      'id_cancion': 30265,
       'descripcion': '''(Do Menor)
 
 Jesucristow khespiyitu
@@ -11883,8 +11883,8 @@ Pío Laura C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 266,
-      'id_cancion': 266,
+      'id_letra': 30266,
+      'id_cancion': 30266,
       'descripcion': '''
 Cristo el Señor me ha salvado
 Murió por mí en la cruenta cruz
@@ -11911,8 +11911,8 @@ Por toda la eternidad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 267,
-      'id_cancion': 267,
+      'id_letra': 30267,
+      'id_cancion': 30267,
       'descripcion': '''(Re Menor)
 
 Alajjpach marcatwa
@@ -11946,8 +11946,8 @@ Domingo Copa P
       'estado_registro': 1,
     },
     {
-      'id_letra': 268,
-      'id_cancion': 268,
+      'id_letra': 30268,
+      'id_cancion': 30268,
       'descripcion': '''
 Cuando Cristo venga
 Otra vez al mundo
@@ -11979,8 +11979,8 @@ Veremos a Cristo.
       'estado_registro': 1,
     },
     {
-      'id_letra': 269,
-      'id_cancion': 269,
+      'id_letra': 30269,
+      'id_cancion': 30269,
       'descripcion': '''(Re Menor)
 
 Naya sapaquïtwa Diosamajja
@@ -12015,8 +12015,8 @@ Justa Rondo
       'estado_registro': 1,
     },
     {
-      'id_letra': 270,
-      'id_cancion': 270,
+      'id_letra': 30270,
+      'id_cancion': 30270,
       'descripcion': '''
 Yo soy el Señor tu Dios de poder
 Nunca tengas dioses aparte de mí;
@@ -12047,8 +12047,8 @@ Con sinceridad y limpio de corazón.
       'estado_registro': 1,
     },
     {
-      'id_letra': 271,
-      'id_cancion': 271,
+      'id_letra': 30271,
+      'id_cancion': 30271,
       'descripcion': '''(Do Menor)
 
 Niyaw jutani khespiyir Cristojja
@@ -12082,8 +12082,8 @@ Juan M. Pacheco
       'estado_registro': 1,
     },
     {
-      'id_letra': 272,
-      'id_cancion': 272,
+      'id_letra': 30272,
+      'id_cancion': 30272,
       'descripcion': '''
 Pronto volverá Cristo, el Rey de gloria
 Del hogar eterno en las nubes vendrá;
@@ -12115,8 +12115,8 @@ Al hogar eterno junto a nuestro Dios.
       'estado_registro': 1,
     },
     {
-      'id_letra': 273,
-      'id_cancion': 273,
+      'id_letra': 30273,
+      'id_cancion': 30273,
       'descripcion': '''(Do)
 
 Jan qhiti tumpirinich
@@ -12145,8 +12145,8 @@ Cusisjjata. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 274,
-      'id_cancion': 274,
+      'id_letra': 30274,
+      'id_cancion': 30274,
       'descripcion': '''
 Oh amigo,
 Qué muy triste vagas tú;
@@ -12171,8 +12171,8 @@ Ni dolor. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 275,
-      'id_cancion': 275,
+      'id_letra': 30275,
+      'id_cancion': 30275,
       'descripcion': '''(Do Menor)
 
 Diosan arupajj saraquistuwa
@@ -12206,8 +12206,8 @@ Pío Laura C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 276,
-      'id_cancion': 276,
+      'id_letra': 30276,
+      'id_cancion': 30276,
       'descripcion': '''
 No se preocupen, dice la Biblia
 Por esta vida y su afán;
@@ -12239,8 +12239,8 @@ Siempre nos cuidará.
       'estado_registro': 1,
     },
     {
-      'id_letra': 277,
-      'id_cancion': 277,
+      'id_letra': 30277,
+      'id_cancion': 30277,
       'descripcion': '''(Re Menor)
 
 Jacht'asisaw sarnakascäyät
@@ -12274,8 +12274,8 @@ Juan M. Pacheco
       'estado_registro': 1,
     },
     {
-      'id_letra': 278,
-      'id_cancion': 278,
+      'id_letra': 30278,
+      'id_cancion': 30278,
       'descripcion': '''
 Salvador Jesús, lejos de ti Angustiado,
 triste andaba yo;
@@ -12307,8 +12307,8 @@ Me libraste de la perdición.
       'estado_registro': 1,
     },
     {
-      'id_letra': 279,
-      'id_cancion': 279,
+      'id_letra': 30279,
+      'id_cancion': 30279,
       'descripcion': '''(Re Menor)
 
 Kollan Awquejja amtasitay
@@ -12337,8 +12337,8 @@ Jorge Yanapa Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 280,
-      'id_cancion': 280,
+      'id_letra': 30280,
+      'id_cancion': 30280,
       'descripcion': '''
 Acuérdate de mí, oh Señor
 Me siento solo sin tu poder
@@ -12365,8 +12365,8 @@ Acuérdate de mí, oh Señor. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 281,
-      'id_cancion': 281,
+      'id_letra': 30281,
+      'id_cancion': 30281,
       'descripcion': '''(Re)
 
 Diosan ajllitanacajja
@@ -12395,8 +12395,8 @@ Juan M. Pacheco
       'estado_registro': 1,
     },
     {
-      'id_letra': 282,
-      'id_cancion': 282,
+      'id_letra': 30282,
+      'id_cancion': 30282,
       'descripcion': '''
 Si vivimos cerca de Cristo
 Compartamos de su amor;
@@ -12423,8 +12423,8 @@ Y ayudando a todos por igual.
       'estado_registro': 1,
     },
     {
-      'id_letra': 283,
-      'id_cancion': 283,
+      'id_letra': 30283,
+      'id_cancion': 30283,
       'descripcion': '''(Do Menor)
 
 Cristojj janïr sarcasinjja
@@ -12453,8 +12453,8 @@ Gregorio Mamani
       'estado_registro': 1,
     },
     {
-      'id_letra': 284,
-      'id_cancion': 284,
+      'id_letra': 30284,
+      'id_cancion': 30284,
       'descripcion': '''
 Cristo Jesús nuestro Salvador
 Nos dio una gran misión;
@@ -12481,8 +12481,8 @@ Confiando en su amor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 285,
-      'id_cancion': 285,
+      'id_letra': 30285,
+      'id_cancion': 30285,
       'descripcion': '''(Mi Menor)
 
 Jumar sirviña nayajj amtasta
@@ -12516,8 +12516,8 @@ Juan M. Pacheco
       'estado_registro': 1,
     },
     {
-      'id_letra': 286,
-      'id_cancion': 286,
+      'id_letra': 30286,
+      'id_cancion': 30286,
       'descripcion': '''
 He decidido servirte oh Cristo
 Recíbeme tal como soy;
@@ -12549,8 +12549,8 @@ A seguirte hasta el fin.
       'estado_registro': 1,
     },
     {
-      'id_letra': 287,
-      'id_cancion': 287,
+      'id_letra': 30287,
+      'id_cancion': 30287,
       'descripcion': '''(Mi Menor)
 
 Tatay nayajj sirvirimätwa
@@ -12579,8 +12579,8 @@ Franklin Apaza
       'estado_registro': 1,
     },
     {
-      'id_letra': 288,
-      'id_cancion': 288,
+      'id_letra': 30288,
+      'id_cancion': 30288,
       'descripcion': '''
 Señor amado yo soy tu siervo
 Me salvaste del pecar;
@@ -12607,8 +12607,8 @@ A tu reino llegaré.
       'estado_registro': 1,
     },
     {
-      'id_letra': 289,
-      'id_cancion': 289,
+      'id_letra': 30289,
+      'id_cancion': 30289,
       'descripcion': '''(Do Menor)
 
 Acapachana jacañajja
@@ -12637,8 +12637,8 @@ Félix Riveras
       'estado_registro': 1,
     },
     {
-      'id_letra': 290,
-      'id_cancion': 290,
+      'id_letra': 30290,
+      'id_cancion': 30290,
       'descripcion': '''
 La vida en este mundo infiel
 Pronto se acabará;
@@ -12665,8 +12665,8 @@ No tendrá fin jamás.
       'estado_registro': 1,
     },
     {
-      'id_letra': 291,
-      'id_cancion': 291,
+      'id_letra': 30291,
+      'id_cancion': 30291,
       'descripcion': '''(Do)
 
 Urumaw jichhürojj
@@ -12700,8 +12700,8 @@ Gregorio Mamani
       'estado_registro': 1,
     },
     {
-      'id_letra': 292,
-      'id_cancion': 292,
+      'id_letra': 30292,
+      'id_cancion': 30292,
       'descripcion': '''
 Feliz cumpleaños
 Oh, hermano mío,
@@ -12733,8 +12733,8 @@ Con poder y amor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 293,
-      'id_cancion': 293,
+      'id_letra': 30293,
+      'id_cancion': 30293,
       'descripcion': '''(Mi bemol)
 
 Dios Awquisajja waquichasquiw
@@ -12768,8 +12768,8 @@ Teófilo Choque Y.
       'estado_registro': 1,
     },
     {
-      'id_letra': 294,
-      'id_cancion': 294,
+      'id_letra': 30294,
+      'id_cancion': 30294,
       'descripcion': '''
 Bellas mansiones de paz y amor
 Dios nos prepara para morar;
@@ -12801,8 +12801,8 @@ Alabaremos al Salvador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 295,
-      'id_cancion': 295,
+      'id_letra': 30295,
+      'id_cancion': 30295,
       'descripcion': '''(Do Menor)
 
 Tatit Cristojja kollu patanjja
@@ -12831,8 +12831,8 @@ Víctor Calle
       'estado_registro': 1,
     },
     {
-      'id_letra': 296,
-      'id_cancion': 296,
+      'id_letra': 30296,
+      'id_cancion': 30296,
       'descripcion': '''
 Cristo el Señor enseñó en el monte
 Palabras de verdad
@@ -12859,8 +12859,8 @@ Pero el Señor les dirá a ellos:
       'estado_registro': 1,
     },
     {
-      'id_letra': 297,
-      'id_cancion': 297,
+      'id_letra': 30297,
+      'id_cancion': 30297,
       'descripcion': '''(Mi Menor)
 
 Yupaychsmawa Dios Awquejja
@@ -12889,8 +12889,8 @@ Franklin Apaza C.
       'estado_registro': 1,
     },
     {
-      'id_letra': 298,
-      'id_cancion': 298,
+      'id_letra': 30298,
+      'id_cancion': 30298,
       'descripcion': '''
 Yo te alabo ¡oh Padre Dios!
 Por tu poder y tu bondad;
@@ -12917,8 +12917,8 @@ Bendito Padre celestial .
       'estado_registro': 1,
     },
     {
-      'id_letra': 299,
-      'id_cancion': 299,
+      'id_letra': 30299,
+      'id_cancion': 30299,
       'descripcion': '''(Do Menor)
 
 Dios Awquin acapacharu
@@ -12951,8 +12951,8 @@ Félix Riveras
       'estado_registro': 1,
     },
     {
-      'id_letra': 300,
-      'id_cancion': 300,
+      'id_letra': 30300,
+      'id_cancion': 30300,
       'descripcion': '''Por amor a este mundo
 Envió Dios a su Hijo amado;
 A la humanidad perdida
@@ -12982,8 +12982,8 @@ Como una real adoración.
       'estado_registro': 1,
     },
     {
-      'id_letra': 301,
-      'id_cancion': 301,
+      'id_letra': 30301,
+      'id_cancion': 30301,
       'descripcion': '''(Re Menor)
 
 Qhuyapt'ayasitay Dios Awqui
@@ -13012,8 +13012,8 @@ Gregorio Mamani
       'estado_registro': 1,
     },
     {
-      'id_letra': 302,
-      'id_cancion': 302,
+      'id_letra': 30302,
+      'id_cancion': 30302,
       'descripcion': '''
 ¡Oh Padre Dios! Ten piedad de mí
 Escucha mi petición;
@@ -13040,8 +13040,8 @@ Te seguiré hasta el fin.
       'estado_registro': 1,
     },
     {
-      'id_letra': 303,
-      'id_cancion': 303,
+      'id_letra': 30303,
+      'id_cancion': 30303,
       'descripcion': '''(Re Menor)
 
 Walja cutiwa nayajj uñjasta
@@ -13068,8 +13068,8 @@ Llaquinacan utjatapa.
       'estado_registro': 1,
     },
     {
-      'id_letra': 304,
-      'id_cancion': 304,
+      'id_letra': 30304,
+      'id_cancion': 30304,
       'descripcion': '''
 En este mundo, ¿por qué algunos
 Viven sin pruebas y dolor?
@@ -13096,8 +13096,8 @@ Nuestras flaquezas y temor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 305,
-      'id_cancion': 305,
+      'id_letra': 30305,
+      'id_cancion': 30305,
       'descripcion': '''(Re Menor)
 
 ¿Kawkha maras Tatitur arcta,
@@ -13131,8 +13131,8 @@ E. Quispe N.
       'estado_registro': 1,
     },
     {
-      'id_letra': 306,
-      'id_cancion': 306,
+      'id_letra': 30306,
+      'id_cancion': 30306,
       'descripcion': '''
 ¿cuánto tiempo sigues a Jesús?
 ¿cómo te parece a ti?
@@ -13164,8 +13164,8 @@ Seguiremos fiel a ti.
       'estado_registro': 1,
     },
     {
-      'id_letra': 307,
-      'id_cancion': 307,
+      'id_letra': 30307,
+      'id_cancion': 30307,
       'descripcion': '''(Fa)
 
 Jach'a cancañamajj muspharcañaw Tatay
@@ -13194,8 +13194,8 @@ Pío Laura
       'estado_registro': 1,
     },
     {
-      'id_letra': 308,
-      'id_cancion': 308,
+      'id_letra': 30308,
+      'id_cancion': 30308,
       'descripcion': '''
 Maravilloso Dios, omnipotente Rey
 Tu amor y santidad por siempre durarán;
@@ -13223,8 +13223,8 @@ Y así contigo moraré. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 309,
-      'id_cancion': 309,
+      'id_letra': 30309,
+      'id_cancion': 30309,
       'descripcion': '''(Re Menor)
 
 Yuspagarsmaw Kollan Cristo
@@ -13253,8 +13253,8 @@ Gregorio Mamani B.
       'estado_registro': 1,
     },
     {
-      'id_letra': 310,
-      'id_cancion': 310,
+      'id_letra': 30310,
+      'id_cancion': 30310,
       'descripcion': '''
 Te doy gracias mi buen Cristo
 Por redimir mis pecados;
@@ -13281,8 +13281,8 @@ Con tu amor profundo y santo.
       'estado_registro': 1,
     },
     {
-      'id_letra': 311,
-      'id_cancion': 311,
+      'id_letra': 30311,
+      'id_cancion': 30311,
       'descripcion': '''(Re)
 
 Acatjamatwa ist'apjjañäni
@@ -13312,8 +13312,8 @@ Diosar jach'achasa.
       'estado_registro': 1,
     },
     {
-      'id_letra': 312,
-      'id_cancion': 312,
+      'id_letra': 30312,
+      'id_cancion': 30312,
       'descripcion': '''
 Muy pronto sonará la trompeta
 Y el mando del Señor;
@@ -13343,8 +13343,8 @@ Glorificando a Dios.
       'estado_registro': 1,
     },
     {
-      'id_letra': 313,
-      'id_cancion': 313,
+      'id_letra': 30313,
+      'id_cancion': 30313,
       'descripcion': '''(Re Menor)
 
 Khespiyir Kollan Cristojja
@@ -13378,8 +13378,8 @@ Teófilo Choque
       'estado_registro': 1,
     },
     {
-      'id_letra': 314,
-      'id_cancion': 314,
+      'id_letra': 30314,
+      'id_cancion': 30314,
       'descripcion': '''
 Mi amante Cristo Salvador
 Limpiame de toda maldad;
@@ -13411,8 +13411,8 @@ En tu camino de verdad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 315,
-      'id_cancion': 315,
+      'id_letra': 30315,
+      'id_cancion': 30315,
       'descripcion': '''(Re Menor)
 
 Tatit Jesusajj mä wasarana
@@ -13441,8 +13441,8 @@ Víctor Calle
       'estado_registro': 1,
     },
     {
-      'id_letra': 316,
-      'id_cancion': 316,
+      'id_letra': 30316,
+      'id_cancion': 30316,
       'descripcion': '''
 Cristo Jesús llevado al desierto
 Sufrió la tentación;
@@ -13469,8 +13469,8 @@ Y a la perversidad. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 317,
-      'id_cancion': 317,
+      'id_letra': 30317,
+      'id_cancion': 30317,
       'descripcion': '''(Re Menor)
 
 Kollan suma Dios Awquejja
@@ -13505,8 +13505,8 @@ Eucipia de Condori
       'estado_registro': 1,
     },
     {
-      'id_letra': 318,
-      'id_cancion': 318,
+      'id_letra': 30318,
+      'id_cancion': 30318,
       'descripcion': '''
 Mi bendito y buen Salvador
 Sólo a ti clamando estoy;
@@ -13538,8 +13538,8 @@ A pruebas mil, y a la maldad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 319,
-      'id_cancion': 319,
+      'id_letra': 30319,
+      'id_cancion': 30319,
       'descripcion': '''Almajjasa, cuerpojjasa
 Diosar churataw;
 Jesusawa wilapampi
@@ -13571,8 +13571,8 @@ Roberto Arismendi A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 320,
-      'id_cancion': 320,
+      'id_letra': 30320,
+      'id_cancion': 30320,
       'descripcion': '''
 Mi alma y cuerpo los consagro
 A mi Salvador;
@@ -13604,8 +13604,8 @@ Con mi buen Jesús.
       'estado_registro': 1,
     },
     {
-      'id_letra': 321,
-      'id_cancion': 321,
+      'id_letra': 30321,
+      'id_cancion': 30321,
       'descripcion': '''
 Arunacam parlaña
 Yanapt'itay Cristojja
@@ -13639,8 +13639,8 @@ Antonio Quispe B.
       'estado_registro': 1,
     },
     {
-      'id_letra': 322,
-      'id_cancion': 322,
+      'id_letra': 30322,
+      'id_cancion': 30322,
       'descripcion': '''
 Ayúdame, ¡oh Señor!
 A testificar de ti
@@ -13673,8 +13673,8 @@ De obtener vida eterna y felicidad.
       'estado_registro': 1,
     },
     {
-      'id_letra': 323,
-      'id_cancion': 323,
+      'id_letra': 30323,
+      'id_cancion': 30323,
       'descripcion': '''(Sol)
 
 Jacquir Diosan arunacapajja
@@ -13710,8 +13710,8 @@ Kellkata, kellkata. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 324,
-      'id_cancion': 324,
+      'id_letra': 30324,
+      'id_cancion': 30324,
       'descripcion': '''
 La palabra divina y viva
 En la Santa Biblia escrita está,
@@ -13749,8 +13749,8 @@ En Jesús, en Jesús. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 325,
-      'id_cancion': 325,
+      'id_letra': 30325,
+      'id_cancion': 30325,
       'descripcion': '''(Mí Bemol)
 
 Aca jacañ orakejj
@@ -13784,8 +13784,8 @@ Gregorío Mamaní B.
       'estado_registro': 1,
     },
     {
-      'id_letra': 326,
-      'id_cancion': 326,
+      'id_letra': 30326,
+      'id_cancion': 30326,
       'descripcion': '''
 Esta vida terrenal
 Está llena de dolor,
@@ -13817,8 +13817,8 @@ Hasta el final.
       'estado_registro': 1,
     },
     {
-      'id_letra': 327,
-      'id_cancion': 327,
+      'id_letra': 30327,
+      'id_cancion': 30327,
       'descripcion': '''(Mi Bemol)
 
 Kollan Tatit Cristo
@@ -13852,8 +13852,8 @@ Teófilo Choque Y.
       'estado_registro': 1,
     },
     {
-      'id_letra': 328,
-      'id_cancion': 328,
+      'id_letra': 30328,
+      'id_cancion': 30328,
       'descripcion': '''
 Oh bendito Jesús,
 El servirte a ti
@@ -13886,8 +13886,8 @@ Separarme de ti, me podrán.
       'estado_registro': 1,
     },
     {
-      'id_letra': 329,
-      'id_cancion': 329,
+      'id_letra': 30329,
+      'id_cancion': 30329,
       'descripcion': '''(Mi Menor)
 
 Mä sap ch'aman Diosaquiw utjtajja
@@ -13921,8 +13921,8 @@ Justo Ajata T.
       'estado_registro': 1,
     },
     {
-      'id_letra': 330,
-      'id_cancion': 330,
+      'id_letra': 30330,
+      'id_cancion': 30330,
       'descripcion': '''
 Un solo Dios y Santo eres tú
 Son Tres Personas a la vez;
@@ -13954,8 +13954,8 @@ Y nos consuelas con amor.
       'estado_registro': 1,
     },
     {
-      'id_letra': 331,
-      'id_cancion': 331,
+      'id_letra': 30331,
+      'id_cancion': 30331,
       'descripcion': '''(Do Menor)
 
 Diosan munasiñapajj
@@ -13984,8 +13984,8 @@ Lorenzo Condori Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 332,
-      'id_cancion': 332,
+      'id_letra': 30332,
+      'id_cancion': 30332,
       'descripcion': '''
 El tierno amor del Señor
 Pues, para todos los hay;
@@ -14012,8 +14012,8 @@ Y al fiero Tentador.
       'estado_registro': 1,
     },
     {
-      'id_letra': 333,
-      'id_cancion': 333,
+      'id_letra': 30333,
+      'id_cancion': 30333,
       'descripcion': '''(Re Menor)
 
 Tatay jumaruquiw jach'achapjjsma
@@ -14043,8 +14043,8 @@ Juan M. Pacheco
       'estado_registro': 1,
     },
     {
-      'id_letra': 334,
-      'id_cancion': 334,
+      'id_letra': 30334,
+      'id_cancion': 30334,
       'descripcion': '''
 Tan sólo a ti te loamos, ¡oh Señor!
 Por condolerse de la gente;
@@ -14071,8 +14071,8 @@ Si te sigo con fe hasta el fin.
       'estado_registro': 1,
     },
     {
-      'id_letra': 335,
-      'id_cancion': 335,
+      'id_letra': 30335,
+      'id_cancion': 30335,
       'descripcion': '''(Re Menor)
 
 Tatit Jesusajja
@@ -14098,8 +14098,8 @@ Lorenzo Condori Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 336,
-      'id_cancion': 336,
+      'id_letra': 30336,
+      'id_cancion': 30336,
       'descripcion': '''
 Cristo el Señor vendrá
 Inesperadamente;
@@ -14123,8 +14123,8 @@ Junto a Cristo, el Vencedor. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 337,
-      'id_cancion': 337,
+      'id_letra': 30337,
+      'id_cancion': 30337,
       'descripcion': '''(Re Menor)
 
 Diosaruw nayajja cusisit yuspagarta
@@ -14151,8 +14151,8 @@ Mayjt'asiñajjansa, t'uqhasiñajjansa.
       'estado_registro': 1,
     },
     {
-      'id_letra': 338,
-      'id_cancion': 338,
+      'id_letra': 30338,
+      'id_cancion': 30338,
       'descripcion': '''
 Con gratitud viva, doy gracias a mi Cristo
 Porque concedió me la vida y su poder;
@@ -14179,8 +14179,8 @@ Me da fortaleza. ¡Su Espíritu es poder!
       'estado_registro': 1,
     },
     {
-      'id_letra': 339,
-      'id_cancion': 339,
+      'id_letra': 30339,
+      'id_cancion': 30339,
       'descripcion': '''(Do)
 
 Diosan chekpach wawanacapajj
@@ -14209,8 +14209,8 @@ Justo Ajata T.
       'estado_registro': 1,
     },
     {
-      'id_letra': 340,
-      'id_cancion': 340,
+      'id_letra': 30340,
+      'id_cancion': 30340,
       'descripcion': '''
 Los verdaderos hijos de Dios
 Son llenos de su profundo amor;
@@ -14237,8 +14237,8 @@ En todo tiempo, en cualquier lugar.
       'estado_registro': 1,
     },
     {
-      'id_letra': 341,
-      'id_cancion': 341,
+      'id_letra': 30341,
+      'id_cancion': 30341,
       'descripcion': '''(Re Menor)
 
 Qhitirac nayar apaketaspa
@@ -14271,8 +14271,8 @@ Franklin Apaza
       'estado_registro': 1,
     },
     {
-      'id_letra': 342,
-      'id_cancion': 342,
+      'id_letra': 30342,
+      'id_cancion': 30342,
       'descripcion': '''
 Nadie me podrá separar de Dios
 Ni de su presencia;
@@ -14303,8 +14303,8 @@ Su guía es segura.
       'estado_registro': 1,
     },
     {
-      'id_letra': 343,
-      'id_cancion': 343,
+      'id_letra': 30343,
+      'id_cancion': 30343,
       'descripcion': '''(Fa Menor)
 
 Kollan Dios Awquejja
@@ -14326,8 +14326,8 @@ Teófilo Rafael A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 344,
-      'id_cancion': 344,
+      'id_letra': 30344,
+      'id_cancion': 30344,
       'descripcion': '''
 Oh, Padre amado, no me dejes nunca,
 Con mi ser entero, quiero yo seguirte
@@ -14348,8 +14348,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 345,
-      'id_cancion': 345,
+      'id_letra': 30345,
+      'id_cancion': 30345,
       'descripcion': '''(Sol)
 
 Jach'a thayjamas jutascpan
@@ -14372,8 +14372,8 @@ Trad. Teófilo Rafael A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 346,
-      'id_cancion': 346,
+      'id_letra': 30346,
+      'id_cancion': 30346,
       'descripcion': '''
 Aunque vengan tempestades,
 Aunque vengan terremotos;
@@ -14398,8 +14398,8 @@ Meivil Román Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 347,
-      'id_cancion': 347,
+      'id_letra': 30347,
+      'id_cancion': 30347,
       'descripcion': '''(Fa Menor)
 
 Yuspagarsmaw Cristo, khespiyatamata,
@@ -14423,8 +14423,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 348,
-      'id_cancion': 348,
+      'id_letra': 30348,
+      'id_cancion': 30348,
       'descripcion': '''
 // Gracias, gracias, Cristo
 Ya sé que soy salvo. (Bis)
@@ -14447,8 +14447,8 @@ Teófilo Rafael A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 349,
-      'id_cancion': 349,
+      'id_letra': 30349,
+      'id_cancion': 30349,
       'descripcion': '''(Re Menor)
 
 Jumawa nayrakata
@@ -14476,8 +14476,8 @@ Roberto Quispe
       'estado_registro': 1,
     },
     {
-      'id_letra': 350,
-      'id_cancion': 350,
+      'id_letra': 30350,
+      'id_cancion': 30350,
       'descripcion': '''
 Oh Señor me amaste tú,
 Antes que te conocí;
@@ -14505,8 +14505,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 351,
-      'id_cancion': 351,
+      'id_letra': 30351,
+      'id_cancion': 30351,
       'descripcion': '''(Mi)
 
 Kherwanquir pankarjamawa
@@ -14530,8 +14530,8 @@ D.R.
       'estado_registro': 1,
     },
     {
-      'id_letra': 352,
-      'id_cancion': 352,
+      'id_letra': 30352,
+      'id_cancion': 30352,
       'descripcion': '''
 Es el lirio de los valles,
 Y la rosa de sarón;
@@ -14555,8 +14555,8 @@ Alfredo Callisaya
       'estado_registro': 1,
     },
     {
-      'id_letra': 353,
-      'id_cancion': 353,
+      'id_letra': 30353,
+      'id_cancion': 30353,
       'descripcion': '''(Re)
 
 Tatitun khespiyat waynanaca
@@ -14586,8 +14586,8 @@ Florintino Chambi
       'estado_registro': 1,
     },
     {
-      'id_letra': 354,
-      'id_cancion': 354,
+      'id_letra': 30354,
+      'id_cancion': 30354,
       'descripcion': '''
 Juventud redimida por Cristo
 Juventud que resiste a Satanás,
@@ -14616,8 +14616,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 355,
-      'id_cancion': 355,
+      'id_letra': 30355,
+      'id_cancion': 30355,
       'descripcion': '''(Do# Menor)
 
 Munat taycajja, munasiñamajj
@@ -14646,8 +14646,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 356,
-      'id_cancion': 356,
+      'id_letra': 30356,
+      'id_cancion': 30356,
       'descripcion': '''
 Madre querida, madre adorada
 Grande es tu amor para tus hijos
@@ -14676,8 +14676,8 @@ Bartolomé Zenteno P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 357,
-      'id_cancion': 357,
+      'id_letra': 30357,
+      'id_cancion': 30357,
       'descripcion': '''(Mi Menor)
 
 Junt'u chekanacatpachaw
@@ -14699,8 +14699,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 358,
-      'id_cancion': 358,
+      'id_letra': 30358,
+      'id_cancion': 30358,
       'descripcion': '''
 Desde las bajas regiones,
 Desde las cumbres más altas
@@ -14722,8 +14722,8 @@ D.R.
       'estado_registro': 1,
     },
     {
-      'id_letra': 359,
-      'id_cancion': 359,
+      'id_letra': 30359,
+      'id_cancion': 30359,
       'descripcion': '''(Sol)
 
 Kellkatanacarjamajj
@@ -14748,8 +14748,8 @@ Arreg. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 360,
-      'id_cancion': 360,
+      'id_letra': 30360,
+      'id_cancion': 30360,
       'descripcion': '''
 En las letras de un papel
 Yo hallé dos caminos,
@@ -14773,8 +14773,8 @@ René y Nicasio Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 361,
-      'id_cancion': 361,
+      'id_letra': 30361,
+      'id_cancion': 30361,
       'descripcion': '''(Re Menor)
 
 Dios Awquisan Yokapajja,
@@ -14799,8 +14799,8 @@ René y Nicasio Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 362,
-      'id_cancion': 362,
+      'id_letra': 30362,
+      'id_cancion': 30362,
       'descripcion': '''
 El Hijo del Dios viviente
 Vendrá en forma repentina,
@@ -14826,8 +14826,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 363,
-      'id_cancion': 363,
+      'id_letra': 30363,
+      'id_cancion': 30363,
       'descripcion': '''(La)
 
 Khespiyir Cristo, yuspagaransmawa
@@ -14845,8 +14845,8 @@ René Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 364,
-      'id_cancion': 364,
+      'id_letra': 30364,
+      'id_cancion': 30364,
       'descripcion': '''
 Gracias mi Jesús, gracias, Salvador
 Gracias te doy mi Señor,
@@ -14865,8 +14865,8 @@ Gracias, mi Jesús. (Bis)
       'estado_registro': 1,
     },
     {
-      'id_letra': 365,
-      'id_cancion': 365,
+      'id_letra': 30365,
+      'id_cancion': 30365,
       'descripcion': '''(Fa)
 
 Chuymajjajj cusisitawa
@@ -14891,8 +14891,8 @@ Elíseo Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 366,
-      'id_cancion': 366,
+      'id_letra': 30366,
+      'id_cancion': 30366,
       'descripcion': '''
 Grande gozo hay en mi alma
 Porque Cristo me salvó;
@@ -14917,8 +14917,8 @@ Arreg. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 367,
-      'id_cancion': 367,
+      'id_letra': 30367,
+      'id_cancion': 30367,
       'descripcion': '''(Mí Menor)
 
 Tatit Jesusajj niyaw jutani
@@ -14944,8 +14944,8 @@ Elíseo Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 368,
-      'id_cancion': 368,
+      'id_letra': 30368,
+      'id_cancion': 30368,
       'descripcion': '''
 El Rey de gloria muy pronto vendrá
 Debemos de esperar diligentes;
@@ -14969,8 +14969,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 369,
-      'id_cancion': 369,
+      'id_letra': 30369,
+      'id_cancion': 30369,
       'descripcion': '''(Re Menor)
 
 Kollan suma Cristo
@@ -14998,8 +14998,8 @@ René Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 370,
-      'id_cancion': 370,
+      'id_letra': 30370,
+      'id_cancion': 30370,
       'descripcion': '''
 Mi amado Salvador, quiero alabarte a ti
 Por rescatarme de mi maldad;
@@ -15023,8 +15023,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 371,
-      'id_cancion': 371,
+      'id_letra': 30371,
+      'id_cancion': 30371,
       'descripcion': '''(Re Menor)
 
 Jumatejj karjat uñjassta
@@ -15049,8 +15049,8 @@ Eliseo Pérez A
       'estado_registro': 1,
     },
     {
-      'id_letra': 372,
-      'id_cancion': 372,
+      'id_letra': 30372,
+      'id_cancion': 30372,
       'descripcion': '''
 Si te sientes agobiado
 Dilo a Cristo, ahora mismo
@@ -15074,8 +15074,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 373,
-      'id_cancion': 373,
+      'id_letra': 30373,
+      'id_cancion': 30373,
       'descripcion': '''(Fa)
 
 Waljaniw jisct'asipjje
@@ -15099,8 +15099,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 374,
-      'id_cancion': 374,
+      'id_letra': 30374,
+      'id_cancion': 30374,
       'descripcion': '''
 Muchos se preguntan ya,
 ¿Quién es nuestro Salvador?
@@ -15124,8 +15124,8 @@ René Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 375,
-      'id_cancion': 375,
+      'id_letra': 30375,
+      'id_cancion': 30375,
       'descripcion': '''(Mi Menor)
 
 Tatitur arcapjjañän,
@@ -15151,8 +15151,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 376,
-      'id_cancion': 376,
+      'id_letra': 30376,
+      'id_cancion': 30376,
       'descripcion': '''
 Seguiremos a Jesús
 Pues, marchemos junto a Él. (Bis)
@@ -15177,8 +15177,8 @@ Elíseo, Octavio Pérez A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 377,
-      'id_cancion': 377,
+      'id_letra': 30377,
+      'id_cancion': 30377,
       'descripcion': '''(Mi Menor)
 
 Take chuymajjampiwa
@@ -15204,8 +15204,8 @@ Teófilo Rafael A.
       'estado_registro': 1,
     },
     {
-      'id_letra': 378,
-      'id_cancion': 378,
+      'id_letra': 30378,
+      'id_cancion': 30378,
       'descripcion': '''
 Hasta el fin yo seguiré
 En la senda de mi Dios;
@@ -15233,8 +15233,8 @@ Arreg. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 379,
-      'id_cancion': 379,
+      'id_letra': 30379,
+      'id_cancion': 30379,
       'descripcion': '''(Mi Menor)
 
 Yuspagarsmaw Awquejja
@@ -15258,8 +15258,8 @@ Bartolomé Zenteno P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 380,
-      'id_cancion': 380,
+      'id_letra': 30380,
+      'id_cancion': 30380,
       'descripcion': '''
 Gracias te doy mi Padre
 Por tus promesas fieles;
@@ -15283,8 +15283,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 381,
-      'id_cancion': 381,
+      'id_letra': 30381,
+      'id_cancion': 30381,
       'descripcion': '''(Re Menor)
 
 Walja jilanacaw jaytjjetu
@@ -15309,8 +15309,8 @@ M. Alberto Mamani
       'estado_registro': 1,
     },
     {
-      'id_letra': 382,
-      'id_cancion': 382,
+      'id_letra': 30382,
+      'id_cancion': 30382,
       'descripcion': '''
 Muchos me han dejado solo a mí,
 Dejaron la senda de Dios;
@@ -15334,8 +15334,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 383,
-      'id_cancion': 383,
+      'id_letra': 30383,
+      'id_cancion': 30383,
       'descripcion': '''(Re Menor)
 
 Walja cutiwa nayajj uñjasta
@@ -15367,8 +15367,8 @@ Arreg. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 384,
-      'id_cancion': 384,
+      'id_letra': 30384,
+      'id_cancion': 30384,
       'descripcion': '''
 En duras pruebas vivo rodeado
 Sin saber qué hacer,
@@ -15400,8 +15400,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 385,
-      'id_cancion': 385,
+      'id_letra': 30385,
+      'id_cancion': 30385,
       'descripcion': '''(Re Menor)
 
 Yuspagarsmaw Tatay
@@ -15430,8 +15430,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 386,
-      'id_cancion': 386,
+      'id_letra': 30386,
+      'id_cancion': 30386,
       'descripcion': '''
 Gracias Cristo amado,
 Me salvaste del pecar
@@ -15460,8 +15460,8 @@ Bonifacio Cocarico
       'estado_registro': 1,
     },
     {
-      'id_letra': 387,
-      'id_cancion': 387,
+      'id_letra': 30387,
+      'id_cancion': 30387,
       'descripcion': '''(Mi Menor)
 
 Vallenacans, kollunacans,
@@ -15497,8 +15497,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 388,
-      'id_cancion': 388,
+      'id_letra': 30388,
+      'id_cancion': 30388,
       'descripcion': '''
 Por los valles y montañas
 Sigo yo caminando
@@ -15535,8 +15535,8 @@ M. Alberto Mamani
       'estado_registro': 1,
     },
     {
-      'id_letra': 389,
-      'id_cancion': 389,
+      'id_letra': 30389,
+      'id_cancion': 30389,
       'descripcion': '''(Mi Menor)
 
 Tatituw awatisquitu
@@ -15570,8 +15570,8 @@ Arreg. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 390,
-      'id_cancion': 390,
+      'id_letra': 30390,
+      'id_cancion': 30390,
       'descripcion': '''
 Mi pastor es Jesucristo
 Tengo cuanto necesito;
@@ -15604,8 +15604,8 @@ Trad. Juan Mayta M.
       'estado_registro': 1,
     },
     {
-      'id_letra': 391,
-      'id_cancion': 391,
+      'id_letra': 30391,
+      'id_cancion': 30391,
       'descripcion': '''(Re Menor)
 
 Kollan Dios Awquejja munasiñamajja,
@@ -15641,8 +15641,8 @@ Arreg. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 392,
-      'id_cancion': 392,
+      'id_letra': 30392,
+      'id_cancion': 30392,
       'descripcion': '''
 Mi bendito Padre, tu amor es inmenso
 Y maravilloso para los amados;
@@ -15676,8 +15676,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 393,
-      'id_cancion': 393,
+      'id_letra': 30393,
+      'id_cancion': 30393,
       'descripcion': '''(Re Menor)
 
 Kollan Ajayu chuymajjaru
@@ -15712,8 +15712,8 @@ Arreg. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 394,
-      'id_cancion': 394,
+      'id_letra': 30394,
+      'id_cancion': 30394,
       'descripcion': '''
 Santo Espíritu, mi ser llena
 Con poder y tu presencia;
@@ -15747,8 +15747,8 @@ Trad. R. Atahuachl Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 395,
-      'id_cancion': 395,
+      'id_letra': 30395,
+      'id_cancion': 30395,
       'descripcion': '''(Do Menor)
 
 Tatit Jesusampi, sarañataquejja
@@ -15776,8 +15776,8 @@ Arreg. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 396,
-      'id_cancion': 396,
+      'id_letra': 30396,
+      'id_cancion': 30396,
       'descripcion': '''
 El andar con Jesús, y sus pasos seguir
 Es la senda mejor, que puedo encontrar. (Bis)
@@ -15802,8 +15802,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 397,
-      'id_cancion': 397,
+      'id_letra': 30397,
+      'id_cancion': 30397,
       'descripcion': '''(Re Menor)
 
 Diosan Kollan Libropa,
@@ -15836,8 +15836,8 @@ Domingo Copa P.
       'estado_registro': 1,
     },
     {
-      'id_letra': 398,
-      'id_cancion': 398,
+      'id_letra': 30398,
+      'id_cancion': 30398,
       'descripcion': '''
 Tus palabras, oh, Señor
 Son como el oro puro y dulce miel;
@@ -15870,8 +15870,8 @@ Trad. R. Atahuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 399,
-      'id_cancion': 399,
+      'id_letra': 30399,
+      'id_cancion': 30399,
       'descripcion': '''(Re Menor)
 
 K'oma chuymasampi, yupaychañasawa
@@ -15896,8 +15896,8 @@ Arreg. R. Athuachi Ch.
       'estado_registro': 1,
     },
     {
-      'id_letra': 400,
-      'id_cancion': 400,
+      'id_letra': 30400,
+      'id_cancion': 30400,
       'descripcion': '''
 Limpios de corazón, alabemos a Dios
 De todo corazón, cada día más. (Bis)

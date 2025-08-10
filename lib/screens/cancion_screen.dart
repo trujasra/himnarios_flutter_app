@@ -3,6 +3,7 @@ import '../models/cancion.dart';
 import '../models/himnario.dart';
 import '../theme/app_theme.dart';
 import '../data/canciones_service.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CancionScreen extends StatefulWidget {
   final Cancion cancion;
@@ -132,33 +133,55 @@ class _CancionScreenState extends State<CancionScreen>
       final linea = lineas[i].trim();
 
       // Espacio extra si es línea vacía (separación de estrofas)
-      if (linea.isEmpty) {
-        widgets.add(const SizedBox(height: 30));
-        continue;
-      }
+      // if (linea.isEmpty) {
+      //   widgets.add(const SizedBox(height: 30));
+      //   continue;
+      // }
 
-      // Detectar si es una nota musical (entre paréntesis)
       if (linea.startsWith('(') && linea.endsWith(')')) {
+        final baseColor = const Color.fromARGB(255, 178, 38, 221); // azul petróleo
+
         widgets.add(
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4),
-            child: Text(
-              linea,
-              style: TextStyle(
-                fontSize: 16,
-                color: const Color.fromARGB(255, 189, 4, 35),
-                fontStyle: FontStyle.italic,
-              ),
-              textAlign: TextAlign.center,
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+            decoration: BoxDecoration(
+              color: baseColor.withValues(alpha: 0.1), // fondo muy suave azul
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: baseColor.withValues(alpha:0.1), width: 2),
+              boxShadow: [
+                BoxShadow(
+                  color: baseColor.withValues(alpha:0.15),
+                  blurRadius: 8,
+                  offset: const Offset(0, 1),
+                ),
+              ],
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.music_note, size: 12, color: baseColor),
+                const SizedBox(width: 1),
+                Text(
+                  linea,
+                  style: GoogleFonts.quicksand(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: baseColor,
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ],
             ),
           ),
         );
       }
       // Detectar si es CORO
-      else if (linea.toUpperCase() == 'CORO') {
+      else if (linea.toUpperCase() == 'CORO' ||
+          linea.toUpperCase() == 'CORO:' ||
+          linea.toUpperCase() == 'CORO :') {
         widgets.add(
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
+            padding: const EdgeInsets.symmetric(vertical: 3),
             child: Text(
               linea,
               style: const TextStyle(
@@ -166,6 +189,7 @@ class _CancionScreenState extends State<CancionScreen>
                 fontWeight: FontWeight.bold,
                 color: AppTheme.textColor,
                 fontStyle: FontStyle.italic,
+                height: 1.0,
               ),
               textAlign: TextAlign.center,
             ),
@@ -198,7 +222,7 @@ class _CancionScreenState extends State<CancionScreen>
               linea,
               style: const TextStyle(
                 fontSize: 22,
-                height: 1.6,
+                height: 1.2,
                 color: AppTheme.textColor,
               ),
               textAlign: TextAlign.center,

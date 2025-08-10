@@ -7,6 +7,7 @@ import '../widgets/cancion_card.dart';
 import '../widgets/search_bar_widget.dart';
 import 'cancion_screen.dart';
 import 'indice_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HimnarioScreen extends StatefulWidget {
   final Himnario himnario;
@@ -126,8 +127,8 @@ class _HimnarioScreenState extends State<HimnarioScreen> {
                               children: [
                                 Text(
                                   widget.himnario.nombre,
-                                  style: const TextStyle(
-                                    fontSize: 20,
+                                  style: GoogleFonts.berkshireSwash(
+                                    fontSize: 22,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                   ),

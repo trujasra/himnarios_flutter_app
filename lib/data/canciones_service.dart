@@ -201,6 +201,15 @@ class CancionesService {
     }
   }
 
+// Repoblar canciones de Bendicion del Cielo (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesBendicionDelCielo() async {
+    try {
+      await _dbHelper.repoblarCancionesBendicionDelCielo();
+    } catch (e) {
+      print('Error repoblando canciones de Bendicion del Cielo: $e');
+    }
+  }
+
   // Repoblar canciones de Cala (útil cuando se agregan nuevas canciones)
   Future<void> repoblarCancionesCala() async {
     try {

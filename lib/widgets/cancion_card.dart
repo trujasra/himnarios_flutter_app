@@ -21,6 +21,44 @@ class CancionCard extends StatelessWidget {
     this.mostrarHimnario = false,
   });
 
+  // Método para obtener el color específico según el nombre del himnario
+  Color _getColorForHimnario(String nombre) {
+    if (nombre.toLowerCase().contains('bendición del cielo')) {
+      return AppTheme.bendicionColor;
+    } else if (nombre.toLowerCase().contains('coros cristianos')) {
+      return AppTheme.corosColor;
+    } else if (nombre.toLowerCase().contains('cala')) {
+      return AppTheme.calaColor;
+    } else {
+      return AppTheme.getColorForHimnario(himnario.color);
+    }
+  }
+
+  // Método para obtener el gradiente específico según el nombre del himnario
+  LinearGradient _getGradientForHimnario(String nombre) {
+    if (nombre.toLowerCase().contains('bendición del cielo')) {
+      return const LinearGradient(
+        colors: [AppTheme.bendicionColor, AppTheme.bendicionDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else if (nombre.toLowerCase().contains('coros cristianos')) {
+      return const LinearGradient(
+        colors: [AppTheme.corosColor, AppTheme.corosDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else if (nombre.toLowerCase().contains('cala')) {
+      return const LinearGradient(
+        colors: [AppTheme.calaColor, AppTheme.calaDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else {
+      return AppTheme.getGradientForHimnario(himnario.color);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -41,7 +79,7 @@ class CancionCard extends StatelessWidget {
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
-                    gradient: AppTheme.getGradientForHimnario(himnario.color),
+                    gradient: _getGradientForHimnario(himnario.nombre),
                     borderRadius: BorderRadius.circular(12),
                     boxShadow: [
                       BoxShadow(
@@ -84,7 +122,7 @@ class CancionCard extends StatelessWidget {
                            himnario.nombre,
                            style: TextStyle(
                              fontSize: 12,
-                             color: Colors.grey,
+                             color: _getColorForHimnario(himnario.nombre),
                              fontWeight: FontWeight.w500,
                              fontStyle: FontStyle.italic,
                            ),
@@ -186,9 +224,9 @@ class CancionCard extends StatelessWidget {
                        ),
                      ),
                      const SizedBox(width: 8),
-                     const Icon(
+                     Icon(
                        Icons.chevron_right,
-                       color: Colors.grey,
+                       color: _getColorForHimnario(himnario.nombre),
                        size: 20,
                      ),
                    ],

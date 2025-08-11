@@ -252,6 +252,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                         chipsSeleccionados: chipsSeleccionados,
                         onChipsSeleccionados: (chips) =>
                             setState(() => chipsSeleccionados = chips),
+                        himnarioColor: AppTheme.primaryColor,
                       ),
                     ],
                   ),

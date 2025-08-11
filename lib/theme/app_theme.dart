@@ -55,6 +55,14 @@ class AppTheme {
     119,
     6,
   ); // Amber-600
+  
+  // Nuevos colores específicos para himnarios
+  static const Color bendicionColor = Color.fromARGB(255, 220, 38, 127); // Pink-600
+  static const Color bendicionDarkColor = Color.fromARGB(255, 190, 24, 93); // Pink-700
+  static const Color corosColor = Color.fromARGB(255, 59, 130, 246); // Blue-500
+  static const Color corosDarkColor = Color.fromARGB(255, 37, 99, 235); // Blue-600
+  static const Color calaColor = Color.fromARGB(255, 34, 197, 94); // Green-500
+  static const Color calaDarkColor = Color.fromARGB(255, 22, 163, 74); // Green-600
   static const Color statusBarColor = Color.fromARGB(230, 79, 70, 229);
 
   static ThemeData get lightTheme {
@@ -140,6 +148,24 @@ class AppTheme {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         );
+      case 'bendicion':
+        return const LinearGradient(
+          colors: [bendicionColor, bendicionDarkColor],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
+      case 'coros':
+        return const LinearGradient(
+          colors: [corosColor, corosDarkColor],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
+      case 'cala':
+        return const LinearGradient(
+          colors: [calaColor, calaDarkColor],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
       default:
         return const LinearGradient(
           colors: [primaryColor, secondaryColor],
@@ -158,6 +184,12 @@ class AppTheme {
         return violetColor;
       case 'amber':
         return amberColor;
+      case 'bendicion':
+        return bendicionColor;
+      case 'coros':
+        return corosColor;
+      case 'cala':
+        return calaColor;
       default:
         return primaryColor;
     }

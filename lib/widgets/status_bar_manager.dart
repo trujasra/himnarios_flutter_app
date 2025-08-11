@@ -5,8 +5,8 @@ import '../theme/app_theme.dart';
 
 class StatusBarManager {
   static void setStatusBarColorForHimnario(Himnario himnario) {
-    // Obtener el color principal del himnario
-    final color = AppTheme.getColorForHimnario(himnario.color);
+    // Obtener el color específico según el nombre del himnario
+    final color = _getColorForHimnario(himnario.nombre);
     
     // Determinar si el color es claro u oscuro para ajustar los iconos
     final isLightColor = _isLightColor(color);
@@ -92,6 +92,19 @@ class StatusBarManager {
         ),
       );
     });
+  }
+
+  // Método para obtener el color específico según el nombre del himnario
+  static Color _getColorForHimnario(String nombre) {
+    if (nombre.toLowerCase().contains('bendición del cielo')) {
+      return AppTheme.bendicionColor;
+    } else if (nombre.toLowerCase().contains('coros cristianos')) {
+      return AppTheme.corosColor;
+    } else if (nombre.toLowerCase().contains('cala')) {
+      return AppTheme.calaColor;
+    } else {
+      return AppTheme.getColorForHimnario('default');
+    }
   }
 }
 

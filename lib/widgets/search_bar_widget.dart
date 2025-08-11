@@ -7,6 +7,7 @@ class SearchBarWidget extends StatefulWidget {
   final List<String> chips;
   final List<String> chipsSeleccionados;
   final Function(List<String>) onChipsSeleccionados;
+  final Color? himnarioColor; // Color específico del himnario
 
   const SearchBarWidget({
     super.key,
@@ -15,6 +16,7 @@ class SearchBarWidget extends StatefulWidget {
     required this.chips,
     required this.chipsSeleccionados,
     required this.onChipsSeleccionados,
+    this.himnarioColor, // Color opcional del himnario
   });
 
   @override
@@ -57,14 +59,19 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
 
   @override
   Widget build(BuildContext context) {
+    // Usar el color del himnario si está disponible, sino usar colores por defecto
+    final himnarioColor = widget.himnarioColor ?? const Color.fromARGB(255, 135, 101, 238);
+    final himnarioColorLight = himnarioColor.withOpacity(0.15);
+    final himnarioColorDark = himnarioColor.withOpacity(0.8);
+    
     final chipTitleStyle = TextStyle(
       fontWeight: FontWeight.bold,
       fontSize: 15,
-      color: const Color.fromARGB(255, 239, 213, 252),
+      color: Colors.white70,
     );
-    final chipColor = Colors.white70;// const Color.fromARGB(179, 241, 208, 18).withValues(alpha: 0.6); 
-    final chipColorSelectedBg  = const Color.fromARGB(220, 253, 216, 7).withValues(alpha: 0.6); 
-    final chipUnselectedBg = Color.fromARGB(255, 135, 101, 238);
+    final chipColor = Colors.white70;
+    final chipColorSelectedBg = Colors.white.withOpacity(0.95);
+    final chipUnselectedBg = himnarioColorDark;
     final chipBorder = StadiumBorder(
       side: BorderSide(color: Colors.white70, width: 0.8),
     );
@@ -130,7 +137,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.bold,
-                          color: selected ? Color.fromARGB(255, 79, 70, 229) : chipColor,
+                          color: selected ? Colors.black87 : chipColor,
                         ),
                       ),
                       selected: selected,
@@ -145,7 +152,11 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                         }
                         widget.onChipsSeleccionados(newList);
                       },
-                      shape: chipBorder,
+                      shape: selected 
+                        ? StadiumBorder(
+                            side: BorderSide(color: himnarioColor, width: 1.5),
+                          )
+                        : chipBorder,
                       backgroundColor: selected ? chipColorSelectedBg : chipUnselectedBg,
                       selectedColor: chipColorSelectedBg,
                       labelPadding: const EdgeInsets.symmetric(horizontal: 6),
@@ -155,7 +166,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                         vertical: -2,
                       ),
                       elevation: 1,
-                      shadowColor: chipColorSelectedBg,
+                      shadowColor: himnarioColor,
                     );
                   }).toList(),
                 ),

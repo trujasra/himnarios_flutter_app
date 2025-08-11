@@ -69,7 +69,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
       fontSize: 15,
       color: Colors.white70,
     );
-    final chipColor = Colors.white70;
+    final chipColor = Colors.white;
     final chipColorSelectedBg = Colors.white.withValues(alpha: 0.95);
     final chipUnselectedBg = himnarioColorDark;
     final chipBorder = StadiumBorder(
@@ -101,7 +101,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
           ),
         ),
         if (widget.chips.isNotEmpty) ...[
-          const SizedBox(height: 12),
+          const SizedBox(height: 0),
           Theme(
             data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
             child: ExpansionTile(
@@ -110,7 +110,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                 children: [
                   Icon(
                     Icons.filter_list,
-                    color:  Colors.white70,
+                    color:  Colors.white,
                     size: 20,
                   ),
                   const SizedBox(width: 6),
@@ -118,13 +118,13 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                     'Filtros',
                     style: chipTitleStyle.copyWith(
                       fontSize: 14,
-                      color:  Colors.white70,
+                      color:  Colors.white,
                     ),
                   ),
                 ],
               ),
-              collapsedIconColor: Colors.white70,
-              iconColor: Colors.white70,
+              collapsedIconColor: Colors.white,
+              iconColor: Colors.white,
               children: [
                 Wrap(
                   spacing: 6,

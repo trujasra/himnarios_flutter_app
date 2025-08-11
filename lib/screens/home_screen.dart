@@ -95,10 +95,23 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   List<Cancion> get cancionesFiltradas {
     return canciones.where((cancion) {
       if (chipsSeleccionados.isNotEmpty) {
-        final matchHimnario = chipsSeleccionados.contains(cancion.himnario);
-        final matchIdioma = chipsSeleccionados.contains(cancion.idioma);
-        if (!matchHimnario && !matchIdioma) return false;
+        final himnariosSeleccionados = chipsSeleccionados
+            .where((chip) => himnarios.any((h) => h.nombre == chip))
+            .toList();
+        final idiomasSeleccionados = chipsSeleccionados
+            .where((chip) => idiomas.contains(chip))
+            .toList();
+
+        if (himnariosSeleccionados.isNotEmpty &&
+            !himnariosSeleccionados.contains(cancion.himnario)) {
+          return false;
+        }
+        if (idiomasSeleccionados.isNotEmpty &&
+            !idiomasSeleccionados.contains(cancion.idioma)) {
+          return false;
+        }
       }
+
       if (busqueda.isNotEmpty) {
         final busq = busqueda.toLowerCase();
         final coincideNumero = cancion.numero.toString().contains(busq);
@@ -140,9 +153,168 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
         _favoritos.add(cancionId);
       }
     });
-    
+
     // Llamar al método original para actualizar la base de datos
     await toggleFavorito(cancionId);
+  }
+
+  // Widget título elegante con icono
+  Widget tituloHimnarios() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            gradient: LinearGradient(
+              colors: [const Color.fromARGB(255, 50, 121, 253), const Color.fromARGB(255, 16, 51, 211)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: const Color.fromARGB(255, 25, 189, 210).withValues(alpha: 0.4),
+                blurRadius: 6,
+                offset: const Offset(2, 2),
+              ),
+            ],
+          ),
+          child: const Icon(
+            Icons.menu_book_rounded,
+            color: Colors.white,
+            size: 30,
+            shadows: [
+              Shadow(
+                color: Colors.black26,
+                blurRadius: 3,
+                offset: Offset(1, 1),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(width: 7),
+        Expanded(
+          child: Text(
+            'Himnarios Disponibles',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 24,
+              fontWeight: FontWeight.w600,
+              color: AppTheme.primaryColor,
+              height: 0.98,
+              letterSpacing: 0,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // Widget título elegante para "Resultados para"
+  Widget tituloResultados(String busqueda) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          padding: const EdgeInsets.all(6),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            gradient: LinearGradient(
+              colors: [const Color.fromARGB(255, 50, 121, 253), const Color.fromARGB(255, 16, 51, 211)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: const Color.fromARGB(255, 25, 189, 210).withValues(alpha: 0.4),
+                blurRadius: 6,
+                offset: const Offset(2, 2),
+              ),
+            ],
+          ),
+          child: const Icon(
+            Icons.search_rounded,
+            color: Colors.white,
+            size: 26,
+            shadows: [
+              Shadow(
+                color: Colors.black26,
+                blurRadius: 3,
+                offset: Offset(1, 1),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Text(
+            'Resultados para "$busqueda"',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 22,
+              fontWeight: FontWeight.w600,
+              color: AppTheme.primaryColor,
+              height: 0.98,
+              letterSpacing: 0,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // Widget título elegante para "Favoritas"
+  Widget tituloFavoritos() {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          padding: const EdgeInsets.all(6),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            gradient: LinearGradient(
+              colors: [Colors.red.shade400, Colors.red.shade700],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.red.shade900.withValues(alpha: 0.4),
+                blurRadius: 6,
+                offset: const Offset(2, 2),
+              ),
+            ],
+          ),
+          child: const Icon(
+            Icons.favorite,
+            color: Colors.white,
+            size: 26,
+            shadows: [
+              Shadow(
+                color: Colors.black26,
+                blurRadius: 3,
+                offset: Offset(1, 1),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Text(
+            'Favoritos',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 22,
+              fontWeight: FontWeight.w600,
+              color: AppTheme.primaryColor,
+              height: 0.98,
+              letterSpacing: 0,
+            ),
+          ),
+        ),
+      ],
+    );
   }
 
   @override
@@ -169,9 +341,11 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                   gradient: AppTheme.mainGradient,
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16.0,
-                    vertical: 16.0,
+                  padding: const EdgeInsets.only(
+                    left: 16.0,
+                    right: 16.0,
+                    top: 16.0,
+                    bottom: 1.0,
                   ),
                   child: Column(
                     children: [
@@ -273,14 +447,16 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                           children: [
                             // Resultados de búsqueda primero
                             if (busqueda.isNotEmpty) ...[
-                              Text(
+                              tituloResultados(busqueda),
+
+                              /*Text(
                                 'Resultados para "$busqueda"',
                                 style: const TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
                                   color: AppTheme.textColor,
                                 ),
-                              ),
+                              ),*/
                               const SizedBox(height: 16),
                               if (cancionesFiltradas.isEmpty)
                                 const Card(
@@ -302,33 +478,33 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                   final himnarioCancion = himnarios.firstWhere(
                                     (h) => h.nombre == cancion.himnario,
                                   );
-                                                                     return CancionCard(
-                                     cancion: cancion,
-                                     himnario: himnarioCancion,
-                                     isFavorite: _favoritos.contains(cancion.id),
-                                     mostrarHimnario:
-                                         true, // Mostrar himnario en resultados de búsqueda
-                                     onTap: () {
-                                       Navigator.push(
-                                         context,
-                                         MaterialPageRoute(
-                                           builder: (context) => CancionScreen(
-                                             cancion: cancion,
-                                             himnario: himnarioCancion,
-                                             favoritos: _favoritos,
-                                             onToggleFavorito: _toggleFavorito,
-                                           ),
-                                         ),
-                                       );
-                                     },
-                                     onToggleFavorito: () =>
-                                         _toggleFavorito(cancion.id),
-                                   );
+                                  return CancionCard(
+                                    cancion: cancion,
+                                    himnario: himnarioCancion,
+                                    isFavorite: _favoritos.contains(cancion.id),
+                                    mostrarHimnario:
+                                        true, // Mostrar himnario en resultados de búsqueda
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => CancionScreen(
+                                            cancion: cancion,
+                                            himnario: himnarioCancion,
+                                            favoritos: _favoritos,
+                                            onToggleFavorito: _toggleFavorito,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    onToggleFavorito: () =>
+                                        _toggleFavorito(cancion.id),
+                                  );
                                 }),
                               const SizedBox(height: 32),
                             ],
                             // Menú de himnarios siempre debajo de los resultados
-                            Row(
+                            /*Row(
                               children: [
                                 const Icon(
                                   Icons.book,
@@ -345,30 +521,32 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                   ),
                                 ),
                               ],
-                            ),
+                            ),*/
+                            tituloHimnarios(),
                             const SizedBox(height: 16),
                             // Lista de himnarios
                             ...himnarios.map(
                               (himnario) => HimnarioCard(
                                 himnario: himnario,
-                                                                 onTap: () {
-                                   Navigator.push(
-                                     context,
-                                     MaterialPageRoute(
-                                       builder: (context) => HimnarioScreen(
-                                         himnario: himnario,
-                                         favoritos: _favoritos,
-                                         onToggleFavorito: _toggleFavorito,
-                                       ),
-                                     ),
-                                   );
-                                 },
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HimnarioScreen(
+                                        himnario: himnario,
+                                        favoritos: _favoritos,
+                                        onToggleFavorito: _toggleFavorito,
+                                      ),
+                                    ),
+                                  );
+                                },
                               ),
                             ),
                             const SizedBox(height: 24),
-                                                         // Canciones favoritas
-                             if (_favoritos.isNotEmpty) ...[
-                              Row(
+                            // Canciones favoritas
+                            if (_favoritos.isNotEmpty) ...[
+                              tituloFavoritos(),
+                              /*Row(
                                 children: [
                                   const Icon(
                                     Icons.favorite,
@@ -385,11 +563,11 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                     ),
                                   ),
                                 ],
-                              ),
+                              ),*/
                               const SizedBox(height: 12),
-                                                             ...canciones
-                                   .where((c) => _favoritos.contains(c.id))
-                                   .map((cancion) {
+                              ...canciones
+                                  .where((c) => _favoritos.contains(c.id))
+                                  .map((cancion) {
                                     final himnarioCancion = himnarios
                                         .firstWhere(
                                           (h) => h.nombre == cancion.himnario,
@@ -398,21 +576,21 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                       cancion: cancion,
                                       himnario: himnarioCancion,
                                       isFavorite: true,
-                                                                             onTap: () {
-                                         Navigator.push(
-                                           context,
-                                           MaterialPageRoute(
-                                             builder: (context) => CancionScreen(
-                                               cancion: cancion,
-                                               himnario: himnarioCancion,
-                                               favoritos: _favoritos,
-                                               onToggleFavorito: _toggleFavorito,
-                                             ),
-                                           ),
-                                         );
-                                       },
-                                       onToggleFavorito: () =>
-                                           _toggleFavorito(cancion.id),
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => CancionScreen(
+                                              cancion: cancion,
+                                              himnario: himnarioCancion,
+                                              favoritos: _favoritos,
+                                              onToggleFavorito: _toggleFavorito,
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                      onToggleFavorito: () =>
+                                          _toggleFavorito(cancion.id),
                                     );
                                   }),
                               const SizedBox(height: 24),

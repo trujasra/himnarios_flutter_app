@@ -219,7 +219,12 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                   gradient: _getGradientForHimnario(widget.himnario.nombre),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.only(
+                    left: 16.0,
+                    right: 16.0,
+                    top: 16.0,
+                    bottom: 1.0,
+                  ),
                   child: Column(
                     children: [
                       // Barra superior con botones
@@ -313,7 +318,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                         ),
                       )
                     : ListView.builder(
-                        padding: const EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(9.0),
                         itemCount: cancionesDelHimnario.length,
                         itemBuilder: (context, index) {
                           final cancion = cancionesDelHimnario[index];

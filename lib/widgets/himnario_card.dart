@@ -328,13 +328,13 @@ class HimnarioCard extends StatelessWidget {
   Color _getColorForIdioma(String idioma) {
     switch (idioma.toLowerCase()) {
       case 'aymara':
-        return const Color(0xFF27AE60);
+        return const Color.fromARGB(255, 187, 113, 1);
       case 'español':
-        return const Color(0xFFE74C3C);
+        return const Color.fromARGB(255, 0, 156, 135); // Rojo elegante para Español
       case 'quechua':
-        return const Color(0xFF4A90E2);
+        return const Color(0xFF4A90E2); // Azul elegante para Aymara
       default:
-        return Colors.grey;
+        return Colors.grey; // Color por defecto
     }
   }
 }

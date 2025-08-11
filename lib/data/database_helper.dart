@@ -459,7 +459,7 @@ class DatabaseHelper {
       INNER JOIN Par_Idioma i ON c.id_idioma = i.id_idioma
       LEFT JOIN Letra l ON c.id_cancion = l.id_cancion
       WHERE c.estado_registro = 1
-      ORDER BY c.id_tipo_himnario, c.numero, c.orden
+      ORDER BY CAST(c.numero AS INTEGER), c.id_tipo_himnario, c.orden
     ''');
   }
 

@@ -31,20 +31,20 @@ class _CancionScreenState extends State<CancionScreen>
   late TabController _tabController;
   int _currentTabIndex = 0;
   List<Cancion>? _versionesCancion;
-  // Estado local de favoritos que se sincroniza con el callback
   late List<int> _favoritos;
-  // Estado para el tamaño de la letra
   double _fontSize = 22.0;
   static const double _minFontSize = 16.0;
   static const double _maxFontSize = 32.0;
   static const double _fontSizeStep = 2.0;
 
+  final colorIcon = Colors.yellow[50];
+  final tamanioIcon = 19.0;
+
   @override
   void initState() {
     super.initState();
-    _favoritos = List.from(widget.favoritos); // Copia local del estado
+    _favoritos = List.from(widget.favoritos);
     _cargarVersionesCancion();
-    // Configurar la barra de estado con el color del himnario
     StatusBarManager.setStatusBarColor(
       _getColorForHimnario(widget.himnario.nombre),
     );
@@ -53,7 +53,6 @@ class _CancionScreenState extends State<CancionScreen>
   @override
   void didUpdateWidget(CancionScreen oldWidget) {
     super.didUpdateWidget(oldWidget);
-    // Actualizar el estado local cuando cambian los favoritos externos
     if (oldWidget.favoritos != widget.favoritos) {
       setState(() {
         _favoritos = List.from(widget.favoritos);
@@ -63,7 +62,6 @@ class _CancionScreenState extends State<CancionScreen>
 
   @override
   void onEnterScreen() {
-    // Configurar la barra de estado cuando entramos a esta pantalla
     StatusBarManager.setStatusBarColorWithDelay(
       _getColorForHimnario(widget.himnario.nombre),
     );
@@ -71,13 +69,11 @@ class _CancionScreenState extends State<CancionScreen>
 
   @override
   void onReturnToScreen() {
-    // Configurar la barra de estado cuando regresamos a esta pantalla
     StatusBarManager.setStatusBarColorWithDelay(
       _getColorForHimnario(widget.himnario.nombre),
     );
   }
 
-  // Método para manejar el toggle de favoritos con actualización inmediata
   void _toggleFavorito(int cancionId) async {
     setState(() {
       if (_favoritos.contains(cancionId)) {
@@ -86,12 +82,9 @@ class _CancionScreenState extends State<CancionScreen>
         _favoritos.add(cancionId);
       }
     });
-
-    // Llamar al callback para actualizar el estado global
     widget.onToggleFavorito(cancionId);
   }
 
-  // Método para aumentar el tamaño de la letra
   void _aumentarLetra() {
     setState(() {
       if (_fontSize < _maxFontSize) {
@@ -100,7 +93,6 @@ class _CancionScreenState extends State<CancionScreen>
     });
   }
 
-  // Método para disminuir el tamaño de la letra
   void _disminuirLetra() {
     setState(() {
       if (_fontSize > _minFontSize) {
@@ -109,7 +101,6 @@ class _CancionScreenState extends State<CancionScreen>
     });
   }
 
-  // Método para compartir la canción
   void _compartirCancion() {
     final cancion = cancionActual;
     final himnario = widget.himnario;
@@ -126,7 +117,6 @@ ${cancion.letra}
 Compartido desde Himnarios App
 ''';
 
-    // Usar el plugin de compartir
     Share.share(
       textoCompartir,
       subject: 'Canción: ${cancion.titulo} - ${himnario.nombre}',
@@ -141,42 +131,22 @@ Compartido desde Himnarios App
     super.dispose();
   }
 
-  // Cargar todas las versiones de la canción actual
   Future<void> _cargarVersionesCancion() async {
     final cancionesService = CancionesService();
     final todasLasCanciones = await cancionesService.getCancionesPorHimnario(
       widget.cancion.himnario,
     );
 
-    print(
-      'DEBUG: Todas las canciones del himnario: ${todasLasCanciones.length}',
-    );
-    for (var c in todasLasCanciones) {
-      print('  - Canción ${c.numero}: ${c.titulo} (${c.idioma})');
-    }
-
-    // Buscar todas las versiones de la canción actual (mismo número)
     final versiones = todasLasCanciones
         .where((c) => c.numero == widget.cancion.numero)
         .toList();
-
-    print('DEBUG: Buscando canción número ${widget.cancion.numero}');
-    print('DEBUG: Versiones encontradas: ${versiones.length}');
-    for (var v in versiones) {
-      print(
-        '  - Versión: ${v.titulo} (${v.idioma}) - Letra: ${v.letra.isNotEmpty ? "SÍ" : "NO"}',
-      );
-    }
 
     setState(() {
       _versionesCancion = versiones;
     });
 
-    // Inicializar TabController si hay múltiples versiones
     if (versiones.length > 1) {
       _tabController = TabController(length: versiones.length, vsync: this);
-
-      // Encontrar el índice de la versión actual
       final indexActual = versiones.indexWhere(
         (c) => c.idioma == widget.cancion.idioma,
       );
@@ -184,7 +154,6 @@ Compartido desde Himnarios App
         _tabController.index = indexActual;
         _currentTabIndex = indexActual;
       }
-
       _tabController.addListener(() {
         setState(() {
           _currentTabIndex = _tabController.index;
@@ -193,130 +162,70 @@ Compartido desde Himnarios App
     }
   }
 
-  // Obtener la canción actual (versión seleccionada o la original)
   Cancion get cancionActual {
-    print(
-      'DEBUG: cancionActual - _versionesCancion: ${_versionesCancion?.length ?? "null"}',
-    );
-
     if (_versionesCancion != null) {
       if (_versionesCancion!.length > 1) {
-        print(
-          'DEBUG: Usando versión múltiple: ${_versionesCancion![_currentTabIndex].titulo}',
-        );
         return _versionesCancion![_currentTabIndex];
       } else if (_versionesCancion!.length == 1) {
-        print(
-          'DEBUG: Usando versión única: ${_versionesCancion![0].titulo} - Letra: ${_versionesCancion![0].letra.isNotEmpty ? "SÍ" : "NO"}',
-        );
         return _versionesCancion![0];
       }
     }
-    print(
-      'DEBUG: Usando widget.cancion: ${widget.cancion.titulo} - Letra: ${widget.cancion.letra.isNotEmpty ? "SÍ" : "NO"}',
-    );
     return widget.cancion;
   }
 
-  // Verificar si hay múltiples versiones
   bool get tieneMultiplesVersiones =>
       _versionesCancion != null && _versionesCancion!.length > 1;
 
-  // Formatear la letra con estilos especiales
   Widget _formatearLetra(String letra) {
     final lineas = letra.split('\n');
     final widgets = <Widget>[];
 
-    for (int i = 0; i < lineas.length; i++) {
-      final linea = lineas[i].trim();
-
-      // Espacio extra si es línea vacía (separación de estrofas)
-      // if (linea.isEmpty) {
-      //   widgets.add(const SizedBox(height: 30));
-      //   continue;
-      // }
-
+    for (final linea in lineas) {
       if (linea.startsWith('(') && linea.endsWith(')')) {
-        // Usar el color específico del himnario para las notas musicales
         final himnarioColor = _getColorForHimnario(widget.himnario.nombre);
-        final noteColorLight = himnarioColor.withValues(alpha: 0.15);
-        final noteColorBorder = himnarioColor.withValues(alpha: 0.4);
-
         widgets.add(
           Container(
             margin: const EdgeInsets.symmetric(vertical: 0.5),
             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
             decoration: BoxDecoration(
-              color: noteColorLight,
-              borderRadius: BorderRadius.circular(6),
-              border: Border.all(color: noteColorBorder, width: 0.8),
-              boxShadow: [
-                BoxShadow(
-                  color: himnarioColor.withValues(alpha: 0.06),
-                  blurRadius: 2,
-                  offset: const Offset(0, 1),
-                ),
-              ],
+              color: himnarioColor.withValues(alpha: 0.15),
+              borderRadius: BorderRadius.circular(9),
+              border: Border.all(color: himnarioColor.withValues(alpha: 0.4)),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.music_note, size: 8, color: himnarioColor),
+                Icon(Icons.music_note, size: 11, color: himnarioColor),
                 const SizedBox(width: 2),
                 Text(
                   linea,
                   style: TextStyle(
-                    fontSize: 9,
+                    fontSize: 11,
                     fontWeight: FontWeight.w600,
                     color: himnarioColor,
-                    letterSpacing: 0.1,
                   ),
                 ),
               ],
             ),
           ),
         );
-      }
-      // Detectar si es CORO
-      else if (linea.toUpperCase() == 'CORO' ||
-          linea.toUpperCase() == 'CORO:' ||
-          linea.toUpperCase() == 'CORO :') {
+      } else if (linea.toUpperCase().startsWith('CORO')) {
         widgets.add(
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 3),
             child: Text(
               linea,
-              style: const TextStyle(
-                fontSize: 20,
+              style: TextStyle(
+                fontSize: _fontSize,
                 fontWeight: FontWeight.bold,
                 color: AppTheme.textColor,
                 fontStyle: FontStyle.italic,
-                height: 1.0,
               ),
               textAlign: TextAlign.center,
             ),
           ),
         );
-      }
-      // Detectar si es autor (líneas que contienen nombres comunes de autores)
-      // else if (_esAutor(linea)) {
-      //   widgets.add(
-      //     Padding(
-      //       padding: const EdgeInsets.only(top: 20, bottom: 8),
-      //       child: Text(
-      //         linea,
-      //         style: TextStyle(
-      //           fontSize: 14,
-      //           color: Colors.orange[700],
-      //           fontStyle: FontStyle.italic,
-      //         ),
-      //         textAlign: TextAlign.center,
-      //       ),
-      //     ),
-      //   );
-      // }
-      // Texto normal de la letra
-      else {
+      } else {
         widgets.add(
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 2),
@@ -337,20 +246,6 @@ Compartido desde Himnarios App
     return Column(children: widgets);
   }
 
-  // Detectar si una línea es autor
-  bool _esAutor(String linea) {
-    final autores = [
-      'Mario Zeballos',
-      'Guillermo Zeballos',
-      'Zeballos',
-      'Ch.',
-      'Ch',
-    ];
-
-    return autores.any((autor) => linea.contains(autor));
-  }
-
-  // Método para obtener el color específico según el nombre del himnario
   Color _getColorForHimnario(String nombre) {
     if (nombre.toLowerCase().contains('bendición del cielo')) {
       return AppTheme.bendicionColor;
@@ -367,7 +262,6 @@ Compartido desde Himnarios App
     }
   }
 
-  // Método para obtener el gradiente específico según el nombre del himnario
   LinearGradient _getGradientForHimnario(String nombre) {
     if (nombre.toLowerCase().contains('bendición del cielo')) {
       return const LinearGradient(
@@ -418,87 +312,100 @@ Compartido desde Himnarios App
         child: SafeArea(
           child: Column(
             children: [
-              // Header con botón de regreso y favorito
+              // 🔹 Encabezado rediseñado
               Container(
                 decoration: BoxDecoration(
                   gradient: _getGradientForHimnario(widget.himnario.nombre),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Row(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 8,
+                  ),
+                  child: Column(
                     children: [
-                      IconButton(
-                        onPressed: () => Navigator.pop(context),
-                        icon: const Icon(Icons.arrow_back, color: Colors.white),
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(
-                              '#${cancionActual.numero} - ${cancionActual.titulo}',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w700,
-                              ),
-                              textAlign: TextAlign.center,
-                              maxLines: 2,
-                            ),
-                            Text(
-                              widget.himnario.nombre,
-                              style: TextStyle(
-                                color: Colors.yellow[100],
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
-                        ),
-                      ),
-                      // Botones de control
                       Row(
-                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          // Botón para disminuir letra
+                          IconButton(
+                            onPressed: () => Navigator.pop(context),
+                            icon: const Icon(
+                              Icons.arrow_back,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  '${cancionActual.numero} - ${cancionActual.titulo}',
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Poppins',
+                                    height: 0.85,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                  maxLines: 2,
+                                ),
+                                Text(
+                                  widget.himnario.nombre,
+                                  style: TextStyle(
+                                    color: Colors.yellow[200],
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w500,
+                                    fontStyle: FontStyle.italic,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(width: 48), // Para mantener centrado
+                        ],
+                      ),
+                      const SizedBox(height: 0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
                           IconButton(
                             onPressed: _disminuirLetra,
-                            icon: const Icon(
-                              Icons.remove_circle_outline,
-                              color: Colors.white,
-                              size: 20,
+                            icon: Icon(
+                              Icons.text_decrease_rounded,
+                              color: colorIcon,
+                              size: tamanioIcon,
                             ),
-                            tooltip: 'Disminuir letra',
                           ),
-                          // Botón para aumentar letra
+                          const SizedBox(width: 4),
                           IconButton(
                             onPressed: _aumentarLetra,
-                            icon: const Icon(
-                              Icons.add_circle_outline,
-                              color: Colors.white,
-                              size: 20,
+                            icon: Icon(
+                              Icons.text_increase_rounded,
+                              color: colorIcon,
+                              size: tamanioIcon,
                             ),
-                            tooltip: 'Aumentar letra',
                           ),
-                          // Botón para compartir
+                          const SizedBox(width: 4),
                           IconButton(
                             onPressed: _compartirCancion,
-                            icon: const Icon(
+                            icon: Icon(
                               Icons.share,
-                              color: Colors.white,
-                              size: 20,
+                              color: colorIcon,
+                              size: tamanioIcon,
                             ),
-                            tooltip: 'Compartir canción',
                           ),
-                          // Botón de favorito
+                          const SizedBox(width: 4),
                           IconButton(
                             onPressed: () => _toggleFavorito(cancionActual.id),
                             icon: Icon(
                               _favoritos.contains(cancionActual.id)
                                   ? Icons.favorite
                                   : Icons.favorite_border,
-                              color: Colors.white,
+                              color: _favoritos.contains(cancionActual.id)
+                                  ? Colors.white
+                                  : colorIcon,
+                              size: tamanioIcon,
                             ),
                           ),
                         ],
@@ -508,19 +415,9 @@ Compartido desde Himnarios App
                 ),
               ),
 
-              // Pestañas de idiomas (solo si hay múltiples versiones)
-              if (tieneMultiplesVersiones) ...[
+              if (tieneMultiplesVersiones)
                 Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.05),
-                        blurRadius: 8,
-                        offset: const Offset(0, 2),
-                      ),
-                    ],
-                  ),
+                  color: Colors.white,
                   child: TabBar(
                     controller: _tabController,
                     labelColor: _getColorForHimnario(widget.himnario.nombre),
@@ -528,109 +425,41 @@ Compartido desde Himnarios App
                     indicatorColor: _getColorForHimnario(
                       widget.himnario.nombre,
                     ),
-                    indicatorWeight: 3,
-                    indicatorSize: TabBarIndicatorSize.tab,
-                    labelStyle: const TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 0.3,
-                    ),
-                    unselectedLabelStyle: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: 0.2,
-                    ),
-                    dividerColor: Colors.transparent,
                     tabs: _versionesCancion!.map((version) {
                       return Tab(
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 8,
-                            vertical: 4,
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color:
-                                _tabController.index ==
-                                    _versionesCancion!.indexOf(version)
-                                ? _getColorForHimnario(
-                                    widget.himnario.nombre,
-                                  ).withValues(alpha: 0.1)
-                                : Colors.transparent,
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(
-                                Icons.language,
-                                size: 14,
-                                color:
-                                    _tabController.index ==
-                                        _versionesCancion!.indexOf(version)
-                                    ? _getColorForHimnario(
-                                        widget.himnario.nombre,
-                                      )
-                                    : Colors.grey.shade600,
-                              ),
-                              const SizedBox(width: 6),
-                              Text(
-                                version.idioma,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight:
-                                      _tabController.index ==
-                                          _versionesCancion!.indexOf(version)
-                                      ? FontWeight.w600
-                                      : FontWeight.w500,
-                                  color:
-                                      _tabController.index ==
-                                          _versionesCancion!.indexOf(version)
-                                      ? _getColorForHimnario(
-                                          widget.himnario.nombre,
-                                        )
-                                      : Colors.grey.shade600,
-                                ),
-                              ),
-                            ],
-                          ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.language, size: 16),
+                            const SizedBox(width: 4),
+                            Text(version.idioma),
+                          ],
                         ),
                       );
                     }).toList(),
                   ),
                 ),
-              ],
 
-              // Contenido de la canción
               Expanded(
                 child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 0.0,
-                    vertical: 16.0,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // Letra de la canción con zoom - Fondo blanco que ocupa todo el ancho
-                      Card(
-                        margin: EdgeInsets.zero,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.zero,
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  child: Card(
+                    margin: EdgeInsets.zero,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.zero,
+                    ),
+                    child: InteractiveViewer(
+                      minScale: 0.5,
+                      maxScale: 4.0,
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0,
+                          vertical: 20.0,
                         ),
-                        child: InteractiveViewer(
-                          minScale: 0.5,
-                          maxScale: 4.0,
-                          child: Container(
-                            width: double.infinity,
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16.0,
-                              vertical: 20.0,
-                            ),
-                            child: _formatearLetra(cancionActual.letra),
-                          ),
-                        ),
+                        child: _formatearLetra(cancionActual.letra),
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ),

@@ -2,18 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AppTheme {
-  static const Color primaryColor = Color.fromARGB(
-    255,
-    0,
-    26,
-    139,
-  ); // Indigo-600
-  static const Color secondaryColor = Color.fromARGB(
-    255,
-    0,
-    33,
-    182,
-  ); // Purple-600
+  static const Color primaryColor = Color.fromARGB(255, 0, 18, 99); // Indigo-600
+  static const Color secondaryColor = Color.fromARGB(255, 0, 27, 148); // Purple-600
   static const Color backgroundColor = Color.fromARGB(
     255,
     248,

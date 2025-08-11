@@ -83,6 +83,10 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
       return AppTheme.corosColor;
     } else if (nombre.toLowerCase().contains('cala')) {
       return AppTheme.calaColor;
+    } else if (nombre.toLowerCase().contains('poder del')) {
+      return AppTheme.poderColor;
+    } else if (nombre.toLowerCase().contains('lluvias de')) {
+      return AppTheme.lluviasColor;
     } else {
       return AppTheme.getColorForHimnario(widget.himnario.color);
     }
@@ -90,7 +94,7 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
 
   // Método para obtener el gradiente específico según el nombre del himnario
   LinearGradient _getGradientForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
+     if (nombre.toLowerCase().contains('bendición del cielo')) {
       return const LinearGradient(
         colors: [AppTheme.bendicionColor, AppTheme.bendicionDarkColor],
         begin: Alignment.topLeft,
@@ -105,6 +109,18 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
     } else if (nombre.toLowerCase().contains('cala')) {
       return const LinearGradient(
         colors: [AppTheme.calaColor, AppTheme.calaDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else if (nombre.toLowerCase().contains('poder del')) {
+      return const LinearGradient(
+        colors: [AppTheme.poderColor, AppTheme.poderDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else if (nombre.toLowerCase().contains('lluvias de')) {
+      return const LinearGradient(
+        colors: [AppTheme.lluviasColor, AppTheme.lluviasDarkColor],
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       );

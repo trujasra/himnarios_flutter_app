@@ -61,8 +61,8 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
   Widget build(BuildContext context) {
     // Usar el color del himnario si está disponible, sino usar colores por defecto
     final himnarioColor = widget.himnarioColor ?? const Color.fromARGB(255, 135, 101, 238);
-    final himnarioColorLight = himnarioColor.withOpacity(0.15);
-    final himnarioColorDark = himnarioColor.withOpacity(0.8);
+    final himnarioColorLight = himnarioColor.withValues(alpha: 0.15);
+    final himnarioColorDark = himnarioColor.withValues(alpha: 0.8);
     
     final chipTitleStyle = TextStyle(
       fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
       color: Colors.white70,
     );
     final chipColor = Colors.white70;
-    final chipColorSelectedBg = Colors.white.withOpacity(0.95);
+    final chipColorSelectedBg = Colors.white.withValues(alpha: 0.95);
     final chipUnselectedBg = himnarioColorDark;
     final chipBorder = StadiumBorder(
       side: BorderSide(color: Colors.white70, width: 0.8),

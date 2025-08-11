@@ -43,7 +43,9 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
     _favoritos = List.from(widget.favoritos); // Copia local del estado
     _cargarCanciones();
     // Configurar la barra de estado con el color del himnario
-    StatusBarManager.setStatusBarColor(_getColorForHimnario(widget.himnario.nombre));
+    StatusBarManager.setStatusBarColor(
+      _getColorForHimnario(widget.himnario.nombre),
+    );
   }
 
   @override
@@ -66,7 +68,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
         _favoritos.add(cancionId);
       }
     });
-    
+
     // Llamar al callback para actualizar el estado global
     widget.onToggleFavorito(cancionId);
   }
@@ -74,13 +76,17 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
   @override
   void onEnterScreen() {
     // Configurar la barra de estado cuando entramos a esta pantalla
-    StatusBarManager.setStatusBarColorWithDelay(_getColorForHimnario(widget.himnario.nombre));
+    StatusBarManager.setStatusBarColorWithDelay(
+      _getColorForHimnario(widget.himnario.nombre),
+    );
   }
 
   @override
   void onReturnToScreen() {
     // Configurar la barra de estado cuando regresamos a esta pantalla
-    StatusBarManager.setStatusBarColorWithDelay(_getColorForHimnario(widget.himnario.nombre));
+    StatusBarManager.setStatusBarColorWithDelay(
+      _getColorForHimnario(widget.himnario.nombre),
+    );
   }
 
   // Método para obtener el color específico según el nombre del himnario
@@ -91,6 +97,10 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
       return AppTheme.corosColor;
     } else if (nombre.toLowerCase().contains('cala')) {
       return AppTheme.calaColor;
+    } else if (nombre.toLowerCase().contains('poder del')) {
+      return AppTheme.poderColor;
+    } else if (nombre.toLowerCase().contains('lluvias de')) {
+      return AppTheme.lluviasColor;
     } else {
       return AppTheme.getColorForHimnario(widget.himnario.color);
     }
@@ -113,6 +123,18 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
     } else if (nombre.toLowerCase().contains('cala')) {
       return const LinearGradient(
         colors: [AppTheme.calaColor, AppTheme.calaDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else if (nombre.toLowerCase().contains('poder del')) {
+      return const LinearGradient(
+        colors: [AppTheme.poderColor, AppTheme.poderDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else if (nombre.toLowerCase().contains('lluvias de')) {
+      return const LinearGradient(
+        colors: [AppTheme.lluviasColor, AppTheme.lluviasDarkColor],
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       );
@@ -251,16 +273,18 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                       ),
                       const SizedBox(height: 16),
                       // Buscador y filtros
-                                             SearchBarWidget(
-                         busqueda: busqueda,
-                         onBusquedaChanged: (value) =>
-                             setState(() => busqueda = value),
-                         chips: chips,
-                         chipsSeleccionados: chipsSeleccionados,
-                         onChipsSeleccionados: (chips) =>
-                             setState(() => chipsSeleccionados = chips),
-                         himnarioColor: _getColorForHimnario(widget.himnario.nombre),
-                       ),
+                      SearchBarWidget(
+                        busqueda: busqueda,
+                        onBusquedaChanged: (value) =>
+                            setState(() => busqueda = value),
+                        chips: chips,
+                        chipsSeleccionados: chipsSeleccionados,
+                        onChipsSeleccionados: (chips) =>
+                            setState(() => chipsSeleccionados = chips),
+                        himnarioColor: _getColorForHimnario(
+                          widget.himnario.nombre,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -268,11 +292,11 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
               // Lista de canciones
               Expanded(
                 child: isLoading
-                                           ? Center(
-                         child: CircularProgressIndicator(
-                           color: _getColorForHimnario(widget.himnario.nombre),
-                         ),
-                       )
+                    ? Center(
+                        child: CircularProgressIndicator(
+                          color: _getColorForHimnario(widget.himnario.nombre),
+                        ),
+                      )
                     : cancionesDelHimnario.isEmpty
                     ? const Center(
                         child: Card(

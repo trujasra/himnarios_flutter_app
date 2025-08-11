@@ -6,11 +6,7 @@ class HimnarioCard extends StatelessWidget {
   final Himnario himnario;
   final VoidCallback onTap;
 
-  const HimnarioCard({
-    super.key,
-    required this.himnario,
-    required this.onTap,
-  });
+  const HimnarioCard({super.key, required this.himnario, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +18,7 @@ class HimnarioCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha: 0.1),
               blurRadius: 8,
               offset: const Offset(0, 4),
             ),
@@ -44,8 +40,8 @@ class HimnarioCard extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        _getColorForHimnario(himnario.nombre).withOpacity(0.8),
-                        _getColorForHimnario(himnario.nombre).withOpacity(0.6),
+                        _getColorForHimnario(himnario.nombre).withValues(alpha: 0.8),
+                        _getColorForHimnario(himnario.nombre).withValues(alpha: 0.6),
                       ],
                     ),
                   ),
@@ -55,7 +51,7 @@ class HimnarioCard extends StatelessWidget {
                       Positioned.fill(
                         child: CustomPaint(
                           painter: MenuPatternPainter(
-                            color: Colors.white.withOpacity(0.1),
+                            color: Colors.white.withValues(alpha: 0.1),
                           ),
                         ),
                       ),
@@ -69,10 +65,10 @@ class HimnarioCard extends StatelessWidget {
                               width: 60,
                               height: 60,
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
+                                color: Colors.white.withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(12),
                                 border: Border.all(
-                                  color: Colors.white.withOpacity(0.3),
+                                  color: Colors.white.withValues(alpha: 0.3),
                                   width: 2,
                                 ),
                               ),
@@ -93,11 +89,13 @@ class HimnarioCard extends StatelessWidget {
                                     himnario.nombre,
                                     style: const TextStyle(
                                       fontFamily: 'Berkshire Swash',
-                                      fontSize: 20, // Reducido para títulos largos
+                                      fontSize:
+                                          20, // Reducido para títulos largos
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
                                     ),
-                                    overflow: TextOverflow.visible, // Mostrar texto completo
+                                    overflow: TextOverflow
+                                        .visible, // Mostrar texto completo
                                     maxLines: 2, // Permitir hasta 2 líneas
                                   ),
                                   const SizedBox(height: 4),
@@ -105,7 +103,7 @@ class HimnarioCard extends StatelessWidget {
                                     himnario.descripcion,
                                     style: TextStyle(
                                       fontSize: 12, // Reducido ligeramente
-                                      color: Colors.white.withOpacity(0.9),
+                                      color: Colors.white.withValues(alpha: 0.9),
                                       fontStyle: FontStyle.italic,
                                     ),
                                     overflow: TextOverflow.ellipsis,
@@ -121,10 +119,10 @@ class HimnarioCard extends StatelessWidget {
                                 vertical: 6,
                               ),
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
+                                color: Colors.white.withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(20),
                                 border: Border.all(
-                                  color: Colors.white.withOpacity(0.3),
+                                  color: Colors.white.withValues(alpha: 0.3),
                                 ),
                               ),
                               child: Row(
@@ -156,9 +154,7 @@ class HimnarioCard extends StatelessWidget {
                 // Footer con idiomas y botón
                 Container(
                   padding: const EdgeInsets.all(16.0),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),
+                  decoration: BoxDecoration(color: Colors.white),
                   child: Row(
                     children: [
                       // Idiomas disponibles
@@ -195,7 +191,9 @@ class HimnarioCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                           boxShadow: [
                             BoxShadow(
-                              color: _getColorForHimnario(himnario.nombre).withOpacity(0.3),
+                              color: _getColorForHimnario(
+                                himnario.nombre,
+                              ).withValues(alpha: 0.3),
                               blurRadius: 4,
                               offset: const Offset(0, 2),
                             ),
@@ -266,6 +264,18 @@ class HimnarioCard extends StatelessWidget {
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       );
+    } else if (nombre.toLowerCase().contains('poder del')) {
+      return const LinearGradient(
+        colors: [AppTheme.poderColor, AppTheme.poderDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } else if (nombre.toLowerCase().contains('lluvias de')) {
+      return const LinearGradient(
+        colors: [AppTheme.lluviasColor, AppTheme.lluviasDarkColor],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
     } else {
       return AppTheme.getGradientForHimnario(himnario.color);
     }
@@ -279,6 +289,10 @@ class HimnarioCard extends StatelessWidget {
       return AppTheme.corosColor;
     } else if (nombre.toLowerCase().contains('cala')) {
       return AppTheme.calaColor;
+    } else if (nombre.toLowerCase().contains('poder del')) {
+      return AppTheme.poderColor;
+    } else if (nombre.toLowerCase().contains('lluvias de')) {
+      return AppTheme.lluviasColor;
     } else {
       return AppTheme.getColorForHimnario(himnario.color);
     }
@@ -287,16 +301,16 @@ class HimnarioCard extends StatelessWidget {
   List<Widget> _getIdiomasChips() {
     // Obtener idiomas únicos del himnario
     final idiomas = himnario.idiomas.toSet();
-    
+
     return idiomas.take(3).map((idioma) {
       return Container(
         margin: const EdgeInsets.only(right: 6),
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         decoration: BoxDecoration(
-          color: _getColorForIdioma(idioma).withOpacity(0.1),
+          color: _getColorForIdioma(idioma).withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: _getColorForIdioma(idioma).withOpacity(0.3),
+            color: _getColorForIdioma(idioma).withValues(alpha: 0.3),
           ),
         ),
         child: Text(
@@ -339,14 +353,10 @@ class MenuPatternPainter extends CustomPainter {
 
     // Dibujar líneas diagonales
     for (int i = 0; i < size.width + size.height; i += 20) {
-      canvas.drawLine(
-        Offset(i.toDouble(), 0),
-        Offset(0, i.toDouble()),
-        paint,
-      );
+      canvas.drawLine(Offset(i.toDouble(), 0), Offset(0, i.toDouble()), paint);
     }
   }
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
-} 
+}

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AppTheme {
-  static const Color primaryColor = Color.fromARGB(255, 0, 18, 99); // Indigo-600
-  static const Color secondaryColor = Color.fromARGB(255, 0, 27, 148); // Purple-600
+  static const Color primaryColor = Color.fromARGB(255, 41, 95, 152); // Indigo-600
+  static const Color secondaryColor = Color.fromARGB(255, 25, 70, 117); // Purple-600
   static const Color backgroundColor = Color.fromARGB(
     255,
     248,
@@ -14,54 +14,22 @@ class AppTheme {
   static const Color textColor = Color.fromARGB(255, 30, 41, 59); // Slate-800
 
   // Colores de himnarios
-  static const Color bendicionColor = Color.fromARGB(255, 0, 33, 182);
-  static const Color bendicionDarkColor = Color.fromARGB(
-    255,
-    0,
-    26,
-    139,
-  ); // Pink-600
-  static const Color corosColor = Color.fromARGB(255, 143, 0, 36); // Blue-500
-  static const Color corosDarkColor = Color.fromARGB(
-    255,
-    99,
-    0,
-    25,
-  ); // Blue-600
-  static const Color calaColor = Color.fromARGB(255, 12, 173, 120); // Green-500
-  static const Color calaDarkColor = Color.fromARGB(
-    255,
-    1,
-    141,
-    97,
-  ); // Green-600
+  static const Color bendicionColor = Color.fromARGB(255, 238, 107, 65);
+  static const Color bendicionDarkColor = Color.fromARGB(255, 202, 87, 49); // Pink-600
+  static const Color corosColor = Color.fromARGB(255, 136, 125, 247); // Blue-500
+  static const Color corosDarkColor = Color.fromARGB(255, 103, 95, 197); // Blue-600
+  static const Color calaColor = Color.fromARGB(255, 29, 196, 156); // 255, 12, 173, 120
+  static const Color calaDarkColor = Color.fromARGB(255, 44, 193, 174);  // 1,141,97
   static const Color lluviasColor = Color.fromARGB(
     255,
-    245,
-    158,
-    11,
+    79,
+    141,
+    252,
   ); // Amber-500
-  static const Color lluviasDarkColor = Color.fromARGB(
-    255,
-    217,
-    119,
-    6,
-  ); // Amber-600
-  static const Color poderColor = Color.fromARGB(255, 139, 92, 246);
-  static const Color poderDarkColor = Color.fromARGB(255, 105, 32, 231);
-  static const Color violetColor = Color.fromARGB(
-    255,
-    139,
-    92,
-    246,
-  ); // Violet-500
-  static const Color violetDarkColor = Color.fromARGB(
-    255,
-    124,
-    58,
-    237,
-  ); // Violet-600
-
+  static const Color lluviasDarkColor = Color.fromARGB(255, 54, 106, 196); // Amber-600
+  static const Color poderColor = Color.fromARGB(255, 239, 156, 102);
+  static const Color poderDarkColor = Color.fromARGB(255, 255, 125, 41);
+  
   static const Color statusBarColor = Color.fromARGB(230, 79, 70, 229);
 
   static ThemeData get lightTheme {
@@ -135,12 +103,6 @@ class AppTheme {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         );
-      case 'violet':
-        return const LinearGradient(
-          colors: [violetColor, violetDarkColor],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        );
       case 'lluvias':
         return const LinearGradient(
           colors: [lluviasColor, lluviasDarkColor],
@@ -178,9 +140,7 @@ class AppTheme {
   static Color getColorForHimnario(String color) {
     switch (color) {
       case 'poder':
-        return poderColor;
-      case 'violet':
-        return violetColor;
+        return poderColor;      
       case 'lluvias':
         return lluviasColor;
       case 'bendicion':

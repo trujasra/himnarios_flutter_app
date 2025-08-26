@@ -10,7 +10,6 @@ import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
 import 'himnario_screen.dart';
 import 'cancion_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -168,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             gradient: LinearGradient(
-              colors: [const Color.fromARGB(255, 50, 121, 253), const Color.fromARGB(255, 16, 51, 211)],
+              colors: [AppTheme.secondaryColor, AppTheme.primaryColor],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -183,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
           child: const Icon(
             Icons.menu_book_rounded,
             color: Colors.white,
-            size: 30,
+            size: 18,
             shadows: [
               Shadow(
                 color: Colors.black26,
@@ -199,7 +198,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
             'Himnarios Disponibles',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 24,
+              fontSize: 15,
               fontWeight: FontWeight.w600,
               color: AppTheme.primaryColor,
               height: 0.98,
@@ -221,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             gradient: LinearGradient(
-              colors: [const Color.fromARGB(255, 50, 121, 253), const Color.fromARGB(255, 16, 51, 211)],
+              colors: [AppTheme.secondaryColor, AppTheme.primaryColor],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -236,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
           child: const Icon(
             Icons.search_rounded,
             color: Colors.white,
-            size: 26,
+            size: 20,
             shadows: [
               Shadow(
                 color: Colors.black26,
@@ -252,7 +251,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
             'Resultados para "$busqueda"',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 22,
+              fontSize: 18,
               fontWeight: FontWeight.w600,
               color: AppTheme.primaryColor,
               height: 0.98,

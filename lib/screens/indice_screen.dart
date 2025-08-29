@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../data/canciones_data.dart';
+//import '../data/canciones_data.dart';
 import '../models/himnario.dart';
 import '../models/cancion.dart';
 import '../theme/app_theme.dart';
@@ -135,7 +135,7 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
     super.dispose();
   }
 
-  List<Cancion> get cancionesDelHimnario {
+  /*List<Cancion> get cancionesDelHimnario {
     return canciones
         .where((c) => c.himnario == widget.himnario.nombre)
         .toList()
@@ -148,7 +148,7 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
         .toSet()
         .toList()
       ..sort();
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -241,8 +241,8 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
                 child: TabBarView(
                   controller: _tabController,
                   children: [
-                    _buildNumeroTab(),
-                    _buildCategoriaTab(),
+                    //_buildNumeroTab(),
+                    //_buildCategoriaTab(),
                   ],
                 ),
               ),
@@ -253,7 +253,7 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
     );
   }
 
-  Widget _buildNumeroTab() {
+  /*Widget _buildNumeroTab() {
     return ListView.builder(
       padding: const EdgeInsets.all(16.0),
       itemCount: cancionesDelHimnario.length,
@@ -332,5 +332,5 @@ class _IndiceScreenState extends State<IndiceScreen> with SingleTickerProviderSt
         );
       },
     );
-  }
+  }*/
 } 

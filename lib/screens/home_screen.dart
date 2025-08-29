@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:himnarios_flutter_app/widgets/custom_drawer.dart';
 import '../data/canciones_service.dart';
 import '../models/cancion.dart';
 import '../models/himnario.dart';
@@ -26,8 +27,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   List<Himnario> himnarios = [];
   List<String> idiomas = [];
   bool isLoading = true;
-  // Estado local de favoritos que se sincroniza con el callback
-  List<int> _favoritos = []; // Inicializar como lista vacía en lugar de late
+  List<int> _favoritos = [];
 
   final CancionesService _cancionesService = CancionesService();
 
@@ -35,14 +35,12 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   void initState() {
     super.initState();
     _cargarDatos();
-    // Configurar la barra de estado con el color principal
     StatusBarManager.setStatusBarColor(AppTheme.primaryColor);
   }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    // Inicializar el estado local de favoritos cuando se cargan los datos
     if (favoritos.isNotEmpty && _favoritos.isEmpty) {
       _favoritos = List.from(favoritos);
     }
@@ -50,20 +48,16 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
 
   @override
   void onEnterScreen() {
-    // Configurar la barra de estado cuando entramos a esta pantalla
     StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
   }
 
   @override
   void onReturnToScreen() {
-    // Configurar la barra de estado cuando regresamos a esta pantalla
     StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
   }
 
   Future<void> _cargarDatos() async {
-    setState(() {
-      isLoading = true;
-    });
+    setState(() => isLoading = true);
 
     try {
       final cancionesData = await _cancionesService.getCanciones();
@@ -80,9 +74,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
       });
     } catch (e) {
       print('Error cargando datos: $e');
-      setState(() {
-        isLoading = false;
-      });
+      setState(() => isLoading = false);
     }
   }
 
@@ -129,21 +121,16 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
     try {
       if (favoritos.contains(cancionId)) {
         await _cancionesService.quitarFavorito(cancionId);
-        setState(() {
-          favoritos.remove(cancionId);
-        });
+        setState(() => favoritos.remove(cancionId));
       } else {
         await _cancionesService.agregarFavorito(cancionId);
-        setState(() {
-          favoritos.add(cancionId);
-        });
+        setState(() => favoritos.add(cancionId));
       }
     } catch (e) {
       print('Error cambiando favorito: $e');
     }
   }
 
-  // Método para manejar el toggle de favoritos con actualización inmediata
   void _toggleFavorito(int cancionId) async {
     setState(() {
       if (_favoritos.contains(cancionId)) {
@@ -153,11 +140,9 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
       }
     });
 
-    // Llamar al método original para actualizar la base de datos
     await toggleFavorito(cancionId);
   }
 
-  // Widget título elegante con icono
   Widget tituloHimnarios() {
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -173,7 +158,12 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
             ),
             boxShadow: [
               BoxShadow(
-                color: const Color.fromARGB(255, 25, 189, 210).withValues(alpha: 0.4),
+                color: const Color.fromARGB(
+                  255,
+                  25,
+                  189,
+                  210,
+                ).withValues(alpha: 0.4),
                 blurRadius: 6,
                 offset: const Offset(2, 2),
               ),
@@ -210,7 +200,6 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
     );
   }
 
-  // Widget título elegante para "Resultados para"
   Widget tituloResultados(String busqueda) {
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -226,7 +215,12 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
             ),
             boxShadow: [
               BoxShadow(
-                color: const Color.fromARGB(255, 25, 189, 210).withValues(alpha: 0.4),
+                color: const Color.fromARGB(
+                  255,
+                  25,
+                  189,
+                  210,
+                ).withValues(alpha: 0.4),
                 blurRadius: 6,
                 offset: const Offset(2, 2),
               ),
@@ -263,7 +257,6 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
     );
   }
 
-  // Widget título elegante para "Favoritas"
   Widget tituloFavoritos() {
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -319,22 +312,18 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(nombreUsuario: "Ramiro Trujillo Almanza"),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [
-              Color(0xFFEFF6FF), // Blue-50
-              Color(0xFFF5F3FF), // Indigo-50
-              Color(0xFFFAF5FF), // Purple-50
-            ],
+            colors: [Color(0xFFEFF6FF), Color(0xFFF5F3FF), Color(0xFFFAF5FF)],
           ),
         ),
         child: SafeArea(
           child: Column(
             children: [
-              // Header principal
               Container(
                 decoration: const BoxDecoration(
                   gradient: AppTheme.mainGradient,
@@ -348,19 +337,25 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                   ),
                   child: Column(
                     children: [
-                      // Título y logo
                       Row(
                         children: [
                           Container(
-                            padding: const EdgeInsets.all(6),
+                            padding: const EdgeInsets.all(0),
                             decoration: BoxDecoration(
                               color: Colors.white.withValues(alpha: 0.2),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: const Icon(
-                              Icons.music_note,
-                              color: Colors.white,
-                              size: 24,
+                            child: Builder(
+                              builder: (context) => IconButton(
+                                icon: const Icon(
+                                  Icons.menu,
+                                  color: Colors.white,
+                                  size: 24,
+                                ),
+                                onPressed: () {
+                                  Scaffold.of(context).openDrawer();
+                                },
+                              ),
                             ),
                           ),
                           const SizedBox(width: 10),
@@ -416,7 +411,6 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                         ],
                       ),
                       const SizedBox(height: 16),
-                      // Buscador y filtros
                       SearchBarWidget(
                         busqueda: busqueda,
                         onBusquedaChanged: (value) =>
@@ -431,7 +425,6 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                   ),
                 ),
               ),
-              // Contenido
               Expanded(
                 child: isLoading
                     ? const Center(
@@ -444,18 +437,8 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // Resultados de búsqueda primero
                             if (busqueda.isNotEmpty) ...[
                               tituloResultados(busqueda),
-
-                              /*Text(
-                                'Resultados para "$busqueda"',
-                                style: const TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppTheme.textColor,
-                                ),
-                              ),*/
                               const SizedBox(height: 16),
                               if (cancionesFiltradas.isEmpty)
                                 const Card(
@@ -481,8 +464,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                     cancion: cancion,
                                     himnario: himnarioCancion,
                                     isFavorite: _favoritos.contains(cancion.id),
-                                    mostrarHimnario:
-                                        true, // Mostrar himnario en resultados de búsqueda
+                                    mostrarHimnario: true,
                                     onTap: () {
                                       Navigator.push(
                                         context,
@@ -502,28 +484,8 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                 }),
                               const SizedBox(height: 32),
                             ],
-                            // Menú de himnarios siempre debajo de los resultados
-                            /*Row(
-                              children: [
-                                const Icon(
-                                  Icons.book,
-                                  color: AppTheme.primaryColor,
-                                  size: 24,
-                                ),
-                                const SizedBox(width: 12),
-                                const Text(
-                                  'Himnarios Disponibles',
-                                  style: TextStyle(
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                    color: AppTheme.textColor,
-                                  ),
-                                ),
-                              ],
-                            ),*/
                             tituloHimnarios(),
                             const SizedBox(height: 16),
-                            // Lista de himnarios
                             ...himnarios.map(
                               (himnario) => HimnarioCard(
                                 himnario: himnario,
@@ -542,27 +504,8 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                               ),
                             ),
                             const SizedBox(height: 24),
-                            // Canciones favoritas
                             if (_favoritos.isNotEmpty) ...[
                               tituloFavoritos(),
-                              /*Row(
-                                children: [
-                                  const Icon(
-                                    Icons.favorite,
-                                    color: Colors.red,
-                                    size: 24,
-                                  ),
-                                  const SizedBox(width: 12),
-                                  const Text(
-                                    'Favoritas',
-                                    style: TextStyle(
-                                      fontSize: 24,
-                                      fontWeight: FontWeight.bold,
-                                      color: AppTheme.textColor,
-                                    ),
-                                  ),
-                                ],
-                              ),*/
                               const SizedBox(height: 12),
                               ...canciones
                                   .where((c) => _favoritos.contains(c.id))

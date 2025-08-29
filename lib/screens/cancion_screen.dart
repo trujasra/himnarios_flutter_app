@@ -318,11 +318,9 @@ Compartido desde Himnarios App
                   gradient: _getGradientForHimnario(widget.himnario.nombre),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(
-                    top: 11,
-                    bottom: 0,
-                    left: 5,
-                    right: 5,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 8,
                   ),
                   child: Column(
                     children: [
@@ -339,46 +337,17 @@ Compartido desde Himnarios App
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                /*Text(
+                                Text(
                                   '${cancionActual.numero} - ${cancionActual.titulo}',
                                   style: const TextStyle(
                                     color: Colors.white,
                                     fontSize: 22,
                                     fontWeight: FontWeight.w600,
                                     fontFamily: 'Poppins',
-                                    height: 1.0,
+                                    height: 0.85,
                                   ),
                                   textAlign: TextAlign.center,
-                                  softWrap: true,
-                                ),*/
-                                RichText(
-                                  textAlign: TextAlign.center,
-                                  text: TextSpan(
-                                    children: [
-                                      TextSpan(
-                                        text:
-                                            '${cancionActual.numero} -', // número
-                                        style: TextStyle(
-                                          color: Colors.amber[100],
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.w600,
-                                          fontFamily: 'Poppins',
-                                          height: 1.0,
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text:
-                                            ' ${cancionActual.titulo}', // título
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.w600,
-                                          fontFamily: 'Poppins',
-                                          height: 1.0,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
+                                  maxLines: 2,
                                 ),
                                 Text(
                                   widget.himnario.nombre,
@@ -451,6 +420,10 @@ Compartido desde Himnarios App
                   color: Colors.white,
                   child: TabBar(
                     controller: _tabController,
+                    isScrollable: true,
+                    labelPadding: const EdgeInsets.symmetric(
+                      horizontal: 35,
+                    ), // más ancho
                     labelColor: _getColorForHimnario(widget.himnario.nombre),
                     unselectedLabelColor: Colors.grey.shade600,
                     indicatorColor: _getColorForHimnario(
@@ -462,8 +435,8 @@ Compartido desde Himnarios App
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.language, size: 16),
-                            const SizedBox(width: 4),
-                            Text(version.idioma),
+                            const SizedBox(width: 5),
+                            Text(version.idioma.toUpperCase()),
                           ],
                         ),
                       );

@@ -6188,7 +6188,7 @@ class DataPoderDelEvangelio {
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': '493',
-      'titulo': 'CRTSTOJJ JUTCAN UCQHAJJA',
+      'titulo': 'CRISTOJJ JUTCAN UCQHAJJA',
       'orden': 1,
       'estado_registro': 1,
     },

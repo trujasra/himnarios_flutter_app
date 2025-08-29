@@ -218,4 +218,13 @@ class CancionesService {
       print('Error repoblando canciones de Cala: $e');
     }
   }
+
+  // Repoblar canciones de Poder del Evangelio (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesPoderDelEvangelio() async {
+    try {
+      await _dbHelper.repoblarCancionesPoderDelEvangelio();
+    } catch (e) {
+      print('Error repoblando canciones de Poder del Evangelio: $e');
+    }
+  }
 } 

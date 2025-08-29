@@ -251,9 +251,9 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                                 ),
                                 Text(
                                   widget.himnario.descripcion,
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 12,
-                                    color: Colors.white70,
+                                    color: Colors.white.withValues(alpha: 0.9),
                                   ),
                                 ),
                               ],

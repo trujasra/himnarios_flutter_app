@@ -109,7 +109,7 @@ class CancionCard extends StatelessWidget {
                     child: Text(
                       cancion.numero.toString(),
                       style: const TextStyle(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 255, 255, 255),
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),

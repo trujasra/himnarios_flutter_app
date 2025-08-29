@@ -19,7 +19,7 @@ class AppTheme {
   static const Color corosColor = Color.fromARGB(255, 136, 125, 247); // Blue-500
   static const Color corosDarkColor = Color.fromARGB(255, 103, 95, 197); // Blue-600
   static const Color calaColor = Color.fromARGB(255, 29, 196, 156); // 255, 12, 173, 120
-  static const Color calaDarkColor = Color.fromARGB(255, 44, 193, 174);  // 1,141,97
+  static const Color calaDarkColor = Color.fromARGB(255, 53, 162, 159);  // 1,141,97
   static const Color lluviasColor = Color.fromARGB(
     255,
     79,
@@ -27,8 +27,8 @@ class AppTheme {
     252,
   ); // Amber-500
   static const Color lluviasDarkColor = Color.fromARGB(255, 54, 106, 196); // Amber-600
-  static const Color poderColor = Color.fromARGB(255, 239, 156, 102);
-  static const Color poderDarkColor = Color.fromARGB(255, 255, 125, 41);
+  static const Color poderColor = Color.fromARGB(255, 238,184,0);
+  static const Color poderDarkColor = Color.fromARGB(255, 253, 141, 20);
   
   static const Color statusBarColor = Color.fromARGB(230, 79, 70, 229);
 

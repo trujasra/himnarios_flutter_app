@@ -3,6 +3,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:intl/intl.dart';
 import 'data_cala.dart';
+import 'data_poder_del_evangelio.dart';
 
 class DatabaseHelper {
   static final DatabaseHelper instance = DatabaseHelper._init();
@@ -442,6 +443,53 @@ class DatabaseHelper {
     }
   }
 
+  /// Inserta canciones para el himnario Poder del Evangelio (Aymara y Español) en las tablas Cancion y Letra
+  Future<void> poblarCancionesPoderDelEvangelio() async {
+    final db = await instance.database;
+
+    // Verificar si ya existen canciones para Cala
+    final cancionesExistentes = await db.query(
+      'Cancion',
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [5],
+    ); // Cala tiene id_tipo_himnario = 3
+    if (cancionesExistentes.isNotEmpty) {
+      print(
+        'Las canciones de Poder del Evangelio ya existen en la base de datos',
+      );
+      return;
+    }
+
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    final usuario = 'ramiro.trujillo';
+
+    // Insertar canciones desde data_poder_del_evangelio.dart
+    for (var cancion in DataPoderDelEvangelio.canciones) {
+      await db.insert("Cancion", {
+        ...cancion,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+    }
+
+    // Insertar letras desde data_poder_del_evangelio.dart
+    print('DEBUG: Insertando ${DataPoderDelEvangelio.letras.length} letras');
+    for (var letra in DataPoderDelEvangelio.letras) {
+      final result = await db.insert('Letra', {
+        ...letra,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+      print(
+        'DEBUG: Letra insertada para canción Poder del Evangelio ${letra['id_cancion']}: ID = $result',
+      );
+    }
+  }
+
   // Métodos para obtener canciones desde la base de datos
   Future<List<Map<String, dynamic>>> getCanciones() async {
     final db = await instance.database;
@@ -530,6 +578,7 @@ class DatabaseHelper {
       await poblarHimnariosIniciales();
       await poblarCancionesBendicionDelCielo();
       await poblarCancionesCala();
+      await poblarCancionesPoderDelEvangelio();
       print('Base de datos poblada exitosamente');
     } catch (e) {
       print('Error poblando base de datos: $e');
@@ -613,6 +662,44 @@ class DatabaseHelper {
       print('Canciones de Cala repobladas exitosamente');
     } catch (e) {
       print('Error repoblando canciones de Cala: $e');
+    }
+  }
+
+  // Método para repoblar las canciones de Poder del Evangelio (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesPoderDelEvangelio() async {
+    try {
+      final db = await instance.database;
+
+      // Primero obtener los IDs de las canciones de Poder del Evangelio para eliminar sus letras
+      final cancionesPoderDelEvangelio = await db.query(
+        'Cancion',
+        columns: ['id_cancion'],
+        where: 'id_tipo_himnario = ?',
+        whereArgs: [5],
+      );
+
+      final idsCanciones = cancionesPoderDelEvangelio
+          .map((c) => c['id_cancion'])
+          .toList();
+
+      // Eliminar letras de las canciones de Cala
+      if (idsCanciones.isNotEmpty) {
+        await db.delete(
+          'Letra',
+          where:
+              'id_cancion IN (${List.filled(idsCanciones.length, '?').join(',')})',
+          whereArgs: idsCanciones,
+        );
+      }
+
+      // Eliminar canciones existentes de Poder del Evangelio
+      await db.delete('Cancion', where: 'id_tipo_himnario = ?', whereArgs: [5]);
+
+      // Poblar nuevamente
+      await poblarCancionesPoderDelEvangelio();
+      print('Canciones de Poder del Evangelio repobladas exitosamente');
+    } catch (e) {
+      print('Error repoblando canciones de Poder del Evangelio: $e');
     }
   }
 

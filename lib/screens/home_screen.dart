@@ -20,6 +20,9 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
+  String nombreUsuario =
+      "Usuario Invitado"; // valor inicial por defecto// <- aquí puedes cambiar dinámicamente
+
   String busqueda = '';
   List<String> chipsSeleccionados = [];
   List<int> favoritos = [];
@@ -34,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   @override
   void initState() {
     super.initState();
+    _cargarNombreUsuario(); // <- cargar el nombre desde la DB
     _cargarDatos();
     StatusBarManager.setStatusBarColor(AppTheme.primaryColor);
   }
@@ -54,6 +58,32 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   @override
   void onReturnToScreen() {
     StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
+  }
+
+  Future<void> _cargarNombreUsuario() async {
+    final usuario = await _cancionesService.getPrimerUsuarioRegistrado();
+
+    String nombre = usuario?.nombre ?? "Usuario Invitado";
+
+    // Capitalizar cada palabra
+    nombre = capitalizeWords(nombre);
+
+    setState(() {
+      nombreUsuario = nombre;
+    });
+  }
+
+  /// Función para capitalizar la primera letra de cada palabra
+  String capitalizeWords(String text) {
+    return text
+        .toLowerCase()
+        .split(' ')
+        .map(
+          (word) => word.isNotEmpty
+              ? '${word[0].toUpperCase()}${word.substring(1)}'
+              : '',
+        )
+        .join(' ');
   }
 
   Future<void> _cargarDatos() async {
@@ -312,7 +342,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: CustomDrawer(nombreUsuario: "Ramiro Trujillo Almanza"),
+      drawer: CustomDrawer(nombreUsuario: nombreUsuario),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'screens/home_screen.dart';
+//import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
 import 'theme/app_theme.dart';
 import 'data/canciones_service.dart';
 
@@ -41,7 +42,8 @@ class HimnariosApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       navigatorObservers: [routeObserver], // Agregar el RouteObserver
-      home: const HomeScreen(),
+      //home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }

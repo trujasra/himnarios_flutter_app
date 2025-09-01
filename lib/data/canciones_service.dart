@@ -1,4 +1,5 @@
 import '../models/cancion.dart';
+import '../models/usuario.dart';
 import '../models/himnario.dart';
 import 'database_helper.dart';
 
@@ -9,11 +10,35 @@ class CancionesService {
 
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
 
+  Future<Usuario?> getPrimerUsuarioRegistrado() async {
+    final db = await _dbHelper
+        .database; // Espera el Future para obtener la base de datos
+    final List<Map<String, dynamic>> maps = await db.query(
+      'Usuario',
+      columns: ['nombre', 'estado_registro'],
+      where: 'estado_registro = ?',
+      whereArgs: [1],
+      limit: 1,
+    );
+
+    if (maps.isNotEmpty) {
+      final map = maps.first;
+      return Usuario(
+        nombre: map['nombre'] as String,
+        estadoRegistro: map['estado_registro'] as int,
+      );
+    } else {
+      return null;
+    }
+  }
+
   // Convertir datos de la base de datos al modelo Cancion
   Cancion _mapToCancion(Map<String, dynamic> data) {
     final letra = data['letra'] ?? '';
-    print('DEBUG: Mapeando canción ${data['titulo']} - Letra: ${letra.isNotEmpty ? "SÍ" : "NO"} (${letra.length} caracteres)');
-    
+    print(
+      'DEBUG: Mapeando canción ${data['titulo']} - Letra: ${letra.isNotEmpty ? "SÍ" : "NO"} (${letra.length} caracteres)',
+    );
+
     return Cancion(
       id: data['id_cancion'],
       titulo: data['titulo'] ?? '',
@@ -46,12 +71,14 @@ class CancionesService {
         (h) => h['nombre'] == nombreHimnario,
         orElse: () => {'id_tipo_himnario': 0},
       );
-      
+
       if (himnario['id_tipo_himnario'] == 0) return [];
 
-      final data = await _dbHelper.getCancionesPorHimnario(himnario['id_tipo_himnario']);
+      final data = await _dbHelper.getCancionesPorHimnario(
+        himnario['id_tipo_himnario'],
+      );
       final canciones = data.map((item) => _mapToCancion(item)).toList();
-      
+
       // Ordenar por número y luego por idioma
       canciones.sort((a, b) {
         if (a.numero != b.numero) {
@@ -59,7 +86,7 @@ class CancionesService {
         }
         return a.idioma.compareTo(b.idioma);
       });
-      
+
       return canciones;
     } catch (e) {
       print('Error obteniendo canciones por himnario: $e');
@@ -142,19 +169,43 @@ class CancionesService {
   Future<Himnario> _mapToHimnario(Map<String, dynamic> data) async {
     // Colores predefinidos para cada himnario
     final colores = {
-      'Bendicion del Cielo': {'color': 'blue', 'colorSecundario': 'blue50', 'colorTexto': 'blue700'},
-      'Coros Cristianos': {'color': 'indigo', 'colorSecundario': 'indigo50', 'colorTexto': 'indigo700'},
-      'Cala': {'color': 'violet', 'colorSecundario': 'violet50', 'colorTexto': 'violet700'},
-      'LLuvias de Bendición': {'color': 'amber', 'colorSecundario': 'amber50', 'colorTexto': 'amber700'},
-      'Poder del Evangelio': {'color': 'emerald', 'colorSecundario': 'emerald50', 'colorTexto': 'emerald700'},
+      'Bendicion del Cielo': {
+        'color': 'blue',
+        'colorSecundario': 'blue50',
+        'colorTexto': 'blue700',
+      },
+      'Coros Cristianos': {
+        'color': 'indigo',
+        'colorSecundario': 'indigo50',
+        'colorTexto': 'indigo700',
+      },
+      'Cala': {
+        'color': 'violet',
+        'colorSecundario': 'violet50',
+        'colorTexto': 'violet700',
+      },
+      'LLuvias de Bendición': {
+        'color': 'amber',
+        'colorSecundario': 'amber50',
+        'colorTexto': 'amber700',
+      },
+      'Poder del Evangelio': {
+        'color': 'emerald',
+        'colorSecundario': 'emerald50',
+        'colorTexto': 'emerald700',
+      },
     };
 
     final nombre = data['nombre'] as String;
-    final colorInfo = colores[nombre] ?? {'color': 'gray', 'colorSecundario': 'gray50', 'colorTexto': 'gray700'};
-    
+    final colorInfo =
+        colores[nombre] ??
+        {'color': 'gray', 'colorSecundario': 'gray50', 'colorTexto': 'gray700'};
+
     // Obtener idiomas reales de la base de datos
-    final idiomas = await _dbHelper.getIdiomasPorHimnario(data['id_tipo_himnario']);
-    
+    final idiomas = await _dbHelper.getIdiomasPorHimnario(
+      data['id_tipo_himnario'],
+    );
+
     // Si no hay idiomas en la BD, usar valores por defecto
     final idiomasFinales = idiomas.isNotEmpty ? idiomas : ['Español'];
 
@@ -201,7 +252,7 @@ class CancionesService {
     }
   }
 
-// Repoblar canciones de Bendicion del Cielo (útil cuando se agregan nuevas canciones)
+  // Repoblar canciones de Bendicion del Cielo (útil cuando se agregan nuevas canciones)
   Future<void> repoblarCancionesBendicionDelCielo() async {
     try {
       await _dbHelper.repoblarCancionesBendicionDelCielo();
@@ -227,4 +278,4 @@ class CancionesService {
       print('Error repoblando canciones de Poder del Evangelio: $e');
     }
   }
-} 
+}

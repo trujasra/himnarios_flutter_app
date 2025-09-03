@@ -240,6 +240,7 @@ class CancionesService {
   // Inicializar la base de datos si es necesario
   Future<void> inicializarBaseDatos() async {
     try {
+      
       final yaPoblada = await _dbHelper.isBaseDatosPoblada();
       if (!yaPoblada) {
         print('Poblando base de datos inicial...');

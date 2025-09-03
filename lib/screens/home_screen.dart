@@ -215,7 +215,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
         const SizedBox(width: 7),
         Expanded(
           child: Text(
-            'Himnarios Disponibles',
+            'Himnarios Disponibles 1',
             style: TextStyle(
               fontFamily: 'Poppins',
               fontSize: 15,

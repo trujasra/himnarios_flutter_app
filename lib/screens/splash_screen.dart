@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+import '../data/canciones_service.dart';
 import '../data/database_helper.dart';
+import '../theme/app_theme.dart';
 import 'home_screen.dart';
 import 'registro_screen.dart';
-import '../theme/app_theme.dart';
+
+// Importar datos para evitar tree-shaking en release
+import '../data/data_bendicion_del_cielo.dart';
+import '../data/data_cala.dart';
+import '../data/data_poder_del_evangelio.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,6 +18,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  final cancionesService = CancionesService();
   final dbHelper = DatabaseHelper.instance;
 
   @override
@@ -22,25 +28,41 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> _initApp() async {
-    await Future.delayed(const Duration(seconds: 2)); // 👀 pequeño delay visual
+    await Future.delayed(const Duration(seconds: 2)); // Pequeño delay visual
+
+    // 👇 Forzamos inclusión de himnarios en release
+    final _forceIncludeBendicion = DataBendicionDelCielo.canciones;
+    final _forceIncludeCala = DataCala.canciones;
+    final _forceIncludePoder = DataPoderDelEvangelio.canciones;
+
+    debugPrint("DEBUG Bendición = ${_forceIncludeBendicion.length}");
+    debugPrint("DEBUG Cala = ${_forceIncludeCala.length}");
+    debugPrint("DEBUG Poder = ${_forceIncludePoder.length}");
+
+    // Inicializar base de datos
+    await cancionesService.inicializarBaseDatos();
+    
+      // Repoblar canciones de Cala para incluir nuevas canciones
+  //await cancionesService.repoblarCancionesBendicionDelCielo();
+  //await cancionesService.repoblarCancionesPoderDelEvangelio();
 
     final db = await dbHelper.database;
 
-    // Verificar si hay usuario registrado con estado_registro = 1
+    // Verificar usuario registrado
     final usuarios = await db.query(
       "Usuario",
       where: "estado_registro = ?",
       whereArgs: [1],
     );
 
+    if (!mounted) return; // 👈 Evita usar context si el widget ya no existe
+
     if (usuarios.isNotEmpty) {
-      // Usuario ya registrado ✅
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const HomeScreen()),
       );
     } else {
-      // No existe usuario → registrar
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const RegistroScreen()),
@@ -56,9 +78,8 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // LOGO de tu app
             Image.asset(
-              "assets/images/logo_himnario.png", // 👀 asegúrate de tenerlo en assets
+              "assets/images/logo_himnario.png",
               width: 120,
               height: 120,
               fit: BoxFit.contain,

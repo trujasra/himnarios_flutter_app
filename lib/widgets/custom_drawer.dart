@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
+import 'dart:io' show Platform;
 
 class CustomDrawer extends StatelessWidget {
   final String nombreUsuario;
@@ -13,7 +15,9 @@ class CustomDrawer extends StatelessWidget {
     List<String> partes = nombre.trim().split(' ');
 
     if (partes.length == 1) {
-      return partes[0].substring(0, partes[0].length >= 2 ? 2 : 1).toUpperCase();
+      return partes[0]
+          .substring(0, partes[0].length >= 2 ? 2 : 1)
+          .toUpperCase();
     } else {
       String primera = partes[0][0];
       String segunda = partes[1][0];
@@ -29,9 +33,7 @@ class CustomDrawer extends StatelessWidget {
         children: [
           // DrawerHeader personalizado
           DrawerHeader(
-            decoration: const BoxDecoration(
-              gradient: AppTheme.mainGradient,
-            ),
+            decoration: const BoxDecoration(gradient: AppTheme.mainGradient),
             padding: const EdgeInsets.all(16.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -43,6 +45,7 @@ class CustomDrawer extends StatelessWidget {
                   child: Text(
                     getIniciales(nombreUsuario),
                     style: const TextStyle(
+                      fontFamily: 'Poppins',
                       fontSize: 21,
                       color: AppTheme.primaryColor,
                       fontWeight: FontWeight.bold,
@@ -72,10 +75,12 @@ class CustomDrawer extends StatelessWidget {
                       const SizedBox(height: 4),
                       const Text(
                         'Bienvenido',
-                        style: TextStyle(
-                          color: Colors.white70,
-                          fontSize: 14,
-                        ),
+                        style: TextStyle(color: Colors.white70, fontSize: 14),
+                      ),
+                      const SizedBox(height: 1),
+                      const Text(
+                        'Canta y Alaba a Dios con todo tu 🤍',
+                        style: TextStyle(color: Colors.white60, fontSize: 11.3),
                       ),
                     ],
                   ),
@@ -111,7 +116,27 @@ class CustomDrawer extends StatelessWidget {
             title: const Text("Salir"),
             onTap: () {
               Navigator.pop(context);
-              // Aquí puedes agregar lógica de logout
+
+              if (Platform.isAndroid) {
+                SystemNavigator.pop(); // ✅ Cierra la app en Android
+              } else if (Platform.isIOS) {
+                // ❌ No se puede cerrar en iOS → mostramos aviso
+                showDialog(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    title: const Text("Salir"),
+                    content: const Text(
+                      "En iOS no es posible cerrar la aplicación desde aquí.\nPor favor, utiliza el botón Home o desliza hacia arriba.",
+                    ),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: const Text("OK"),
+                      ),
+                    ],
+                  ),
+                );
+              }
             },
           ),
         ],

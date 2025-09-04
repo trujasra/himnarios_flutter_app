@@ -34,10 +34,10 @@ class _RegistroScreenState extends State<RegistroScreen> {
 
   Future<void> _registrarUsuario() async {
     final nombre = _nombreController.text.trim();
-    if (nombre.isEmpty) {
+    if (nombre.isEmpty || nombre.length < 3) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text("⚠️ Por favor ingrese su nombre completo"),
+          content: Text("⚠️ El nombre debe tener al menos 3 caracteres"),
           backgroundColor: Colors.redAccent,
           behavior: SnackBarBehavior.floating,
         ),
@@ -85,12 +85,22 @@ class _RegistroScreenState extends State<RegistroScreen> {
                     children: [
                       // LOGO
                       Image.asset(
-                        "assets/images/logo_himnario.png",
+                        "assets/images/LogoHimnariosApp.png",
                         width: 120,
                         height: 120,
                         fit: BoxFit.contain,
                       ),
-                      const SizedBox(height: 80),
+                      const SizedBox(height: 2),
+                      const Text(
+                        "Himnarios App",
+                        style: TextStyle(
+                          fontFamily: "Berkshire Swash",
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 90),
 
                       // Mensaje bendición
                       const Text(
@@ -132,6 +142,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                           ],
                         ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             TextField(
                               controller: _nombreController,
@@ -139,6 +150,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                   TextCapitalization.characters, // 👈 Uppercase
                               inputFormatters: [
                                 UpperCaseTextFormatter(), // 👈 Formatter
+                                LengthLimitingTextInputFormatter(35), // 👈 Máx 35 caracteres
                               ],
                               decoration: InputDecoration(
                                 prefixIcon: const Icon(
@@ -160,8 +172,21 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                   ),
                                 ),
                               ),
+                              onChanged: (_) => setState(() {}),
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              "${_nombreController.text.length}/35",
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: _nombreController.text.length >= 35
+                                    ? Colors.redAccent
+                                    : Colors.grey,
+                              ),
                             ),
                             const SizedBox(height: 24),
+
+                            // Botón Registrar
                             SizedBox(
                               width: double.infinity,
                               child: ElevatedButton(
@@ -169,7 +194,10 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                   padding: const EdgeInsets.symmetric(
                                     vertical: 16,
                                   ),
-                                  backgroundColor: AppTheme.primaryColor,
+                                  backgroundColor:
+                                      _nombreController.text.trim().length >= 3
+                                          ? AppTheme.primaryColor
+                                          : Colors.grey, // 👈 deshabilitado
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16),
                                   ),
@@ -177,7 +205,10 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                   shadowColor: AppTheme.secondaryColor
                                       .withValues(alpha: 0.4),
                                 ),
-                                onPressed: _registrarUsuario,
+                                onPressed:
+                                    _nombreController.text.trim().length >= 3
+                                        ? _registrarUsuario
+                                        : null, // 👈 bloqueado si < 3
                                 child: const Text(
                                   "Registrar",
                                   style: TextStyle(
@@ -196,9 +227,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
 
                       // Versión app
                       Text(
-                        _appVersion.isNotEmpty
-                            ? _appVersion
-                            : "version",
+                        _appVersion.isNotEmpty ? _appVersion : "version",
                         style: const TextStyle(
                           color: Colors.white60,
                           fontSize: 11,

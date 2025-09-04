@@ -1,35 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-//import 'screens/home_screen.dart';
+import 'package:wakelock/wakelock.dart'; // 👈 Import wakelock
 import 'screens/splash_screen.dart';
 import 'theme/app_theme.dart';
-//import 'data/canciones_service.dart';
-
-//import 'data/data_bendicion_del_cielo.dart';
-//import 'data/data_cala.dart';
-//import 'data/data_poder_del_evangelio.dart';
 
 // RouteObserver para detectar cambios de navegación
 final RouteObserver<Route<dynamic>> routeObserver = RouteObserver<Route<dynamic>>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
- 
- // 👇 forzamos que Flutter no elimine estos datos en release
-  //final _forceIncludeBendicion = DataBendicionDelCielo.canciones;
-  //final _forceIncludeCala = DataCala.canciones;
-  //final _forceIncludePoder = DataPoderDelEvangelio.canciones;
-  //debugPrint("DEBUG: Canciones Poder del Evangelio = ${_forceIncludeBendicion .length}");
-  //debugPrint("DEBUG: Canciones Poder del Evangelio = ${_forceIncludeCala .length}");
-  //debugPrint("DEBUG: Canciones Poder del Evangelio = ${_forceIncludePoder .length}");
 
-  // Inicializar la base de datos
-  //final cancionesService = CancionesService();
-  //await cancionesService.inicializarBaseDatos();
-
-  // Repoblar canciones de Cala para incluir nuevas canciones
-  //await cancionesService.repoblarCancionesBendicionDelCielo();
-  //await cancionesService.repoblarCancionesPoderDelEvangelio();
+  // Activar wakelock para que la pantalla no se duerma
+  Wakelock.enable(); // ✅ Funciona igual en la versión 0.4.0
 
   runApp(const HimnariosApp());
 
@@ -53,7 +35,6 @@ class HimnariosApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       navigatorObservers: [routeObserver], // Agregar el RouteObserver
-      //home: const HomeScreen(),
       home: const SplashScreen(),
     );
   }

@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // Inicializar base de datos
     await cancionesService.inicializarBaseDatos();
-    
+
       // Repoblar canciones de Cala para incluir nuevas canciones
   //await cancionesService.repoblarCancionesBendicionDelCielo();
   //await cancionesService.repoblarCancionesPoderDelEvangelio();
@@ -73,13 +73,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.primaryColor,
+      backgroundColor: AppTheme.secondaryColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/logo_himnario.png",
+              "assets/images/LogoHimnariosApp.png",
               width: 120,
               height: 120,
               fit: BoxFit.contain,

@@ -36,6 +36,7 @@ dependencies:
   google_fonts: ^6.2.1
   share_plus: ^7.2.1
   package_info_plus: ^8.0.0
+  wakelock: ^0.4.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -65,7 +66,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/logo_himnario.png
+    - assets/images/LogoHimnariosApp.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

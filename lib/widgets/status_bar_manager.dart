@@ -4,123 +4,83 @@ import '../models/himnario.dart';
 import '../theme/app_theme.dart';
 
 class StatusBarManager {
+  /// Configura la barra de estado según un Himnario
   static void setStatusBarColorForHimnario(Himnario himnario) {
-    // Obtener el color específico según el nombre del himnario
     final color = _getColorForHimnario(himnario.nombre);
-
-    // Determinar si el color es claro u oscuro para ajustar los iconos
-    final isLightColor = _isLightColor(color);
-
-    // Configurar la barra de estado con el color del himnario
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        statusBarColor: color,
-        statusBarIconBrightness: isLightColor
-            ? Brightness.dark
-            : Brightness.light,
-        statusBarBrightness: isLightColor ? Brightness.light : Brightness.dark,
-        systemNavigationBarColor:
-            color, // También cambiar la barra de navegación
-      ),
-    );
-
+    _setStatusBarColor(color);
     print(
       'StatusBar configurado para himnario ${himnario.nombre} con color: $color',
     );
   }
 
+  /// Configura la barra de estado según un gradiente
   static void setStatusBarColorForGradient(List<Color> gradientColors) {
-    // Usar el primer color del gradiente para determinar el brillo
     final primaryColor = gradientColors.first;
-    final isLightColor = _isLightColor(primaryColor);
-
-    // Configurar la barra de estado con el color del gradiente
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        statusBarColor: primaryColor,
-        statusBarIconBrightness: isLightColor
-            ? Brightness.dark
-            : Brightness.light,
-        statusBarBrightness: isLightColor ? Brightness.light : Brightness.dark,
-        systemNavigationBarColor:
-            primaryColor, // También cambiar la barra de navegación
-      ),
-    );
-
+    _setStatusBarColor(primaryColor);
     print('StatusBar configurado para gradiente con color: $primaryColor');
   }
 
-  // Método alternativo para configurar la barra de estado
-  static void setStatusBarColor(Color color) {
-    final isLightColor = _isLightColor(color);
+  /// Configura la barra de estado con color genérico
+  static void setStatusBarColor(Color color) => _setStatusBarColor(color);
+
+  /// Configura la barra de estado con delay para asegurar que se aplique
+  static void setStatusBarColorWithDelay(Color color) {
+    _setStatusBarColor(color);
+    Future.delayed(
+      const Duration(milliseconds: 50),
+      () => _setStatusBarColor(color),
+    );
+    Future.delayed(
+      const Duration(milliseconds: 150),
+      () => _setStatusBarColor(color),
+    );
+    Future.delayed(
+      const Duration(milliseconds: 300),
+      () => _setStatusBarColor(color),
+    );
+  }
+
+  /// Método interno para aplicar el color y el brillo
+  static void _setStatusBarColor(Color color) {
+    final isLight = _isLightColor(color);
 
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: color,
-        statusBarIconBrightness: isLightColor
-            ? Brightness.dark
-            : Brightness.light,
-        statusBarBrightness: isLightColor ? Brightness.light : Brightness.dark,
+        statusBarIconBrightness: isLight ? Brightness.dark : Brightness.light,
+        statusBarBrightness: isLight ? Brightness.light : Brightness.dark,
+        systemNavigationBarColor: Colors.white,
+        systemNavigationBarIconBrightness: Brightness.dark, // íconos negros
+        // systemNavigationBarIconBrightness: isLight
+        //     ? Brightness.dark
+        //     : Brightness.light,
       ),
     );
-
-    print('StatusBar configurado con color: $color');
   }
 
-  // Método para configurar la barra de estado con delay para asegurar que se aplique
-  static void setStatusBarColorWithDelay(Color color) {
-    // Configurar inmediatamente
-    setStatusBarColor(color);
-
-    // Configurar de nuevo con múltiples delays para asegurar que se aplique
-    Future.delayed(const Duration(milliseconds: 50), () {
-      setStatusBarColor(color);
-    });
-
-    Future.delayed(const Duration(milliseconds: 150), () {
-      setStatusBarColor(color);
-    });
-
-    Future.delayed(const Duration(milliseconds: 300), () {
-      setStatusBarColor(color);
-    });
-  }
-
+  /// Determina si un color es claro
   static bool _isLightColor(Color color) {
-    // Calcular el brillo del color
-    final brightness =
-        (color.red * 299 + color.green * 587 + color.blue * 114) / 1000;
-    return brightness > 128; // Si es mayor a 128, es un color claro
+    final r = color.r;
+    final g = color.g;
+    final b = color.b;
+
+    final brightness = (r * 299 + g * 587 + b * 114) / 1000;
+    return brightness > 128;
   }
 
-  // Método para forzar la actualización de la barra de estado
-  static void forceUpdateStatusBar() {
-    // Forzar una actualización de la UI con un pequeño delay
-    Future.delayed(const Duration(milliseconds: 50), () {
-      SystemChrome.setSystemUIOverlayStyle(
-        const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-      );
-    });
-  }
-
-  // Método para obtener el color específico según el nombre del himnario
+  /// Retorna el color según el himnario
   static Color _getColorForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return AppTheme.bendicionColor;
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return AppTheme.corosColor;
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return AppTheme.calaColor;
-    } else if (nombre.toLowerCase().contains('poder del')) {
-      return AppTheme.poderColor;
-    } else if (nombre.toLowerCase().contains('lluvias de')) {
-      return AppTheme.lluviasColor;
-    } else {
-      return AppTheme.getColorForHimnario('default');
-    }
+    final lower = nombre.toLowerCase();
+    if (lower.contains('bendición del cielo')) return AppTheme.bendicionColor;
+    if (lower.contains('coros cristianos')) return AppTheme.corosColor;
+    if (lower.contains('cala')) return AppTheme.calaColor;
+    if (lower.contains('poder del')) return AppTheme.poderColor;
+    if (lower.contains('lluvias de')) return AppTheme.lluviasColor;
+    return AppTheme.getColorForHimnario('default');
   }
 }
 
+/// Widget que actualiza automáticamente la status bar
 class StatusBarWrapper extends StatefulWidget {
   final Widget child;
   final Himnario? himnario;
@@ -163,23 +123,19 @@ class _StatusBarWrapperState extends State<StatusBarWrapper>
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    super.didChangeAppLifecycleState(state);
-    if (state == AppLifecycleState.resumed) {
-      // Cuando la app vuelve al primer plano, actualizar la barra de estado
-      _updateStatusBar();
-    }
+    if (state == AppLifecycleState.resumed) _updateStatusBar();
   }
 
   void _updateStatusBar() {
     if (widget.himnario != null) {
-      StatusBarManager.setStatusBarColorForHimnario(widget.himnario!);
+      StatusBarManager.setStatusBarColorWithDelay(
+        StatusBarManager._getColorForHimnario(widget.himnario!.nombre),
+      );
     } else if (widget.gradientColors != null) {
-      StatusBarManager.setStatusBarColorForGradient(widget.gradientColors!);
+      StatusBarManager.setStatusBarColorWithDelay(widget.gradientColors!.first);
     }
   }
 
   @override
-  Widget build(BuildContext context) {
-    return widget.child;
-  }
+  Widget build(BuildContext context) => widget.child;
 }

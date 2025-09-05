@@ -60,11 +60,12 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
   @override
   Widget build(BuildContext context) {
     // Usar el color del himnario si está disponible, sino usar colores por defecto
-    final himnarioColor = widget.himnarioColor ?? const Color.fromARGB(255, 135, 101, 238);
+    final himnarioColor =
+        widget.himnarioColor ?? const Color.fromARGB(255, 135, 101, 238);
     final himnarioColorLight = himnarioColor.withValues(alpha: 0.15);
-    final himnarioColorDark = himnarioColor.withValues(alpha: 0.8);
-    
-    final chipTitleStyle = TextStyle(
+    final himnarioColorDark = himnarioColor.withValues(alpha: 0.95);
+
+    final chipTitleStyle = const TextStyle(
       fontWeight: FontWeight.bold,
       fontSize: 15,
       color: Colors.white70,
@@ -72,9 +73,10 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
     final chipColor = Colors.white;
     final chipColorSelectedBg = Colors.white.withValues(alpha: 0.95);
     final chipUnselectedBg = himnarioColorDark;
-    final chipBorder = StadiumBorder(
+    final chipBorder = const StadiumBorder(
       side: BorderSide(color: Colors.white70, width: 0.8),
     );
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -88,16 +90,31 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
           child: TextField(
             controller: _controller,
             style: const TextStyle(fontSize: 15),
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: 'Buscar por número o titulo...',
-              hintStyle: TextStyle(color: Colors.grey),
-              prefixIcon: Icon(Icons.search, color: Colors.grey),
+              hintStyle: const TextStyle(color: Colors.grey),
+              prefixIcon: const Icon(Icons.search, color: Colors.grey),
               border: InputBorder.none,
-              contentPadding: EdgeInsets.symmetric(
+              contentPadding: const EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 12,
               ),
+              // 👇 Botón de limpiar (❌) con color del himnario
+              suffixIcon: _controller.text.isNotEmpty
+                  ? IconButton(
+                      icon: Icon(Icons.clear, color: himnarioColor),
+                      onPressed: () {
+                        _controller.clear();
+                        widget.onBusquedaChanged('');
+                        setState(() {}); // refresca para ocultar el botón
+                      },
+                    )
+                  : null,
             ),
+            onChanged: (value) {
+              setState(() {}); // refresca el icono cuando hay texto
+              widget.onBusquedaChanged(value);
+            },
           ),
         ),
         if (widget.chips.isNotEmpty) ...[
@@ -108,17 +125,13 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
               tilePadding: EdgeInsets.zero,
               title: Row(
                 children: [
-                  Icon(
-                    Icons.filter_list,
-                    color:  Colors.white,
-                    size: 20,
-                  ),
+                  const Icon(Icons.filter_list, color: Colors.white, size: 20),
                   const SizedBox(width: 6),
                   Text(
                     'Filtros',
                     style: chipTitleStyle.copyWith(
                       fontSize: 14,
-                      color:  Colors.white,
+                      color: Colors.white,
                     ),
                   ),
                 ],
@@ -152,16 +165,21 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
                         }
                         widget.onChipsSeleccionados(newList);
                       },
-                      shape: selected 
-                        ? StadiumBorder(
-                            side: BorderSide(color: himnarioColor, width: 1.5),
-                          )
-                        : chipBorder,
-                      backgroundColor: selected ? chipColorSelectedBg : chipUnselectedBg,
+                      shape: selected
+                          ? StadiumBorder(
+                              side: BorderSide(
+                                color: himnarioColor,
+                                width: 1.5,
+                              ),
+                            )
+                          : chipBorder,
+                      backgroundColor: selected
+                          ? chipColorSelectedBg
+                          : chipUnselectedBg,
                       selectedColor: chipColorSelectedBg,
                       labelPadding: const EdgeInsets.symmetric(horizontal: 6),
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      visualDensity: VisualDensity(
+                      visualDensity: const VisualDensity(
                         horizontal: -2,
                         vertical: -2,
                       ),

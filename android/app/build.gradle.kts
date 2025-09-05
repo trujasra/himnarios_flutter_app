@@ -8,7 +8,8 @@ plugins {
 android {
     namespace = "com.himnarios.app.himnarios_flutter_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // Establece la versión NDK compatible con los plugins
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

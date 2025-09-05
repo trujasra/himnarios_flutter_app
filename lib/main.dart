@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:wakelock/wakelock.dart'; // 👈 Import wakelock
+import 'package:wakelock_plus/wakelock_plus.dart';
 import 'screens/splash_screen.dart';
 import 'theme/app_theme.dart';
 
@@ -11,7 +11,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Activar wakelock para que la pantalla no se duerma
-  Wakelock.enable(); // ✅ Funciona igual en la versión 0.4.0
+  WakelockPlus.enable(); // ✅ Funciona igual en la versión 0.4.0
 
   runApp(const HimnariosApp());
 

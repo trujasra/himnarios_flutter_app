@@ -15,6 +15,7 @@ class RegistroScreen extends StatefulWidget {
 
 class _RegistroScreenState extends State<RegistroScreen> {
   final TextEditingController _nombreController = TextEditingController();
+  final FocusNode _nombreFocus = FocusNode(); // <- Foco agregado
   final dbHelper = DatabaseHelper.instance;
   bool _loading = false;
   String _appVersion = "";
@@ -23,6 +24,18 @@ class _RegistroScreenState extends State<RegistroScreen> {
   void initState() {
     super.initState();
     _cargarVersion();
+
+    // Pedir el foco automáticamente al primer frame
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _nombreFocus.requestFocus();
+    });
+  }
+
+  @override
+  void dispose() {
+    _nombreController.dispose();
+    _nombreFocus.dispose(); // <- liberar focus
+    super.dispose();
   }
 
   Future<void> _cargarVersion() async {
@@ -150,7 +163,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                   TextCapitalization.characters, // 👈 Uppercase
                               inputFormatters: [
                                 UpperCaseTextFormatter(), // 👈 Formatter
-                                LengthLimitingTextInputFormatter(35), // 👈 Máx 35 caracteres
+                                LengthLimitingTextInputFormatter(
+                                  35,
+                                ), // 👈 Máx 35 caracteres
                               ],
                               decoration: InputDecoration(
                                 prefixIcon: const Icon(
@@ -196,8 +211,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                   ),
                                   backgroundColor:
                                       _nombreController.text.trim().length >= 3
-                                          ? AppTheme.primaryColor
-                                          : Colors.grey, // 👈 deshabilitado
+                                      ? AppTheme.primaryColor
+                                      : Colors.grey, // 👈 deshabilitado
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(16),
                                   ),
@@ -207,8 +222,8 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                 ),
                                 onPressed:
                                     _nombreController.text.trim().length >= 3
-                                        ? _registrarUsuario
-                                        : null, // 👈 bloqueado si < 3
+                                    ? _registrarUsuario
+                                    : null, // 👈 bloqueado si < 3
                                 child: const Text(
                                   "Registrar",
                                   style: TextStyle(

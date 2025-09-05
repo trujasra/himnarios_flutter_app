@@ -379,7 +379,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                               builder: (context) => IconButton(
                                 icon: const Icon(
                                   Icons.menu,
-                                  color: Colors.white,
+                                  color: Colors.amber,
                                   size: 24,
                                 ),
                                 onPressed: () {

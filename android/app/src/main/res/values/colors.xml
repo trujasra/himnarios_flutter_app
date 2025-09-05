@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores de la app -->
+    <color name="primaryColor">#295F98</color> <!-- el mismo que en app_theme.dart -->
+    <color name="secondaryColor">#194675</color>
+    <color name="backgroundColor">#F8FAFC</color>
+</resources>

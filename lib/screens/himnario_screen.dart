@@ -9,7 +9,6 @@ import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
 import 'cancion_screen.dart';
 import 'indice_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HimnarioScreen extends StatefulWidget {
   final Himnario himnario;
@@ -45,7 +44,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
     // Configurar la barra de estado con el color del himnario
     StatusBarManager.setStatusBarColor(
       _getColorForHimnario(widget.himnario.nombre),
-    );
+    );    
   }
 
   @override

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
+import '../screens/favorito_screen.dart';
+import '../screens/creditos_screen.dart';
+import '../screens/configuracion_screen.dart';
 import 'dart:io' show Platform;
 
 class CustomDrawer extends StatelessWidget {
@@ -93,12 +96,30 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.settings),
             title: const Text("Configuración"),
-            onTap: () => Navigator.pop(context),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ConfiguracionScreen(),
+                ),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.favorite),
             title: const Text("Favoritos"),
-            onTap: () => Navigator.pop(context),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const FavoritoScreen(
+                    mostrarBotonCerrar: true,
+                  ),
+                ),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.list_alt),
@@ -108,7 +129,15 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.info),
             title: const Text("Créditos"),
-            onTap: () => Navigator.pop(context),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const CreditosScreen(),
+                ),
+              );
+            },
           ),
           const Divider(),
           ListTile(

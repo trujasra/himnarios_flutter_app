@@ -287,57 +287,6 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
     );
   }
 
-  Widget tituloFavoritos() {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Container(
-          padding: const EdgeInsets.all(6),
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            gradient: LinearGradient(
-              colors: [Colors.red.shade400, Colors.red.shade700],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.red.shade900.withValues(alpha: 0.4),
-                blurRadius: 6,
-                offset: const Offset(2, 2),
-              ),
-            ],
-          ),
-          child: const Icon(
-            Icons.favorite,
-            color: Colors.white,
-            size: 26,
-            shadows: [
-              Shadow(
-                color: Colors.black26,
-                blurRadius: 3,
-                offset: Offset(1, 1),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: Text(
-            'Favoritos',
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 22,
-              fontWeight: FontWeight.w600,
-              color: AppTheme.primaryColor,
-              height: 0.98,
-              letterSpacing: 0,
-            ),
-          ),
-        ),
-      ],
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -534,39 +483,6 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                               ),
                             ),
                             const SizedBox(height: 24),
-                            if (_favoritos.isNotEmpty) ...[
-                              tituloFavoritos(),
-                              const SizedBox(height: 12),
-                              ...canciones
-                                  .where((c) => _favoritos.contains(c.id))
-                                  .map((cancion) {
-                                    final himnarioCancion = himnarios
-                                        .firstWhere(
-                                          (h) => h.nombre == cancion.himnario,
-                                        );
-                                    return CancionCard(
-                                      cancion: cancion,
-                                      himnario: himnarioCancion,
-                                      isFavorite: true,
-                                      onTap: () {
-                                        Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) => CancionScreen(
-                                              cancion: cancion,
-                                              himnario: himnarioCancion,
-                                              favoritos: _favoritos,
-                                              onToggleFavorito: _toggleFavorito,
-                                            ),
-                                          ),
-                                        );
-                                      },
-                                      onToggleFavorito: () =>
-                                          _toggleFavorito(cancion.id),
-                                    );
-                                  }),
-                              const SizedBox(height: 24),
-                            ],
                           ],
                         ),
                       ),

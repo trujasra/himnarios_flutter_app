@@ -8,7 +8,7 @@ import '../widgets/search_bar_widget.dart';
 import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
 import 'cancion_screen.dart';
-import 'indice_screen.dart';
+import 'himnario_tabs_screen.dart';
 
 class HimnarioScreen extends StatefulWidget {
   final Himnario himnario;
@@ -44,7 +44,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
     // Configurar la barra de estado con el color del himnario
     StatusBarManager.setStatusBarColor(
       _getColorForHimnario(widget.himnario.nombre),
-    );    
+    );
   }
 
   @override
@@ -263,7 +263,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => IndiceScreen(
+                                  builder: (context) => HimnarioTabsScreen(
                                     himnario: widget.himnario,
                                     favoritos: _favoritos,
                                     onToggleFavorito: _toggleFavorito,
@@ -271,7 +271,10 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                                 ),
                               );
                             },
-                            icon: const Icon(Icons.list, color: Colors.white),
+                            icon: const Icon(
+                              Icons.list,
+                              color: Colors.white,
+                            ),
                           ),
                         ],
                       ),

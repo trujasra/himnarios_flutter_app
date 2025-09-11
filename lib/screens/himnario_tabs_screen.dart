@@ -41,7 +41,10 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
     _favoritos = List.from(widget.favoritos);
     _tabController = TabController(length: 2, vsync: this);
     _cargarDatos();
-    StatusBarManager.setStatusBarColor(_getColorForHimnario(widget.himnario.nombre));
+    // Establecer el color del StatusBar según el himnario
+    StatusBarManager.setStatusBarColor(
+      _getColorForHimnario(widget.himnario.nombre),
+    );
   }
 
   @override
@@ -56,12 +59,16 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
 
   @override
   void onEnterScreen() {
-    StatusBarManager.setStatusBarColorWithDelay(_getColorForHimnario(widget.himnario.nombre));
+    StatusBarManager.setStatusBarColorWithDelay(
+      _getColorForHimnario(widget.himnario.nombre),
+    );
   }
 
   @override
   void onReturnToScreen() {
-    StatusBarManager.setStatusBarColorWithDelay(_getColorForHimnario(widget.himnario.nombre));
+    StatusBarManager.setStatusBarColorWithDelay(
+      _getColorForHimnario(widget.himnario.nombre),
+    );
     _cargarDatos(); // Recargar datos cuando se regresa a la pantalla
   }
 
@@ -157,7 +164,10 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
 
   Widget _buildFavoritosTab() {
     final cancionesFavoritas = canciones
-        .where((c) => _favoritos.contains(c.id) && c.himnario == widget.himnario.nombre)
+        .where(
+          (c) =>
+              _favoritos.contains(c.id) && c.himnario == widget.himnario.nombre,
+        )
         .toList();
 
     if (isLoading) {
@@ -194,7 +204,7 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
                 color: Colors.grey.shade600,
-              ),              
+              ),
             ),
             const SizedBox(height: 8),
             Text(
@@ -324,32 +334,6 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
             gradient: _getGradientForHimnario(widget.himnario.nombre),
           ),
         ),
-        bottom: TabBar(
-          controller: _tabController,
-          indicatorColor: Colors.white,
-          labelColor: Colors.white,
-          unselectedLabelColor: Colors.white70,
-          labelStyle: const TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w600,
-            fontSize: 14,
-          ),
-          unselectedLabelStyle: const TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w500,
-            fontSize: 14,
-          ),
-          tabs: [
-            Tab(
-              icon: const Icon(Icons.favorite),
-              text: 'Favoritos',
-            ),
-            Tab(
-              icon: const Icon(Icons.playlist_add),
-              text: 'Listas Creadas',
-            ),
-          ],
-        ),
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -359,11 +343,63 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
             colors: [Color(0xFFEFF6FF), Color(0xFFF5F3FF), Color(0xFFFAF5FF)],
           ),
         ),
-        child: TabBarView(
-          controller: _tabController,
+        child: Column(
           children: [
-            _buildFavoritosTab(),
-            _buildListasCreadasTab(),
+            // TabBar con estilo similar a cancion_screen
+            Container(
+              color: Colors.white,
+              child: TabBar(
+                controller: _tabController,
+                isScrollable: false,
+                labelPadding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 12,
+                ),
+                labelColor: _getColorForHimnario(widget.himnario.nombre),
+                unselectedLabelColor: Colors.grey.shade600,
+                indicatorColor: _getColorForHimnario(widget.himnario.nombre),
+                indicatorWeight: 3,
+                labelStyle: const TextStyle(
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14,
+                ),
+                unselectedLabelStyle: const TextStyle(
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
+                  fontSize: 14,
+                ),
+                tabs: [
+                  Tab(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.favorite, size: 18),
+                        const SizedBox(width: 6),
+                        const Text('Favoritos'),
+                      ],
+                    ),
+                  ),
+                  Tab(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.playlist_add, size: 18),
+                        const SizedBox(width: 6),
+                        const Text('Listas Creadas'),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            // TabBarView
+            Expanded(
+              child: TabBarView(
+                controller: _tabController,
+                children: [_buildFavoritosTab(), _buildListasCreadasTab()],
+              ),
+            ),
           ],
         ),
       ),

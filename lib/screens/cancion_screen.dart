@@ -5,7 +5,6 @@ import '../theme/app_theme.dart';
 import '../data/canciones_service.dart';
 import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:share_plus/share_plus.dart';
 
 class CancionScreen extends StatefulWidget {

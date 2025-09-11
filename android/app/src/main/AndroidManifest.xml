@@ -1,4 +1,16 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permisos para Internet y conectividad -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Permisos para abrir URLs externas -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" 
+        tools:ignore="QueryAllPackagesPermission" />
+    
+    <!-- Para mantener la pantalla encendida -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
     <application
         android:label="himnarios_flutter_app"
         android:name="${applicationName}"
@@ -42,5 +54,36 @@
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
         </intent>
+        
+        <!-- Para abrir URLs en navegadores -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" />
+        </intent>
+        
+        <!-- Para WhatsApp -->
+        <package android:name="com.whatsapp" />
+        
+        <!-- Para Facebook -->
+        <package android:name="com.facebook.katana" />
+        
+        <!-- Para Instagram -->
+        <package android:name="com.instagram.android" />
+        
+        <!-- Para TikTok -->
+        <package android:name="com.zhiliaoapp.musically" />
+        
+        <!-- Para correo electrónico -->
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="mailto" />
+        </intent>
+        
     </queries>
 </manifest>

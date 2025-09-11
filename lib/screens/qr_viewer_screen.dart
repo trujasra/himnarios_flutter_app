@@ -41,22 +41,23 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
   Future<void> _shareQR() async {
     try {
       // Cargar la imagen como bytes
-      final ByteData data = await rootBundle.load('assets/images/QRPago_datos.jpg');
+      final ByteData data = await rootBundle.load(
+        'assets/images/QRPago_datos.jpg',
+      );
       final Uint8List bytes = data.buffer.asUint8List();
-      
+
       // Obtener directorio temporal
       final Directory tempDir = await getTemporaryDirectory();
       final String tempPath = '${tempDir.path}/qr_pago.jpg';
-      
+
       // Escribir archivo temporal
       final File tempFile = File(tempPath);
       await tempFile.writeAsBytes(bytes);
-      
+
       // Compartir archivo
-      await Share.shareXFiles(
-        [XFile(tempPath)],
-        text: 'QR para ofrendas - Himnarios App\n¡Gracias por tu apoyo!',
-      );
+      await Share.shareXFiles([
+        XFile(tempPath),
+      ], text: 'QR para ofrendas - Himnarios App\n¡Gracias por tu apoyo!');
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -72,25 +73,26 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
   Future<void> _downloadQR() async {
     try {
       // Cargar la imagen como bytes
-      final ByteData data = await rootBundle.load('assets/images/QRPago_datos.jpg');
+      final ByteData data = await rootBundle.load(
+        'assets/images/QRPago_datos.jpg',
+      );
       final Uint8List bytes = data.buffer.asUint8List();
-      
-      // En Android, guardar en Downloads
+
+      // Para Android, usar el directorio de documentos de la app (más seguro)
       if (Platform.isAndroid) {
-        final Directory? downloadsDir = Directory('/storage/emulated/0/Download');
-        if (downloadsDir != null && await downloadsDir.exists()) {
-          final String downloadPath = '${downloadsDir.path}/QR_Himnarios_App.jpg';
-          final File downloadFile = File(downloadPath);
-          await downloadFile.writeAsBytes(bytes);
-          
-          if (mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('QR guardado en Descargas'),
-                backgroundColor: Colors.green,
-              ),
-            );
-          }
+        final Directory appDocDir = await getApplicationDocumentsDirectory();
+        final String downloadPath = '${appDocDir.path}/QR_Himnarios_App.jpg';
+        final File downloadFile = File(downloadPath);
+        await downloadFile.writeAsBytes(bytes);
+
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('QR guardado en documentos de la app'),
+              backgroundColor: Colors.green,
+              duration: Duration(seconds: 3),
+            ),
+          );
         }
       } else {
         // Para iOS, usar el directorio de documentos
@@ -98,12 +100,13 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
         final String downloadPath = '${appDocDir.path}/QR_Himnarios_App.jpg';
         final File downloadFile = File(downloadPath);
         await downloadFile.writeAsBytes(bytes);
-        
+
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text('QR guardado en documentos de la app'),
               backgroundColor: Colors.green,
+              duration: Duration(seconds: 3),
             ),
           );
         }
@@ -114,6 +117,7 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
           SnackBar(
             content: Text('Error al descargar: $e'),
             backgroundColor: Colors.red,
+            duration: Duration(seconds: 3),
           ),
         );
       }
@@ -136,18 +140,6 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
             color: Colors.white,
           ),
         ),
-        actions: [
-          IconButton(
-            onPressed: _shareQR,
-            icon: const Icon(Icons.share),
-            tooltip: 'Compartir QR',
-          ),
-          IconButton(
-            onPressed: _downloadQR,
-            icon: const Icon(Icons.download),
-            tooltip: 'Descargar QR',
-          ),
-        ],
       ),
       body: Center(
         child: Column(
@@ -179,7 +171,7 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
               ),
             ),
             const SizedBox(height: 24),
-            
+
             // Texto informativo
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 32),
@@ -214,7 +206,7 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
               ),
             ),
             const SizedBox(height: 32),
-            
+
             // Botones de acción
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -232,7 +224,10 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 12,
+                    ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
                     ),
@@ -251,7 +246,10 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
                     foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 12,
+                    ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
                     ),

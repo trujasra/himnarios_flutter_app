@@ -30,15 +30,27 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
   }
 
   Future<void> _launchURL(String url) async {
-    final Uri uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    } else {
+    try {
+      final Uri uri = Uri.parse(url);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(
+          uri,
+          mode: LaunchMode.externalApplication,
+          webViewConfiguration: const WebViewConfiguration(
+            enableJavaScript: true,
+            enableDomStorage: true,
+          ),
+        );
+      } else {
+        throw 'No se puede abrir $url';
+      }
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('No se pudo abrir el enlace: $url'),
+            content: Text('No se pudo abrir el enlace: $e'),
             backgroundColor: Colors.red,
+            duration: const Duration(seconds: 3),
           ),
         );
       }
@@ -147,9 +159,7 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const QRViewerScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => const QRViewerScreen()),
               );
             },
             child: Container(
@@ -181,9 +191,7 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const QRViewerScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => const QRViewerScreen()),
               );
             },
             icon: const Icon(Icons.qr_code, size: 20),
@@ -224,9 +232,7 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
         foregroundColor: Colors.white,
         elevation: 0,
         flexibleSpace: Container(
-          decoration: const BoxDecoration(
-            gradient: AppTheme.mainGradient,
-          ),
+          decoration: const BoxDecoration(gradient: AppTheme.mainGradient),
         ),
       ),
       body: Container(
@@ -263,7 +269,10 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         gradient: LinearGradient(
-                          colors: [AppTheme.secondaryColor, AppTheme.primaryColor],
+                          colors: [
+                            AppTheme.secondaryColor,
+                            AppTheme.primaryColor,
+                          ],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                         ),
@@ -308,7 +317,7 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
                 ),
               ),
               const SizedBox(height: 24),
-              
+
               // Información del desarrollador
               Container(
                 padding: const EdgeInsets.all(20),
@@ -376,7 +385,7 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
                 ),
               ),
               const SizedBox(height: 24),
-              
+
               // Redes sociales
               Container(
                 padding: const EdgeInsets.all(20),
@@ -423,42 +432,49 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
                     Wrap(
                       alignment: WrapAlignment.center,
                       children: [
+                        // _buildSocialButton(
+                        //   icon: Icons.phone,
+                        //   label: 'WhatsApp',
+                        //   url: 'https://wa.me/59179151637',
+                        //   color: Colors.green,
+                        // ),
                         _buildSocialButton(
-                          icon: Icons.phone,
-                          label: 'WhatsApp',
-                          url: 'https://wa.me/59179151637', // Reemplaza con tu número
-                          color: Colors.green,
+                          icon: Icons.email,
+                          label: 'Email',
+                          url:
+                              'mailto:trujasra@gmail.com?subject=Himnarios App - Contacto&body=Hola, me pongo en contacto contigo desde la aplicación Himnarios App.',
+                          color: Colors.red,
                         ),
                         _buildSocialButton(
                           icon: Icons.facebook,
                           label: 'Facebook',
-                          url: 'https://www.facebook.com/trujasra', // Reemplaza con tu perfil
+                          url: 'https://www.facebook.com/trujasra',
                           color: Colors.blue,
                         ),
                         _buildSocialButton(
                           icon: Icons.music_note,
                           label: 'TikTok',
-                          url: 'https://tiktok.com/@trujasra', // Reemplaza con tu perfil
+                          url: 'https://www.tiktok.com/@trujasra',
                           color: Colors.black,
                         ),
-                        _buildSocialButton(
-                          icon: Icons.camera_alt,
-                          label: 'Instagram',
-                          url: 'https://instagram.com/trujasra', // Reemplaza con tu perfil
-                          color: Colors.purple,
-                        ),
+                        // _buildSocialButton(
+                        //   icon: Icons.camera_alt,
+                        //   label: 'Instagram',
+                        //   url: 'https://www.instagram.com/trujasra',
+                        //   color: Colors.purple,
+                        // ),
                       ],
                     ),
                   ],
                 ),
               ),
               const SizedBox(height: 24),
-              
+
               // Sección de QR para ofrendas
               _buildQRSection(),
-              
+
               const SizedBox(height: 24),
-              
+
               // Footer
               /*Container(
                 padding: const EdgeInsets.all(16),

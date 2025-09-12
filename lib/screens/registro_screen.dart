@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import '../theme/app_theme.dart';
 import '../data/database_helper.dart';
+import '../widgets/custom_snackbar.dart';
 import 'home_screen.dart';
 
 class RegistroScreen extends StatefulWidget {
@@ -48,12 +49,9 @@ class _RegistroScreenState extends State<RegistroScreen> {
   Future<void> _registrarUsuario() async {
     final nombre = _nombreController.text.trim();
     if (nombre.isEmpty || nombre.length < 3) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text("⚠️ El nombre debe tener al menos 3 caracteres"),
-          backgroundColor: Colors.redAccent,
-          behavior: SnackBarBehavior.floating,
-        ),
+      CustomSnackBar.showError(
+        context,
+        "El nombre debe tener al menos 3 caracteres",
       );
       return;
     }
@@ -159,6 +157,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                           children: [
                             TextField(
                               controller: _nombreController,
+                              focusNode: _nombreFocus,
                               textCapitalization:
                                   TextCapitalization.characters, // 👈 Uppercase
                               inputFormatters: [

@@ -41,6 +41,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // Inicializar base de datos
     await cancionesService.inicializarBaseDatos();
+    
+    // Inicializar colores por defecto si no existen
+    await cancionesService.inicializarColoresPorDefecto();
+    
+    // Cargar cache de colores dinámicos
+    await DynamicTheme.loadCache();
 
       // Repoblar canciones de Cala para incluir nuevas canciones
   //await cancionesService.repoblarCancionesBendicionDelCielo();

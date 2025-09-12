@@ -4,6 +4,7 @@ import 'package:path/path.dart';
 import 'package:intl/intl.dart';
 import 'data_cala.dart';
 import 'data_poder_del_evangelio.dart';
+import 'data_lluvias_de_bendicion.dart';
 
 class DatabaseHelper {
   static final DatabaseHelper instance = DatabaseHelper._init();
@@ -21,7 +22,60 @@ class DatabaseHelper {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, filePath);
     print('📁 Ruta base de datos: $path'); // 🔍 Agrega este print
-    return await openDatabase(path, version: 1, onCreate: _createDB);
+    return await openDatabase(
+      path,
+      version: 3,
+      onCreate: _createDB,
+      onUpgrade: _upgradeDB,
+    );
+  }
+
+  Future _upgradeDB(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      // Agregar columnas de colores a Par_Tipo_Himnario
+      await db.execute(
+        'ALTER TABLE Par_Tipo_Himnario ADD COLUMN color TEXT DEFAULT "#295F98"',
+      );
+      await db.execute(
+        'ALTER TABLE Par_Tipo_Himnario ADD COLUMN color_dark TEXT DEFAULT "#194675"',
+      );
+      await db.execute(
+        'ALTER TABLE Par_Tipo_Himnario ADD COLUMN imagen_fondo TEXT DEFAULT "default"',
+      );
+      print('✅ Columnas de colores agregadas a Par_Tipo_Himnario');
+    }
+
+    if (oldVersion < 3) {
+      // Actualizar registros existentes con colores por defecto
+      final coloresPorDefecto = {
+        'Bendición del Cielo': {'color': '#295F98', 'color_dark': '#194675'},
+        'Coros Cristianos': {'color': '#EE6B41', 'color_dark': '#CA5731'},
+        'Cala': {'color': '#887DF7', 'color_dark': '#675FC5'},
+        'LLuvias de Bendición': {'color': '#1DC49C', 'color_dark': '#35A29F'},
+        'Poder del Evangelio': {'color': '#4F8DFC', 'color_dark': '#366AC4'},
+      };
+
+      final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+
+      for (final entry in coloresPorDefecto.entries) {
+        final nombre = entry.key;
+        final colores = entry.value;
+
+        await db.update(
+          'Par_Tipo_Himnario',
+          {
+            'color': colores['color'],
+            'color_dark': colores['color_dark'],
+            'imagen_fondo': 'default',
+            'fecha_modificacion': now,
+            'usuario_modificacion': 'sistema',
+          },
+          where: 'nombre = ?',
+          whereArgs: [nombre],
+        );
+        print('✅ Colores inicializados para: $nombre');
+      }
+    }
   }
 
   Future _createDB(Database db, int version) async {
@@ -41,6 +95,9 @@ class DatabaseHelper {
         id_tipo_himnario INTEGER PRIMARY KEY,
         nombre TEXT,
         descripcion TEXT,
+        color TEXT DEFAULT '#295F98',
+        color_dark TEXT DEFAULT '#194675',
+        imagen_fondo TEXT DEFAULT 'default',
         estado_registro BOOLEAN,
         fecha_registro TEXT,
         usuario_registro TEXT,
@@ -279,11 +336,28 @@ class DatabaseHelper {
       'LLuvias de Bendición',
       'Poder del Evangelio',
     ];
+    final colores = [
+      '#EE6B41', // Bendición del Cielo - Naranja
+      '#EEB800', // Coros Cristianos - Amarillo
+      '#1DC49C', // Cala - Verde esmeralda
+      '#8B5CF6', // Lluvias de Bendición - Púrpura
+      '#4F8DFC', // Poder del Evangelio - Azul
+    ];
+    final coloresDark = [
+      '#CA5731', // Bendición del Cielo - Naranja oscuro
+      '#FD8D14', // Coros Cristianos- Amarillo oscuro
+      '#35A29F', // Cala - Verde esmeralda oscuro
+      '#7C3AED', // Lluvias de Bendición - Púrpura oscuro
+      '#366AC4', // Poder del Evangelio - Azul oscuro
+    ];
     for (int i = 0; i < himnarios.length; i++) {
       await db.insert('Par_Tipo_Himnario', {
         'id_tipo_himnario': i + 1,
         'nombre': himnarios[i],
         'descripcion': descHimnarios[i],
+        'color': colores[i],
+        'color_dark': coloresDark[i],
+        'imagen_fondo': 'default',
         'estado_registro': 1,
         'fecha_registro': now,
         'usuario_registro': usuario,
@@ -310,17 +384,20 @@ class DatabaseHelper {
       print('  - ${h['nombre']} (ID: ${h['id_tipo_himnario']})');
     }
 
-    // Consulta simplificada sin GROUP_CONCAT
+    // Consulta incluyendo campos de colores
     final resultado = await db.rawQuery('''
       SELECT 
         th.id_tipo_himnario,
         th.nombre,
         th.descripcion,
+        th.color,
+        th.color_dark,
+        th.imagen_fondo,
         COUNT(c.id_cancion) as total_canciones
       FROM Par_Tipo_Himnario th
       LEFT JOIN Cancion c ON th.id_tipo_himnario = c.id_tipo_himnario AND c.estado_registro = 1
       WHERE th.estado_registro = 1
-      GROUP BY th.id_tipo_himnario, th.nombre, th.descripcion
+      GROUP BY th.id_tipo_himnario, th.nombre, th.descripcion, th.color, th.color_dark, th.imagen_fondo
       ORDER BY th.id_tipo_himnario
     ''');
 
@@ -447,12 +524,12 @@ class DatabaseHelper {
   Future<void> poblarCancionesPoderDelEvangelio() async {
     final db = await instance.database;
 
-    // Verificar si ya existen canciones para Cala
+    // Verificar si ya existen canciones para Poder del Evangelio
     final cancionesExistentes = await db.query(
       'Cancion',
       where: 'id_tipo_himnario = ?',
       whereArgs: [5],
-    ); // Cala tiene id_tipo_himnario = 3
+    ); // Poder del Evangelio tiene id_tipo_himnario = 5
     if (cancionesExistentes.isNotEmpty) {
       print(
         'Las canciones de Poder del Evangelio ya existen en la base de datos',
@@ -486,6 +563,53 @@ class DatabaseHelper {
       });
       print(
         'DEBUG: Letra insertada para canción Poder del Evangelio ${letra['id_cancion']}: ID = $result',
+      );
+    }
+  }
+
+  /// Inserta canciones para el himnario Lluvias de Bendición (Español) en las tablas Cancion y Letra
+  Future<void> poblarCancionesLluviasDeBendicion() async {
+    final db = await instance.database;
+
+    // Verificar si ya existen canciones para Lluvias de Bendición
+    final cancionesExistentes = await db.query(
+      'Cancion',
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [4],
+    ); // Lluvias de Bendición tiene id_tipo_himnario = 4
+    if (cancionesExistentes.isNotEmpty) {
+      print(
+        'Las canciones de Lluvias de Bendición ya existen en la base de datos',
+      );
+      return;
+    }
+
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    final usuario = 'ramiro.trujillo';
+
+    // Insertar canciones desde data_lluvias_de_bendicion.dart
+    for (var cancion in DataLluviasDeBendicion.canciones) {
+      await db.insert("Cancion", {
+        ...cancion,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+    }
+
+    // Insertar letras desde data_lluvias_de_bendicion.dart
+    print('DEBUG: Insertando ${DataLluviasDeBendicion.letras.length} letras');
+    for (var letra in DataLluviasDeBendicion.letras) {
+      final result = await db.insert('Letra', {
+        ...letra,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+      print(
+        'DEBUG: Letra insertada para canción Lluvias de Bendición ${letra['id_cancion']}: ID = $result',
       );
     }
   }
@@ -578,6 +702,7 @@ class DatabaseHelper {
       await poblarHimnariosIniciales();
       await poblarCancionesBendicionDelCielo();
       await poblarCancionesCala();
+      await poblarCancionesLluviasDeBendicion();
       await poblarCancionesPoderDelEvangelio();
       print('Base de datos poblada exitosamente');
     } catch (e) {
@@ -682,7 +807,7 @@ class DatabaseHelper {
           .map((c) => c['id_cancion'])
           .toList();
 
-      // Eliminar letras de las canciones de Cala
+      // Eliminar letras de las canciones de Poder del Evangelio
       if (idsCanciones.isNotEmpty) {
         await db.delete(
           'Letra',
@@ -703,6 +828,44 @@ class DatabaseHelper {
     }
   }
 
+  // Método para repoblar las canciones de Lluvias de Bendición (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesLluviasDeBendicion() async {
+    try {
+      final db = await instance.database;
+
+      // Primero obtener los IDs de las canciones de Lluvias de Bendición para eliminar sus letras
+      final cancionesLluviasDeBendicion = await db.query(
+        'Cancion',
+        columns: ['id_cancion'],
+        where: 'id_tipo_himnario = ?',
+        whereArgs: [4],
+      );
+
+      final idsCanciones = cancionesLluviasDeBendicion
+          .map((c) => c['id_cancion'])
+          .toList();
+
+      // Eliminar letras de las canciones de Lluvias de Bendición
+      if (idsCanciones.isNotEmpty) {
+        await db.delete(
+          'Letra',
+          where:
+              'id_cancion IN (${List.filled(idsCanciones.length, '?').join(',')})',
+          whereArgs: idsCanciones,
+        );
+      }
+
+      // Eliminar canciones existentes de Lluvias de Bendición
+      await db.delete('Cancion', where: 'id_tipo_himnario = ?', whereArgs: [4]);
+
+      // Poblar nuevamente
+      await poblarCancionesLluviasDeBendicion();
+      print('Canciones de Lluvias de Bendición repobladas exitosamente');
+    } catch (e) {
+      print('Error repoblando canciones de Lluvias de Bendición: $e');
+    }
+  }
+
   // Método para verificar si la base de datos ya está poblada
   Future<bool> isBaseDatosPoblada() async {
     final db = await instance.database;
@@ -711,5 +874,337 @@ class DatabaseHelper {
     final canciones = await db.query('Cancion');
 
     return himnarios.isNotEmpty && idiomas.isNotEmpty && canciones.isNotEmpty;
+  }
+
+  // Métodos para configuración de himnarios
+  Future<void> actualizarConfiguracionHimnario({
+    required int idHimnario,
+    String? color,
+    String? colorDark,
+    String? imagenFondo,
+    int? inactividadMinutos,
+  }) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+
+    final Map<String, dynamic> updates = {
+      'fecha_modificacion': now,
+      'usuario_modificacion': 'ramiro.trujillo',
+    };
+
+    if (color != null) updates['color'] = color;
+    if (colorDark != null) updates['color_dark'] = colorDark;
+    if (imagenFondo != null) updates['imagen_fondo'] = imagenFondo;
+
+    final result = await db.update(
+      'Par_Tipo_Himnario',
+      updates,
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [idHimnario],
+    );
+
+    print('✅ Configuración actualizada para himnario ID: $idHimnario');
+    print('📊 Filas afectadas: $result');
+    print('🔧 Datos actualizados: $updates');
+
+    // Verificar que se guardó correctamente
+    final verificacion = await db.query(
+      'Par_Tipo_Himnario',
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [idHimnario],
+    );
+    if (verificacion.isNotEmpty) {
+      print(
+        '✅ Verificación BD - Color: ${verificacion.first['color']}, Color Dark: ${verificacion.first['color_dark']}',
+      );
+    }
+  }
+
+  // Inicializar colores por defecto para himnarios que no los tienen
+  Future<void> inicializarColoresPorDefecto() async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+
+    // Colores por defecto para cada himnario
+    final coloresPorDefecto = {
+      'Bendición del Cielo': {'color': '#295F98', 'color_dark': '#194675'},
+      'Coros Cristianos': {'color': '#EE6B41', 'color_dark': '#CA5731'},
+      'Cala': {'color': '#887DF7', 'color_dark': '#675FC5'},
+      'LLuvias de Bendición': {'color': '#1DC49C', 'color_dark': '#35A29F'},
+      'Poder del Evangelio': {'color': '#4F8DFC', 'color_dark': '#366AC4'},
+    };
+
+    for (final entry in coloresPorDefecto.entries) {
+      final nombre = entry.key;
+      final colores = entry.value;
+
+      // Verificar si el himnario ya tiene colores
+      final existing = await db.query(
+        'Par_Tipo_Himnario',
+        where: 'nombre = ? AND (color IS NULL OR color = "")',
+        whereArgs: [nombre],
+      );
+
+      if (existing.isNotEmpty) {
+        await db.update(
+          'Par_Tipo_Himnario',
+          {
+            'color': colores['color'],
+            'color_dark': colores['color_dark'],
+            'imagen_fondo': 'default',
+            'fecha_modificacion': now,
+            'usuario_modificacion': 'sistema',
+          },
+          where: 'nombre = ?',
+          whereArgs: [nombre],
+        );
+        print('✅ Colores inicializados para: $nombre');
+      }
+    }
+  }
+
+  Future<Map<String, dynamic>?> getConfiguracionHimnario(int idHimnario) async {
+    final db = await instance.database;
+    final result = await db.query(
+      'Par_Tipo_Himnario',
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [idHimnario],
+    );
+    return result.isNotEmpty ? result.first : null;
+  }
+
+  Future<Map<String, dynamic>?> getConfiguracionHimnarioPorNombre(String nombre) async {
+    final db = await instance.database;
+    final result = await db.query(
+      'Par_Tipo_Himnario',
+      where: 'nombre = ?',
+      whereArgs: [nombre],
+    );
+    
+    return result.isNotEmpty ? result.first : null;
+  }
+
+  // ==================== MÉTODOS CRUD PARA LISTAS ====================
+
+  // Crear una nueva lista
+  Future<int> crearLista({
+    required String nombre,
+    required String descripcion,
+  }) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    
+    final listaData = {
+      'nombre': nombre,
+      'descripcion': descripcion,
+      'estado_registro': 1,
+      'fecha_registro': now,
+      'usuario_registro': 'ramiro.trujillo',
+      'fecha_modificacion': null,
+      'usuario_modificacion': null,
+    };
+    
+    final id = await db.insert('Lista', listaData);
+    print('✅ Lista creada: $nombre (ID: $id)');
+    return id;
+  }
+
+  // Obtener todas las listas activas
+  Future<List<Map<String, dynamic>>> getListas() async {
+    final db = await instance.database;
+    final result = await db.query(
+      'Lista',
+      where: 'estado_registro = ?',
+      whereArgs: [1],
+      orderBy: 'fecha_registro DESC',
+    );
+    return result;
+  }
+
+  // Obtener una lista por ID
+  Future<Map<String, dynamic>?> getListaPorId(int idLista) async {
+    final db = await instance.database;
+    final result = await db.query(
+      'Lista',
+      where: 'id_lista = ? AND estado_registro = ?',
+      whereArgs: [idLista, 1],
+    );
+    return result.isNotEmpty ? result.first : null;
+  }
+
+  // Actualizar una lista
+  Future<void> actualizarLista({
+    required int idLista,
+    required String nombre,
+    required String descripcion,
+  }) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    
+    await db.update(
+      'Lista',
+      {
+        'nombre': nombre,
+        'descripcion': descripcion,
+        'fecha_modificacion': now,
+        'usuario_modificacion': 'ramiro.trujillo',
+      },
+      where: 'id_lista = ?',
+      whereArgs: [idLista],
+    );
+    print('✅ Lista actualizada: $nombre (ID: $idLista)');
+  }
+
+  // Eliminar una lista (soft delete)
+  Future<void> eliminarLista(int idLista) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    
+    // Eliminar todas las canciones de la lista
+    await db.update(
+      'Lista_Cancion',
+      {
+        'estado_registro': 0,
+        'fecha_modificacion': now,
+        'usuario_modificacion': 'ramiro.trujillo',
+      },
+      where: 'id_lista = ?',
+      whereArgs: [idLista],
+    );
+    
+    // Eliminar la lista
+    await db.update(
+      'Lista',
+      {
+        'estado_registro': 0,
+        'fecha_modificacion': now,
+        'usuario_modificacion': 'ramiro.trujillo',
+      },
+      where: 'id_lista = ?',
+      whereArgs: [idLista],
+    );
+    print('🗑️ Lista eliminada (ID: $idLista)');
+  }
+
+  // Agregar canción a una lista
+  Future<void> agregarCancionALista({
+    required int idLista,
+    required int idCancion,
+  }) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    
+    // Verificar si ya existe la relación
+    final existente = await db.query(
+      'Lista_Cancion',
+      where: 'id_lista = ? AND id_cancion = ?',
+      whereArgs: [idLista, idCancion],
+    );
+    
+    if (existente.isEmpty) {
+      // Insertar nueva relación
+      await db.insert('Lista_Cancion', {
+        'id_lista': idLista,
+        'id_cancion': idCancion,
+        'estado_registro': 1,
+        'fecha_registro': now,
+        'usuario_registro': 'ramiro.trujillo',
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+      print('✅ Canción agregada a lista (Lista: $idLista, Canción: $idCancion)');
+    } else {
+      // Reactivar si ya existe pero está inactiva
+      await db.update(
+        'Lista_Cancion',
+        {
+          'estado_registro': 1,
+          'fecha_modificacion': now,
+          'usuario_modificacion': 'ramiro.trujillo',
+        },
+        where: 'id_lista = ? AND id_cancion = ?',
+        whereArgs: [idLista, idCancion],
+      );
+      print('✅ Canción reactivada en lista (Lista: $idLista, Canción: $idCancion)');
+    }
+  }
+
+  // Quitar canción de una lista
+  Future<void> quitarCancionDeLista({
+    required int idLista,
+    required int idCancion,
+  }) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    
+    await db.update(
+      'Lista_Cancion',
+      {
+        'estado_registro': 0,
+        'fecha_modificacion': now,
+        'usuario_modificacion': 'ramiro.trujillo',
+      },
+      where: 'id_lista = ? AND id_cancion = ?',
+      whereArgs: [idLista, idCancion],
+    );
+    print('🗑️ Canción removida de lista (Lista: $idLista, Canción: $idCancion)');
+  }
+
+  // Obtener canciones de una lista
+  Future<List<Map<String, dynamic>>> getCancionesDeLista(int idLista) async {
+    final db = await instance.database;
+    final result = await db.rawQuery(''' 
+      SELECT 
+        c.id_cancion,
+        c.numero,
+        c.titulo,
+        c.orden,
+        th.nombre as himnario,
+        i.descripcion as idioma,
+        l.descripcion as letra,
+        lc.fecha_registro as fecha_agregada
+      FROM Lista_Cancion lc
+      INNER JOIN Cancion c ON lc.id_cancion = c.id_cancion
+      INNER JOIN Par_Tipo_Himnario th ON c.id_tipo_himnario = th.id_tipo_himnario
+      INNER JOIN Par_Idioma i ON c.id_idioma = i.id_idioma
+      LEFT JOIN Letra l ON c.id_cancion = l.id_cancion
+      WHERE lc.id_lista = ? AND lc.estado_registro = 1 AND c.estado_registro = 1
+      ORDER BY lc.fecha_registro ASC
+    ''', [idLista]);
+    
+    return result;
+  }
+
+  // Verificar si una canción está en una lista
+  Future<bool> cancionEstaEnLista({
+    required int idLista,
+    required int idCancion,
+  }) async {
+    final db = await instance.database;
+    final result = await db.query(
+      'Lista_Cancion',
+      where: 'id_lista = ? AND id_cancion = ? AND estado_registro = ?',
+      whereArgs: [idLista, idCancion, 1],
+    );
+    return result.isNotEmpty;
+  }
+
+  // Obtener conteo de canciones por lista
+  Future<Map<int, int>> getConteoCancionesPorLista() async {
+    final db = await instance.database;
+    final result = await db.rawQuery(''' 
+      SELECT 
+        id_lista,
+        COUNT(*) as total_canciones
+      FROM Lista_Cancion 
+      WHERE estado_registro = 1
+      GROUP BY id_lista
+    ''');
+    
+    final Map<int, int> conteos = {};
+    for (var row in result) {
+      conteos[row['id_lista'] as int] = row['total_canciones'] as int;
+    }
+    return conteos;
   }
 }

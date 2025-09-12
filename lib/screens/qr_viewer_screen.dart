@@ -7,6 +7,7 @@ import 'dart:typed_data';
 import '../theme/app_theme.dart';
 import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
+import '../widgets/custom_snackbar.dart';
 
 class QRViewerScreen extends StatefulWidget {
   const QRViewerScreen({super.key});
@@ -60,11 +61,9 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
       ], text: 'QR para ofrendas - Himnarios App\n¡Gracias por tu apoyo!');
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error al compartir: $e'),
-            backgroundColor: Colors.red,
-          ),
+        CustomSnackBar.showError(
+          context,
+          'Error al compartir: $e',
         );
       }
     }
@@ -86,12 +85,9 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
         await downloadFile.writeAsBytes(bytes);
 
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('QR guardado en documentos de la app'),
-              backgroundColor: Colors.green,
-              duration: Duration(seconds: 3),
-            ),
+          CustomSnackBar.showSuccess(
+            context,
+            'QR guardado en documentos de la app',
           );
         }
       } else {
@@ -102,23 +98,17 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
         await downloadFile.writeAsBytes(bytes);
 
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('QR guardado en documentos de la app'),
-              backgroundColor: Colors.green,
-              duration: Duration(seconds: 3),
-            ),
+          CustomSnackBar.showSuccess(
+            context,
+            'QR guardado en documentos de la app',
           );
         }
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error al descargar: $e'),
-            backgroundColor: Colors.red,
-            duration: Duration(seconds: 3),
-          ),
+        CustomSnackBar.showError(
+          context,
+          'Error al descargar: $e',
         );
       }
     }

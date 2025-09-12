@@ -4,6 +4,7 @@ import '../theme/app_theme.dart';
 import '../screens/favorito_screen.dart';
 import '../screens/creditos_screen.dart';
 import '../screens/configuracion_screen.dart';
+import '../screens/listas_creadas_screen.dart';
 import 'dart:io' show Platform;
 
 class CustomDrawer extends StatelessWidget {
@@ -124,7 +125,18 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.list_alt),
             title: const Text("Listas creadas"),
-            onTap: () => Navigator.pop(context),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ListasCreadasScreen(
+                    mostrarBotonCerrar: true,
+                    himnario: null, // No hay himnario específico en el drawer
+                  ),
+                ),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.info),

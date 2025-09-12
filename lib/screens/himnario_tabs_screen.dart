@@ -7,7 +7,7 @@ import '../widgets/cancion_card.dart';
 import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
 import 'cancion_screen.dart';
-import 'favorito_screen.dart';
+import 'listas_creadas_screen.dart';
 
 class HimnarioTabsScreen extends StatefulWidget {
   final Himnario himnario;
@@ -27,7 +27,11 @@ class HimnarioTabsScreen extends StatefulWidget {
 
 class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
     with SingleTickerProviderStateMixin, RouteAwareMixin {
-  late TabController _tabController;
+  late final TabController _tabController = TabController(
+    length: 2,
+    vsync: this,
+    initialIndex: 0,
+  );
   List<int> _favoritos = [];
   List<Cancion> canciones = [];
   List<Himnario> himnarios = [];
@@ -39,7 +43,7 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
   void initState() {
     super.initState();
     _favoritos = List.from(widget.favoritos);
-    _tabController = TabController(length: 2, vsync: this);
+    _tabController.addListener(_onTabChanged);
     _cargarDatos();
     // Establecer el color del StatusBar según el himnario
     StatusBarManager.setStatusBarColor(
@@ -69,11 +73,20 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
     StatusBarManager.setStatusBarColorWithDelay(
       _getColorForHimnario(widget.himnario.nombre),
     );
-    _cargarDatos(); // Recargar datos cuando se regresa a la pantalla
+    // Recargar datos para reflejar cambios de configuración
+    _cargarDatos();
+  }
+
+  void _onTabChanged() {
+    // Actualizar el color del StatusBar cuando cambie de tab
+    StatusBarManager.setStatusBarColor(
+      _getColorForHimnario(widget.himnario.nombre),
+    );
   }
 
   @override
   void dispose() {
+    _tabController.removeListener(_onTabChanged);
     _tabController.dispose();
     super.dispose();
   }
@@ -111,55 +124,13 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
   }
 
   Color _getColorForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return AppTheme.bendicionColor;
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return AppTheme.corosColor;
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return AppTheme.calaColor;
-    } else if (nombre.toLowerCase().contains('poder del')) {
-      return AppTheme.poderColor;
-    } else if (nombre.toLowerCase().contains('lluvias de')) {
-      return AppTheme.lluviasColor;
-    } else {
-      return AppTheme.getColorForHimnario(widget.himnario.color);
-    }
+    // Usar colores dinámicos desde cache o fallback a estáticos
+    return DynamicTheme.getColorForHimnarioSync(nombre);
   }
 
   LinearGradient _getGradientForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return const LinearGradient(
-        colors: [AppTheme.bendicionColor, AppTheme.bendicionDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return const LinearGradient(
-        colors: [AppTheme.corosColor, AppTheme.corosDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return const LinearGradient(
-        colors: [AppTheme.calaColor, AppTheme.calaDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('poder del')) {
-      return const LinearGradient(
-        colors: [AppTheme.poderColor, AppTheme.poderDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('lluvias de')) {
-      return const LinearGradient(
-        colors: [AppTheme.lluviasColor, AppTheme.lluviasDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else {
-      return AppTheme.getGradientForHimnario(widget.himnario.color);
-    }
+    // Usar gradientes dinámicos desde cache o fallback a estáticos
+    return DynamicTheme.getGradientForHimnarioSync(nombre);
   }
 
   Widget _buildFavoritosTab() {
@@ -251,66 +222,15 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
   }
 
   Widget _buildListasCreadasTab() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.grey.shade200,
-            ),
-            child: Icon(
-              Icons.playlist_add,
-              size: 64,
-              color: Colors.grey.shade400,
-            ),
-          ),
-          const SizedBox(height: 24),
-          Text(
-            'Listas Creadas',
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 20,
-              fontWeight: FontWeight.w600,
-              color: Colors.grey.shade600,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Aquí aparecerán las listas que crees\ncon canciones de ${widget.himnario.nombre}',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 14,
-              color: Colors.grey.shade500,
-            ),
-          ),
-          const SizedBox(height: 32),
-          ElevatedButton.icon(
-            onPressed: () {
-              // TODO: Implementar crear nueva lista
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Funcionalidad de crear listas próximamente'),
-                  duration: Duration(seconds: 2),
-                ),
-              );
-            },
-            icon: const Icon(Icons.add),
-            label: const Text('Crear Nueva Lista'),
-            style: ElevatedButton.styleFrom(
-              backgroundColor: _getColorForHimnario(widget.himnario.nombre),
-              foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-          ),
-        ],
-      ),
+    return ListasCreadasScreen(
+      himnario: {
+        'id': widget.himnario.id,
+        'nombre': widget.himnario.nombre,
+        'color': widget.himnario.color,
+        'colorSecundario': widget.himnario.colorSecundario,
+        'colorHex': widget.himnario.colorHex,
+        'colorDarkHex': widget.himnario.colorDarkHex,
+      },
     );
   }
 
@@ -351,24 +271,21 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
               child: TabBar(
                 controller: _tabController,
                 isScrollable: false,
-                labelPadding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 12,
-                ),
+                labelPadding: const EdgeInsets.symmetric(horizontal: 20),
                 labelColor: _getColorForHimnario(widget.himnario.nombre),
                 unselectedLabelColor: Colors.grey.shade600,
                 indicatorColor: _getColorForHimnario(widget.himnario.nombre),
                 indicatorWeight: 3,
-                labelStyle: const TextStyle(
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.w600,
-                  fontSize: 14,
-                ),
-                unselectedLabelStyle: const TextStyle(
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.w500,
-                  fontSize: 14,
-                ),
+                // labelStyle: const TextStyle(
+                //   fontFamily: 'Poppins',
+                //   fontWeight: FontWeight.w600,
+                //   fontSize: 14,
+                // ),
+                // unselectedLabelStyle: const TextStyle(
+                //   fontFamily: 'Poppins',
+                //   fontWeight: FontWeight.w500,
+                //   fontSize: 14,
+                // ),
                 tabs: [
                   Tab(
                     child: Row(
@@ -376,7 +293,7 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
                       children: [
                         Icon(Icons.favorite, size: 18),
                         const SizedBox(width: 6),
-                        const Text('Favoritos'),
+                        const Text('FAVORITOS'),
                       ],
                     ),
                   ),
@@ -386,7 +303,7 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
                       children: [
                         Icon(Icons.playlist_add, size: 18),
                         const SizedBox(width: 6),
-                        const Text('Listas Creadas'),
+                        const Text('LISTAS CREADAS'),
                       ],
                     ),
                   ),

@@ -86,60 +86,20 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
     StatusBarManager.setStatusBarColorWithDelay(
       _getColorForHimnario(widget.himnario.nombre),
     );
+    // Recargar datos para reflejar cambios de configuración
+    _cargarCanciones();
   }
 
   // Método para obtener el color específico según el nombre del himnario
   Color _getColorForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return AppTheme.bendicionColor;
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return AppTheme.corosColor;
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return AppTheme.calaColor;
-    } else if (nombre.toLowerCase().contains('poder del')) {
-      return AppTheme.poderColor;
-    } else if (nombre.toLowerCase().contains('lluvias de')) {
-      return AppTheme.lluviasColor;
-    } else {
-      return AppTheme.getColorForHimnario(widget.himnario.color);
-    }
+    // Usar colores dinámicos desde cache o fallback a estáticos
+    return DynamicTheme.getColorForHimnarioSync(nombre);
   }
 
   // Método para obtener el gradiente específico según el nombre del himnario
   LinearGradient _getGradientForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return const LinearGradient(
-        colors: [AppTheme.bendicionColor, AppTheme.bendicionDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return const LinearGradient(
-        colors: [AppTheme.corosColor, AppTheme.corosDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return const LinearGradient(
-        colors: [AppTheme.calaColor, AppTheme.calaDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('poder del')) {
-      return const LinearGradient(
-        colors: [AppTheme.poderColor, AppTheme.poderDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('lluvias de')) {
-      return const LinearGradient(
-        colors: [AppTheme.lluviasColor, AppTheme.lluviasDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else {
-      return AppTheme.getGradientForHimnario(widget.himnario.color);
-    }
+    // Usar gradientes dinámicos desde cache o fallback a estáticos
+    return DynamicTheme.getGradientForHimnarioSync(nombre);
   }
 
   Future<void> _cargarCanciones() async {

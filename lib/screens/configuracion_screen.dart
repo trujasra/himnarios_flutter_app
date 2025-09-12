@@ -5,6 +5,7 @@ import '../models/himnario.dart';
 import '../theme/app_theme.dart';
 import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
+import '../widgets/custom_snackbar.dart';
 
 class ConfiguracionScreen extends StatefulWidget {
   const ConfiguracionScreen({super.key});
@@ -13,23 +14,38 @@ class ConfiguracionScreen extends StatefulWidget {
   State<ConfiguracionScreen> createState() => _ConfiguracionScreenState();
 }
 
-class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwareMixin {
+class _ConfiguracionScreenState extends State<ConfiguracionScreen>
+    with RouteAwareMixin {
   List<Himnario> himnarios = [];
   Map<String, bool> himnariosVisibles = {};
-  Map<String, String> coloresHimnarios = {};
   bool isLoading = true;
 
   final CancionesService _cancionesService = CancionesService();
 
-  // Colores disponibles
-  final Map<String, Color> coloresDisponibles = {
-    'Azul': AppTheme.primaryColor,
-    'Índigo': AppTheme.corosColor,
-    'Violeta': AppTheme.calaColor,
-    'Naranja': AppTheme.bendicionColor,
-    'Verde': AppTheme.poderColor,
-    'Ámbar': AppTheme.lluviasColor,
-  };
+  // Colores predefinidos disponibles
+  final List<Map<String, dynamic>> coloresDisponibles = [
+    {'nombre': 'Azul Clásico', 'color': '#295F98', 'colorDark': '#194675'},
+    {'nombre': 'Naranja Vibrante', 'color': '#EE6B41', 'colorDark': '#CA5731'},
+    {'nombre': 'Índigo Moderno', 'color': '#887DF7', 'colorDark': '#675FC5'},
+    {'nombre': 'Verde Esmeralda', 'color': '#1DC49C', 'colorDark': '#35A29F'},
+    {'nombre': 'Azul Cielo', 'color': '#4F8DFC', 'colorDark': '#366AC4'},
+    {'nombre': 'Amarillo Dorado', 'color': '#EEB800', 'colorDark': '#FD8D14'},
+    {'nombre': 'Púrpura Real', 'color': '#8B5CF6', 'colorDark': '#7C3AED'},
+    {'nombre': 'Rosa Coral', 'color': '#F472B6', 'colorDark': '#EC4899'},
+    {'nombre': 'Verde Lima', 'color': '#84CC16', 'colorDark': '#65A30D'},
+    {'nombre': 'Rojo Carmesí', 'color': '#EF4444', 'colorDark': '#DC2626'},
+  ];
+
+  // Imágenes de fondo disponibles
+  final List<Map<String, String>> imagenesDisponibles = [
+    {'nombre': 'Por Defecto', 'valor': 'default'},
+    {'nombre': 'Cielo Azul', 'valor': 'cielo_azul'},
+    {'nombre': 'Montañas', 'valor': 'montanas'},
+    {'nombre': 'Océano', 'valor': 'oceano'},
+    {'nombre': 'Bosque', 'valor': 'bosque'},
+    {'nombre': 'Atardecer', 'valor': 'atardecer'},
+    {'nombre': 'Abstracto', 'valor': 'abstracto'},
+  ];
 
   @override
   void initState() {
@@ -57,13 +73,13 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
 
       setState(() {
         himnarios = himnariosData;
-        
+
         // Cargar configuración de visibilidad
         for (var himnario in himnarios) {
-          himnariosVisibles[himnario.nombre] = prefs.getBool('visible_${himnario.nombre}') ?? true;
-          coloresHimnarios[himnario.nombre] = prefs.getString('color_${himnario.nombre}') ?? 'Azul';
+          himnariosVisibles[himnario.nombre] =
+              prefs.getBool('visible_${himnario.nombre}') ?? true;
         }
-        
+
         isLoading = false;
       });
     } catch (e) {
@@ -75,107 +91,132 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
   Future<void> _toggleVisibilidad(String nombreHimnario, bool visible) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('visible_$nombreHimnario', visible);
-    
+
     setState(() {
       himnariosVisibles[nombreHimnario] = visible;
     });
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          visible 
-            ? '$nombreHimnario ahora es visible'
-            : '$nombreHimnario ahora está oculto',
-        ),
-        duration: const Duration(seconds: 2),
-      ),
+    CustomSnackBar.showInfo(
+      context,
+      visible
+          ? '$nombreHimnario ahora es visible'
+          : '$nombreHimnario ahora está oculto',
     );
   }
 
-  Future<void> _cambiarColor(String nombreHimnario, String nuevoColor) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('color_$nombreHimnario', nuevoColor);
-    
-    setState(() {
-      coloresHimnarios[nombreHimnario] = nuevoColor;
-    });
+  Future<void> _actualizarConfiguracion({
+    required int idHimnario,
+    String? color,
+    String? colorDark,
+    String? imagenFondo,
+  }) async {
+    try {
+      print('🔄 Iniciando actualización para himnario ID: $idHimnario');
+      print('🎨 Color: $color, Color Dark: $colorDark');
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Color de $nombreHimnario cambiado a $nuevoColor'),
-        duration: const Duration(seconds: 2),
-      ),
-    );
+      await _cancionesService.actualizarConfiguracionHimnario(
+        idHimnario: idHimnario,
+        color: color,
+        colorDark: colorDark,
+        imagenFondo: imagenFondo,
+      );
+
+      print('🧹 Limpiando cache...');
+      // Limpiar cache y recargar datos para mostrar los cambios
+      DynamicTheme.clearCache();
+
+      print('📥 Recargando cache...');
+      await DynamicTheme.loadCache();
+
+      print('🔄 Recargando datos de himnarios...');
+      await _cargarDatos();
+
+      print('✅ Actualización completada exitosamente');
+
+      CustomSnackBar.showSuccess(
+        context,
+        'Configuración actualizada correctamente',
+      );
+    } catch (e) {
+      print('❌ Error actualizando configuración: $e');
+      CustomSnackBar.showError(context, 'Error al actualizar la configuración');
+    }
   }
 
-  void _mostrarSelectorColor(String nombreHimnario) {
+  void _mostrarSelectorColor(Himnario himnario) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text(
-            'Seleccionar color para $nombreHimnario',
+            'Seleccionar color para ${himnario.nombre}',
             style: const TextStyle(
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w600,
+              fontSize: 18,
             ),
           ),
           content: SizedBox(
             width: double.maxFinite,
+            height: 300,
             child: GridView.builder(
-              shrinkWrap: true,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                childAspectRatio: 1,
+                crossAxisCount: 2,
+                childAspectRatio: 3,
                 crossAxisSpacing: 8,
                 mainAxisSpacing: 8,
               ),
               itemCount: coloresDisponibles.length,
               itemBuilder: (context, index) {
-                final nombreColor = coloresDisponibles.keys.elementAt(index);
-                final color = coloresDisponibles.values.elementAt(index);
-                final isSelected = coloresHimnarios[nombreHimnario] == nombreColor;
+                final colorData = coloresDisponibles[index];
+                final isSelected = himnario.colorHex == colorData['color'];
 
                 return GestureDetector(
                   onTap: () {
-                    _cambiarColor(nombreHimnario, nombreColor);
+                    _actualizarConfiguracion(
+                      idHimnario: himnario.id,
+                      color: colorData['color'],
+                      colorDark: colorData['colorDark'],
+                    );
                     Navigator.of(context).pop();
                   },
                   child: Container(
                     decoration: BoxDecoration(
-                      color: color,
+                      gradient: LinearGradient(
+                        colors: [
+                          Color(
+                            int.parse(
+                                  colorData['color'].substring(1),
+                                  radix: 16,
+                                ) +
+                                0xFF000000,
+                          ),
+                          Color(
+                            int.parse(
+                                  colorData['colorDark'].substring(1),
+                                  radix: 16,
+                                ) +
+                                0xFF000000,
+                          ),
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
                       borderRadius: BorderRadius.circular(8),
-                      border: isSelected 
-                        ? Border.all(color: Colors.black, width: 3)
-                        : null,
-                      boxShadow: [
-                        BoxShadow(
-                          color: color.withValues(alpha: 0.3),
-                          blurRadius: 4,
-                          offset: const Offset(0, 2),
-                        ),
-                      ],
+                      border: isSelected
+                          ? Border.all(color: Colors.white, width: 3)
+                          : null,
                     ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        if (isSelected)
-                          const Icon(
-                            Icons.check,
-                            color: Colors.white,
-                            size: 24,
-                          ),
-                        const SizedBox(height: 4),
-                        Text(
-                          nombreColor,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                          ),
-                          textAlign: TextAlign.center,
+                    child: Center(
+                      child: Text(
+                        colorData['nombre'],
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 12,
                         ),
-                      ],
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ),
                 );
@@ -193,13 +234,120 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
     );
   }
 
+  void _mostrarSelectorImagenFondo(Himnario himnario) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(
+            'Seleccionar fondo para ${himnario.nombre}',
+            style: const TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w600,
+              fontSize: 18,
+            ),
+          ),
+          content: SizedBox(
+            width: double.maxFinite,
+            height: 300,
+            child: ListView.builder(
+              itemCount: imagenesDisponibles.length,
+              itemBuilder: (context, index) {
+                final imagenData = imagenesDisponibles[index];
+                final isSelected = himnario.imagenFondo == imagenData['valor'];
+
+                return ListTile(
+                  leading: Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: _getColorForImage(imagenData['valor']!),
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: Colors.grey.shade300),
+                    ),
+                    child: Icon(
+                      _getIconForImage(imagenData['valor']!),
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
+                  title: Text(
+                    imagenData['nombre']!,
+                    style: const TextStyle(
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  trailing: isSelected
+                      ? const Icon(Icons.check_circle, color: Colors.green)
+                      : null,
+                  onTap: () {
+                    _actualizarConfiguracion(
+                      idHimnario: himnario.id,
+                      imagenFondo: imagenData['valor'],
+                    );
+                    Navigator.of(context).pop();
+                  },
+                );
+              },
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('Cancelar'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Color _getColorForImage(String imagen) {
+    switch (imagen) {
+      case 'cielo_azul':
+        return Colors.blue;
+      case 'montanas':
+        return Colors.brown;
+      case 'oceano':
+        return Colors.teal;
+      case 'bosque':
+        return Colors.green;
+      case 'atardecer':
+        return Colors.orange;
+      case 'abstracto':
+        return Colors.purple;
+      default:
+        return Colors.grey;
+    }
+  }
+
+  IconData _getIconForImage(String imagen) {
+    switch (imagen) {
+      case 'cielo_azul':
+        return Icons.cloud;
+      case 'montanas':
+        return Icons.landscape;
+      case 'oceano':
+        return Icons.waves;
+      case 'bosque':
+        return Icons.forest;
+      case 'atardecer':
+        return Icons.wb_sunny;
+      case 'abstracto':
+        return Icons.auto_awesome;
+      default:
+        return Icons.image;
+    }
+  }
+
   Widget _buildHimnarioItem(Himnario himnario) {
     final isVisible = himnariosVisibles[himnario.nombre] ?? true;
-    final colorSeleccionado = coloresHimnarios[himnario.nombre] ?? 'Azul';
-    final colorWidget = coloresDisponibles[colorSeleccionado] ?? AppTheme.primaryColor;
+    final colorWidget = DynamicTheme.getColorForHimnarioSync(himnario.nombre);
 
     return Container(
-      margin: const EdgeInsets.only(bottom: 12),
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -211,98 +359,94 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
           ),
         ],
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: colorWidget.withValues(alpha: 0.1),
-                  ),
-                  child: Icon(
-                    Icons.menu_book_rounded,
-                    color: colorWidget,
-                    size: 20,
-                  ),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: colorWidget.withValues(alpha: 0.1),
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        himnario.nombre,
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                          color: isVisible ? AppTheme.textColor : Colors.grey,
-                        ),
+                child: Icon(
+                  Icons.menu_book_rounded,
+                  color: colorWidget,
+                  size: 20,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      himnario.nombre,
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                        color: isVisible ? AppTheme.textColor : Colors.grey,
                       ),
-                      Text(
-                        '${himnario.canciones} canciones',
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 12,
-                          color: Colors.grey.shade600,
-                        ),
+                    ),
+                    Text(
+                      '${himnario.canciones} canciones',
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 12,
+                        color: Colors.grey.shade600,
                       ),
-                    ],
-                  ),
-                ),
-                Switch(
-                  value: isVisible,
-                  onChanged: (value) => _toggleVisibilidad(himnario.nombre, value),
-                  activeColor: colorWidget,
-                ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                const Icon(
-                  Icons.palette,
-                  size: 16,
-                  color: Colors.grey,
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  'Color: $colorSeleccionado',
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 14,
-                    color: Colors.grey.shade600,
-                  ),
-                ),
-                const Spacer(),
-                ElevatedButton(
-                  onPressed: () => _mostrarSelectorColor(himnario.nombre),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: colorWidget,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
                     ),
+                  ],
+                ),
+              ),
+              Switch(
+                value: isVisible,
+                onChanged: (value) =>
+                    _toggleVisibilidad(himnario.nombre, value),
+                activeColor: colorWidget,
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              ElevatedButton.icon(
+                onPressed: () => _mostrarSelectorColor(himnario),
+                icon: const Icon(Icons.palette, size: 16),
+                label: const Text('Color'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: colorWidget,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 8,
                   ),
-                  child: const Text(
-                    'Cambiar',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                    ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
                   ),
                 ),
-              ],
-            ),
-          ],
-        ),
+              ),
+              const SizedBox(width: 8),
+              ElevatedButton.icon(
+                onPressed: () => _mostrarSelectorImagenFondo(himnario),
+                icon: const Icon(Icons.image, size: 16),
+                label: const Text('Fondo'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey.shade600,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 8,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
@@ -323,9 +467,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
         foregroundColor: Colors.white,
         elevation: 0,
         flexibleSpace: Container(
-          decoration: const BoxDecoration(
-            gradient: AppTheme.mainGradient,
-          ),
+          decoration: const BoxDecoration(gradient: AppTheme.mainGradient),
         ),
       ),
       body: Container(
@@ -338,9 +480,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
         ),
         child: isLoading
             ? const Center(
-                child: CircularProgressIndicator(
-                  color: AppTheme.primaryColor,
-                ),
+                child: CircularProgressIndicator(color: AppTheme.primaryColor),
               )
             : SingleChildScrollView(
                 padding: const EdgeInsets.all(16.0),
@@ -367,7 +507,9 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: AppTheme.primaryColor.withValues(alpha: 0.1),
+                              color: AppTheme.primaryColor.withValues(
+                                alpha: 0.1,
+                              ),
                             ),
                             child: const Icon(
                               Icons.settings,
@@ -404,7 +546,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
                       ),
                     ),
                     const SizedBox(height: 24),
-                    
+
                     // Lista de himnarios
                     Text(
                       'Himnarios Disponibles',
@@ -416,20 +558,22 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen> with RouteAwa
                       ),
                     ),
                     const SizedBox(height: 16),
-                    
-                    ...himnarios.map((himnario) => _buildHimnarioItem(himnario)),
-                    
+
+                    ...himnarios.map(
+                      (himnario) => _buildHimnarioItem(himnario),
+                    ),
+
                     const SizedBox(height: 24),
-                    
+
+                    const SizedBox(height: 24),
+
                     // Información adicional
                     Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color: Colors.blue.shade50,
                         borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: Colors.blue.shade200,
-                        ),
+                        border: Border.all(color: Colors.blue.shade200),
                       ),
                       child: Row(
                         children: [

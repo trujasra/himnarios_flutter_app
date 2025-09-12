@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../data/canciones_service.dart';
 
 class AppTheme {
   static const Color primaryColor = Color.fromARGB(
@@ -206,4 +207,248 @@ class AppTheme {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
+}
+
+// Clase para manejar colores dinámicos desde la base de datos
+class DynamicTheme {
+  static final CancionesService _cancionesService = CancionesService();
+  static Map<String, Map<String, dynamic>> _coloresCache = {};
+
+  // Obtener color dinámico para un himnario por nombre
+  static Future<Color> getColorForHimnario(String nombreHimnario) async {
+    try {
+      // Verificar cache primero
+      if (_coloresCache.containsKey(nombreHimnario)) {
+        final colorHex = _coloresCache[nombreHimnario]!['color'] as String?;
+        if (colorHex != null) {
+          return Color(
+            int.parse(colorHex.substring(1), radix: 16) + 0xFF000000,
+          );
+        }
+      }
+
+      // Obtener de la base de datos
+      final config = await _cancionesService.getConfiguracionHimnarioPorNombre(
+        nombreHimnario,
+      );
+      if (config != null) {
+        _coloresCache[nombreHimnario] = config;
+        final colorHex = config['color'] as String?;
+        if (colorHex != null) {
+          return Color(
+            int.parse(colorHex.substring(1), radix: 16) + 0xFF000000,
+          );
+        }
+      }
+
+      // Fallback a colores estáticos
+      return AppTheme.getColorForHimnario(_mapNombreToKey(nombreHimnario));
+    } catch (e) {
+      print('Error obteniendo color dinámico: $e');
+      return AppTheme.getColorForHimnario(_mapNombreToKey(nombreHimnario));
+    }
+  }
+
+  // Obtener color oscuro dinámico para un himnario por nombre
+  static Future<Color> getDarkColorForHimnario(String nombreHimnario) async {
+    try {
+      // Verificar cache primero
+      if (_coloresCache.containsKey(nombreHimnario)) {
+        final colorDarkHex =
+            _coloresCache[nombreHimnario]!['color_dark'] as String?;
+        if (colorDarkHex != null) {
+          return Color(
+            int.parse(colorDarkHex.substring(1), radix: 16) + 0xFF000000,
+          );
+        }
+      }
+
+      // Obtener de la base de datos
+      final config = await _cancionesService.getConfiguracionHimnarioPorNombre(
+        nombreHimnario,
+      );
+      if (config != null) {
+        _coloresCache[nombreHimnario] = config;
+        final colorDarkHex = config['color_dark'] as String?;
+        if (colorDarkHex != null) {
+          return Color(
+            int.parse(colorDarkHex.substring(1), radix: 16) + 0xFF000000,
+          );
+        }
+      }
+
+      // Fallback a colores estáticos
+      return AppTheme.getColorForHimnario(
+        _mapNombreToKey(nombreHimnario),
+      ).withOpacity(0.8);
+    } catch (e) {
+      print('Error obteniendo color oscuro dinámico: $e');
+      return AppTheme.getColorForHimnario(
+        _mapNombreToKey(nombreHimnario),
+      ).withOpacity(0.8);
+    }
+  }
+
+  // Obtener gradiente dinámico para un himnario
+  static Future<LinearGradient> getGradientForHimnario(
+    String nombreHimnario,
+  ) async {
+    try {
+      final colorPrimario = await getColorForHimnario(nombreHimnario);
+      final colorSecundario = await getDarkColorForHimnario(nombreHimnario);
+
+      return LinearGradient(
+        colors: [colorPrimario, colorSecundario],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      );
+    } catch (e) {
+      print('Error obteniendo gradiente dinámico: $e');
+      return AppTheme.getGradientForHimnario(_mapNombreToKey(nombreHimnario));
+    }
+  }
+
+  // Obtener imagen de fondo para un himnario
+  static Future<String> getImagenFondoForHimnario(String nombreHimnario) async {
+    try {
+      // Verificar cache primero
+      if (_coloresCache.containsKey(nombreHimnario)) {
+        final imagenFondo =
+            _coloresCache[nombreHimnario]!['imagen_fondo'] as String?;
+        if (imagenFondo != null) {
+          return imagenFondo;
+        }
+      }
+
+      // Obtener de la base de datos
+      final config = await _cancionesService.getConfiguracionHimnarioPorNombre(
+        nombreHimnario,
+      );
+      if (config != null) {
+        _coloresCache[nombreHimnario] = config;
+        final imagenFondo = config['imagen_fondo'] as String?;
+        if (imagenFondo != null) {
+          return imagenFondo;
+        }
+      }
+
+      return 'default';
+    } catch (e) {
+      print('Error obteniendo imagen de fondo: $e');
+      return 'default';
+    }
+  }
+
+  // Limpiar cache (útil cuando se actualizan configuraciones)
+  static void clearCache() {
+    _coloresCache.clear();
+    print('🧹 Cache de colores dinámicos limpiado');
+    print('📊 Cache después de limpiar: ${_coloresCache.keys}');
+  }
+
+  // Cargar cache inicial con todos los himnarios
+  static Future<void> loadCache() async {
+    try {
+      print('🔄 Iniciando carga de cache...');
+      final himnarios = await _cancionesService.getHimnariosCompletos();
+      print('📊 Himnarios obtenidos: ${himnarios.length}');
+
+      for (final himnario in himnarios) {
+        print('🔍 Procesando himnario: ${himnario.nombre}');
+        print('🎨 Color: ${himnario.colorHex}, Dark: ${himnario.colorDarkHex}');
+
+        if (himnario.colorHex != null) {
+          _coloresCache[himnario.nombre] = {
+            'color': himnario.colorHex,
+            'color_dark': himnario.colorDarkHex,
+            'imagen_fondo': himnario.imagenFondo,
+          };
+          print('✅ Agregado al cache: ${himnario.nombre}');
+        } else {
+          print('⚠️ Sin color personalizado para: ${himnario.nombre}');
+        }
+      }
+      print('✅ Cache de colores dinámicos cargado: ${_coloresCache.keys}');
+      print('📊 Total elementos en cache: ${_coloresCache.length}');
+    } catch (e) {
+      print('❌ Error cargando cache de colores: $e');
+    }
+  }
+
+  // Mapear nombres de himnarios a keys para fallback
+  static String _mapNombreToKey(String nombre) {
+    switch (nombre.toLowerCase()) {
+      case 'bendición del cielo':
+      case 'bendicion del cielo':
+        return 'bendicion';
+      case 'coros cristianos':
+        return 'coros';
+      case 'cala':
+        return 'cala';
+      case 'lluvias de bendición':
+      case 'lluvias de bendicion':
+        return 'lluvias';
+      case 'poder del evangelio':
+        return 'poder';
+      default:
+        return 'default';
+    }
+  }
+
+  // Método sincrónico para obtener color (usa cache o fallback)
+  static Color getColorForHimnarioSync(String nombreHimnario) {
+    print('🔍 Buscando color para: $nombreHimnario');
+    print('📊 Cache disponible: ${_coloresCache.keys}');
+
+    if (_coloresCache.containsKey(nombreHimnario)) {
+      final colorHex = _coloresCache[nombreHimnario]!['color'] as String?;
+      print('✅ Encontrado en cache - Color: $colorHex');
+      if (colorHex != null) {
+        final color = Color(
+          int.parse(colorHex.substring(1), radix: 16) + 0xFF000000,
+        );
+        print('🎨 Color calculado: $color');
+        return color;
+      }
+    }
+
+    print(
+      '⚠️ No encontrado en cache, usando fallback para: ${_mapNombreToKey(nombreHimnario)}',
+    );
+    return AppTheme.getColorForHimnario(_mapNombreToKey(nombreHimnario));
+  }
+
+  // Método sincrónico para obtener gradiente (usa cache o fallback)
+  static LinearGradient getGradientForHimnarioSync(String nombreHimnario) {
+    print('🌈 Buscando gradiente para: $nombreHimnario');
+
+    if (_coloresCache.containsKey(nombreHimnario)) {
+      final colorHex = _coloresCache[nombreHimnario]!['color'] as String?;
+      final colorDarkHex =
+          _coloresCache[nombreHimnario]!['color_dark'] as String?;
+
+      print('✅ Encontrado en cache - Color: $colorHex, Dark: $colorDarkHex');
+
+      if (colorHex != null && colorDarkHex != null) {
+        final colorPrimario = Color(
+          int.parse(colorHex.substring(1), radix: 16) + 0xFF000000,
+        );
+        final colorSecundario = Color(
+          int.parse(colorDarkHex.substring(1), radix: 16) + 0xFF000000,
+        );
+
+        print('🎨 Gradiente calculado: $colorPrimario -> $colorSecundario');
+        return LinearGradient(
+          colors: [colorPrimario, colorSecundario],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        );
+      }
+    }
+
+    print(
+      '⚠️ No encontrado en cache, usando fallback para: ${_mapNombreToKey(nombreHimnario)}',
+    );
+    return AppTheme.getGradientForHimnario(_mapNombreToKey(nombreHimnario));
+  }
 }

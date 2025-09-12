@@ -58,6 +58,8 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   @override
   void onReturnToScreen() {
     StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
+    // Recargar datos cuando regresamos a la pantalla para reflejar cambios de configuración
+    _cargarDatos();
   }
 
   Future<void> _cargarNombreUsuario() async {

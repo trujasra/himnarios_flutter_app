@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../theme/app_theme.dart';
 import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
+import '../widgets/custom_snackbar.dart';
 import 'qr_viewer_screen.dart';
 
 class CreditosScreen extends StatefulWidget {
@@ -46,12 +47,9 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('No se pudo abrir el enlace: $e'),
-            backgroundColor: Colors.red,
-            duration: const Duration(seconds: 3),
-          ),
+        CustomSnackBar.showError(
+          context,
+          'No se pudo abrir el enlace: $e',
         );
       }
     }
@@ -445,18 +443,18 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
                               'mailto:trujasra@gmail.com?subject=Himnarios App - Contacto&body=Hola, me pongo en contacto contigo desde la aplicación Himnarios App.',
                           color: Colors.red,
                         ),
-                        _buildSocialButton(
-                          icon: Icons.facebook,
-                          label: 'Facebook',
-                          url: 'https://www.facebook.com/trujasra',
-                          color: Colors.blue,
-                        ),
-                        _buildSocialButton(
-                          icon: Icons.music_note,
-                          label: 'TikTok',
-                          url: 'https://www.tiktok.com/@trujasra',
-                          color: Colors.black,
-                        ),
+                        // _buildSocialButton(
+                        //   icon: Icons.facebook,
+                        //   label: 'Facebook',
+                        //   url: 'https://www.facebook.com/trujasra',
+                        //   color: Colors.blue,
+                        // ),
+                        // _buildSocialButton(
+                        //   icon: Icons.music_note,
+                        //   label: 'TikTok',
+                        //   url: 'https://www.tiktok.com/@trujasra',
+                        //   color: Colors.black,
+                        // ),
                         // _buildSocialButton(
                         //   icon: Icons.camera_alt,
                         //   label: 'Instagram',

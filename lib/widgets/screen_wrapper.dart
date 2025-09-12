@@ -56,7 +56,7 @@ class _ScreenWrapperState extends State<ScreenWrapper> with WidgetsBindingObserv
       StatusBarManager.setStatusBarColorWithDelay(widget.statusBarColor!);
     } else if (widget.himnario != null) {
       StatusBarManager.setStatusBarColorWithDelay(
-        AppTheme.getColorForHimnario(widget.himnario!.color)
+        DynamicTheme.getColorForHimnarioSync(widget.himnario!.nombre)
       );
     }
   }

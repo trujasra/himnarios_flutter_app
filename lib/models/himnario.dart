@@ -7,6 +7,11 @@ class Himnario {
   final int canciones;
   final String descripcion;
   final List<String> idiomas;
+  // Nuevos campos dinámicos
+  final String? colorHex;
+  final String? colorDarkHex;
+  final String? imagenFondo;
+  final int? inactividadMinutos;
 
   const Himnario({
     required this.id,
@@ -17,6 +22,10 @@ class Himnario {
     required this.canciones,
     required this.descripcion,
     required this.idiomas,
+    this.colorHex,
+    this.colorDarkHex,
+    this.imagenFondo,
+    this.inactividadMinutos,
   });
 
   factory Himnario.fromJson(Map<String, dynamic> json) {
@@ -29,6 +38,10 @@ class Himnario {
       canciones: json['canciones'],
       descripcion: json['descripcion'],
       idiomas: List<String>.from(json['idiomas']),
+      colorHex: json['colorHex'],
+      colorDarkHex: json['colorDarkHex'],
+      imagenFondo: json['imagenFondo'],
+      inactividadMinutos: json['inactividadMinutos'],
     );
   }
 
@@ -42,6 +55,10 @@ class Himnario {
       'canciones': canciones,
       'descripcion': descripcion,
       'idiomas': idiomas,
+      'colorHex': colorHex,
+      'colorDarkHex': colorDarkHex,
+      'imagenFondo': imagenFondo,
+      'inactividadMinutos': inactividadMinutos,
     };
   }
 } 

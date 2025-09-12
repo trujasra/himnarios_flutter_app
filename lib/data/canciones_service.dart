@@ -218,6 +218,9 @@ class CancionesService {
       canciones: data['total_canciones'] ?? 0,
       descripcion: data['descripcion'] ?? nombre,
       idiomas: idiomasFinales,
+      colorHex: data['color'] as String?,
+      colorDarkHex: data['color_dark'] as String?,
+      imagenFondo: data['imagen_fondo'] as String?,
     );
   }
 
@@ -272,11 +275,211 @@ class CancionesService {
   }
 
   // Repoblar canciones de Poder del Evangelio (útil cuando se agregan nuevas canciones)
-  Future<void> repoblarCancionesPoderDelEvangelio() async {
+  Future<void> repoblarCancionesPoder() async {
     try {
       await _dbHelper.repoblarCancionesPoderDelEvangelio();
     } catch (e) {
       print('Error repoblando canciones de Poder del Evangelio: $e');
+    }
+  }
+
+  // Repoblar canciones de Lluvias de Bendición (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesLluviasDeBendicion() async {
+    try {
+      await _dbHelper.repoblarCancionesLluviasDeBendicion();
+    } catch (e) {
+      print('Error repoblando canciones de Lluvias de Bendición: $e');
+    }
+  }
+
+  // Métodos para configuración de himnarios
+  Future<void> actualizarConfiguracionHimnario({
+    required int idHimnario,
+    String? color,
+    String? colorDark,
+    String? imagenFondo,
+    int? inactividadMinutos,
+  }) async {
+    try {
+      await _dbHelper.actualizarConfiguracionHimnario(
+        idHimnario: idHimnario,
+        color: color,
+        colorDark: colorDark,
+        imagenFondo: imagenFondo,
+        inactividadMinutos: inactividadMinutos,
+      );
+    } catch (e) {
+      print('Error actualizando configuración de himnario: $e');
+    }
+  }
+
+  Future<Map<String, dynamic>?> getConfiguracionHimnario(int idHimnario) async {
+    try {
+      return await _dbHelper.getConfiguracionHimnario(idHimnario);
+    } catch (e) {
+      print('Error obteniendo configuración de himnario: $e');
+      return null;
+    }
+  }
+
+  Future<Map<String, dynamic>?> getConfiguracionHimnarioPorNombre(String nombre) async {
+    try {
+      return await _dbHelper.getConfiguracionHimnarioPorNombre(nombre);
+    } catch (e) {
+      print('Error obteniendo configuración de himnario por nombre: $e');
+      return null;
+    }
+  }
+
+  Future<void> inicializarColoresPorDefecto() async {
+    await _dbHelper.inicializarColoresPorDefecto();
+  }
+
+  // ==================== MÉTODOS PARA LISTAS ====================
+
+  // Crear una nueva lista
+  Future<int> crearLista({
+    required String nombre,
+    required String descripcion,
+  }) async {
+    try {
+      return await _dbHelper.crearLista(
+        nombre: nombre,
+        descripcion: descripcion,
+      );
+    } catch (e) {
+      print('Error creando lista: $e');
+      rethrow;
+    }
+  }
+
+  // Obtener todas las listas
+  Future<List<Map<String, dynamic>>> getListas() async {
+    try {
+      return await _dbHelper.getListas();
+    } catch (e) {
+      print('Error obteniendo listas: $e');
+      return [];
+    }
+  }
+
+  // Obtener una lista por ID
+  Future<Map<String, dynamic>?> getListaPorId(int idLista) async {
+    try {
+      return await _dbHelper.getListaPorId(idLista);
+    } catch (e) {
+      print('Error obteniendo lista por ID: $e');
+      return null;
+    }
+  }
+
+  // Actualizar una lista
+  Future<void> actualizarLista({
+    required int idLista,
+    required String nombre,
+    required String descripcion,
+  }) async {
+    try {
+      await _dbHelper.actualizarLista(
+        idLista: idLista,
+        nombre: nombre,
+        descripcion: descripcion,
+      );
+    } catch (e) {
+      print('Error actualizando lista: $e');
+      rethrow;
+    }
+  }
+
+  // Eliminar una lista
+  Future<void> eliminarLista(int idLista) async {
+    try {
+      await _dbHelper.eliminarLista(idLista);
+    } catch (e) {
+      print('Error eliminando lista: $e');
+      rethrow;
+    }
+  }
+
+  // Agregar canción a una lista
+  Future<void> agregarCancionALista({
+    required int idLista,
+    required int idCancion,
+  }) async {
+    try {
+      await _dbHelper.agregarCancionALista(
+        idLista: idLista,
+        idCancion: idCancion,
+      );
+    } catch (e) {
+      print('Error agregando canción a lista: $e');
+      rethrow;
+    }
+  }
+
+  // Quitar canción de una lista
+  Future<void> quitarCancionDeLista({
+    required int idLista,
+    required int idCancion,
+  }) async {
+    try {
+      await _dbHelper.quitarCancionDeLista(
+        idLista: idLista,
+        idCancion: idCancion,
+      );
+    } catch (e) {
+      print('Error quitando canción de lista: $e');
+      rethrow;
+    }
+  }
+
+  // Obtener canciones de una lista específica
+  Future<List<Cancion>> getCancionesDeLista(int idLista) async {
+    final db = await _dbHelper.database;
+    final List<Map<String, dynamic>> maps = await db.rawQuery('''
+      SELECT c.* 
+      FROM Cancion c
+      INNER JOIN Lista_Cancion lc ON c.id_cancion = lc.id_cancion
+      WHERE lc.id_lista = ?
+      ORDER BY c.titulo
+    ''', [idLista]);
+
+    return List.generate(maps.length, (i) => _mapToCancion(maps[i]));
+  }
+
+  // Eliminar una canción de una lista
+  Future<void> eliminarCancionDeLista(int idLista, int idCancion) async {
+    final db = await _dbHelper.database;
+    await db.delete(
+      'Lista_Cancion',
+      where: 'id_lista = ? AND id_cancion = ?',
+      whereArgs: [idLista, idCancion],
+    );
+  }
+
+  // Verificar si una canción está en una lista
+  Future<bool> cancionEstaEnLista({
+    required int idLista,
+    required int idCancion,
+  }) async {
+    try {
+      return await _dbHelper.cancionEstaEnLista(
+        idLista: idLista,
+        idCancion: idCancion,
+      );
+    } catch (e) {
+      print('Error verificando canción en lista: $e');
+      return false;
+    }
+  }
+
+  // Obtener conteo de canciones por lista
+  Future<Map<int, int>> getConteoCancionesPorLista() async {
+    try {
+      return await _dbHelper.getConteoCancionesPorLista();
+    } catch (e) {
+      print('Error obteniendo conteo de canciones por lista: $e');
+      return {};
     }
   }
 }

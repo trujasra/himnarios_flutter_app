@@ -23,56 +23,12 @@ class CancionCard extends StatelessWidget {
 
   // Método para obtener el color específico según el nombre del himnario
   Color _getColorForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return AppTheme.bendicionColor;
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return AppTheme.corosColor;
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return AppTheme.calaColor;
-    } else if (nombre.toLowerCase().contains('poder del')) {
-      return AppTheme.poderColor;
-    } else if (nombre.toLowerCase().contains('lluvias de')) {
-      return AppTheme.lluviasColor;
-    } else {
-      return AppTheme.getColorForHimnario(himnario.color);
-    }
+    return DynamicTheme.getColorForHimnarioSync(nombre);
   }
 
   // Método para obtener el gradiente específico según el nombre del himnario
   LinearGradient _getGradientForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return const LinearGradient(
-        colors: [AppTheme.bendicionColor, AppTheme.bendicionDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return const LinearGradient(
-        colors: [AppTheme.corosColor, AppTheme.corosDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return const LinearGradient(
-        colors: [AppTheme.calaColor, AppTheme.calaDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('poder del')) {
-      return const LinearGradient(
-        colors: [AppTheme.poderColor, AppTheme.poderDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else if (nombre.toLowerCase().contains('lluvias de')) {
-      return const LinearGradient(
-        colors: [AppTheme.lluviasColor, AppTheme.lluviasDarkColor],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      );
-    } else {
-      return AppTheme.getGradientForHimnario(himnario.color);
-    }
+    return DynamicTheme.getGradientForHimnarioSync(nombre);
   }
 
   @override
@@ -269,7 +225,12 @@ class CancionCard extends StatelessWidget {
       case 'aymara':
         return const Color.fromARGB(255, 187, 113, 1);
       case 'español':
-        return const Color.fromARGB(255, 0, 156, 135); // Rojo elegante para Español
+        return const Color.fromARGB(
+          255,
+          0,
+          156,
+          135,
+        ); // Rojo elegante para Español
       case 'quechua':
         return const Color(0xFF4A90E2); // Azul elegante para Aymara
       default:

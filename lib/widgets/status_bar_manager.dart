@@ -70,13 +70,7 @@ class StatusBarManager {
 
   /// Retorna el color según el himnario
   static Color _getColorForHimnario(String nombre) {
-    final lower = nombre.toLowerCase();
-    if (lower.contains('bendición del cielo')) return AppTheme.bendicionColor;
-    if (lower.contains('coros cristianos')) return AppTheme.corosColor;
-    if (lower.contains('cala')) return AppTheme.calaColor;
-    if (lower.contains('poder del')) return AppTheme.poderColor;
-    if (lower.contains('lluvias de')) return AppTheme.lluviasColor;
-    return AppTheme.getColorForHimnario('default');
+    return DynamicTheme.getColorForHimnarioSync(nombre);
   }
 }
 

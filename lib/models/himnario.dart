@@ -12,6 +12,7 @@ class Himnario {
   final String? colorDarkHex;
   final String? imagenFondo;
   final int? inactividadMinutos;
+  final int estadoRegistro; // 1: activo, 0: inactivo
 
   const Himnario({
     required this.id,
@@ -26,6 +27,7 @@ class Himnario {
     this.colorDarkHex,
     this.imagenFondo,
     this.inactividadMinutos,
+    this.estadoRegistro = 1, // Por defecto activo
   });
 
   factory Himnario.fromJson(Map<String, dynamic> json) {
@@ -42,6 +44,7 @@ class Himnario {
       colorDarkHex: json['colorDarkHex'],
       imagenFondo: json['imagenFondo'],
       inactividadMinutos: json['inactividadMinutos'],
+      estadoRegistro: json['estado_registro'] ?? 1,
     );
   }
 
@@ -59,6 +62,40 @@ class Himnario {
       'colorDarkHex': colorDarkHex,
       'imagenFondo': imagenFondo,
       'inactividadMinutos': inactividadMinutos,
+      'estado_registro': estadoRegistro,
     };
   }
-} 
+
+  // Método para crear una copia modificada del himnario
+  Himnario copyWith({
+    int? id,
+    String? nombre,
+    String? color,
+    String? colorSecundario,
+    String? colorTexto,
+    int? canciones,
+    String? descripcion,
+    List<String>? idiomas,
+    String? colorHex,
+    String? colorDarkHex,
+    String? imagenFondo,
+    int? inactividadMinutos,
+    int? estadoRegistro,
+  }) {
+    return Himnario(
+      id: id ?? this.id,
+      nombre: nombre ?? this.nombre,
+      color: color ?? this.color,
+      colorSecundario: colorSecundario ?? this.colorSecundario,
+      colorTexto: colorTexto ?? this.colorTexto,
+      canciones: canciones ?? this.canciones,
+      descripcion: descripcion ?? this.descripcion,
+      idiomas: idiomas ?? List<String>.from(this.idiomas),
+      colorHex: colorHex ?? this.colorHex,
+      colorDarkHex: colorDarkHex ?? this.colorDarkHex,
+      imagenFondo: imagenFondo ?? this.imagenFondo,
+      inactividadMinutos: inactividadMinutos ?? this.inactividadMinutos,
+      estadoRegistro: estadoRegistro ?? this.estadoRegistro,
+    );
+  }
+}

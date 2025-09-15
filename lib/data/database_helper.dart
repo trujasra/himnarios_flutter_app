@@ -231,12 +231,18 @@ class DatabaseHelper {
   // Funciones para manejar favoritos
   Future<List<int>> getFavoritos() async {
     final db = await instance.database;
-    final result = await db.query(
-      'Favoritos',
-      columns: ['id_cancion'],
-      where: 'estado_registro = ?',
-      whereArgs: [1],
-    );
+
+    // Obtener solo los favoritos que pertenecen a himnarios activos
+    final result = await db.rawQuery('''
+      SELECT f.id_cancion 
+      FROM Favoritos f
+      INNER JOIN Cancion c ON f.id_cancion = c.id_cancion
+      INNER JOIN Par_Tipo_Himnario th ON c.id_tipo_himnario = th.id_tipo_himnario
+      WHERE f.estado_registro = 1 
+      AND th.estado_registro = 1
+      AND c.estado_registro = 1
+    ''');
+
     return result.map((row) => row['id_cancion'] as int).toList();
   }
 
@@ -882,30 +888,30 @@ class DatabaseHelper {
     String? color,
     String? colorDark,
     String? imagenFondo,
-    int? inactividadMinutos,
+    bool? activo,
   }) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
 
-    final Map<String, dynamic> updates = {
+    final data = <String, dynamic>{
       'fecha_modificacion': now,
       'usuario_modificacion': 'ramiro.trujillo',
     };
 
-    if (color != null) updates['color'] = color;
-    if (colorDark != null) updates['color_dark'] = colorDark;
-    if (imagenFondo != null) updates['imagen_fondo'] = imagenFondo;
+    if (color != null) data['color'] = color;
+    if (colorDark != null) data['color_dark'] = colorDark;
+    if (imagenFondo != null) data['imagen_fondo'] = imagenFondo;
+    if (activo != null) data['estado_registro'] = activo ? 1 : 0;
 
-    final result = await db.update(
+    await db.update(
       'Par_Tipo_Himnario',
-      updates,
+      data,
       where: 'id_tipo_himnario = ?',
       whereArgs: [idHimnario],
     );
-
     print('✅ Configuración actualizada para himnario ID: $idHimnario');
-    print('📊 Filas afectadas: $result');
-    print('🔧 Datos actualizados: $updates');
+    print('📊 Filas afectadas: ');
+    print('🔧 Datos actualizados: $data');
 
     // Verificar que se guardó correctamente
     final verificacion = await db.query(
@@ -973,14 +979,16 @@ class DatabaseHelper {
     return result.isNotEmpty ? result.first : null;
   }
 
-  Future<Map<String, dynamic>?> getConfiguracionHimnarioPorNombre(String nombre) async {
+  Future<Map<String, dynamic>?> getConfiguracionHimnarioPorNombre(
+    String nombre,
+  ) async {
     final db = await instance.database;
     final result = await db.query(
       'Par_Tipo_Himnario',
       where: 'nombre = ?',
       whereArgs: [nombre],
     );
-    
+
     return result.isNotEmpty ? result.first : null;
   }
 
@@ -993,7 +1001,7 @@ class DatabaseHelper {
   }) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
-    
+
     final listaData = {
       'nombre': nombre,
       'descripcion': descripcion,
@@ -1003,7 +1011,7 @@ class DatabaseHelper {
       'fecha_modificacion': null,
       'usuario_modificacion': null,
     };
-    
+
     final id = await db.insert('Lista', listaData);
     print('✅ Lista creada: $nombre (ID: $id)');
     return id;
@@ -1040,7 +1048,7 @@ class DatabaseHelper {
   }) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
-    
+
     await db.update(
       'Lista',
       {
@@ -1059,7 +1067,7 @@ class DatabaseHelper {
   Future<void> eliminarLista(int idLista) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
-    
+
     // Eliminar todas las canciones de la lista
     await db.update(
       'Lista_Cancion',
@@ -1071,7 +1079,7 @@ class DatabaseHelper {
       where: 'id_lista = ?',
       whereArgs: [idLista],
     );
-    
+
     // Eliminar la lista
     await db.update(
       'Lista',
@@ -1093,14 +1101,14 @@ class DatabaseHelper {
   }) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
-    
+
     // Verificar si ya existe la relación
     final existente = await db.query(
       'Lista_Cancion',
       where: 'id_lista = ? AND id_cancion = ?',
       whereArgs: [idLista, idCancion],
     );
-    
+
     if (existente.isEmpty) {
       // Insertar nueva relación
       await db.insert('Lista_Cancion', {
@@ -1112,7 +1120,9 @@ class DatabaseHelper {
         'fecha_modificacion': null,
         'usuario_modificacion': null,
       });
-      print('✅ Canción agregada a lista (Lista: $idLista, Canción: $idCancion)');
+      print(
+        '✅ Canción agregada a lista (Lista: $idLista, Canción: $idCancion)',
+      );
     } else {
       // Reactivar si ya existe pero está inactiva
       await db.update(
@@ -1125,7 +1135,9 @@ class DatabaseHelper {
         where: 'id_lista = ? AND id_cancion = ?',
         whereArgs: [idLista, idCancion],
       );
-      print('✅ Canción reactivada en lista (Lista: $idLista, Canción: $idCancion)');
+      print(
+        '✅ Canción reactivada en lista (Lista: $idLista, Canción: $idCancion)',
+      );
     }
   }
 
@@ -1136,7 +1148,7 @@ class DatabaseHelper {
   }) async {
     final db = await instance.database;
     final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
-    
+
     await db.update(
       'Lista_Cancion',
       {
@@ -1147,13 +1159,16 @@ class DatabaseHelper {
       where: 'id_lista = ? AND id_cancion = ?',
       whereArgs: [idLista, idCancion],
     );
-    print('🗑️ Canción removida de lista (Lista: $idLista, Canción: $idCancion)');
+    print(
+      '🗑️ Canción removida de lista (Lista: $idLista, Canción: $idCancion)',
+    );
   }
 
   // Obtener canciones de una lista
   Future<List<Map<String, dynamic>>> getCancionesDeLista(int idLista) async {
     final db = await instance.database;
-    final result = await db.rawQuery(''' 
+    final result = await db.rawQuery(
+      ''' 
       SELECT 
         c.id_cancion,
         c.numero,
@@ -1170,8 +1185,10 @@ class DatabaseHelper {
       LEFT JOIN Letra l ON c.id_cancion = l.id_cancion
       WHERE lc.id_lista = ? AND lc.estado_registro = 1 AND c.estado_registro = 1
       ORDER BY lc.fecha_registro ASC
-    ''', [idLista]);
-    
+    ''',
+      [idLista],
+    );
+
     return result;
   }
 
@@ -1200,7 +1217,7 @@ class DatabaseHelper {
       WHERE estado_registro = 1
       GROUP BY id_lista
     ''');
-    
+
     final Map<int, int> conteos = {};
     for (var row in result) {
       conteos[row['id_lista'] as int] = row['total_canciones'] as int;

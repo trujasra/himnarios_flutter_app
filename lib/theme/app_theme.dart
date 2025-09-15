@@ -280,12 +280,12 @@ class DynamicTheme {
       // Fallback a colores estáticos
       return AppTheme.getColorForHimnario(
         _mapNombreToKey(nombreHimnario),
-      ).withOpacity(0.8);
+      ).withValues(alpha: 0.8);
     } catch (e) {
       print('Error obteniendo color oscuro dinámico: $e');
       return AppTheme.getColorForHimnario(
         _mapNombreToKey(nombreHimnario),
-      ).withOpacity(0.8);
+      ).withValues(alpha: 0.8);
     }
   }
 

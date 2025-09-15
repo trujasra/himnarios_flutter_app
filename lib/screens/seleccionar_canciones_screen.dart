@@ -19,14 +19,15 @@ class SeleccionarCancionesScreen extends StatefulWidget {
   });
 
   @override
-  State<SeleccionarCancionesScreen> createState() => _SeleccionarCancionesScreenState();
+  State<SeleccionarCancionesScreen> createState() =>
+      _SeleccionarCancionesScreenState();
 }
 
 class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
     with SingleTickerProviderStateMixin {
   final CancionesService _cancionesService = CancionesService();
   late TabController _tabController;
-  
+
   List<Himnario> _himnarios = [];
   Map<String, List<Cancion>> _cancionesPorHimnario = {};
   Set<int> _cancionesEnLista = {};
@@ -57,14 +58,18 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
       final Map<String, List<Cancion>> cancionesPorHimnario = {};
       final List<Cancion> todasCanciones = [];
       for (final himnario in himnarios) {
-        final canciones = await _cancionesService.getCancionesPorHimnario(himnario.nombre);
+        final canciones = await _cancionesService.getCancionesPorHimnario(
+          himnario.nombre,
+        );
         cancionesPorHimnario[himnario.nombre] = canciones;
         todasCanciones.addAll(canciones);
       }
 
       // Cargar canciones que ya están en la lista
       if (widget.idLista != null) {
-        final cancionesEnLista = await _cancionesService.getCancionesDeLista(widget.idLista!);
+        final cancionesEnLista = await _cancionesService.getCancionesDeLista(
+          widget.idLista!,
+        );
         final idsEnLista = cancionesEnLista.map((c) => c.id).toSet();
         setState(() {
           _cancionesEnLista = idsEnLista;
@@ -89,7 +94,7 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
 
   Future<void> _toggleCancionEnLista(Cancion cancion) async {
     if (widget.idLista == null) return;
-    
+
     try {
       if (_cancionesEnLista.contains(cancion.id)) {
         await _cancionesService.quitarCancionDeLista(
@@ -106,17 +111,14 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
       }
     } catch (e) {
       if (mounted) {
-        CustomSnackBar.showError(
-          context,
-          'Error: $e',
-        );
+        CustomSnackBar.showError(context, 'Error: $e');
       }
     }
   }
 
   Future<void> _agregarCancionALista(int idCancion) async {
     if (widget.idLista == null) return;
-    
+
     try {
       await _cancionesService.agregarCancionALista(
         idLista: widget.idLista!,
@@ -173,9 +175,12 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
             Center(
               child: Container(
                 margin: const EdgeInsets.only(right: 16),
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 6,
+                ),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
@@ -196,99 +201,105 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
               child: CircularProgressIndicator(color: AppTheme.primaryColor),
             )
           : _himnarios.isEmpty
-              ? const Center(
-                  child: Text('No hay himnarios disponibles'),
-                )
-              : Container(
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [Color(0xFFEFF6FF), Color(0xFFF5F3FF), Color(0xFFFAF5FF)],
+          ? const Center(child: Text('No hay himnarios disponibles'))
+          : Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xFFEFF6FF),
+                    Color(0xFFF5F3FF),
+                    Color(0xFFFAF5FF),
+                  ],
+                ),
+              ),
+              child: Column(
+                children: [
+                  // Buscador
+                  Container(
+                    color: Colors.white,
+                    padding: const EdgeInsets.all(16),
+                    child: TextField(
+                      onChanged: (value) => setState(() => _busqueda = value),
+                      decoration: InputDecoration(
+                        hintText: 'Buscar canciones en todos los himnarios...',
+                        prefixIcon: const Icon(Icons.search),
+                        suffixIcon: _busqueda.isNotEmpty
+                            ? IconButton(
+                                icon: const Icon(Icons.clear),
+                                onPressed: () => setState(() => _busqueda = ''),
+                              )
+                            : null,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                          borderSide: BorderSide.none,
+                        ),
+                        filled: true,
+                        fillColor: Colors.grey.shade100,
+                      ),
                     ),
                   ),
-                  child: Column(
-                    children: [
-                      // Buscador
-                      Container(
-                        color: Colors.white,
-                        padding: const EdgeInsets.all(16),
-                        child: TextField(
-                          onChanged: (value) => setState(() => _busqueda = value),
-                          decoration: InputDecoration(
-                            hintText: 'Buscar canciones en todos los himnarios...',
-                            prefixIcon: const Icon(Icons.search),
-                            suffixIcon: _busqueda.isNotEmpty
-                                ? IconButton(
-                                    icon: const Icon(Icons.clear),
-                                    onPressed: () => setState(() => _busqueda = ''),
-                                  )
-                                : null,
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(12),
-                              borderSide: BorderSide.none,
-                            ),
-                            filled: true,
-                            fillColor: Colors.grey.shade100,
-                          ),
-                        ),
+                  // TabBar
+                  Container(
+                    color: Colors.white,
+                    child: TabBar(
+                      controller: _tabController,
+                      isScrollable: true,
+                      labelColor: AppTheme.primaryColor,
+                      unselectedLabelColor: Colors.grey.shade600,
+                      indicatorColor: AppTheme.primaryColor,
+                      indicatorWeight: 3,
+                      labelStyle: const TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w600,
+                        fontSize: 14,
                       ),
-                      // TabBar
-                      Container(
-                        color: Colors.white,
-                        child: TabBar(
-                          controller: _tabController,
-                          isScrollable: true,
-                          labelColor: AppTheme.primaryColor,
-                          unselectedLabelColor: Colors.grey.shade600,
-                          indicatorColor: AppTheme.primaryColor,
-                          indicatorWeight: 3,
-                          labelStyle: const TextStyle(
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w600,
-                            fontSize: 14,
-                          ),
-                          unselectedLabelStyle: const TextStyle(
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w500,
-                            fontSize: 14,
-                          ),
-                          tabs: _himnarios.map((himnario) {
-                            final canciones = _cancionesPorHimnario[himnario.nombre] ?? [];
-                            final enLista = canciones.where((c) => _cancionesEnLista.contains(c.id)).length;
-                            return Tab(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(himnario.nombre),
-                                  if (enLista > 0)
-                                    Text(
-                                      '$enLista agregadas',
-                                      style: TextStyle(
-                                        fontSize: 10,
-                                        color: Colors.green.shade600,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                ],
-                              ),
-                            );
-                          }).toList(),
-                        ),
+                      unselectedLabelStyle: const TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w500,
+                        fontSize: 14,
                       ),
-                      // TabBarView
-                      Expanded(
-                        child: TabBarView(
-                          controller: _tabController,
-                          children: _himnarios.map((himnario) {
-                            final canciones = _cancionesPorHimnario[himnario.nombre] ?? [];
-                            return _buildCancionesList(himnario, canciones);
-                          }).toList(),
-                        ),
-                      ),
-                    ],
+                      tabs: _himnarios.map((himnario) {
+                        final canciones =
+                            _cancionesPorHimnario[himnario.nombre] ?? [];
+                        final enLista = canciones
+                            .where((c) => _cancionesEnLista.contains(c.id))
+                            .length;
+                        return Tab(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(himnario.nombre),
+                              if (enLista > 0)
+                                Text(
+                                  '$enLista agregadas',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    color: Colors.green.shade600,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        );
+                      }).toList(),
+                    ),
                   ),
-                ),
+                  // TabBarView
+                  Expanded(
+                    child: TabBarView(
+                      controller: _tabController,
+                      children: _himnarios.map((himnario) {
+                        final canciones =
+                            _cancionesPorHimnario[himnario.nombre] ?? [];
+                        return _buildCancionesList(himnario, canciones);
+                      }).toList(),
+                    ),
+                  ),
+                ],
+              ),
+            ),
       floatingActionButton: _cancionesAgregadas > 0
           ? FloatingActionButton.extended(
               onPressed: () {
@@ -315,28 +326,25 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
 
   List<Cancion> _filtrarCanciones(List<Cancion> canciones) {
     if (_busqueda.isEmpty) return canciones;
-    
+
     return canciones.where((cancion) {
       final busq = _busqueda.toLowerCase();
       return cancion.titulo.toLowerCase().contains(busq) ||
-             cancion.numero.toString().contains(busq) ||
-             (cancion.tituloSecundario?.toLowerCase().contains(busq) ?? false);
+          cancion.numero.toString().contains(busq) ||
+          (cancion.tituloSecundario?.toLowerCase().contains(busq) ?? false);
     }).toList();
   }
 
   Widget _buildCancionesList(Himnario himnario, List<Cancion> canciones) {
     final cancionesFiltradas = _filtrarCanciones(canciones);
-    
+
     if (cancionesFiltradas.isEmpty) {
       return Center(
         child: Text(
-          _busqueda.isEmpty 
+          _busqueda.isEmpty
               ? 'No hay canciones en ${himnario.nombre}'
               : 'No se encontraron canciones con "$_busqueda"',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            color: Colors.grey.shade600,
-          ),
+          style: TextStyle(fontFamily: 'Poppins', color: Colors.grey.shade600),
         ),
       );
     }
@@ -347,7 +355,7 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
       itemBuilder: (context, index) {
         final cancion = cancionesFiltradas[index];
         final estaEnLista = _cancionesEnLista.contains(cancion.id);
-        
+
         return Container(
           margin: const EdgeInsets.only(bottom: 8),
           decoration: BoxDecoration(
@@ -378,13 +386,13 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
                       width: 40,
                       height: 40,
                       decoration: BoxDecoration(
-                        color: estaEnLista 
-                            ? Colors.green.shade50 
+                        color: estaEnLista
+                            ? Colors.green.shade50
                             : Colors.grey.shade100,
                         borderRadius: BorderRadius.circular(8),
                         border: Border.all(
-                          color: estaEnLista 
-                              ? Colors.green.shade300 
+                          color: estaEnLista
+                              ? Colors.green.shade300
                               : Colors.grey.shade300,
                         ),
                       ),
@@ -395,8 +403,8 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w600,
                             fontSize: 14,
-                            color: estaEnLista 
-                                ? Colors.green.shade700 
+                            color: estaEnLista
+                                ? Colors.green.shade700
                                 : Colors.grey.shade700,
                           ),
                         ),
@@ -414,14 +422,15 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
-                              color: estaEnLista 
-                                  ? Colors.green.shade800 
+                              color: estaEnLista
+                                  ? Colors.green.shade800
                                   : Colors.grey.shade800,
                             ),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
-                          if (cancion.tituloSecundario != null && cancion.tituloSecundario!.isNotEmpty)
+                          if (cancion.tituloSecundario != null &&
+                              cancion.tituloSecundario!.isNotEmpty)
                             Text(
                               cancion.tituloSecundario!,
                               style: TextStyle(
@@ -451,21 +460,21 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
                       width: 36,
                       height: 36,
                       decoration: BoxDecoration(
-                        color: estaEnLista 
-                            ? Colors.red.shade50 
+                        color: estaEnLista
+                            ? Colors.red.shade50
                             : Colors.green.shade50,
                         borderRadius: BorderRadius.circular(18),
                         border: Border.all(
-                          color: estaEnLista 
-                              ? Colors.red.shade300 
+                          color: estaEnLista
+                              ? Colors.red.shade300
                               : Colors.green.shade300,
                           width: 1.5,
                         ),
                       ),
                       child: Icon(
                         estaEnLista ? Icons.remove : Icons.add,
-                        color: estaEnLista 
-                            ? Colors.red.shade600 
+                        color: estaEnLista
+                            ? Colors.red.shade600
                             : Colors.green.shade600,
                         size: 20,
                       ),

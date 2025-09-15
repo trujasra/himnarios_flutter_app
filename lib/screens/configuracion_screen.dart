@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../widgets/status_bar_manager.dart';
 import '../widgets/route_aware_mixin.dart';
 import '../widgets/custom_snackbar.dart';
+import 'package:himnarios_flutter_app/data/database_helper.dart';
 
 class ConfiguracionScreen extends StatefulWidget {
   const ConfiguracionScreen({super.key});
@@ -68,40 +69,236 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
     setState(() => isLoading = true);
 
     try {
-      final himnariosData = await _cancionesService.getHimnariosCompletos();
+      // Obtener todos los himnarios, incluyendo los inactivos
+      final himnariosData = await DatabaseHelper.instance.getHimnarios();
+
+      // Mapear los datos crudos a objetos Himnario
+      final himnariosList = <Himnario>[];
+
+      for (var h in himnariosData) {
+        // Obtener el conteo de canciones para este himnario
+        final count = await _getCantidadCancionesPorHimnario(
+          h['id_tipo_himnario'],
+        );
+
+        himnariosList.add(
+          Himnario(
+            id: h['id_tipo_himnario'],
+            nombre: h['nombre'],
+            color: h['color'] ?? '#295F98',
+            colorSecundario: h['color_dark'] ?? '#194675',
+            colorTexto: '000000', // Color de texto por defecto
+            canciones: count,
+            descripcion: h['descripcion'] ?? '',
+            idiomas: [], // Se actualizará más adelante
+            estadoRegistro: (h['estado_registro'] == 1) ? 1 : 0,
+          ),
+        );
+      }
+
+      // Inicializar visibilidad basada en estado_registro
+      final Map<String, bool> visibilidad = {};
+      for (var himnario in himnariosList) {
+        visibilidad[himnario.nombre] = himnario.estadoRegistro == 1;
+      }
+
+      // Actualizar SharedPreferences para mantener consistencia
       final prefs = await SharedPreferences.getInstance();
+      for (var entry in visibilidad.entries) {
+        await prefs.setBool('visible_${entry.key}', entry.value);
+      }
 
       setState(() {
-        himnarios = himnariosData;
-
-        // Cargar configuración de visibilidad
-        for (var himnario in himnarios) {
-          himnariosVisibles[himnario.nombre] =
-              prefs.getBool('visible_${himnario.nombre}') ?? true;
-        }
-
+        himnarios = himnariosList;
+        himnariosVisibles = visibilidad;
         isLoading = false;
       });
     } catch (e) {
       print('Error cargando datos: $e');
       setState(() => isLoading = false);
+      // Mostrar error al usuario
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error al cargar los himnarios: $e')),
+        );
+      }
+    }
+  }
+
+  // Método auxiliar para obtener la cantidad de canciones por himnario
+  Future<int> _getCantidadCancionesPorHimnario(int idHimnario) async {
+    try {
+      final db = await DatabaseHelper.instance.database;
+      final result = await db.rawQuery(
+        '''
+        SELECT COUNT(*) as count 
+        FROM Cancion 
+        WHERE id_tipo_himnario = ? AND estado_registro = 1
+      ''',
+        [idHimnario],
+      );
+
+      return result.first['count'] as int? ?? 0;
+    } catch (e) {
+      print('Error obteniendo cantidad de canciones: $e');
+      return 0;
     }
   }
 
   Future<void> _toggleVisibilidad(String nombreHimnario, bool visible) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('visible_$nombreHimnario', visible);
+    try {
+      // Obtener la lista completa de himnarios
+      final himnariosData = await DatabaseHelper.instance.getHimnarios();
+      final himnarioData = himnariosData.firstWhere(
+        (h) => h['nombre'] == nombreHimnario,
+      );
 
-    setState(() {
-      himnariosVisibles[nombreHimnario] = visible;
-    });
+      // Verificar si es para desactivar y hay solo un himnario activo
+      if (!visible) {
+        final himnariosActivos = himnariosData
+            .where((h) => h['estado_registro'] == 1)
+            .length;
 
-    CustomSnackBar.showInfo(
-      context,
-      visible
-          ? '$nombreHimnario ahora es visible'
-          : '$nombreHimnario ahora está oculto',
-    );
+        // Si solo hay un himnario activo y es el que se quiere desactivar, mostrar error
+        if (himnariosActivos <= 1 && himnarioData['estado_registro'] == 1) {
+          if (mounted) {
+            CustomSnackBar.showError(
+              context,
+              'Debe haber al menos un himnario activo',
+            );
+            setState(() {
+              himnariosVisibles[nombreHimnario] = true; // Mantener activo
+            });
+          }
+          return;
+        }
+      }
+
+      // Mostrar diálogo de confirmación con colores
+      final confirmado = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          /*title: Text(
+            visible ? '¿Activar himnario?' : '¿Desactivar himnario?',
+            style: TextStyle(
+              color: visible ? Colors.green : Colors.orange[800],
+              fontWeight: FontWeight.bold,
+            ),
+          ),*/
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                visible
+                    ? '¿Estás seguro de que deseas activar $nombreHimnario?'
+                    : '¿Estás seguro de que deseas desactivar $nombreHimnario?',
+                style: TextStyle(fontSize: 16),
+              ),
+              if (!visible) SizedBox(height: 8),
+              if (!visible)
+                Text(
+                  'No se mostrará en la lista principal hasta que lo actives nuevamente.',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.grey[600],
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.grey[800],
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              ),
+              child: Text(
+                'CANCELAR',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            const SizedBox(width: 8),
+            ElevatedButton(
+              onPressed: () => Navigator.of(context).pop(true),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: visible ? Colors.green : Colors.red,
+                foregroundColor: Colors.white,
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                elevation: 2,
+              ),
+              child: Text(
+                visible ? 'ACTIVAR' : 'DESACTIVAR',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 0.5,
+                ),
+              ),
+            ),
+          ],
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          elevation: 8,
+        ),
+      );
+
+      if (confirmado != true) {
+        if (mounted) {
+          setState(() {
+            himnariosVisibles[nombreHimnario] = !visible;
+          });
+        }
+        return;
+      }
+
+      // Actualizar en la base de datos
+      final himnarioDataActual = himnariosData.firstWhere(
+        (h) => h['nombre'] == nombreHimnario,
+      );
+      await DatabaseHelper.instance.actualizarConfiguracionHimnario(
+        idHimnario: himnarioDataActual['id_tipo_himnario'],
+        activo: visible,
+      );
+
+      // Actualizar estado local
+      if (mounted) {
+        setState(() {
+          himnariosVisibles[nombreHimnario] = visible;
+          // Actualizar el estado en la lista local
+          final index = himnarios.indexWhere((h) => h.nombre == nombreHimnario);
+          if (index != -1) {
+            final himnarioActual = himnarios[index];
+            himnarios[index] = himnarioActual.copyWith(
+              estadoRegistro: visible ? 1 : 0,
+            );
+          }
+        });
+
+        // Mostrar mensaje de éxito
+        final mensaje = visible
+            ? '✅ Himnario activado correctamente'
+            : '⏸️ Himnario desactivado correctamente';
+        CustomSnackBar.showSuccess(context, mensaje);
+      }
+    } catch (e) {
+      // Revertir cambio en caso de error
+      if (mounted) {
+        setState(() {
+          himnariosVisibles[nombreHimnario] = !visible;
+        });
+        print('Error al actualizar visibilidad: $e');
+        CustomSnackBar.showError(
+          context,
+          '❌ Error al ${visible ? 'activar' : 'desactivar'} el himnario',
+        );
+      }
+    }
   }
 
   Future<void> _actualizarConfiguracion({
@@ -111,8 +308,8 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
     String? imagenFondo,
   }) async {
     try {
-      print('🔄 Iniciando actualización para himnario ID: $idHimnario');
-      print('🎨 Color: $color, Color Dark: $colorDark');
+      //print('🔄 Iniciando actualización para himnario ID: $idHimnario');
+      //print('🎨 Color: $color, Color Dark: $colorDark');
 
       await _cancionesService.actualizarConfiguracionHimnario(
         idHimnario: idHimnario,
@@ -121,24 +318,24 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
         imagenFondo: imagenFondo,
       );
 
-      print('🧹 Limpiando cache...');
+      //print('🧹 Limpiando cache...');
       // Limpiar cache y recargar datos para mostrar los cambios
       DynamicTheme.clearCache();
 
-      print('📥 Recargando cache...');
+      //print('📥 Recargando cache...');
       await DynamicTheme.loadCache();
 
-      print('🔄 Recargando datos de himnarios...');
+      //print('🔄 Recargando datos de himnarios...');
       await _cargarDatos();
 
-      print('✅ Actualización completada exitosamente');
+      //print('✅ Actualización completada exitosamente');
 
       CustomSnackBar.showSuccess(
         context,
         'Configuración actualizada correctamente',
       );
     } catch (e) {
-      print('❌ Error actualizando configuración: $e');
+      //print('❌ Error actualizando configuración: $e');
       CustomSnackBar.showError(context, 'Error al actualizar la configuración');
     }
   }
@@ -344,6 +541,28 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
   Widget _buildHimnarioItem(Himnario himnario) {
     final isVisible = himnariosVisibles[himnario.nombre] ?? true;
     final colorWidget = DynamicTheme.getColorForHimnarioSync(himnario.nombre);
+    final isActive = himnario.estadoRegistro == 1;
+    final buttonColor = isActive ? colorWidget : Colors.grey;
+    final buttonStyle = isActive
+        ? ElevatedButton.styleFrom(
+            backgroundColor: buttonColor,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+          )
+        : ElevatedButton.styleFrom(
+            backgroundColor: Colors.grey.shade300,
+            foregroundColor: Colors.grey.shade600,
+            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            // Deshabilitar el efecto de elevación
+            elevation: 0,
+            shadowColor: Colors.transparent,
+          );
 
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
@@ -367,11 +586,11 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: colorWidget.withValues(alpha: 0.1),
+                  color: buttonColor.withValues(alpha: 0.1),
                 ),
                 child: Icon(
                   Icons.menu_book_rounded,
-                  color: colorWidget,
+                  color: buttonColor,
                   size: 20,
                 ),
               ),
@@ -394,9 +613,23 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 12,
-                        color: Colors.grey.shade600,
+                        color: isActive
+                            ? Colors.grey.shade600
+                            : Colors.grey.shade400,
                       ),
                     ),
+                    if (!isActive) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        'Himnario inactivo',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 10,
+                          color: Colors.orange.shade700,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ],
                   ],
                 ),
               ),
@@ -412,35 +645,41 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
           Row(
             children: [
               ElevatedButton.icon(
-                onPressed: () => _mostrarSelectorColor(himnario),
-                icon: const Icon(Icons.palette, size: 16),
-                label: const Text('Color'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: colorWidget,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 8,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                onPressed: isActive
+                    ? () => _mostrarSelectorColor(himnario)
+                    : null, // Deshabilitar si no está activo
+                icon: Icon(
+                  Icons.palette,
+                  size: 16,
+                  color: isActive ? Colors.white : Colors.grey.shade600,
+                ),
+                label: Text(
+                  'Color',
+                  style: TextStyle(
+                    color: isActive ? Colors.white : Colors.grey.shade600,
                   ),
                 ),
+                style: buttonStyle,
               ),
               const SizedBox(width: 8),
               ElevatedButton.icon(
-                onPressed: () => _mostrarSelectorImagenFondo(himnario),
-                icon: const Icon(Icons.image, size: 16),
-                label: const Text('Fondo'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey.shade600,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 8,
+                onPressed: isActive
+                    ? () => _mostrarSelectorImagenFondo(himnario)
+                    : null, // Deshabilitar si no está activo
+                icon: Icon(
+                  Icons.image,
+                  size: 16,
+                  color: isActive ? Colors.white : Colors.grey.shade600,
+                ),
+                label: Text(
+                  'Fondo',
+                  style: TextStyle(
+                    color: isActive ? Colors.white : Colors.grey.shade600,
                   ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                ),
+                style: buttonStyle.copyWith(
+                  backgroundColor: MaterialStatePropertyAll<Color>(
+                    isActive ? Colors.grey.shade600 : Colors.grey.shade300,
                   ),
                 ),
               ),
@@ -532,7 +771,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
                                   ),
                                 ),
                                 Text(
-                                  'Personaliza la visibilidad y colores de cada himnario',
+                                  'Personaliza la visibilidad, colores y fondo de cada himnario',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 14,

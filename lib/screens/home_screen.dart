@@ -177,56 +177,76 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
 
   Widget tituloHimnarios() {
     return Row(
-      mainAxisSize: MainAxisSize.min,
       children: [
         Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: LinearGradient(
-              colors: [AppTheme.secondaryColor, AppTheme.primaryColor],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: const Color.fromARGB(
-                  255,
-                  25,
-                  189,
-                  210,
-                ).withValues(alpha: 0.4),
-                blurRadius: 6,
-                offset: const Offset(2, 2),
-              ),
-            ],
+            color: AppTheme.primaryColor.withValues(alpha: 0.1),
           ),
-          child: const Icon(
+          child: Icon(
             Icons.menu_book_rounded,
-            color: Colors.white,
-            size: 18,
-            shadows: [
-              Shadow(
-                color: Colors.black26,
-                blurRadius: 3,
-                offset: Offset(1, 1),
+            color: AppTheme.primaryColor,
+            size: 24,
+          ),
+        ),
+
+        const SizedBox(width: 12),
+        RichText(
+          text: TextSpan(
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              color: AppTheme.primaryColor,
+              height: 1,
+              letterSpacing: 0,
+            ),
+            children: [
+              TextSpan(
+                text: '${himnarios.length} ',
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: himnarios.length == 1
+                    ? 'Himnario Disponible'
+                    : 'Himnarios Disponibles',
+                style: const TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ],
           ),
         ),
-        const SizedBox(width: 7),
-        Expanded(
-          child: Text(
-            'Himnarios Disponibles',
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 15,
-              fontWeight: FontWeight.w600,
-              color: AppTheme.primaryColor,
-              height: 0.98,
-              letterSpacing: 0,
+        const Spacer(),
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              '${canciones.length}',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 16,
+                fontWeight: FontWeight.w700,
+                color: AppTheme.primaryColor,
+                height: 1,
+                letterSpacing: 0.5,
+              ),
             ),
-          ),
+            Text(
+              'canciones',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 11,
+                fontWeight: FontWeight.w500,
+                color: AppTheme.primaryColor.withValues(alpha: 0.8),
+                letterSpacing: 0.5,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
         ),
       ],
     );
@@ -240,7 +260,8 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
           padding: const EdgeInsets.all(6),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: LinearGradient(
+            color: AppTheme.primaryColor.withValues(alpha: 0.1),
+            /*gradient: LinearGradient(
               colors: [AppTheme.secondaryColor, AppTheme.primaryColor],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -256,39 +277,54 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                 blurRadius: 6,
                 offset: const Offset(2, 2),
               ),
-            ],
+            ],*/
           ),
           child: const Icon(
             Icons.search_rounded,
-            color: Colors.white,
+            color: AppTheme.primaryColor,
             size: 20,
-            shadows: [
+            /*shadows: [
               Shadow(
                 color: Colors.black26,
                 blurRadius: 3,
                 offset: Offset(1, 1),
               ),
-            ],
+            ],*/
           ),
         ),
         const SizedBox(width: 10),
         Expanded(
-          child: Text(
-            'Resultados para "$busqueda"',
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-              color: AppTheme.primaryColor,
-              height: 0.98,
-              letterSpacing: 0,
+          child: RichText(
+            text: TextSpan(
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                color: AppTheme.primaryColor,
+                height: 1,
+                letterSpacing: 0,
+              ),
+              children: [
+                TextSpan(
+                  text: '${cancionesFiltradas.length} ',
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text:
+                      '${cancionesFiltradas.length == 1 ? ' Resultado' : 'Resultados'} para "$busqueda"',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
       ],
     );
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -368,27 +404,13 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                             ),
                           ),
                           const SizedBox(width: 8),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.2),
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                color: Colors.white.withValues(alpha: 0.3),
-                              ),
-                            ),
-                            child: Text(
-                              '${canciones.length}',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 11,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
+                          Image.asset(
+                            'assets/images/LogoHimnariosApp.png',
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.contain,
                           ),
+                          const SizedBox(width: 8),
                         ],
                       ),
                       const SizedBox(height: 16),

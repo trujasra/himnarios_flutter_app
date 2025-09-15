@@ -298,7 +298,7 @@ class CancionesService {
     String? color,
     String? colorDark,
     String? imagenFondo,
-    int? inactividadMinutos,
+    bool? activo,
   }) async {
     try {
       await _dbHelper.actualizarConfiguracionHimnario(
@@ -306,10 +306,24 @@ class CancionesService {
         color: color,
         colorDark: colorDark,
         imagenFondo: imagenFondo,
-        inactividadMinutos: inactividadMinutos,
+        activo: activo,
       );
     } catch (e) {
       print('Error actualizando configuración de himnario: $e');
+    }
+  }
+
+  Future<void> actualizarEstadoHimnario({
+    required int idHimnario,
+    required bool activo,
+  }) async {
+    try {
+      await _dbHelper.actualizarConfiguracionHimnario(
+        idHimnario: idHimnario,
+        activo: activo,
+      );
+    } catch (e) {
+      print('Error actualizando estado de himnario: $e');
     }
   }
 

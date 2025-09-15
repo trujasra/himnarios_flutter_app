@@ -244,7 +244,7 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                                 borderRadius: BorderRadius.circular(12),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Colors.black.withOpacity(0.2),
+                                    color: Colors.black.withValues(alpha: 0.2),
                                     blurRadius: 4,
                                     offset: const Offset(0, 2),
                                   ),
@@ -309,12 +309,12 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                                       decoration: BoxDecoration(
                                         color: _getColorForIdioma(
                                           cancion.idioma,
-                                        ).withOpacity(0.1),
+                                        ).withValues(alpha: 0.1),
                                         borderRadius: BorderRadius.circular(8),
                                         border: Border.all(
                                           color: _getColorForIdioma(
                                             cancion.idioma,
-                                          ).withOpacity(0.3),
+                                          ).withValues(alpha: 0.3),
                                         ),
                                       ),
                                       child: Row(

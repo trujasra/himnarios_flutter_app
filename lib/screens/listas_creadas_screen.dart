@@ -34,17 +34,28 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
     super.initState();
     _currentHimnario = widget.himnario ?? {};
     _cargarListas();
-    StatusBarManager.setStatusBarColor(AppTheme.primaryColor);
+    
+    // Usar el color del himnario si está disponible, sino usar el color primario
+    final color = widget.himnario != null 
+        ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
+        : AppTheme.primaryColor;
+    StatusBarManager.setStatusBarColor(color);
   }
 
   @override
   void onEnterScreen() {
-    StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
+    final color = widget.himnario != null 
+        ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
+        : AppTheme.primaryColor;
+    StatusBarManager.setStatusBarColorWithDelay(color);
   }
 
   @override
   void onReturnToScreen() {
-    StatusBarManager.setStatusBarColorWithDelay(AppTheme.primaryColor);
+    final color = widget.himnario != null 
+        ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
+        : AppTheme.primaryColor;
+    StatusBarManager.setStatusBarColorWithDelay(color);
     _cargarListas(); // Recargar cuando regrese de otras pantallas
   }
 

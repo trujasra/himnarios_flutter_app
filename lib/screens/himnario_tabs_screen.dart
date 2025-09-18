@@ -45,10 +45,15 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
     _favoritos = List.from(widget.favoritos);
     _tabController.addListener(_onTabChanged);
     _cargarDatos();
+    
     // Establecer el color del StatusBar según el himnario
-    StatusBarManager.setStatusBarColor(
-      _getColorForHimnario(widget.himnario.nombre),
-    );
+    final color = _getColorForHimnario(widget.himnario.nombre);
+    StatusBarManager.setStatusBarColor(color);
+    
+    // Asegurar que se aplique después de que el widget esté construido
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      StatusBarManager.setStatusBarColorWithDelay(color);
+    });
   }
 
   @override
@@ -79,9 +84,20 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
 
   void _onTabChanged() {
     // Actualizar el color del StatusBar cuando cambie de tab
-    StatusBarManager.setStatusBarColor(
-      _getColorForHimnario(widget.himnario.nombre),
-    );
+    final color = _getColorForHimnario(widget.himnario.nombre);
+    
+    // Aplicar el color inmediatamente
+    StatusBarManager.setStatusBarColor(color);
+    
+    // Aplicar nuevamente después de un pequeño delay para asegurar que se mantenga
+    Future.delayed(const Duration(milliseconds: 50), () {
+      StatusBarManager.setStatusBarColor(color);
+    });
+    
+    // Una tercera aplicación para garantizar consistencia
+    Future.delayed(const Duration(milliseconds: 100), () {
+      StatusBarManager.setStatusBarColor(color);
+    });
   }
 
   @override
@@ -222,39 +238,29 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
   }
 
   Widget _buildListasCreadasTab() {
-    return ListasCreadasScreen(
-      himnario: {
-        'id': widget.himnario.id,
-        'nombre': widget.himnario.nombre,
-        'color': widget.himnario.color,
-        'colorSecundario': widget.himnario.colorSecundario,
-        'colorHex': widget.himnario.colorHex,
-        'colorDarkHex': widget.himnario.colorDarkHex,
+    return WillPopScope(
+      onWillPop: () async {
+        // Restaurar el color del himnario cuando se regrese
+        final color = _getColorForHimnario(widget.himnario.nombre);
+        StatusBarManager.setStatusBarColorWithDelay(color);
+        return true;
       },
+      child: ListasCreadasScreen(
+        himnario: {
+          'id': widget.himnario.id,
+          'nombre': widget.himnario.nombre,
+          'color': widget.himnario.color,
+          'colorSecundario': widget.himnario.colorSecundario,
+          'colorHex': widget.himnario.colorHex,
+          'colorDarkHex': widget.himnario.colorDarkHex,
+        },
+      ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          widget.himnario.nombre,
-          style: const TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w600,
-            color: Colors.white,
-          ),
-        ),
-        backgroundColor: _getColorForHimnario(widget.himnario.nombre),
-        foregroundColor: Colors.white,
-        elevation: 0,
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: _getGradientForHimnario(widget.himnario.nombre),
-          ),
-        ),
-      ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -263,61 +269,103 @@ class _HimnarioTabsScreenState extends State<HimnarioTabsScreen>
             colors: [Color(0xFFEFF6FF), Color(0xFFF5F3FF), Color(0xFFFAF5FF)],
           ),
         ),
-        child: Column(
-          children: [
-            // TabBar con estilo similar a cancion_screen
-            Container(
-              color: Colors.white,
-              child: TabBar(
-                controller: _tabController,
-                isScrollable: false,
-                labelPadding: const EdgeInsets.symmetric(horizontal: 20),
-                labelColor: _getColorForHimnario(widget.himnario.nombre),
-                unselectedLabelColor: Colors.grey.shade600,
-                indicatorColor: _getColorForHimnario(widget.himnario.nombre),
-                indicatorWeight: 3,
-                // labelStyle: const TextStyle(
-                //   fontFamily: 'Poppins',
-                //   fontWeight: FontWeight.w600,
-                //   fontSize: 14,
-                // ),
-                // unselectedLabelStyle: const TextStyle(
-                //   fontFamily: 'Poppins',
-                //   fontWeight: FontWeight.w500,
-                //   fontSize: 14,
-                // ),
-                tabs: [
-                  Tab(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Icons.favorite, size: 18),
-                        const SizedBox(width: 6),
-                        const Text('FAVORITOS'),
-                      ],
-                    ),
+        child: SafeArea(
+          child: Column(
+            children: [
+              // Header del himnario
+              Container(
+                decoration: BoxDecoration(
+                  gradient: _getGradientForHimnario(widget.himnario.nombre),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    left: 16.0,
+                    right: 16.0,
+                    top: 16.0,
+                    bottom: 16.0,
                   ),
-                  Tab(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(Icons.playlist_add, size: 18),
-                        const SizedBox(width: 6),
-                        const Text('LISTAS CREADAS'),
-                      ],
-                    ),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        onPressed: () => Navigator.pop(context),
+                        icon: const Icon(
+                          Icons.arrow_back,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                          widget.himnario.nombre,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            fontFamily: 'Berkshire Swash',
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 48), // Para balancear el botón de atrás
+                    ],
                   ),
-                ],
+                ),
               ),
-            ),
-            // TabBarView
-            Expanded(
-              child: TabBarView(
-                controller: _tabController,
-                children: [_buildFavoritosTab(), _buildListasCreadasTab()],
+              // TabBar con estilo similar a cancion_screen
+              Container(
+                color: Colors.white,
+                child: TabBar(
+                  controller: _tabController,
+                  isScrollable: false,
+                  labelPadding: const EdgeInsets.symmetric(horizontal: 20),
+                  labelColor: _getColorForHimnario(widget.himnario.nombre),
+                  unselectedLabelColor: Colors.grey.shade600,
+                  indicatorColor: _getColorForHimnario(widget.himnario.nombre),
+                  indicatorWeight: 3,
+                  tabs: [
+                    Tab(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.favorite, size: 18),
+                          const SizedBox(width: 6),
+                          const Text('FAVORITOS'),
+                        ],
+                      ),
+                    ),
+                    Tab(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.playlist_add, size: 18),
+                          const SizedBox(width: 6),
+                          const Text('LISTAS CREADAS'),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+              // TabBarView
+              Expanded(
+                child: NotificationListener<ScrollNotification>(
+                  onNotification: (notification) {
+                    // Asegurar que el color se mantenga cuando se interactúe con el contenido
+                    if (notification is ScrollEndNotification) {
+                      Future.delayed(const Duration(milliseconds: 100), () {
+                        final color = _getColorForHimnario(widget.himnario.nombre);
+                        StatusBarManager.setStatusBarColor(color);
+                      });
+                    }
+                    return false;
+                  },
+                  child: TabBarView(
+                    controller: _tabController,
+                    children: [_buildFavoritosTab(), _buildListasCreadasTab()],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

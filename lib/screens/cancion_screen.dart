@@ -277,7 +277,7 @@ Compartido desde Himnarios App
                 child: Padding(
                   padding: const EdgeInsets.only(
                     top: 10,
-                    bottom: 0,
+                    bottom: 5,
                     left: 8,
                     right: 8,
                   ),
@@ -324,47 +324,87 @@ Compartido desde Himnarios App
                           const SizedBox(width: 48), // Para mantener centrado
                         ],
                       ),
-                      const SizedBox(height: 0),
+                      const SizedBox(height: 5),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          IconButton(
-                            onPressed: _disminuirLetra,
-                            icon: Icon(
-                              Icons.text_decrease_rounded,
-                              color: colorIcon,
-                              size: tamanioIcon,
+                          // Botón para disminuir letra
+                          Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.19),
+                              shape: BoxShape.circle,
+                            ),
+                            child: IconButton(
+                              onPressed: _disminuirLetra,
+                              icon: Icon(
+                                Icons.text_decrease_rounded,
+                                color: Colors.white,
+                                size: 15,
+                              ),
+                              padding: EdgeInsets.zero,
                             ),
                           ),
-                          const SizedBox(width: 4),
-                          IconButton(
-                            onPressed: _aumentarLetra,
-                            icon: Icon(
-                              Icons.text_increase_rounded,
-                              color: colorIcon,
-                              size: tamanioIcon,
+                          const SizedBox(width: 8),
+                          // Botón para aumentar letra
+                          Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.19),
+                              shape: BoxShape.circle,
+                            ),
+                            child: IconButton(
+                              onPressed: _aumentarLetra,
+                              icon: Icon(
+                                Icons.text_increase_rounded,
+                                color: Colors.white,
+                                size: 15,
+                              ),
+                              padding: EdgeInsets.zero,
                             ),
                           ),
-                          const SizedBox(width: 4),
-                          IconButton(
-                            onPressed: _compartirCancion,
-                            icon: Icon(
-                              Icons.share,
-                              color: colorIcon,
-                              size: tamanioIcon,
+                          const SizedBox(width: 8),
+                          // Botón para compartir
+                          Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.19),
+                              shape: BoxShape.circle,
+                            ),
+                            child: IconButton(
+                              onPressed: _compartirCancion,
+                              icon: Icon(
+                                Icons.share,
+                                color: Colors.white,
+                                size: 15,
+                              ),
+                              padding: EdgeInsets.zero,
                             ),
                           ),
-                          const SizedBox(width: 4),
-                          IconButton(
-                            onPressed: () => _toggleFavorito(cancionActual.id),
-                            icon: Icon(
-                              _favoritos.contains(cancionActual.id)
-                                  ? Icons.favorite
-                                  : Icons.favorite_border,
+                          const SizedBox(width: 8),
+                          // Botón de favoritos
+                          Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
                               color: _favoritos.contains(cancionActual.id)
-                                  ? Colors.white
-                                  : colorIcon,
-                              size: tamanioIcon,
+                                  ? Colors.red.withValues(alpha: 0.7)
+                                  : Colors.white.withValues(alpha: 0.19),
+                              shape: BoxShape.circle,
+                            ),
+                            child: IconButton(
+                              onPressed: () => _toggleFavorito(cancionActual.id),
+                              icon: Icon(
+                                _favoritos.contains(cancionActual.id)
+                                    ? Icons.favorite
+                                    : Icons.favorite_border,
+                                color: Colors.white,
+                                size: 15,
+                              ),
+                              padding: EdgeInsets.zero,
                             ),
                           ),
                         ],

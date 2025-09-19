@@ -341,7 +341,7 @@ Compartido desde Himnarios App
                               icon: Icon(
                                 Icons.text_decrease_rounded,
                                 color: Colors.white,
-                                size: 15,
+                                size: 17, // Aumenta el tamaño del ícono
                               ),
                               padding: EdgeInsets.zero,
                             ),
@@ -360,7 +360,7 @@ Compartido desde Himnarios App
                               icon: Icon(
                                 Icons.text_increase_rounded,
                                 color: Colors.white,
-                                size: 15,
+                                size: 17,
                               ),
                               padding: EdgeInsets.zero,
                             ),
@@ -368,7 +368,7 @@ Compartido desde Himnarios App
                           const SizedBox(width: 8),
                           // Botón para compartir
                           Container(
-                            width: 30,
+                            width: 30, // Aumenta el tamaño del contenedor
                             height: 30,
                             decoration: BoxDecoration(
                               color: Colors.white.withValues(alpha: 0.19),
@@ -379,7 +379,7 @@ Compartido desde Himnarios App
                               icon: Icon(
                                 Icons.share,
                                 color: Colors.white,
-                                size: 15,
+                                size: 17,
                               ),
                               padding: EdgeInsets.zero,
                             ),
@@ -396,13 +396,14 @@ Compartido desde Himnarios App
                               shape: BoxShape.circle,
                             ),
                             child: IconButton(
-                              onPressed: () => _toggleFavorito(cancionActual.id),
+                              onPressed: () =>
+                                  _toggleFavorito(cancionActual.id),
                               icon: Icon(
                                 _favoritos.contains(cancionActual.id)
                                     ? Icons.favorite
                                     : Icons.favorite_border,
                                 color: Colors.white,
-                                size: 15,
+                                size: 17,
                               ),
                               padding: EdgeInsets.zero,
                             ),

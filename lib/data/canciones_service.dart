@@ -338,7 +338,6 @@ class CancionesService {
   // Inicializar la base de datos si es necesario
   Future<void> inicializarBaseDatos() async {
     try {
-      
       final yaPoblada = await _dbHelper.isBaseDatosPoblada();
       if (!yaPoblada) {
         print('Poblando base de datos inicial...');
@@ -433,7 +432,9 @@ class CancionesService {
     }
   }
 
-  Future<Map<String, dynamic>?> getConfiguracionHimnarioPorNombre(String nombre) async {
+  Future<Map<String, dynamic>?> getConfiguracionHimnarioPorNombre(
+    String nombre,
+  ) async {
     try {
       return await _dbHelper.getConfiguracionHimnarioPorNombre(nombre);
     } catch (e) {
@@ -557,7 +558,8 @@ class CancionesService {
   Future<List<Cancion>> getCancionesDeLista(int idLista) async {
     try {
       final db = await _dbHelper.database;
-      final List<Map<String, dynamic>> maps = await db.rawQuery('''
+      final List<Map<String, dynamic>> maps = await db.rawQuery(
+        '''
         SELECT c.* 
         FROM Cancion c
         INNER JOIN Lista_Cancion lc ON c.id_cancion = lc.id_cancion
@@ -566,8 +568,10 @@ class CancionesService {
           AND lc.estado_registro = 1
           AND c.estado_registro = 1
           AND th.estado_registro = 1
-        ORDER BY lc.fecha_registro ASC
-      ''', [idLista]);
+        ORDER BY lc.orden ASC, lc.fecha_registro ASC
+      ''',
+        [idLista],
+      );
 
       return List.generate(maps.length, (i) => _mapToCancion(maps[i]));
     } catch (e) {

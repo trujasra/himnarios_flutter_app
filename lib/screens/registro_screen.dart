@@ -176,7 +176,7 @@ class _RegistroScreenState extends State<RegistroScreen> {
                                 fillColor: Colors.grey[100],
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(16),
-                                  borderSide: BorderSide.none,
+                                  //borderSide: BorderSide.none,
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(16),

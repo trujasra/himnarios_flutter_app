@@ -43,18 +43,12 @@ class _CrearListaScreenState extends State<CrearListaScreen> {
       );
 
       if (mounted) {
-        CustomSnackBar.showSuccess(
-          context,
-          'Lista creada exitosamente',
-        );
+        CustomSnackBar.showSuccess(context, 'Lista creada exitosamente');
         Navigator.pop(context, true);
       }
     } catch (e) {
       if (mounted) {
-        CustomSnackBar.showError(
-          context,
-          'Error al crear la lista: $e',
-        );
+        CustomSnackBar.showError(context, 'Error al crear la lista: $e');
       }
     } finally {
       if (mounted) {
@@ -98,139 +92,139 @@ class _CrearListaScreenState extends State<CrearListaScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                Card(
-                  elevation: 4,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+                  Card(
+                    elevation: 4,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Información de la Lista',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                              color: AppTheme.primaryColor,
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          TextFormField(
+                            controller: _nombreController,
+                            decoration: InputDecoration(
+                              labelText: 'Nombre de la lista',
+                              hintText: 'Ej: Mis favoritas, Alabanzas, etc.',
+                              prefixIcon: const Icon(Icons.playlist_play),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                                borderSide: const BorderSide(
+                                  color: AppTheme.primaryColor,
+                                  width: 1.5,
+                                ),
+                              ),
+                            ),
+                            validator: (value) {
+                              if (value == null || value.trim().isEmpty) {
+                                return 'Por favor ingresa un nombre para la lista';
+                              }
+                              if (value.trim().length < 3) {
+                                return 'El nombre debe tener al menos 3 caracteres';
+                              }
+                              return null;
+                            },
+                            maxLength: 50,
+                          ),
+                          const SizedBox(height: 16),
+                          TextFormField(
+                            controller: _descripcionController,
+                            decoration: InputDecoration(
+                              labelText: 'Descripción (opcional)',
+                              hintText: 'Describe el contenido de tu lista...',
+                              prefixIcon: const Icon(Icons.description),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(8),
+                                borderSide: const BorderSide(
+                                  color: AppTheme.primaryColor,
+                                  width: 1.5,
+                                ),
+                              ),
+                            ),
+                            maxLines: 3,
+                            maxLength: 200,
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                  const SizedBox(height: 24),
+                  ElevatedButton(
+                    onPressed: _isLoading ? null : _crearLista,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppTheme.primaryColor,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      elevation: 4,
+                    ),
+                    child: _isLoading
+                        ? const SizedBox(
+                            height: 20,
+                            width: 20,
+                            child: CircularProgressIndicator(
+                              color: Colors.white,
+                              strokeWidth: 2,
+                            ),
+                          )
+                        : const Text(
+                            'Crear Lista',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                  ),
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.blue.shade50,
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: Colors.blue.shade200),
+                    ),
+                    child: Row(
                       children: [
-                        const Text(
-                          'Información de la Lista',
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 18,
-                            fontWeight: FontWeight.w600,
-                            color: AppTheme.primaryColor,
-                          ),
+                        Icon(
+                          Icons.info_outline,
+                          color: Colors.blue.shade600,
+                          size: 20,
                         ),
-                        const SizedBox(height: 20),
-                        TextFormField(
-                          controller: _nombreController,
-                          decoration: InputDecoration(
-                            labelText: 'Nombre de la lista',
-                            hintText: 'Ej: Mis favoritas, Alabanzas, etc.',
-                            prefixIcon: const Icon(Icons.playlist_play),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                              borderSide: const BorderSide(
-                                color: AppTheme.primaryColor,
-                                width: 2,
-                              ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            'Una vez creada la lista, podrás agregar canciones desde cualquier himnario.',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 12,
+                              color: Colors.blue.shade700,
                             ),
                           ),
-                          validator: (value) {
-                            if (value == null || value.trim().isEmpty) {
-                              return 'Por favor ingresa un nombre para la lista';
-                            }
-                            if (value.trim().length < 3) {
-                              return 'El nombre debe tener al menos 3 caracteres';
-                            }
-                            return null;
-                          },
-                          maxLength: 50,
-                        ),
-                        const SizedBox(height: 16),
-                        TextFormField(
-                          controller: _descripcionController,
-                          decoration: InputDecoration(
-                            labelText: 'Descripción (opcional)',
-                            hintText: 'Describe el contenido de tu lista...',
-                            prefixIcon: const Icon(Icons.description),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                              borderSide: const BorderSide(
-                                color: AppTheme.primaryColor,
-                                width: 2,
-                              ),
-                            ),
-                          ),
-                          maxLines: 3,
-                          maxLength: 200,
                         ),
                       ],
                     ),
                   ),
-                ),
-                const SizedBox(height: 24),
-                ElevatedButton(
-                  onPressed: _isLoading ? null : _crearLista,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryColor,
-                    foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    elevation: 4,
-                  ),
-                  child: _isLoading
-                      ? const SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircularProgressIndicator(
-                            color: Colors.white,
-                            strokeWidth: 2,
-                          ),
-                        )
-                      : const Text(
-                          'Crear Lista',
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                ),
-                const SizedBox(height: 16),
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade50,
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.blue.shade200),
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.info_outline,
-                        color: Colors.blue.shade600,
-                        size: 20,
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          'Una vez creada la lista, podrás agregar canciones desde cualquier himnario.',
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 12,
-                            color: Colors.blue.shade700,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+                ],
               ),
             ),
           ),

@@ -364,14 +364,32 @@ class _SeleccionarCancionesScreenState extends State<SeleccionarCancionesScreen>
     );
   }
 
+  // Función para normalizar texto removiendo acentos y caracteres especiales
+  String _normalizarTexto(String texto) {
+    return texto
+        .toLowerCase()
+        .replaceAll(RegExp(r'[áäâà]'), 'a')
+        .replaceAll(RegExp(r'[éëêè]'), 'e')
+        .replaceAll(RegExp(r'[íïîì]'), 'i')
+        .replaceAll(RegExp(r'[óöôò]'), 'o')
+        .replaceAll(RegExp(r'[úüûù]'), 'u')
+        .replaceAll(RegExp(r'[ñ]'), 'n');
+  }
+
   List<Cancion> _filtrarCanciones(List<Cancion> canciones) {
     if (_busqueda.isEmpty) return canciones;
 
+    final busq = _normalizarTexto(_busqueda);
+    
     return canciones.where((cancion) {
-      final busq = _busqueda.toLowerCase();
-      return cancion.titulo.toLowerCase().contains(busq) ||
+      final tituloNormalizado = _normalizarTexto(cancion.titulo);
+      final tituloSecundarioNormalizado = cancion.tituloSecundario != null 
+          ? _normalizarTexto(cancion.tituloSecundario!)
+          : '';
+      
+      return tituloNormalizado.contains(busq) ||
           cancion.numero.toString().contains(busq) ||
-          (cancion.tituloSecundario?.toLowerCase().contains(busq) ?? false);
+          (cancion.tituloSecundario != null && tituloSecundarioNormalizado.contains(busq));
     }).toList();
   }
 

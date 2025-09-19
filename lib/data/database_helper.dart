@@ -30,8 +30,8 @@ class DatabaseHelper {
     );
   }
 
-  Future _upgradeDB(Database db, int oldVersion, int newVersion) async {
-    // Con versión 1, todas las optimizaciones se aplican en onCreate
+  Future<void> _upgradeDB(Database db, int oldVersion, int newVersion) async {
+    // No se necesita migración ya que el campo 'orden' está incluido en la creación inicial
     print('Base de datos actualizada de versión $oldVersion a $newVersion');
   }
 
@@ -132,6 +132,7 @@ class DatabaseHelper {
         id_lista_cancion INTEGER PRIMARY KEY,
         id_lista INTEGER,
         id_cancion INTEGER,
+        orden INTEGER DEFAULT 0,
         estado_registro BOOLEAN,
         fecha_registro TEXT,
         usuario_registro TEXT,
@@ -149,42 +150,70 @@ class DatabaseHelper {
   /// Crear índices para optimizar las búsquedas
   Future<void> _createIndexes(Database db) async {
     print('Creando índices para optimizar búsquedas...');
-    
+
     // Índices para la tabla Cancion
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_numero ON Cancion(numero)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_titulo ON Cancion(titulo)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_himnario ON Cancion(id_tipo_himnario)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_idioma ON Cancion(id_idioma)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_estado ON Cancion(estado_registro)');
-    
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cancion_numero ON Cancion(numero)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cancion_titulo ON Cancion(titulo)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cancion_himnario ON Cancion(id_tipo_himnario)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cancion_idioma ON Cancion(id_idioma)',
+    );
+    //await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_estado ON Cancion(estado_registro)');
+
     // Índices compuestos para búsquedas optimizadas
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_himnario_estado ON Cancion(id_tipo_himnario, estado_registro)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_himnario_numero ON Cancion(id_tipo_himnario, numero)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_cancion_estado_numero ON Cancion(estado_registro, numero)');
-    
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cancion_himnario_estado ON Cancion(id_tipo_himnario, estado_registro)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cancion_himnario_numero ON Cancion(id_tipo_himnario, numero)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cancion_estado_numero ON Cancion(estado_registro, numero)',
+    );
+
     // Índices para la tabla Letra con optimización de texto
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_letra_cancion ON Letra(id_cancion)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_letra_descripcion ON Letra(descripcion)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_letra_cancion_estado ON Letra(id_cancion, estado_registro)');
-    
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_letra_cancion ON Letra(id_cancion)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_letra_descripcion ON Letra(descripcion)',
+    );
+    //await db.execute('CREATE INDEX IF NOT EXISTS idx_letra_cancion_estado ON Letra(id_cancion, estado_registro)');
+
     // Índices para la tabla Par_Tipo_Himnario
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_himnario_estado ON Par_Tipo_Himnario(estado_registro)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_himnario_nombre ON Par_Tipo_Himnario(nombre)');
-    
+    //await db.execute('CREATE INDEX IF NOT EXISTS idx_himnario_estado ON Par_Tipo_Himnario(estado_registro)');
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_himnario_nombre ON Par_Tipo_Himnario(nombre)',
+    );
+
     // Índices para la tabla Par_Idioma
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_idioma_descripcion ON Par_Idioma(descripcion)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_idioma_estado ON Par_Idioma(estado_registro)');
-    
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_idioma_descripcion ON Par_Idioma(descripcion)',
+    );
+    //await db.execute('CREATE INDEX IF NOT EXISTS idx_idioma_estado ON Par_Idioma(estado_registro)');
+
     // Índices para la tabla Favoritos
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_favoritos_cancion ON Favoritos(id_cancion)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_favoritos_estado ON Favoritos(estado_registro)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_favoritos_cancion_estado ON Favoritos(id_cancion, estado_registro)');
-    
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_favoritos_cancion ON Favoritos(id_cancion)',
+    );
+    //await db.execute('CREATE INDEX IF NOT EXISTS idx_favoritos_estado ON Favoritos(estado_registro)');
+    //await db.execute('CREATE INDEX IF NOT EXISTS idx_favoritos_cancion_estado ON Favoritos(id_cancion, estado_registro)');
+
     // Índices para la tabla Lista_Cancion
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_lista_cancion_lista ON Lista_Cancion(id_lista)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_lista_cancion_cancion ON Lista_Cancion(id_cancion)');
-    await db.execute('CREATE INDEX IF NOT EXISTS idx_lista_cancion_estado ON Lista_Cancion(estado_registro)');
-    
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_lista_cancion_lista ON Lista_Cancion(id_lista)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_lista_cancion_cancion ON Lista_Cancion(id_cancion)',
+    );
+    //await db.execute('CREATE INDEX IF NOT EXISTS idx_lista_cancion_estado ON Lista_Cancion(estado_registro)');
+
     print('Índices creados exitosamente - Total: 18 índices');
   }
 
@@ -383,14 +412,14 @@ class DatabaseHelper {
   /// Obtener el conteo total de canciones de todos los himnarios activos
   Future<int> getTotalCancionesHimnariosActivos() async {
     final db = await instance.database;
-    
+
     final resultado = await db.rawQuery('''
       SELECT COUNT(c.id_cancion) as total
       FROM Cancion c
       INNER JOIN Par_Tipo_Himnario th ON c.id_tipo_himnario = th.id_tipo_himnario
       WHERE c.estado_registro = 1 AND th.estado_registro = 1
     ''');
-    
+
     return resultado.first['total'] as int? ?? 0;
   }
 
@@ -720,27 +749,46 @@ class DatabaseHelper {
   String _normalizeText(String text) {
     return text
         .toLowerCase()
-        .replaceAll('á', 'a').replaceAll('à', 'a').replaceAll('ä', 'a').replaceAll('â', 'a').replaceAll('ã', 'a')
-        .replaceAll('é', 'e').replaceAll('è', 'e').replaceAll('ë', 'e').replaceAll('ê', 'e')
-        .replaceAll('í', 'i').replaceAll('ì', 'i').replaceAll('ï', 'i').replaceAll('î', 'i')
-        .replaceAll('ó', 'o').replaceAll('ò', 'o').replaceAll('ö', 'o').replaceAll('ô', 'o').replaceAll('õ', 'o')
-        .replaceAll('ú', 'u').replaceAll('ù', 'u').replaceAll('ü', 'u').replaceAll('û', 'u')
-        .replaceAll('ñ', 'n').replaceAll('ç', 'c');
+        .replaceAll('á', 'a')
+        .replaceAll('à', 'a')
+        .replaceAll('ä', 'a')
+        .replaceAll('â', 'a')
+        .replaceAll('ã', 'a')
+        .replaceAll('é', 'e')
+        .replaceAll('è', 'e')
+        .replaceAll('ë', 'e')
+        .replaceAll('ê', 'e')
+        .replaceAll('í', 'i')
+        .replaceAll('ì', 'i')
+        .replaceAll('ï', 'i')
+        .replaceAll('î', 'i')
+        .replaceAll('ó', 'o')
+        .replaceAll('ò', 'o')
+        .replaceAll('ö', 'o')
+        .replaceAll('ô', 'o')
+        .replaceAll('õ', 'o')
+        .replaceAll('ú', 'u')
+        .replaceAll('ù', 'u')
+        .replaceAll('ü', 'u')
+        .replaceAll('û', 'u')
+        .replaceAll('ñ', 'n')
+        .replaceAll('ç', 'c');
   }
 
   /// Función para filtrar resultados por texto normalizado (en Dart, no SQL)
   List<Map<String, dynamic>> _filterByNormalizedText(
-    List<Map<String, dynamic>> results, 
-    String searchText
+    List<Map<String, dynamic>> results,
+    String searchText,
   ) {
     final normalizedSearch = _normalizeText(searchText);
-    
+
     return results.where((item) {
       final titulo = item['titulo']?.toString() ?? '';
       final numero = item['numero']?.toString() ?? '';
       final normalizedTitle = _normalizeText(titulo);
-      
-      return numero.contains(searchText) || normalizedTitle.contains(normalizedSearch);
+
+      return numero.contains(searchText) ||
+          normalizedTitle.contains(normalizedSearch);
     }).toList();
   }
 
@@ -752,7 +800,7 @@ class DatabaseHelper {
     int? limit,
   }) async {
     final db = await instance.database;
-    
+
     // Si no hay búsqueda, devolver todas las canciones
     if (busqueda == null || busqueda.trim().isEmpty) {
       String query = '''
@@ -770,16 +818,16 @@ class DatabaseHelper {
         WHERE c.estado_registro = 1 AND c.id_tipo_himnario = ?
         ORDER BY c.numero
       ''';
-      
+
       if (limit != null && limit > 0) {
         query += ' LIMIT $limit';
       }
-      
+
       return await db.rawQuery(query, [idHimnario]);
     }
-    
+
     final cleanSearch = busqueda.trim();
-    
+
     // Obtener todas las canciones del himnario primero
     String query = '''
       SELECT 
@@ -796,17 +844,17 @@ class DatabaseHelper {
       WHERE c.estado_registro = 1 AND c.id_tipo_himnario = ?
       ORDER BY c.numero
     ''';
-    
+
     final allResults = await db.rawQuery(query, [idHimnario]);
-    
+
     // Filtrar en Dart con normalización de acentos
     final filteredResults = _filterByNormalizedText(allResults, cleanSearch);
-    
+
     // Aplicar límite si se especifica
-    final results = limit != null && limit > 0 
-        ? filteredResults.take(limit).toList() 
+    final results = limit != null && limit > 0
+        ? filteredResults.take(limit).toList()
         : filteredResults;
-    
+
     print('🔍 Búsqueda: "$cleanSearch" → ${results.length} resultados');
     return results;
   }
@@ -819,28 +867,29 @@ class DatabaseHelper {
     int? limit,
   }) async {
     final db = await instance.database;
-    
+
     // Construir WHERE clause
     String whereClause = 'c.estado_registro = 1 AND th.estado_registro = 1';
     List<dynamic> whereArgs = [];
-    
+
     // No agregar filtro de búsqueda en SQL, se hará en Dart
-    
+
     // Agregar filtro de himnarios
     if (himnarios != null && himnarios.isNotEmpty) {
       final placeholders = himnarios.map((_) => '?').join(',');
       whereClause += ' AND th.nombre IN ($placeholders)';
       whereArgs.addAll(himnarios);
     }
-    
+
     // Agregar filtro de idiomas
     if (idiomas != null && idiomas.isNotEmpty) {
       final placeholders = idiomas.map((_) => '?').join(',');
       whereClause += ' AND i.descripcion IN ($placeholders)';
       whereArgs.addAll(idiomas);
     }
-    
-    String query = '''
+
+    String query =
+        '''
       SELECT 
         c.id_cancion,
         c.numero,
@@ -855,20 +904,20 @@ class DatabaseHelper {
       WHERE $whereClause
       ORDER BY c.numero, th.nombre
     ''';
-    
+
     final allResults = await db.rawQuery(query, whereArgs);
-    
+
     // Aplicar filtro de búsqueda en Dart si existe
     List<Map<String, dynamic>> filteredResults = allResults;
     if (busqueda != null && busqueda.isNotEmpty) {
       filteredResults = _filterByNormalizedText(allResults, busqueda.trim());
     }
-    
+
     // Aplicar límite si se especifica
-    final result = limit != null && limit > 0 
-        ? filteredResults.take(limit).toList() 
+    final result = limit != null && limit > 0
+        ? filteredResults.take(limit).toList()
         : filteredResults;
-    
+
     if (busqueda != null && busqueda.isNotEmpty) {
       print('🔍 Búsqueda global: "$busqueda" → ${result.length} resultados');
     } else {
@@ -907,17 +956,17 @@ class DatabaseHelper {
   Future<void> optimizarBaseDatos() async {
     try {
       final db = await instance.database;
-      
+
       print('Optimizando base de datos...');
-      
+
       // VACUUM reorganiza la base de datos para reducir el tamaño del archivo
       await db.execute('VACUUM');
       print('✅ VACUUM completado');
-      
+
       // ANALYZE actualiza las estadísticas de la base de datos para mejorar el rendimiento de las consultas
       await db.execute('ANALYZE');
       print('✅ ANALYZE completado');
-      
+
       print('Base de datos optimizada exitosamente');
     } catch (e) {
       print('Error optimizando base de datos: $e');
@@ -1318,10 +1367,18 @@ class DatabaseHelper {
     );
 
     if (existente.isEmpty) {
-      // Insertar nueva relación
+      // Obtener el siguiente número de orden para esta lista
+      final result = await db.rawQuery(
+        'SELECT COALESCE(MAX(orden), 0) + 1 as next_orden FROM Lista_Cancion WHERE id_lista = ?',
+        [idLista],
+      );
+      final nextOrden = (result.first['next_orden'] as int?) ?? 1;
+
+      // Insertar nueva relación con el siguiente número de orden
       await db.insert('Lista_Cancion', {
         'id_lista': idLista,
         'id_cancion': idCancion,
+        'orden': nextOrden,
         'estado_registro': 1,
         'fecha_registro': now,
         'usuario_registro': 'ramiro.trujillo',
@@ -1381,18 +1438,24 @@ class DatabaseHelper {
         c.id_cancion,
         c.numero,
         c.titulo,
+        c.titulo_secundario,
+        c.id_tipo_himnario,
+        c.id_idioma,
         c.orden,
         th.nombre as himnario,
         i.descripcion as idioma,
         l.descripcion as letra,
-        lc.fecha_registro as fecha_agregada
+        lc.fecha_registro as fecha_agregada,
+        lc.orden as orden_lista
       FROM Lista_Cancion lc
       INNER JOIN Cancion c ON lc.id_cancion = c.id_cancion
       INNER JOIN Par_Tipo_Himnario th ON c.id_tipo_himnario = th.id_tipo_himnario
       INNER JOIN Par_Idioma i ON c.id_idioma = i.id_idioma
       LEFT JOIN Letra l ON c.id_cancion = l.id_cancion
-      WHERE lc.id_lista = ? AND lc.estado_registro = 1 AND c.estado_registro = 1
-      ORDER BY lc.fecha_registro ASC
+      WHERE lc.id_lista = ? 
+        AND lc.estado_registro = 1 
+        AND c.estado_registro = 1
+      ORDER BY lc.orden ASC, lc.fecha_registro ASC
     ''',
       [idLista],
     );
@@ -1417,16 +1480,16 @@ class DatabaseHelper {
   // Obtener conteo de canciones por lista, considerando solo himnarios activos
   Future<Map<int, int>> getConteoCancionesPorLista() async {
     final db = await instance.database;
-    
+
     // Primero, obtener todas las listas existentes
     final listas = await db.query('Lista');
     final Map<int, int> conteos = {};
-    
+
     // Inicializar conteos en 0 para todas las listas
     for (var lista in listas) {
       conteos[lista['id_lista'] as int] = 0;
     }
-    
+
     // Obtener conteo de canciones activas para cada lista, considerando solo himnarios activos
     final result = await db.rawQuery(''' 
       SELECT 
@@ -1440,14 +1503,14 @@ class DatabaseHelper {
         AND th.estado_registro = 1
       GROUP BY lc.id_lista
     ''');
-    
+
     // Actualizar los conteos con los valores reales
     for (var row in result) {
       final idLista = row['id_lista'] as int;
       final total = row['total_canciones'] as int;
       conteos[idLista] = total;
     }
-    
+
     return conteos;
   }
 }

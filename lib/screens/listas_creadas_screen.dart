@@ -36,7 +36,7 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
     _currentHimnario = widget.himnario ?? {};
     _cargarListas();
     // Usar el color del himnario si está disponible, sino usar el color primario
-    final color = widget.himnario != null 
+    final color = widget.himnario != null
         ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
         : AppTheme.primaryColor;
     StatusBarManager.setStatusBarColor(color);
@@ -44,7 +44,7 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
 
   @override
   void onEnterScreen() {
-    final color = widget.himnario != null 
+    final color = widget.himnario != null
         ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
         : AppTheme.primaryColor;
     StatusBarManager.setStatusBarColorWithDelay(color);
@@ -52,11 +52,11 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
 
   @override
   void onReturnToScreen() {
-    final color = widget.himnario != null 
+    final color = widget.himnario != null
         ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
         : AppTheme.primaryColor;
     StatusBarManager.setStatusBarColorWithDelay(color);
-    
+
     // Recargar listas cuando se vuelva a esta pantalla
     // pero solo si no estamos ya cargando
     if (!_isLoading) {
@@ -177,7 +177,7 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
 
   Future<void> _cargarListas() async {
     if (!mounted) return;
-    
+
     setState(() => _isLoading = true);
 
     try {
@@ -188,17 +188,17 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
       ]);
 
       if (!mounted) return;
-      
+
       final listas = results[0] as List<Map<String, dynamic>>;
       final conteos = results[1] as Map<int, int>;
-      
+
       // Asegurar que todas las listas tengan un conteo, aunque sea 0
       final conteosActualizados = <int, int>{};
       for (var lista in listas) {
         final idLista = lista['id_lista'] as int;
         conteosActualizados[idLista] = conteos[idLista] ?? 0;
       }
-      
+
       // Debug: Verificar las listas y sus conteos
       if (kDebugMode) {
         print('=== Listas y Conteos ===');
@@ -284,12 +284,11 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) =>
-                            detalle_lista.DetalleListaScreen(
-                              idLista: lista['id_lista'],
-                              nombreLista: lista['nombre'],
-                              mostrarBotonCerrar: widget.mostrarBotonCerrar,
-                            ),
+                        builder: (context) => detalle_lista.DetalleListaScreen(
+                          idLista: lista['id_lista'],
+                          nombreLista: lista['nombre'],
+                          mostrarBotonCerrar: widget.mostrarBotonCerrar,
+                        ),
                       ),
                     );
                   },
@@ -351,7 +350,9 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
                                     softWrap: true,
                                   ),
                                   if (lista['descripcion'] != null &&
-                                      lista['descripcion'].toString().isNotEmpty) ...[
+                                      lista['descripcion']
+                                          .toString()
+                                          .isNotEmpty) ...[
                                     const SizedBox(height: 2),
                                     Text(
                                       lista['descripcion'].toString(),
@@ -377,7 +378,9 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
                                         ),
                                         decoration: BoxDecoration(
                                           color: Colors.grey[100],
-                                          borderRadius: BorderRadius.circular(12),
+                                          borderRadius: BorderRadius.circular(
+                                            12,
+                                          ),
                                           border: Border.all(
                                             color: Colors.grey[300]!,
                                             width: 0.5,
@@ -510,6 +513,4 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
       ),
     );
   }
-
-
 }

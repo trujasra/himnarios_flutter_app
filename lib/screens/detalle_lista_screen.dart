@@ -198,7 +198,7 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                   child: Row(
                     children: [
                       // Icono de la lista
-                     /* Container(
+                      /* Container(
                         width: 60,
                         height: 60,
                         decoration: BoxDecoration(
@@ -225,7 +225,7 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                       ),
                       
                       const SizedBox(width: 16),*/
-                      
+
                       // Información de la lista
                       Expanded(
                         child: Column(
@@ -266,86 +266,48 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                     ],
                   ),
                 ),
-                
+
                 // Lista de canciones
                 Expanded(
                   child: _canciones.isEmpty
                       ? _buildEmptyState()
                       : ListView.builder(
-              padding: const EdgeInsets.all(2),
-              itemCount: _canciones.length,
-              itemBuilder: (context, index) {
-                final cancion = _canciones[index];
-                // Crear un objeto Himnario temporal para la canción
-                final himnario = Himnario(
-                  id: 0, // Usar 0 como valor por defecto
-                  nombre: cancion.himnario,
-                  color: _getColorForHimnario(
-                    cancion.himnario,
-                  ).value.toRadixString(16).substring(2),
-                  colorSecundario: _getGradientForHimnario(
-                    cancion.himnario,
-                  ).colors.last.value.toRadixString(16).substring(2),
-                  colorTexto: '000000', // Negro por defecto
-                  canciones: 0,
-                  descripcion: '',
-                  idiomas: [cancion.idioma],
-                );
-
-                return Container(
-                  margin: const EdgeInsets.only(bottom: 1),
-                  child: Card(
-                    elevation: 2,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Row(
-                        children: [
-                          // Número de la canción
-                          Container(
-                            width: 48,
-                            height: 48,
-                            decoration: BoxDecoration(
-                              gradient: _getGradientForHimnario(
+                          padding: const EdgeInsets.all(2),
+                          itemCount: _canciones.length,
+                          itemBuilder: (context, index) {
+                            final cancion = _canciones[index];
+                            // Crear un objeto Himnario temporal para la canción
+                            final himnario = Himnario(
+                              id: 0, // Usar 0 como valor por defecto
+                              nombre: cancion.himnario,
+                              color: _getColorForHimnario(
                                 cancion.himnario,
-                              ),
-                              borderRadius: BorderRadius.circular(12),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withValues(alpha: 0.2),
-                                  blurRadius: 4,
-                                  offset: const Offset(0, 2),
-                                ),
-                              ],
-                            ),
-                            child: Center(
-                              child: Text(
-                                cancion.numero.toString(),
-                                style: const TextStyle(
-                                  color: Color.fromARGB(255, 255, 255, 255),
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          ),
+                              ).value.toRadixString(16).substring(2),
+                              colorSecundario:
+                                  _getGradientForHimnario(cancion.himnario)
+                                      .colors
+                                      .last
+                                      .value
+                                      .toRadixString(16)
+                                      .substring(2),
+                              colorTexto: '000000', // Negro por defecto
+                              canciones: 0,
+                              descripcion: '',
+                              idiomas: [cancion.idioma],
+                            );
 
-                          const SizedBox(width: 16),
-
-                          // Información de la canción
-                          Expanded(
-                            child: GestureDetector(
+                            return GestureDetector(
                               onTap: () async {
                                 // Obtener la canción completa con la letra
-                                final cancionCompleta = await _cancionesService
-                                    .getCancionPorId(cancion.id);
+                                final cancionCompleta =
+                                    await _cancionesService.getCancionPorId(
+                                          cancion.id,
+                                        );
                                 if (!mounted || cancionCompleta == null) return;
 
                                 // Obtener la lista de favoritos
-                                final favoritos = await _cancionesService
-                                    .getFavoritos();
+                                final favoritos =
+                                    await _cancionesService.getFavoritos();
                                 if (!mounted) return;
 
                                 // Navegar a la pantalla de la canción
@@ -357,9 +319,8 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                                       himnario: himnario,
                                       favoritos: favoritos,
                                       onToggleFavorito: (id) async {
-                                        if (await _cancionesService.esFavorito(
-                                          id,
-                                        )) {
+                                        if (await _cancionesService
+                                            .esFavorito(id)) {
                                           await _cancionesService
                                               .quitarFavorito(id);
                                         } else {
@@ -378,128 +339,194 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                                   setState(() {});
                                 }
                               },
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    cancion.titulo,
-                                    style: const TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600,
-                                      color: Color.fromARGB(255, 30, 45, 59),
-                                    ),
+                              child: Container(
+                                margin: const EdgeInsets.only(bottom: 1),
+                                child: Card(
+                                  elevation: 2,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
                                   ),
-                                  const SizedBox(height: 2),
-                                  Text(
-                                    cancion.himnario,
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      color: _getColorForHimnario(
-                                        cancion.himnario,
-                                      ),
-                                      fontWeight: FontWeight.w500,
-                                      fontStyle: FontStyle.italic,
-                                    ),
-                                  ),
-                                  if (cancion.tituloSecundario != null &&
-                                      cancion.tituloSecundario!.isNotEmpty) ...[
-                                    const SizedBox(height: 2),
-                                    Text(
-                                      cancion.tituloSecundario!,
-                                      style: const TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.grey,
-                                        fontStyle: FontStyle.italic,
-                                      ),
-                                    ),
-                                  ],
-                                  const SizedBox(height: 4),
-                                  Row(
-                                    children: [
-                                      // Badge de idioma
-                                      Container(
-                                        padding: const EdgeInsets.symmetric(
-                                          horizontal: 8,
-                                          vertical: 4,
-                                        ),
-                                        decoration: BoxDecoration(
-                                          color: _getColorForIdioma(
-                                            cancion.idioma,
-                                          ).withValues(alpha: 0.1),
-                                          borderRadius: BorderRadius.circular(
-                                            8,
-                                          ),
-                                          border: Border.all(
-                                            color: _getColorForIdioma(
-                                              cancion.idioma,
-                                            ).withValues(alpha: 0.3),
-                                          ),
-                                        ),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            Icon(
-                                              Icons.language,
-                                              size: 10,
-                                              color: _getColorForIdioma(
-                                                cancion.idioma,
-                                              ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Row(
+                                      children: [
+                                        // Número de la canción
+                                        Container(
+                                          width: 48,
+                                          height: 48,
+                                          decoration: BoxDecoration(
+                                            gradient: _getGradientForHimnario(
+                                              cancion.himnario,
                                             ),
-                                            const SizedBox(width: 2),
-                                            Text(
-                                              cancion.idioma,
-                                              style: TextStyle(
-                                                fontSize: 10,
-                                                color: _getColorForIdioma(
-                                                  cancion.idioma,
+                                            borderRadius: BorderRadius.circular(
+                                              12,
+                                            ),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.black.withOpacity(0.2),
+                                                blurRadius: 4,
+                                                offset: const Offset(0, 2),
+                                              ),
+                                            ],
+                                          ),
+                                          child: Center(
+                                            child: Text(
+                                              cancion.numero.toString(),
+                                              style: const TextStyle(
+                                                color: Color.fromARGB(
+                                                  255,
+                                                  255,
+                                                  255,
+                                                  255,
                                                 ),
-                                                fontWeight: FontWeight.w500,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ],
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
 
-                          // Iconos de acción
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              GestureDetector(
-                                onTap: () =>
-                                    _mostrarDialogoEliminar(cancion.id),
-                                child: Container(
-                                  width: 36,
-                                  height: 36,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red.shade50,
-                                    borderRadius: BorderRadius.circular(18),
-                                    border: Border.all(
-                                      color: Colors.red.shade200,
-                                      width: 1,
+                                        const SizedBox(width: 16),
+
+                                        // Información de la canción
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                cancion.titulo,
+                                                style: const TextStyle(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w600,
+                                                  color: Color.fromARGB(
+                                                    255,
+                                                    30,
+                                                    45,
+                                                    59,
+                                                  ),
+                                                ),
+                                              ),
+                                              const SizedBox(height: 2),
+                                              Text(
+                                                cancion.himnario,
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: _getColorForHimnario(
+                                                    cancion.himnario,
+                                                  ),
+                                                  fontWeight: FontWeight.w500,
+                                                  fontStyle: FontStyle.italic,
+                                                ),
+                                              ),
+                                              if (cancion.tituloSecundario !=
+                                                      null &&
+                                                  cancion
+                                                      .tituloSecundario!
+                                                      .isNotEmpty) ...[
+                                                const SizedBox(height: 2),
+                                                Text(
+                                                  cancion.tituloSecundario!,
+                                                  style: const TextStyle(
+                                                    fontSize: 12,
+                                                    color: Colors.grey,
+                                                    fontStyle: FontStyle.italic,
+                                                  ),
+                                                ),
+                                              ],
+                                              const SizedBox(height: 4),
+                                              Row(
+                                                children: [
+                                                  // Badge de idioma
+                                                  Container(
+                                                    padding:
+                                                        const EdgeInsets.symmetric(
+                                                          horizontal: 8,
+                                                          vertical: 4,
+                                                        ),
+                                                    decoration: BoxDecoration(
+                                                      color: _getColorForIdioma(
+                                                        cancion.idioma,
+                                                      ).withOpacity(0.1),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                            8,
+                                                          ),
+                                                      border: Border.all(
+                                                        color:
+                                                            _getColorForIdioma(
+                                                              cancion.idioma,
+                                                            ).withOpacity(0.3),
+                                                      ),
+                                                    ),
+                                                    child: Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.min,
+                                                      children: [
+                                                        Icon(
+                                                          Icons.language,
+                                                          size: 10,
+                                                          color:
+                                                              _getColorForIdioma(
+                                                                cancion.idioma,
+                                                              ),
+                                                        ),
+                                                        const SizedBox(
+                                                          width: 2,
+                                                        ),
+                                                        Text(
+                                                          cancion.idioma,
+                                                          style: TextStyle(
+                                                            fontSize: 10,
+                                                            color:
+                                                                _getColorForIdioma(
+                                                                  cancion
+                                                                      .idioma,
+                                                                ),
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        // Icono de eliminar
+                                        GestureDetector(
+                                          onTap: () {
+                                            _mostrarDialogoEliminar(cancion.id);
+                                          },
+                                          behavior: HitTestBehavior.opaque,
+                                          child: Container(
+                                            padding: const EdgeInsets.all(8),
+                                            margin: const EdgeInsets.only(left: 8),
+                                            decoration: BoxDecoration(
+                                              color: Colors.red.shade50,
+                                              shape: BoxShape.circle,
+                                              border: Border.all(
+                                                color: Colors.red.shade200,
+                                                width: 1,
+                                              ),
+                                            ),
+                                            child: Icon(
+                                              Icons.delete_outline,
+                                              color: Colors.red.shade600,
+                                              size: 20,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                  ),
-                                  child: Icon(
-                                    Icons.delete_outline,
-                                    color: Colors.red.shade600,
-                                    size: 18,
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                );
-              },
-            ),
+                            );
+                          },
+                        ),
                 ),
               ],
             ),

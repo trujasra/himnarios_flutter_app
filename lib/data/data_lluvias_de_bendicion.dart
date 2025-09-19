@@ -4,7 +4,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40001,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '1',
+      'numero': 1,
       'titulo': 'LOORES DAD A CRISTO EL REY',
       'orden': 1,
       'estado_registro': 1,
@@ -13,7 +13,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40002,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '2',
+      'numero': 2,
       'titulo': 'NUESTRO IDEAL',
       'orden': 1,
       'estado_registro': 1,
@@ -22,7 +22,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40003,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '3',
+      'numero': 3,
       'titulo': 'ALZA TU CANTO, ¡OH LENGUA MÍA!',
       'orden': 1,
       'estado_registro': 1,
@@ -31,7 +31,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40004,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '4',
+      'numero': 4,
       'titulo': 'TE LOAMOS, ¡OH DIOS!',
       'orden': 1,
       'estado_registro': 1,
@@ -40,7 +40,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40005,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '5',
+      'numero': 5,
       'titulo': '¡ADORADLE!',
       'orden': 1,
       'estado_registro': 1,
@@ -49,7 +49,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40006,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '6',
+      'numero': 6,
       'titulo': 'ROCA DE LA ETERNIDAD',
       'orden': 1,
       'estado_registro': 1,
@@ -58,7 +58,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40007,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '7',
+      'numero': 7,
       'titulo': 'SUBLIME GRACIA',
       'orden': 1,
       'estado_registro': 1,
@@ -67,7 +67,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40008,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '8',
+      'numero': 8,
       'titulo': 'TE ADORO BUEN SALVADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -76,7 +76,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40009,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '9',
+      'numero': 9,
       'titulo': 'CANTARES CRISTIANOS',
       'orden': 1,
       'estado_registro': 1,
@@ -85,7 +85,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40010,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '10',
+      'numero': 10,
       'titulo': '¡OH, QUÉ AMIGO!',
       'orden': 1,
       'estado_registro': 1,
@@ -94,7 +94,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40011,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '11',
+      'numero': 11,
       'titulo': 'EN JESUCRISTO, MÁRTIR DE PAZ',
       'orden': 1,
       'estado_registro': 1,
@@ -103,7 +103,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40012,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '12',
+      'numero': 12,
       'titulo': 'TENGO UN PASTOR',
       'orden': 1,
       'estado_registro': 1,
@@ -112,7 +112,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40013,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '13',
+      'numero': 13,
       'titulo': '¡OH CRISTO MÍO!',
       'orden': 1,
       'estado_registro': 1,
@@ -121,7 +121,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40014,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '14',
+      'numero': 14,
       'titulo': '¡SEÑOR, YO TE CONOZCO!',
       'orden': 1,
       'estado_registro': 1,
@@ -130,7 +130,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40015,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '15',
+      'numero': 15,
       'titulo': 'ES PARA TODOS YA',
       'orden': 1,
       'estado_registro': 1,
@@ -139,7 +139,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40016,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '16',
+      'numero': 16,
       'titulo': '¿TE SIENTES CASI?',
       'orden': 1,
       'estado_registro': 1,
@@ -148,7 +148,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40017,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '17',
+      'numero': 17,
       'titulo': 'SANTIDAD A JEHOVÁ',
       'orden': 1,
       'estado_registro': 1,
@@ -157,7 +157,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40018,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '18',
+      'numero': 18,
       'titulo': 'EL GRAN MÉDICO',
       'orden': 1,
       'estado_registro': 1,
@@ -166,7 +166,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40019,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '19',
+      'numero': 19,
       'titulo': 'DE MI TIERNO SALVADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -175,7 +175,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40020,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '20',
+      'numero': 20,
       'titulo': 'PARA SIEMPRE SANTIDAD',
       'orden': 1,
       'estado_registro': 1,
@@ -184,7 +184,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40021,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '21',
+      'numero': 21,
       'titulo': 'CUANDO ALLÁ SE PASE LISTA',
       'orden': 1,
       'estado_registro': 1,
@@ -193,7 +193,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40022,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '22',
+      'numero': 22,
       'titulo': 'YO ME RINDO A ÉL',
       'orden': 1,
       'estado_registro': 1,
@@ -202,7 +202,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40023,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '23',
+      'numero': 23,
       'titulo': '¡CRISTO VIVE!',
       'orden': 1,
       'estado_registro': 1,
@@ -211,7 +211,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40024,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '24',
+      'numero': 24,
       'titulo': 'ME GUÍA ÉL, CON CUÁNTO AMOR',
       'orden': 1,
       'estado_registro': 1,
@@ -220,7 +220,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40025,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '25',
+      'numero': 25,
       'titulo': 'UN SACRIFICIO VIVO',
       'orden': 1,
       'estado_registro': 1,
@@ -229,7 +229,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40026,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '26',
+      'numero': 26,
       'titulo': 'TEMPLOS DE DIOS SOIS',
       'orden': 1,
       'estado_registro': 1,
@@ -238,7 +238,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40027,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '27',
+      'numero': 27,
       'titulo': 'PENTECOSTÉS PARA TODOS',
       'orden': 1,
       'estado_registro': 1,
@@ -247,7 +247,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40028,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '28',
+      'numero': 28,
       'titulo': 'LLAMA PENTECOSTAL',
       'orden': 1,
       'estado_registro': 1,
@@ -256,7 +256,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40029,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '29',
+      'numero': 29,
       'titulo': 'MORANDO EN JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -265,7 +265,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40030,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '30',
+      'numero': 30,
       'titulo': '¡TE QUIERO, MI SEÑOR!',
       'orden': 1,
       'estado_registro': 1,
@@ -274,7 +274,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40031,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '31',
+      'numero': 31,
       'titulo': 'EL REDENTOR',
       'orden': 1,
       'estado_registro': 1,
@@ -283,7 +283,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40032,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '32',
+      'numero': 32,
       'titulo': 'CRISTO, TU SANTO AMOR',
       'orden': 1,
       'estado_registro': 1,
@@ -292,7 +292,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40033,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '33',
+      'numero': 33,
       'titulo': 'MARAVILLOSA GRACIA',
       'orden': 1,
       'estado_registro': 1,
@@ -301,7 +301,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40034,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '34',
+      'numero': 34,
       'titulo': 'ME ENTREGO A TI',
       'orden': 1,
       'estado_registro': 1,
@@ -310,7 +310,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40035,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '35',
+      'numero': 35,
       'titulo': 'HE CONSAGRADO A MI JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -319,7 +319,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40036,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '36',
+      'numero': 36,
       'titulo': 'HAY PUREZA Y LIBERTAD',
       'orden': 1,
       'estado_registro': 1,
@@ -328,7 +328,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40037,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '37',
+      'numero': 37,
       'titulo': 'MI ESPÍRITU, ALMA Y CUERPO',
       'orden': 1,
       'estado_registro': 1,
@@ -337,7 +337,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40038,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '38',
+      'numero': 38,
       'titulo': 'DIOS ME SANTIFICÓ',
       'orden': 1,
       'estado_registro': 1,
@@ -346,7 +346,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40039,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '39',
+      'numero': 39,
       'titulo': 'DONDE ME GUÍE, SEGUIRÉ',
       'orden': 1,
       'estado_registro': 1,
@@ -355,7 +355,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40040,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '40',
+      'numero': 40,
       'titulo': 'CANTARÉ LA BELLA HISTORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -364,7 +364,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40041,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '41',
+      'numero': 41,
       'titulo': 'TUYO SOY, JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -373,7 +373,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40042,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '42',
+      'numero': 42,
       'titulo': 'EL FUEGO PENTECOSTAL',
       'orden': 1,
       'estado_registro': 1,
@@ -382,7 +382,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40043,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '43',
+      'numero': 43,
       'titulo': 'DEJO EL MUNDO Y SIGO A CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -391,7 +391,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40044,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '44',
+      'numero': 44,
       'titulo': 'FUENTE DE LA VIDA ETERNA',
       'orden': 1,
       'estado_registro': 1,
@@ -400,7 +400,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40045,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '45',
+      'numero': 45,
       'titulo': 'BAUTÍCESE CADA UNO',
       'orden': 1,
       'estado_registro': 1,
@@ -409,7 +409,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40046,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '46',
+      'numero': 46,
       'titulo': 'ALCANCÉ SALVACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -418,7 +418,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40047,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '47',
+      'numero': 47,
       'titulo': 'CERCA, MÁS CERCA',
       'orden': 1,
       'estado_registro': 1,
@@ -427,7 +427,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40048,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '48',
+      'numero': 48,
       'titulo': 'PARACLETO CELESTIAL',
       'orden': 1,
       'estado_registro': 1,
@@ -436,7 +436,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40049,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '49',
+      'numero': 49,
       'titulo': 'SEGÚN TU DICHO AL EXPIRAR',
       'orden': 1,
       'estado_registro': 1,
@@ -445,7 +445,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40050,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '50',
+      'numero': 50,
       'titulo': 'LA SEGUNDA BENDICIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -454,7 +454,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40051,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '51',
+      'numero': 51,
       'titulo': 'LLUVIAS DE GRACIA',
       'orden': 1,
       'estado_registro': 1,
@@ -463,7 +463,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40052,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '52',
+      'numero': 52,
       'titulo': 'SANTO ESPÍRITU, DESCIENDE',
       'orden': 1,
       'estado_registro': 1,
@@ -472,7 +472,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40053,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '53',
+      'numero': 53,
       'titulo': 'EL PODER DEL ESPÍRITU',
       'orden': 1,
       'estado_registro': 1,
@@ -481,7 +481,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40054,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '54',
+      'numero': 54,
       'titulo': 'A LA TIERRA PROMETIDA',
       'orden': 1,
       'estado_registro': 1,
@@ -490,7 +490,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40055,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '55',
+      'numero': 55,
       'titulo': 'CÉLICA PAZ',
       'orden': 1,
       'estado_registro': 1,
@@ -499,7 +499,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40056,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '56',
+      'numero': 56,
       'titulo': 'LA CRUZ DE JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -508,7 +508,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40057,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '57',
+      'numero': 57,
       'titulo': 'GRANDE GOZO HAY EN MI ALMA',
       'orden': 1,
       'estado_registro': 1,
@@ -517,7 +517,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40058,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '58',
+      'numero': 58,
       'titulo': 'ALELUYA, ÉL ME SALVA',
       'orden': 1,
       'estado_registro': 1,
@@ -526,7 +526,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40059,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '59',
+      'numero': 59,
       'titulo': 'AMA A TUS PRÓJIMOS',
       'orden': 1,
       'estado_registro': 1,
@@ -535,7 +535,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40060,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '60',
+      'numero': 60,
       'titulo': 'CANCIÓN DE REGOCIJO',
       'orden': 1,
       'estado_registro': 1,
@@ -544,7 +544,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40061,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '61',
+      'numero': 61,
       'titulo': 'JESÚS ES PRECIOSO',
       'orden': 1,
       'estado_registro': 1,
@@ -553,7 +553,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40062,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '62',
+      'numero': 62,
       'titulo': 'CRISTO LA ROCA',
       'orden': 1,
       'estado_registro': 1,
@@ -562,7 +562,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40063,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '63',
+      'numero': 63,
       'titulo': 'EL APOSENTO ALTO',
       'orden': 1,
       'estado_registro': 1,
@@ -571,7 +571,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40064,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '64',
+      'numero': 64,
       'titulo': '¡GLORIOSA PAZ!',
       'orden': 1,
       'estado_registro': 1,
@@ -580,7 +580,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40065,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '65',
+      'numero': 65,
       'titulo': 'DULCE COMUNIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -589,7 +589,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40066,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '66',
+      'numero': 66,
       'titulo': '¡OH! YO QUIERO ANDAR CON CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -598,7 +598,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40067,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '67',
+      'numero': 67,
       'titulo': 'A JESUCRISTO VEN SIN TARDAR',
       'orden': 1,
       'estado_registro': 1,
@@ -607,7 +607,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40068,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '68',
+      'numero': 68,
       'titulo': 'SÍ, YO SÉ',
       'orden': 1,
       'estado_registro': 1,
@@ -616,7 +616,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40069,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '69',
+      'numero': 69,
       'titulo': 'LA FUENTE SANADORA',
       'orden': 1,
       'estado_registro': 1,
@@ -625,7 +625,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40070,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '70',
+      'numero': 70,
       'titulo': 'SÉ QUE SON VERDADERAS SUS PROMESAS',
       'orden': 1,
       'estado_registro': 1,
@@ -634,7 +634,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40071,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '71',
+      'numero': 71,
       'titulo': 'ETERNAMENTE SALVO',
       'orden': 1,
       'estado_registro': 1,
@@ -643,7 +643,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40072,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '72',
+      'numero': 72,
       'titulo': 'DIOS MORA EN MI CORAZÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -652,7 +652,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40073,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '73',
+      'numero': 73,
       'titulo': 'ESCOGÍ A JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -661,7 +661,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40074,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '74',
+      'numero': 74,
       'titulo': 'MI AMIGO MARAVILLOSO',
       'orden': 1,
       'estado_registro': 1,
@@ -670,7 +670,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40075,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '75',
+      'numero': 75,
       'titulo': 'EL MUNDO PERDIDO',
       'orden': 1,
       'estado_registro': 1,
@@ -679,7 +679,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40076,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '76',
+      'numero': 76,
       'titulo': 'CON CRISTO YO IRÉ',
       'orden': 1,
       'estado_registro': 1,
@@ -688,7 +688,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40077,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '77',
+      'numero': 77,
       'titulo': 'CUANDO LEO EN LA BIBLIA',
       'orden': 1,
       'estado_registro': 1,
@@ -697,7 +697,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40078,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '78',
+      'numero': 78,
       'titulo': 'HALLÉ UN BUEN AMIGO',
       'orden': 1,
       'estado_registro': 1,
@@ -706,7 +706,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40079,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '79',
+      'numero': 79,
       'titulo': 'RODEAREMOS EL MUNDO',
       'orden': 1,
       'estado_registro': 1,
@@ -715,7 +715,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40080,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '80',
+      'numero': 80,
       'titulo': 'A LA LUCHA',
       'orden': 1,
       'estado_registro': 1,
@@ -724,7 +724,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40081,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '81',
+      'numero': 81,
       'titulo': 'CARIÑOSO SALVADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -733,7 +733,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40082,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '82',
+      'numero': 82,
       'titulo': 'EN LA MONTAÑA PODRÁ NO SER',
       'orden': 1,
       'estado_registro': 1,
@@ -742,7 +742,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40083,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '83',
+      'numero': 83,
       'titulo': 'JUNTO A LA CRUZ',
       'orden': 1,
       'estado_registro': 1,
@@ -751,7 +751,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40084,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '84',
+      'numero': 84,
       'titulo': 'LA PAZ QUE CRISTO DA',
       'orden': 1,
       'estado_registro': 1,
@@ -760,7 +760,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40085,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '85',
+      'numero': 85,
       'titulo': 'VAGABA YO EN OSCURIDAD',
       'orden': 1,
       'estado_registro': 1,
@@ -769,7 +769,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40086,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '86',
+      'numero': 86,
       'titulo': 'YO TENGO PAZ',
       'orden': 1,
       'estado_registro': 1,
@@ -778,7 +778,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40087,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '87',
+      'numero': 87,
       'titulo': 'NO ME IMPORTAN RIQUEZAS',
       'orden': 1,
       'estado_registro': 1,
@@ -787,7 +787,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40088,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '88',
+      'numero': 88,
       'titulo': 'LAS PROMESAS DE JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -796,7 +796,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40089,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '89',
+      'numero': 89,
       'titulo': 'EN BUSCA DE OBREROS',
       'orden': 1,
       'estado_registro': 1,
@@ -805,7 +805,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40090,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '90',
+      'numero': 90,
       'titulo': 'CRISTO BUSCA LIMPIOS CORAZONES',
       'orden': 1,
       'estado_registro': 1,
@@ -814,7 +814,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40091,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '91',
+      'numero': 91,
       'titulo': '¡ALELUYA, AMÉN!',
       'orden': 1,
       'estado_registro': 1,
@@ -823,7 +823,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40092,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '92',
+      'numero': 92,
       'titulo': 'MÁS BLANCO QUE LA NIEVE',
       'orden': 1,
       'estado_registro': 1,
@@ -832,7 +832,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40093,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '93',
+      'numero': 93,
       'titulo': 'DIOS ME CUIDARÁ',
       'orden': 1,
       'estado_registro': 1,
@@ -841,7 +841,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40094,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '94',
+      'numero': 94,
       'titulo': 'JUVENTUD ENTUSIASTA Y RISUEÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -850,7 +850,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40095,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '95',
+      'numero': 95,
       'titulo': 'DA LO MEJOR AL MAESTRO',
       'orden': 1,
       'estado_registro': 1,
@@ -859,7 +859,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40096,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '96',
+      'numero': 96,
       'titulo': '¡OH JÓVENES VENID!',
       'orden': 1,
       'estado_registro': 1,
@@ -868,7 +868,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40097,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '97',
+      'numero': 97,
       'titulo': 'MI VIDA DI POR TI',
       'orden': 1,
       'estado_registro': 1,
@@ -877,7 +877,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40098,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '98',
+      'numero': 98,
       'titulo': 'JUBILOSAS NUESTRAS VOCES',
       'orden': 1,
       'estado_registro': 1,
@@ -886,7 +886,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40099,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '99',
+      'numero': 99,
       'titulo': 'ESTAD POR CRISTO FIRMES',
       'orden': 1,
       'estado_registro': 1,
@@ -895,7 +895,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40100,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '100',
+      'numero': 100,
       'titulo': 'EL REINO DE DIOS ESTÁ CERCA',
       'orden': 1,
       'estado_registro': 1,
@@ -904,7 +904,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40101,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '101',
+      'numero': 101,
       'titulo': 'AVIVA TU OBRA, ¡OH DIOS!',
       'orden': 1,
       'estado_registro': 1,
@@ -913,7 +913,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40102,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '102',
+      'numero': 102,
       'titulo': 'SEMBRARÉ',
       'orden': 1,
       'estado_registro': 1,
@@ -922,7 +922,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40103,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '103',
+      'numero': 103,
       'titulo': 'LA HISTORIA DE LA CRUZ',
       'orden': 1,
       'estado_registro': 1,
@@ -931,7 +931,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40104,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '104',
+      'numero': 104,
       'titulo': 'GRATO ES DECIR LA HISTORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -940,7 +940,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40105,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '105',
+      'numero': 105,
       'titulo': 'DIME LA ANTIGUA HISTORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -949,7 +949,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40106,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '106',
+      'numero': 106,
       'titulo': 'SEGURAMENTE SALVO',
       'orden': 1,
       'estado_registro': 1,
@@ -958,7 +958,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40107,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '107',
+      'numero': 107,
       'titulo': 'NADA HAY QUE ME PUEDA APARTAR',
       'orden': 1,
       'estado_registro': 1,
@@ -967,7 +967,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40108,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '108',
+      'numero': 108,
       'titulo': 'HABLADME MÁS DE CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -976,7 +976,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40109,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '109',
+      'numero': 109,
       'titulo': 'A LA LUCHA, COMPAÑEROS',
       'orden': 1,
       'estado_registro': 1,
@@ -985,7 +985,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40110,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '110',
+      'numero': 110,
       'titulo': 'ID A LA MIES',
       'orden': 1,
       'estado_registro': 1,
@@ -994,7 +994,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40111,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '111',
+      'numero': 111,
       'titulo': 'TOMA MI VIDA, SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1003,7 +1003,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40112,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '112',
+      'numero': 112,
       'titulo': 'LEVANTEMOS LA BANDERA',
       'orden': 1,
       'estado_registro': 1,
@@ -1012,7 +1012,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40113,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '113',
+      'numero': 113,
       'titulo': 'DAME LA FE DE MI JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -1021,7 +1021,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40114,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '114',
+      'numero': 114,
       'titulo': '¡TRABAJAD! ¡TRABAJAD!',
       'orden': 1,
       'estado_registro': 1,
@@ -1030,7 +1030,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40115,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '115',
+      'numero': 115,
       'titulo': 'LA MERCED DE NUESTRO PADRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1039,7 +1039,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40116,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '116',
+      'numero': 116,
       'titulo': '¡A LA BATALLA!',
       'orden': 1,
       'estado_registro': 1,
@@ -1048,7 +1048,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40117,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '117',
+      'numero': 117,
       'titulo': '¡OH, CUÁN DULCE!',
       'orden': 1,
       'estado_registro': 1,
@@ -1057,7 +1057,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40118,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '118',
+      'numero': 118,
       'titulo': 'DA LA LUZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1066,7 +1066,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40119,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '119',
+      'numero': 119,
       'titulo': 'EN LOS NEGOCIOS DEL REY',
       'orden': 1,
       'estado_registro': 1,
@@ -1075,7 +1075,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40120,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '120',
+      'numero': 120,
       'titulo': 'DE HELADAS CORDILLERAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1084,7 +1084,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40121,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '121',
+      'numero': 121,
       'titulo': 'POR UNA SENDA ESTRECHA ANDABA YO',
       'orden': 1,
       'estado_registro': 1,
@@ -1093,7 +1093,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40122,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '122',
+      'numero': 122,
       'titulo': 'CASTILLO FUERTE ES NUESTRO DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1102,7 +1102,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40123,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '123',
+      'numero': 123,
       'titulo': 'TODO EN TODO ES JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1111,7 +1111,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40124,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '124',
+      'numero': 124,
       'titulo': 'EL AMOR DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1120,7 +1120,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40125,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '125',
+      'numero': 125,
       'titulo': 'LAS SANTAS ESCRITURAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1129,7 +1129,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40126,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '126',
+      'numero': 126,
       'titulo': 'VALE LA PENA SERVIR A JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -1138,7 +1138,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40127,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '127',
+      'numero': 127,
       'titulo': 'CUÁNTO DEBO A MI SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1147,7 +1147,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40128,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '128',
+      'numero': 128,
       'titulo': 'EL CORO CELESTIAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1156,7 +1156,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40129,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '129',
+      'numero': 129,
       'titulo': 'ES EL TIEMPO DE LA SIEGA',
       'orden': 1,
       'estado_registro': 1,
@@ -1165,7 +1165,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40130,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '130',
+      'numero': 130,
       'titulo': 'CRISTO, NUESTRO TODO',
       'orden': 1,
       'estado_registro': 1,
@@ -1174,7 +1174,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40131,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '131',
+      'numero': 131,
       'titulo': 'EL GRAN DÍA VIENE',
       'orden': 1,
       'estado_registro': 1,
@@ -1183,7 +1183,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40132,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '132',
+      'numero': 132,
       'titulo': 'LEVATAOS Y BRILLAD',
       'orden': 1,
       'estado_registro': 1,
@@ -1192,7 +1192,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40133,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '133',
+      'numero': 133,
       'titulo': 'UN DÍA CRISTO VOLVERÁ',
       'orden': 1,
       'estado_registro': 1,
@@ -1201,7 +1201,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40134,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '134',
+      'numero': 134,
       'titulo': 'JESÚS, VENDRÁ OTRA VEZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1210,7 +1210,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40135,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '135',
+      'numero': 135,
       'titulo': 'EN LAS NUBES VOLVERÁ',
       'orden': 1,
       'estado_registro': 1,
@@ -1219,7 +1219,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40136,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '136',
+      'numero': 136,
       'titulo': 'VIENE OTRA VEZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1228,7 +1228,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40137,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '137',
+      'numero': 137,
       'titulo': 'LA GLORIOSA APARICIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -1237,7 +1237,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40138,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '138',
+      'numero': 138,
       'titulo': 'JESÚS PRONTO VOLVERÁ',
       'orden': 1,
       'estado_registro': 1,
@@ -1246,7 +1246,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40139,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '139',
+      'numero': 139,
       'titulo': 'CUANDO SUENEN LAS CAMPANAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1255,7 +1255,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40140,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '140',
+      'numero': 140,
       'titulo': '¡OH, SÍ, QUIERO VERLE!',
       'orden': 1,
       'estado_registro': 1,
@@ -1264,7 +1264,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40141,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '141',
+      'numero': 141,
       'titulo': 'SALVO EN LOS TIERNOS BRAZOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1273,7 +1273,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40142,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '142',
+      'numero': 142,
       'titulo': 'BANDA DE ÁNGELES',
       'orden': 1,
       'estado_registro': 1,
@@ -1282,7 +1282,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40143,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '143',
+      'numero': 143,
       'titulo': 'EN LA NUEVA JERUSALÉN',
       'orden': 1,
       'estado_registro': 1,
@@ -1291,7 +1291,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40144,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '144',
+      'numero': 144,
       'titulo': 'CERCA DE TI, SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1300,7 +1300,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40145,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '145',
+      'numero': 145,
       'titulo': 'LA PUERTA ORIENTAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1309,7 +1309,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40146,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '146',
+      'numero': 146,
       'titulo': 'EN LA VIÑA DEL SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1318,7 +1318,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40147,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '147',
+      'numero': 147,
       'titulo': 'GLORIA SIN FIN',
       'orden': 1,
       'estado_registro': 1,
@@ -1327,7 +1327,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40148,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '148',
+      'numero': 148,
       'titulo': 'CUANDO ESTEMOS EN GLORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -1336,7 +1336,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40149,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '149',
+      'numero': 149,
       'titulo': 'MEDITAD',
       'orden': 1,
       'estado_registro': 1,
@@ -1345,7 +1345,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40150,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '150',
+      'numero': 150,
       'titulo': 'JESÚS, YO HE PROMETIDO',
       'orden': 1,
       'estado_registro': 1,
@@ -1354,7 +1354,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40151,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '151',
+      'numero': 151,
       'titulo': 'NO HAY TRISTEZA EN EL CIELO',
       'orden': 1,
       'estado_registro': 1,
@@ -1363,7 +1363,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40152,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '152',
+      'numero': 152,
       'titulo': 'TAL COMO SOY',
       'orden': 1,
       'estado_registro': 1,
@@ -1372,7 +1372,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40153,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '153',
+      'numero': 153,
       'titulo': 'HERMOSO PAÍS',
       'orden': 1,
       'estado_registro': 1,
@@ -1381,7 +1381,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40154,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '154',
+      'numero': 154,
       'titulo': '¿QUÉ ME PUEDE DAR PERDÓN?',
       'orden': 1,
       'estado_registro': 1,
@@ -1390,7 +1390,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40155,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '155',
+      'numero': 155,
       'titulo': 'ALLÍ NO HABRÁ TRIBULACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -1399,7 +1399,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40156,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '156',
+      'numero': 156,
       'titulo': 'COMPRADO CON SANGRE POR CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1408,7 +1408,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40157,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '157',
+      'numero': 157,
       'titulo': 'HAY UN PRECIOSO MANANTIAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1417,7 +1417,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40158,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '158',
+      'numero': 158,
       'titulo': 'LA FUENTE ETERNAL HALLÉ',
       'orden': 1,
       'estado_registro': 1,
@@ -1426,7 +1426,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40159,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '159',
+      'numero': 159,
       'titulo': '¡OH, QUÉ AMOR!',
       'orden': 1,
       'estado_registro': 1,
@@ -1435,7 +1435,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40160,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '160',
+      'numero': 160,
       'titulo': 'BAJO LA SANGRE EXPIATORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -1444,7 +1444,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40161,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '161',
+      'numero': 161,
       'titulo': 'REPOSO HALLÉ EN CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1453,7 +1453,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40162,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '162',
+      'numero': 162,
       'titulo': '¡OH, BONDAD TAN INFINITA!',
       'orden': 1,
       'estado_registro': 1,
@@ -1462,7 +1462,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40163,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '163',
+      'numero': 163,
       'titulo': 'ÉL ME SALVÓ',
       'orden': 1,
       'estado_registro': 1,
@@ -1471,7 +1471,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40164,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '164',
+      'numero': 164,
       'titulo': 'ÉL ES MI FUERTE SALVADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1480,7 +1480,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40165,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '165',
+      'numero': 165,
       'titulo': 'YA TODO DEJÉ',
       'orden': 1,
       'estado_registro': 1,
@@ -1489,7 +1489,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40166,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '166',
+      'numero': 166,
       'titulo': 'CRISTO MI DULCE SALVADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1498,7 +1498,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40167,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '167',
+      'numero': 167,
       'titulo': 'DILO A CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1507,7 +1507,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40168,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '168',
+      'numero': 168,
       'titulo': 'CRISTO, MI PILOTO SÉ',
       'orden': 1,
       'estado_registro': 1,
@@ -1516,7 +1516,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40169,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '169',
+      'numero': 169,
       'titulo': 'POR LA SANGRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1525,7 +1525,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40170,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '170',
+      'numero': 170,
       'titulo': '¡SANTO! ¡SANTO! ¡SANTO!',
       'orden': 1,
       'estado_registro': 1,
@@ -1534,7 +1534,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40171,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '171',
+      'numero': 171,
       'titulo': 'CRISTO ES MÍO',
       'orden': 1,
       'estado_registro': 1,
@@ -1543,7 +1543,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40172,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '172',
+      'numero': 172,
       'titulo': 'A SOLAS AL HUERTO VOY',
       'orden': 1,
       'estado_registro': 1,
@@ -1552,7 +1552,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40173,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '173',
+      'numero': 173,
       'titulo': 'EL HERMOSO HUERTO DE ORACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -1561,7 +1561,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40174,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '174',
+      'numero': 174,
       'titulo': 'EN LA CRUZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1570,7 +1570,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40175,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '175',
+      'numero': 175,
       'titulo': 'ORA HASTA TRIUNFAR',
       'orden': 1,
       'estado_registro': 1,
@@ -1579,7 +1579,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40176,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '176',
+      'numero': 176,
       'titulo': 'MI HOGAR CELESTIAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1588,7 +1588,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40177,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '177',
+      'numero': 177,
       'titulo': 'CRISTO CONTESTARÁ TU ORACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -1597,7 +1597,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40178,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '178',
+      'numero': 178,
       'titulo': 'ENTERA CONSAGRACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -1606,7 +1606,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40179,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '179',
+      'numero': 179,
       'titulo': 'LA CRUZ Y LA GRACIA DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1615,7 +1615,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40180,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '180',
+      'numero': 180,
       'titulo': 'TUS ESPINAS DARÁN ROSAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1624,7 +1624,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40181,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '181',
+      'numero': 181,
       'titulo': 'LO ENTEDEREMOS TODO MÁS ALLÁ',
       'orden': 1,
       'estado_registro': 1,
@@ -1633,7 +1633,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40182,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '182',
+      'numero': 182,
       'titulo': 'DULCE ORACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -1642,7 +1642,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40183,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '183',
+      'numero': 183,
       'titulo': 'AVIVAMIENTO MUNDIAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1651,7 +1651,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40184,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '184',
+      'numero': 184,
       'titulo': 'CON VOZ BENIGNA',
       'orden': 1,
       'estado_registro': 1,
@@ -1660,7 +1660,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40185,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '185',
+      'numero': 185,
       'titulo': 'NO PUEDO ESTAR SOLO',
       'orden': 1,
       'estado_registro': 1,
@@ -1669,7 +1669,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40186,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '186',
+      'numero': 186,
       'titulo': '¡DESPERTAD!',
       'orden': 1,
       'estado_registro': 1,
@@ -1678,7 +1678,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40187,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '187',
+      'numero': 187,
       'titulo': 'UN AVIVAMIENTO ESPIRITUAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1687,7 +1687,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40188,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '188',
+      'numero': 188,
       'titulo': 'VENID, FIELES TODOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1696,7 +1696,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40189,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '189',
+      'numero': 189,
       'titulo': 'CAMINANDO CON EL SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1705,7 +1705,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40190,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '190',
+      'numero': 190,
       'titulo': 'JESÚS DE LOS CIELOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1714,7 +1714,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40191,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '191',
+      'numero': 191,
       'titulo': 'ALABADO EL GRAN MANANTIAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1723,7 +1723,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40192,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '192',
+      'numero': 192,
       'titulo': '¡OH, CUÁNTO AMO A CRISTO!',
       'orden': 1,
       'estado_registro': 1,
@@ -1732,7 +1732,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40193,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '193',
+      'numero': 193,
       'titulo': 'CUÁN TIERNAMENTE',
       'orden': 1,
       'estado_registro': 1,
@@ -1741,7 +1741,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40194,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '194',
+      'numero': 194,
       'titulo': 'HAY PODER EN JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -1750,7 +1750,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40195,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '195',
+      'numero': 195,
       'titulo': 'LIBERTAD',
       'orden': 1,
       'estado_registro': 1,
@@ -1759,7 +1759,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40196,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '196',
+      'numero': 196,
       'titulo': 'ACEPTA EL PERDÓN DE JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -1768,7 +1768,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40197,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '197',
+      'numero': 197,
       'titulo': '¿ERES LIMPIO EN LA SANGRE?',
       'orden': 1,
       'estado_registro': 1,
@@ -1777,7 +1777,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40198,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '198',
+      'numero': 198,
       'titulo': 'PECADOR, VEN A CRISTO JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -1786,7 +1786,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40199,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '199',
+      'numero': 199,
       'titulo': 'TENDRÁS QUE RENACER',
       'orden': 1,
       'estado_registro': 1,
@@ -1795,7 +1795,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40200,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '200',
+      'numero': 200,
       'titulo': 'PUEDO OÍR TU VOZ LLAMANDO',
       'orden': 1,
       'estado_registro': 1,
@@ -1804,7 +1804,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40201,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '201',
+      'numero': 201,
       'titulo': 'JESUCRISTO ESTÁ LLAMANDO',
       'orden': 1,
       'estado_registro': 1,
@@ -1813,7 +1813,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40202,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '202',
+      'numero': 202,
       'titulo': 'VEN TAL COMO ESTÁS',
       'orden': 1,
       'estado_registro': 1,
@@ -1822,7 +1822,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40203,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '203',
+      'numero': 203,
       'titulo': 'POR LA SENDA DO CAMINAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1831,7 +1831,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40204,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '204',
+      'numero': 204,
       'titulo': 'VEN A CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1840,7 +1840,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40205,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '205',
+      'numero': 205,
       'titulo': 'VENID A MI',
       'orden': 1,
       'estado_registro': 1,
@@ -1849,7 +1849,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40206,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '206',
+      'numero': 206,
       'titulo': 'VENID PASTORCILLOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1858,7 +1858,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40207,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '207',
+      'numero': 207,
       'titulo': 'LUGAR PARA CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1867,7 +1867,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40208,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '208',
+      'numero': 208,
       'titulo': 'SUENEN DULCES HIMNOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1876,7 +1876,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40209,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '209',
+      'numero': 209,
       'titulo': '¡AL MUNDO PAZ, NACIÓ JESÚS!',
       'orden': 1,
       'estado_registro': 1,
@@ -1885,7 +1885,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40210,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '210',
+      'numero': 210,
       'titulo': '¡NOCHE DE PAZ! ¡NOCHE DE AMOR!',
       'orden': 1,
       'estado_registro': 1,
@@ -1894,7 +1894,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40211,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '211',
+      'numero': 211,
       'titulo': 'AUNQUE SOY PEQUEÑUELO',
       'orden': 1,
       'estado_registro': 1,
@@ -1903,7 +1903,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40212,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '212',
+      'numero': 212,
       'titulo': 'CRISTO ME AMA',
       'orden': 1,
       'estado_registro': 1,
@@ -1912,7 +1912,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40213,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '213',
+      'numero': 213,
       'titulo': 'MI FE ESPERA EN TI',
       'orden': 1,
       'estado_registro': 1,
@@ -1921,7 +1921,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40214,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '214',
+      'numero': 214,
       'titulo': 'ÉL CUIDARÁ DE MI',
       'orden': 1,
       'estado_registro': 1,
@@ -1930,7 +1930,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40215,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '215',
+      'numero': 215,
       'titulo': '¡DULCES MOMENTOS CONSOLADORES!',
       'orden': 1,
       'estado_registro': 1,
@@ -1939,7 +1939,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40216,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '216',
+      'numero': 216,
       'titulo': 'SANTA BIBLIA',
       'orden': 1,
       'estado_registro': 1,
@@ -1948,7 +1948,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40217,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '217',
+      'numero': 217,
       'titulo': 'LA SANTA CENA',
       'orden': 1,
       'estado_registro': 1,
@@ -1957,7 +1957,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40218,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '218',
+      'numero': 218,
       'titulo': 'A MI MADRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1966,7 +1966,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40219,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '219',
+      'numero': 219,
       'titulo': 'LA ANTIGUA BIBLIA Y LA ANTIGUA FE',
       'orden': 1,
       'estado_registro': 1,
@@ -1975,7 +1975,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40220,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '220',
+      'numero': 220,
       'titulo': 'CREO EN LA BIBLIA',
       'orden': 1,
       'estado_registro': 1,
@@ -1984,7 +1984,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40221,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '221',
+      'numero': 221,
       'titulo': 'LA PALABRA FIEL',
       'orden': 1,
       'estado_registro': 1,
@@ -1993,7 +1993,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40222,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '222',
+      'numero': 222,
       'titulo': 'BRILLA EN TU LUGAR',
       'orden': 1,
       'estado_registro': 1,
@@ -2002,7 +2002,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40223,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '223',
+      'numero': 223,
       'titulo': 'GOZO LA SANTA PALABRA LEER',
       'orden': 1,
       'estado_registro': 1,
@@ -2011,7 +2011,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40224,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '224',
+      'numero': 224,
       'titulo': 'AMOR MATERNAL',
       'orden': 1,
       'estado_registro': 1,
@@ -2020,7 +2020,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40225,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '225',
+      'numero': 225,
       'titulo': 'ESCUCHA, POBRE PECADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -2029,7 +2029,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40226,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '226',
+      'numero': 226,
       'titulo': 'FIRMES Y ADELANTE',
       'orden': 1,
       'estado_registro': 1,
@@ -2038,7 +2038,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40227,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '227',
+      'numero': 227,
       'titulo': 'RESURRECIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -2047,7 +2047,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40228,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '228',
+      'numero': 228,
       'titulo': 'AL UMBRAL DEL AÑO',
       'orden': 1,
       'estado_registro': 1,
@@ -2056,7 +2056,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40229,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '229',
+      'numero': 229,
       'titulo': 'NÍTIDO RAYO',
       'orden': 1,
       'estado_registro': 1,
@@ -2065,7 +2065,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40230,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '230',
+      'numero': 230,
       'titulo': 'NIÑOS, JOYAS DE CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2074,7 +2074,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40231,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '231',
+      'numero': 231,
       'titulo': 'TENTADO NO CEDAS',
       'orden': 1,
       'estado_registro': 1,
@@ -2083,7 +2083,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40232,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '232',
+      'numero': 232,
       'titulo': 'DA AL SEÑOR TU DIEZMO',
       'orden': 1,
       'estado_registro': 1,
@@ -2092,7 +2092,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40233,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '233',
+      'numero': 233,
       'titulo': 'NI TOQUES, NI PRUEBES',
       'orden': 1,
       'estado_registro': 1,
@@ -2101,7 +2101,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40234,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '234',
+      'numero': 234,
       'titulo': 'YO DARÉ MIS DIEZMOS',
       'orden': 1,
       'estado_registro': 1,
@@ -2110,7 +2110,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40235,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '235',
+      'numero': 235,
       'titulo': 'CUANDO TODOS DEN SUS DIEZMOS',
       'orden': 1,
       'estado_registro': 1,
@@ -2119,7 +2119,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40236,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '236',
+      'numero': 236,
       'titulo': 'OH CANTÁDMELAS OTRA VEZ',
       'orden': 1,
       'estado_registro': 1,
@@ -2128,7 +2128,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40237,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '237',
+      'numero': 237,
       'titulo': 'EL DIEZMO',
       'orden': 1,
       'estado_registro': 1,
@@ -2137,7 +2137,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40238,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '238',
+      'numero': 238,
       'titulo': 'CORONADLE',
       'orden': 1,
       'estado_registro': 1,
@@ -2146,7 +2146,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40239,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '239',
+      'numero': 239,
       'titulo': 'MELODÍAS CELESTIALES',
       'orden': 1,
       'estado_registro': 1,
@@ -2155,7 +2155,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40240,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '240',
+      'numero': 240,
       'titulo': 'LA TUMBA LE ENCERRÓ',
       'orden': 1,
       'estado_registro': 1,
@@ -2164,7 +2164,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40241,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '241',
+      'numero': 241,
       'titulo': 'DIOS OS GUARDE',
       'orden': 1,
       'estado_registro': 1,
@@ -2173,7 +2173,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40242,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '242',
+      'numero': 242,
       'titulo': 'UN CANTO PARA MI MADRE',
       'orden': 1,
       'estado_registro': 1,
@@ -2182,7 +2182,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40243,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '243',
+      'numero': 243,
       'titulo': 'MÁS CUAL JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -2191,7 +2191,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40244,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '244',
+      'numero': 244,
       'titulo': 'IGNORO YO PORQUÉ SERÁ',
       'orden': 1,
       'estado_registro': 1,
@@ -2200,7 +2200,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40245,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '245',
+      'numero': 245,
       'titulo': 'YO ANDO CON CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2209,7 +2209,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40246,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '246',
+      'numero': 246,
       'titulo': 'MI CULPA ÉL LLEVÓ',
       'orden': 1,
       'estado_registro': 1,
@@ -2218,7 +2218,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40247,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '247',
+      'numero': 247,
       'titulo': '¡OJALÁ FUERA HOY!',
       'orden': 1,
       'estado_registro': 1,
@@ -2227,7 +2227,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40248,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '248',
+      'numero': 248,
       'titulo': 'LA COMUNIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -2236,7 +2236,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40249,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '249',
+      'numero': 249,
       'titulo': 'EL AMOR DE JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2245,7 +2245,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40250,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '250',
+      'numero': 250,
       'titulo': 'SI HE OFENDIDO A ALGUIEN',
       'orden': 1,
       'estado_registro': 1,
@@ -2254,7 +2254,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40251,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '251',
+      'numero': 251,
       'titulo': 'JESÚS ES MI REY SOBERANO',
       'orden': 1,
       'estado_registro': 1,
@@ -2263,7 +2263,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40252,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '252',
+      'numero': 252,
       'titulo': 'GLORIA DEMOS AL PADRE',
       'orden': 1,
       'estado_registro': 1,
@@ -2272,7 +2272,7 @@ class DataLluviasDeBendicion {
       'id_cancion': 40253,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 4, // Lluvias de Bendicion
-      'numero': '253',
+      'numero': 253,
       'titulo': 'A DIOS EL PADRE',
       'orden': 1,
       'estado_registro': 1,

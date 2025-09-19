@@ -94,9 +94,10 @@ class _CrearListaScreenState extends State<CrearListaScreen> {
           padding: const EdgeInsets.all(16.0),
           child: Form(
             key: _formKey,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
                 Card(
                   elevation: 4,
                   shape: RoundedRectangleBorder(
@@ -230,6 +231,7 @@ class _CrearListaScreenState extends State<CrearListaScreen> {
                   ),
                 ),
               ],
+              ),
             ),
           ),
         ),

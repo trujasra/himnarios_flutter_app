@@ -108,9 +108,27 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
     });
 
     try {
-      final cancionesData = await _cancionesService.getCancionesPorHimnario(
-        widget.himnario.nombre,
-      );
+      List<Cancion> cancionesData;
+      
+      // Si hay búsqueda o filtros, usar búsqueda optimizada
+      if (busqueda.isNotEmpty || chipsSeleccionados.isNotEmpty) {
+        final idiomasSeleccionados = chipsSeleccionados.isNotEmpty
+            ? chipsSeleccionados.map((chip) => chip.split(' (').first).toList()
+            : null;
+            
+        cancionesData = await _cancionesService.buscarCancionesPorHimnario(
+          widget.himnario.nombre,
+          busqueda: busqueda.isNotEmpty ? busqueda : null,
+          idiomas: idiomasSeleccionados,
+          limit: 500, // Limitar resultados para mejor rendimiento
+        );
+      } else {
+        // Si no hay filtros, cargar todas las canciones
+        cancionesData = await _cancionesService.getCancionesPorHimnario(
+          widget.himnario.nombre,
+        );
+      }
+      
       setState(() {
         canciones = cancionesData;
         isLoading = false;
@@ -132,26 +150,8 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
   }
 
   List<Cancion> get cancionesDelHimnario {
-    return canciones.where((cancion) {
-      if (chipsSeleccionados.isNotEmpty) {
-        // El chip es 'Idioma (cantidad)', así que solo compara el idioma
-        final idiomasSeleccionados = chipsSeleccionados
-            .map((chip) => chip.split(' (').first)
-            .toList();
-        if (!idiomasSeleccionados.contains(cancion.idioma)) return false;
-      }
-      if (busqueda.isNotEmpty) {
-        final busq = busqueda.toLowerCase();
-        final coincideNumero = cancion.numero.toString().contains(busq);
-        final coincideTexto =
-            cancion.titulo.toLowerCase().contains(busq) ||
-            (cancion.tituloSecundario?.toLowerCase().contains(busq) ?? false);
-        if (!coincideNumero && !coincideTexto) {
-          return false;
-        }
-      }
-      return true;
-    }).toList();
+    // Las canciones ya vienen filtradas desde la base de datos
+    return canciones;
   }
 
   @override
@@ -242,12 +242,16 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                       // Buscador y filtros
                       SearchBarWidget(
                         busqueda: busqueda,
-                        onBusquedaChanged: (value) =>
-                            setState(() => busqueda = value),
+                        onBusquedaChanged: (value) {
+                          setState(() => busqueda = value);
+                          _cargarCanciones(); // Recargar con nueva búsqueda
+                        },
                         chips: chips,
                         chipsSeleccionados: chipsSeleccionados,
-                        onChipsSeleccionados: (chips) =>
-                            setState(() => chipsSeleccionados = chips),
+                        onChipsSeleccionados: (chips) {
+                          setState(() => chipsSeleccionados = chips);
+                          _cargarCanciones(); // Recargar con nuevos filtros
+                        },
                         himnarioColor: _getColorForHimnario(
                           widget.himnario.nombre,
                         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 // Cambiar a selección múltiple de chips
 class SearchBarWidget extends StatefulWidget {
@@ -25,6 +26,7 @@ class SearchBarWidget extends StatefulWidget {
 
 class _SearchBarWidgetState extends State<SearchBarWidget> {
   late final TextEditingController _controller;
+  Timer? _debounceTimer;
 
   @override
   void initState() {
@@ -46,12 +48,19 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
 
   void _onTextChanged() {
     if (_controller.text != widget.busqueda) {
-      widget.onBusquedaChanged(_controller.text);
+      // Cancelar el timer anterior si existe
+      _debounceTimer?.cancel();
+      
+      // Crear un nuevo timer con delay de 300ms
+      _debounceTimer = Timer(const Duration(milliseconds: 300), () {
+        widget.onBusquedaChanged(_controller.text);
+      });
     }
   }
 
   @override
   void dispose() {
+    _debounceTimer?.cancel();
     _controller.removeListener(_onTextChanged);
     _controller.dispose();
     super.dispose();
@@ -91,7 +100,7 @@ class _SearchBarWidgetState extends State<SearchBarWidget> {
             controller: _controller,
             style: const TextStyle(fontSize: 15),
             decoration: InputDecoration(
-              hintText: 'Buscar por número o titulo...',
+              hintText: 'Buscar por número o título...',
               hintStyle: const TextStyle(color: Colors.grey),
               prefixIcon: const Icon(Icons.search, color: Colors.grey),
               border: InputBorder.none,

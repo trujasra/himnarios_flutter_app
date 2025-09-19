@@ -4,7 +4,7 @@
       'id_cancion': 30001,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '1',
+      'numero': 1,
       'titulo': 'TATITUN JUTAÑAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -13,7 +13,7 @@
       'id_cancion': 30002,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '1',
+      'numero': 1,
       'titulo': 'PRONTO VUELVE JESUCRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -22,7 +22,7 @@
       'id_cancion': 30003,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '2',
+      'numero': 2,
       'titulo': 'JESUSAN ARUPAT YATIYAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -31,7 +31,7 @@
       'id_cancion': 30004,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '2',
+      'numero': 2,
       'titulo': 'PREDICAD POR DOQUIER',
       'orden': 2,
       'estado_registro': 1,
@@ -40,7 +40,7 @@
       'id_cancion': 30005,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '3',
+      'numero': 3,
       'titulo': 'MUNAT KHESPIYIRI JUMARUW CATOKSMA',
       'orden': 1,
       'estado_registro': 1,
@@ -49,7 +49,7 @@
       'id_cancion': 30006,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '3',
+      'numero': 3,
       'titulo': 'SALVADOR, EN TI CONFÍO',
       'orden': 2,
       'estado_registro': 1,
@@ -58,7 +58,7 @@
       'id_cancion': 30007,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '4',
+      'numero': 4,
       'titulo': 'IST\'ITAY DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -67,7 +67,7 @@
       'id_cancion': 30008,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '4',
+      'numero': 4,
       'titulo': 'GUÍAME A LA GLORIA',
       'orden': 2,
       'estado_registro': 1,
@@ -76,7 +76,7 @@
       'id_cancion': 30009,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '5',
+      'numero': 5,
       'titulo': 'CRISTON THAQUIPAN SARÄ',
       'orden': 1,
       'estado_registro': 1,
@@ -85,7 +85,7 @@
       'id_cancion': 30010,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '5',
+      'numero': 5,
       'titulo': 'POR SU SENDA MARCHARÉ',
       'orden': 2,
       'estado_registro': 1,
@@ -94,7 +94,7 @@
       'id_cancion': 30011,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '6',
+      'numero': 6,
       'titulo': 'DIOS AWQUI UÑTANITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -103,7 +103,7 @@
       'id_cancion': 30012,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '6',
+      'numero': 6,
       'titulo': 'HEME AQUÍ, OH PADRE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -112,7 +112,7 @@
       'id_cancion': 30013,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '7',
+      'numero': 7,
       'titulo': 'TATIT JESUCRISTORUW THAKTA',
       'orden': 1,
       'estado_registro': 1,
@@ -121,7 +121,7 @@
       'id_cancion': 30014,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '7',
+      'numero': 7,
       'titulo': 'A JESÚS BUSQUÉ',
       'orden': 2,
       'estado_registro': 1,
@@ -130,7 +130,7 @@
       'id_cancion': 30015,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '8',
+      'numero': 8,
       'titulo': 'DIOSAW IMÄTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -139,7 +139,7 @@
       'id_cancion': 30016,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '8',
+      'numero': 8,
       'titulo': 'TU PADRE DIOS TE CUIDARÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -148,7 +148,7 @@
       'id_cancion': 30017,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '9',
+      'numero': 9,
       'titulo': 'LURATANACAM UÑTASAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -157,7 +157,7 @@
       'id_cancion': 30018,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '9',
+      'numero': 9,
       'titulo': 'MIRANDO TÚ OBRA, ¡OH CREADOR!',
       'orden': 2,
       'estado_registro': 1,
@@ -166,7 +166,7 @@
       'id_cancion': 30019,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '10',
+      'numero': 10,
       'titulo': 'KOLLAN AWATIR AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -175,7 +175,7 @@
       'id_cancion': 30020,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '10',
+      'numero': 10,
       'titulo': '¡OH DIOS, PADRE CELESTIAL!',
       'orden': 2,
       'estado_registro': 1,
@@ -184,7 +184,7 @@
       'id_cancion': 30021,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '11',
+      'numero': 11,
       'titulo': 'MUNASIÑAMPI K\'OCHUÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -193,7 +193,7 @@
       'id_cancion': 30022,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '11',
+      'numero': 11,
       'titulo': 'CANTEMOS DE JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -202,7 +202,7 @@
       'id_cancion': 30023,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '12',
+      'numero': 12,
       'titulo': 'YUSPAGARSMAW AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -211,7 +211,7 @@
       'id_cancion': 30024,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '12',
+      'numero': 12,
       'titulo': 'TE DOY GRACIAS, SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -220,7 +220,7 @@
       'id_cancion': 30025,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '13',
+      'numero': 13,
       'titulo': 'NAVIDADATA CUSISIÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -229,7 +229,7 @@
       'id_cancion': 30026,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '13',
+      'numero': 13,
       'titulo': 'LA NAVIDAD',
       'orden': 2,
       'estado_registro': 1,
@@ -238,7 +238,7 @@
       'id_cancion': 30027,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '14',
+      'numero': 14,
       'titulo': 'JUCHARAR JUTAMAY',
       'orden': 1,
       'estado_registro': 1,
@@ -247,7 +247,7 @@
       'id_cancion': 30028,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '14',
+      'numero': 14,
       'titulo': 'OH VEN HOY, PECADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -256,7 +256,7 @@
       'id_cancion': 30029,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '15',
+      'numero': 15,
       'titulo': 'ALAJJPACH MARCARUW SARASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -265,7 +265,7 @@
       'id_cancion': 30030,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '15',
+      'numero': 15,
       'titulo': 'A LA GLORIA VOY',
       'orden': 2,
       'estado_registro': 1,
@@ -274,7 +274,7 @@
       'id_cancion': 30031,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '16',
+      'numero': 16,
       'titulo': 'MÄ JAN SIRVIR ALI',
       'orden': 1,
       'estado_registro': 1,
@@ -283,7 +283,7 @@
       'id_cancion': 30032,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '16',
+      'numero': 16,
       'titulo': 'LA ZARZA',
       'orden': 2,
       'estado_registro': 1,
@@ -292,7 +292,7 @@
       'id_cancion': 30033,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '17',
+      'numero': 17,
       'titulo': 'TATITUN CH\'AMAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -301,7 +301,7 @@
       'id_cancion': 30034,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '17',
+      'numero': 17,
       'titulo': 'EL PODER DE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -310,7 +310,7 @@
       'id_cancion': 30035,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '18',
+      'numero': 18,
       'titulo': 'TATITUW IRPASQUITU',
       'orden': 1,
       'estado_registro': 1,
@@ -319,7 +319,7 @@
       'id_cancion': 30036,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '18',
+      'numero': 18,
       'titulo': 'EL SEÑOR ME ENCONTRÓ',
       'orden': 2,
       'estado_registro': 1,
@@ -328,7 +328,7 @@
       'id_cancion': 30037,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '19',
+      'numero': 19,
       'titulo': 'DIOSAJJ BENDIZPAN MATRIMONIORU',
       'orden': 1,
       'estado_registro': 1,
@@ -337,7 +337,7 @@
       'id_cancion': 30038,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '19',
+      'numero': 19,
       'titulo': 'DIOS BENDIGA EL MATRIMONIO',
       'orden': 2,
       'estado_registro': 1,
@@ -346,7 +346,7 @@
       'id_cancion': 30039,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '20',
+      'numero': 20,
       'titulo': 'JAN KHEPAR UÑTASA',
       'orden': 1,
       'estado_registro': 1,
@@ -355,7 +355,7 @@
       'id_cancion': 30040,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '20',
+      'numero': 20,
       'titulo': 'NO MIREMOS ATRÁS',
       'orden': 2,
       'estado_registro': 1,
@@ -364,7 +364,7 @@
       'id_cancion': 30041,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '21',
+      'numero': 21,
       'titulo': 'SUMA DIOS AWQUI IRPAQUITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -373,7 +373,7 @@
       'id_cancion': 30042,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '21',
+      'numero': 21,
       'titulo': 'GUÍAME, DIOS MÍO',
       'orden': 2,
       'estado_registro': 1,
@@ -382,7 +382,7 @@
       'id_cancion': 30043,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '22',
+      'numero': 22,
       'titulo': 'JESUSAJJ JIWAS LAYCU JUTI',
       'orden': 1,
       'estado_registro': 1,
@@ -391,7 +391,7 @@
       'id_cancion': 30044,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '22',
+      'numero': 22,
       'titulo': 'CRISTO EL SEÑOR DESCENDIÓ',
       'orden': 2,
       'estado_registro': 1,
@@ -400,7 +400,7 @@
       'id_cancion': 30045,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '23',
+      'numero': 23,
       'titulo': 'ALAJJPACHAW MARCAJJAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -409,7 +409,7 @@
       'id_cancion': 30046,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '23',
+      'numero': 23,
       'titulo': 'AL CIELO VOY',
       'orden': 2,
       'estado_registro': 1,
@@ -418,7 +418,7 @@
       'id_cancion': 30047,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '24',
+      'numero': 24,
       'titulo': 'JIWAJJ PUNCUMARU LEKT\'ANÏTAMJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -427,7 +427,7 @@
       'id_cancion': 30048,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '24',
+      'numero': 24,
       'titulo': 'SI LA MUERTE LLAMA HOY',
       'orden': 2,
       'estado_registro': 1,
@@ -436,7 +436,7 @@
       'id_cancion': 30049,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '25',
+      'numero': 25,
       'titulo': 'REY JESUSAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -445,7 +445,7 @@
       'id_cancion': 30050,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '25',
+      'numero': 25,
       'titulo': '¡GLORIOSO DÍA SERÁ!',
       'orden': 2,
       'estado_registro': 1,
@@ -454,7 +454,7 @@
       'id_cancion': 30051,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '26',
+      'numero': 26,
       'titulo': 'QHUYAPAYASIRI KOLLAN SUMA AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -463,7 +463,7 @@
       'id_cancion': 30052,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '26',
+      'numero': 26,
       'titulo': 'PADRE DIOS ETERNO',
       'orden': 2,
       'estado_registro': 1,
@@ -472,7 +472,7 @@
       'id_cancion': 30053,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '27',
+      'numero': 27,
       'titulo': 'CRISTON JUTAÑAP SUYASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -481,7 +481,7 @@
       'id_cancion': 30054,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '27',
+      'numero': 27,
       'titulo': 'ESPERO QUE CRISTO VENGA',
       'orden': 2,
       'estado_registro': 1,
@@ -490,7 +490,7 @@
       'id_cancion': 30055,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '28',
+      'numero': 28,
       'titulo': 'BELÉN MARCANWA YURIWAYI',
       'orden': 1,
       'estado_registro': 1,
@@ -499,7 +499,7 @@
       'id_cancion': 30056,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '28',
+      'numero': 28,
       'titulo': 'EN BELÉN NACIÓ JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -508,7 +508,7 @@
       'id_cancion': 30057,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '29',
+      'numero': 29,
       'titulo': 'TATIT JESUSAJJ NIYAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -517,7 +517,7 @@
       'id_cancion': 30058,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '29',
+      'numero': 29,
       'titulo': 'MUY PRONTO CRISTO VENDRÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -526,7 +526,7 @@
       'id_cancion': 30059,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '30',
+      'numero': 30,
       'titulo': 'DIOS, YUSPAGARSMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -535,7 +535,7 @@
       'id_cancion': 30060,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '30',
+      'numero': 30,
       'titulo': 'GRACIAS TE DOY, SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -544,7 +544,7 @@
       'id_cancion': 30061,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '31',
+      'numero': 31,
       'titulo': 'CRISTO KOLLAN APOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -553,7 +553,7 @@
       'id_cancion': 30062,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '31',
+      'numero': 31,
       'titulo': 'JESUCRISTO, MI BUEN DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -562,7 +562,7 @@
       'id_cancion': 30063,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '32',
+      'numero': 32,
       'titulo': 'YATICHITAY KOLLAN CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -571,7 +571,7 @@
       'id_cancion': 30064,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '32',
+      'numero': 32,
       'titulo': 'QUIERO CRISTO, QUE ME ENSEÑES',
       'orden': 2,
       'estado_registro': 1,
@@ -580,7 +580,7 @@
       'id_cancion': 30065,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '33',
+      'numero': 33,
       'titulo': 'KOLLAN SUMA DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -589,7 +589,7 @@
       'id_cancion': 30066,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '33',
+      'numero': 33,
       'titulo': 'CRISTO, AMANTE SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -598,7 +598,7 @@
       'id_cancion': 30067,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '34',
+      'numero': 34,
       'titulo': 'CRISTOMPIW WIÑAY JACÄ',
       'orden': 1,
       'estado_registro': 1,
@@ -607,7 +607,7 @@
       'id_cancion': 30068,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '34',
+      'numero': 34,
       'titulo': 'YO VIVIRÉ CON JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -616,7 +616,7 @@
       'id_cancion': 30069,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '35',
+      'numero': 35,
       'titulo': 'DIOSAQUIWA NAYAROJJ IMASQUITANI',
       'orden': 1,
       'estado_registro': 1,
@@ -625,7 +625,7 @@
       'id_cancion': 30070,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '35',
+      'numero': 35,
       'titulo': 'DIOS ME GUARDARÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -634,7 +634,7 @@
       'id_cancion': 30071,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '36',
+      'numero': 36,
       'titulo': 'MUNASIÑAMPI SARAPJJAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -643,7 +643,7 @@
       'id_cancion': 30072,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '36',
+      'numero': 36,
       'titulo': 'SIGAMOS CON AMOR',
       'orden': 2,
       'estado_registro': 1,
@@ -652,7 +652,7 @@
       'id_cancion': 30073,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '37',
+      'numero': 37,
       'titulo': 'WIÑAVATAQUIW TATITUNCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -661,7 +661,7 @@
       'id_cancion': 30074,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '37',
+      'numero': 37,
       'titulo': 'VIVO YO CON CRISTO, MI SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -670,7 +670,7 @@
       'id_cancion': 30075,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '38',
+      'numero': 38,
       'titulo': 'CRISTO SAPAQUIWA KHESPIYI',
       'orden': 1,
       'estado_registro': 1,
@@ -679,7 +679,7 @@
       'id_cancion': 30076,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '38',
+      'numero': 38,
       'titulo': 'SÓLO CRISTO SALVA',
       'orden': 2,
       'estado_registro': 1,
@@ -688,7 +688,7 @@
       'id_cancion': 30077,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '39',
+      'numero': 39,
       'titulo': '¿QHITIS SARANI?',
       'orden': 1,
       'estado_registro': 1,
@@ -697,7 +697,7 @@
       'id_cancion': 30078,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '39',
+      'numero': 39,
       'titulo': '¿QUIÉN IRÁ?',
       'orden': 2,
       'estado_registro': 1,
@@ -706,7 +706,7 @@
       'id_cancion': 30079,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '40',
+      'numero': 40,
       'titulo': 'QHUYAPT\' AYASITAY CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -715,7 +715,7 @@
       'id_cancion': 30080,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '40',
+      'numero': 40,
       'titulo': 'TEN MISERICORDIA, CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -724,7 +724,7 @@
       'id_cancion': 30081,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '41',
+      'numero': 41,
       'titulo': 'YUSPAGARAÑÄNI ALAJJPACH AWQUISARU',
       'orden': 1,
       'estado_registro': 1,
@@ -733,7 +733,7 @@
       'id_cancion': 30082,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '41',
+      'numero': 41,
       'titulo': 'DEMOS GRACIAS AL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -742,7 +742,7 @@
       'id_cancion': 30083,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '42',
+      'numero': 42,
       'titulo': 'JUC\'AMPI MUNÄMA',
       'orden': 1,
       'estado_registro': 1,
@@ -751,7 +751,7 @@
       'id_cancion': 30084,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '42',
+      'numero': 42,
       'titulo': 'TE AMARÉ MÁS',
       'orden': 2,
       'estado_registro': 1,
@@ -760,7 +760,7 @@
       'id_cancion': 30085,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '43',
+      'numero': 43,
       'titulo': 'CUSISISAW NAYAJJ K\'OCHÜ',
       'orden': 1,
       'estado_registro': 1,
@@ -769,7 +769,7 @@
       'id_cancion': 30086,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '43',
+      'numero': 43,
       'titulo': 'TE ALABO CON GOZO',
       'orden': 2,
       'estado_registro': 1,
@@ -778,7 +778,7 @@
       'id_cancion': 30087,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '44',
+      'numero': 44,
       'titulo': 'SUMA DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -787,7 +787,7 @@
       'id_cancion': 30088,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '44',
+      'numero': 44,
       'titulo': 'PADRE CELESTIAL',
       'orden': 2,
       'estado_registro': 1,
@@ -796,7 +796,7 @@
       'id_cancion': 30089,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '45',
+      'numero': 45,
       'titulo': 'TATITUSANA MARCAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -805,7 +805,7 @@
       'id_cancion': 30090,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '45',
+      'numero': 45,
       'titulo': 'GLORIOSA MORADA DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -814,7 +814,7 @@
       'id_cancion': 30091,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '46',
+      'numero': 46,
       'titulo': 'KHESPIYIRI YANAPT\'ITAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -823,7 +823,7 @@
       'id_cancion': 30092,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '46',
+      'numero': 46,
       'titulo': 'SALVADOR, AYÚDAME',
       'orden': 2,
       'estado_registro': 1,
@@ -832,7 +832,7 @@
       'id_cancion': 30093,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '47',
+      'numero': 47,
       'titulo': 'YANAPT\'ITAY DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -841,7 +841,7 @@
       'id_cancion': 30094,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '47',
+      'numero': 47,
       'titulo': 'DAME TU FUERZA, BENDITO DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -850,7 +850,7 @@
       'id_cancion': 30095,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '48',
+      'numero': 48,
       'titulo': 'TATAY, CAYUMARUW JUTTA',
       'orden': 1,
       'estado_registro': 1,
@@ -859,7 +859,7 @@
       'id_cancion': 30096,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '48',
+      'numero': 48,
       'titulo': 'SEÑOR, ANTE TUS PIES',
       'orden': 2,
       'estado_registro': 1,
@@ -868,7 +868,7 @@
       'id_cancion': 30097,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '49',
+      'numero': 49,
       'titulo': 'JAKE MASIMAT AMTASIMAY',
       'orden': 1,
       'estado_registro': 1,
@@ -877,7 +877,7 @@
       'id_cancion': 30098,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '49',
+      'numero': 49,
       'titulo': 'RECUERDA DE TU PRÓJIMO',
       'orden': 2,
       'estado_registro': 1,
@@ -886,7 +886,7 @@
       'id_cancion': 30099,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '50',
+      'numero': 50,
       'titulo': 'JUC\'ANIQUIWA AJJSARTIREJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -895,7 +895,7 @@
       'id_cancion': 30100,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '50',
+      'numero': 50,
       'titulo': 'POCOS SON LOS QUE TEMEN A DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -904,7 +904,7 @@
       'id_cancion': 30101,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '51',
+      'numero': 51,
       'titulo': 'YUSPAGARSMAW SUMA AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -913,7 +913,7 @@
       'id_cancion': 30102,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '51',
+      'numero': 51,
       'titulo': 'TE DOY GRACIAS, OH DIOS PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -922,7 +922,7 @@
       'id_cancion': 30103,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '52',
+      'numero': 52,
       'titulo': 'CHUYMAJJAJJ CUSISITAW JICJJATASI',
       'orden': 1,
       'estado_registro': 1,
@@ -931,7 +931,7 @@
       'id_cancion': 30104,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '52',
+      'numero': 52,
       'titulo': 'MI CORAZÓN ESTÁ CONTENTO',
       'orden': 2,
       'estado_registro': 1,
@@ -940,7 +940,7 @@
       'id_cancion': 30105,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '53',
+      'numero': 53,
       'titulo': 'CUTTANJJAMAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -949,7 +949,7 @@
       'id_cancion': 30106,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '53',
+      'numero': 53,
       'titulo': 'VUELVE A DIOS, HIJO',
       'orden': 2,
       'estado_registro': 1,
@@ -958,7 +958,7 @@
       'id_cancion': 30107,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '54',
+      'numero': 54,
       'titulo': 'SAPA MAYNIW DIOSAR UÑSTAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -967,7 +967,7 @@
       'id_cancion': 30108,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '54',
+      'numero': 54,
       'titulo': 'DAREMOS CUENTA A DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -976,7 +976,7 @@
       'id_cancion': 30109,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '55',
+      'numero': 55,
       'titulo': 'ALAJJPACHANQUIR SUMAAWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -985,7 +985,7 @@
       'id_cancion': 30110,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '55',
+      'numero': 55,
       'titulo': 'OH PADRE MÍO, DIOS Y SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -994,7 +994,7 @@
       'id_cancion': 30111,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '56',
+      'numero': 56,
       'titulo': 'DIOSAN JAWSATAPJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1003,7 +1003,7 @@
       'id_cancion': 30112,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '56',
+      'numero': 56,
       'titulo': 'EL LLAMAMIENTO DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1012,7 +1012,7 @@
       'id_cancion': 30113,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '57',
+      'numero': 57,
       'titulo': 'CRISTO SAPARUQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1021,7 +1021,7 @@
       'id_cancion': 30114,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '57',
+      'numero': 57,
       'titulo': 'SOLO A CRISTO SEGUIRÉ',
       'orden': 2,
       'estado_registro': 1,
@@ -1030,7 +1030,7 @@
       'id_cancion': 30115,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '58',
+      'numero': 58,
       'titulo': 'TAKE CUNAS DIOSANQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1039,7 +1039,7 @@
       'id_cancion': 30116,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '58',
+      'numero': 58,
       'titulo': 'TODAS LAS COSAS SON DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1048,7 +1048,7 @@
       'id_cancion': 30117,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '59',
+      'numero': 59,
       'titulo': 'ALAJJPACHANQUIR SUMA CRISTOJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -1057,7 +1057,7 @@
       'id_cancion': 30118,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '59',
+      'numero': 59,
       'titulo': 'SUFRISTE TÚ POR MÍ',
       'orden': 2,
       'estado_registro': 1,
@@ -1066,7 +1066,7 @@
       'id_cancion': 30119,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '60',
+      'numero': 60,
       'titulo': '¿CUNANQUIS CUSISIÑAJJA?',
       'orden': 1,
       'estado_registro': 1,
@@ -1075,7 +1075,7 @@
       'id_cancion': 30120,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '60',
+      'numero': 60,
       'titulo': '¿EN QUÉ HAY FELICIDAD?',
       'orden': 2,
       'estado_registro': 1,
@@ -1084,7 +1084,7 @@
       'id_cancion': 30121,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '61',
+      'numero': 61,
       'titulo': 'MUNASIRI KOLLAN CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1093,7 +1093,7 @@
       'id_cancion': 30122,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '61',
+      'numero': 61,
       'titulo': 'GUÍAME, AMANTE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -1102,7 +1102,7 @@
       'id_cancion': 30123,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '62',
+      'numero': 62,
       'titulo': 'LAJJA CH\'AMACANQUÏR JAKER PARLAM',
       'orden': 1,
       'estado_registro': 1,
@@ -1111,7 +1111,7 @@
       'id_cancion': 30124,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '62',
+      'numero': 62,
       'titulo': 'TESTIFIQUE AL HOMBRE DE TINIEBLAS',
       'orden': 2,
       'estado_registro': 1,
@@ -1120,7 +1120,7 @@
       'id_cancion': 30125,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '63',
+      'numero': 63,
       'titulo': 'CRISTOJJ CRUZAN JIWAWAYI',
       'orden': 1,
       'estado_registro': 1,
@@ -1129,7 +1129,7 @@
       'id_cancion': 30126,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '63',
+      'numero': 63,
       'titulo': 'CRISTO MURIÓ EN LA CRUZ',
       'orden': 2,
       'estado_registro': 1,
@@ -1138,7 +1138,7 @@
       'id_cancion': 30127,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '64',
+      'numero': 64,
       'titulo': 'MAYNIT MAYNICAM MUNASIPJJAM',
       'orden': 1,
       'estado_registro': 1,
@@ -1147,7 +1147,7 @@
       'id_cancion': 30128,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '64',
+      'numero': 64,
       'titulo': 'ÁMENSE DE TODO CORAZÓN',
       'orden': 2,
       'estado_registro': 1,
@@ -1156,7 +1156,7 @@
       'id_cancion': 30129,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '65',
+      'numero': 65,
       'titulo': 'DIOSAJJ MUNAT YOKAPWA QHITANI',
       'orden': 1,
       'estado_registro': 1,
@@ -1165,7 +1165,7 @@
       'id_cancion': 30130,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '65',
+      'numero': 65,
       'titulo': 'AMÓ DIOS AL MUNDO',
       'orden': 2,
       'estado_registro': 1,
@@ -1174,7 +1174,7 @@
       'id_cancion': 30131,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '66',
+      'numero': 66,
       'titulo': 'WAQUISCHASTATI, NIYAW SARJJAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -1183,7 +1183,7 @@
       'id_cancion': 30132,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '66',
+      'numero': 66,
       'titulo': 'YA NOS IREMOS A LOS CIELOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1192,7 +1192,7 @@
       'id_cancion': 30133,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '67',
+      'numero': 67,
       'titulo': 'CH\'AMANCHITAY CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1201,7 +1201,7 @@
       'id_cancion': 30134,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '67',
+      'numero': 67,
       'titulo': '¡OH SEÑOR! ESFUÉRZAME',
       'orden': 2,
       'estado_registro': 1,
@@ -1210,7 +1210,7 @@
       'id_cancion': 30135,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '68',
+      'numero': 68,
       'titulo': 'MUNATA CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1219,7 +1219,7 @@
       'id_cancion': 30136,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '68',
+      'numero': 68,
       'titulo': 'AMADO CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -1228,7 +1228,7 @@
       'id_cancion': 30137,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '69',
+      'numero': 69,
       'titulo': 'MOJJSA ARUNACA',
       'orden': 1,
       'estado_registro': 1,
@@ -1237,7 +1237,7 @@
       'id_cancion': 30138,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '69',
+      'numero': 69,
       'titulo': 'AL ESCUCHAR TUS PALABRAS',
       'orden': 2,
       'estado_registro': 1,
@@ -1246,7 +1246,7 @@
       'id_cancion': 30139,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '70',
+      'numero': 70,
       'titulo': 'KHESPIYASIRI CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1255,7 +1255,7 @@
       'id_cancion': 30140,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '70',
+      'numero': 70,
       'titulo': 'AYÚDAME CRISTO, MI SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1264,7 +1264,7 @@
       'id_cancion': 30141,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '71',
+      'numero': 71,
       'titulo': 'TATIT CRISTO YANAPT\'ITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -1273,7 +1273,7 @@
       'id_cancion': 30142,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '71',
+      'numero': 71,
       'titulo': 'DAME FUERZAS, CRISTO MÍO',
       'orden': 2,
       'estado_registro': 1,
@@ -1282,7 +1282,7 @@
       'id_cancion': 30143,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '72',
+      'numero': 72,
       'titulo': 'CUSISITÄTWA NAYAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -1291,7 +1291,7 @@
       'id_cancion': 30144,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '72',
+      'numero': 72,
       'titulo': 'ME SIENTO FELIZ',
       'orden': 2,
       'estado_registro': 1,
@@ -1300,7 +1300,7 @@
       'id_cancion': 30145,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '73',
+      'numero': 73,
       'titulo': 'JUMAW KHESPIYASISTA',
       'orden': 1,
       'estado_registro': 1,
@@ -1309,7 +1309,7 @@
       'id_cancion': 30146,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '73',
+      'numero': 73,
       'titulo': 'ERES TÚ MI SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1318,7 +1318,7 @@
       'id_cancion': 30147,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '74',
+      'numero': 74,
       'titulo': 'TUCUYCAM SAYT\'AÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -1327,7 +1327,7 @@
       'id_cancion': 30148,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '74',
+      'numero': 74,
       'titulo': 'SIGUE SIN DESMAYAR',
       'orden': 2,
       'estado_registro': 1,
@@ -1336,7 +1336,7 @@
       'id_cancion': 30149,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '75',
+      'numero': 75,
       'titulo': 'ARUNACAMAJJ KORIT JUC\'AMP SUMAW',
       'orden': 1,
       'estado_registro': 1,
@@ -1345,7 +1345,7 @@
       'id_cancion': 30150,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '75',
+      'numero': 75,
       'titulo': 'PRECIOSA ES TU PALABRA',
       'orden': 2,
       'estado_registro': 1,
@@ -1354,7 +1354,7 @@
       'id_cancion': 30151,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '76',
+      'numero': 76,
       'titulo': 'JESUCRISTOW YANAPASQUITU',
       'orden': 1,
       'estado_registro': 1,
@@ -1363,7 +1363,7 @@
       'id_cancion': 30152,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '76',
+      'numero': 76,
       'titulo': 'EL SEÑOR JESÚS ME AYUDARÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -1372,7 +1372,7 @@
       'id_cancion': 30153,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '77',
+      'numero': 77,
       'titulo': 'CRISTO TATITU K\'OMACHISTAW',
       'orden': 1,
       'estado_registro': 1,
@@ -1381,7 +1381,7 @@
       'id_cancion': 30154,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '77',
+      'numero': 77,
       'titulo': 'CRISTO JESÚS, CON TU GRAN AMOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1390,7 +1390,7 @@
       'id_cancion': 30155,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '78',
+      'numero': 78,
       'titulo': 'MUNAT TATITOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1399,7 +1399,7 @@
       'id_cancion': 30156,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '78',
+      'numero': 78,
       'titulo': 'EL SEÑOR ME SALVO',
       'orden': 2,
       'estado_registro': 1,
@@ -1408,7 +1408,7 @@
       'id_cancion': 30157,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '79',
+      'numero': 79,
       'titulo': 'CH\'AMAC THAQUIN JACASCÄYÄT',
       'orden': 1,
       'estado_registro': 1,
@@ -1417,7 +1417,7 @@
       'id_cancion': 30158,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '79',
+      'numero': 79,
       'titulo': 'MI TESTIMONIO',
       'orden': 2,
       'estado_registro': 1,
@@ -1426,7 +1426,7 @@
       'id_cancion': 30159,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '80',
+      'numero': 80,
       'titulo': 'JANC\' AQUIW JUTANI TATIT KHESPIYIREJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -1435,7 +1435,7 @@
       'id_cancion': 30160,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '80',
+      'numero': 80,
       'titulo': 'JESUCRISTO EL SEÑOR, VIENE OTRA VEZ',
       'orden': 2,
       'estado_registro': 1,
@@ -1444,7 +1444,7 @@
       'id_cancion': 30161,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '81',
+      'numero': 81,
       'titulo': 'KORI MARCARUW SARASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -1453,7 +1453,7 @@
       'id_cancion': 30162,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '81',
+      'numero': 81,
       'titulo': 'VOY A LA MANSIÓN GLORIOSA',
       'orden': 2,
       'estado_registro': 1,
@@ -1462,7 +1462,7 @@
       'id_cancion': 30163,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '82',
+      'numero': 82,
       'titulo': '¿CUNJAMÄSQUIS CHUYMAMAJJA?',
       'orden': 1,
       'estado_registro': 1,
@@ -1471,7 +1471,7 @@
       'id_cancion': 30164,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '82',
+      'numero': 82,
       'titulo': '¿CÓMO ESTÁ TU CORAZÓN?',
       'orden': 2,
       'estado_registro': 1,
@@ -1480,7 +1480,7 @@
       'id_cancion': 30165,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '83',
+      'numero': 83,
       'titulo': 'CRISTOR CUTT\'ANJJAM',
       'orden': 1,
       'estado_registro': 1,
@@ -1489,7 +1489,7 @@
       'id_cancion': 30166,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '83',
+      'numero': 83,
       'titulo': 'VUELVE A CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -1498,7 +1498,7 @@
       'id_cancion': 30167,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '84',
+      'numero': 84,
       'titulo': 'LAODICEA IGLESIA',
       'orden': 1,
       'estado_registro': 1,
@@ -1507,7 +1507,7 @@
       'id_cancion': 30168,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '84',
+      'numero': 84,
       'titulo': 'LA IGLESIA DE LAODICEA',
       'orden': 2,
       'estado_registro': 1,
@@ -1516,7 +1516,7 @@
       'id_cancion': 30169,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '85',
+      'numero': 85,
       'titulo': 'NAYAR YATICHITA, MUNASIÑAMATA',
       'orden': 1,
       'estado_registro': 1,
@@ -1525,7 +1525,7 @@
       'id_cancion': 30170,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '85',
+      'numero': 85,
       'titulo': 'ENSÉÑAME DE TU AMOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1534,7 +1534,7 @@
       'id_cancion': 30171,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '86',
+      'numero': 86,
       'titulo': 'DIOSAN CH\'AMAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -1543,7 +1543,7 @@
       'id_cancion': 30172,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '86',
+      'numero': 86,
       'titulo': 'EL PODER DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1552,7 +1552,7 @@
       'id_cancion': 30173,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '87',
+      'numero': 87,
       'titulo': 'JUMA SAPAQUïTAW',
       'orden': 1,
       'estado_registro': 1,
@@ -1561,7 +1561,7 @@
       'id_cancion': 30174,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '87',
+      'numero': 87,
       'titulo': 'SÓLO TÚ ERES MI SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1570,7 +1570,7 @@
       'id_cancion': 30175,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '88',
+      'numero': 88,
       'titulo': 'KOLLANA CRISTO YANAPT\' ASIQUITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -1579,7 +1579,7 @@
       'id_cancion': 30176,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '88',
+      'numero': 88,
       'titulo': 'OH SEÑOR, AYÚDAME',
       'orden': 2,
       'estado_registro': 1,
@@ -1588,7 +1588,7 @@
       'id_cancion': 30177,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '89',
+      'numero': 89,
       'titulo': 'ALAJJPACHAJJ K\'OMA MARCAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1597,7 +1597,7 @@
       'id_cancion': 30178,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '89',
+      'numero': 89,
       'titulo': 'EL HOGAR CELESTIAL ES LIMPIO',
       'orden': 2,
       'estado_registro': 1,
@@ -1606,7 +1606,7 @@
       'id_cancion': 30179,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '90',
+      'numero': 90,
       'titulo': 'TATITUSAJJ PÄ THAQUI USCU',
       'orden': 1,
       'estado_registro': 1,
@@ -1615,7 +1615,7 @@
       'id_cancion': 30180,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '90',
+      'numero': 90,
       'titulo': 'HAY DOS CAMINOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1624,7 +1624,7 @@
       'id_cancion': 30181,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '91',
+      'numero': 91,
       'titulo': 'ALAJJPACH MARCA',
       'orden': 1,
       'estado_registro': 1,
@@ -1633,7 +1633,7 @@
       'id_cancion': 30182,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '91',
+      'numero': 91,
       'titulo': 'LA MANSIÓN GLORIOSA',
       'orden': 2,
       'estado_registro': 1,
@@ -1642,7 +1642,7 @@
       'id_cancion': 30183,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '92',
+      'numero': 92,
       'titulo': 'DIOSAROJJ SIRVISCÄWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1651,7 +1651,7 @@
       'id_cancion': 30184,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '92',
+      'numero': 92,
       'titulo': 'SERVIRÉ A MI DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1660,7 +1660,7 @@
       'id_cancion': 30185,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '93',
+      'numero': 93,
       'titulo': 'JIWAÑARU ATIPIR CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1669,7 +1669,7 @@
       'id_cancion': 30186,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '93',
+      'numero': 93,
       'titulo': 'JESÚS VENCIÓ LA MUERTE',
       'orden': 2,
       'estado_registro': 1,
@@ -1678,7 +1678,7 @@
       'id_cancion': 30187,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '94',
+      'numero': 94,
       'titulo': 'TATITUN ORACIÓN LURATAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -1687,7 +1687,7 @@
       'id_cancion': 30188,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '94',
+      'numero': 94,
       'titulo': 'LA ORACIÓN DE JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -1696,7 +1696,7 @@
       'id_cancion': 30189,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '95',
+      'numero': 95,
       'titulo': 'DIOSAN MUNASIÑAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -1705,7 +1705,7 @@
       'id_cancion': 30190,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '95',
+      'numero': 95,
       'titulo': 'EL AMOR DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1714,7 +1714,7 @@
       'id_cancion': 30191,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '96',
+      'numero': 96,
       'titulo': 'THAKASAW JICJJATTA KHESPIYIREJJARU',
       'orden': 1,
       'estado_registro': 1,
@@ -1723,7 +1723,7 @@
       'id_cancion': 30192,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '96',
+      'numero': 96,
       'titulo': 'BUSCANDO ENCONTRÉ AL SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1732,7 +1732,7 @@
       'id_cancion': 30193,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '97',
+      'numero': 97,
       'titulo': 'JACH\'ACHAÑÄN CUSISITA DIOSASARU',
       'orden': 1,
       'estado_registro': 1,
@@ -1741,7 +1741,7 @@
       'id_cancion': 30194,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '97',
+      'numero': 97,
       'titulo': 'A NUESTRO DIOS CANTEMOS HOY',
       'orden': 2,
       'estado_registro': 1,
@@ -1750,7 +1750,7 @@
       'id_cancion': 30195,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '98',
+      'numero': 98,
       'titulo': 'TATIT CRISTO QHUYAPT\' AYITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -1759,7 +1759,7 @@
       'id_cancion': 30196,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '98',
+      'numero': 98,
       'titulo': 'SEÑOR, TEN PIEDAD DE MÍ',
       'orden': 2,
       'estado_registro': 1,
@@ -1768,7 +1768,7 @@
       'id_cancion': 30197,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '99',
+      'numero': 99,
       'titulo': '\"NAYAR JUTAM\", SISTAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1777,7 +1777,7 @@
       'id_cancion': 30198,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '99',
+      'numero': 99,
       'titulo': '\"VEN A MÍ\"',
       'orden': 2,
       'estado_registro': 1,
@@ -1786,7 +1786,7 @@
       'id_cancion': 30199,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '100',
+      'numero': 100,
       'titulo': 'DIOSARU YUPAYCHAÑAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1795,7 +1795,7 @@
       'id_cancion': 30200,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '100',
+      'numero': 100,
       'titulo': 'HOY ES DÍA DE REPOSO',
       'orden': 2,
       'estado_registro': 1,
@@ -1804,7 +1804,7 @@
       'id_cancion': 30201,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '101',
+      'numero': 101,
       'titulo': 'TATIT CRISTOW CHEKA THAQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1813,7 +1813,7 @@
       'id_cancion': 30202,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '101',
+      'numero': 101,
       'titulo': 'CRISTO ES EL CAMINO FIEL',
       'orden': 2,
       'estado_registro': 1,
@@ -1822,7 +1822,7 @@
       'id_cancion': 30203,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '102',
+      'numero': 102,
       'titulo': 'JACAÑAJJ NAYATAQUEJJ CRISTOWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1831,7 +1831,7 @@
       'id_cancion': 30204,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '102',
+      'numero': 102,
       'titulo': 'PARA MÍ EL VIVIR ES JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -1840,7 +1840,7 @@
       'id_cancion': 30205,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '103',
+      'numero': 103,
       'titulo': 'KHESPIYIR CRISTOR MAQHATAM',
       'orden': 1,
       'estado_registro': 1,
@@ -1849,7 +1849,7 @@
       'id_cancion': 30206,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '103',
+      'numero': 103,
       'titulo': 'ACUDE A CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -1858,7 +1858,7 @@
       'id_cancion': 30207,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '104',
+      'numero': 104,
       'titulo': 'TATIT CRISTOW JUCHAT K\'OMACHJJETU',
       'orden': 1,
       'estado_registro': 1,
@@ -1867,7 +1867,7 @@
       'id_cancion': 30208,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '104',
+      'numero': 104,
       'titulo': 'CRISTO ME HA PERDONADO',
       'orden': 2,
       'estado_registro': 1,
@@ -1876,7 +1876,7 @@
       'id_cancion': 30209,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '105',
+      'numero': 105,
       'titulo': 'TATITUW KHESPIYITU',
       'orden': 1,
       'estado_registro': 1,
@@ -1885,7 +1885,7 @@
       'id_cancion': 30210,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '105',
+      'numero': 105,
       'titulo': 'CRISTO ME SALVÓ',
       'orden': 2,
       'estado_registro': 1,
@@ -1894,7 +1894,7 @@
       'id_cancion': 30211,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '106',
+      'numero': 106,
       'titulo': 'ALAJJPACHANQUIR AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1903,7 +1903,7 @@
       'id_cancion': 30212,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '106',
+      'numero': 106,
       'titulo': 'OH PADRE AMADO',
       'orden': 2,
       'estado_registro': 1,
@@ -1912,7 +1912,7 @@
       'id_cancion': 30213,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '107',
+      'numero': 107,
       'titulo': 'CRISTOJJ NIYAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -1921,7 +1921,7 @@
       'id_cancion': 30214,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '107',
+      'numero': 107,
       'titulo': 'CRISTO EL SEÑOR VENDRÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -1930,7 +1930,7 @@
       'id_cancion': 30215,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '108',
+      'numero': 108,
       'titulo': 'SUMA DIOS AWQUI ARJJATT\'ASITA',
       'orden': 1,
       'estado_registro': 1,
@@ -1939,7 +1939,7 @@
       'id_cancion': 30216,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '108',
+      'numero': 108,
       'titulo': 'BENDITO PADRE, PIDO TU AYUDA',
       'orden': 2,
       'estado_registro': 1,
@@ -1948,7 +1948,7 @@
       'id_cancion': 30217,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '109',
+      'numero': 109,
       'titulo': 'JAN KHEP UÑTAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -1957,7 +1957,7 @@
       'id_cancion': 30218,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '109',
+      'numero': 109,
       'titulo': 'NO MIRES HACIA ATRÁS',
       'orden': 2,
       'estado_registro': 1,
@@ -1966,7 +1966,7 @@
       'id_cancion': 30219,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '110',
+      'numero': 110,
       'titulo': 'CUSISITA K\'OCHUPJJAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -1975,7 +1975,7 @@
       'id_cancion': 30220,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '110',
+      'numero': 110,
       'titulo': 'CANTEMOS CON GOZO',
       'orden': 2,
       'estado_registro': 1,
@@ -1984,7 +1984,7 @@
       'id_cancion': 30221,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '111',
+      'numero': 111,
       'titulo': 'KHESPIYIRI TATITUN YURITAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -1993,7 +1993,7 @@
       'id_cancion': 30222,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '111',
+      'numero': 111,
       'titulo': 'EL NACIMIENTO DEL SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2002,7 +2002,7 @@
       'id_cancion': 30223,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '112',
+      'numero': 112,
       'titulo': 'JICHHÜROJJ K\'OCHUÑÄN JESUSARU',
       'orden': 1,
       'estado_registro': 1,
@@ -2011,7 +2011,7 @@
       'id_cancion': 30224,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '112',
+      'numero': 112,
       'titulo': 'CANTEMOS A JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -2020,7 +2020,7 @@
       'id_cancion': 30225,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '113',
+      'numero': 113,
       'titulo': 'JACATATAYAPJJETAY TATA',
       'orden': 1,
       'estado_registro': 1,
@@ -2029,7 +2029,7 @@
       'id_cancion': 30226,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '113',
+      'numero': 113,
       'titulo': 'RENUÉVANOS SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2038,7 +2038,7 @@
       'id_cancion': 30227,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '114',
+      'numero': 114,
       'titulo': 'CRISTOT JAYAN JACÄYÄTA',
       'orden': 1,
       'estado_registro': 1,
@@ -2047,7 +2047,7 @@
       'id_cancion': 30228,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '114',
+      'numero': 114,
       'titulo': 'VIVÍA LEJOS DEL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2056,7 +2056,7 @@
       'id_cancion': 30229,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '115',
+      'numero': 115,
       'titulo': 'QUIMSA AMAWT\'A JAKENACA',
       'orden': 1,
       'estado_registro': 1,
@@ -2065,7 +2065,7 @@
       'id_cancion': 30230,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '115',
+      'numero': 115,
       'titulo': 'LOS MAGOS DEL ORIENTE',
       'orden': 2,
       'estado_registro': 1,
@@ -2074,7 +2074,7 @@
       'id_cancion': 30231,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '116',
+      'numero': 116,
       'titulo': 'MUNAT JILATA CUTT\' ANJJAMAY',
       'orden': 1,
       'estado_registro': 1,
@@ -2083,7 +2083,7 @@
       'id_cancion': 30232,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '116',
+      'numero': 116,
       'titulo': 'AMIGO MÍO, VUELVE AL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2092,7 +2092,7 @@
       'id_cancion': 30233,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '117',
+      'numero': 117,
       'titulo': 'SUYAÑÄN TATITURU',
       'orden': 1,
       'estado_registro': 1,
@@ -2101,7 +2101,7 @@
       'id_cancion': 30234,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '117',
+      'numero': 117,
       'titulo': 'ESPEREMOS A JESÚS, EL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2110,7 +2110,7 @@
       'id_cancion': 30235,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '118',
+      'numero': 118,
       'titulo': 'ORACIÓN LURAMAY',
       'orden': 1,
       'estado_registro': 1,
@@ -2119,7 +2119,7 @@
       'id_cancion': 30236,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '118',
+      'numero': 118,
       'titulo': 'ORA AL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2128,7 +2128,7 @@
       'id_cancion': 30237,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '119',
+      'numero': 119,
       'titulo': 'JUMAWA KHESPIYASISTA',
       'orden': 1,
       'estado_registro': 1,
@@ -2137,7 +2137,7 @@
       'id_cancion': 30238,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '119',
+      'numero': 119,
       'titulo': 'TÚ ME SALVASTE',
       'orden': 2,
       'estado_registro': 1,
@@ -2146,7 +2146,7 @@
       'id_cancion': 30239,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '120',
+      'numero': 120,
       'titulo': 'KOLLAN AJAY CATOKAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2155,7 +2155,7 @@
       'id_cancion': 30240,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '120',
+      'numero': 120,
       'titulo': 'RECIBAMOS EL ESPÍRITU SANTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2164,7 +2164,7 @@
       'id_cancion': 30241,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '121',
+      'numero': 121,
       'titulo': 'CRISTOR ARCAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2173,7 +2173,7 @@
       'id_cancion': 30242,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '121',
+      'numero': 121,
       'titulo': 'VAMOS, PUES, CON CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2182,7 +2182,7 @@
       'id_cancion': 30243,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '122',
+      'numero': 122,
       'titulo': 'SUMA MATRIMONIO',
       'orden': 1,
       'estado_registro': 1,
@@ -2191,7 +2191,7 @@
       'id_cancion': 30244,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '122',
+      'numero': 122,
       'titulo': 'EL MATRIMONIO',
       'orden': 2,
       'estado_registro': 1,
@@ -2200,7 +2200,7 @@
       'id_cancion': 30245,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '123',
+      'numero': 123,
       'titulo': 'NIYAW SARJJAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2209,7 +2209,7 @@
       'id_cancion': 30246,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '123',
+      'numero': 123,
       'titulo': 'NOS VAMOS A SIÓN',
       'orden': 2,
       'estado_registro': 1,
@@ -2218,7 +2218,7 @@
       'id_cancion': 30247,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '124',
+      'numero': 124,
       'titulo': 'DIOS AWQUISAR YUSPAGARAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2227,7 +2227,7 @@
       'id_cancion': 30248,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '124',
+      'numero': 124,
       'titulo': 'AGRADECIDO SEA NUESTRO DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2236,7 +2236,7 @@
       'id_cancion': 30249,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '125',
+      'numero': 125,
       'titulo': 'TATIT CRISTON LURATANACAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2245,7 +2245,7 @@
       'id_cancion': 30250,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '125',
+      'numero': 125,
       'titulo': 'LAS OBRAS DE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2254,7 +2254,7 @@
       'id_cancion': 30251,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '126',
+      'numero': 126,
       'titulo': 'ADANAMPI, EVAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -2263,7 +2263,7 @@
       'id_cancion': 30252,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '126',
+      'numero': 126,
       'titulo': 'ADÁN Y EVA',
       'orden': 2,
       'estado_registro': 1,
@@ -2272,7 +2272,7 @@
       'id_cancion': 30253,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '127',
+      'numero': 127,
       'titulo': 'IRPAQUITAY JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2281,7 +2281,7 @@
       'id_cancion': 30254,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '127',
+      'numero': 127,
       'titulo': 'GUÍAME, OH JESUCRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2290,7 +2290,7 @@
       'id_cancion': 30255,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '128',
+      'numero': 128,
       'titulo': 'JUMARUW JACAÑAJJ CATUYASTA',
       'orden': 1,
       'estado_registro': 1,
@@ -2299,7 +2299,7 @@
       'id_cancion': 30256,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '128',
+      'numero': 128,
       'titulo': 'ME ENTREGO A TI',
       'orden': 2,
       'estado_registro': 1,
@@ -2308,7 +2308,7 @@
       'id_cancion': 30257,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '129',
+      'numero': 129,
       'titulo': 'DIOSAMPI IDOLONACAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -2317,7 +2317,7 @@
       'id_cancion': 30258,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '129',
+      'numero': 129,
       'titulo': 'DIOS Y LOS ÍDOLOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2326,7 +2326,7 @@
       'id_cancion': 30259,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '130',
+      'numero': 130,
       'titulo': 'CUSISIÑAW CHUYMAJJAN UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -2335,7 +2335,7 @@
       'id_cancion': 30260,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '130',
+      'numero': 130,
       'titulo': '¡QUÉ CONTENTO ESTOY EN MI CORAZÓN!',
       'orden': 2,
       'estado_registro': 1,
@@ -2344,7 +2344,7 @@
       'id_cancion': 30261,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '131',
+      'numero': 131,
       'titulo': 'KOLLAN AJAYU',
       'orden': 1,
       'estado_registro': 1,
@@ -2353,7 +2353,7 @@
       'id_cancion': 30262,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '131',
+      'numero': 131,
       'titulo': 'EL ESPÍRITU SANTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2362,7 +2362,7 @@
       'id_cancion': 30263,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '132',
+      'numero': 132,
       'titulo': 'DIOSAW NAYAN KHANAJJAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2371,7 +2371,7 @@
       'id_cancion': 30264,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '132',
+      'numero': 132,
       'titulo': 'DIOS ES MI LUZ',
       'orden': 2,
       'estado_registro': 1,
@@ -2380,7 +2380,7 @@
       'id_cancion': 30265,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '133',
+      'numero': 133,
       'titulo': 'JESUCRISTOW KHESPIYITU',
       'orden': 1,
       'estado_registro': 1,
@@ -2389,7 +2389,7 @@
       'id_cancion': 30266,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '133',
+      'numero': 133,
       'titulo': 'CRISTO EL SEÑOR ME HA SALVADO',
       'orden': 2,
       'estado_registro': 1,
@@ -2398,7 +2398,7 @@
       'id_cancion': 30267,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '134',
+      'numero': 134,
       'titulo': 'CRISTOMPËJJASINJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2407,7 +2407,7 @@
       'id_cancion': 30268,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '134',
+      'numero': 134,
       'titulo': 'AL ESTAR CON CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2416,7 +2416,7 @@
       'id_cancion': 30269,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '135',
+      'numero': 135,
       'titulo': 'DIOSAN TUNCA CAMACHINACAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2425,7 +2425,7 @@
       'id_cancion': 30270,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '135',
+      'numero': 135,
       'titulo': 'LOS DIEZ MANDAMIENTOS DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2434,7 +2434,7 @@
       'id_cancion': 30271,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '136',
+      'numero': 136,
       'titulo': 'NIVAW JUTANI KHESPIVIR CRISTOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2443,7 +2443,7 @@
       'id_cancion': 30272,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '136',
+      'numero': 136,
       'titulo': 'PRONTO CRISTO VOLVERÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -2452,7 +2452,7 @@
       'id_cancion': 30273,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '137',
+      'numero': 137,
       'titulo': 'JAN QHITI TUMPIRINI',
       'orden': 1,
       'estado_registro': 1,
@@ -2461,7 +2461,7 @@
       'id_cancion': 30274,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '137',
+      'numero': 137,
       'titulo': 'OH AMIGO QUE VAGAS',
       'orden': 2,
       'estado_registro': 1,
@@ -2470,7 +2470,7 @@
       'id_cancion': 30275,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '138',
+      'numero': 138,
       'titulo': 'JAN LLAQUISIPJJAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -2479,7 +2479,7 @@
       'id_cancion': 30276,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '138',
+      'numero': 138,
       'titulo': 'NO SE PREOCUPEN',
       'orden': 2,
       'estado_registro': 1,
@@ -2488,7 +2488,7 @@
       'id_cancion': 30277,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '139',
+      'numero': 139,
       'titulo': 'JACHT\'ASISAW SARNAKASCÄYÄTA',
       'orden': 1,
       'estado_registro': 1,
@@ -2497,7 +2497,7 @@
       'id_cancion': 30278,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '139',
+      'numero': 139,
       'titulo': 'LEJOS DE MI SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2506,7 +2506,7 @@
       'id_cancion': 30279,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '140',
+      'numero': 140,
       'titulo': 'KOLLAN AWQUEJJA AMTASITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -2515,7 +2515,7 @@
       'id_cancion': 30280,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '140',
+      'numero': 140,
       'titulo': 'ACUÉRDATE DE MÍ, OH SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2524,7 +2524,7 @@
       'id_cancion': 30281,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '141',
+      'numero': 141,
       'titulo': 'CRISTOT PARLANIÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2533,7 +2533,7 @@
       'id_cancion': 30282,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '141',
+      'numero': 141,
       'titulo': 'PROCLAMEMOS LA SALVACIÓN',
       'orden': 2,
       'estado_registro': 1,
@@ -2542,7 +2542,7 @@
       'id_cancion': 30283,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '142',
+      'numero': 142,
       'titulo': 'EVANGELIOT KHANANCHAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2551,7 +2551,7 @@
       'id_cancion': 30284,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '142',
+      'numero': 142,
       'titulo': 'ANUNCIEMOS EL EVANGELIO',
       'orden': 2,
       'estado_registro': 1,
@@ -2560,7 +2560,7 @@
       'id_cancion': 30285,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '143',
+      'numero': 143,
       'titulo': 'K\'OMA CHUYMAN TUCT\'AYASITA',
       'orden': 1,
       'estado_registro': 1,
@@ -2569,7 +2569,7 @@
       'id_cancion': 30286,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '143',
+      'numero': 143,
       'titulo': 'LIMPIAME DE LA INIQUIDAD',
       'orden': 2,
       'estado_registro': 1,
@@ -2578,7 +2578,7 @@
       'id_cancion': 30287,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '144',
+      'numero': 144,
       'titulo': 'TATAY, NAYAJJ SIRVIRIMÄTWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2587,7 +2587,7 @@
       'id_cancion': 30288,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '144',
+      'numero': 144,
       'titulo': 'SEÑOR, TU SIERVO SOY',
       'orden': 2,
       'estado_registro': 1,
@@ -2596,7 +2596,7 @@
       'id_cancion': 30289,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '145',
+      'numero': 145,
       'titulo': 'ACAPACHAJJ TUCUSIRIQUIW',
       'orden': 1,
       'estado_registro': 1,
@@ -2605,7 +2605,7 @@
       'id_cancion': 30290,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '145',
+      'numero': 145,
       'titulo': 'ESTA VIDA ES PERECEDERA',
       'orden': 2,
       'estado_registro': 1,
@@ -2614,7 +2614,7 @@
       'id_cancion': 30291,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '146',
+      'numero': 146,
       'titulo': 'URUMAW JICHHÜROJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2623,7 +2623,7 @@
       'id_cancion': 30292,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '146',
+      'numero': 146,
       'titulo': 'FELIZ CUMPLEAÑOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2632,7 +2632,7 @@
       'id_cancion': 30293,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '147',
+      'numero': 147,
       'titulo': 'DIOSAN ALAJJPACH MARCAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2641,7 +2641,7 @@
       'id_cancion': 30294,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '147',
+      'numero': 147,
       'titulo': 'EL REINO DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2650,7 +2650,7 @@
       'id_cancion': 30295,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '148',
+      'numero': 148,
       'titulo': 'DIOSAN MUNAÑAP LURAPJJAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2659,7 +2659,7 @@
       'id_cancion': 30296,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '148',
+      'numero': 148,
       'titulo': 'HAGAMOS LA VOLUNTAD DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2668,7 +2668,7 @@
       'id_cancion': 30297,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '149',
+      'numero': 149,
       'titulo': 'YUPAYCHSMAWA DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2677,7 +2677,7 @@
       'id_cancion': 30298,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '149',
+      'numero': 149,
       'titulo': 'TE ALABO PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -2686,7 +2686,7 @@
       'id_cancion': 30299,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '150',
+      'numero': 150,
       'titulo': 'JESUSAN YURÏWIPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2695,7 +2695,7 @@
       'id_cancion': 30300,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '150',
+      'numero': 150,
       'titulo': 'NACIMIENTO DE JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -2704,7 +2704,7 @@
       'id_cancion': 30301,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '151',
+      'numero': 151,
       'titulo': 'QHUYAPT\'AYASITAY DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2713,7 +2713,7 @@
       'id_cancion': 30302,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '151',
+      'numero': 151,
       'titulo': 'TEN PIEDAD DE MÍ, OH SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2722,7 +2722,7 @@
       'id_cancion': 30303,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '152',
+      'numero': 152,
       'titulo': 'ALAJJPACHAN YATISIÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -2731,7 +2731,7 @@
       'id_cancion': 30304,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '152',
+      'numero': 152,
       'titulo': 'O ENTENDEREMOS EN EL CIELO',
       'orden': 2,
       'estado_registro': 1,
@@ -2740,7 +2740,7 @@
       'id_cancion': 30305,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '153',
+      'numero': 153,
       'titulo': '¿CUNJAMAS TATITUR SIRVIÑAJJ JUMATAQUEJJA?',
       'orden': 1,
       'estado_registro': 1,
@@ -2749,7 +2749,7 @@
       'id_cancion': 30306,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '153',
+      'numero': 153,
       'titulo': '¿CÓMO TE PARECE SERVIR A CRISTO?',
       'orden': 2,
       'estado_registro': 1,
@@ -2758,7 +2758,7 @@
       'id_cancion': 30307,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '154',
+      'numero': 154,
       'titulo': 'TATAY, ACA CHUYMAJJ K\'OMACHITA',
       'orden': 1,
       'estado_registro': 1,
@@ -2767,7 +2767,7 @@
       'id_cancion': 30308,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '154',
+      'numero': 154,
       'titulo': 'LIMPIA, SEÑOR, MI MALDAD',
       'orden': 2,
       'estado_registro': 1,
@@ -2776,7 +2776,7 @@
       'id_cancion': 30309,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '155',
+      'numero': 155,
       'titulo': 'YUSPAGARSMAW KOLLAN CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2785,7 +2785,7 @@
       'id_cancion': 30310,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '155',
+      'numero': 155,
       'titulo': 'TE DOY GRACIAS, BENDITO CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2794,7 +2794,7 @@
       'id_cancion': 30311,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '156',
+      'numero': 156,
       'titulo': 'TROMPETAW TOCT\'ASINI',
       'orden': 1,
       'estado_registro': 1,
@@ -2803,7 +2803,7 @@
       'id_cancion': 30312,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '156',
+      'numero': 156,
       'titulo': 'EL TOCARÁ LA TROMPETA',
       'orden': 2,
       'estado_registro': 1,
@@ -2812,7 +2812,7 @@
       'id_cancion': 30313,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '157',
+      'numero': 157,
       'titulo': 'K\'OMA CHUYMA TUCT\'AYITA',
       'orden': 1,
       'estado_registro': 1,
@@ -2821,7 +2821,7 @@
       'id_cancion': 30314,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '157',
+      'numero': 157,
       'titulo': 'LÍMPIAME DE TODA MI MALDAD',
       'orden': 2,
       'estado_registro': 1,
@@ -2830,7 +2830,7 @@
       'id_cancion': 30315,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '158',
+      'numero': 158,
       'titulo': 'BIBLIAJJ DIOSAN ARUPAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2839,7 +2839,7 @@
       'id_cancion': 30316,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '158',
+      'numero': 158,
       'titulo': 'LOS DICHOS DEL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2848,7 +2848,7 @@
       'id_cancion': 30317,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '159',
+      'numero': 159,
       'titulo': 'KOLLAN SUMA DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2857,7 +2857,7 @@
       'id_cancion': 30318,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '159',
+      'numero': 159,
       'titulo': 'MI BENDITO SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2866,7 +2866,7 @@
       'id_cancion': 30319,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '160',
+      'numero': 160,
       'titulo': 'CUSISITAW YUPAYCHÄMA',
       'orden': 1,
       'estado_registro': 1,
@@ -2875,7 +2875,7 @@
       'id_cancion': 30320,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '160',
+      'numero': 160,
       'titulo': 'TE ALABO, MI BUEN CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2884,7 +2884,7 @@
       'id_cancion': 30321,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '161',
+      'numero': 161,
       'titulo': 'ARUNACAM PARLAÑJJA YANAPT\'ITAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -2893,7 +2893,7 @@
       'id_cancion': 30322,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '161',
+      'numero': 161,
       'titulo': 'AYUDAME A TESTIFICAR',
       'orden': 2,
       'estado_registro': 1,
@@ -2902,7 +2902,7 @@
       'id_cancion': 30323,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '162',
+      'numero': 162,
       'titulo': 'JACQUIR DIOSAN ARUNACAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2911,7 +2911,7 @@
       'id_cancion': 30324,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '162',
+      'numero': 162,
       'titulo': 'A PALABRA DIVINA',
       'orden': 2,
       'estado_registro': 1,
@@ -2920,7 +2920,7 @@
       'id_cancion': 30325,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '163',
+      'numero': 163,
       'titulo': 'CRISTOJJ JANC\'AQUIW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -2929,7 +2929,7 @@
       'id_cancion': 30326,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '163',
+      'numero': 163,
       'titulo': 'CRISTO, EL SEÑOR PRONTO VOLVERÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -2938,7 +2938,7 @@
       'id_cancion': 30327,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '164',
+      'numero': 164,
       'titulo': 'WIÑAYAW ARCÄMA',
       'orden': 1,
       'estado_registro': 1,
@@ -2947,7 +2947,7 @@
       'id_cancion': 30328,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '164',
+      'numero': 164,
       'titulo': 'SIEMPRE TE SEGUIRÉ',
       'orden': 2,
       'estado_registro': 1,
@@ -2956,7 +2956,7 @@
       'id_cancion': 30329,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '165',
+      'numero': 165,
       'titulo': 'MÄ SAPA DIOSAQUIW UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -2965,7 +2965,7 @@
       'id_cancion': 30330,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '165',
+      'numero': 165,
       'titulo': 'HAY UN SOLO DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2974,7 +2974,7 @@
       'id_cancion': 30331,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '166',
+      'numero': 166,
       'titulo': 'DIOSAN MUNASIÑAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2983,7 +2983,7 @@
       'id_cancion': 30332,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '166',
+      'numero': 166,
       'titulo': 'EL AMOR DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -2992,7 +2992,7 @@
       'id_cancion': 30333,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '167',
+      'numero': 167,
       'titulo': 'CUSISITAW YUPAYCHÄMA',
       'orden': 1,
       'estado_registro': 1,
@@ -3001,7 +3001,7 @@
       'id_cancion': 30334,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '167',
+      'numero': 167,
       'titulo': 'ALABARÉ CON GOZO',
       'orden': 2,
       'estado_registro': 1,
@@ -3010,7 +3010,7 @@
       'id_cancion': 30335,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '168',
+      'numero': 168,
       'titulo': 'CRISTOJJ NIYAW JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -3019,7 +3019,7 @@
       'id_cancion': 30336,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '168',
+      'numero': 168,
       'titulo': '¡CRISTO YA VIENE!',
       'orden': 2,
       'estado_registro': 1,
@@ -3028,7 +3028,7 @@
       'id_cancion': 30337,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '169',
+      'numero': 169,
       'titulo': 'DIOSARUW YUSPAGARTA',
       'orden': 1,
       'estado_registro': 1,
@@ -3037,7 +3037,7 @@
       'id_cancion': 30338,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '169',
+      'numero': 169,
       'titulo': 'GRATITUD EN MI CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3046,7 +3046,7 @@
       'id_cancion': 30339,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '170',
+      'numero': 170,
       'titulo': 'CUSISIÑANÏPJJEW K\'OMA CHUYMANINACAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3055,7 +3055,7 @@
       'id_cancion': 30340,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '170',
+      'numero': 170,
       'titulo': 'FELICES LOS DE LIMPIO CORAZÓN',
       'orden': 2,
       'estado_registro': 1,
@@ -3064,7 +3064,7 @@
       'id_cancion': 30341,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '171',
+      'numero': 171,
       'titulo': 'QHITIRAC NAYAR APAKETASPA',
       'orden': 1,
       'estado_registro': 1,
@@ -3073,7 +3073,7 @@
       'id_cancion': 30342,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '171',
+      'numero': 171,
       'titulo': 'NADIE ME PODRÁ SEPARAR DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -3082,7 +3082,7 @@
       'id_cancion': 30343,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '172',
+      'numero': 172,
       'titulo': 'KOLLAN DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3091,7 +3091,7 @@
       'id_cancion': 30344,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '172',
+      'numero': 172,
       'titulo': 'OH, PADRE AMADO',
       'orden': 2,
       'estado_registro': 1,
@@ -3100,7 +3100,7 @@
       'id_cancion': 30345,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '173',
+      'numero': 173,
       'titulo': 'CH\'AMANCHASIM CRISTOMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -3109,7 +3109,7 @@
       'id_cancion': 30346,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '173',
+      'numero': 173,
       'titulo': 'FUÉRZATE Y SÉ VALIENTE',
       'orden': 2,
       'estado_registro': 1,
@@ -3118,7 +3118,7 @@
       'id_cancion': 30347,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '174',
+      'numero': 174,
       'titulo': 'YUSPAGARSMAW CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -3127,7 +3127,7 @@
       'id_cancion': 30348,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '174',
+      'numero': 174,
       'titulo': 'GRACIAS, GRACIAS CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3136,7 +3136,7 @@
       'id_cancion': 30349,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '175',
+      'numero': 175,
       'titulo': 'YUSPAGARSMAW TATA',
       'orden': 1,
       'estado_registro': 1,
@@ -3145,7 +3145,7 @@
       'id_cancion': 30350,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '175',
+      'numero': 175,
       'titulo': 'GRACIAS POR TU SALVACIÓN',
       'orden': 2,
       'estado_registro': 1,
@@ -3154,7 +3154,7 @@
       'id_cancion': 30351,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '176',
+      'numero': 176,
       'titulo': 'MACHAK JACAÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -3163,7 +3163,7 @@
       'id_cancion': 30352,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '176',
+      'numero': 176,
       'titulo': 'VIDA NUEVA',
       'orden': 2,
       'estado_registro': 1,
@@ -3172,7 +3172,7 @@
       'id_cancion': 30353,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '177',
+      'numero': 177,
       'titulo': 'TATITUN KHESPIYAT WAYNANACA',
       'orden': 1,
       'estado_registro': 1,
@@ -3181,7 +3181,7 @@
       'id_cancion': 30354,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '177',
+      'numero': 177,
       'titulo': 'JUVENTUD REDIMIDA POR CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3190,7 +3190,7 @@
       'id_cancion': 30355,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '178',
+      'numero': 178,
       'titulo': 'MUNAT TAYCAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3199,7 +3199,7 @@
       'id_cancion': 30356,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '178',
+      'numero': 178,
       'titulo': 'A MI MADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -3208,7 +3208,7 @@
       'id_cancion': 30357,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '179',
+      'numero': 179,
       'titulo': 'TATITURUW YUPAYCHASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -3217,7 +3217,7 @@
       'id_cancion': 30358,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '179',
+      'numero': 179,
       'titulo': 'ALABO A MI CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3226,7 +3226,7 @@
       'id_cancion': 30359,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '180',
+      'numero': 180,
       'titulo': 'KELLKATA ARUNACA',
       'orden': 1,
       'estado_registro': 1,
@@ -3235,7 +3235,7 @@
       'id_cancion': 30360,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '180',
+      'numero': 180,
       'titulo': 'EN LAS LETRAS DE UN PAPEL',
       'orden': 2,
       'estado_registro': 1,
@@ -3244,7 +3244,7 @@
       'id_cancion': 30361,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '181',
+      'numero': 181,
       'titulo': 'TATIT CRISTON JUTÄWIPA',
       'orden': 1,
       'estado_registro': 1,
@@ -3253,7 +3253,7 @@
       'id_cancion': 30362,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '181',
+      'numero': 181,
       'titulo': 'LA VENIDA DE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3262,7 +3262,7 @@
       'id_cancion': 30363,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '182',
+      'numero': 182,
       'titulo': 'YUSPAGARSMAW TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -3271,7 +3271,7 @@
       'id_cancion': 30364,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '182',
+      'numero': 182,
       'titulo': 'GRACIAS MI JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -3280,7 +3280,7 @@
       'id_cancion': 30365,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '183',
+      'numero': 183,
       'titulo': 'CHUYMAJJAJJ CUSISITAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3289,7 +3289,7 @@
       'id_cancion': 30366,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '183',
+      'numero': 183,
       'titulo': 'GRANDE GOZO HAY EN MI ALMA',
       'orden': 2,
       'estado_registro': 1,
@@ -3298,7 +3298,7 @@
       'id_cancion': 30367,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '184',
+      'numero': 184,
       'titulo': 'TATIT JESUSAJJ NIYAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -3307,7 +3307,7 @@
       'id_cancion': 30368,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '184',
+      'numero': 184,
       'titulo': 'EL SEÑOR JESÚS VIENE PRONTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3316,7 +3316,7 @@
       'id_cancion': 30369,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '185',
+      'numero': 185,
       'titulo': 'KOLLAN SUMA CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -3325,7 +3325,7 @@
       'id_cancion': 30370,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '185',
+      'numero': 185,
       'titulo': 'MI AMADO SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -3334,7 +3334,7 @@
       'id_cancion': 30371,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '186',
+      'numero': 186,
       'titulo': 'DIOSAR MAYISIÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -3343,7 +3343,7 @@
       'id_cancion': 30372,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '186',
+      'numero': 186,
       'titulo': 'IMPLOREMOS EN ORACIÓN',
       'orden': 2,
       'estado_registro': 1,
@@ -3352,7 +3352,7 @@
       'id_cancion': 30373,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '187',
+      'numero': 187,
       'titulo': 'CRISTOQUIW KHESPIYIREJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3361,7 +3361,7 @@
       'id_cancion': 30374,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '187',
+      'numero': 187,
       'titulo': 'SÓLO CRISTO SALVARÁ',
       'orden': 2,
       'estado_registro': 1,
@@ -3370,7 +3370,7 @@
       'id_cancion': 30375,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '188',
+      'numero': 188,
       'titulo': 'TATITUR ARCAPJJAÑÄN',
       'orden': 1,
       'estado_registro': 1,
@@ -3379,7 +3379,7 @@
       'id_cancion': 30376,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '188',
+      'numero': 188,
       'titulo': 'SEGUIREMOS A JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -3388,7 +3388,7 @@
       'id_cancion': 30377,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '189',
+      'numero': 189,
       'titulo': 'WIÑAYAW NAYAJJ ARCA',
       'orden': 1,
       'estado_registro': 1,
@@ -3397,7 +3397,7 @@
       'id_cancion': 30378,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '189',
+      'numero': 189,
       'titulo': 'HASTA EL FIN LE SEGUIRÉ',
       'orden': 2,
       'estado_registro': 1,
@@ -3406,7 +3406,7 @@
       'id_cancion': 30379,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '190',
+      'numero': 190,
       'titulo': 'ARUNACAMAJJ TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -3415,7 +3415,7 @@
       'id_cancion': 30380,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '190',
+      'numero': 190,
       'titulo': 'TUS DICHOS, ¡OH, MI PADRE!',
       'orden': 2,
       'estado_registro': 1,
@@ -3424,7 +3424,7 @@
       'id_cancion': 30381,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '191',
+      'numero': 191,
       'titulo': 'CH\'AMANCHITAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -3433,7 +3433,7 @@
       'id_cancion': 30382,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '191',
+      'numero': 191,
       'titulo': 'DAME FUERZAS',
       'orden': 2,
       'estado_registro': 1,
@@ -3442,7 +3442,7 @@
       'id_cancion': 30383,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '192',
+      'numero': 192,
       'titulo': 'DIOSAR ARCAÑÄNI',
       'orden': 1,
       'estado_registro': 1,
@@ -3451,7 +3451,7 @@
       'id_cancion': 30384,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '192',
+      'numero': 192,
       'titulo': 'SIGAMOS AL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -3460,7 +3460,7 @@
       'id_cancion': 30385,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '193',
+      'numero': 193,
       'titulo': 'QUIMSAT MAYAR TUCT\'AT DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -3469,7 +3469,7 @@
       'id_cancion': 30386,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '193',
+      'numero': 193,
       'titulo': 'AL TRINO DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -3478,7 +3478,7 @@
       'id_cancion': 30387,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '194',
+      'numero': 194,
       'titulo': 'CRISTON ARUP PARLIRÏTWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3487,7 +3487,7 @@
       'id_cancion': 30388,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '194',
+      'numero': 194,
       'titulo': 'EL MISIONERO',
       'orden': 2,
       'estado_registro': 1,
@@ -3496,7 +3496,7 @@
       'id_cancion': 30389,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '195',
+      'numero': 195,
       'titulo': 'TATITUW AWATIREJJAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3505,7 +3505,7 @@
       'id_cancion': 30390,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '195',
+      'numero': 195,
       'titulo': 'JESÚS ES MI PASTOR',
       'orden': 2,
       'estado_registro': 1,
@@ -3514,7 +3514,7 @@
       'id_cancion': 30391,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '196',
+      'numero': 196,
       'titulo': 'JACH\'A DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3523,7 +3523,7 @@
       'id_cancion': 30392,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '196',
+      'numero': 196,
       'titulo': 'MI BENDITO PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -3532,7 +3532,7 @@
       'id_cancion': 30393,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '197',
+      'numero': 197,
       'titulo': 'KOLLAN AJAYU',
       'orden': 1,
       'estado_registro': 1,
@@ -3541,7 +3541,7 @@
       'id_cancion': 30394,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '197',
+      'numero': 197,
       'titulo': 'SANTO ESPÍRITU',
       'orden': 2,
       'estado_registro': 1,
@@ -3550,7 +3550,7 @@
       'id_cancion': 30395,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '198',
+      'numero': 198,
       'titulo': 'TATIT JESUSAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -3559,7 +3559,7 @@
       'id_cancion': 30396,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '198',
+      'numero': 198,
       'titulo': 'EL ANDAR CON JESÚS',
       'orden': 2,
       'estado_registro': 1,
@@ -3568,7 +3568,7 @@
       'id_cancion': 30397,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '199',
+      'numero': 199,
       'titulo': 'DIOSAN KOLLAN LIBROPA',
       'orden': 1,
       'estado_registro': 1,
@@ -3577,7 +3577,7 @@
       'id_cancion': 30398,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '199',
+      'numero': 199,
       'titulo': 'TUS PALABRAS, OH SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -3586,7 +3586,7 @@
       'id_cancion': 30399,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 3, // Cala
-      'numero': '200',
+      'numero': 200,
       'titulo': 'K\'OMA CHUYMASAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -3595,7 +3595,7 @@
       'id_cancion': 30400,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 3, // Cala
-      'numero': '200',
+      'numero': 200,
       'titulo': 'LIMPIOS DE CORAZÓN',
       'orden': 2,
       'estado_registro': 1,

@@ -32,8 +32,8 @@ class _CancionScreenState extends State<CancionScreen>
   List<Cancion>? _versionesCancion;
   late List<int> _favoritos;
   double _fontSize = 22.0;
-  static const double _minFontSize = 16.0;
-  static const double _maxFontSize = 32.0;
+  static const double _minFontSize = 12.0;
+  static const double _maxFontSize = 40.0;
   static const double _fontSizeStep = 2.0;
 
   final colorIcon = Colors.yellow[50];
@@ -275,9 +275,11 @@ Compartido desde Himnarios App
                   gradient: _getGradientForHimnario(widget.himnario.nombre),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 8,
+                  padding: const EdgeInsets.only(
+                    top: 10,
+                    bottom: 0,
+                    left: 8,
+                    right: 8,
                   ),
                   child: Column(
                     children: [
@@ -301,7 +303,7 @@ Compartido desde Himnarios App
                                     fontSize: 22,
                                     fontWeight: FontWeight.w600,
                                     fontFamily: 'Poppins',
-                                    height: 0.85,
+                                    height: 1.0,
                                   ),
                                   textAlign: TextAlign.center,
                                   maxLines: 2,

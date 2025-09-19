@@ -232,6 +232,16 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
         flexibleSpace: Container(
           decoration: const BoxDecoration(gradient: AppTheme.mainGradient),
         ),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.close, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+        ],
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -248,7 +258,7 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
             children: [
               // Header con agradecimientos
               Container(
-                padding: const EdgeInsets.all(24),
+                padding: const EdgeInsets.all(19),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
@@ -263,25 +273,17 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
                 child: Column(
                   children: [
                     Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
+                      width: 100,
+                      height: 100,
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
-                        gradient: LinearGradient(
-                          colors: [
-                            AppTheme.secondaryColor,
-                            AppTheme.primaryColor,
-                          ],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/LogoHimnariosApp_a.png'),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      child: const Icon(
-                        Icons.favorite,
-                        color: Colors.white,
-                        size: 32,
-                      ),
                     ),
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 0),
                     const Text(
                       'Himnarios App',
                       style: TextStyle(
@@ -291,7 +293,7 @@ class _CreditosScreenState extends State<CreditosScreen> with RouteAwareMixin {
                         color: AppTheme.primaryColor,
                       ),
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 3),
                     const Text(
                       'Colección de cantos sagrados',
                       style: TextStyle(

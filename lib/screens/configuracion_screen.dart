@@ -708,6 +708,16 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
         flexibleSpace: Container(
           decoration: const BoxDecoration(gradient: AppTheme.mainGradient),
         ),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.close, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+        ],
       ),
       body: Container(
         decoration: const BoxDecoration(

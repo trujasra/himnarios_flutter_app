@@ -4,7 +4,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50001,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '1',
+      'numero': 1,
       'titulo': 'TAKENIY SUYT\'APJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -13,7 +13,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50002,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '2',
+      'numero': 2,
       'titulo': 'KOTA TAYPIN UTJATAYNA',
       'orden': 1,
       'estado_registro': 1,
@@ -22,7 +22,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50003,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '3',
+      'numero': 3,
       'titulo': 'AMUYASTATI JUMAJJ JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -31,7 +31,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50004,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '4',
+      'numero': 4,
       'titulo': 'NAYAN HUERTOJJANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -40,7 +40,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50005,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '5',
+      'numero': 5,
       'titulo': 'EN MI HUERTO',
       'orden': 1,
       'estado_registro': 1,
@@ -49,7 +49,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50006,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '6',
+      'numero': 6,
       'titulo': 'TATIT CRISTOJJA KHESPIYISTAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -58,7 +58,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50007,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '7',
+      'numero': 7,
       'titulo': 'TATAY JUMARUQUIWA JACAÑAJJ CATUYASTA',
       'orden': 1,
       'estado_registro': 1,
@@ -67,7 +67,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50008,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '8',
+      'numero': 8,
       'titulo': 'PRONTO SI MUY PRONTO',
       'orden': 1,
       'estado_registro': 1,
@@ -76,7 +76,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50009,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '8',
+      'numero': 8,
       'titulo': 'MA SUMA ORAKE',
       'orden': 1,
       'estado_registro': 1,
@@ -85,7 +85,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50010,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '9',
+      'numero': 9,
       'titulo': 'CRISTOMPEJJASINJJA CUSISITATWA',
       'orden': 1,
       'estado_registro': 1,
@@ -94,7 +94,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50011,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '10',
+      'numero': 10,
       'titulo': 'CRISTOMPEJJASINJJA SUMAN JACJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -103,7 +103,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50012,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '11',
+      'numero': 11,
       'titulo': 'CUNATS LLAQUISTA',
       'orden': 1,
       'estado_registro': 1,
@@ -112,7 +112,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50013,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '12',
+      'numero': 12,
       'titulo': 'LUACANA AN ORAKE',
       'orden': 1,
       'estado_registro': 1,
@@ -121,7 +121,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50014,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '13',
+      'numero': 13,
       'titulo': 'AMPARAMAMPI CHUYMAJJ LLAMCT\'ITA',
       'orden': 1,
       'estado_registro': 1,
@@ -130,7 +130,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50015,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '14',
+      'numero': 14,
       'titulo': 'KOLLAN AJAYU JUTAMAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -139,7 +139,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50016,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '15',
+      'numero': 15,
       'titulo': 'TATIT CRISTOW JUCHAT K\'OMACHJJETU',
       'orden': 1,
       'estado_registro': 1,
@@ -148,7 +148,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50017,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '16',
+      'numero': 16,
       'titulo': 'AMUYTAT JUMAJJ JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -157,7 +157,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50018,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '17',
+      'numero': 17,
       'titulo': 'JAN TUMPATANS TUMPIRIPAW',
       'orden': 1,
       'estado_registro': 1,
@@ -166,7 +166,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50019,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '18',
+      'numero': 18,
       'titulo': 'YANT\'AR JAN AJJSARAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -175,7 +175,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50020,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '19',
+      'numero': 19,
       'titulo': 'JACQUIR DIOSAN ARUNACAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -184,7 +184,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50021,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '20',
+      'numero': 20,
       'titulo': 'DIOSAW NAYAN KHANAJJAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -193,7 +193,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50022,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '21',
+      'numero': 21,
       'titulo': 'MAYNINACAS C\'UMITPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -202,7 +202,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50023,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '22',
+      'numero': 22,
       'titulo': 'SARAÑAJJAPUNIW JIS PARLANINAJJAW',
       'orden': 1,
       'estado_registro': 1,
@@ -211,7 +211,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50024,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '23',
+      'numero': 23,
       'titulo': 'DIOS AWQUI JUMARU YUSPAGARSMA',
       'orden': 1,
       'estado_registro': 1,
@@ -220,7 +220,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50025,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '24',
+      'numero': 24,
       'titulo': 'CUSISIÑ URUWA JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -229,7 +229,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50026,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '25',
+      'numero': 25,
       'titulo': 'CHUYMAJJAJJ C\'UCHIQUIW JICJJATASI',
       'orden': 1,
       'estado_registro': 1,
@@ -238,7 +238,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50027,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '26',
+      'numero': 26,
       'titulo': 'SANTO JAKENACAN KOLLAN MARCA PANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -247,7 +247,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50028,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '27',
+      'numero': 27,
       'titulo': 'ATIPJIRINACAW CATOKAPJJANI',
       'orden': 1,
       'estado_registro': 1,
@@ -256,7 +256,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50029,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '28',
+      'numero': 28,
       'titulo': 'DIOS TATITUSANA MUNASIÑAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -265,7 +265,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50030,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '29',
+      'numero': 29,
       'titulo': 'TATITOJJAW IRPASQUITU',
       'orden': 1,
       'estado_registro': 1,
@@ -274,7 +274,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50031,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '30',
+      'numero': 30,
       'titulo': 'LLAQUIS JUTASCPAN, YANT\'AS SARTASCPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -283,7 +283,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50032,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '31',
+      'numero': 31,
       'titulo': 'DIOSAJJ JAKER MUNASINJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -292,7 +292,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50033,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '32',
+      'numero': 32,
       'titulo': 'KOLLAN DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -301,7 +301,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50034,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '33',
+      'numero': 33,
       'titulo': 'TATIT JESUSAJJA MÄ URUW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -310,7 +310,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50035,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '34',
+      'numero': 34,
       'titulo': 'YUSPAGARSMAW SUMA DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -319,7 +319,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50036,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '35',
+      'numero': 35,
       'titulo': 'ORAÑAJJAW WAQUISI',
       'orden': 1,
       'estado_registro': 1,
@@ -328,7 +328,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50037,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '36',
+      'numero': 36,
       'titulo': 'GRACIAS GRACIAS PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -337,7 +337,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50038,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '36',
+      'numero': 36,
       'titulo': 'CRISTOW KHESPIYITU',
       'orden': 1,
       'estado_registro': 1,
@@ -346,7 +346,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50039,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '37',
+      'numero': 37,
       'titulo': 'YANT\'AR JAN JAYSAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -355,7 +355,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50040,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '38',
+      'numero': 38,
       'titulo': 'CUNATS JUMAJJ PACHÄSTA',
       'orden': 1,
       'estado_registro': 1,
@@ -364,7 +364,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50041,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '39',
+      'numero': 39,
       'titulo': 'JACH\'A MUNASIÑAPATSTI',
       'orden': 1,
       'estado_registro': 1,
@@ -373,7 +373,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50042,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '40',
+      'numero': 40,
       'titulo': 'POCO TIEMPO SERA',
       'orden': 2,
       'estado_registro': 1,
@@ -382,7 +382,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50043,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '40',
+      'numero': 40,
       'titulo': 'JUC\'A URUNACAQUIW',
       'orden': 1,
       'estado_registro': 1,
@@ -391,7 +391,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50044,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '41',
+      'numero': 41,
       'titulo': 'JAN CUNS AJJSARAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -400,7 +400,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50045,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '42',
+      'numero': 42,
       'titulo': 'SINTI CUSISIÑAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -409,7 +409,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50046,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '43',
+      'numero': 43,
       'titulo': 'TATITOJJ SAPÜRUW THAKTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -418,7 +418,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50047,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '44',
+      'numero': 44,
       'titulo': 'CUSISIÑAS UTJITUWA',
       'orden': 1,
       'estado_registro': 1,
@@ -427,7 +427,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50048,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '45',
+      'numero': 45,
       'titulo': 'SUMA DIOS AWQUI WAWANACAMAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -436,7 +436,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50049,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '46',
+      'numero': 46,
       'titulo': 'LLAQUISIÑANACASAJJ TUCUSJJANIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -445,7 +445,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50050,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '47',
+      'numero': 47,
       'titulo': 'QHITIS DIOS AWQUIJJATA APAKETASPA',
       'orden': 1,
       'estado_registro': 1,
@@ -454,7 +454,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50051,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '48',
+      'numero': 48,
       'titulo': 'WIÑAYAW NAYAJJ ARCA',
       'orden': 1,
       'estado_registro': 1,
@@ -463,7 +463,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50052,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '49',
+      'numero': 49,
       'titulo': 'SIGO A MI BUEN JESUS',
       'orden': 1,
       'estado_registro': 1,
@@ -472,7 +472,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50053,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '50',
+      'numero': 50,
       'titulo': 'TATITUN THAQUIPAN SARĀ',
       'orden': 1,
       'estado_registro': 1,
@@ -481,7 +481,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50054,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '51',
+      'numero': 51,
       'titulo': 'TATITUN UTAPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -490,7 +490,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50055,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '52',
+      'numero': 52,
       'titulo': 'TATAY YANAPT\'ITAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -499,7 +499,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50056,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '53',
+      'numero': 53,
       'titulo': 'JANK\'O KENAY PATJJARUW',
       'orden': 1,
       'estado_registro': 1,
@@ -508,7 +508,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50057,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '54',
+      'numero': 54,
       'titulo': 'MUNAT WAWAP QHITHANI',
       'orden': 1,
       'estado_registro': 1,
@@ -517,7 +517,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50058,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '55',
+      'numero': 55,
       'titulo': 'KOTA IRAMA LUGARANACANSA',
       'orden': 1,
       'estado_registro': 1,
@@ -526,7 +526,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50059,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '56',
+      'numero': 56,
       'titulo': 'SUMA DIOS AWQUIMAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -535,7 +535,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50060,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '57',
+      'numero': 57,
       'titulo': 'JESUSAJJ NIYAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -544,7 +544,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50061,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '58',
+      'numero': 58,
       'titulo': 'PERSEVEREMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -553,7 +553,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50062,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '58',
+      'numero': 58,
       'titulo': 'SUYASCAQUIÑAN',
       'orden': 1,
       'estado_registro': 1,
@@ -562,7 +562,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50063,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '59',
+      'numero': 59,
       'titulo': 'QHUYAPAYASIÑAMAJJ JACH\'APUNIW',
       'orden': 1,
       'estado_registro': 1,
@@ -571,7 +571,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50064,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '60',
+      'numero': 60,
       'titulo': 'WALJANIW DIOSANCASINA',
       'orden': 1,
       'estado_registro': 1,
@@ -580,7 +580,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50065,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '61',
+      'numero': 61,
       'titulo': '¿QHITIS SARANI?',
       'orden': 1,
       'estado_registro': 1,
@@ -589,7 +589,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50066,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '61',
+      'numero': 61,
       'titulo': 'TATITOJJ NIYAW JUTANI',
       'orden': 2,
       'estado_registro': 1,
@@ -598,7 +598,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50067,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '62',
+      'numero': 62,
       'titulo': 'IYAWSTATI TAKE CHUYMAMAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -607,7 +607,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50068,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '63',
+      'numero': 63,
       'titulo': 'CUSISCAÑ SAMARAÑ ARUWA',
       'orden': 1,
       'estado_registro': 1,
@@ -616,7 +616,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50069,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '64',
+      'numero': 64,
       'titulo': 'ACAPACHANJJA JANIW CUNANITSA',
       'orden': 1,
       'estado_registro': 1,
@@ -625,7 +625,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50070,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '65',
+      'numero': 65,
       'titulo': 'CUSISIÑANIPJJANIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -634,7 +634,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50071,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '67',
+      'numero': 67,
       'titulo': 'MUNASINAMAJJ CRISTOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -643,7 +643,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50072,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '68',
+      'numero': 68,
       'titulo': 'ALAJJPACHARUW SARASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -652,7 +652,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50073,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '69',
+      'numero': 69,
       'titulo': 'TATITUSAW CHEKA THAQUEJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -661,7 +661,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50074,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '70',
+      'numero': 70,
       'titulo': 'YUSPAGAR CHURAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -670,7 +670,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50075,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '71',
+      'numero': 71,
       'titulo': 'DONDE ESTAN LOS HERMANOS',
       'orden': 2,
       'estado_registro': 1,
@@ -679,7 +679,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50076,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '71',
+      'numero': 71,
       'titulo': 'CAWQUINCAPJJESA JILANACAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -688,7 +688,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50077,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '72',
+      'numero': 72,
       'titulo': 'DIOSAR K\'OCHUPJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -697,7 +697,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50078,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '73',
+      'numero': 73,
       'titulo': 'MAURUW TATITOJJ SISTATNI',
       'orden': 1,
       'estado_registro': 1,
@@ -706,7 +706,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50079,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '74',
+      'numero': 74,
       'titulo': 'AMTASITAYA SUMA DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -715,7 +715,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50080,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '75',
+      'numero': 75,
       'titulo': 'JUTAMAY CRISTO CHUYMAJJARU',
       'orden': 1,
       'estado_registro': 1,
@@ -724,7 +724,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50081,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '75',
+      'numero': 75,
       'titulo': 'CHUYMAJARUY JUTAM',
       'orden': 2,
       'estado_registro': 1,
@@ -733,7 +733,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50082,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '76',
+      'numero': 76,
       'titulo': 'KOLLAN DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -742,7 +742,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50083,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '77',
+      'numero': 77,
       'titulo': 'JACATATAYAPJJETAY TATA',
       'orden': 1,
       'estado_registro': 1,
@@ -751,7 +751,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50084,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '78',
+      'numero': 78,
       'titulo': 'TAKE CHUYMAW IYAWSMA',
       'orden': 1,
       'estado_registro': 1,
@@ -760,7 +760,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50085,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '79',
+      'numero': 79,
       'titulo': 'TARIPAWI URUW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -769,7 +769,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50086,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '80',
+      'numero': 80,
       'titulo': 'TATITUJJ SARAQUISTUWA',
       'orden': 1,
       'estado_registro': 1,
@@ -778,7 +778,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50087,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '81',
+      'numero': 81,
       'titulo': 'DIOSAN MARCAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -787,7 +787,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50088,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '81',
+      'numero': 81,
       'titulo': 'JAN KHEPARAMTI',
       'orden': 2,
       'estado_registro': 1,
@@ -796,7 +796,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50089,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '82',
+      'numero': 82,
       'titulo': 'SEÑOR A TI HE CLAMADO',
       'orden': 1,
       'estado_registro': 1,
@@ -805,7 +805,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50090,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '83',
+      'numero': 83,
       'titulo': 'JESUCRISTOW KHESPIYITU',
       'orden': 1,
       'estado_registro': 1,
@@ -814,7 +814,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50091,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '84',
+      'numero': 84,
       'titulo': 'TATITOJJAN MUNASIÑAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -823,7 +823,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50092,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '85',
+      'numero': 85,
       'titulo': 'SUMA KOLLAN AWATIRI',
       'orden': 1,
       'estado_registro': 1,
@@ -832,7 +832,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50093,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '86',
+      'numero': 86,
       'titulo': 'ORAMAY JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -841,7 +841,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50094,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '87',
+      'numero': 87,
       'titulo': 'CUSISIÑAW CHUMAJJAN UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -850,7 +850,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50095,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '88',
+      'numero': 88,
       'titulo': 'IYAWSTWA CRISTOR ARCAÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -859,7 +859,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50096,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '89',
+      'numero': 89,
       'titulo': 'PEDREGOSO ES EL CAMINO',
       'orden': 2,
       'estado_registro': 1,
@@ -868,7 +868,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50097,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '89',
+      'numero': 89,
       'titulo': 'TAKE AJLLITANACAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -877,7 +877,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50098,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '90',
+      'numero': 90,
       'titulo': 'MUNATA CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -886,7 +886,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50099,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '91',
+      'numero': 91,
       'titulo': 'WALJA CUTIWA NAYAJJ UÑJASTA',
       'orden': 1,
       'estado_registro': 1,
@@ -895,7 +895,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50100,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '92',
+      'numero': 92,
       'titulo': 'TATITOJJ JUCHAS LAYCUW CRUZAN JIWI',
       'orden': 1,
       'estado_registro': 1,
@@ -904,7 +904,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50101,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '92',
+      'numero': 92,
       'titulo': 'TAMAMARUQUIY IRPASJJETASMA',
       'orden': 2,
       'estado_registro': 1,
@@ -913,7 +913,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50102,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '93',
+      'numero': 93,
       'titulo': 'JESUSAW JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -922,7 +922,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50103,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '94',
+      'numero': 94,
       'titulo': 'YANT\'AR JAN JAYSAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -931,7 +931,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50104,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '95',
+      'numero': 95,
       'titulo': 'SUMA KHESPIYIR CRISTOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -940,7 +940,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50105,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '96',
+      'numero': 96,
       'titulo': 'MOISESAROJJ JUMAW CH\'AM CHURTAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -949,7 +949,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50106,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '97',
+      'numero': 97,
       'titulo': 'ROPA BLANCA VESTIRE',
       'orden': 1,
       'estado_registro': 1,
@@ -958,7 +958,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50107,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '98',
+      'numero': 98,
       'titulo': 'MATRIMONIO',
       'orden': 1,
       'estado_registro': 1,
@@ -967,7 +967,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50108,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '99',
+      'numero': 99,
       'titulo': 'DIOSAN KHAPAK MARCAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -976,7 +976,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50109,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '100',
+      'numero': 100,
       'titulo': 'MUNAT JILAT JAN KHEPARAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -985,7 +985,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50110,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '101',
+      'numero': 101,
       'titulo': 'DIOSAN MUNASIÑAPAJJA WIÑAYATAQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -994,7 +994,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50111,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '102',
+      'numero': 102,
       'titulo': 'JICHHUROJJ AMUYASCTATI',
       'orden': 1,
       'estado_registro': 1,
@@ -1003,7 +1003,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50112,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '103',
+      'numero': 103,
       'titulo': 'POR SIEMPRE TE ALABARE',
       'orden': 1,
       'estado_registro': 1,
@@ -1012,7 +1012,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50113,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '104',
+      'numero': 104,
       'titulo': 'DE AQUEL VALLE HERMOSO',
       'orden': 1,
       'estado_registro': 1,
@@ -1021,7 +1021,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50114,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '105',
+      'numero': 105,
       'titulo': 'QHÄ KOKA TAYPITWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1030,7 +1030,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50115,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '106',
+      'numero': 106,
       'titulo': 'TAKE CHUYMAMPIW IYAWSTA',
       'orden': 1,
       'estado_registro': 1,
@@ -1039,7 +1039,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50116,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '107',
+      'numero': 107,
       'titulo': 'DIOS AWQUIW NAYAR MUNITU',
       'orden': 1,
       'estado_registro': 1,
@@ -1048,7 +1048,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50117,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '108',
+      'numero': 108,
       'titulo': 'CUNAYMANI CHUYMANIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1057,7 +1057,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50118,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '109',
+      'numero': 109,
       'titulo': 'ESFUERZATE Y SE VALIENTE',
       'orden': 2,
       'estado_registro': 1,
@@ -1066,7 +1066,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50119,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '109',
+      'numero': 109,
       'titulo': 'AJJSARAÑAS JUTASCPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -1075,7 +1075,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50120,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '110',
+      'numero': 110,
       'titulo': 'SUMA TATIT CRISTO YANAPT\'ASITAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -1084,7 +1084,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50121,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '111',
+      'numero': 111,
       'titulo': 'MAYA SAPAQUI DIOSAJJ UTJJI',
       'orden': 1,
       'estado_registro': 1,
@@ -1093,7 +1093,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50122,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '112',
+      'numero': 112,
       'titulo': 'TAKE CHUYMAW ALCATANSMA',
       'orden': 1,
       'estado_registro': 1,
@@ -1102,7 +1102,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50123,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '113',
+      'numero': 113,
       'titulo': 'SUMA HUERTOPAROJJ PURIN MUNTATI',
       'orden': 1,
       'estado_registro': 1,
@@ -1111,7 +1111,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50124,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '114',
+      'numero': 114,
       'titulo': 'BODAS DEL CORDERO',
       'orden': 1,
       'estado_registro': 1,
@@ -1120,7 +1120,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50125,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '115',
+      'numero': 115,
       'titulo': 'IST\'AMAY KOLLAN ARUPA',
       'orden': 1,
       'estado_registro': 1,
@@ -1129,7 +1129,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50126,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '116',
+      'numero': 116,
       'titulo': 'CUSISIÑAQUIWA CHUYMAJJANQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -1138,7 +1138,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50127,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '117',
+      'numero': 117,
       'titulo': 'DIOSAN KHESPIYIR YOKAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1147,7 +1147,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50128,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '118',
+      'numero': 118,
       'titulo': 'TATAY YUSPAGARSMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1156,7 +1156,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50129,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '119',
+      'numero': 119,
       'titulo': 'LAS PLAYAS CAMINARE',
       'orden': 2,
       'estado_registro': 1,
@@ -1165,7 +1165,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50130,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '119',
+      'numero': 119,
       'titulo': 'KOLLUNACA PATANSA',
       'orden': 1,
       'estado_registro': 1,
@@ -1174,7 +1174,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50131,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '120',
+      'numero': 120,
       'titulo': 'TATITUN SUMA MARCAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -1183,7 +1183,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50132,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '121',
+      'numero': 121,
       'titulo': 'CUSISITAW NAYAN CHUYMAJJAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1192,7 +1192,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50133,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '122',
+      'numero': 122,
       'titulo': 'JANIY CUNS AJJSARAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -1201,7 +1201,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50134,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '123',
+      'numero': 123,
       'titulo': 'DIOSAN KORI MARCAPARU',
       'orden': 1,
       'estado_registro': 1,
@@ -1210,7 +1210,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50135,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '124',
+      'numero': 124,
       'titulo': 'KOLLAN SUMA DIOS TATA',
       'orden': 1,
       'estado_registro': 1,
@@ -1219,7 +1219,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50136,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '124',
+      'numero': 124,
       'titulo': 'CUSISÑAWA CHUYMAJJAN UTJI',
       'orden': 2,
       'estado_registro': 1,
@@ -1228,7 +1228,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50137,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '125',
+      'numero': 125,
       'titulo': 'CRISTOJJ JUTASQUIWA JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -1237,7 +1237,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50138,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '126',
+      'numero': 126,
       'titulo': 'POLVO DE LA TIERRA',
       'orden': 2,
       'estado_registro': 1,
@@ -1246,7 +1246,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50139,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '126',
+      'numero': 126,
       'titulo': 'LAK\'A URPJAMAQUÏTWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1255,7 +1255,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50140,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '127',
+      'numero': 127,
       'titulo': 'VENCERE, VENCERE',
       'orden': 2,
       'estado_registro': 1,
@@ -1264,7 +1264,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50141,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '127',
+      'numero': 127,
       'titulo': 'ATIPJAW',
       'orden': 1,
       'estado_registro': 1,
@@ -1273,7 +1273,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50142,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '128',
+      'numero': 128,
       'titulo': 'DECIDETE',
       'orden': 1,
       'estado_registro': 1,
@@ -1282,7 +1282,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50143,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '129',
+      'numero': 129,
       'titulo': 'SOY DEL VALLE',
       'orden': 1,
       'estado_registro': 1,
@@ -1291,7 +1291,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50144,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '130',
+      'numero': 130,
       'titulo': 'TATIT CRISTUQUIW THAQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1300,7 +1300,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50145,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '131',
+      'numero': 131,
       'titulo': 'JESUCRISTO ES EL CAMINO',
       'orden': 1,
       'estado_registro': 1,
@@ -1309,7 +1309,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50146,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '132',
+      'numero': 132,
       'titulo': 'NO TEMO A LA MUERTE',
       'orden': 1,
       'estado_registro': 1,
@@ -1318,7 +1318,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50147,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '133',
+      'numero': 133,
       'titulo': 'CRISTO SALVADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1327,7 +1327,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50148,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '134',
+      'numero': 134,
       'titulo': 'LA SEMILLA',
       'orden': 2,
       'estado_registro': 1,
@@ -1336,7 +1336,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50149,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '134',
+      'numero': 134,
       'titulo': 'SUMA JATHA',
       'orden': 1,
       'estado_registro': 1,
@@ -1345,7 +1345,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50150,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '135',
+      'numero': 135,
       'titulo': 'DESPUES DE ANDAR EN LA LUZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1354,7 +1354,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50151,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '136',
+      'numero': 136,
       'titulo': 'ES DIFICIL CAMINAR',
       'orden': 1,
       'estado_registro': 1,
@@ -1363,7 +1363,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50152,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '137',
+      'numero': 137,
       'titulo': 'OLIVO VERDE',
       'orden': 1,
       'estado_registro': 1,
@@ -1372,7 +1372,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50153,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '138',
+      'numero': 138,
       'titulo': 'A MI MADRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1381,7 +1381,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50154,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '139',
+      'numero': 139,
       'titulo': 'MAGDALENA',
       'orden': 1,
       'estado_registro': 1,
@@ -1390,7 +1390,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50155,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '140',
+      'numero': 140,
       'titulo': 'YO SOY TU BARRO SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1399,7 +1399,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50156,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '141',
+      'numero': 141,
       'titulo': 'CANTO A MI CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1408,7 +1408,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50157,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '142',
+      'numero': 142,
       'titulo': 'SIENDO EL PODER DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1417,7 +1417,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50158,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '143',
+      'numero': 143,
       'titulo': 'AMEMONOS HERMANOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1426,7 +1426,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50159,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '143',
+      'numero': 143,
       'titulo': 'MUNASIÑAN JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -1435,7 +1435,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50160,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '144',
+      'numero': 144,
       'titulo': 'EL ALFARERO',
       'orden': 1,
       'estado_registro': 1,
@@ -1444,7 +1444,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50161,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '145',
+      'numero': 145,
       'titulo': 'DOS CAMINOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1453,7 +1453,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50162,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '145',
+      'numero': 145,
       'titulo': 'PÄ THÄOUI',
       'orden': 1,
       'estado_registro': 1,
@@ -1462,7 +1462,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50163,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '146',
+      'numero': 146,
       'titulo': 'GRANDE GOZO ES',
       'orden': 1,
       'estado_registro': 1,
@@ -1471,7 +1471,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50164,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '147',
+      'numero': 147,
       'titulo': 'CALLES DE ORO',
       'orden': 1,
       'estado_registro': 1,
@@ -1480,7 +1480,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50165,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '148',
+      'numero': 148,
       'titulo': 'NAYAR YATICHITA MUNASIÑAMATA',
       'orden': 1,
       'estado_registro': 1,
@@ -1489,7 +1489,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50166,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '149',
+      'numero': 149,
       'titulo': 'MACHAK JACAÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -1498,7 +1498,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50167,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '150',
+      'numero': 150,
       'titulo': 'VIDA NUEVA',
       'orden': 1,
       'estado_registro': 1,
@@ -1507,7 +1507,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50168,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '151',
+      'numero': 151,
       'titulo': 'TATITUW KHESPIYITU',
       'orden': 1,
       'estado_registro': 1,
@@ -1516,7 +1516,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50169,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '151',
+      'numero': 151,
       'titulo': 'JESUS ME LIBERTO',
       'orden': 2,
       'estado_registro': 1,
@@ -1525,7 +1525,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50170,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '152',
+      'numero': 152,
       'titulo': 'UN DIA FELIZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1534,7 +1534,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50171,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '153',
+      'numero': 153,
       'titulo': 'MIENTRAS TENGA VOZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1543,7 +1543,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50172,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '154',
+      'numero': 154,
       'titulo': 'LLAQUISIÑAQUIW MUNDONJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1552,7 +1552,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50173,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '154',
+      'numero': 154,
       'titulo': 'LLANTO DOLOR Y TRISTEZA',
       'orden': 2,
       'estado_registro': 1,
@@ -1561,7 +1561,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50174,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '155',
+      'numero': 155,
       'titulo': 'ALABEMOS CON FERVOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1570,7 +1570,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50175,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '155',
+      'numero': 155,
       'titulo': 'K\'OCHUÑAN IYAWSAÑASAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -1579,7 +1579,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50176,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '156',
+      'numero': 156,
       'titulo': 'DIOSAW IMATAM',
       'orden': 1,
       'estado_registro': 1,
@@ -1588,7 +1588,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50177,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '157',
+      'numero': 157,
       'titulo': 'HOSANA HOSANA',
       'orden': 1,
       'estado_registro': 1,
@@ -1597,7 +1597,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50178,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '158',
+      'numero': 158,
       'titulo': 'ALZO MIS MANOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1606,7 +1606,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50179,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '159',
+      'numero': 159,
       'titulo': 'MI DIOS ME AMA',
       'orden': 1,
       'estado_registro': 1,
@@ -1615,7 +1615,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50180,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '160',
+      'numero': 160,
       'titulo': 'FELICIDADES',
       'orden': 2,
       'estado_registro': 1,
@@ -1624,7 +1624,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50181,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '160',
+      'numero': 160,
       'titulo': 'CUSISITAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1633,7 +1633,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50182,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '161',
+      'numero': 161,
       'titulo': 'ACA LLAQUI ORAKEN',
       'orden': 1,
       'estado_registro': 1,
@@ -1642,7 +1642,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50183,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '162',
+      'numero': 162,
       'titulo': 'PRUEBA DE TU AMOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1651,7 +1651,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50184,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '163',
+      'numero': 163,
       'titulo': 'JESUS SE LLAMA',
       'orden': 1,
       'estado_registro': 1,
@@ -1660,7 +1660,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50185,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '164',
+      'numero': 164,
       'titulo': 'HASTA LAS AVES ALABAN',
       'orden': 2,
       'estado_registro': 1,
@@ -1669,7 +1669,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50186,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '164',
+      'numero': 164,
       'titulo': 'JAMACH\'INACAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1678,7 +1678,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50187,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '165',
+      'numero': 165,
       'titulo': 'UN CAMPAMENTO JUVENIL',
       'orden': 1,
       'estado_registro': 1,
@@ -1687,7 +1687,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50188,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '166',
+      'numero': 166,
       'titulo': 'ESTUVE ALEGRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1696,7 +1696,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50189,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '166',
+      'numero': 166,
       'titulo': 'CANTA CON EL ALMA',
       'orden': 2,
       'estado_registro': 1,
@@ -1705,7 +1705,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50190,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '167',
+      'numero': 167,
       'titulo': 'EL TIEMPO ESTA ACABANDO',
       'orden': 2,
       'estado_registro': 1,
@@ -1714,7 +1714,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50191,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '167',
+      'numero': 167,
       'titulo': 'DIOS DE TAL MANERA',
       'orden': 1,
       'estado_registro': 1,
@@ -1723,7 +1723,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50192,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '168',
+      'numero': 168,
       'titulo': 'ALZA TUS MANOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1732,7 +1732,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50193,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '168',
+      'numero': 168,
       'titulo': 'AMPARAM APTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -1741,7 +1741,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50194,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '169',
+      'numero': 169,
       'titulo': 'MÄ FAMILIAY JACAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -1750,7 +1750,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50195,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '170',
+      'numero': 170,
       'titulo': 'LA PRIMAVERA VUELVE',
       'orden': 1,
       'estado_registro': 1,
@@ -1759,7 +1759,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50196,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '171',
+      'numero': 171,
       'titulo': 'ISRAEL DIOSAN CH\'AMAPAMPEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1768,7 +1768,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50197,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '172',
+      'numero': 172,
       'titulo': 'BELLAS LAS MANITAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1777,7 +1777,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50198,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '173',
+      'numero': 173,
       'titulo': 'CUSISIÑAW NAN UTJITU',
       'orden': 1,
       'estado_registro': 1,
@@ -1786,7 +1786,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50199,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '173',
+      'numero': 173,
       'titulo': 'AYUSPAGARSMAW KOLLAN CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1795,7 +1795,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50200,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '174',
+      'numero': 174,
       'titulo': 'CRISTOJJ JUTASQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1804,7 +1804,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50201,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '175',
+      'numero': 175,
       'titulo': 'BAUTISAPJJETAY AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1813,7 +1813,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50202,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '176',
+      'numero': 176,
       'titulo': 'CUSISITAW SARÄ',
       'orden': 1,
       'estado_registro': 1,
@@ -1822,7 +1822,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50203,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '177',
+      'numero': 177,
       'titulo': 'MA URUWA NAYAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -1831,7 +1831,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50204,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '178',
+      'numero': 178,
       'titulo': 'AYUDAME SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1840,7 +1840,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50205,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '179',
+      'numero': 179,
       'titulo': 'EVANGELIOJJ SUMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -1849,7 +1849,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50206,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '180',
+      'numero': 180,
       'titulo': 'MA SUMA CUSISIÑ URUW JUTI',
       'orden': 1,
       'estado_registro': 1,
@@ -1858,7 +1858,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50207,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '181',
+      'numero': 181,
       'titulo': 'MUNASIÑAMAJJ AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1867,7 +1867,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50208,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '182',
+      'numero': 182,
       'titulo': 'AJLLITANACAW CUSISINANI',
       'orden': 1,
       'estado_registro': 1,
@@ -1876,7 +1876,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50209,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '183',
+      'numero': 183,
       'titulo': 'CAMINITO',
       'orden': 1,
       'estado_registro': 1,
@@ -1885,7 +1885,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50210,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '184',
+      'numero': 184,
       'titulo': 'THAQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1894,7 +1894,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50211,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '185',
+      'numero': 185,
       'titulo': 'CRISTO YA VIENE',
       'orden': 2,
       'estado_registro': 1,
@@ -1903,7 +1903,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50212,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '185',
+      'numero': 185,
       'titulo': 'CRISTUW JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -1912,7 +1912,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50213,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '186',
+      'numero': 186,
       'titulo': 'LA ETERNA PRIMAVERA',
       'orden': 1,
       'estado_registro': 1,
@@ -1921,7 +1921,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50214,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '187',
+      'numero': 187,
       'titulo': 'EN LA GLORIA DE MI PADRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1930,7 +1930,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50215,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '188',
+      'numero': 188,
       'titulo': 'JESUCRISTO SALVA',
       'orden': 1,
       'estado_registro': 1,
@@ -1939,7 +1939,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50216,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '189',
+      'numero': 189,
       'titulo': 'CUNJA SUMAS DIOSANCAÑAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -1948,7 +1948,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50217,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '190',
+      'numero': 190,
       'titulo': 'NIYAW JUTJJANI CRISTOJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -1957,7 +1957,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50218,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '191',
+      'numero': 191,
       'titulo': 'CH\'AMAJJAS TUCUSISPAW',
       'orden': 1,
       'estado_registro': 1,
@@ -1966,7 +1966,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50219,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '192',
+      'numero': 192,
       'titulo': 'CRISTON JUTAÑAPATAQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1975,7 +1975,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50220,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '193',
+      'numero': 193,
       'titulo': 'OH HERMANOS PERSEVEREMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -1984,7 +1984,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50221,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '193',
+      'numero': 193,
       'titulo': 'SUYAÑAN TATITURU',
       'orden': 1,
       'estado_registro': 1,
@@ -1993,7 +1993,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50222,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '194',
+      'numero': 194,
       'titulo': 'DIOS AWQUISAW KHESPIYASITU',
       'orden': 1,
       'estado_registro': 1,
@@ -2002,7 +2002,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50223,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '195',
+      'numero': 195,
       'titulo': 'JANIW SAPACTATI',
       'orden': 1,
       'estado_registro': 1,
@@ -2011,7 +2011,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50224,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '196',
+      'numero': 196,
       'titulo': 'DIOSAN AJLLIT WAWANACAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -2020,7 +2020,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50225,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '197',
+      'numero': 197,
       'titulo': 'SÜMA DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2029,7 +2029,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50226,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '198',
+      'numero': 198,
       'titulo': 'DIOSAN MUNASIÑAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2038,7 +2038,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50227,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '199',
+      'numero': 199,
       'titulo': 'SUMA KOLLAN AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2047,7 +2047,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50228,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '200',
+      'numero': 200,
       'titulo': 'KOLLAN AWQUI UÑTANITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -2056,7 +2056,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50229,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '201',
+      'numero': 201,
       'titulo': 'EVANGELIOJJ SUMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2065,7 +2065,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50230,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '202',
+      'numero': 202,
       'titulo': 'AL MUNDO PECADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2074,7 +2074,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50231,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '202',
+      'numero': 202,
       'titulo': 'ACAPACHAR MUNASAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -2083,7 +2083,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50232,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '202',
+      'numero': 202,
       'titulo': 'CHHIKATA MUNAKUN',
       'orden': 1,
       'estado_registro': 1,
@@ -2092,7 +2092,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50233,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '203',
+      'numero': 203,
       'titulo': 'HERMANO MIO NUNCA DESMAYES',
       'orden': 2,
       'estado_registro': 1,
@@ -2101,7 +2101,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50234,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '203',
+      'numero': 203,
       'titulo': 'MUNAT JILATA JAN THAYARAMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -2110,7 +2110,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50235,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '204',
+      'numero': 204,
       'titulo': 'TARIPAWIMANJJ AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2119,7 +2119,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50236,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '205',
+      'numero': 205,
       'titulo': 'CON MI BIBLIA EN LA MANO',
       'orden': 1,
       'estado_registro': 1,
@@ -2128,7 +2128,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50237,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '206',
+      'numero': 206,
       'titulo': 'FIEL Y VERDADERO',
       'orden': 1,
       'estado_registro': 1,
@@ -2137,7 +2137,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50238,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '206',
+      'numero': 206,
       'titulo': 'APU JESUSAW',
       'orden': 1,
       'estado_registro': 1,
@@ -2146,7 +2146,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50239,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '207',
+      'numero': 207,
       'titulo': 'LLAQUITAQUICH UNJASTA',
       'orden': 1,
       'estado_registro': 1,
@@ -2155,7 +2155,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50240,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '208',
+      'numero': 208,
       'titulo': 'DIOSAR ARQUIR WAWANACA',
       'orden': 1,
       'estado_registro': 1,
@@ -2164,7 +2164,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50241,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '209',
+      'numero': 209,
       'titulo': 'CRISTON THAQUIPAJJ SUMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2173,7 +2173,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50242,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '210',
+      'numero': 210,
       'titulo': 'YATICHASITAY ARUNACAMA',
       'orden': 1,
       'estado_registro': 1,
@@ -2182,7 +2182,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50243,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '211',
+      'numero': 211,
       'titulo': 'RIOS DE AGUA VIVA',
       'orden': 2,
       'estado_registro': 1,
@@ -2191,7 +2191,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50244,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '211',
+      'numero': 211,
       'titulo': 'JALQUI UMANACJAMAW',
       'orden': 1,
       'estado_registro': 1,
@@ -2200,7 +2200,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50245,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '212',
+      'numero': 212,
       'titulo': 'CUNARAQUI JACAÑASTI',
       'orden': 1,
       'estado_registro': 1,
@@ -2209,7 +2209,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50246,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '213',
+      'numero': 213,
       'titulo': 'MUNAT WAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2218,7 +2218,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50247,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '214',
+      'numero': 214,
       'titulo': 'CRISTUW CHEKA THAQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2227,7 +2227,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50248,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '215',
+      'numero': 215,
       'titulo': 'YUSPAGARAPJJSMAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -2236,7 +2236,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50249,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '216',
+      'numero': 216,
       'titulo': 'ALAJJPACH MARCA',
       'orden': 1,
       'estado_registro': 1,
@@ -2245,7 +2245,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50250,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '217',
+      'numero': 217,
       'titulo': 'CANTANDO CON GOZO',
       'orden': 2,
       'estado_registro': 1,
@@ -2254,7 +2254,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50251,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '217',
+      'numero': 217,
       'titulo': 'CUSISITAW YUPAYCHAM',
       'orden': 1,
       'estado_registro': 1,
@@ -2263,7 +2263,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50252,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '218',
+      'numero': 218,
       'titulo': 'DIOS TATAW YATICHASITU',
       'orden': 1,
       'estado_registro': 1,
@@ -2272,7 +2272,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50253,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '219',
+      'numero': 219,
       'titulo': 'MÄ SAPA DIOSAW NAYAN UTJITU',
       'orden': 1,
       'estado_registro': 1,
@@ -2281,7 +2281,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50254,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '220',
+      'numero': 220,
       'titulo': 'CUSISIÑ URUW JAC\'ACHASISINQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2290,7 +2290,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50255,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '221',
+      'numero': 221,
       'titulo': 'QHUYAPAYASIR DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2299,7 +2299,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50256,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '222',
+      'numero': 222,
       'titulo': 'SINTI MUNASIR',
       'orden': 1,
       'estado_registro': 1,
@@ -2308,7 +2308,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50257,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '223',
+      'numero': 223,
       'titulo': 'MA DIOSAQUIW UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -2317,7 +2317,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50258,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '224',
+      'numero': 224,
       'titulo': 'CH\'AMANI DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2326,7 +2326,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50259,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '225',
+      'numero': 225,
       'titulo': 'KHESPIYASIÑ THAKHASCTATI',
       'orden': 1,
       'estado_registro': 1,
@@ -2335,7 +2335,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50260,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '226',
+      'numero': 226,
       'titulo': 'REYENACANS REYEPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2344,7 +2344,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50261,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '227',
+      'numero': 227,
       'titulo': 'QHUYAPT\'AYASIR AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2353,7 +2353,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50262,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '228',
+      'numero': 228,
       'titulo': 'SUMA MARCAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2362,7 +2362,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50263,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '229',
+      'numero': 229,
       'titulo': 'TARIPAW URU',
       'orden': 1,
       'estado_registro': 1,
@@ -2371,7 +2371,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50264,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '230',
+      'numero': 230,
       'titulo': 'JESUCRISTOW KHESPIYITU',
       'orden': 1,
       'estado_registro': 1,
@@ -2380,7 +2380,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50265,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '231',
+      'numero': 231,
       'titulo': 'JESUCRISTON THAQUUPANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2389,7 +2389,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50266,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '232',
+      'numero': 232,
       'titulo': 'QHUYAPAYASIR AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2398,7 +2398,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50267,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '233',
+      'numero': 233,
       'titulo': 'ALAJJPACHARUW SARASCTAN',
       'orden': 1,
       'estado_registro': 1,
@@ -2407,7 +2407,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50268,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '234',
+      'numero': 234,
       'titulo': 'AJJLLIT SUMA WAWANACAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2416,7 +2416,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50269,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '235',
+      'numero': 235,
       'titulo': 'YUSPAGARSMAW AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2425,7 +2425,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50270,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '236',
+      'numero': 236,
       'titulo': 'T\'AKHESIÑ URU',
       'orden': 1,
       'estado_registro': 1,
@@ -2434,7 +2434,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50271,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '237',
+      'numero': 237,
       'titulo': 'URUNACAS PASASQUIW',
       'orden': 1,
       'estado_registro': 1,
@@ -2443,7 +2443,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50272,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '238',
+      'numero': 238,
       'titulo': 'QHUYAPT\'AYASITAY CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2452,7 +2452,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50273,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '239',
+      'numero': 239,
       'titulo': 'LLACT\'ATAQUICH UÑJASTA',
       'orden': 1,
       'estado_registro': 1,
@@ -2461,7 +2461,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50274,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '240',
+      'numero': 240,
       'titulo': 'POR LA GRACIA DEL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2470,7 +2470,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50275,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '240',
+      'numero': 240,
       'titulo': 'CRISTON MUNASIÑAPAT',
       'orden': 1,
       'estado_registro': 1,
@@ -2479,7 +2479,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50276,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '241',
+      'numero': 241,
       'titulo': 'EN LAS LETRAS DE UN PAPEL',
       'orden': 2,
       'estado_registro': 1,
@@ -2488,7 +2488,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50277,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '241',
+      'numero': 241,
       'titulo': 'KELLKAT ARUNACA',
       'orden': 1,
       'estado_registro': 1,
@@ -2497,7 +2497,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50278,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '242',
+      'numero': 242,
       'titulo': 'GRACIAS MI JESUS',
       'orden': 2,
       'estado_registro': 1,
@@ -2506,7 +2506,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50279,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '242',
+      'numero': 242,
       'titulo': 'YUSPAGARAMAW TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -2515,7 +2515,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50280,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '243',
+      'numero': 243,
       'titulo': 'TATITUSAN JUTÄWIPAJ',
       'orden': 1,
       'estado_registro': 1,
@@ -2524,7 +2524,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50281,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '244',
+      'numero': 244,
       'titulo': 'DIOSAR YUSPAGARAÑAN',
       'orden': 1,
       'estado_registro': 1,
@@ -2533,7 +2533,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50282,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '245',
+      'numero': 245,
       'titulo': 'CUSISIÑAW CHUYMAJJAN UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -2542,7 +2542,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50283,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '246',
+      'numero': 246,
       'titulo': 'SUYASCAQUIÑAN JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -2551,7 +2551,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50284,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '247',
+      'numero': 247,
       'titulo': 'EL TIEMPO DE NOE',
       'orden': 2,
       'estado_registro': 1,
@@ -2560,7 +2560,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50285,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '247',
+      'numero': 247,
       'titulo': 'NOE TIEMPO URUNACQHAMARAQUINIW',
       'orden': 1,
       'estado_registro': 1,
@@ -2569,7 +2569,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50286,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '248',
+      'numero': 248,
       'titulo': 'SUMA DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2578,7 +2578,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50287,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '249',
+      'numero': 249,
       'titulo': 'JUMAJJ YATIM JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -2587,7 +2587,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50288,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '250',
+      'numero': 250,
       'titulo': 'GUERRANACAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -2596,7 +2596,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50289,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '251',
+      'numero': 251,
       'titulo': 'ACAPACHAN JACAÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -2605,7 +2605,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50290,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '252',
+      'numero': 252,
       'titulo': 'LA GRACIA DE JEHOVA',
       'orden': 2,
       'estado_registro': 1,
@@ -2614,7 +2614,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50291,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '252',
+      'numero': 252,
       'titulo': 'DIOSAN QHUYAPAYASIÑAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -2623,7 +2623,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50292,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '253',
+      'numero': 253,
       'titulo': 'MI BENDITO SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2632,7 +2632,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50293,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '253',
+      'numero': 253,
       'titulo': 'NAY KHESPIYIR CRISTOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2641,7 +2641,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50294,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '254',
+      'numero': 254,
       'titulo': 'KOLLAN JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2650,7 +2650,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50295,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '255',
+      'numero': 255,
       'titulo': 'ACAPACHANJJA LLAQUISIÑAOUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2659,7 +2659,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50296,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '256',
+      'numero': 256,
       'titulo': 'CRISTO KOLLAN AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2668,7 +2668,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50297,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '257',
+      'numero': 257,
       'titulo': 'CRISTUMPIW JACJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -2677,7 +2677,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50298,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '258',
+      'numero': 258,
       'titulo': 'DIOSAR YUPAYCHAPJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -2686,7 +2686,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50299,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '259',
+      'numero': 259,
       'titulo': 'MUNASIÑAMAJJ AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2695,7 +2695,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50300,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '260',
+      'numero': 260,
       'titulo': 'CHUYMACHITAY CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2704,7 +2704,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50301,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '261',
+      'numero': 261,
       'titulo': 'DIOSAN THAQUIPANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2713,7 +2713,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50302,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '262',
+      'numero': 262,
       'titulo': 'KOLLAN DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2722,7 +2722,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50303,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '263',
+      'numero': 263,
       'titulo': 'YO PASO POR EL RIO',
       'orden': 2,
       'estado_registro': 1,
@@ -2731,7 +2731,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50304,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '263',
+      'numero': 263,
       'titulo': 'JAWIRANACJAMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2740,7 +2740,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50305,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '264',
+      'numero': 264,
       'titulo': 'CRISTOW JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2749,7 +2749,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50306,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '265',
+      'numero': 265,
       'titulo': 'PARA EL VENCEDOR',
       'orden': 2,
       'estado_registro': 1,
@@ -2758,7 +2758,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50307,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '265',
+      'numero': 265,
       'titulo': 'ATIPT\'IRITAC',
       'orden': 1,
       'estado_registro': 1,
@@ -2767,7 +2767,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50308,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '266',
+      'numero': 266,
       'titulo': 'EL AMOR DE JESUCRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2776,7 +2776,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50309,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '266',
+      'numero': 266,
       'titulo': 'TATITUN MUNASIÑAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -2785,7 +2785,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50310,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '267',
+      'numero': 267,
       'titulo': 'PÄ THAQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -2794,7 +2794,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50311,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '268',
+      'numero': 268,
       'titulo': 'DIOSAN WAWANACAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -2803,7 +2803,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50312,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '269',
+      'numero': 269,
       'titulo': 'JUCHARAR TATITUW JAWSTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -2812,7 +2812,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50313,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '270',
+      'numero': 270,
       'titulo': 'SUYAPJJAÑANI AWQUISARU',
       'orden': 1,
       'estado_registro': 1,
@@ -2821,7 +2821,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50314,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '271',
+      'numero': 271,
       'titulo': 'ARUNACAM NAYAR YATICHITA',
       'orden': 1,
       'estado_registro': 1,
@@ -2830,7 +2830,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50315,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '272',
+      'numero': 272,
       'titulo': 'CRISTOJJ JUTASQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2839,7 +2839,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50316,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '273',
+      'numero': 273,
       'titulo': 'TAKE WAWANACAMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -2848,7 +2848,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50317,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '274',
+      'numero': 274,
       'titulo': 'CRISTOR JUTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -2857,7 +2857,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50318,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '274',
+      'numero': 274,
       'titulo': 'VEN A CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -2866,7 +2866,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50319,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '275',
+      'numero': 275,
       'titulo': 'SEÑOR YO TE NECESITO',
       'orden': 2,
       'estado_registro': 1,
@@ -2875,7 +2875,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50320,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '275',
+      'numero': 275,
       'titulo': 'MUNASIR AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2884,7 +2884,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50321,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '276',
+      'numero': 276,
       'titulo': 'YUSPAGARSMAW CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -2893,7 +2893,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50322,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '277',
+      'numero': 277,
       'titulo': 'PARA TENER VIDA',
       'orden': 2,
       'estado_registro': 1,
@@ -2902,7 +2902,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50323,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '277',
+      'numero': 277,
       'titulo': 'WINAY JACAÑANIÑATAC',
       'orden': 1,
       'estado_registro': 1,
@@ -2911,7 +2911,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50324,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '278',
+      'numero': 278,
       'titulo': 'DIOSAN MUNASIÑAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2920,7 +2920,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50325,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '279',
+      'numero': 279,
       'titulo': 'NAYAJJ DIOS TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -2929,7 +2929,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50326,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '280',
+      'numero': 280,
       'titulo': 'CH\'AMANCHASIM MUNAT JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -2938,7 +2938,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50327,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '281',
+      'numero': 281,
       'titulo': 'YUSPAGARSMAW AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2947,7 +2947,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50328,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '282',
+      'numero': 282,
       'titulo': 'MAS QUE VENCEDORES',
       'orden': 2,
       'estado_registro': 1,
@@ -2956,7 +2956,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50329,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '282',
+      'numero': 282,
       'titulo': 'CRISTUMPIW ATIPT\'AJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -2965,7 +2965,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50330,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '283',
+      'numero': 283,
       'titulo': 'VUELVE A TU PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -2974,7 +2974,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50331,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '283',
+      'numero': 283,
       'titulo': 'DIOSAR CUTT\'ANJJAM',
       'orden': 1,
       'estado_registro': 1,
@@ -2983,7 +2983,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50332,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '284',
+      'numero': 284,
       'titulo': 'MÄ CUSISIÑ URUW JUTI',
       'orden': 1,
       'estado_registro': 1,
@@ -2992,7 +2992,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50333,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '285',
+      'numero': 285,
       'titulo': 'SEÑOR JESUCRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3001,7 +3001,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50334,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '285',
+      'numero': 285,
       'titulo': 'TATIT JESUSAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3010,7 +3010,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50335,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '286',
+      'numero': 286,
       'titulo': 'ALABA ALMA MIA A JEHOVA',
       'orden': 2,
       'estado_registro': 1,
@@ -3019,7 +3019,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50336,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '286',
+      'numero': 286,
       'titulo': 'YUPAYCHATAMAY SUMA DIOS TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -3028,7 +3028,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50337,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '287',
+      'numero': 287,
       'titulo': 'CRISTO ES MI GUIA',
       'orden': 2,
       'estado_registro': 1,
@@ -3037,7 +3037,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50338,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '287',
+      'numero': 287,
       'titulo': 'TATITOJJ IRPITUW',
       'orden': 1,
       'estado_registro': 1,
@@ -3046,7 +3046,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50339,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '288',
+      'numero': 288,
       'titulo': 'SANTA BIBLIA',
       'orden': 2,
       'estado_registro': 1,
@@ -3055,7 +3055,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50340,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '288',
+      'numero': 288,
       'titulo': 'KOLLAN ARUNACAM',
       'orden': 1,
       'estado_registro': 1,
@@ -3064,7 +3064,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50341,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '289',
+      'numero': 289,
       'titulo': 'BUSCA A CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3073,7 +3073,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50342,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '289',
+      'numero': 289,
       'titulo': 'TATITUROJJ JUMAJJ THAKTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -3082,7 +3082,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50343,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '290',
+      'numero': 290,
       'titulo': 'LA SANGRE DE JESUS',
       'orden': 1,
       'estado_registro': 1,
@@ -3091,7 +3091,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50344,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '291',
+      'numero': 291,
       'titulo': 'EN SU SANTO NOMBRE',
       'orden': 3,
       'estado_registro': 1,
@@ -3100,7 +3100,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50345,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '291',
+      'numero': 291,
       'titulo': 'KOLLAN AWQUEJJAN SUTIPARUW',
       'orden': 1,
       'estado_registro': 1,
@@ -3109,7 +3109,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50346,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '291',
+      'numero': 291,
       'titulo': 'TATITUN WILAPAWA',
       'orden': 2,
       'estado_registro': 1,
@@ -3118,7 +3118,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50347,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '292',
+      'numero': 292,
       'titulo': 'LA SEMILLA',
       'orden': 2,
       'estado_registro': 1,
@@ -3127,7 +3127,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50348,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '292',
+      'numero': 292,
       'titulo': 'SUMA JATHA',
       'orden': 1,
       'estado_registro': 1,
@@ -3136,7 +3136,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50349,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '293',
+      'numero': 293,
       'titulo': 'EL DIA DE GRACIA',
       'orden': 2,
       'estado_registro': 1,
@@ -3145,7 +3145,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50350,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '293',
+      'numero': 293,
       'titulo': 'YUSPAGARAÑ URUNCTANWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3154,7 +3154,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50351,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '294',
+      'numero': 294,
       'titulo': 'GRACIAS PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -3163,7 +3163,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50352,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '294',
+      'numero': 294,
       'titulo': 'YUSPAGARSMAW AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3172,7 +3172,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50353,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '295',
+      'numero': 295,
       'titulo': 'CRISTO AMADO',
       'orden': 2,
       'estado_registro': 1,
@@ -3181,7 +3181,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50354,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '295',
+      'numero': 295,
       'titulo': 'MUNATA CRISTOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3190,7 +3190,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50355,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '296',
+      'numero': 296,
       'titulo': 'CANTA TU VICTORIA',
       'orden': 2,
       'estado_registro': 1,
@@ -3199,7 +3199,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50356,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '296',
+      'numero': 296,
       'titulo': 'ATIPT\'AWIMATJJA CU SISIM',
       'orden': 1,
       'estado_registro': 1,
@@ -3208,7 +3208,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50357,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '297',
+      'numero': 297,
       'titulo': 'POR MUCHO TIEMPO',
       'orden': 2,
       'estado_registro': 1,
@@ -3217,7 +3217,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50358,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '297',
+      'numero': 297,
       'titulo': 'JAYA MARAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3226,7 +3226,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50359,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '298',
+      'numero': 298,
       'titulo': 'MI GUIA FIEL',
       'orden': 2,
       'estado_registro': 1,
@@ -3235,7 +3235,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50360,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '298',
+      'numero': 298,
       'titulo': 'JUMAW IRPIREJJATAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3244,7 +3244,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50361,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '299',
+      'numero': 299,
       'titulo': 'HERMANO PORQUE LLORAS',
       'orden': 2,
       'estado_registro': 1,
@@ -3253,7 +3253,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50362,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '299',
+      'numero': 299,
       'titulo': 'CUNATS JACHASCTA JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -3262,7 +3262,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50363,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '300',
+      'numero': 300,
       'titulo': 'CUANDO VENGA JESUCRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3271,7 +3271,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50364,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '300',
+      'numero': 300,
       'titulo': 'CRISTOJJ JUTCAN UQHAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3280,7 +3280,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50365,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '301',
+      'numero': 301,
       'titulo': 'DIOSAN MUNASIÑAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3289,7 +3289,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50366,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '302',
+      'numero': 302,
       'titulo': 'TAKE CHUYMASAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -3298,7 +3298,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50367,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '303',
+      'numero': 303,
       'titulo': 'CRISTOJJ JUTCAN UQHAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3307,7 +3307,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50368,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '304',
+      'numero': 304,
       'titulo': 'K\'OMACHITAY NAYAR AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3316,7 +3316,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50369,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '305',
+      'numero': 305,
       'titulo': 'SUMA KOLLA CRISTOJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3325,7 +3325,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50370,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '306',
+      'numero': 306,
       'titulo': 'CUSISIÑASAW PURINJJANI',
       'orden': 1,
       'estado_registro': 1,
@@ -3334,7 +3334,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50371,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '307',
+      'numero': 307,
       'titulo': 'YUSPAGARSMAW CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -3343,7 +3343,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50372,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '308',
+      'numero': 308,
       'titulo': 'TATITUR YUPAYCHAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -3352,7 +3352,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50373,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '309',
+      'numero': 309,
       'titulo': 'PRONTO LLEGARA',
       'orden': 2,
       'estado_registro': 1,
@@ -3361,7 +3361,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50374,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '309',
+      'numero': 309,
       'titulo': 'NIYAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -3370,7 +3370,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50375,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '310',
+      'numero': 310,
       'titulo': 'EN LA CASA DE MI PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -3379,7 +3379,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50376,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '310',
+      'numero': 310,
       'titulo': 'DIOS AWQUISAN UTAPANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3388,7 +3388,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50377,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '311',
+      'numero': 311,
       'titulo': 'OH QUE BUENO ES Mr JESUS',
       'orden': 2,
       'estado_registro': 1,
@@ -3397,7 +3397,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50378,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '311',
+      'numero': 311,
       'titulo': 'CUNJ SUMAS TATITUJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3406,7 +3406,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50379,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '312',
+      'numero': 312,
       'titulo': 'CRISTO ROMPE LAS CADENAS',
       'orden': 2,
       'estado_registro': 1,
@@ -3415,7 +3415,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50380,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '312',
+      'numero': 312,
       'titulo': 'CRISTO JUCHAT KHESPIYITUW',
       'orden': 1,
       'estado_registro': 1,
@@ -3424,7 +3424,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50381,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '313',
+      'numero': 313,
       'titulo': 'DE QUIEN TEMERE',
       'orden': 2,
       'estado_registro': 1,
@@ -3433,7 +3433,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50382,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '313',
+      'numero': 313,
       'titulo': 'YANT\'ANACAJJ SARTPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -3442,7 +3442,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50383,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '314',
+      'numero': 314,
       'titulo': 'CON TUS MANOS ME GUIARAS',
       'orden': 2,
       'estado_registro': 1,
@@ -3451,7 +3451,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50384,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '314',
+      'numero': 314,
       'titulo': 'AMPARAMAMPIW IRPITÄTA',
       'orden': 1,
       'estado_registro': 1,
@@ -3460,7 +3460,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50385,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '315',
+      'numero': 315,
       'titulo': 'MIRA QUE SOY POLVO',
       'orden': 2,
       'estado_registro': 1,
@@ -3469,7 +3469,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50386,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '315',
+      'numero': 315,
       'titulo': 'LAK\'AT LURT\'ATÄTWA MUNAÑAMARJAMA',
       'orden': 1,
       'estado_registro': 1,
@@ -3478,7 +3478,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50387,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '316',
+      'numero': 316,
       'titulo': 'EL SEÑOR YA VIENE PRONTO',
       'orden': 2,
       'estado_registro': 1,
@@ -3487,7 +3487,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50388,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '316',
+      'numero': 316,
       'titulo': 'TATITUSAJJ JUTASQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3496,7 +3496,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50389,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '317',
+      'numero': 317,
       'titulo': 'CANTAREMOS TODOS AL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -3505,7 +3505,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50390,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '317',
+      'numero': 317,
       'titulo': 'K\'OCHUPJJAÑANI TATITUSARU',
       'orden': 1,
       'estado_registro': 1,
@@ -3514,7 +3514,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50391,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '318',
+      'numero': 318,
       'titulo': 'CRISTO ME AYUDA',
       'orden': 2,
       'estado_registro': 1,
@@ -3523,7 +3523,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50392,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '318',
+      'numero': 318,
       'titulo': 'TATITOJJAWA YANAPT\'IREJJAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3532,7 +3532,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50393,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '319',
+      'numero': 319,
       'titulo': 'POBRE PEREGRINO',
       'orden': 2,
       'estado_registro': 1,
@@ -3541,7 +3541,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50394,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '319',
+      'numero': 319,
       'titulo': 'WAJCHA SARIRITWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3550,7 +3550,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50395,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '320',
+      'numero': 320,
       'titulo': 'JUAN 3:16',
       'orden': 2,
       'estado_registro': 1,
@@ -3559,7 +3559,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50396,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '320',
+      'numero': 320,
       'titulo': 'JUAN 3:16',
       'orden': 1,
       'estado_registro': 1,
@@ -3568,7 +3568,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50397,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '321',
+      'numero': 321,
       'titulo': 'CANTARE LAS MARAVILLAS',
       'orden': 2,
       'estado_registro': 1,
@@ -3577,7 +3577,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50398,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '321',
+      'numero': 321,
       'titulo': 'K\'OCHUÑANI MUSPARCAÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -3586,7 +3586,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50399,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '322',
+      'numero': 322,
       'titulo': 'MIRA LAS AVES',
       'orden': 2,
       'estado_registro': 1,
@@ -3595,7 +3595,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50400,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '322',
+      'numero': 322,
       'titulo': 'JAMACH\'INACAJJ K\'OCHUPJJEW',
       'orden': 1,
       'estado_registro': 1,
@@ -3604,7 +3604,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50401,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '323',
+      'numero': 323,
       'titulo': 'SOBRE UNA PIEDRECITA',
       'orden': 2,
       'estado_registro': 1,
@@ -3613,7 +3613,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50402,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '323',
+      'numero': 323,
       'titulo': 'MÄ JANK\'O KALJJARUWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3622,7 +3622,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50403,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '324',
+      'numero': 324,
       'titulo': 'JERUSALEN',
       'orden': 2,
       'estado_registro': 1,
@@ -3631,7 +3631,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50404,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '324',
+      'numero': 324,
       'titulo': 'JERUSALEN MARGA',
       'orden': 1,
       'estado_registro': 1,
@@ -3640,7 +3640,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50405,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '325',
+      'numero': 325,
       'titulo': 'JUMJAMAY CRISTO TUCUYASITA',
       'orden': 1,
       'estado_registro': 1,
@@ -3649,7 +3649,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50406,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '325',
+      'numero': 325,
       'titulo': 'TAKE JAN WALIN MUYUNTATAW',
       'orden': 2,
       'estado_registro': 1,
@@ -3658,7 +3658,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50407,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '325',
+      'numero': 325,
       'titulo': 'MAYACHTASIÑANI CH\'AMANCHASIÑANI',
       'orden': 3,
       'estado_registro': 1,
@@ -3667,7 +3667,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50408,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '325',
+      'numero': 325,
       'titulo': 'CHHAKTATA THAKHERIW JUTTA',
       'orden': 4,
       'estado_registro': 1,
@@ -3676,7 +3676,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50409,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '326',
+      'numero': 326,
       'titulo': 'MAS ALLA DEL SOL',
       'orden': 2,
       'estado_registro': 1,
@@ -3685,7 +3685,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50410,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '326',
+      'numero': 326,
       'titulo': 'ALAJJPACHANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3694,7 +3694,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50411,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '327',
+      'numero': 327,
       'titulo': 'CUAN GLORIOSA SERA LA MAÑANA',
       'orden': 2,
       'estado_registro': 1,
@@ -3703,7 +3703,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50412,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '327',
+      'numero': 327,
       'titulo': 'CUSISIÑ URUWA PURININI',
       'orden': 1,
       'estado_registro': 1,
@@ -3712,7 +3712,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50413,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '328',
+      'numero': 328,
       'titulo': 'MUNASIÑIMAJJ DIOS TATA',
       'orden': 1,
       'estado_registro': 1,
@@ -3721,7 +3721,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50414,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '329',
+      'numero': 329,
       'titulo': 'ACAPACHAN SARNAKAÑAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3730,7 +3730,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50415,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '330',
+      'numero': 330,
       'titulo': 'JAN MAYJT\'ASIMTI',
       'orden': 1,
       'estado_registro': 1,
@@ -3739,7 +3739,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50416,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '331',
+      'numero': 331,
       'titulo': 'ALAJJPACHA MARCATWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3748,7 +3748,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50417,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '332',
+      'numero': 332,
       'titulo': '¿QUIERES SER SALVO?',
       'orden': 2,
       'estado_registro': 1,
@@ -3757,7 +3757,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50418,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '332',
+      'numero': 332,
       'titulo': '¿MUNTAT SALVOÑA?',
       'orden': 1,
       'estado_registro': 1,
@@ -3766,7 +3766,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50419,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '333',
+      'numero': 333,
       'titulo': 'CARA A CARA',
       'orden': 2,
       'estado_registro': 1,
@@ -3775,7 +3775,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50420,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '333',
+      'numero': 333,
       'titulo': 'AJANUY AJANUPINIW',
       'orden': 1,
       'estado_registro': 1,
@@ -3784,7 +3784,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50421,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '334',
+      'numero': 334,
       'titulo': 'MI BENDITO SALVADOR',
       'orden': 2,
       'estado_registro': 1,
@@ -3793,7 +3793,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50422,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '334',
+      'numero': 334,
       'titulo': 'NAYAN KHESPIYIREJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3802,7 +3802,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50423,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '335',
+      'numero': 335,
       'titulo': 'YO TE PIDO COMPASION',
       'orden': 2,
       'estado_registro': 1,
@@ -3811,7 +3811,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50424,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '335',
+      'numero': 335,
       'titulo': 'QHUYAPT\'AYASITAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -3820,7 +3820,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50425,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '336',
+      'numero': 336,
       'titulo': 'JACH\'A CANCAÑAMAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3829,7 +3829,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50426,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '337',
+      'numero': 337,
       'titulo': 'TATITU JESUCRISTOJJA NIYAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -3838,7 +3838,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50427,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '338',
+      'numero': 338,
       'titulo': 'CUAN GRANDE ES EL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -3847,7 +3847,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50428,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '338',
+      'numero': 338,
       'titulo': 'CUNJA JACH\'AS TATITOJJAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3856,7 +3856,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50429,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '339',
+      'numero': 339,
       'titulo': '¡SANTO! ¡SANTO! ¡SANTO!',
       'orden': 2,
       'estado_registro': 1,
@@ -3865,7 +3865,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50430,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '339',
+      'numero': 339,
       'titulo': '¡SANTO! ¡SANTO! ¡SANTO!',
       'orden': 1,
       'estado_registro': 1,
@@ -3874,7 +3874,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50431,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '340',
+      'numero': 340,
       'titulo': 'DIOSAW NAYAN KHANAJJAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3883,7 +3883,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50432,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '341',
+      'numero': 341,
       'titulo': 'TATIT JESUSAW CHEKA THÄQUIJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -3892,7 +3892,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50433,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '342',
+      'numero': 342,
       'titulo': 'QHUYAPAYASIR REYENS REYIPA',
       'orden': 1,
       'estado_registro': 1,
@@ -3901,7 +3901,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50434,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '343',
+      'numero': 343,
       'titulo': 'MUNASIRIW CRISTOJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3910,7 +3910,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50435,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '344',
+      'numero': 344,
       'titulo': 'SARJJAÑAS URUW JAC\'ACHASINQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -3919,7 +3919,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50436,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '345',
+      'numero': 345,
       'titulo': 'REYEN REYEPAW JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -3928,7 +3928,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50437,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '346',
+      'numero': 346,
       'titulo': 'CUSISIÑ URUW JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -3937,7 +3937,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50438,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '347',
+      'numero': 347,
       'titulo': 'CUSISIÑAW UTJI CRISTON THAQUIPANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -3946,7 +3946,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50439,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '348',
+      'numero': 348,
       'titulo': 'CRISTOR THAKTAÑAN',
       'orden': 1,
       'estado_registro': 1,
@@ -3955,7 +3955,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50440,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '349',
+      'numero': 349,
       'titulo': 'TAKE AJJLLITANACAPARUW',
       'orden': 1,
       'estado_registro': 1,
@@ -3964,7 +3964,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50441,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '350',
+      'numero': 350,
       'titulo': 'CON TODA MIS FUERZAS',
       'orden': 2,
       'estado_registro': 1,
@@ -3973,7 +3973,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50442,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '350',
+      'numero': 350,
       'titulo': 'TAKE CH\'AMAJJAMPIW',
       'orden': 1,
       'estado_registro': 1,
@@ -3982,7 +3982,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50443,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '351',
+      'numero': 351,
       'titulo': 'JACAÑAJJ DIOSANQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -3991,7 +3991,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50444,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '352',
+      'numero': 352,
       'titulo': 'QHITIRUS NAYAJJ UÑTAJJAN',
       'orden': 1,
       'estado_registro': 1,
@@ -4000,7 +4000,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50445,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '353',
+      'numero': 353,
       'titulo': 'JUMAW KHESPIYISTA',
       'orden': 1,
       'estado_registro': 1,
@@ -4009,7 +4009,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50446,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '354',
+      'numero': 354,
       'titulo': 'CRISTOMP SARJJAÑA URUWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4018,7 +4018,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50447,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '355',
+      'numero': 355,
       'titulo': 'MÄ ALWAW TATITUJJAR CATOKTA',
       'orden': 1,
       'estado_registro': 1,
@@ -4027,7 +4027,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50448,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '356',
+      'numero': 356,
       'titulo': 'QHUYAPT\'AYITAYTATA',
       'orden': 1,
       'estado_registro': 1,
@@ -4036,7 +4036,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50449,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '357',
+      'numero': 357,
       'titulo': 'C\'UCHI JACAÑ UTJQUI PANWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4045,7 +4045,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50450,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '358',
+      'numero': 358,
       'titulo': 'JESUSAW JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -4054,7 +4054,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50451,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '359',
+      'numero': 359,
       'titulo': 'MUNASIR KHESPIYIRI',
       'orden': 1,
       'estado_registro': 1,
@@ -4063,7 +4063,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50452,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '360',
+      'numero': 360,
       'titulo': 'DIOSAN CH\'AMAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -4072,7 +4072,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50453,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '361',
+      'numero': 361,
       'titulo': 'DIOSAN AJJLLIT MARCAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -4081,7 +4081,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50454,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '362',
+      'numero': 362,
       'titulo': 'JESUCRISTUSAN JUTAWIPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4090,7 +4090,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50455,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '363',
+      'numero': 363,
       'titulo': 'ALZARE MIS OJOS',
       'orden': 2,
       'estado_registro': 1,
@@ -4099,7 +4099,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50456,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '363',
+      'numero': 363,
       'titulo': 'NAYAJJA UNTAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4108,7 +4108,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50457,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '364',
+      'numero': 364,
       'titulo': 'DE MI LINDA BOLIVIA',
       'orden': 1,
       'estado_registro': 1,
@@ -4117,7 +4117,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50458,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '365',
+      'numero': 365,
       'titulo': 'KOLLANA CRISTO NAYAR QHITITA',
       'orden': 1,
       'estado_registro': 1,
@@ -4126,7 +4126,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50459,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '366',
+      'numero': 366,
       'titulo': 'YATICHASITAY JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -4135,7 +4135,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50460,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '367',
+      'numero': 367,
       'titulo': 'TATITUMP JACASINJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4144,7 +4144,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50461,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '368',
+      'numero': 368,
       'titulo': 'DIOSAN MARCAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -4153,7 +4153,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50462,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '369',
+      'numero': 369,
       'titulo': 'CRISTO SAPARUQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4162,7 +4162,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50463,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '370',
+      'numero': 370,
       'titulo': 'CUNJA CUSISIÑANISA',
       'orden': 1,
       'estado_registro': 1,
@@ -4171,7 +4171,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50464,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '371',
+      'numero': 371,
       'titulo': 'JICHHAW TIEMPOJJ UTJI QUILLT\'ASIÑATAQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -4180,7 +4180,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50465,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '372',
+      'numero': 372,
       'titulo': 'A LA GRAN FIESTA ME VOY',
       'orden': 2,
       'estado_registro': 1,
@@ -4189,7 +4189,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50466,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '372',
+      'numero': 372,
       'titulo': 'JACH\'A FIESTARUW SARJJASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -4198,7 +4198,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50467,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '373',
+      'numero': 373,
       'titulo': 'TATAY, ACA CHUYMAJJ K\'OMACHITA',
       'orden': 1,
       'estado_registro': 1,
@@ -4207,7 +4207,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50468,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '374',
+      'numero': 374,
       'titulo': 'TATITUJJ JUTCAN UQHAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4216,7 +4216,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50469,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '375',
+      'numero': 375,
       'titulo': 'NO TE ALEJES DE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -4225,7 +4225,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50470,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '375',
+      'numero': 375,
       'titulo': 'JAN KHEPARAMTI CRISTUTA',
       'orden': 1,
       'estado_registro': 1,
@@ -4234,7 +4234,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50471,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '376',
+      'numero': 376,
       'titulo': 'JUC\'A URUNACAMPIQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4243,7 +4243,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50472,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '377',
+      'numero': 377,
       'titulo': 'LLAQUINACAS MUYUNTASQUITPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -4252,7 +4252,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50473,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '378',
+      'numero': 378,
       'titulo': 'COMO DIOS AMO AL MUNDO',
       'orden': 2,
       'estado_registro': 1,
@@ -4261,7 +4261,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50474,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '378',
+      'numero': 378,
       'titulo': 'CUNJAMTI DIOSAJJ NUNISTU',
       'orden': 1,
       'estado_registro': 1,
@@ -4270,7 +4270,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50475,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '379',
+      'numero': 379,
       'titulo': 'CRISTOTEJJ JAWSJJETASPA',
       'orden': 1,
       'estado_registro': 1,
@@ -4279,7 +4279,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50476,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '379',
+      'numero': 379,
       'titulo': 'CUNJA JACH\'A URUQUICANI',
       'orden': 2,
       'estado_registro': 1,
@@ -4288,7 +4288,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50477,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '380',
+      'numero': 380,
       'titulo': 'APTAWIJJ NIYAW JUTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -4297,7 +4297,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50478,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '381',
+      'numero': 381,
       'titulo': 'MUNASIÑAMAJJ TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -4306,7 +4306,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50479,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '382',
+      'numero': 382,
       'titulo': 'TATITUN THAQUIPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -4315,7 +4315,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50480,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '383',
+      'numero': 383,
       'titulo': 'CRISTUN JIWIRI JILANACASTI',
       'orden': 1,
       'estado_registro': 1,
@@ -4324,7 +4324,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50481,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '384',
+      'numero': 384,
       'titulo': 'WAQUICHASTAT MUNAT JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -4333,7 +4333,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50482,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '385',
+      'numero': 385,
       'titulo': 'CRISTO KOLLAN AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4342,7 +4342,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50483,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '386',
+      'numero': 386,
       'titulo': 'CUSISITAPINIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4351,7 +4351,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50484,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '387',
+      'numero': 387,
       'titulo': 'DIOSAN MUNASIÑAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -4360,7 +4360,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50485,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '388',
+      'numero': 388,
       'titulo': 'SUMA JACH\'A AWATIR AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -4369,7 +4369,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50486,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '389',
+      'numero': 389,
       'titulo': 'IRPAQUITAY KHESPIYIRI',
       'orden': 1,
       'estado_registro': 1,
@@ -4378,7 +4378,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50487,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '390',
+      'numero': 390,
       'titulo': 'CRISTO KHESPIYIRISAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4387,7 +4387,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50488,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '391',
+      'numero': 391,
       'titulo': 'PATÄ CHUYMAMP ARQUIREJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4396,7 +4396,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50489,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '392',
+      'numero': 392,
       'titulo': 'JACHT\'ASISAWA SARNAKAYATA',
       'orden': 1,
       'estado_registro': 1,
@@ -4405,7 +4405,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50490,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '393',
+      'numero': 393,
       'titulo': 'CON CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -4414,7 +4414,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50491,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '393',
+      'numero': 393,
       'titulo': 'CRISTOMPIW NAJJ YATEKTA',
       'orden': 1,
       'estado_registro': 1,
@@ -4423,7 +4423,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50492,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '394',
+      'numero': 394,
       'titulo': 'EN LA CASA DE MI PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -4432,7 +4432,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50493,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '394',
+      'numero': 394,
       'titulo': 'AWQUISANA MARCAPANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4441,7 +4441,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50494,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '395',
+      'numero': 395,
       'titulo': 'ARREBATAMIENTO',
       'orden': 2,
       'estado_registro': 1,
@@ -4450,7 +4450,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50495,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '395',
+      'numero': 395,
       'titulo': 'JANIW KHEPARAÑ MUNCT TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -4459,7 +4459,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50496,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '396',
+      'numero': 396,
       'titulo': 'CUNATAQUIS KOLLAN AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4468,7 +4468,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50497,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '397',
+      'numero': 397,
       'titulo': 'KAUKHANISA WAQUICHT\'ATATANJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4477,7 +4477,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50498,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '398',
+      'numero': 398,
       'titulo': 'WALJA JAKENACAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4486,7 +4486,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50499,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '399',
+      'numero': 399,
       'titulo': 'CLAMA A MI DICE EL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -4495,7 +4495,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50500,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '399',
+      'numero': 399,
       'titulo': 'TATITOJJ SARAQUISTUWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4504,7 +4504,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50501,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '400',
+      'numero': 400,
       'titulo': 'LA SANGRE DE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -4513,7 +4513,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50502,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '400',
+      'numero': 400,
       'titulo': 'TATITUN WILAPAW',
       'orden': 1,
       'estado_registro': 1,
@@ -4522,7 +4522,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50503,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '401',
+      'numero': 401,
       'titulo': 'ALABEMOS Y CANTEMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -4531,7 +4531,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50504,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '401',
+      'numero': 401,
       'titulo': 'ALELUYA JESUSARU',
       'orden': 1,
       'estado_registro': 1,
@@ -4540,7 +4540,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50505,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '402',
+      'numero': 402,
       'titulo': 'SANTO ESPIRITU',
       'orden': 2,
       'estado_registro': 1,
@@ -4549,7 +4549,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50506,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '402',
+      'numero': 402,
       'titulo': 'KOLLAN AJAYU',
       'orden': 1,
       'estado_registro': 1,
@@ -4558,7 +4558,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50507,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '403',
+      'numero': 403,
       'titulo': 'HERMANO EN CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -4567,7 +4567,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50508,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '403',
+      'numero': 403,
       'titulo': 'MUNATA JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -4576,7 +4576,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50509,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '404',
+      'numero': 404,
       'titulo': 'JESUS ES EL CAMINO',
       'orden': 2,
       'estado_registro': 1,
@@ -4585,7 +4585,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50510,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '404',
+      'numero': 404,
       'titulo': 'TATITUWA THAQUIJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4594,7 +4594,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50511,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '405',
+      'numero': 405,
       'titulo': 'YO SE QUE MI REDENTOR',
       'orden': 2,
       'estado_registro': 1,
@@ -4603,7 +4603,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50512,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '405',
+      'numero': 405,
       'titulo': 'NAYAN KHESPIYIREJJAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -4612,7 +4612,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50513,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '406',
+      'numero': 406,
       'titulo': 'UNA COSA SE',
       'orden': 2,
       'estado_registro': 1,
@@ -4621,7 +4621,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50514,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '406',
+      'numero': 406,
       'titulo': 'NAYAJJ YATIRACTWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4630,7 +4630,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50515,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '407',
+      'numero': 407,
       'titulo': 'ALZARE MIS OJOS A JEHOVA (Sal 121:1)',
       'orden': 2,
       'estado_registro': 1,
@@ -4639,7 +4639,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50516,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '407',
+      'numero': 407,
       'titulo': 'NAYRAJJANACAMPIW UÑTAJJA AWQUEJJARU',
       'orden': 1,
       'estado_registro': 1,
@@ -4648,7 +4648,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50517,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '408',
+      'numero': 408,
       'titulo': 'CANTEMOS TODOS UNIDOS',
       'orden': 2,
       'estado_registro': 1,
@@ -4657,7 +4657,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50518,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '408',
+      'numero': 408,
       'titulo': 'TAKENIS K\'OCHUPJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -4666,7 +4666,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50519,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '409',
+      'numero': 409,
       'titulo': 'CRISTO AMADO',
       'orden': 2,
       'estado_registro': 1,
@@ -4675,7 +4675,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50520,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '409',
+      'numero': 409,
       'titulo': 'KOLLAN CRISTO IRPITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -4684,7 +4684,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50521,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '410',
+      'numero': 410,
       'titulo': 'A JEHOVA ALABARE',
       'orden': 2,
       'estado_registro': 1,
@@ -4693,7 +4693,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50522,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '410',
+      'numero': 410,
       'titulo': 'TATITUR YUPAYCHAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4702,7 +4702,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50523,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '411',
+      'numero': 411,
       'titulo': 'EL ME HA VESTIDO DE ALEGRIA',
       'orden': 2,
       'estado_registro': 1,
@@ -4711,7 +4711,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50524,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '411',
+      'numero': 411,
       'titulo': 'JUPAWA NAYAROJJ CHURITU CUSISIÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -4720,7 +4720,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50525,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '412',
+      'numero': 412,
       'titulo': 'A JEHOVA SIEMPRE CANTARE',
       'orden': 2,
       'estado_registro': 1,
@@ -4729,7 +4729,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50526,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '412',
+      'numero': 412,
       'titulo': 'TATITUR YAPAYCHAPJJAÑAN',
       'orden': 1,
       'estado_registro': 1,
@@ -4738,7 +4738,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50527,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '413',
+      'numero': 413,
       'titulo': 'REMOLINEANDO',
       'orden': 2,
       'estado_registro': 1,
@@ -4747,7 +4747,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50528,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '413',
+      'numero': 413,
       'titulo': 'CUSISIÑANI TAKE CHUYMAMPI',
       'orden': 1,
       'estado_registro': 1,
@@ -4756,7 +4756,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50529,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '414',
+      'numero': 414,
       'titulo': 'ME GOZARE',
       'orden': 2,
       'estado_registro': 1,
@@ -4765,7 +4765,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50530,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '414',
+      'numero': 414,
       'titulo': 'KHESPIYIRISAN JAC\'APAMA GUSISI',
       'orden': 1,
       'estado_registro': 1,
@@ -4774,7 +4774,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50531,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '415',
+      'numero': 415,
       'titulo': 'YO TE ADORO SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -4783,7 +4783,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50532,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '415',
+      'numero': 415,
       'titulo': 'YUPAYCHAMAW TATA',
       'orden': 1,
       'estado_registro': 1,
@@ -4792,7 +4792,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50533,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '416',
+      'numero': 416,
       'titulo': 'YO TE AMO',
       'orden': 2,
       'estado_registro': 1,
@@ -4801,7 +4801,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50534,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '416',
+      'numero': 416,
       'titulo': 'NAYAJJ MUNSMAW',
       'orden': 1,
       'estado_registro': 1,
@@ -4810,7 +4810,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50535,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '417',
+      'numero': 417,
       'titulo': 'CANTARE AL SEÑOR POR SIEMPRE',
       'orden': 2,
       'estado_registro': 1,
@@ -4819,7 +4819,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50536,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '417',
+      'numero': 417,
       'titulo': 'YUPAYCHAWA TATITUJJARU',
       'orden': 1,
       'estado_registro': 1,
@@ -4828,7 +4828,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50537,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '418',
+      'numero': 418,
       'titulo': 'ENAMORADO DE JESUS',
       'orden': 2,
       'estado_registro': 1,
@@ -4837,7 +4837,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50538,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '418',
+      'numero': 418,
       'titulo': 'TATIT JESUSAJJAMPIJJA CUSISIÑAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4846,7 +4846,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50539,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '419',
+      'numero': 419,
       'titulo': 'TU ERES TODO PARA MI',
       'orden': 2,
       'estado_registro': 1,
@@ -4855,7 +4855,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50540,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '419',
+      'numero': 419,
       'titulo': 'JUMA SAPAQUITAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -4864,7 +4864,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50541,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '420',
+      'numero': 420,
       'titulo': 'TE ADORAMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -4873,7 +4873,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50542,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '420',
+      'numero': 420,
       'titulo': 'CRISTO YUPAYCHAPSMAW',
       'orden': 1,
       'estado_registro': 1,
@@ -4882,7 +4882,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50543,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '421',
+      'numero': 421,
       'titulo': 'PADRE AMADO',
       'orden': 1,
       'estado_registro': 1,
@@ -4891,7 +4891,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50544,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '421',
+      'numero': 421,
       'titulo': 'DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4900,7 +4900,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50545,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '422',
+      'numero': 422,
       'titulo': 'JESUS, JESUS, JESUS',
       'orden': 2,
       'estado_registro': 1,
@@ -4909,7 +4909,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50546,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '422',
+      'numero': 422,
       'titulo': 'JESUS, JESUS, JESUS',
       'orden': 1,
       'estado_registro': 1,
@@ -4918,7 +4918,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50547,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '423',
+      'numero': 423,
       'titulo': 'ALELUYA',
       'orden': 2,
       'estado_registro': 1,
@@ -4927,7 +4927,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50548,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '423',
+      'numero': 423,
       'titulo': 'ALELUYA',
       'orden': 1,
       'estado_registro': 1,
@@ -4936,7 +4936,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50549,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '424',
+      'numero': 424,
       'titulo': 'CAMINO PEDREGOSO',
       'orden': 2,
       'estado_registro': 1,
@@ -4945,7 +4945,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50550,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '424',
+      'numero': 424,
       'titulo': 'THAQUIN SARASAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -4954,7 +4954,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50551,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '425',
+      'numero': 425,
       'titulo': 'QUE LINDO ES CANTAR ASÍ',
       'orden': 2,
       'estado_registro': 1,
@@ -4963,7 +4963,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50552,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '425',
+      'numero': 425,
       'titulo': 'CUNJA SUMAS K\'OCHUÑAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -4972,7 +4972,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50553,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '426',
+      'numero': 426,
       'titulo': 'VEN A CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -4981,7 +4981,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50554,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '426',
+      'numero': 426,
       'titulo': 'JUTJJAMAY TATIT CRISIOR',
       'orden': 1,
       'estado_registro': 1,
@@ -4990,7 +4990,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50555,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '427',
+      'numero': 427,
       'titulo': 'PADRE NO ME DESAMPARES',
       'orden': 2,
       'estado_registro': 1,
@@ -4999,7 +4999,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50556,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '427',
+      'numero': 427,
       'titulo': 'TATAY JAN ANTUTT\'ISTATI',
       'orden': 1,
       'estado_registro': 1,
@@ -5008,7 +5008,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50557,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '428',
+      'numero': 428,
       'titulo': 'GRACIAS MI JESUCRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -5017,7 +5017,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50558,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '428',
+      'numero': 428,
       'titulo': 'YUSPAGAR KHESPIYIR TATIT JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -5026,7 +5026,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50559,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '429',
+      'numero': 429,
       'titulo': 'CUANDO CRISTO VUELVA',
       'orden': 2,
       'estado_registro': 1,
@@ -5035,7 +5035,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50560,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '429',
+      'numero': 429,
       'titulo': 'TATIT CRISTOJJA JUTCAN UCQHAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5044,7 +5044,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50561,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '430',
+      'numero': 430,
       'titulo': 'CIELO Y TIERRA PASARAN',
       'orden': 2,
       'estado_registro': 1,
@@ -5053,7 +5053,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50562,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '430',
+      'numero': 430,
       'titulo': 'ALAJJPACHAS ACAPACHAS',
       'orden': 1,
       'estado_registro': 1,
@@ -5062,7 +5062,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50563,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '431',
+      'numero': 431,
       'titulo': 'SIERVO AMADO',
       'orden': 2,
       'estado_registro': 1,
@@ -5071,7 +5071,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50564,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '431',
+      'numero': 431,
       'titulo': 'CRISTON MUNATA AWATIRIPA',
       'orden': 1,
       'estado_registro': 1,
@@ -5080,7 +5080,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50565,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '432',
+      'numero': 432,
       'titulo': 'HE SALIDO DE EGIPTO',
       'orden': 2,
       'estado_registro': 1,
@@ -5089,7 +5089,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50566,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '432',
+      'numero': 432,
       'titulo': 'EGIPTO MARCAT MISTUNTA',
       'orden': 1,
       'estado_registro': 1,
@@ -5098,7 +5098,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50567,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '433',
+      'numero': 433,
       'titulo': 'PIDÁNME QUE YO LES DARE',
       'orden': 2,
       'estado_registro': 1,
@@ -5107,7 +5107,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50568,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '433',
+      'numero': 433,
       'titulo': 'MAYINIPJJTAY CHURATAPJJATAW',
       'orden': 1,
       'estado_registro': 1,
@@ -5116,7 +5116,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50569,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '434',
+      'numero': 434,
       'titulo': 'SALVACION PARA EL MUNDO',
       'orden': 2,
       'estado_registro': 1,
@@ -5125,7 +5125,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50570,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '434',
+      'numero': 434,
       'titulo': 'KHESPIYASIÑAJJ UTJIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -5134,7 +5134,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50571,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '435',
+      'numero': 435,
       'titulo': 'CUANDO CRISTO VUELVA',
       'orden': 2,
       'estado_registro': 1,
@@ -5143,7 +5143,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50572,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '435',
+      'numero': 435,
       'titulo': 'CRISTOJJ CUTT\'ANCAN UCQHAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5152,7 +5152,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50573,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '436',
+      'numero': 436,
       'titulo': 'PALOMA BLANCA',
       'orden': 2,
       'estado_registro': 1,
@@ -5161,7 +5161,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50574,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '436',
+      'numero': 436,
       'titulo': 'JANK\'O PALOMITA',
       'orden': 1,
       'estado_registro': 1,
@@ -5170,7 +5170,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50575,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '437',
+      'numero': 437,
       'titulo': 'ALLA EN EL CIELO',
       'orden': 2,
       'estado_registro': 1,
@@ -5179,7 +5179,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50576,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '437',
+      'numero': 437,
       'titulo': 'ALAJJPACHANWA',
       'orden': 1,
       'estado_registro': 1,
@@ -5188,7 +5188,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50577,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '438',
+      'numero': 438,
       'titulo': 'VIAJANDO CON CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -5197,7 +5197,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50578,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '438',
+      'numero': 438,
       'titulo': 'CRISTOMPIW SARNAKASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -5206,7 +5206,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50579,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '439',
+      'numero': 439,
       'titulo': 'ESTEMOS FELICES',
       'orden': 2,
       'estado_registro': 1,
@@ -5215,7 +5215,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50580,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '439',
+      'numero': 439,
       'titulo': 'CUSISIÑANI NIYAW JIQUISJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -5224,7 +5224,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50581,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '440',
+      'numero': 440,
       'titulo': 'CRISTO AMOROSO',
       'orden': 2,
       'estado_registro': 1,
@@ -5233,7 +5233,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50582,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '440',
+      'numero': 440,
       'titulo': 'MUNASIR CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -5242,7 +5242,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50583,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '441',
+      'numero': 441,
       'titulo': 'LLORANDO ESTAS',
       'orden': 2,
       'estado_registro': 1,
@@ -5251,7 +5251,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50584,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '441',
+      'numero': 441,
       'titulo': 'JACHT\'ASISAQUIT SARNAKAWAYTA',
       'orden': 1,
       'estado_registro': 1,
@@ -5260,7 +5260,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50585,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '442',
+      'numero': 442,
       'titulo': 'EL AMOR DE NUESTRO SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -5269,7 +5269,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50586,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '442',
+      'numero': 442,
       'titulo': 'DIOSAN MUNASIÑAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5278,7 +5278,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50587,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '443',
+      'numero': 443,
       'titulo': 'BIENAVENTURADOS',
       'orden': 2,
       'estado_registro': 1,
@@ -5287,7 +5287,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50588,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '443',
+      'numero': 443,
       'titulo': 'CUSISIÑANEPJJEW TUCUYCAMA',
       'orden': 1,
       'estado_registro': 1,
@@ -5296,7 +5296,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50589,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '444',
+      'numero': 444,
       'titulo': 'QUERIDOS HERMANOS DE BOLIVIA',
       'orden': 2,
       'estado_registro': 1,
@@ -5305,7 +5305,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50590,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '444',
+      'numero': 444,
       'titulo': 'BOLIVIA MARCANQUIR JILANACA',
       'orden': 1,
       'estado_registro': 1,
@@ -5314,7 +5314,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50591,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '445',
+      'numero': 445,
       'titulo': 'VENGAN PRUEBAS Y LLANTOS',
       'orden': 2,
       'estado_registro': 1,
@@ -5323,7 +5323,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50592,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '445',
+      'numero': 445,
       'titulo': 'YANT\'ANACASAY JUTPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -5332,7 +5332,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50593,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '446',
+      'numero': 446,
       'titulo': 'YA MUY PRONTO NOS IREMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -5341,7 +5341,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50594,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '446',
+      'numero': 446,
       'titulo': 'NIYAWA SARJJAPJJAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -5350,7 +5350,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50595,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '447',
+      'numero': 447,
       'titulo': 'LLEVANDO SU PALABRA',
       'orden': 2,
       'estado_registro': 1,
@@ -5359,7 +5359,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50596,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '447',
+      'numero': 447,
       'titulo': 'DIOSAN ARUNACAPAT YATIYAÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -5368,7 +5368,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50597,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '448',
+      'numero': 448,
       'titulo': 'CUANDO CRISTO REGRESE',
       'orden': 2,
       'estado_registro': 1,
@@ -5377,7 +5377,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50598,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '448',
+      'numero': 448,
       'titulo': 'TATIT JESUSAJJ JUTCAN UCQHAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -5386,7 +5386,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50599,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '449',
+      'numero': 449,
       'titulo': 'SOLO A TI QUIERO ALABARTE',
       'orden': 2,
       'estado_registro': 1,
@@ -5395,7 +5395,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50600,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '449',
+      'numero': 449,
       'titulo': 'JUMA SAPARUQUIW YUPAYCHAÑAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5404,7 +5404,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50601,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '450',
+      'numero': 450,
       'titulo': 'GOZO, GOZO HAY EN MI',
       'orden': 2,
       'estado_registro': 1,
@@ -5413,7 +5413,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50602,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '450',
+      'numero': 450,
       'titulo': 'CUSISIÑAW UTJITU',
       'orden': 1,
       'estado_registro': 1,
@@ -5422,7 +5422,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50603,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '451',
+      'numero': 451,
       'titulo': 'LAS CADENAS SE VAN ROMPIENDO',
       'orden': 2,
       'estado_registro': 1,
@@ -5431,7 +5431,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50604,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '451',
+      'numero': 451,
       'titulo': 'JUCHA CADENAS T\'AKARTJJEWA',
       'orden': 1,
       'estado_registro': 1,
@@ -5440,7 +5440,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50605,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '452',
+      'numero': 452,
       'titulo': 'DÍAS FELICES VENDRAN PARA MÍ',
       'orden': 2,
       'estado_registro': 1,
@@ -5449,7 +5449,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50606,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '452',
+      'numero': 452,
       'titulo': 'CUSISIÑ URUW NATAC JUTASQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -5458,7 +5458,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50607,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '453',
+      'numero': 453,
       'titulo': 'AQUÍ NO SE ACABA LAS LUCHAS',
       'orden': 2,
       'estado_registro': 1,
@@ -5467,7 +5467,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50608,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '453',
+      'numero': 453,
       'titulo': 'JANIW ACQHARUC TUCUSQUITI NUWT\'ASIÑASA',
       'orden': 1,
       'estado_registro': 1,
@@ -5476,7 +5476,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50609,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '454',
+      'numero': 454,
       'titulo': 'TE ALABARE',
       'orden': 2,
       'estado_registro': 1,
@@ -5485,7 +5485,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50610,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '454',
+      'numero': 454,
       'titulo': 'K\'OCHUPUNIMAW',
       'orden': 1,
       'estado_registro': 1,
@@ -5494,7 +5494,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50611,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '455',
+      'numero': 455,
       'titulo': 'QUERIDO HERMANO',
       'orden': 2,
       'estado_registro': 1,
@@ -5503,7 +5503,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50612,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '455',
+      'numero': 455,
       'titulo': 'MUNAT JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -5512,7 +5512,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50613,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '456',
+      'numero': 456,
       'titulo': 'VIVIRE EN SUS MORADAS',
       'orden': 2,
       'estado_registro': 1,
@@ -5521,7 +5521,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50614,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '456',
+      'numero': 456,
       'titulo': 'JACJJAWÄ SUMA UTAPANA',
       'orden': 1,
       'estado_registro': 1,
@@ -5530,7 +5530,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50615,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '457',
+      'numero': 457,
       'titulo': 'PROMESA FIEL',
       'orden': 2,
       'estado_registro': 1,
@@ -5539,7 +5539,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50616,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '457',
+      'numero': 457,
       'titulo': 'MÄ URUW IYAWSMA',
       'orden': 1,
       'estado_registro': 1,
@@ -5548,7 +5548,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50617,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '458',
+      'numero': 458,
       'titulo': 'ASI QUIERO ALABARTE',
       'orden': 2,
       'estado_registro': 1,
@@ -5557,7 +5557,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50618,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '458',
+      'numero': 458,
       'titulo': 'UQHAM NAYAJJ K\'OCHUMA',
       'orden': 1,
       'estado_registro': 1,
@@ -5566,7 +5566,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50619,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '459',
+      'numero': 459,
       'titulo': 'PRECIO INCOMPARABLE',
       'orden': 2,
       'estado_registro': 1,
@@ -5575,7 +5575,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50620,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '459',
+      'numero': 459,
       'titulo': 'CUSISIÑ LLAQUISIÑ URUNACANSA',
       'orden': 1,
       'estado_registro': 1,
@@ -5584,7 +5584,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50621,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '460',
+      'numero': 460,
       'titulo': 'CUANDO LA IGLESIA DEL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -5593,7 +5593,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50622,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '460',
+      'numero': 460,
       'titulo': 'TATITUN IGLESIAPAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5602,7 +5602,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50623,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '461',
+      'numero': 461,
       'titulo': 'MIENTRAS TENGA VIDA',
       'orden': 2,
       'estado_registro': 1,
@@ -5611,7 +5611,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50624,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '461',
+      'numero': 461,
       'titulo': 'JACAÑAJJ UTJQUIPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -5620,7 +5620,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50625,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '462',
+      'numero': 462,
       'titulo': 'LA VENIDA DE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -5629,7 +5629,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50626,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '462',
+      'numero': 462,
       'titulo': 'TATITOJJ JUTCAN UCQHAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5638,7 +5638,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50627,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '463',
+      'numero': 463,
       'titulo': 'ESPIRITU SANTO',
       'orden': 2,
       'estado_registro': 1,
@@ -5647,7 +5647,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50628,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '463',
+      'numero': 463,
       'titulo': 'KOLLAN AJAYUW',
       'orden': 1,
       'estado_registro': 1,
@@ -5656,7 +5656,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50629,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '464',
+      'numero': 464,
       'titulo': 'SIERVO DEL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -5665,7 +5665,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50630,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '464',
+      'numero': 464,
       'titulo': 'DIOSAN AWATIRIP',
       'orden': 1,
       'estado_registro': 1,
@@ -5674,7 +5674,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50631,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '465',
+      'numero': 465,
       'titulo': 'ALEGRIA Y GOZO',
       'orden': 1,
       'estado_registro': 1,
@@ -5683,7 +5683,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50632,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '465',
+      'numero': 465,
       'titulo': 'WALI CUSISIÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -5692,7 +5692,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50633,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '466',
+      'numero': 466,
       'titulo': 'SEXTO SELLO',
       'orden': 2,
       'estado_registro': 1,
@@ -5701,7 +5701,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50634,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '466',
+      'numero': 466,
       'titulo': 'SOJJTIR SELLOJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -5710,7 +5710,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50635,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '467',
+      'numero': 467,
       'titulo': 'NO QUIERO QUEDARME',
       'orden': 2,
       'estado_registro': 1,
@@ -5719,7 +5719,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50636,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '467',
+      'numero': 467,
       'titulo': 'JANIW KHEP\'ARAÑ MUNTI',
       'orden': 1,
       'estado_registro': 1,
@@ -5728,7 +5728,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50637,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '468',
+      'numero': 468,
       'titulo': 'MUJER DE ORACIÓN',
       'orden': 2,
       'estado_registro': 1,
@@ -5737,7 +5737,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50638,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '468',
+      'numero': 468,
       'titulo': 'MA WARMI DIOSAT MAYIR',
       'orden': 1,
       'estado_registro': 1,
@@ -5746,7 +5746,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50639,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '469',
+      'numero': 469,
       'titulo': 'FELICIDADES HERMANO MIO',
       'orden': 2,
       'estado_registro': 1,
@@ -5755,7 +5755,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50640,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '469',
+      'numero': 469,
       'titulo': 'URUMAW JICHHUROJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -5764,7 +5764,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50641,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '470',
+      'numero': 470,
       'titulo': 'ESPIRITU SANTO',
       'orden': 2,
       'estado_registro': 1,
@@ -5773,7 +5773,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50642,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '470',
+      'numero': 470,
       'titulo': 'KOLLAN AJAYU',
       'orden': 1,
       'estado_registro': 1,
@@ -5782,7 +5782,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50643,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '471',
+      'numero': 471,
       'titulo': 'HAY DOS CAMINOS',
       'orden': 2,
       'estado_registro': 1,
@@ -5791,7 +5791,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50644,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '471',
+      'numero': 471,
       'titulo': 'PÄ THAQUIW UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -5800,7 +5800,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50645,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '472',
+      'numero': 472,
       'titulo': 'EL VIVIR AQUI',
       'orden': 2,
       'estado_registro': 1,
@@ -5809,7 +5809,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50646,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '472',
+      'numero': 472,
       'titulo': 'ACAPACHAN JACAÑAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -5818,7 +5818,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50647,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '473',
+      'numero': 473,
       'titulo': 'LLEGO GRAN AVIVAMIENTO',
       'orden': 2,
       'estado_registro': 1,
@@ -5827,7 +5827,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50648,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '473',
+      'numero': 473,
       'titulo': 'KOLLAN AJAYUJJ PURINIW',
       'orden': 1,
       'estado_registro': 1,
@@ -5836,7 +5836,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50649,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '474',
+      'numero': 474,
       'titulo': 'EN ESTA VIDA QUE VIVIMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -5845,7 +5845,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50650,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '474',
+      'numero': 474,
       'titulo': 'ACA ORAKEN JACKASINJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5854,7 +5854,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50651,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '475',
+      'numero': 475,
       'titulo': 'GRACIAS PADRE AMADO',
       'orden': 2,
       'estado_registro': 1,
@@ -5863,7 +5863,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50652,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '475',
+      'numero': 475,
       'titulo': 'YUSPAGARSMAW MUNAT AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5872,7 +5872,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50653,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '476',
+      'numero': 476,
       'titulo': 'EN EL LIBRO DEL CORDERO',
       'orden': 2,
       'estado_registro': 1,
@@ -5881,7 +5881,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50654,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '476',
+      'numero': 476,
       'titulo': 'WIÑAY JACAÑA LIBROPANA',
       'orden': 1,
       'estado_registro': 1,
@@ -5890,7 +5890,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50655,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '477',
+      'numero': 477,
       'titulo': 'YA ESTAS LISTO HERMANO',
       'orden': 2,
       'estado_registro': 1,
@@ -5899,7 +5899,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50656,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '477',
+      'numero': 477,
       'titulo': 'WAQUICHT\'ATATI JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -5908,7 +5908,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50657,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '478',
+      'numero': 478,
       'titulo': 'YA LLEGO EL DIA',
       'orden': 2,
       'estado_registro': 1,
@@ -5917,7 +5917,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50658,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '478',
+      'numero': 478,
       'titulo': 'CUSISIÑ URUW PURINJJAN',
       'orden': 1,
       'estado_registro': 1,
@@ -5926,7 +5926,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50659,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '479',
+      'numero': 479,
       'titulo': 'NADIE SABE LA HORA',
       'orden': 2,
       'estado_registro': 1,
@@ -5935,7 +5935,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50660,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '479',
+      'numero': 479,
       'titulo': 'JANIW QHITIS YATQUITI',
       'orden': 1,
       'estado_registro': 1,
@@ -5944,7 +5944,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50661,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '480',
+      'numero': 480,
       'titulo': 'DONDE ESTAN LOS HERMANOS QUE SEGUIAN',
       'orden': 2,
       'estado_registro': 1,
@@ -5953,7 +5953,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50662,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '480',
+      'numero': 480,
       'titulo': 'CAWQHANQUIS ARQUIRI JILANACAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -5962,7 +5962,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50663,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '481',
+      'numero': 481,
       'titulo': 'MAMITA TE SALUDO',
       'orden': 2,
       'estado_registro': 1,
@@ -5971,7 +5971,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50664,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '481',
+      'numero': 481,
       'titulo': 'MAMITA NAJJ ARUNTSMAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -5980,7 +5980,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50665,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '482',
+      'numero': 482,
       'titulo': 'HERMANO MIO',
       'orden': 2,
       'estado_registro': 1,
@@ -5989,7 +5989,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50666,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '482',
+      'numero': 482,
       'titulo': 'MUNAT JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -5998,7 +5998,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50667,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '483',
+      'numero': 483,
       'titulo': 'PASANDO RIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6007,7 +6007,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50668,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '483',
+      'numero': 483,
       'titulo': 'KOLLUNAC JAWIRANAC PASCASIN',
       'orden': 1,
       'estado_registro': 1,
@@ -6016,7 +6016,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50669,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '484',
+      'numero': 484,
       'titulo': 'EL SEÑOR JESUS PRONTO VIENE',
       'orden': 2,
       'estado_registro': 1,
@@ -6025,7 +6025,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50670,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '484',
+      'numero': 484,
       'titulo': 'CRISTOJJ JUTASQUIW',
       'orden': 1,
       'estado_registro': 1,
@@ -6034,7 +6034,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50671,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '485',
+      'numero': 485,
       'titulo': 'CAMINANDO EN TU SENDA',
       'orden': 2,
       'estado_registro': 1,
@@ -6043,7 +6043,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50672,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '485',
+      'numero': 485,
       'titulo': 'THAQUIMAN SARNAKQUIPANSA',
       'orden': 1,
       'estado_registro': 1,
@@ -6052,7 +6052,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50673,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '486',
+      'numero': 486,
       'titulo': 'CUANDO NOS LLAME EL SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -6061,7 +6061,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50674,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '486',
+      'numero': 486,
       'titulo': 'CUNAPACHATEJJ CRISTOJJ JAWSJJESTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -6070,7 +6070,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50675,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '487',
+      'numero': 487,
       'titulo': 'CON CRISTO GOZAREMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6079,7 +6079,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50676,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '487',
+      'numero': 487,
       'titulo': 'CRISTOMPIW CUSISIÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -6088,7 +6088,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50677,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '488',
+      'numero': 488,
       'titulo': 'CRISTO MISERICORDIOSO',
       'orden': 2,
       'estado_registro': 1,
@@ -6097,7 +6097,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50678,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '488',
+      'numero': 488,
       'titulo': 'QHUYAPAYASIRI CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -6106,7 +6106,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50679,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '489',
+      'numero': 489,
       'titulo': 'ALLI YO VIVIRE',
       'orden': 2,
       'estado_registro': 1,
@@ -6115,7 +6115,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50680,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '489',
+      'numero': 489,
       'titulo': 'QHAYANA JACASI',
       'orden': 1,
       'estado_registro': 1,
@@ -6124,7 +6124,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50681,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '490',
+      'numero': 490,
       'titulo': 'LOS VALIENTES',
       'orden': 2,
       'estado_registro': 1,
@@ -6133,7 +6133,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50682,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '490',
+      'numero': 490,
       'titulo': 'QHITTNACAS CATOKANI',
       'orden': 1,
       'estado_registro': 1,
@@ -6142,7 +6142,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50683,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '491',
+      'numero': 491,
       'titulo': 'GRACIAS PODEROSO JESUS',
       'orden': 2,
       'estado_registro': 1,
@@ -6151,7 +6151,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50684,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '491',
+      'numero': 491,
       'titulo': 'YUSPAGARSMAW CH\'AMAN CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -6160,7 +6160,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50685,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '492',
+      'numero': 492,
       'titulo': 'LOS REDIMIDOS DE CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -6169,7 +6169,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50686,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '492',
+      'numero': 492,
       'titulo': 'DIOSAN KHESPIYATANACAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -6178,7 +6178,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50687,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '493',
+      'numero': 493,
       'titulo': 'CUANDO VENGA MI CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -6187,7 +6187,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50688,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '493',
+      'numero': 493,
       'titulo': 'CRISTOJJ JUTCAN UCQHAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -6196,7 +6196,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50689,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '493',
+      'numero': 493,
       'titulo': 'EL SEÑOR JESUS',
       'orden': 4,
       'estado_registro': 1,
@@ -6205,7 +6205,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50690,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '493',
+      'numero': 493,
       'titulo': 'TATIT JESUSAJJ',
       'orden': 3,
       'estado_registro': 1,
@@ -6214,7 +6214,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50691,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '493',
+      'numero': 493,
       'titulo': 'HE DECIDIDO',
       'orden': 6,
       'estado_registro': 1,
@@ -6223,7 +6223,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50692,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '493',
+      'numero': 493,
       'titulo': 'NAYAJJ AMTASTWA',
       'orden': 5,
       'estado_registro': 1,
@@ -6232,7 +6232,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50693,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '494',
+      'numero': 494,
       'titulo': 'CUANDO EL SEÑOR ME LLAME',
       'orden': 2,
       'estado_registro': 1,
@@ -6241,7 +6241,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50694,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '494',
+      'numero': 494,
       'titulo': 'CRISTOTEJJ NAYAR JAWSJJETASPA',
       'orden': 1,
       'estado_registro': 1,
@@ -6250,7 +6250,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50695,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '495',
+      'numero': 495,
       'titulo': 'POR LOS CAMPOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6259,7 +6259,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50696,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '495',
+      'numero': 495,
       'titulo': 'PATA PAPANS KHERWATOKENS',
       'orden': 1,
       'estado_registro': 1,
@@ -6268,7 +6268,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50697,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '496',
+      'numero': 496,
       'titulo': 'TU VIVES SIEMPRE',
       'orden': 2,
       'estado_registro': 1,
@@ -6277,7 +6277,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50698,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '496',
+      'numero': 496,
       'titulo': 'JUMAW JACASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -6286,7 +6286,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50699,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '497',
+      'numero': 497,
       'titulo': 'TU PALABRA SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -6295,7 +6295,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50700,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '497',
+      'numero': 497,
       'titulo': 'ARUNACAMAJJ TATIT',
       'orden': 1,
       'estado_registro': 1,
@@ -6304,7 +6304,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50701,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '498',
+      'numero': 498,
       'titulo': 'CORO DE BIENVENIDA',
       'orden': 2,
       'estado_registro': 1,
@@ -6313,7 +6313,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50702,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '498',
+      'numero': 498,
       'titulo': 'WALIC PURT\'ANTAJJ JILATA',
       'orden': 1,
       'estado_registro': 1,
@@ -6322,7 +6322,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50703,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '499',
+      'numero': 499,
       'titulo': 'PERSEVEREMOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6331,7 +6331,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50704,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '499',
+      'numero': 499,
       'titulo': 'SUYT\'APJJAÑANI,JILANAC',
       'orden': 1,
       'estado_registro': 1,
@@ -6340,7 +6340,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50705,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '500',
+      'numero': 500,
       'titulo': 'AGUA DE VIDA',
       'orden': 2,
       'estado_registro': 1,
@@ -6349,7 +6349,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50706,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '500',
+      'numero': 500,
       'titulo': 'JACAÑA UMA',
       'orden': 1,
       'estado_registro': 1,
@@ -6358,7 +6358,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50707,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '501',
+      'numero': 501,
       'titulo': 'CRISTO TE LLAMA',
       'orden': 2,
       'estado_registro': 1,
@@ -6367,7 +6367,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50708,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '501',
+      'numero': 501,
       'titulo': 'CRISTOW JUMAR JAWSTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -6376,7 +6376,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50709,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '502',
+      'numero': 502,
       'titulo': 'TEN MISERICORDIA',
       'orden': 2,
       'estado_registro': 1,
@@ -6385,7 +6385,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50710,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '502',
+      'numero': 502,
       'titulo': 'QHUYAPT\'AYITAY TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -6394,7 +6394,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50711,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '503',
+      'numero': 503,
       'titulo': 'LOS QUE CONFIAN',
       'orden': 2,
       'estado_registro': 1,
@@ -6403,7 +6403,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50712,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '503',
+      'numero': 503,
       'titulo': 'CH\'AMAPAR CATUYASIREJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -6412,7 +6412,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50713,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '504',
+      'numero': 504,
       'titulo': 'DAME UN CORAZON DISPUESTO',
       'orden': 2,
       'estado_registro': 1,
@@ -6421,7 +6421,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50714,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '504',
+      'numero': 504,
       'titulo': 'YANAPT\'ITAY MUNAT TATITU',
       'orden': 1,
       'estado_registro': 1,
@@ -6430,7 +6430,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50715,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '505',
+      'numero': 505,
       'titulo': 'TRABAJEMOS SIEMPRE',
       'orden': 2,
       'estado_registro': 1,
@@ -6439,7 +6439,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50716,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '505',
+      'numero': 505,
       'titulo': 'IRNAKANANIYA',
       'orden': 1,
       'estado_registro': 1,
@@ -6448,7 +6448,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50717,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '506',
+      'numero': 506,
       'titulo': 'GRANDES COSAS',
       'orden': 2,
       'estado_registro': 1,
@@ -6457,7 +6457,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50718,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '506',
+      'numero': 506,
       'titulo': 'DIOSAJJ LURIW MUSPARCAÑA',
       'orden': 1,
       'estado_registro': 1,
@@ -6466,7 +6466,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50719,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '507',
+      'numero': 507,
       'titulo': 'YA NO MÁS PECADOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6475,7 +6475,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50720,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '507',
+      'numero': 507,
       'titulo': 'ARMASIÑAMAIITA',
       'orden': 1,
       'estado_registro': 1,
@@ -6484,7 +6484,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50721,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '508',
+      'numero': 508,
       'titulo': 'AYUDAME PADRE',
       'orden': 2,
       'estado_registro': 1,
@@ -6493,7 +6493,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50722,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '508',
+      'numero': 508,
       'titulo': 'YANAPT\'ITAY TATAY',
       'orden': 1,
       'estado_registro': 1,
@@ -6502,7 +6502,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50723,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '509',
+      'numero': 509,
       'titulo': 'DOS CAMINOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6511,7 +6511,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50724,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '509',
+      'numero': 509,
       'titulo': 'PÄ THAQUIW UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -6520,7 +6520,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50725,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '510',
+      'numero': 510,
       'titulo': 'CON LÁGRIMAS SEMBRARON',
       'orden': 2,
       'estado_registro': 1,
@@ -6529,7 +6529,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50726,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '510',
+      'numero': 510,
       'titulo': 'JACHT\'ASIS YUPUCHIRINACAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -6538,7 +6538,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50727,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '511',
+      'numero': 511,
       'titulo': 'EN LAS LUCHAS Y PRUEBAS',
       'orden': 2,
       'estado_registro': 1,
@@ -6547,7 +6547,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50728,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '511',
+      'numero': 511,
       'titulo': 'JAN WALT\'AÑ YANT\'ANACANSA',
       'orden': 1,
       'estado_registro': 1,
@@ -6556,7 +6556,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50729,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '512',
+      'numero': 512,
       'titulo': 'EL AMOR DE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6565,7 +6565,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50730,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '512',
+      'numero': 512,
       'titulo': 'DIOSAN MUNASIÑAPAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -6574,7 +6574,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50731,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '513',
+      'numero': 513,
       'titulo': 'RIOS DE AGUA VIVA',
       'orden': 2,
       'estado_registro': 1,
@@ -6583,7 +6583,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50732,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '513',
+      'numero': 513,
       'titulo': 'TATITUR SUYT\'IRINACAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -6592,7 +6592,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50733,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '514',
+      'numero': 514,
       'titulo': 'BIENAVENTURADO',
       'orden': 2,
       'estado_registro': 1,
@@ -6601,7 +6601,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50734,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '514',
+      'numero': 514,
       'titulo': 'CUSISIÑANIW JACHIRINACAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -6610,7 +6610,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50735,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '515',
+      'numero': 515,
       'titulo': 'TU PALABRA ME DA GOZO',
       'orden': 2,
       'estado_registro': 1,
@@ -6619,7 +6619,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50736,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '515',
+      'numero': 515,
       'titulo': 'ARUMAW CUSISIYITU',
       'orden': 1,
       'estado_registro': 1,
@@ -6628,7 +6628,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50737,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '516',
+      'numero': 516,
       'titulo': 'JESUCRISTO ES LA VIDA',
       'orden': 2,
       'estado_registro': 1,
@@ -6637,7 +6637,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50738,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '516',
+      'numero': 516,
       'titulo': 'JESUCRISTUW KHESPIYIRISAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -6646,7 +6646,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50739,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '517',
+      'numero': 517,
       'titulo': 'TU DICES QUE VAS A LA IGLESIA',
       'orden': 2,
       'estado_registro': 1,
@@ -6655,7 +6655,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50740,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '517',
+      'numero': 517,
       'titulo': 'IGLESIARUW SARAJJ SISTAWA',
       'orden': 1,
       'estado_registro': 1,
@@ -6664,7 +6664,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50741,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '518',
+      'numero': 518,
       'titulo': 'JEHOVA A SU PUEBLO LOS GUIABA',
       'orden': 2,
       'estado_registro': 1,
@@ -6673,7 +6673,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50742,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '518',
+      'numero': 518,
       'titulo': 'DIOS AWQUIJJ MARCAPAR IRPANWA',
       'orden': 1,
       'estado_registro': 1,
@@ -6682,7 +6682,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50743,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '519',
+      'numero': 519,
       'titulo': 'NI EL ORO, NI LA PLATA',
       'orden': 2,
       'estado_registro': 1,
@@ -6691,7 +6691,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50744,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '519',
+      'numero': 519,
       'titulo': 'JANIW KORIS KOLLKES KHESPIYAPCATAMPTI',
       'orden': 1,
       'estado_registro': 1,
@@ -6700,7 +6700,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50745,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '520',
+      'numero': 520,
       'titulo': 'TRAER OFRENDAS',
       'orden': 2,
       'estado_registro': 1,
@@ -6709,7 +6709,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50746,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '520',
+      'numero': 520,
       'titulo': 'DIOSARUY OFRENDAM LOKTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -6718,7 +6718,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50747,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '521',
+      'numero': 521,
       'titulo': 'JESUCRISTO VOLVERA',
       'orden': 2,
       'estado_registro': 1,
@@ -6727,7 +6727,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50748,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '521',
+      'numero': 521,
       'titulo': 'JESUSAJJ NIYAW CUTT\'ANJAN',
       'orden': 1,
       'estado_registro': 1,
@@ -6736,7 +6736,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50749,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '522',
+      'numero': 522,
       'titulo': 'DE BOLIVIA A LAS NACIONES',
       'orden': 2,
       'estado_registro': 1,
@@ -6745,7 +6745,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50750,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '522',
+      'numero': 522,
       'titulo': 'BOLIVIAT YAQHA MARCARUSA',
       'orden': 1,
       'estado_registro': 1,
@@ -6754,7 +6754,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50751,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '523',
+      'numero': 523,
       'titulo': 'TRABAJANDO EN LA OBRA',
       'orden': 2,
       'estado_registro': 1,
@@ -6763,7 +6763,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50752,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '523',
+      'numero': 523,
       'titulo': 'IRNAKAÑANI DIOSATAQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -6772,7 +6772,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50753,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '524',
+      'numero': 524,
       'titulo': 'AGUITA DULCE',
       'orden': 2,
       'estado_registro': 1,
@@ -6781,7 +6781,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50754,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '524',
+      'numero': 524,
       'titulo': 'MOJSA UMITA',
       'orden': 1,
       'estado_registro': 1,
@@ -6790,7 +6790,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50755,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '525',
+      'numero': 525,
       'titulo': 'EL MURIO POR TI',
       'orden': 2,
       'estado_registro': 1,
@@ -6799,7 +6799,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50756,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '525',
+      'numero': 525,
       'titulo': 'NAYA LAYC JIWAWAYI',
       'orden': 1,
       'estado_registro': 1,
@@ -6808,7 +6808,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50757,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '526',
+      'numero': 526,
       'titulo': 'DOS CAMINOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6817,7 +6817,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50758,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '526',
+      'numero': 526,
       'titulo': 'PÄ THAQUIW UTJI',
       'orden': 1,
       'estado_registro': 1,
@@ -6826,7 +6826,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50759,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '527',
+      'numero': 527,
       'titulo': 'ALLA EN EL PARAISO',
       'orden': 2,
       'estado_registro': 1,
@@ -6835,7 +6835,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50760,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '527',
+      'numero': 527,
       'titulo': 'QHAYA ALAJJPACHA',
       'orden': 1,
       'estado_registro': 1,
@@ -6844,7 +6844,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50761,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '528',
+      'numero': 528,
       'titulo': 'CAMINO AL INFIERNO',
       'orden': 2,
       'estado_registro': 1,
@@ -6853,7 +6853,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50762,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '528',
+      'numero': 528,
       'titulo': 'INFIERNOR IRPIR THAQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -6862,7 +6862,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50763,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '529',
+      'numero': 529,
       'titulo': 'DOS CAMINOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6871,7 +6871,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50764,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '529',
+      'numero': 529,
       'titulo': 'PÄ THAQUITJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -6880,7 +6880,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50765,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '530',
+      'numero': 530,
       'titulo': 'SE VA LA IGLESIA',
       'orden': 2,
       'estado_registro': 1,
@@ -6889,7 +6889,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50766,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '530',
+      'numero': 530,
       'titulo': 'IGLESIAJJ SARJJEWA',
       'orden': 1,
       'estado_registro': 1,
@@ -6898,7 +6898,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50767,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '531',
+      'numero': 531,
       'titulo': 'DAME TU MANO SEÑOR',
       'orden': 2,
       'estado_registro': 1,
@@ -6907,7 +6907,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50768,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '531',
+      'numero': 531,
       'titulo': 'AMPARAMAN YANAPT\'ITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -6916,7 +6916,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50769,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '532',
+      'numero': 532,
       'titulo': 'TÚ ERES SANTO',
       'orden': 2,
       'estado_registro': 1,
@@ -6925,7 +6925,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50770,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '532',
+      'numero': 532,
       'titulo': 'CH\'AMANITAW KOLLANATAW',
       'orden': 1,
       'estado_registro': 1,
@@ -6934,7 +6934,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50771,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '533',
+      'numero': 533,
       'titulo': 'ESPIRITU SANTO',
       'orden': 2,
       'estado_registro': 1,
@@ -6943,7 +6943,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50772,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '533',
+      'numero': 533,
       'titulo': 'WIÑAY SUMA KOLLAN AJAYU',
       'orden': 1,
       'estado_registro': 1,
@@ -6952,7 +6952,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50773,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '534',
+      'numero': 534,
       'titulo': 'PURIFICA MI CORAZON',
       'orden': 2,
       'estado_registro': 1,
@@ -6961,7 +6961,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50774,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '534',
+      'numero': 534,
       'titulo': 'K\'OMACHASIMAY CHUYMAM',
       'orden': 1,
       'estado_registro': 1,
@@ -6970,7 +6970,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50775,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '535',
+      'numero': 535,
       'titulo': 'HE PECADO EN ESTE MUNDO',
       'orden': 2,
       'estado_registro': 1,
@@ -6979,7 +6979,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50776,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '535',
+      'numero': 535,
       'titulo': 'JUCH\'A LURAWIN SARNAKTA',
       'orden': 1,
       'estado_registro': 1,
@@ -6988,7 +6988,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50777,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '536',
+      'numero': 536,
       'titulo': 'CANTEMOS TODOS UNIDOS',
       'orden': 2,
       'estado_registro': 1,
@@ -6997,7 +6997,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50778,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '536',
+      'numero': 536,
       'titulo': 'TAKENI K\'OCHUÑANI TATITU',
       'orden': 1,
       'estado_registro': 1,
@@ -7006,7 +7006,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50779,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '537',
+      'numero': 537,
       'titulo': 'HUBO UN HOMBRE',
       'orden': 2,
       'estado_registro': 1,
@@ -7015,7 +7015,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50780,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '537',
+      'numero': 537,
       'titulo': 'CRISTOJJ JACAÑAP',
       'orden': 1,
       'estado_registro': 1,
@@ -7024,7 +7024,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50781,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '538',
+      'numero': 538,
       'titulo': 'CAMINO VERDADERO',
       'orden': 2,
       'estado_registro': 1,
@@ -7033,7 +7033,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50782,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '538',
+      'numero': 538,
       'titulo': 'CHEKA THAQUIPANJJAMAYA',
       'orden': 1,
       'estado_registro': 1,
@@ -7042,7 +7042,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50783,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '539',
+      'numero': 539,
       'titulo': 'A JESÚS ALABARE',
       'orden': 2,
       'estado_registro': 1,
@@ -7051,7 +7051,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50784,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '539',
+      'numero': 539,
       'titulo': 'TATITUR K\'OCHUPUNIW',
       'orden': 1,
       'estado_registro': 1,
@@ -7060,7 +7060,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50785,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '540',
+      'numero': 540,
       'titulo': 'DESAMPARADO ME SIENTO CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -7069,7 +7069,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50786,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '540',
+      'numero': 540,
       'titulo': 'SAPACJAMAQUIW NAYAJJ UÑJJASTA',
       'orden': 1,
       'estado_registro': 1,
@@ -7078,7 +7078,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50787,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '541',
+      'numero': 541,
       'titulo': 'VOY POR LOS VALLES',
       'orden': 2,
       'estado_registro': 1,
@@ -7087,7 +7087,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50788,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '541',
+      'numero': 541,
       'titulo': 'VALLE TOKENSA',
       'orden': 1,
       'estado_registro': 1,
@@ -7096,7 +7096,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50789,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '542',
+      'numero': 542,
       'titulo': 'EN ESTE MUNDO',
       'orden': 2,
       'estado_registro': 1,
@@ -7105,7 +7105,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50790,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '542',
+      'numero': 542,
       'titulo': 'ACAPACHAN JACAÑAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -7114,7 +7114,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50791,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '543',
+      'numero': 543,
       'titulo': 'BENDITO, SANTO PADRE DIOS',
       'orden': 2,
       'estado_registro': 1,
@@ -7123,7 +7123,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50792,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '543',
+      'numero': 543,
       'titulo': 'KOLLAN SUMA DIOS AWQUIJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -7132,7 +7132,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50793,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '544',
+      'numero': 544,
       'titulo': 'SEÑOR JESUS',
       'orden': 2,
       'estado_registro': 1,
@@ -7141,7 +7141,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50794,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '544',
+      'numero': 544,
       'titulo': 'KOLLAN TATIT JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -7150,7 +7150,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50795,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '545',
+      'numero': 545,
       'titulo': 'SOLO DIOS ME SOSTIENE',
       'orden': 2,
       'estado_registro': 1,
@@ -7159,7 +7159,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50796,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '545',
+      'numero': 545,
       'titulo': 'JUMAMPISCAWA NAYAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -7168,7 +7168,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50797,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '546',
+      'numero': 546,
       'titulo': 'A DONDE PODRIA IR',
       'orden': 2,
       'estado_registro': 1,
@@ -7177,7 +7177,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50798,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '546',
+      'numero': 546,
       'titulo': 'CAWCSARURAC SARIRIST',
       'orden': 1,
       'estado_registro': 1,
@@ -7186,7 +7186,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50799,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '547',
+      'numero': 547,
       'titulo': 'FUISTE MI LUZ',
       'orden': 2,
       'estado_registro': 1,
@@ -7195,7 +7195,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50800,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '547',
+      'numero': 547,
       'titulo': 'JUMAW KHANAJJATAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -7204,7 +7204,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50801,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '548',
+      'numero': 548,
       'titulo': 'AL CIELO ESTOY YENDO',
       'orden': 2,
       'estado_registro': 1,
@@ -7213,7 +7213,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50802,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '548',
+      'numero': 548,
       'titulo': 'ALAJJPACHAR PURJJAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -7222,7 +7222,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50803,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '549',
+      'numero': 549,
       'titulo': 'MIRA LA HORMIGA',
       'orden': 2,
       'estado_registro': 1,
@@ -7231,7 +7231,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50804,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '549',
+      'numero': 549,
       'titulo': 'Q\'ISIMIRAN THAQUIPAY UÑTAM',
       'orden': 1,
       'estado_registro': 1,
@@ -7240,7 +7240,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50805,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '550',
+      'numero': 550,
       'titulo': 'PROSIGO A LA META',
       'orden': 2,
       'estado_registro': 1,
@@ -7249,7 +7249,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50806,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '550',
+      'numero': 550,
       'titulo': 'PURIÑCAM SARASCAQUIW',
       'orden': 1,
       'estado_registro': 1,
@@ -7258,7 +7258,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50807,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '551',
+      'numero': 551,
       'titulo': 'GUIAME OH CRISTO',
       'orden': 2,
       'estado_registro': 1,
@@ -7267,7 +7267,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50808,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '551',
+      'numero': 551,
       'titulo': 'IRPITAY MUNATA CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -7276,7 +7276,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50809,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '552',
+      'numero': 552,
       'titulo': 'DOS CAMINOS',
       'orden': 2,
       'estado_registro': 1,
@@ -7285,7 +7285,7 @@ class DataPoderDelEvangelio {
       'id_cancion': 50810,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 5, // Poder del Evangelio
-      'numero': '552',
+      'numero': 552,
       'titulo': 'PÄ THAQUI',
       'orden': 1,
       'estado_registro': 1,

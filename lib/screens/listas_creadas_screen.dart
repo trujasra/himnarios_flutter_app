@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../data/canciones_service.dart';
 import '../theme/app_theme.dart';
@@ -34,7 +35,6 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
     super.initState();
     _currentHimnario = widget.himnario ?? {};
     _cargarListas();
-    
     // Usar el color del himnario si está disponible, sino usar el color primario
     final color = widget.himnario != null 
         ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
@@ -56,7 +56,12 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
         ? _getColorForHimnario(widget.himnario!['nombre']?.toString() ?? '')
         : AppTheme.primaryColor;
     StatusBarManager.setStatusBarColorWithDelay(color);
-    _cargarListas(); // Recargar cuando regrese de otras pantallas
+    
+    // Recargar listas cuando se vuelva a esta pantalla
+    // pero solo si no estamos ya cargando
+    if (!_isLoading) {
+      _cargarListas();
+    }
   }
 
   Future<void> _eliminarLista(Map<String, dynamic> lista) async {
@@ -72,9 +77,12 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
             onPressed: () => Navigator.pop(context, false),
             child: const Text('Cancelar'),
           ),
-          TextButton(
+          ElevatedButton(
             onPressed: () => Navigator.pop(context, true),
-            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red,
+              foregroundColor: Colors.white,
+            ),
             child: const Text('Eliminar'),
           ),
         ],
@@ -103,31 +111,45 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
 
     final nuevoNombre = await showDialog<String>(
       context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Editar nombre de la lista'),
-        content: TextField(
-          controller: controller,
-          decoration: const InputDecoration(
-            labelText: 'Nombre de la lista',
-            border: OutlineInputBorder(),
-          ),
-          autofocus: true,
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Cancelar'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              final nombre = controller.text.trim();
-              if (nombre.isNotEmpty) {
-                Navigator.pop(context, nombre);
-              }
-            },
-            child: const Text('Guardar'),
-          ),
-        ],
+      builder: (context) => StatefulBuilder(
+        builder: (context, setState) {
+          return AlertDialog(
+            title: const Text('Editar nombre de la lista'),
+            content: TextField(
+              controller: controller,
+              decoration: InputDecoration(
+                labelText: 'Nombre de la lista',
+                border: const OutlineInputBorder(),
+                helperText: '${controller.text.length}/50',
+                counterText: '',
+              ),
+              autofocus: true,
+              maxLength: 50,
+              onChanged: (value) {
+                setState(() {}); // Actualizar el contador
+              },
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Cancelar'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  final nombre = controller.text.trim();
+                  if (nombre.isNotEmpty && nombre.length <= 50) {
+                    Navigator.pop(context, nombre);
+                  }
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                ),
+                child: const Text('Guardar'),
+              ),
+            ],
+          );
+        },
       ),
     );
 
@@ -154,48 +176,66 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
   }
 
   Future<void> _cargarListas() async {
+    if (!mounted) return;
+    
     setState(() => _isLoading = true);
 
     try {
-      final listas = await _cancionesService.getListas();
-      final conteos = await _cancionesService.getConteoCancionesPorLista();
+      // Cargar listas y conteos en paralelo
+      final results = await Future.wait([
+        _cancionesService.getListas(),
+        _cancionesService.getConteoCancionesPorLista(),
+      ]);
 
-      setState(() {
-        _listas = listas;
-        _conteosCanciones = conteos;
-        _isLoading = false;
-      });
+      if (!mounted) return;
+      
+      final listas = results[0] as List<Map<String, dynamic>>;
+      final conteos = results[1] as Map<int, int>;
+      
+      // Asegurar que todas las listas tengan un conteo, aunque sea 0
+      final conteosActualizados = <int, int>{};
+      for (var lista in listas) {
+        final idLista = lista['id_lista'] as int;
+        conteosActualizados[idLista] = conteos[idLista] ?? 0;
+      }
+      
+      // Debug: Verificar las listas y sus conteos
+      if (kDebugMode) {
+        print('=== Listas y Conteos ===');
+        print('Total de listas: ${listas.length}');
+        for (var lista in listas) {
+          final idLista = lista['id_lista'] as int;
+          final nombreLista = lista['nombre'] as String;
+          final cantidad = conteosActualizados[idLista] ?? 0;
+          print('Lista: "$nombreLista" (ID: $idLista) - Canciones: $cantidad');
+        }
+        print('=======================');
+      }
+
+      if (mounted) {
+        setState(() {
+          _listas = listas;
+          _conteosCanciones = conteosActualizados;
+          _isLoading = false;
+        });
+      }
     } catch (e) {
       print('Error cargando listas: $e');
-      setState(() => _isLoading = false);
+      if (mounted) {
+        setState(() => _isLoading = false);
+        CustomSnackBar.showError(context, 'Error al cargar las listas');
+      }
     }
   }
 
   // Método para obtener el color específico según el nombre del himnario
   Color _getColorForHimnario(String nombre) {
-    try {
-      return DynamicTheme.getColorForHimnarioSync(nombre);
-    } catch (e) {
-      print('Error al obtener color para $nombre: $e');
-    }
-    return AppTheme.primaryColor;
+    return DynamicTheme.getColorForHimnarioSync(nombre);
   }
 
   // Método para obtener el gradiente específico según el nombre del himnario
   LinearGradient _getGradientForHimnario(String nombre) {
-    try {
-      // Intentar obtener el gradiente del himnario
-      return DynamicTheme.getGradientForHimnarioSync(nombre);
-    } catch (e) {
-      print('Error al obtener gradiente para $nombre: $e');
-    }
-
-    // Si no se encuentra el gradiente o hay un error, usar colores por defecto
-    return const LinearGradient(
-      colors: [AppTheme.primaryColor, AppTheme.secondaryColor],
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-    );
+    return DynamicTheme.getGradientForHimnarioSync(nombre);
   }
 
   @override
@@ -216,182 +256,199 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
               foregroundColor: Colors.white,
               elevation: 0,
               centerTitle: true,
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+              actions: [
+                IconButton(
+                  icon: const Icon(Icons.close, color: Colors.white),
+                  onPressed: () => Navigator.of(context).pop(),
+                ),
+              ],
             ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : _listas.isEmpty
           ? _buildEmptyState()
           : ListView.builder(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(6),
               itemCount: _listas.length,
               itemBuilder: (context, index) {
                 final lista = _listas[index];
                 final cantidadCanciones =
                     _conteosCanciones[lista['id_lista']] ?? 0;
 
-                return Card(
-                  elevation: 2,
-                  margin: const EdgeInsets.only(bottom: 12),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>
-                              detalle_lista.DetalleListaScreen(
-                                idLista: lista['id_lista'],
-                                nombreLista: lista['nombre'],
-                                mostrarBotonCerrar: widget.mostrarBotonCerrar,
-                              ),
-                        ),
-                      );
-                    },
-                    borderRadius: BorderRadius.circular(12),
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Row(
-                        children: [
-                          // Ícono de lista con gradiente
-                          Container(
-                            width: 48,
-                            height: 48,
-                            decoration: BoxDecoration(
-                              gradient: _getGradientForHimnario(
-                                _currentHimnario['nombre']?.toString() ??
-                                    'Listas',
-                              ),
-                              borderRadius: BorderRadius.circular(12),
-                              // boxShadow: [
-                              //   BoxShadow(
-                              //     color: Colors.black..withValues(alpha: 0.2),
-                              //     blurRadius: 4,
-                              //     offset: const Offset(0, 2),
-                              //   ),
-                              // ],
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            detalle_lista.DetalleListaScreen(
+                              idLista: lista['id_lista'],
+                              nombreLista: lista['nombre'],
+                              mostrarBotonCerrar: widget.mostrarBotonCerrar,
                             ),
-                            child: const Center(
-                              child: Icon(
-                                Icons.playlist_play,
-                                color: Colors.white,
-                                size: 24,
-                              ),
-                            ),
-                          ),
-
-                          const SizedBox(width: 16),
-
-                          // Información de la lista
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  lista['nombre'].toString().toUpperCase(),
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    color: Color.fromARGB(255, 30, 45, 59),
-                                  ),
-                                  maxLines: 5,
-                                  overflow: TextOverflow.ellipsis,
-                                  softWrap: true,
+                      ),
+                    );
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(bottom: 12),
+                    child: Card(
+                      elevation: 2,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                          children: [
+                            // Ícono de lista con gradiente
+                            Container(
+                              width: 48,
+                              height: 48,
+                              decoration: BoxDecoration(
+                                gradient: _getGradientForHimnario(
+                                  _currentHimnario['nombre']?.toString() ??
+                                      'Listas',
                                 ),
-                                const SizedBox(height: 4),
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 6,
-                                    vertical: 4,
+                                borderRadius: BorderRadius.circular(12),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withValues(alpha: 0.2),
+                                    blurRadius: 4,
+                                    offset: const Offset(0, 2),
                                   ),
-                                  decoration: BoxDecoration(
-                                    color: const Color.fromARGB(
-                                      255,
-                                      0,
-                                      156,
-                                      135,
-                                    ).withValues(alpha: 0.1),
-                                    borderRadius: BorderRadius.circular(8),
-                                    border: Border.all(
-                                      color: const Color.fromARGB(
-                                        255,
-                                        0,
-                                        156,
-                                        135,
-                                      ).withValues(alpha: 0.3),
+                                ],
+                              ),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.playlist_play,
+                                  color: Colors.white,
+                                  size: 24,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 16),
+
+                            // Información de la lista
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    lista['nombre'].toString().toUpperCase(),
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                      color: Color.fromARGB(255, 30, 45, 59),
                                     ),
+                                    maxLines: 4,
+                                    overflow: TextOverflow.ellipsis,
+                                    softWrap: true,
                                   ),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
+                                  if (lista['descripcion'] != null &&
+                                      lista['descripcion'].toString().isNotEmpty) ...[
+                                    const SizedBox(height: 2),
+                                    Text(
+                                      lista['descripcion'].toString(),
+                                      style: const TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey,
+                                        fontStyle: FontStyle.italic,
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ],
+                                  const SizedBox(height: 4),
+                                  Wrap(
+                                    spacing: 8,
+                                    runSpacing: 4,
                                     children: [
-                                      // const Icon(
-                                      //   Icons.music_note,
-                                      //   size: 10,
-                                      //   color: Color.fromARGB(255, 0, 156, 135),
-                                      // ),
-                                      // const SizedBox(width: 2),
-                                      Text(
-                                        '$cantidadCanciones canción${cantidadCanciones != 1 ? 'es' : ''}',
-                                        style: const TextStyle(
-                                          fontSize: 10,
-                                          color: Color.fromARGB(
-                                            255,
-                                            0,
-                                            156,
-                                            135,
+                                      // Badge de cantidad de canciones
+                                      Container(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 4,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[100],
+                                          borderRadius: BorderRadius.circular(12),
+                                          border: Border.all(
+                                            color: Colors.grey[300]!,
+                                            width: 0.5,
                                           ),
-                                          fontWeight: FontWeight.w500,
+                                        ),
+                                        child: Text(
+                                          '$cantidadCanciones ${cantidadCanciones == 1 ? 'canción' : 'canciones'}',
+                                          style: const TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.grey,
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                         ),
                                       ),
                                     ],
                                   ),
+                                ],
+                              ),
+                            ),
+
+                            // Iconos de acción directos
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                // Botón de editar
+                                GestureDetector(
+                                  onTap: () => _editarNombreLista(lista),
+                                  child: Container(
+                                    width: 36,
+                                    height: 36,
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue.shade50,
+                                      borderRadius: BorderRadius.circular(18),
+                                      border: Border.all(
+                                        color: Colors.blue.shade200,
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Icon(
+                                      Icons.edit,
+                                      color: Colors.blue.shade600,
+                                      size: 18,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                // Botón de eliminar
+                                GestureDetector(
+                                  onTap: () => _eliminarLista(lista),
+                                  child: Container(
+                                    width: 36,
+                                    height: 36,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red.shade50,
+                                      borderRadius: BorderRadius.circular(18),
+                                      border: Border.all(
+                                        color: Colors.red.shade200,
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Icon(
+                                      Icons.delete_outline,
+                                      color: Colors.red.shade600,
+                                      size: 18,
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
-                          ),
-                          // Botones de acción
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              // Botón de editar
-                              Material(
-                                color: Colors.blue.shade50,
-                                borderRadius: BorderRadius.circular(8),
-                                child: InkWell(
-                                  onTap: () => _editarNombreLista(lista),
-                                  borderRadius: BorderRadius.circular(8),
-                                  child: const Padding(
-                                    padding: EdgeInsets.all(8),
-                                    child: Icon(
-                                      Icons.edit,
-                                      color: Colors.blue,
-                                      size: 20,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 8),
-                              // Botón de eliminar
-                              Material(
-                                color: Colors.red.shade50,
-                                borderRadius: BorderRadius.circular(8),
-                                child: InkWell(
-                                  onTap: () => _eliminarLista(lista),
-                                  borderRadius: BorderRadius.circular(8),
-                                  child: const Padding(
-                                    padding: EdgeInsets.all(8),
-                                    child: Icon(
-                                      Icons.delete,
-                                      color: Colors.red,
-                                      size: 20,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -453,4 +510,6 @@ class _ListasCreadasScreenState extends State<ListasCreadasScreen>
       ),
     );
   }
+
+
 }

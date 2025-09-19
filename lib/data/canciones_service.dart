@@ -10,6 +10,11 @@ class CancionesService {
 
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
 
+  /// Obtener el conteo total de canciones de todos los himnarios activos
+  Future<int> getTotalCancionesHimnariosActivos() async {
+    return await _dbHelper.getTotalCancionesHimnariosActivos();
+  }
+
   Future<Usuario?> getPrimerUsuarioRegistrado() async {
     final db = await _dbHelper
         .database; // Espera el Future para obtener la base de datos
@@ -43,7 +48,7 @@ class CancionesService {
       id: data['id_cancion'],
       titulo: data['titulo'] ?? '',
       tituloSecundario: null, // Por ahora no tenemos título secundario en la BD
-      numero: int.tryParse(data['numero']?.toString() ?? '0') ?? 0,
+      numero: data['numero'] ?? 0, // Ya es INTEGER en la BD
       himnario: data['himnario'] ?? '',
       idioma: data['idioma'] ?? '',
       categoria: '', // Por ahora no tenemos categoría en la BD
@@ -79,6 +84,15 @@ class CancionesService {
       );
       final canciones = data.map((item) => _mapToCancion(item)).toList();
 
+      print(
+        'DEBUG: Canciones cargadas para $nombreHimnario: ${canciones.length}',
+      );
+      for (var cancion in canciones.take(3)) {
+        print(
+          '  - ${cancion.numero}: ${cancion.titulo} (${cancion.idioma}) - Letra: ${cancion.letra.isNotEmpty ? "SÍ" : "NO"}',
+        );
+      }
+
       // Ordenar por número y luego por idioma
       canciones.sort((a, b) {
         if (a.numero != b.numero) {
@@ -94,6 +108,59 @@ class CancionesService {
     }
   }
 
+  // Búsqueda optimizada de canciones por himnario con filtros
+  Future<List<Cancion>> buscarCancionesPorHimnario(
+    String nombreHimnario, {
+    String? busqueda,
+    List<String>? idiomas,
+    int? limit,
+  }) async {
+    try {
+      // Obtener el ID del himnario
+      final himnarios = await _dbHelper.getHimnarios();
+      final himnario = himnarios.firstWhere(
+        (h) => h['nombre'] == nombreHimnario,
+        orElse: () => {'id_tipo_himnario': 0},
+      );
+
+      if (himnario['id_tipo_himnario'] == 0) return [];
+
+      final data = await _dbHelper.buscarCancionesPorHimnario(
+        himnario['id_tipo_himnario'],
+        busqueda: busqueda,
+        idiomas: idiomas,
+        limit: limit,
+      );
+
+      return data.map((item) => _mapToCancion(item)).toList();
+    } catch (e) {
+      print('Error en búsqueda optimizada: $e');
+      return [];
+    }
+  }
+
+  // Búsqueda global optimizada
+  Future<List<Cancion>> buscarCanciones({
+    String? busqueda,
+    List<String>? himnarios,
+    List<String>? idiomas,
+    int? limit,
+  }) async {
+    try {
+      final data = await _dbHelper.buscarCanciones(
+        busqueda: busqueda,
+        himnarios: himnarios,
+        idiomas: idiomas,
+        limit: limit,
+      );
+
+      return data.map((item) => _mapToCancion(item)).toList();
+    } catch (e) {
+      print('Error en búsqueda global: $e');
+      return [];
+    }
+  }
+
   // Obtener una canción específica por ID
   Future<Cancion?> getCancionPorId(int id) async {
     try {
@@ -105,6 +172,34 @@ class CancionesService {
     } catch (e) {
       print('Error obteniendo canción por ID: $e');
       return null;
+    }
+  }
+
+  // Búsqueda rápida por número en un himnario específico
+  Future<List<Cancion>> buscarPorNumero(
+    String nombreHimnario,
+    int numero,
+  ) async {
+    try {
+      // Obtener el ID del himnario
+      final himnarios = await _dbHelper.getHimnarios();
+      final himnario = himnarios.firstWhere(
+        (h) => h['nombre'] == nombreHimnario,
+        orElse: () => {'id_tipo_himnario': 0},
+      );
+
+      if (himnario['id_tipo_himnario'] == 0) return [];
+
+      final data = await _dbHelper.buscarCancionesPorHimnario(
+        himnario['id_tipo_himnario'],
+        busqueda: numero.toString(),
+        limit: 10,
+      );
+
+      return data.map((item) => _mapToCancion(item)).toList();
+    } catch (e) {
+      print('Error en búsqueda por número: $e');
+      return [];
     }
   }
 
@@ -250,6 +345,8 @@ class CancionesService {
         await _dbHelper.poblarBaseDatosInicial();
       } else {
         print('La base de datos ya está poblada');
+        // Actualizar índices en bases de datos existentes
+        await _dbHelper.actualizarIndices();
       }
     } catch (e) {
       print('Error inicializando base de datos: $e');
@@ -347,6 +444,15 @@ class CancionesService {
 
   Future<void> inicializarColoresPorDefecto() async {
     await _dbHelper.inicializarColoresPorDefecto();
+  }
+
+  // Optimizar la base de datos para mejorar el rendimiento
+  Future<void> optimizarBaseDatos() async {
+    try {
+      await _dbHelper.optimizarBaseDatos();
+    } catch (e) {
+      print('Error optimizando base de datos desde servicio: $e');
+    }
   }
 
   // ==================== MÉTODOS PARA LISTAS ====================
@@ -449,16 +555,25 @@ class CancionesService {
 
   // Obtener canciones de una lista específica
   Future<List<Cancion>> getCancionesDeLista(int idLista) async {
-    final db = await _dbHelper.database;
-    final List<Map<String, dynamic>> maps = await db.rawQuery('''
-      SELECT c.* 
-      FROM Cancion c
-      INNER JOIN Lista_Cancion lc ON c.id_cancion = lc.id_cancion
-      WHERE lc.id_lista = ?
-      ORDER BY c.titulo
-    ''', [idLista]);
+    try {
+      final db = await _dbHelper.database;
+      final List<Map<String, dynamic>> maps = await db.rawQuery('''
+        SELECT c.* 
+        FROM Cancion c
+        INNER JOIN Lista_Cancion lc ON c.id_cancion = lc.id_cancion
+        INNER JOIN Par_Tipo_Himnario th ON c.id_tipo_himnario = th.id_tipo_himnario
+        WHERE lc.id_lista = ? 
+          AND lc.estado_registro = 1
+          AND c.estado_registro = 1
+          AND th.estado_registro = 1
+        ORDER BY lc.fecha_registro ASC
+      ''', [idLista]);
 
-    return List.generate(maps.length, (i) => _mapToCancion(maps[i]));
+      return List.generate(maps.length, (i) => _mapToCancion(maps[i]));
+    } catch (e) {
+      print('Error obteniendo canciones de la lista: $e');
+      return [];
+    }
   }
 
   // Eliminar una canción de una lista

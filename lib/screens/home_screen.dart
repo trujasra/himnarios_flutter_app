@@ -31,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   List<String> idiomas = [];
   bool isLoading = true;
   List<int> _favoritos = [];
+  int totalCanciones = 0;
 
   final CancionesService _cancionesService = CancionesService();
 
@@ -92,16 +93,40 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
     setState(() => isLoading = true);
 
     try {
-      final cancionesData = await _cancionesService.getCanciones();
+      List<Cancion> cancionesData;
+      
+      // Si hay búsqueda o filtros, usar búsqueda optimizada
+      if (busqueda.isNotEmpty || chipsSeleccionados.isNotEmpty) {
+        final himnariosSeleccionados = chipsSeleccionados
+            .where((chip) => himnarios.any((h) => h.nombre == chip))
+            .toList();
+        final idiomasSeleccionados = chipsSeleccionados
+            .where((chip) => idiomas.contains(chip))
+            .toList();
+            
+        cancionesData = await _cancionesService.buscarCanciones(
+          busqueda: busqueda.isNotEmpty ? busqueda : null,
+          himnarios: himnariosSeleccionados.isNotEmpty ? himnariosSeleccionados : null,
+          idiomas: idiomasSeleccionados.isNotEmpty ? idiomasSeleccionados : null,
+          limit: 200, // Limitar resultados para mejor rendimiento en home
+        );
+      } else {
+        // Si no hay filtros, cargar todas las canciones (con límite)
+        cancionesData = await _cancionesService.buscarCanciones(limit: 100);
+      }
+      
       final himnariosData = await _cancionesService.getHimnariosCompletos();
       final idiomasData = await _cancionesService.getIdiomas();
       final favoritosData = await _cancionesService.getFavoritos();
+      final totalCancionesData = await _cancionesService.getTotalCancionesHimnariosActivos();
 
       setState(() {
         canciones = cancionesData;
         himnarios = himnariosData;
         idiomas = idiomasData;
         favoritos = favoritosData;
+        _favoritos = List.from(favoritosData);
+        totalCanciones = totalCancionesData;
         isLoading = false;
       });
     } catch (e) {
@@ -116,37 +141,14 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   }
 
   List<Cancion> get cancionesFiltradas {
-    return canciones.where((cancion) {
-      if (chipsSeleccionados.isNotEmpty) {
-        final himnariosSeleccionados = chipsSeleccionados
-            .where((chip) => himnarios.any((h) => h.nombre == chip))
-            .toList();
-        final idiomasSeleccionados = chipsSeleccionados
-            .where((chip) => idiomas.contains(chip))
-            .toList();
+    // Las canciones ya vienen filtradas desde la base de datos
+    return canciones;
+  }
 
-        if (himnariosSeleccionados.isNotEmpty &&
-            !himnariosSeleccionados.contains(cancion.himnario)) {
-          return false;
-        }
-        if (idiomasSeleccionados.isNotEmpty &&
-            !idiomasSeleccionados.contains(cancion.idioma)) {
-          return false;
-        }
-      }
-
-      if (busqueda.isNotEmpty) {
-        final busq = busqueda.toLowerCase();
-        final coincideNumero = cancion.numero.toString().contains(busq);
-        final coincideTexto =
-            cancion.titulo.toLowerCase().contains(busq) ||
-            (cancion.tituloSecundario?.toLowerCase().contains(busq) ?? false);
-        if (!coincideNumero && !coincideTexto) {
-          return false;
-        }
-      }
-      return true;
-    }).toList();
+  int get cantidadAMostrar {
+    // Siempre mostrar el total de canciones de himnarios activos
+    // Solo cambia cuando se activa/desactiva un himnario (estado_registro)
+    return totalCanciones;
   }
 
   Future<void> toggleFavorito(int cancionId) async {
@@ -225,7 +227,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              '${canciones.length}',
+              '$cantidadAMostrar',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 16,
@@ -416,12 +418,16 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                       const SizedBox(height: 16),
                       SearchBarWidget(
                         busqueda: busqueda,
-                        onBusquedaChanged: (value) =>
-                            setState(() => busqueda = value),
+                        onBusquedaChanged: (value) {
+                          setState(() => busqueda = value);
+                          _cargarDatos(); // Recargar con nueva búsqueda
+                        },
                         chips: chips,
                         chipsSeleccionados: chipsSeleccionados,
-                        onChipsSeleccionados: (chips) =>
-                            setState(() => chipsSeleccionados = chips),
+                        onChipsSeleccionados: (chips) {
+                          setState(() => chipsSeleccionados = chips);
+                          _cargarDatos(); // Recargar con nuevos filtros
+                        },
                         himnarioColor: AppTheme.primaryColor,
                       ),
                     ],

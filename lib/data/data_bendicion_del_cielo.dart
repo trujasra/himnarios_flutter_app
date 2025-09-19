@@ -4,7 +4,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10001,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '1',
+      'numero': 1,
       'titulo': 'BODAS DEL CORDERO',
       'orden': 1,
       'estado_registro': 1,
@@ -13,7 +13,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10002,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '2',
+      'numero': 2,
       'titulo': 'PRIMERO ES EL AMO',
       'orden': 1,
       'estado_registro': 1,
@@ -22,7 +22,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10003,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '3',
+      'numero': 3,
       'titulo': 'ALLI YO VIVIRE',
       'orden': 1,
       'estado_registro': 1,
@@ -31,7 +31,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10004,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '4',
+      'numero': 4,
       'titulo': 'LOS VALIENTES QUE LUCHARÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -40,7 +40,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10005,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '5',
+      'numero': 5,
       'titulo': 'MI PUEBLO PARA JESUCRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -49,7 +49,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10006,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '6',
+      'numero': 6,
       'titulo': 'CON LA ESPERANZA',
       'orden': 1,
       'estado_registro': 1,
@@ -58,7 +58,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10007,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '7',
+      'numero': 7,
       'titulo': 'ALZA TUS MANOS',
       'orden': 1,
       'estado_registro': 1,
@@ -67,7 +67,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10008,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '8',
+      'numero': 8,
       'titulo': 'ASI QUIERO ALABARTE',
       'orden': 1,
       'estado_registro': 1,
@@ -76,7 +76,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10009,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '9',
+      'numero': 9,
       'titulo': 'BUSCANDO LA PAZ',
       'orden': 1,
       'estado_registro': 1,
@@ -85,7 +85,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10010,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '10',
+      'numero': 10,
       'titulo': 'VIVIRE EN SUS MORADAS',
       'orden': 1,
       'estado_registro': 1,
@@ -94,7 +94,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10011,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '11',
+      'numero': 11,
       'titulo': 'CUANDO VENGA EL REY',
       'orden': 1,
       'estado_registro': 1,
@@ -103,7 +103,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10012,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '12',
+      'numero': 12,
       'titulo': 'SI CRISTO A MI ME LLAMA',
       'orden': 1,
       'estado_registro': 1,
@@ -112,7 +112,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10013,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '13',
+      'numero': 13,
       'titulo': 'CON PANDEROS TE ALABARE',
       'orden': 1,
       'estado_registro': 1,
@@ -121,7 +121,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10014,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '14',
+      'numero': 14,
       'titulo': 'ME GOZO EN LA TRIBULACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -130,7 +130,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10015,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '15',
+      'numero': 15,
       'titulo': 'LAS CADENAS SE VAN ROMPIENDO',
       'orden': 1,
       'estado_registro': 1,
@@ -139,7 +139,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10016,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '16',
+      'numero': 16,
       'titulo': 'QUERIDO HERMANO NO DESMAYES',
       'orden': 1,
       'estado_registro': 1,
@@ -148,7 +148,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10017,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '17',
+      'numero': 17,
       'titulo': 'PODEROSO JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -157,7 +157,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10018,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '18',
+      'numero': 18,
       'titulo': 'CIUDAD SANTA',
       'orden': 1,
       'estado_registro': 1,
@@ -166,7 +166,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10019,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '19',
+      'numero': 19,
       'titulo': 'MARAVILLOSO DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -175,7 +175,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10020,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '20',
+      'numero': 20,
       'titulo': 'PADRE CUANTO TE AMO',
       'orden': 1,
       'estado_registro': 1,
@@ -184,7 +184,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10021,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '21',
+      'numero': 21,
       'titulo': 'CRISTO ROMPE LAS CADENAS',
       'orden': 1,
       'estado_registro': 1,
@@ -193,7 +193,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10022,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '22',
+      'numero': 22,
       'titulo': 'SANTO ESPIRITU DIVINO',
       'orden': 1,
       'estado_registro': 1,
@@ -202,7 +202,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10023,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '23',
+      'numero': 23,
       'titulo': 'GRACIAS PADRE ETERNO',
       'orden': 1,
       'estado_registro': 1,
@@ -211,7 +211,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10024,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '24',
+      'numero': 24,
       'titulo': 'TENGO CRISTO EN MI VIDA',
       'orden': 1,
       'estado_registro': 1,
@@ -220,7 +220,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10025,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '25',
+      'numero': 25,
       'titulo': 'EL RAPTO',
       'orden': 1,
       'estado_registro': 1,
@@ -229,7 +229,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10026,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '26',
+      'numero': 26,
       'titulo': 'EL AMOR DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -238,7 +238,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10027,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '27',
+      'numero': 27,
       'titulo': 'EL ESPIRITU DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -247,7 +247,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10028,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '28',
+      'numero': 28,
       'titulo': 'FUERZA MI HERMANO NO TE DETENGAS',
       'orden': 1,
       'estado_registro': 1,
@@ -256,7 +256,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10029,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '29',
+      'numero': 29,
       'titulo': 'ESPIRITU SANTO DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -265,7 +265,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10030,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '30',
+      'numero': 30,
       'titulo': 'CRISTO VIVE EN MI',
       'orden': 1,
       'estado_registro': 1,
@@ -274,7 +274,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10031,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '31',
+      'numero': 31,
       'titulo': 'ESCOGIDOS DEL SENOR',
       'orden': 1,
       'estado_registro': 1,
@@ -283,7 +283,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10032,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '32',
+      'numero': 32,
       'titulo': 'AGUILAS DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -292,7 +292,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10033,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '33',
+      'numero': 33,
       'titulo': 'POR ALEGRIA CANTARE',
       'orden': 1,
       'estado_registro': 1,
@@ -301,7 +301,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10034,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '34',
+      'numero': 34,
       'titulo': 'A DIOS DEMOS GLORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -310,7 +310,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10035,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '35',
+      'numero': 35,
       'titulo': 'PROMESA FIEL',
       'orden': 1,
       'estado_registro': 1,
@@ -319,7 +319,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10036,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '36',
+      'numero': 36,
       'titulo': 'PODEROSO JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -328,7 +328,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10037,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '37',
+      'numero': 37,
       'titulo': 'MIENTRAS TENGA VIDA',
       'orden': 1,
       'estado_registro': 1,
@@ -337,7 +337,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10038,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '38',
+      'numero': 38,
       'titulo': 'GLORIA ALELUYA',
       'orden': 1,
       'estado_registro': 1,
@@ -346,7 +346,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10039,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '39',
+      'numero': 39,
       'titulo': 'LOS QUE LUCHARON SIN DESMAYAR',
       'orden': 1,
       'estado_registro': 1,
@@ -355,7 +355,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10040,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '40',
+      'numero': 40,
       'titulo': 'QUIERO TRABAJAR PARA MI SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -364,7 +364,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10041,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '41',
+      'numero': 41,
       'titulo': 'DESPUES DE LAS PRUEBAS VIENE LA VICTORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -373,7 +373,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10042,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '42',
+      'numero': 42,
       'titulo': 'LA OBRA EN EL SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -382,7 +382,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10043,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '43',
+      'numero': 43,
       'titulo': 'OH MI PADRE SANTO',
       'orden': 1,
       'estado_registro': 1,
@@ -391,7 +391,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10044,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '44',
+      'numero': 44,
       'titulo': 'SE FUERON LAS PENAS',
       'orden': 1,
       'estado_registro': 1,
@@ -400,7 +400,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10045,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '45',
+      'numero': 45,
       'titulo': 'LA SIEMBRA',
       'orden': 1,
       'estado_registro': 1,
@@ -409,7 +409,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10046,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '46',
+      'numero': 46,
       'titulo': 'VIVIR EN ESPIRITU',
       'orden': 1,
       'estado_registro': 1,
@@ -418,7 +418,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10047,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '47',
+      'numero': 47,
       'titulo': 'PRECIO INCOMPARABLE',
       'orden': 1,
       'estado_registro': 1,
@@ -427,7 +427,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10048,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '48',
+      'numero': 48,
       'titulo': 'HAY UN GOZO EN MI SER',
       'orden': 1,
       'estado_registro': 1,
@@ -436,7 +436,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10049,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '49',
+      'numero': 49,
       'titulo': 'NUESTRA FIESTA YA LLEGO',
       'orden': 1,
       'estado_registro': 1,
@@ -445,7 +445,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10050,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '50',
+      'numero': 50,
       'titulo': 'DIAS FELICES VENDRAN PARA MI',
       'orden': 1,
       'estado_registro': 1,
@@ -454,7 +454,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10051,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '51',
+      'numero': 51,
       'titulo': 'TE AMO MI JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -463,7 +463,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10052,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '52',
+      'numero': 52,
       'titulo': 'EN LAS MANOS DE MI JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -472,7 +472,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10053,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '53',
+      'numero': 53,
       'titulo': 'QHUYAPAYASIR DIOS AWQUEJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -481,7 +481,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10054,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '54',
+      'numero': 54,
       'titulo': 'AQUI NO ACABA NUESTRAS LUCHAS',
       'orden': 1,
       'estado_registro': 1,
@@ -490,7 +490,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10055,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '55',
+      'numero': 55,
       'titulo': 'YUSPAGARSMAW CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -499,7 +499,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10056,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '56',
+      'numero': 56,
       'titulo': 'LA VENIDA DE CRISTO EL REY',
       'orden': 1,
       'estado_registro': 1,
@@ -508,7 +508,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10057,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '57',
+      'numero': 57,
       'titulo': 'APTASJJESTANI',
       'orden': 1,
       'estado_registro': 1,
@@ -517,7 +517,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10058,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '58',
+      'numero': 58,
       'titulo': 'QUEDATE EN MI VIDA',
       'orden': 1,
       'estado_registro': 1,
@@ -526,7 +526,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10059,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '59',
+      'numero': 59,
       'titulo': 'VOY A SEGUIR TUS PASOS',
       'orden': 1,
       'estado_registro': 1,
@@ -535,7 +535,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10060,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '60',
+      'numero': 60,
       'titulo': 'COLUMNAS DE FUEGO',
       'orden': 1,
       'estado_registro': 1,
@@ -544,7 +544,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10061,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '61',
+      'numero': 61,
       'titulo': 'MI JESÚS TODOPODEROSO',
       'orden': 1,
       'estado_registro': 1,
@@ -553,7 +553,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10062,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '62',
+      'numero': 62,
       'titulo': 'CAMINO PEDREGOSO',
       'orden': 1,
       'estado_registro': 1,
@@ -562,7 +562,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10063,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '63',
+      'numero': 63,
       'titulo': 'A LA GRAN FIESTA ME VOY',
       'orden': 1,
       'estado_registro': 1,
@@ -571,7 +571,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10064,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '64',
+      'numero': 64,
       'titulo': 'PROEZA DE ALABANZA',
       'orden': 1,
       'estado_registro': 1,
@@ -580,7 +580,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10065,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '65',
+      'numero': 65,
       'titulo': 'ESPIRITU SANTO',
       'orden': 1,
       'estado_registro': 1,
@@ -589,7 +589,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10066,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '66',
+      'numero': 66,
       'titulo': 'SIERVO DEL SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -598,7 +598,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10067,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '67',
+      'numero': 67,
       'titulo': 'GOZO Y PAZ',
       'orden': 1,
       'estado_registro': 1,
@@ -607,7 +607,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10068,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '68',
+      'numero': 68,
       'titulo': 'QUIERO VER TU GLORIA',
       'orden': 1,
       'estado_registro': 1,
@@ -616,7 +616,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10069,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '69',
+      'numero': 69,
       'titulo': 'BAJO LA SOMBRA',
       'orden': 1,
       'estado_registro': 1,
@@ -625,7 +625,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10070,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '70',
+      'numero': 70,
       'titulo': 'DIOS CREADOR',
       'orden': 1,
       'estado_registro': 1,
@@ -634,7 +634,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10071,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '71',
+      'numero': 71,
       'titulo': 'CRISTO, CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -643,7 +643,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10072,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '72',
+      'numero': 72,
       'titulo': 'COMO RIOS DE AGUA VIVA',
       'orden': 1,
       'estado_registro': 1,
@@ -652,7 +652,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10073,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '73',
+      'numero': 73,
       'titulo': 'CANTA Y ALEGRATE',
       'orden': 1,
       'estado_registro': 1,
@@ -661,7 +661,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10074,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '74',
+      'numero': 74,
       'titulo': 'VERDADERO AMOR DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -670,7 +670,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10075,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '75',
+      'numero': 75,
       'titulo': 'DIA DE GOZO',
       'orden': 1,
       'estado_registro': 1,
@@ -679,7 +679,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10076,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '76',
+      'numero': 76,
       'titulo': 'BENDECIDAS PROSPERADAS',
       'orden': 1,
       'estado_registro': 1,
@@ -688,7 +688,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10077,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '77',
+      'numero': 77,
       'titulo': 'NO TE DETENGAS',
       'orden': 1,
       'estado_registro': 1,
@@ -697,7 +697,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10078,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '78',
+      'numero': 78,
       'titulo': 'YO NO ME RINDO',
       'orden': 1,
       'estado_registro': 1,
@@ -706,7 +706,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10079,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '79',
+      'numero': 79,
       'titulo': 'TODOS LOS DIAS',
       'orden': 1,
       'estado_registro': 1,
@@ -715,7 +715,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10080,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '80',
+      'numero': 80,
       'titulo': 'LLUVIA TARDIA',
       'orden': 1,
       'estado_registro': 1,
@@ -724,7 +724,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10081,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '81',
+      'numero': 81,
       'titulo': 'MI CORAZÓN CONTENTO ESTA',
       'orden': 1,
       'estado_registro': 1,
@@ -733,7 +733,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10082,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '82',
+      'numero': 82,
       'titulo': 'CON EL PODER DE MI JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -742,7 +742,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10083,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '83',
+      'numero': 83,
       'titulo': 'TIEMPO FINAL',
       'orden': 1,
       'estado_registro': 1,
@@ -751,7 +751,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10084,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '84',
+      'numero': 84,
       'titulo': 'TODA LA GLORIA ES PARA TI',
       'orden': 1,
       'estado_registro': 1,
@@ -760,7 +760,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10085,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '85',
+      'numero': 85,
       'titulo': 'HOMBRE DE GUERRA',
       'orden': 1,
       'estado_registro': 1,
@@ -769,7 +769,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10086,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '86',
+      'numero': 86,
       'titulo': 'ALEGREMENTE ESTOY CANTANDO',
       'orden': 1,
       'estado_registro': 1,
@@ -778,7 +778,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10087,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '87',
+      'numero': 87,
       'titulo': 'DIOSAN MUNASIÑAPASTI',
       'orden': 1,
       'estado_registro': 1,
@@ -787,7 +787,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10088,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '88',
+      'numero': 88,
       'titulo': 'JACAÑAJJ NITAW TUCUSINI',
       'orden': 1,
       'estado_registro': 1,
@@ -796,7 +796,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10089,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '89',
+      'numero': 89,
       'titulo': 'TODO TIENE TIEMPO',
       'orden': 1,
       'estado_registro': 1,
@@ -805,7 +805,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10090,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '90',
+      'numero': 90,
       'titulo': 'DESPIERTA MI HERMANO',
       'orden': 1,
       'estado_registro': 1,
@@ -814,7 +814,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10091,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '91',
+      'numero': 91,
       'titulo': 'LLENA BAUTIZA RENUEVAME',
       'orden': 1,
       'estado_registro': 1,
@@ -823,7 +823,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10092,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '92',
+      'numero': 92,
       'titulo': 'SIERVO DE DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -832,7 +832,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10093,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '93',
+      'numero': 93,
       'titulo': 'JUC\'A URUNACAMPIQUIWA',
       'orden': 1,
       'estado_registro': 1,
@@ -841,7 +841,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10094,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '94',
+      'numero': 94,
       'titulo': 'VAMOS ALABAR AL SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -850,7 +850,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10095,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '95',
+      'numero': 95,
       'titulo': 'BOLIVIA ES PARA CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -859,7 +859,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10096,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '96',
+      'numero': 96,
       'titulo': 'COMO DIOS AMO AL MUNDO',
       'orden': 1,
       'estado_registro': 1,
@@ -868,7 +868,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10097,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '97',
+      'numero': 97,
       'titulo': 'JAKEN MUNASIÑAPAJJ TUCUSIRIQUIW',
       'orden': 1,
       'estado_registro': 1,
@@ -877,7 +877,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10098,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '98',
+      'numero': 98,
       'titulo': 'EN EL LIBRO DEL CORDERO',
       'orden': 1,
       'estado_registro': 1,
@@ -886,7 +886,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10099,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '99',
+      'numero': 99,
       'titulo': 'QUE MI LAMPARA ESTE LLENA',
       'orden': 1,
       'estado_registro': 1,
@@ -895,7 +895,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10100,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '100',
+      'numero': 100,
       'titulo': 'CUNATS LLAQUISTA',
       'orden': 1,
       'estado_registro': 1,
@@ -904,7 +904,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10101,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '101',
+      'numero': 101,
       'titulo': 'JICH\'URUQUICAN',
       'orden': 1,
       'estado_registro': 1,
@@ -913,7 +913,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10102,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '102',
+      'numero': 102,
       'titulo': 'TODOS DEBEN DE SABER',
       'orden': 1,
       'estado_registro': 1,
@@ -922,7 +922,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10103,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '103',
+      'numero': 103,
       'titulo': 'ALAJJPACHARUW JICHAJ SARASCTA',
       'orden': 1,
       'estado_registro': 1,
@@ -931,7 +931,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10104,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '104',
+      'numero': 104,
       'titulo': 'HOY TODOS ALABEMOS',
       'orden': 1,
       'estado_registro': 1,
@@ -940,7 +940,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10105,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '105',
+      'numero': 105,
       'titulo': 'CUNJA SUMAS DIOSAMPIJACAÑAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -949,7 +949,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10106,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '106',
+      'numero': 106,
       'titulo': 'GRACIAS MI PADRE BENDITO',
       'orden': 1,
       'estado_registro': 1,
@@ -958,7 +958,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10107,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '107',
+      'numero': 107,
       'titulo': 'EL SEÑOR TE LLAMA A TI',
       'orden': 1,
       'estado_registro': 1,
@@ -967,7 +967,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10108,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '108',
+      'numero': 108,
       'titulo': 'MIENTRAS TENGA VOZ',
       'orden': 1,
       'estado_registro': 1,
@@ -976,7 +976,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10109,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '109',
+      'numero': 109,
       'titulo': 'HE PECADO CONTRA TI',
       'orden': 1,
       'estado_registro': 1,
@@ -985,7 +985,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10110,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '110',
+      'numero': 110,
       'titulo': 'TE NECESITO SEÑOR CADA DIA',
       'orden': 1,
       'estado_registro': 1,
@@ -994,7 +994,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10111,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '111',
+      'numero': 111,
       'titulo': 'QUE MÁS PUEDO OFRECERTE',
       'orden': 1,
       'estado_registro': 1,
@@ -1003,7 +1003,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10112,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '112',
+      'numero': 112,
       'titulo': 'A DONDE VOY A IR SEPARADO DE TI',
       'orden': 1,
       'estado_registro': 1,
@@ -1012,7 +1012,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10113,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '113',
+      'numero': 113,
       'titulo': 'ESPIRITU SANTO VEN A MI VIDA',
       'orden': 1,
       'estado_registro': 1,
@@ -1021,7 +1021,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10114,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '114',
+      'numero': 114,
       'titulo': 'DESAMPARADO ME SIENTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1030,7 +1030,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10115,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '115',
+      'numero': 115,
       'titulo': 'A DONDE PODRIA IR',
       'orden': 1,
       'estado_registro': 1,
@@ -1039,7 +1039,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10116,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '116',
+      'numero': 116,
       'titulo': 'SEGUIDORES DE CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1048,7 +1048,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10117,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '117',
+      'numero': 117,
       'titulo': 'TODO ES POSIBLE',
       'orden': 1,
       'estado_registro': 1,
@@ -1057,7 +1057,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10118,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '118',
+      'numero': 118,
       'titulo': 'ALLA EN EL CIELO',
       'orden': 1,
       'estado_registro': 1,
@@ -1066,7 +1066,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10119,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '119',
+      'numero': 119,
       'titulo': 'ARCASCAQUIMAW CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1075,7 +1075,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10120,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '120',
+      'numero': 120,
       'titulo': 'VANA ES LA HERMOSURA',
       'orden': 1,
       'estado_registro': 1,
@@ -1084,7 +1084,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10121,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '121',
+      'numero': 121,
       'titulo': 'CRISTO YA VIENE',
       'orden': 1,
       'estado_registro': 1,
@@ -1093,7 +1093,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10122,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '122',
+      'numero': 122,
       'titulo': 'DONDE ESTAN LOS HERMANOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1102,7 +1102,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10123,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '123',
+      'numero': 123,
       'titulo': 'CALLES DE ORO',
       'orden': 1,
       'estado_registro': 1,
@@ -1111,7 +1111,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10124,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '124',
+      'numero': 124,
       'titulo': 'SIERVO AMADO',
       'orden': 1,
       'estado_registro': 1,
@@ -1120,7 +1120,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10125,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '125',
+      'numero': 125,
       'titulo': 'GRACIAS PADRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1129,7 +1129,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10126,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '126',
+      'numero': 126,
       'titulo': 'ALLA EN EL CIELO BRILLABA UNA LUZ',
       'orden': 1,
       'estado_registro': 1,
@@ -1138,7 +1138,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10127,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '127',
+      'numero': 127,
       'titulo': 'JESUCRISTORUW JACAÑ CATUYTA',
       'orden': 1,
       'estado_registro': 1,
@@ -1147,7 +1147,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10128,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '128',
+      'numero': 128,
       'titulo': 'AQUÍ SE SIENTE LA PRESENCIA DEL SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1156,7 +1156,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10129,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '129',
+      'numero': 129,
       'titulo': 'SI ME PREGUNTAN',
       'orden': 1,
       'estado_registro': 1,
@@ -1165,7 +1165,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10130,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '130',
+      'numero': 130,
       'titulo': 'NO PUEDO ESTAR TRISTE',
       'orden': 1,
       'estado_registro': 1,
@@ -1174,7 +1174,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10131,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '131',
+      'numero': 131,
       'titulo': 'ROPA BLANCA VESTIRE',
       'orden': 1,
       'estado_registro': 1,
@@ -1183,7 +1183,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10132,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '132',
+      'numero': 132,
       'titulo': 'VOY A SEGUIR CANTANDO',
       'orden': 1,
       'estado_registro': 1,
@@ -1192,7 +1192,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10133,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '133',
+      'numero': 133,
       'titulo': 'EL GOZO DEL SEÑOR MI FORTALEZA ES',
       'orden': 1,
       'estado_registro': 1,
@@ -1201,7 +1201,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10134,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '134',
+      'numero': 134,
       'titulo': 'HE DECIDIDO SEGUIR A CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1210,7 +1210,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10135,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '135',
+      'numero': 135,
       'titulo': 'COMO NO VOY A VER A JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -1219,7 +1219,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10136,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '136',
+      'numero': 136,
       'titulo': 'ESTE AVIVAMIENTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1228,7 +1228,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10137,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '137',
+      'numero': 137,
       'titulo': 'DAMASCO',
       'orden': 1,
       'estado_registro': 1,
@@ -1237,7 +1237,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10138,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '138',
+      'numero': 138,
       'titulo': 'PON ACEITE A MI LAMPARA SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1246,7 +1246,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10139,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '139',
+      'numero': 139,
       'titulo': '¿DONDE ESTA TU DIOS?',
       'orden': 1,
       'estado_registro': 1,
@@ -1255,7 +1255,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10140,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '140',
+      'numero': 140,
       'titulo': 'CUANDO CRISTO VINO',
       'orden': 1,
       'estado_registro': 1,
@@ -1264,7 +1264,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10141,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '141',
+      'numero': 141,
       'titulo': 'JUVENTUD BOLIVIANA',
       'orden': 1,
       'estado_registro': 1,
@@ -1273,7 +1273,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10142,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '142',
+      'numero': 142,
       'titulo': 'POR LAS CALLES DE PALESTINA',
       'orden': 1,
       'estado_registro': 1,
@@ -1282,7 +1282,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10143,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '143',
+      'numero': 143,
       'titulo': 'GRANDES Y MARAVILLOSAS',
       'orden': 1,
       'estado_registro': 1,
@@ -1291,7 +1291,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10144,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '144',
+      'numero': 144,
       'titulo': 'CRISTO BRILLA EN MI SER',
       'orden': 1,
       'estado_registro': 1,
@@ -1300,7 +1300,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10145,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '145',
+      'numero': 145,
       'titulo': 'CON CRISTO EN LA FAMILIA',
       'orden': 1,
       'estado_registro': 1,
@@ -1309,7 +1309,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10146,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '146',
+      'numero': 146,
       'titulo': 'PADRE BENDITO',
       'orden': 1,
       'estado_registro': 1,
@@ -1318,7 +1318,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10147,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '147',
+      'numero': 147,
       'titulo': 'SIGO ESCALANDO PELDAÑOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1327,7 +1327,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10148,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '148',
+      'numero': 148,
       'titulo': 'ENTERA CONSAGRACIÓN',
       'orden': 1,
       'estado_registro': 1,
@@ -1336,7 +1336,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10149,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '149',
+      'numero': 149,
       'titulo': 'DULCE CONSUELO',
       'orden': 1,
       'estado_registro': 1,
@@ -1345,7 +1345,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10150,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '150',
+      'numero': 150,
       'titulo': 'PUEDO OIR TU VOZ LLAMANDO',
       'orden': 1,
       'estado_registro': 1,
@@ -1354,7 +1354,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10151,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '151',
+      'numero': 151,
       'titulo': 'EL GRAN DIA VIENE',
       'orden': 1,
       'estado_registro': 1,
@@ -1363,7 +1363,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10152,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '152',
+      'numero': 152,
       'titulo': 'ESTRELLAS EN MI CORONA',
       'orden': 1,
       'estado_registro': 1,
@@ -1372,7 +1372,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10153,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '153',
+      'numero': 153,
       'titulo': 'DIOS OS GUARDE',
       'orden': 2,
       'estado_registro': 1,
@@ -1381,7 +1381,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10154,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '153',
+      'numero': 153,
       'titulo': 'DIOSA WIMASCATAM',
       'orden': 1,
       'estado_registro': 1,
@@ -1390,7 +1390,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10155,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '154',
+      'numero': 154,
       'titulo': 'TODO A CRISTO YO ME RINDO',
       'orden': 1,
       'estado_registro': 1,
@@ -1399,7 +1399,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10156,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '155',
+      'numero': 155,
       'titulo': 'CARA A CARA',
       'orden': 1,
       'estado_registro': 1,
@@ -1408,7 +1408,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10157,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '156',
+      'numero': 156,
       'titulo': 'CUAN GRANDE ES EL',
       'orden': 2,
       'estado_registro': 1,
@@ -1417,7 +1417,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10158,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '156',
+      'numero': 156,
       'titulo': 'CUNJA JACH\'AS TATITOJJAJJ',
       'orden': 1,
       'estado_registro': 1,
@@ -1426,7 +1426,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10159,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '157',
+      'numero': 157,
       'titulo': 'CUANDO ALLA SE PASE LISTA',
       'orden': 1,
       'estado_registro': 1,
@@ -1435,7 +1435,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10160,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '158',
+      'numero': 158,
       'titulo': 'SANTO ESPIRITU, DESCIENDE',
       'orden': 1,
       'estado_registro': 1,
@@ -1444,7 +1444,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10161,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '159',
+      'numero': 159,
       'titulo': 'DEL AMOR DIVINO ¿QUIEN ME APARTARÁ?',
       'orden': 2,
       'estado_registro': 1,
@@ -1453,7 +1453,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10162,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '159',
+      'numero': 159,
       'titulo': '¿QHITIS DIOS AWQUEJJAT APAKETANI?',
       'orden': 1,
       'estado_registro': 1,
@@ -1462,7 +1462,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10163,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '160',
+      'numero': 160,
       'titulo': 'CRISTOJJ AWATIREJJAW',
       'orden': 1,
       'estado_registro': 1,
@@ -1471,7 +1471,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10164,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '160',
+      'numero': 160,
       'titulo': 'JEHOVA ES MI PASTOR',
       'orden': 2,
       'estado_registro': 1,
@@ -1480,7 +1480,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10165,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '161',
+      'numero': 161,
       'titulo': 'JACAÑAJJ TUCUSINIW',
       'orden': 1,
       'estado_registro': 1,
@@ -1489,7 +1489,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10166,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '162',
+      'numero': 162,
       'titulo': 'JANIW AJJSARAÑAJJ UTJQUITI',
       'orden': 1,
       'estado_registro': 1,
@@ -1498,7 +1498,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10167,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '163',
+      'numero': 163,
       'titulo': 'ALLI NO HABRA TRIBULACION',
       'orden': 1,
       'estado_registro': 1,
@@ -1507,7 +1507,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10168,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '164',
+      'numero': 164,
       'titulo': 'DIOS AWQUI UÑTANITAY',
       'orden': 1,
       'estado_registro': 1,
@@ -1516,7 +1516,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10169,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '165',
+      'numero': 165,
       'titulo': 'IST\'ITAY DIOS AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -1525,7 +1525,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10170,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '166',
+      'numero': 166,
       'titulo': 'QHUYAPAYASIRI KOLLAN SUMA AWQUI',
       'orden': 1,
       'estado_registro': 1,
@@ -1534,7 +1534,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10171,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '167',
+      'numero': 167,
       'titulo': 'QHUYAPT\'AYASITAY CRISTO',
       'orden': 1,
       'estado_registro': 1,
@@ -1543,7 +1543,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10172,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '168',
+      'numero': 168,
       'titulo': 'ACAPACHANJJA JANIW CUNANITSA',
       'orden': 1,
       'estado_registro': 1,
@@ -1552,7 +1552,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10173,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '169',
+      'numero': 169,
       'titulo': 'ALAJJPACHAN YATISIÑANI',
       'orden': 1,
       'estado_registro': 1,
@@ -1561,7 +1561,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10174,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '170',
+      'numero': 170,
       'titulo': 'DEJAME LLORAR EN TUS BRAZOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1570,7 +1570,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10175,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '171',
+      'numero': 171,
       'titulo': 'SIERVO DEL SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1579,7 +1579,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10176,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '172',
+      'numero': 172,
       'titulo': 'CON LA AYUDA DE MI SEÑOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1588,7 +1588,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10177,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '173',
+      'numero': 173,
       'titulo': 'LLENAME DE TU PRESENCIA',
       'orden': 1,
       'estado_registro': 1,
@@ -1597,7 +1597,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10178,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '174',
+      'numero': 174,
       'titulo': 'CRISTON AJJLLITANACAPA',
       'orden': 1,
       'estado_registro': 1,
@@ -1606,7 +1606,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10179,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '175',
+      'numero': 175,
       'titulo': 'SED SANTOS COMO YO',
       'orden': 1,
       'estado_registro': 1,
@@ -1615,7 +1615,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10180,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '176',
+      'numero': 176,
       'titulo': 'DIOS FUERTE Y PODEROSO',
       'orden': 1,
       'estado_registro': 1,
@@ -1624,7 +1624,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10181,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '177',
+      'numero': 177,
       'titulo': 'EN TU PRESENCIA ME GOZARE',
       'orden': 1,
       'estado_registro': 1,
@@ -1633,7 +1633,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10182,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '178',
+      'numero': 178,
       'titulo': 'MUNASIÑAMAJJ JAN TUCUSQUIRIW',
       'orden': 1,
       'estado_registro': 1,
@@ -1642,7 +1642,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10183,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '179',
+      'numero': 179,
       'titulo': 'UN PALACIO TENGO',
       'orden': 1,
       'estado_registro': 1,
@@ -1651,7 +1651,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10184,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '180',
+      'numero': 180,
       'titulo': 'MA UTAW UTJITU',
       'orden': 1,
       'estado_registro': 1,
@@ -1660,7 +1660,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10185,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '180',
+      'numero': 180,
       'titulo': 'TODA BOLIVIA DEBE ESCUCHAR',
       'orden': 2,
       'estado_registro': 1,
@@ -1669,7 +1669,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10186,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '181',
+      'numero': 181,
       'titulo': 'GLORIA A DIOS',
       'orden': 1,
       'estado_registro': 1,
@@ -1678,7 +1678,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10187,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '182',
+      'numero': 182,
       'titulo': 'LO SIENTO EN MI',
       'orden': 1,
       'estado_registro': 1,
@@ -1687,7 +1687,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10188,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '183',
+      'numero': 183,
       'titulo': 'DIOS AWQUISAN C\'AJQUIR UTAPAN',
       'orden': 1,
       'estado_registro': 1,
@@ -1696,7 +1696,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10189,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '184',
+      'numero': 184,
       'titulo': 'MARAVILLOSO JESÚS',
       'orden': 1,
       'estado_registro': 1,
@@ -1705,7 +1705,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10190,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '185',
+      'numero': 185,
       'titulo': 'JUMA SAPARUQUIW YUPAYCHAÑAJJA',
       'orden': 1,
       'estado_registro': 1,
@@ -1714,7 +1714,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10191,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '185',
+      'numero': 185,
       'titulo': 'SOLO A TI QUIERO ALABARTE',
       'orden': 2,
       'estado_registro': 1,
@@ -1723,7 +1723,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10192,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '186',
+      'numero': 186,
       'titulo': 'CORONA DE ORO',
       'orden': 1,
       'estado_registro': 1,
@@ -1732,7 +1732,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10193,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '187',
+      'numero': 187,
       'titulo': 'LA PROMESA ES HASTA MORIR',
       'orden': 1,
       'estado_registro': 1,
@@ -1741,7 +1741,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10194,
       'id_idioma': 2, // Aymara
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '188',
+      'numero': 188,
       'titulo': 'ARCASCAQIMAW',
       'orden': 1,
       'estado_registro': 1,
@@ -1750,7 +1750,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10195,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '189',
+      'numero': 189,
       'titulo': 'ALLA EN EL CIELO',
       'orden': 1,
       'estado_registro': 1,
@@ -1759,7 +1759,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10196,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '190',
+      'numero': 190,
       'titulo': 'EN MOMENTOS DE DOLOR',
       'orden': 1,
       'estado_registro': 1,
@@ -1768,7 +1768,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10197,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '191',
+      'numero': 191,
       'titulo': 'PADRE CELESTIAL',
       'orden': 1,
       'estado_registro': 1,
@@ -1777,7 +1777,7 @@ class DataBendicionDelCielo {
       'id_cancion': 10198,
       'id_idioma': 1, // Español
       'id_tipo_himnario': 1, // Bendicion del Cielo
-      'numero': '192',
+      'numero': 192,
       'titulo': 'ME VOY CON NI JESÚS',
       'orden': 1,
       'estado_registro': 1,

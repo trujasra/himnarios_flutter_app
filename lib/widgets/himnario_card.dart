@@ -237,16 +237,22 @@ class HimnarioCard extends StatelessWidget {
   }
 
   IconData _getIconForHimnario(String nombre) {
-    if (nombre.toLowerCase().contains('bendición del cielo')) {
-      return Icons.favorite;
-    } else if (nombre.toLowerCase().contains('coros cristianos')) {
-      return Icons.music_note;
-    } else if (nombre.toLowerCase().contains('cala')) {
-      return Icons.water_drop;
-    } else if (nombre.toLowerCase().contains('especial')) {
-      return Icons.star;
+    final name = nombre.toLowerCase();
+    print("Checking icon for: $name"); // Debug print
+
+    // Using outline variants for a more elegant, modern look
+    if (name.contains('bendición')) {
+      return Icons.book_outlined; // Outline sparkles
+    } else if (name.contains('coros')) {
+      return Icons.music_note_outlined; // Outline music note
+    } else if (name.contains('cala')) {
+      return Icons.library_books_outlined; // Alternative book-style icon
+    } else if (name.contains('lluvias')) {
+      return Icons.thunderstorm_outlined; // Outline sun
+    } else if (name.contains('poder')) {
+      return Icons.electric_bolt_rounded; // More elegant bolt
     } else {
-      return Icons.book;
+      return Icons.book_outlined; // Outline book with more details
     }
   }
 

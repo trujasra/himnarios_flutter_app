@@ -279,7 +279,7 @@ class CancionesService {
         'colorSecundario': 'violet50',
         'colorTexto': 'violet700',
       },
-      'LLuvias de Bendición': {
+      'Lluvias de Bendición': {
         'color': 'amber',
         'colorSecundario': 'amber50',
         'colorTexto': 'amber700',

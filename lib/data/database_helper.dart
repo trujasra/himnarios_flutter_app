@@ -362,14 +362,14 @@ class DatabaseHelper {
       'Bendición del Cielo',
       'Coros Cristianos',
       'Cala',
-      'LLuvias de Bendición',
+      'Lluvias de Bendición',
       'Poder del Evangelio',
     ];
     final descHimnarios = [
       'Alaba, Oh alma mia a Jehová... Sal 146:1',
       'Cantad al Señor canción nueva... Sal. 96.1',
       'Cantad alegres a Dios... Sal. 100:1',
-      'LLuvias de Bendición',
+      'Lluvias de Bendición',
       'Poder del Evangelio',
     ];
     final colores = [
@@ -1448,7 +1448,7 @@ class DatabaseHelper {
       where: 'id_lista = ? AND id_cancion = ?',
       whereArgs: [idLista, idCancion],
     );
-    
+
     print(
       '🔄 Orden actualizado para canción (Lista: $idLista, Canción: $idCancion, Nuevo orden: $nuevoOrden)',
     );

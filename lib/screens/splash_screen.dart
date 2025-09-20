@@ -28,7 +28,15 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> _initApp() async {
-    await Future.delayed(const Duration(seconds: 2)); // Pequeño delay visual
+    // Check if database is already populated
+    final estaPoblada = await dbHelper.isBaseDatosPoblada();
+
+    // Only show delay if database is already populated
+    if (estaPoblada) {
+      await Future.delayed(const Duration(seconds: 2));
+    }
+
+    //await Future.delayed(const Duration(seconds: 2)); // Pequeño delay visual
 
     // 👇 Forzamos inclusión de himnarios en release
     final _forceIncludeBendicion = DataBendicionDelCielo.canciones;
@@ -41,16 +49,16 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // Inicializar base de datos
     await cancionesService.inicializarBaseDatos();
-    
+
     // Inicializar colores por defecto si no existen
     await cancionesService.inicializarColoresPorDefecto();
-    
+
     // Cargar cache de colores dinámicos
     await DynamicTheme.loadCache();
 
-      // Repoblar canciones de Cala para incluir nuevas canciones
-  //await cancionesService.repoblarCancionesBendicionDelCielo();
-  //await cancionesService.repoblarCancionesPoderDelEvangelio();
+    // Repoblar canciones de Cala para incluir nuevas canciones
+    //await cancionesService.repoblarCancionesBendicionDelCielo();
+    //await cancionesService.repoblarCancionesPoderDelEvangelio();
 
     final db = await dbHelper.database;
 

@@ -61,7 +61,7 @@ class HimnarioCard extends StatelessWidget {
                       ),
                       // Contenido del header
                       Padding(
-                        padding: const EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Row(
                           children: [
                             // Icono del himnario
@@ -82,7 +82,7 @@ class HimnarioCard extends StatelessWidget {
                                 size: 28,
                               ),
                             ),
-                            const SizedBox(width: 16),
+                            const SizedBox(width: 12),
                             // Información del himnario
                             Expanded(
                               child: Column(
@@ -121,7 +121,7 @@ class HimnarioCard extends StatelessWidget {
                             // Badge con cantidad de canciones
                             Container(
                               padding: const EdgeInsets.symmetric(
-                                horizontal: 12,
+                                horizontal: 7,
                                 vertical: 6,
                               ),
                               decoration: BoxDecoration(

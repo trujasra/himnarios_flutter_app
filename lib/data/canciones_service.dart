@@ -554,6 +554,24 @@ class CancionesService {
     }
   }
 
+  // Actualizar el orden de una canción en una lista
+  Future<void> actualizarOrdenCancionEnLista({
+    required int idLista,
+    required int idCancion,
+    required int nuevoOrden,
+  }) async {
+    try {
+      await _dbHelper.actualizarOrdenCancionEnLista(
+        idLista: idLista,
+        idCancion: idCancion,
+        nuevoOrden: nuevoOrden,
+      );
+    } catch (e) {
+      print('Error actualizando orden de canción en lista: $e');
+      rethrow;
+    }
+  }
+
   // Obtener canciones de una lista específica
   Future<List<Cancion>> getCancionesDeLista(int idLista) async {
     try {

@@ -1429,6 +1429,31 @@ class DatabaseHelper {
     );
   }
 
+  // Actualizar el orden de una canción en una lista
+  Future<void> actualizarOrdenCancionEnLista({
+    required int idLista,
+    required int idCancion,
+    required int nuevoOrden,
+  }) async {
+    final db = await instance.database;
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+
+    await db.update(
+      'Lista_Cancion',
+      {
+        'orden': nuevoOrden,
+        'fecha_modificacion': now,
+        'usuario_modificacion': 'ramiro.trujillo',
+      },
+      where: 'id_lista = ? AND id_cancion = ?',
+      whereArgs: [idLista, idCancion],
+    );
+    
+    print(
+      '🔄 Orden actualizado para canción (Lista: $idLista, Canción: $idCancion, Nuevo orden: $nuevoOrden)',
+    );
+  }
+
   // Obtener canciones de una lista
   Future<List<Map<String, dynamic>>> getCancionesDeLista(int idLista) async {
     final db = await instance.database;

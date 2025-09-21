@@ -393,94 +393,95 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
       child: Card(
         elevation: 2,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Row(
-            children: [
-              // Drag handle
-              MouseRegion(
-                cursor: SystemMouseCursors.grab,
-                child: GestureDetector(
-                  onTapDown: (_) {},
-                  child: Container(
-                    padding: const EdgeInsets.only(right: 0),
-                    /*child: const Icon(
-                      Icons.drag_handle,
-                      color: Colors.grey,
-                      size: 24,
-                    ),*/
-                  ),
-                ),
-              ),
+        child: InkWell(
+          onTap: () async {
+            // Get the complete song with lyrics
+            final cancionCompleta = await _cancionesService
+                .getCancionPorId(cancion.id);
+            if (!mounted || cancionCompleta == null) return;
 
-              // Song number
-              Container(
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  gradient: _getGradientForHimnario(cancion.himnario),
-                  borderRadius: BorderRadius.circular(12),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.2),
-                      blurRadius: 4,
-                      offset: const Offset(0, 2),
-                    ),
-                  ],
-                ),
-                child: Center(
-                  child: Text(
-                    cancion.numero.toString(),
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
+            // Get favorites list
+            final favoritos = await _cancionesService.getFavoritos();
+            if (!mounted) return;
 
-              const SizedBox(width: 16),
-
-              // Song information
-              Expanded(
-                child: GestureDetector(
-                  onTap: () async {
-                    // Get the complete song with lyrics
-                    final cancionCompleta = await _cancionesService
-                        .getCancionPorId(cancion.id);
-                    if (!mounted || cancionCompleta == null) return;
-
-                    // Get favorites list
-                    final favoritos = await _cancionesService.getFavoritos();
-                    if (!mounted) return;
-
-                    // Navigate to song screen
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CancionScreen(
-                          cancion: cancionCompleta,
-                          himnario: himnario,
-                          favoritos: favoritos,
-                          onToggleFavorito: (id) async {
-                            if (await _cancionesService.esFavorito(id)) {
-                              await _cancionesService.quitarFavorito(id);
-                            } else {
-                              await _cancionesService.agregarFavorito(id);
-                            }
-                            if (mounted) {
-                              setState(() {});
-                            }
-                          },
-                        ),
-                      ),
-                    );
-
+            // Navigate to song screen
+            await Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => CancionScreen(
+                  cancion: cancionCompleta,
+                  himnario: himnario,
+                  favoritos: favoritos,
+                  onToggleFavorito: (id) async {
+                    if (await _cancionesService.esFavorito(id)) {
+                      await _cancionesService.quitarFavorito(id);
+                    } else {
+                      await _cancionesService.agregarFavorito(id);
+                    }
                     if (mounted) {
                       setState(() {});
                     }
                   },
+                ),
+              ),
+            );
+
+            if (mounted) {
+              setState(() {});
+            }
+          },
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              children: [
+                // Drag handle
+                MouseRegion(
+                  cursor: SystemMouseCursors.grab,
+                  child: GestureDetector(
+                    onTapDown: (_) {},
+                    child: Container(
+                      padding: const EdgeInsets.only(right: 0),
+                      /*child: const Icon(
+                        Icons.drag_handle,
+                        color: Colors.grey,
+                        size: 24,
+                      ),*/
+                    ),
+                  ),
+                ),
+
+                // Song number
+                Container(
+                  width: 48,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    gradient: _getGradientForHimnario(cancion.himnario),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.2),
+                        blurRadius: 4,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: Center(
+                    child: Text(
+                      cancion.numero.toString(),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+
+                const SizedBox(width: 16),
+
+                // Song information
+                Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -559,30 +560,30 @@ class _DetalleListaScreenState extends State<DetalleListaScreen>
                     ],
                   ),
                 ),
-              ),
 
-              // Delete icon
-              GestureDetector(
-                onTap: () {
-                  _mostrarDialogoEliminar(cancion.id);
-                },
-                behavior: HitTestBehavior.opaque,
-                child: Container(
-                  padding: const EdgeInsets.all(8),
-                  margin: const EdgeInsets.only(left: 8),
-                  decoration: BoxDecoration(
-                    color: Colors.red.shade50,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.red.shade200, width: 1),
-                  ),
-                  child: Icon(
-                    Icons.delete_outline,
-                    color: Colors.red.shade600,
-                    size: 20,
+                // Delete icon
+                GestureDetector(
+                  onTap: () {
+                    _mostrarDialogoEliminar(cancion.id);
+                  },
+                  behavior: HitTestBehavior.opaque,
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    margin: const EdgeInsets.only(left: 8),
+                    decoration: BoxDecoration(
+                      color: Colors.red.shade50,
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.red.shade200, width: 1),
+                    ),
+                    child: Icon(
+                      Icons.delete_outline,
+                      color: Colors.red.shade600,
+                      size: 20,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

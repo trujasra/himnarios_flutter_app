@@ -93,14 +93,17 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
 
   // Método para obtener el color específico según el nombre del himnario
   Color _getColorForHimnario(String nombre) {
-    // Usar colores estáticos por ahora
-    return AppTheme.getColorForHimnario(nombre.toLowerCase());
+    // Usar colores dinámicos desde cache o fallback a estáticos
+    print('🎨 HimnarioScreen: Obteniendo color para: "$nombre"');
+    final color = DynamicTheme.getColorForHimnarioSync(nombre);
+    print('🎨 HimnarioScreen: Color obtenido: $color');
+    return color;
   }
 
   // Método para obtener el gradiente específico según el nombre del himnario
   LinearGradient _getGradientForHimnario(String nombre) {
-    // Usar gradientes estáticos por ahora
-    return AppTheme.getGradientForHimnario(nombre.toLowerCase());
+    // Usar gradientes dinámicos desde cache o fallback a estáticos
+    return DynamicTheme.getGradientForHimnarioSync(nombre);
   }
 
   Future<void> _cargarCanciones() async {

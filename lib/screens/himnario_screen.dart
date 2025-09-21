@@ -30,6 +30,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
   String busqueda = '';
   List<String> chipsSeleccionados = [];
   List<Cancion> canciones = [];
+  List<Cancion> todasLasCanciones = []; // Para generar chips de todos los idiomas
   bool isLoading = true;
   // Estado local de favoritos que se sincroniza con el callback
   late List<int> _favoritos;
@@ -92,14 +93,14 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
 
   // Método para obtener el color específico según el nombre del himnario
   Color _getColorForHimnario(String nombre) {
-    // Usar colores dinámicos desde cache o fallback a estáticos
-    return DynamicTheme.getColorForHimnarioSync(nombre);
+    // Usar colores estáticos por ahora
+    return AppTheme.getColorForHimnario(nombre.toLowerCase());
   }
 
   // Método para obtener el gradiente específico según el nombre del himnario
   LinearGradient _getGradientForHimnario(String nombre) {
-    // Usar gradientes dinámicos desde cache o fallback a estáticos
-    return DynamicTheme.getGradientForHimnarioSync(nombre);
+    // Usar gradientes estáticos por ahora
+    return AppTheme.getGradientForHimnario(nombre.toLowerCase());
   }
 
   Future<void> _cargarCanciones() async {
@@ -109,6 +110,13 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
 
     try {
       List<Cancion> cancionesData;
+      
+      // Cargar todas las canciones del himnario para generar chips (solo la primera vez)
+      if (todasLasCanciones.isEmpty) {
+        todasLasCanciones = await _cancionesService.getCancionesPorHimnario(
+          widget.himnario.nombre,
+        );
+      }
       
       // Si hay búsqueda o filtros, usar búsqueda optimizada
       if (busqueda.isNotEmpty || chipsSeleccionados.isNotEmpty) {
@@ -123,10 +131,8 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
           limit: 500, // Limitar resultados para mejor rendimiento
         );
       } else {
-        // Si no hay filtros, cargar todas las canciones
-        cancionesData = await _cancionesService.getCancionesPorHimnario(
-          widget.himnario.nombre,
-        );
+        // Si no hay filtros, usar todas las canciones ya cargadas
+        cancionesData = todasLasCanciones;
       }
       
       setState(() {
@@ -142,9 +148,10 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
   }
 
   List<String> get chips {
-    final idiomas = canciones.map((c) => c.idioma).toSet();
+    // Usar todas las canciones para generar chips de todos los idiomas disponibles
+    final idiomas = todasLasCanciones.map((c) => c.idioma).toSet();
     return idiomas.map((idioma) {
-      final count = canciones.where((c) => c.idioma == idioma).length;
+      final count = todasLasCanciones.where((c) => c.idioma == idioma).length;
       return '$idioma ($count)';
     }).toList();
   }

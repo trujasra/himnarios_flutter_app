@@ -801,7 +801,18 @@ class DatabaseHelper {
   }) async {
     final db = await instance.database;
 
-    // Si no hay búsqueda, devolver todas las canciones
+    // Construir WHERE clause base
+    String whereClause = 'c.estado_registro = 1 AND c.id_tipo_himnario = ?';
+    List<dynamic> whereArgs = [idHimnario];
+
+    // Agregar filtro de idiomas si se especifica
+    if (idiomas != null && idiomas.isNotEmpty) {
+      final placeholders = idiomas.map((_) => '?').join(',');
+      whereClause += ' AND i.descripcion IN ($placeholders)';
+      whereArgs.addAll(idiomas);
+    }
+
+    // Si no hay búsqueda, devolver canciones con filtros aplicados
     if (busqueda == null || busqueda.trim().isEmpty) {
       String query = '''
         SELECT 
@@ -815,7 +826,7 @@ class DatabaseHelper {
         FROM Cancion c
         INNER JOIN Par_Tipo_Himnario th ON c.id_tipo_himnario = th.id_tipo_himnario
         INNER JOIN Par_Idioma i ON c.id_idioma = i.id_idioma
-        WHERE c.estado_registro = 1 AND c.id_tipo_himnario = ?
+        WHERE $whereClause
         ORDER BY c.numero
       ''';
 
@@ -823,12 +834,12 @@ class DatabaseHelper {
         query += ' LIMIT $limit';
       }
 
-      return await db.rawQuery(query, [idHimnario]);
+      return await db.rawQuery(query, whereArgs);
     }
 
     final cleanSearch = busqueda.trim();
 
-    // Obtener todas las canciones del himnario primero
+    // Obtener canciones del himnario con filtros aplicados
     String query = '''
       SELECT 
         c.id_cancion,
@@ -841,11 +852,11 @@ class DatabaseHelper {
       FROM Cancion c
       INNER JOIN Par_Tipo_Himnario th ON c.id_tipo_himnario = th.id_tipo_himnario
       INNER JOIN Par_Idioma i ON c.id_idioma = i.id_idioma
-      WHERE c.estado_registro = 1 AND c.id_tipo_himnario = ?
+      WHERE $whereClause
       ORDER BY c.numero
     ''';
 
-    final allResults = await db.rawQuery(query, [idHimnario]);
+    final allResults = await db.rawQuery(query, whereArgs);
 
     // Filtrar en Dart con normalización de acentos
     final filteredResults = _filterByNormalizedText(allResults, cleanSearch);

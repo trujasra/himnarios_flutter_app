@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
 
     try {
       List<Cancion> cancionesData;
-      
+
       // Si hay búsqueda o filtros, usar búsqueda optimizada
       if (busqueda.isNotEmpty || chipsSeleccionados.isNotEmpty) {
         final himnariosSeleccionados = chipsSeleccionados
@@ -103,22 +103,27 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
         final idiomasSeleccionados = chipsSeleccionados
             .where((chip) => idiomas.contains(chip))
             .toList();
-            
+
         cancionesData = await _cancionesService.buscarCanciones(
           busqueda: busqueda.isNotEmpty ? busqueda : null,
-          himnarios: himnariosSeleccionados.isNotEmpty ? himnariosSeleccionados : null,
-          idiomas: idiomasSeleccionados.isNotEmpty ? idiomasSeleccionados : null,
+          himnarios: himnariosSeleccionados.isNotEmpty
+              ? himnariosSeleccionados
+              : null,
+          idiomas: idiomasSeleccionados.isNotEmpty
+              ? idiomasSeleccionados
+              : null,
           limit: 200, // Limitar resultados para mejor rendimiento en home
         );
       } else {
         // Si no hay filtros, cargar todas las canciones (con límite)
         cancionesData = await _cancionesService.buscarCanciones(limit: 100);
       }
-      
+
       final himnariosData = await _cancionesService.getHimnariosCompletos();
       final idiomasData = await _cancionesService.getIdiomas();
       final favoritosData = await _cancionesService.getFavoritos();
-      final totalCancionesData = await _cancionesService.getTotalCancionesHimnariosActivos();
+      final totalCancionesData = await _cancionesService
+          .getTotalCancionesHimnariosActivos();
 
       setState(() {
         canciones = cancionesData;
@@ -331,7 +336,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: CustomDrawer(nombreUsuario: nombreUsuario),
+      drawer: CustomDrawer(nombreUsuario: nombreUsuario, himnario: ""),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -506,6 +511,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAwareMixin {
                                         himnario: himnario,
                                         favoritos: _favoritos,
                                         onToggleFavorito: _toggleFavorito,
+                                        nombreUsuario: nombreUsuario,
                                       ),
                                     ),
                                   );

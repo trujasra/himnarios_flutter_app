@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:himnarios_flutter_app/widgets/custom_drawer.dart';
 import '../data/canciones_service.dart';
 import '../models/himnario.dart';
 import '../models/cancion.dart';
@@ -14,12 +15,14 @@ class HimnarioScreen extends StatefulWidget {
   final Himnario himnario;
   final List<int> favoritos;
   final Function(int) onToggleFavorito;
+  final String nombreUsuario;
 
   const HimnarioScreen({
     super.key,
     required this.himnario,
     required this.favoritos,
     required this.onToggleFavorito,
+    required this.nombreUsuario,
   });
 
   @override
@@ -30,7 +33,8 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
   String busqueda = '';
   List<String> chipsSeleccionados = [];
   List<Cancion> canciones = [];
-  List<Cancion> todasLasCanciones = []; // Para generar chips de todos los idiomas
+  List<Cancion> todasLasCanciones =
+      []; // Para generar chips de todos los idiomas
   bool isLoading = true;
   // Estado local de favoritos que se sincroniza con el callback
   late List<int> _favoritos;
@@ -113,20 +117,20 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
 
     try {
       List<Cancion> cancionesData;
-      
+
       // Cargar todas las canciones del himnario para generar chips (solo la primera vez)
       if (todasLasCanciones.isEmpty) {
         todasLasCanciones = await _cancionesService.getCancionesPorHimnario(
           widget.himnario.nombre,
         );
       }
-      
+
       // Si hay búsqueda o filtros, usar búsqueda optimizada
       if (busqueda.isNotEmpty || chipsSeleccionados.isNotEmpty) {
         final idiomasSeleccionados = chipsSeleccionados.isNotEmpty
             ? chipsSeleccionados.map((chip) => chip.split(' (').first).toList()
             : null;
-            
+
         cancionesData = await _cancionesService.buscarCancionesPorHimnario(
           widget.himnario.nombre,
           busqueda: busqueda.isNotEmpty ? busqueda : null,
@@ -137,7 +141,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
         // Si no hay filtros, usar todas las canciones ya cargadas
         cancionesData = todasLasCanciones;
       }
-      
+
       setState(() {
         canciones = cancionesData;
         isLoading = false;
@@ -167,6 +171,10 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(
+        nombreUsuario: widget.nombreUsuario,
+        himnario: widget.himnario.nombre,
+      ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -199,13 +207,25 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                       // Barra superior con botones
                       Row(
                         children: [
-                          IconButton(
-                            onPressed: () => Navigator.pop(context),
-                            icon: const Icon(
-                              Icons.arrow_back,
-                              color: Colors.white,
+                          Container(
+                            padding: const EdgeInsets.all(0),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.2),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Builder(
+                              builder: (scaffoldContext) => IconButton(
+                                onPressed: () =>
+                                    Scaffold.of(scaffoldContext).openDrawer(),
+                                icon: const Icon(
+                                  Icons.menu,
+                                  color: Colors.white,
+                                  size: 24,
+                                ),
+                              ),
                             ),
                           ),
+                          const SizedBox(width: 10),
                           Expanded(
                             child: Column(
                               children: [
@@ -241,10 +261,7 @@ class _HimnarioScreenState extends State<HimnarioScreen> with RouteAwareMixin {
                                 ),
                               );
                             },
-                            icon: const Icon(
-                              Icons.list,
-                              color: Colors.white,
-                            ),
+                            icon: const Icon(Icons.list, color: Colors.white),
                           ),
                         ],
                       ),

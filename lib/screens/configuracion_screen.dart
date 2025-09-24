@@ -27,14 +27,18 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
   final List<Map<String, dynamic>> coloresDisponibles = [
     {'nombre': 'Azul Clásico', 'color': '#295F98', 'colorDark': '#194675'},
     {'nombre': 'Naranja Vibrante', 'color': '#EE6B41', 'colorDark': '#CA5731'},
-    {'nombre': 'Índigo Moderno', 'color': '#887DF7', 'colorDark': '#675FC5'},
+    {'nombre': 'Verde Oscuro', 'color': '#0a9e30', 'colorDark': '#066a33'},
     {'nombre': 'Verde Esmeralda', 'color': '#1DC49C', 'colorDark': '#35A29F'},
-    {'nombre': 'Azul Cielo', 'color': '#4F8DFC', 'colorDark': '#366AC4'},
+    {'nombre': 'Azul Cielo', 'color': '#4FB1FC', 'colorDark': '#366AC4'},
     {'nombre': 'Amarillo Dorado', 'color': '#EEB800', 'colorDark': '#FD8D14'},
-    {'nombre': 'Púrpura Real', 'color': '#8B5CF6', 'colorDark': '#7C3AED'},
-    {'nombre': 'Rosa Coral', 'color': '#F472B6', 'colorDark': '#EC4899'},
+    {'nombre': 'Púrpura Real', 'color': '#A462F0', 'colorDark': '#7C3AED'},
+    {'nombre': 'Rosa Coral', 'color': '#F472B6', 'colorDark': '#e92f8b'},
     {'nombre': 'Verde Lima', 'color': '#84CC16', 'colorDark': '#65A30D'},
-    {'nombre': 'Rojo Carmesí', 'color': '#EF4444', 'colorDark': '#DC2626'},
+    {'nombre': 'Rojo Carmesí', 'color': '#fa4e39', 'colorDark': '#DC2626'},
+    {'nombre': 'Café Chocolate', 'color': '#983820', 'colorDark': '#612415'},
+    {'nombre': 'Vino Rojizo', 'color': '#9a0404', 'colorDark': '#6f0303'},
+    {'nombre': 'Plomo Oscuro', 'color': '#7c7e7e', 'colorDark': '#565757'},
+    {'nombre': 'Palo de Rosa', 'color': '#ee7777', 'colorDark': '#B95E82'},
   ];
 
   // Imágenes de fondo disponibles
@@ -355,7 +359,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
           ),
           content: SizedBox(
             width: double.maxFinite,
-            height: 300,
+            height: 320,
             child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
@@ -401,7 +405,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
                       ),
                       borderRadius: BorderRadius.circular(8),
                       border: isSelected
-                          ? Border.all(color: Colors.white, width: 3)
+                          ? Border.all(color: Colors.amberAccent, width: 3)
                           : null,
                     ),
                     child: Center(

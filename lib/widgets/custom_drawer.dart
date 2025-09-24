@@ -9,8 +9,13 @@ import 'dart:io' show Platform;
 
 class CustomDrawer extends StatelessWidget {
   final String nombreUsuario;
+  final String himnario;
 
-  const CustomDrawer({super.key, required this.nombreUsuario});
+  const CustomDrawer({
+    super.key,
+    required this.nombreUsuario,
+    required this.himnario,
+  });
 
   // Función para obtener las iniciales del usuario
   String getIniciales(String nombre) {
@@ -29,6 +34,16 @@ class CustomDrawer extends StatelessWidget {
     }
   }
 
+  LinearGradient _getGradientForHimnario(String nombre) {
+    // Usar gradientes dinámicos desde cache o fallback a estáticos
+    return DynamicTheme.getGradientForHimnarioSync(nombre);
+  }
+
+  Color _getColorForHimnario(String nombre) {
+    // Usar colores dinámicos desde cache o fallback a estáticos
+    return DynamicTheme.getColorForHimnarioSync(nombre);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -37,7 +52,10 @@ class CustomDrawer extends StatelessWidget {
         children: [
           // DrawerHeader personalizado
           DrawerHeader(
-            decoration: const BoxDecoration(gradient: AppTheme.mainGradient),
+            //decoration: const BoxDecoration(gradient: AppTheme.mainGradient),
+            decoration: BoxDecoration(
+              gradient: _getGradientForHimnario(himnario),
+            ),
             padding: const EdgeInsets.all(16.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -48,10 +66,10 @@ class CustomDrawer extends StatelessWidget {
                   backgroundColor: Colors.white,
                   child: Text(
                     getIniciales(nombreUsuario),
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 21,
-                      color: AppTheme.primaryColor,
+                      color: _getColorForHimnario(himnario),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -95,6 +113,14 @@ class CustomDrawer extends StatelessWidget {
 
           // Opciones del Drawer
           ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text("Inicio"),
+            onTap: () {
+              // Pop all routes until we reach the home screen
+              Navigator.popUntil(context, (route) => route.isFirst);
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.settings),
             title: const Text("Configuración"),
             onTap: () {
@@ -115,9 +141,8 @@ class CustomDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const FavoritoScreen(
-                    mostrarBotonCerrar: true,
-                  ),
+                  builder: (context) =>
+                      const FavoritoScreen(mostrarBotonCerrar: true),
                 ),
               );
             },
@@ -145,9 +170,7 @@ class CustomDrawer extends StatelessWidget {
               Navigator.pop(context);
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const CreditosScreen(),
-                ),
+                MaterialPageRoute(builder: (context) => const CreditosScreen()),
               );
             },
           ),

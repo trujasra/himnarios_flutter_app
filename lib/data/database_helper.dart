@@ -376,7 +376,7 @@ class DatabaseHelper {
       '#EE6B41', // Bendición del Cielo - Naranja
       '#EEB800', // Coros Cristianos - Amarillo
       '#1DC49C', // Cala - Verde esmeralda
-      '#8B5CF6', // Lluvias de Bendición - Púrpura
+      '#A462F0', // Lluvias de Bendición - Púrpura
       '#4F8DFC', // Poder del Evangelio - Azul
     ];
     final coloresDark = [
@@ -814,7 +814,8 @@ class DatabaseHelper {
 
     // Si no hay búsqueda, devolver canciones con filtros aplicados
     if (busqueda == null || busqueda.trim().isEmpty) {
-      String query = '''
+      String query =
+          '''
         SELECT 
           c.id_cancion,
           c.numero,
@@ -840,7 +841,8 @@ class DatabaseHelper {
     final cleanSearch = busqueda.trim();
 
     // Obtener canciones del himnario con filtros aplicados
-    String query = '''
+    String query =
+        '''
       SELECT 
         c.id_cancion,
         c.numero,

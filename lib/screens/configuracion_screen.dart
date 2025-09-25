@@ -370,7 +370,44 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
               itemCount: coloresDisponibles.length,
               itemBuilder: (context, index) {
                 final colorData = coloresDisponibles[index];
-                final isSelected = himnario.colorHex == colorData['color'];
+                // Función para normalizar códigos de color
+                String normalizeColor(String? color) {
+                  if (color == null || color.isEmpty) return '';
+                  return color.startsWith('#')
+                      ? color.substring(1).toUpperCase()
+                      : color.toUpperCase();
+                }
+
+                // Obtener el color actual del himnario (usar colorHex si está disponible, si no, usar color)
+                final colorActualHimnario = himnario.colorHex ?? himnario.color;
+
+                // Normalizar colores para comparación
+                final colorHimnario = normalizeColor(colorActualHimnario);
+                final colorActual = normalizeColor(colorData['color']);
+
+                // Verificar si es el color seleccionado
+                bool isSelected = colorHimnario == colorActual;
+
+                // Si no coincide, verificar también con el color oscuro
+                if (!isSelected && colorData['colorDark'] != null) {
+                  final colorDarkActual = normalizeColor(
+                    colorData['colorDark'],
+                  );
+                  isSelected = colorHimnario == colorDarkActual;
+                }
+
+                // Debug: Mostrar información de comparación
+                debugPrint(
+                  '[DEBUG] Comparación de colores para ${himnario.nombre}',
+                );
+                debugPrint(
+                  'Color actual: $colorActualHimnario (normalizado: $colorHimnario)',
+                );
+                debugPrint(
+                  'Color opción: ${colorData['color']} (normalizado: $colorActual)',
+                );
+                debugPrint('Color oscuro opción: ${colorData['colorDark']}');
+                debugPrint('¿Seleccionado? $isSelected');
 
                 return GestureDetector(
                   onTap: () {
@@ -405,8 +442,21 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
                       ),
                       borderRadius: BorderRadius.circular(8),
                       border: isSelected
-                          ? Border.all(color: Colors.amberAccent, width: 3)
-                          : null,
+                          ? Border.all(
+                              color: Colors.white,
+                              width: 4, // Borde grueso para el seleccionado
+                            )
+                          : null, // Sin borde para los no seleccionados
+                      boxShadow: isSelected
+                          ? [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.3),
+                                spreadRadius: 3,
+                                blurRadius: 8,
+                                offset: const Offset(0, 4),
+                              ),
+                            ]
+                          : null, // Sin sombra para los no seleccionados
                     ),
                     child: Center(
                       child: Text(

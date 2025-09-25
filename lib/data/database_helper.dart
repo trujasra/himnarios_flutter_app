@@ -377,7 +377,7 @@ class DatabaseHelper {
       '#EEB800', // Coros Cristianos - Amarillo
       '#1DC49C', // Cala - Verde esmeralda
       '#A462F0', // Lluvias de Bendición - Púrpura
-      '#4F8DFC', // Poder del Evangelio - Azul
+      '#4FB1FC', // Poder del Evangelio - Azul
     ];
     final coloresDark = [
       '#CA5731', // Bendición del Cielo - Naranja oscuro

@@ -1,4 +1,5 @@
-package com.himnarios.app.himnarios_flutter_app
+package com.trujasra.himnarios_app
+
 
 import io.flutter.embedding.android.FlutterActivity
 import android.os.Bundle

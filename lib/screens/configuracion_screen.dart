@@ -43,13 +43,10 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
 
   // Imágenes de fondo disponibles
   final List<Map<String, String>> imagenesDisponibles = [
-    {'nombre': 'Por Defecto', 'valor': 'default'},
-    {'nombre': 'Cielo Azul', 'valor': 'cielo_azul'},
-    {'nombre': 'Montañas', 'valor': 'montanas'},
-    {'nombre': 'Océano', 'valor': 'oceano'},
-    {'nombre': 'Bosque', 'valor': 'bosque'},
-    {'nombre': 'Atardecer', 'valor': 'atardecer'},
-    {'nombre': 'Abstracto', 'valor': 'abstracto'},
+    {'nombre': 'Ninguno', 'valor': 'default'},
+    {'nombre': 'Carta', 'valor': 'Fondo1.jpg'},
+    {'nombre': 'Pintura', 'valor': 'Fondo2.jpg'},
+    {'nombre': 'Abstracto', 'valor': 'Fondo3.jpg'},
   ];
 
   @override

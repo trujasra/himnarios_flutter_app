@@ -19618,7 +19618,7 @@ L. M. Juán Federico A.
       'id_letra': 50455,
       'id_cancion': 50455,
       'descripcion': '''
-//ALzare mis ojos
+//Alzare mis ojos
 A los montes de Dios.//
 Vendrá mi socorro,
 Mi socorro viene de Dios
@@ -19643,8 +19643,7 @@ D.R.
     {
       'id_letra': 50456,
       'id_cancion': 50456,
-      'descripcion': '''(Trad. Flores Gral)
-
+      'descripcion': '''
 //Nayajja uñtawa
 Qha kollunacaru.//
 Yanap jicjjataw munt
@@ -19664,7 +19663,7 @@ Janiraquiw phajjsisa
 Cawqhancat ucqhasa
 Tatit Cristoy jumampiscam.(Bis)
 
-
+(Trad. Flores Gral)
 ''',
       'estado_registro': 1,
     },

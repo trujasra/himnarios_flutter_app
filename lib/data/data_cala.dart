@@ -4619,7 +4619,6 @@ Trad. Tomás Gonzales M.
       'id_letra': 30032,
       'id_cancion': 30032,
       'descripcion': '''
-
 Una simple zarza, sin valor alguno
 Dios pudo usar
 Para revelarse al pastor Moisés, en el Sinaí;
@@ -6724,12 +6723,11 @@ Guillermo Zeballos
     {
       'id_letra': 30100,
       'id_cancion': 30100,
-      'descripcion': '''(compasión)
-
+      'descripcion': '''
 En todo el mundo entero
 Saben que hay un Dios, (hay un Dios)
 Todos también reciben
-Su compasión y amor;
+Su compasión y amor; (compasión)
 Pero son pocos los que le temen,
 Los que le siguen fiel;
 También son pocos los que le sirven

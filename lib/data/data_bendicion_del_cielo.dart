@@ -7108,7 +7108,7 @@ D.R.
     {
       'id_letra': 10198,
       'id_cancion': 10198,
-      'descripcion': '''<Do Mayor)
+      'descripcion': '''(Do Mayor)
 
 ¿Día será? ¿Noche será?
 ¿O al amanecer?

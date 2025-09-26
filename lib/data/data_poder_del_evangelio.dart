@@ -19663,7 +19663,7 @@ Janiraquiw phajjsisa
 Cawqhancat ucqhasa
 Tatit Cristoy jumampiscam.(Bis)
 
-(Trad. Flores Gral)
+Trad. Flores Gral
 ''',
       'estado_registro': 1,
     },

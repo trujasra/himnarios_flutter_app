@@ -6683,8 +6683,7 @@ Con bendiciones te colmará.
 Take acapachawa
 Diosatjja yatipjje, (yatipjje)
 Qhuyapayasiñapsa
-Catokapjjaraqui;
-(Diosatjja)
+Catokapjjaraqui; (Diosatjja)
 Juc'aniquiwa ajjsartirejja
 Tatitusarojja,
 Juc'aniquiwa take chuymampi
@@ -6699,8 +6698,7 @@ Wiñay cusisiri.
 Walja jakenacawa
 Jucharu cutt'apjje (cutt'apjje)
 Diosan arunacapsa
-Armasipjjaraqui;
-(armapjje)
+Armasipjjaraqui; (armapjje)
 Takenitaqui waquichatawa
 Khespiyasiñajja;
 Takenitaqui waquichatawa
@@ -6709,8 +6707,7 @@ Alajjpach marcajja.
 Khepa urunacanjja
 Jachañaw utjani (utjani)
 Inamayataquiwa
-Jachapjjaraquini;
-(inamay)
+Jachapjjaraquini; (inamay)
 Tatitusajja jichha uruwa
 Takenir jawsasqui;
 Tatitusajja munasiñampiw

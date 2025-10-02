@@ -56,15 +56,14 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
       await tempFile.writeAsBytes(bytes);
 
       // Compartir archivo
-      await Share.shareXFiles([
-        XFile(tempPath),
-      ], text: 'QR para ofrendas - Himnarios App\n¡Gracias por tu apoyo!');
+      await Share.shareXFiles(
+        [XFile(tempPath)],
+        text:
+            'QR para ofrenda voluntaria - Himnarios App\n¡Gracias por tu apoyo!',
+      );
     } catch (e) {
       if (mounted) {
-        CustomSnackBar.showError(
-          context,
-          'Error al compartir: $e',
-        );
+        CustomSnackBar.showError(context, 'Error al compartir: $e');
       }
     }
   }
@@ -106,10 +105,7 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
       }
     } catch (e) {
       if (mounted) {
-        CustomSnackBar.showError(
-          context,
-          'Error al descargar: $e',
-        );
+        CustomSnackBar.showError(context, 'Error al descargar: $e');
       }
     }
   }
@@ -123,7 +119,7 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
         foregroundColor: Colors.white,
         elevation: 0,
         title: const Text(
-          'QR para Ofrendas',
+          'QR para Ofrenda Voluntaria',
           style: TextStyle(
             fontFamily: 'Poppins',
             fontWeight: FontWeight.w600,
@@ -223,7 +219,7 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
                     ),
                   ),
                 ),
-                ElevatedButton.icon(
+                /*ElevatedButton.icon(
                   onPressed: _downloadQR,
                   icon: const Icon(Icons.download),
                   label: const Text(
@@ -244,7 +240,7 @@ class _QRViewerScreenState extends State<QRViewerScreen> with RouteAwareMixin {
                       borderRadius: BorderRadius.circular(25),
                     ),
                   ),
-                ),
+                ),*/
               ],
             ),
           ],

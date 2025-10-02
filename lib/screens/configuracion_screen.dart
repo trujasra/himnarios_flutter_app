@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/canciones_service.dart';
 import '../models/himnario.dart';
@@ -47,6 +48,13 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
     {'nombre': 'Carta', 'valor': 'Fondo1.jpg'},
     {'nombre': 'Pintura', 'valor': 'Fondo2.jpg'},
     {'nombre': 'Abstracto', 'valor': 'Fondo3.jpg'},
+    {'nombre': 'Flores', 'valor': 'Fondo4.jpg'},
+    {'nombre': 'Lila', 'valor': 'Fondo5.jpg'},
+    {'nombre': 'Verde Abstacto', 'valor': 'Fondo6.jpg'},
+    {'nombre': 'Nubes', 'valor': 'Fondo7.jpg'},
+    {'nombre': 'Estrellas', 'valor': 'Fondo8.jpg'},
+    {'nombre': 'Amarillo', 'valor': 'Fondo9.jpg'},
+    {'nombre': 'Cuadriculado', 'valor': 'Fondo10.jpg'},
   ];
 
   @override
@@ -93,6 +101,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
             descripcion: h['descripcion'] ?? '',
             idiomas: [], // Se actualizará más adelante
             estadoRegistro: (h['estado_registro'] == 1) ? 1 : 0,
+            imagenFondo: h['imagen_fondo'] ?? 'default',
           ),
         );
       }
@@ -307,6 +316,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
     String? color,
     String? colorDark,
     String? imagenFondo,
+    required Himnario himnario,
   }) async {
     try {
       //print('🔄 Iniciando actualización para himnario ID: $idHimnario');
@@ -333,11 +343,14 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
 
       CustomSnackBar.showSuccess(
         context,
-        'Configuración actualizada correctamente',
+        'Configuración actualizada correctamente para ${himnario.nombre}',
       );
     } catch (e) {
       //print('❌ Error actualizando configuración: $e');
-      CustomSnackBar.showError(context, 'Error al actualizar la configuración');
+      CustomSnackBar.showError(
+        context,
+        'Error al actualizar la configuración de ${himnario.nombre}',
+      );
     }
   }
 
@@ -412,6 +425,7 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
                       idHimnario: himnario.id,
                       color: colorData['color'],
                       colorDark: colorData['colorDark'],
+                      himnario: himnario,
                     );
                     Navigator.of(context).pop();
                   },
@@ -483,69 +497,256 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
   }
 
   void _mostrarSelectorImagenFondo(Himnario himnario) {
-    showDialog(
+    showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
       builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text(
-            'Seleccionar fondo para ${himnario.nombre}',
-            style: const TextStyle(
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w600,
-              fontSize: 18,
-            ),
-          ),
-          content: SizedBox(
-            width: double.maxFinite,
-            height: 300,
-            child: ListView.builder(
-              itemCount: imagenesDisponibles.length,
-              itemBuilder: (context, index) {
-                final imagenData = imagenesDisponibles[index];
-                final isSelected = himnario.imagenFondo == imagenData['valor'];
+        // Inicializar con el valor actual del himnario o 'default' si es nulo
+        String currentImage = himnario.imagenFondo ?? 'default';
 
-                return ListTile(
-                  leading: Container(
-                    width: 40,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: _getColorForImage(imagenData['valor']!),
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Colors.grey.shade300),
+        return StatefulBuilder(
+          builder: (BuildContext context, StateSetter setModalState) {
+            // Usar una variable local para rastrear la selección
+            String? selectedImage = currentImage;
+            return Container(
+              decoration: BoxDecoration(
+                color: Theme.of(context).scaffoldBackgroundColor,
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(20),
+                ),
+              ),
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  // Header
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 8.0,
+                      horizontal: 4.0,
                     ),
-                    child: Icon(
-                      _getIconForImage(imagenData['valor']!),
-                      color: Colors.white,
-                      size: 20,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Fondo para ${himnario.nombre}',
+                            style: const TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18,
+                            ),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        IconButton(
+                          icon: const Icon(Icons.close, size: 24),
+                          padding: EdgeInsets.zero,
+                          constraints: const BoxConstraints(),
+                          onPressed: () => Navigator.of(context).pop(),
+                        ),
+                      ],
                     ),
                   ),
-                  title: Text(
-                    imagenData['nombre']!,
-                    style: const TextStyle(
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w500,
+
+                  // Grid de fondos
+                  Expanded(
+                    child: GridView.builder(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 3,
+                            crossAxisSpacing: 12,
+                            mainAxisSpacing: 12,
+                            childAspectRatio: 0.8,
+                          ),
+                      itemCount: imagenesDisponibles.length,
+                      itemBuilder: (context, index) {
+                        final imagenData = imagenesDisponibles[index];
+                        final isSelected = selectedImage == imagenData['valor'];
+                        final isDefault = imagenData['valor'] == 'default';
+
+                        // Actualizar la selección actual si es necesario
+                        if (imagenData['valor'] == currentImage) {
+                          selectedImage = currentImage;
+                        }
+
+                        return GestureDetector(
+                          onTap: () {
+                            setModalState(() {
+                              selectedImage = imagenData['valor'];
+                            });
+
+                            // Actualizar el estado local primero para feedback inmediato
+                            setModalState(() {
+                              selectedImage = imagenData['valor'];
+                            });
+
+                            // Luego actualizar la configuración
+                            _actualizarConfiguracion(
+                              idHimnario: himnario.id,
+                              imagenFondo: imagenData['valor'],
+                              himnario: himnario,
+                            );
+
+                            // Cerrar el modal después de un breve retraso para dar feedback visual
+                            Future.delayed(
+                              const Duration(milliseconds: 300),
+                              () {
+                                if (mounted) {
+                                  Navigator.of(context).pop();
+                                }
+                              },
+                            );
+                          },
+                          child: Stack(
+                            children: [
+                              // Contenedor del fondo
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: isDefault
+                                      ? _getColorForImage('default')
+                                      : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(12),
+                                  border: Border.all(
+                                    color: isSelected
+                                        ? AppTheme.primaryColor
+                                        : Colors.grey.shade300,
+                                    width: isSelected ? 3 : 1,
+                                  ),
+                                  boxShadow: isSelected
+                                      ? [
+                                          BoxShadow(
+                                            color: AppTheme.primaryColor
+                                                .withValues(alpha: 0.3),
+                                            blurRadius: 10,
+                                            spreadRadius: 2,
+                                            offset: const Offset(0, 2),
+                                          ),
+                                        ]
+                                      : [
+                                          BoxShadow(
+                                            color: Colors.black.withValues(
+                                              alpha: 0.1,
+                                            ),
+                                            blurRadius: 6,
+                                            offset: const Offset(0, 2),
+                                          ),
+                                        ],
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: isDefault
+                                      ? Center(
+                                          child: Icon(
+                                            Icons.format_color_reset,
+                                            size: 32,
+                                            color: Colors.white,
+                                          ),
+                                        )
+                                      : SizedBox.expand(
+                                          child: Image.asset(
+                                            'assets/fondos/${imagenData['valor']}',
+                                            fit: BoxFit.cover,
+                                            alignment: Alignment.center,
+                                            errorBuilder:
+                                                (context, error, stackTrace) =>
+                                                    Center(
+                                                      child: Icon(
+                                                        Icons.broken_image,
+                                                        size: 32,
+                                                        color: Colors.grey[400],
+                                                      ),
+                                                    ),
+                                          ),
+                                        ),
+                                ),
+                              ),
+
+                              // Nombre del fondo
+                              Positioned(
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: 4,
+                                    horizontal: 4,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: AppTheme.primaryColor,
+                                    borderRadius: const BorderRadius.only(
+                                      bottomLeft: Radius.circular(10),
+                                      bottomRight: Radius.circular(10),
+                                    ),
+                                  ),
+                                  child: Text(
+                                    imagenData['nombre']!,
+                                    textAlign: TextAlign.center,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                ),
+                              ),
+
+                              // Indicador de selección
+                              if (isSelected)
+                                Positioned(
+                                  top: 6,
+                                  right: 6,
+                                  child: Container(
+                                    padding: const EdgeInsets.all(4),
+                                    decoration: const BoxDecoration(
+                                      color: AppTheme.primaryColor,
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: const Icon(
+                                      Icons.check,
+                                      size: 14,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
+                        );
+                      },
                     ),
                   ),
-                  trailing: isSelected
-                      ? const Icon(Icons.check_circle, color: Colors.green)
-                      : null,
-                  onTap: () {
-                    _actualizarConfiguracion(
-                      idHimnario: himnario.id,
-                      imagenFondo: imagenData['valor'],
-                    );
-                    Navigator.of(context).pop();
-                  },
-                );
-              },
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('Cancelar'),
-            ),
-          ],
+
+                  // Botón de cancelar
+                  Padding(
+                    padding: const EdgeInsets.only(top: 12.0),
+                    child: OutlinedButton(
+                      onPressed: () => Navigator.of(context).pop(),
+                      style: OutlinedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        side: BorderSide(color: Theme.of(context).dividerColor),
+                      ),
+                      child: const Text(
+                        'Cancelar',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
         );
       },
     );
@@ -713,24 +914,67 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
                 style: buttonStyle,
               ),
               const SizedBox(width: 8),
-              ElevatedButton.icon(
-                onPressed: isActive
-                    ? () => _mostrarSelectorImagenFondo(himnario)
-                    : null, // Deshabilitar si no está activo
-                icon: Icon(
-                  Icons.image,
-                  size: 16,
-                  color: isActive ? Colors.white : Colors.grey.shade600,
-                ),
-                label: Text(
-                  'Fondo',
-                  style: TextStyle(
-                    color: isActive ? Colors.white : Colors.grey.shade600,
+              SizedBox(
+                height: 36,
+                child: ElevatedButton(
+                  onPressed: isActive
+                      ? () => _mostrarSelectorImagenFondo(himnario)
+                      : null,
+                  style: buttonStyle.copyWith(
+                    backgroundColor: WidgetStatePropertyAll<Color>(
+                      isActive ? Colors.grey.shade600 : Colors.grey.shade300,
+                    ),
+                    padding: WidgetStatePropertyAll<EdgeInsets>(
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    ),
+                    minimumSize: WidgetStatePropertyAll<Size>(const Size(0, 0)),
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
-                ),
-                style: buttonStyle.copyWith(
-                  backgroundColor: MaterialStatePropertyAll<Color>(
-                    isActive ? Colors.grey.shade600 : Colors.grey.shade300,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.image,
+                        size: 16,
+                        color: isActive ? Colors.white : Colors.grey.shade600,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        himnario.imagenFondo != null &&
+                                himnario.imagenFondo == 'default'
+                            ? 'Fondo Ninguno'
+                            : 'Fondo',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: isActive
+                              ? Colors.white70
+                              : Colors.grey.shade600,
+                        ),
+                      ),
+                      if (himnario.imagenFondo != null &&
+                          himnario.imagenFondo != 'default') ...[
+                        const SizedBox(width: 4),
+                        Container(
+                          width: 32,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(3),
+                            border: Border.all(
+                              color: isActive
+                                  ? Colors.white30
+                                  : Colors.grey.shade400,
+                              width: 1,
+                            ),
+                            image: DecorationImage(
+                              image: AssetImage(
+                                'assets/fondos/${himnario.imagenFondo}',
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ],
                   ),
                 ),
               ),

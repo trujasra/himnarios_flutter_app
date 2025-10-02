@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../data/canciones_service.dart';
 import '../data/database_helper.dart';
+import '../models/usuario.dart';
 import '../theme/app_theme.dart';
 import 'home_screen.dart';
 import 'registro_screen.dart';
@@ -60,18 +61,12 @@ class _SplashScreenState extends State<SplashScreen> {
     //await cancionesService.repoblarCancionesBendicionDelCielo();
     //await cancionesService.repoblarCancionesPoderDelEvangelio();
 
-    final db = await dbHelper.database;
-
     // Verificar usuario registrado
-    final usuarios = await db.query(
-      "Usuario",
-      where: "estado_registro = ?",
-      whereArgs: [1],
-    );
+    final usuario = await cancionesService.getPrimerUsuarioRegistrado();
 
     if (!mounted) return; // 👈 Evita usar context si el widget ya no existe
 
-    if (usuarios.isNotEmpty) {
+    if (usuario != null) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const HomeScreen()),
@@ -89,30 +84,75 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: AppTheme.secondaryColor,
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              "assets/images/LogoHimnariosApp.png",
-              width: 120,
-              height: 120,
-              fit: BoxFit.contain,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              "Himnarios App",
-              style: TextStyle(
-                fontFamily: "Berkshire Swash",
-                fontSize: 24,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Logo y título de la app
+              Column(
+                children: [
+                  Image.asset(
+                    "assets/images/LogoHimnariosApp.png",
+                    width: 120,
+                    height: 120,
+                    fit: BoxFit.contain,
+                  ),
+                  const SizedBox(height: 10),
+                  const Text(
+                    "Himnarios App",
+                    style: TextStyle(
+                      fontFamily: "Berkshire Swash",
+                      fontSize: 24,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
-            ),
-            const SizedBox(height: 30),
-            const CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-            ),
-          ],
+
+              // Mensaje de bienvenida solo si hay usuario registrado
+              const SizedBox(height: 120),
+              FutureBuilder<Usuario?>(
+                future: cancionesService.getPrimerUsuarioRegistrado(),
+                builder: (context, snapshot) {
+                  if (snapshot.connectionState == ConnectionState.done &&
+                      snapshot.hasData) {
+                    return Column(
+                      children: [
+                        const Text(
+                          'Bienvenid@',
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          snapshot.data!.nombre,
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    );
+                  }
+                  return const SizedBox.shrink();
+                },
+              ),
+
+              // Indicador de carga
+              const SizedBox(height: 30),
+              const CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+              ),
+            ],
+          ),
         ),
       ),
     );

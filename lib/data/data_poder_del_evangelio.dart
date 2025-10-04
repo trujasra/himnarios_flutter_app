@@ -3389,7 +3389,7 @@ class DataPoderDelEvangelio {
       'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': 311,
-      'titulo': 'OH QUE BUENO ES Mr JESUS',
+      'titulo': 'OH QUE BUENO ES MI JESUS',
       'orden': 2,
       'estado_registro': 1,
     },
@@ -12438,7 +12438,7 @@ Teofilo Rafael.
 
 En medio de tus problemas
 Cuando tu sientas cansancio.
-:Sique alabando a Cristo
+:Sigue alabando a Cristo
 El és nuestro fiél amigo.(bis)
 
 Hasta las aves le cantan
@@ -13023,7 +13023,7 @@ La esperanza del vivir eternamente joven,
 En un cuerpo transformado inmortal y divino.
 
 CORO:
-Dande nunca más el frio del invierno llegará,
+Donde nunca más el frio del invierno llegará,
 No habrá llanto ni dolor que, consuma nuestra sed.
 //La eterna primavera por siempre florecéra.//
 

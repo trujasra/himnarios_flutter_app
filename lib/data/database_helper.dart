@@ -369,8 +369,8 @@ class DatabaseHelper {
       'Alaba, Oh alma mia a Jehová... Sal 146:1',
       'Cantad al Señor canción nueva... Sal. 96.1',
       'Cantad alegres a Dios... Sal. 100:1',
-      'Lluvias de Bendición',
-      'Poder del Evangelio',
+      'Hablando entre vosotros con salmos, con himnos... Ef. 5:19',
+      'Cantad a Jehová toda la tierra... 1 Cro. 16:23',
     ];
     final colores = [
       '#EE6B41', // Bendición del Cielo - Naranja

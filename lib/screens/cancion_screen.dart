@@ -404,7 +404,8 @@ Compartido desde Himnarios App
                                       height: 1.0,
                                     ),
                                     textAlign: TextAlign.center,
-                                    maxLines: 2,
+                                    maxLines: 4,
+                                    softWrap: true,
                                   ),
                                   Text(
                                     widget.himnario.nombre,

@@ -1,4 +1,5 @@
 import 'package:himnarios_flutter_app/data/data_bendicion_del_cielo.dart';
+import 'package:himnarios_flutter_app/data/data_coros_cristianos.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:intl/intl.dart';
@@ -525,6 +526,51 @@ class DatabaseHelper {
     }
   }
 
+  /// Inserta canciones para el himnario Coros Cristianos (Aymara y Español) en las tablas Cancion y Letra
+  Future<void> poblarCancionesCorosCristianos() async {
+    final db = await instance.database;
+
+    // Verificar si ya existen canciones para Coros Cristianos
+    final cancionesExistentes = await db.query(
+      'Cancion',
+      where: 'id_tipo_himnario = ?',
+      whereArgs: [2],
+    ); // Coros Cristianos tiene id_tipo_himnario = 2
+    if (cancionesExistentes.isNotEmpty) {
+      print('Las canciones de Coros Cristianos ya existen en la base de datos');
+      return;
+    }
+
+    final now = DateFormat('dd/MM/yyyy HH:mm:ss').format(DateTime.now());
+    final usuario = 'ramiro.trujillo';
+
+    // Insertar canciones desde data_coros_cristianos.dart
+    for (var cancion in DataCorosCristianos.canciones) {
+      await db.insert("Cancion", {
+        ...cancion,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+    }
+
+    // Insertar letras desde data_coros_cristianos.dart
+    print('DEBUG: Insertando ${DataCorosCristianos.letras.length} letras');
+    for (var letra in DataCorosCristianos.letras) {
+      final result = await db.insert('Letra', {
+        ...letra,
+        'fecha_registro': now,
+        'usuario_registro': usuario,
+        'fecha_modificacion': null,
+        'usuario_modificacion': null,
+      });
+      print(
+        'DEBUG: Letra insertada para canción Coros Cristianos ${letra['id_cancion']}: ID = $result',
+      );
+    }
+  }
+
   /// Inserta canciones para el himnario Cala (Aymara y Español) en las tablas Cancion y Letra
   Future<void> poblarCancionesCala() async {
     final db = await instance.database;
@@ -945,6 +991,7 @@ class DatabaseHelper {
       await poblarIdiomasIniciales();
       await poblarHimnariosIniciales();
       await poblarCancionesBendicionDelCielo();
+      await poblarCancionesCorosCristianos();
       await poblarCancionesCala();
       await poblarCancionesLluviasDeBendicion();
       await poblarCancionesPoderDelEvangelio();
@@ -1027,6 +1074,44 @@ class DatabaseHelper {
       print('Canciones de Bendicion del Cielo repobladas exitosamente');
     } catch (e) {
       print('Error repoblando canciones de Bendicion del Cielo: $e');
+    }
+  }
+
+  // Método para repoblar las canciones de Coro sCristianos (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesCorosCristianos() async {
+    try {
+      final db = await instance.database;
+
+      // Primero obtener los IDs de las canciones de Coros Cristianos para eliminar sus letras
+      final cancionesCorosCristianos = await db.query(
+        'Cancion',
+        columns: ['id_cancion'],
+        where: 'id_tipo_himnario = ?',
+        whereArgs: [2],
+      );
+
+      final idsCanciones = cancionesCorosCristianos
+          .map((c) => c['id_cancion'])
+          .toList();
+
+      // Eliminar letras de las canciones de Coros Cristianos
+      if (idsCanciones.isNotEmpty) {
+        await db.delete(
+          'Letra',
+          where:
+              'id_cancion IN (${List.filled(idsCanciones.length, '?').join(',')})',
+          whereArgs: idsCanciones,
+        );
+      }
+
+      // Eliminar canciones existentes de Coros Cristianos
+      await db.delete('Cancion', where: 'id_tipo_himnario = ?', whereArgs: [3]);
+
+      // Poblar nuevamente
+      await poblarCancionesCorosCristianos();
+      print('Canciones de Coros Cristianos repobladas exitosamente');
+    } catch (e) {
+      print('Error repoblando canciones de Coros Cristianos: $e');
     }
   }
 

@@ -361,6 +361,15 @@ class CancionesService {
     }
   }
 
+  // Repoblar canciones de Coros Cristianos (útil cuando se agregan nuevas canciones)
+  Future<void> repoblarCancionesCorosCristianos() async {
+    try {
+      await _dbHelper.repoblarCancionesCorosCristianos();
+    } catch (e) {
+      print('Error repoblando canciones de Coros Cristianos: $e');
+    }
+  }
+
   // Repoblar canciones de Cala (útil cuando se agregan nuevas canciones)
   Future<void> repoblarCancionesCala() async {
     try {

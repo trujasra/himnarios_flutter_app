@@ -39,3 +39,8 @@ pubspec.lock
 # Web
 web/.dart_tool/
 web/build/
+
+
+*.jks
+key.properties
+*.keystore

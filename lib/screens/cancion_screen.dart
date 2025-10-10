@@ -137,26 +137,44 @@ Compartido desde Himnarios App
       widget.cancion.himnario,
     );
 
+    // Obtener versiones con el mismo número
     final versiones = todasLasCanciones
         .where((c) => c.numero == widget.cancion.numero)
         .toList();
 
-    // se realiza el oroden  // TODO: aca se aumento
+    // Ordenar por orden
     versiones.sort((a, b) => a.orden.compareTo(b.orden));
 
     setState(() {
       _versionesCancion = versiones;
+
+      // Si solo hay una versión, actualizar el índice actual
+      if (versiones.length == 1) {
+        _currentTabIndex = 0;
+      }
     });
 
     if (versiones.length > 1) {
       _tabController = TabController(length: versiones.length, vsync: this);
-      final indexActual = versiones.indexWhere(
-        (c) => c.idioma == widget.cancion.idioma,
-      );
-      if (indexActual != -1) {
-        _tabController.index = indexActual;
-        _currentTabIndex = indexActual;
+
+      // Buscar la canción exacta por ID primero
+      int indexActual = versiones.indexWhere((c) => c.id == widget.cancion.id);
+
+      // Si no se encuentra por ID, intentar por idioma
+      if (indexActual == -1) {
+        indexActual = versiones.indexWhere(
+          (c) => c.idioma == widget.cancion.idioma,
+        );
       }
+
+      // Si aún no se encuentra, usar la primera canción
+      if (indexActual == -1) {
+        indexActual = 0;
+      }
+
+      _tabController.index = indexActual;
+      _currentTabIndex = indexActual;
+
       _tabController.addListener(() {
         setState(() {
           _currentTabIndex = _tabController.index;

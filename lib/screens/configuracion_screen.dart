@@ -292,8 +292,8 @@ class _ConfiguracionScreenState extends State<ConfiguracionScreen>
 
         // Mostrar mensaje de éxito
         final mensaje = visible
-            ? '✅ Himnario activado correctamente'
-            : '⏸️ Himnario desactivado correctamente';
+            ? 'Himnario activado correctamente'
+            : 'Himnario desactivado correctamente';
         CustomSnackBar.showSuccess(context, mensaje);
       }
     } catch (e) {

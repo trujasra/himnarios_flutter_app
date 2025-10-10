@@ -3,6 +3,7 @@ class Cancion {
   final String titulo;
   final String? tituloSecundario;
   final int numero;
+  final int orden;
   final String himnario;
   final String idioma;
   final String categoria;
@@ -14,6 +15,7 @@ class Cancion {
     required this.titulo,
     this.tituloSecundario,
     required this.numero,
+    required this.orden,
     required this.himnario,
     required this.idioma,
     required this.categoria,
@@ -27,11 +29,12 @@ class Cancion {
       titulo: json['titulo'],
       tituloSecundario: json['tituloSecundario'],
       numero: json['numero'],
+      orden: json['orden'],
       himnario: json['himnario'],
       idioma: json['idioma'],
       categoria: json['categoria'],
       letra: json['letra'],
-      versiones: json['versiones'] != null 
+      versiones: json['versiones'] != null
           ? (json['versiones'] as List).map((v) => Cancion.fromJson(v)).toList()
           : null,
     );
@@ -43,6 +46,7 @@ class Cancion {
       'titulo': titulo,
       'tituloSecundario': tituloSecundario,
       'numero': numero,
+      'orden': orden,
       'himnario': himnario,
       'idioma': idioma,
       'categoria': categoria,
@@ -52,8 +56,9 @@ class Cancion {
   }
 
   // Helper para verificar si la canción tiene múltiples versiones
-  bool get tieneMultiplesVersiones => versiones != null && versiones!.length > 1;
-  
+  bool get tieneMultiplesVersiones =>
+      versiones != null && versiones!.length > 1;
+
   // Helper para obtener la versión en un idioma específico
   Cancion? getVersionEnIdioma(String idioma) {
     if (versiones == null) return null;
@@ -63,4 +68,4 @@ class Cancion {
       return null;
     }
   }
-} 
+}

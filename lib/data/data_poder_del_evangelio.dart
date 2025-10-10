@@ -1707,16 +1707,16 @@ class DataPoderDelEvangelio {
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': 167,
       'titulo': 'EL TIEMPO ESTA ACABANDO',
-      'orden': 2,
+      'orden': 1,
       'estado_registro': 1,
     },
     {
       'id_cancion': 50191,
-      'id_idioma': 2, // Aymara
+      'id_idioma': 1, // Español
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': 167,
       'titulo': 'DIOS DE TAL MANERA',
-      'orden': 1,
+      'orden': 2,
       'estado_registro': 1,
     },
     {
@@ -1788,7 +1788,7 @@ class DataPoderDelEvangelio {
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': 173,
       'titulo': 'AYUSPAGARSMAW KOLLAN CRISTO',
-      'orden': 1,
+      'orden': 2,
       'estado_registro': 1,
     },
     {
@@ -2085,7 +2085,7 @@ class DataPoderDelEvangelio {
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': 202,
       'titulo': 'CHHIKATA MUNAKUN',
-      'orden': 1,
+      'orden': 3,
       'estado_registro': 1,
     },
     {
@@ -3093,7 +3093,7 @@ class DataPoderDelEvangelio {
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': 291,
       'titulo': 'EN SU SANTO NOMBRE',
-      'orden': 3,
+      'orden': 2,
       'estado_registro': 1,
     },
     {
@@ -3111,7 +3111,7 @@ class DataPoderDelEvangelio {
       'id_tipo_himnario': 5, // Poder del Evangelio
       'numero': 291,
       'titulo': 'TATITUN WILAPAWA',
-      'orden': 2,
+      'orden': 3,
       'estado_registro': 1,
     },
     {

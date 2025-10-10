@@ -141,6 +141,9 @@ Compartido desde Himnarios App
         .where((c) => c.numero == widget.cancion.numero)
         .toList();
 
+    // se realiza el oroden  // TODO: aca se aumento
+    versiones.sort((a, b) => a.orden.compareTo(b.orden));
+
     setState(() {
       _versionesCancion = versiones;
     });

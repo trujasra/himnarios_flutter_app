@@ -49,6 +49,7 @@ class CancionesService {
       titulo: data['titulo'] ?? '',
       tituloSecundario: null, // Por ahora no tenemos título secundario en la BD
       numero: data['numero'] ?? 0, // Ya es INTEGER en la BD
+      orden: data['orden'] ?? 0, // Ya es INTEGER en la BD
       himnario: data['himnario'] ?? '',
       idioma: data['idioma'] ?? '',
       categoria: '', // Por ahora no tenemos categoría en la BD
@@ -84,9 +85,9 @@ class CancionesService {
       );
       final canciones = data.map((item) => _mapToCancion(item)).toList();
 
-      print(
-        'DEBUG: Canciones cargadas para $nombreHimnario: ${canciones.length}',
-      );
+      //print(
+      //  'DEBUG: Canciones cargadas para $nombreHimnario: ${canciones.length}',
+      //);
       for (var cancion in canciones.take(3)) {
         print(
           '  - ${cancion.numero}: ${cancion.titulo} (${cancion.idioma}) - Letra: ${cancion.letra.isNotEmpty ? "SÍ" : "NO"}',

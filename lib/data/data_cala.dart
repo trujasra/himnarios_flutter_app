@@ -8981,10 +8981,10 @@ Jumaquïtawa nayataquejja
 Cheka Diosajj, Tata;
 Nayataquejj janiw cawqhans utjquiti,
 Usut kollir, jiwät sartayiri,
-Reyins, Reyipataw.
+Reyins, Reyipätaw.
 
 CORO
-Jacht'asisawa samakascäyät,
+Jacht'asisawa sarnakascäyät,
 Uqham sarnakquiriruwa:
 \"Nayar jutjjam\", sista;
 Cunampiquisa nayajj phokhäma,
